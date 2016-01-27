@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_tests.tests.connect_SUITE results</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+// Parser for date format, e.g: Wed Jul 4 2012 11:24:15
+var monthNames = {};
+monthNames["Jan"] = "01"; monthNames["Feb"] = "02";
+monthNames["Mar"] = "03"; monthNames["Apr"] = "04";
+monthNames["May"] = "05"; monthNames["Jun"] = "06";
+monthNames["Jul"] = "07"; monthNames["Aug"] = "08";
+monthNames["Sep"] = "09"; monthNames["Oct"] = "10";
+monthNames["Nov"] = "11"; monthNames["Dec"] = "12";
+$.tablesorter.addParser({
+  id: 'CTDateSorter',
+  is: function(s) {
+      return false; },
+  format: function(s) {
+      if (s.length < 2) return 999999999;
+      else {
+          var date = s.match(/(\w{3})\s(\w{3})\s(\d{2})\s(\d{4})\s(\d{2}):(\d{2}):(\d{2})/);
+          var y = date[4]; var mo = monthNames[date[2]]; var d = String(date[3]);
+          var h = String(date[5]); var mi = String(date[6]); var sec = String(date[7]);
+          return (parseInt('' + y + mo + d + h + mi + sec)); }},
+  type: 'numeric' });
+// Parser for general text format
+$.tablesorter.addParser({
+  id: 'CTTextSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return 'zzzzzzzz';
+    else if (s == "?") return 'zzzzzzz';
+    else if (s == "-") return 'zzzzzz';
+    else if (s == "FAILED") return 'A';
+    else if (s == "SKIPPED") return 'B';
+    else if (s == "OK") return 'C';
+    else return '' + s; },
+  type: 'text' });
+// Parser for numerical values
+$.tablesorter.addParser({
+  id: 'CTValSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return '-2';
+    else if (s == "?") return '-1';
+    else if ((s.search(/(\d{1,})\s/)) >= 0) {
+      var num = s.match(/(\d{1,})\s/);
+      return (parseInt('' + num[1])); }
+    else if ((s.search(/(\d{1,})\.(\d{3})s/)) >= 0) {
+      var num = s.match(/(\d{1,})\.(\d{3})/);
+      if (num[1] == "0") return (parseInt('' + num[2]));
+      else return (parseInt('' + num[1] + num[2])); }
+    else return '' + s; },
+  type: 'numeric' });
+$(document).ready(function() {
+  $("#SortableTable").tablesorter({
+    headers: { 
+      0: { sorter: 'CTValSorter' },
+      1: { sorter: 'CTTextSorter' },
+      2: { sorter: 'CTTextSorter' },
+      3: { sorter: 'CTTextSorter' },
+      5: { sorter: 'CTValSorter' },
+      6: { sorter: 'CTTextSorter' },
+      7: { sorter: 'CTTextSorter' }
+    }
+  });
+  $("#SortableTable").trigger("update");
+  $("#SortableTable").trigger("appendCache");
+});
+</script>
+</head>
+<body>
+<div class="label">'pgsql_mnesia'</div>
+
+<h1>Results for <i>ejabberd_tests.tests.connect_SUITE</i></h1>
+<h4>Test started at 2016-01-27 21:55:30</h4>
+<p><b>Host info:</b><br />
+Run by travis on testing-gce-1cccf8b9-4292-4bb0-a77c-b8fab9b03073<br />Used Erlang v6.4 in "/home/travis/otp/17.5"</p>
+<p><ul>
+<li><a href="suite.log">Full textual log</a></li>
+<li><a href="cover.html">Coverage log</a></li>
+<li><a href="unexpected_io.log.html">Unexpected I/O log</a></li>
+</ul></p>
+<p><i>Executing <b>20</b> test cases...</i>
+<br />
+</p>
+<table id="SortableTable">
+<thead>
+<tr><th>Num</th><th>Module</th><th>Group</th><th>Case</th><th>Log</th><th>Time</th><th>Result</th><th>Comment</th></tr>
+</thead>
+<tbody>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black"></font></td><td><a href="connect_suite.init_per_suite.html">init_per_suite</a></td><td><a href="connect_suite.init_per_suite.html#top"><</a> <a href="connect_suite.init_per_suite.html#end">></a></td><td><font color="black">0.017s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">c2s_noproc</font></td><td><a href="connect_suite.init_per_group.html">init_per_group</a></td><td><a href="connect_suite.init_per_group.html#top"><</a> <a href="connect_suite.init_per_group.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">1</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">c2s_noproc</font></td><td><a href="connect_suite.reset_stream_noproc.html">reset_stream_noproc</a></td><td><a href="connect_suite.reset_stream_noproc.html#top"><</a> <a href="connect_suite.reset_stream_noproc.html#end">></a></td><td><font color="black">1.004s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">2</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">c2s_noproc</font></td><td><a href="connect_suite.starttls_noproc.html">starttls_noproc</a></td><td><a href="connect_suite.starttls_noproc.html#top"><</a> <a href="connect_suite.starttls_noproc.html#end">></a></td><td><font color="black">1.004s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">3</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">c2s_noproc</font></td><td><a href="connect_suite.compress_noproc.html">compress_noproc</a></td><td><a href="connect_suite.compress_noproc.html#top"><</a> <a href="connect_suite.compress_noproc.html#end">></a></td><td><font color="black">1.011s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">c2s_noproc</font></td><td><a href="connect_suite.end_per_group.html">end_per_group</a></td><td><a href="connect_suite.end_per_group.html#top"><</a> <a href="connect_suite.end_per_group.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">negative</font></td><td><a href="connect_suite.init_per_group.931733.275.html">init_per_group</a></td><td><a href="connect_suite.init_per_group.931733.275.html#top"><</a> <a href="connect_suite.init_per_group.931733.275.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">4</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">negative</font></td><td><a href="connect_suite.bad_xml.html">bad_xml</a></td><td><a href="connect_suite.bad_xml.html#top"><</a> <a href="connect_suite.bad_xml.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">5</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">negative</font></td><td><a href="connect_suite.invalid_host.html">invalid_host</a></td><td><a href="connect_suite.invalid_host.html#top"><</a> <a href="connect_suite.invalid_host.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">6</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">negative</font></td><td><a href="connect_suite.invalid_stream_namespace.html">invalid_stream_namespace</a></td><td><a href="connect_suite.invalid_stream_namespace.html#top"><</a> <a href="connect_suite.invalid_stream_namespace.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">negative</font></td><td><a href="connect_suite.end_per_group.931733.379.html">end_per_group</a></td><td><a href="connect_suite.end_per_group.931733.379.html#top"><</a> <a href="connect_suite.end_per_group.931733.379.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">pre_xmpp_1_0</font></td><td><a href="connect_suite.init_per_group.931733.404.html">init_per_group</a></td><td><a href="connect_suite.init_per_group.931733.404.html#top"><</a> <a href="connect_suite.init_per_group.931733.404.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">7</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">pre_xmpp_1_0</font></td><td><a href="connect_suite.pre_xmpp_1_0_stream.html">pre_xmpp_1_0_stream</a></td><td><a href="connect_suite.pre_xmpp_1_0_stream.html#top"><</a> <a href="connect_suite.pre_xmpp_1_0_stream.html#end">></a></td><td><font color="black">0.202s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">pre_xmpp_1_0</font></td><td><a href="connect_suite.end_per_group.931733.657.html">end_per_group</a></td><td><a href="connect_suite.end_per_group.931733.657.html#top"><</a> <a href="connect_suite.end_per_group.931733.657.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">starttls</font></td><td><a href="connect_suite.init_per_group.931733.683.html">init_per_group</a></td><td><a href="connect_suite.init_per_group.931733.683.html#top"><</a> <a href="connect_suite.init_per_group.931733.683.html#end">></a></td><td><font color="black">5.774s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">8</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">starttls</font></td><td><a href="connect_suite.should_pass_with_tlsv1.html">should_pass_with_tlsv1</a></td><td><a href="connect_suite.should_pass_with_tlsv1.html#top"><</a> <a href="connect_suite.should_pass_with_tlsv1.html#end">></a></td><td><font color="black">0.239s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">9</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">starttls</font></td><td><a href="connect_suite.%27should_pass_with_tlsv1.1%27.html">'should_pass_with_tlsv1.1'</a></td><td><a href="connect_suite.%27should_pass_with_tlsv1.1%27.html#top"><</a> <a href="connect_suite.%27should_pass_with_tlsv1.1%27.html#end">></a></td><td><font color="black">0.241s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">10</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">starttls</font></td><td><a href="connect_suite.%27should_pass_with_tlsv1.2%27.html">'should_pass_with_tlsv1.2'</a></td><td><a href="connect_suite.%27should_pass_with_tlsv1.2%27.html#top"><</a> <a href="connect_suite.%27should_pass_with_tlsv1.2%27.html#end">></a></td><td><font color="black">0.241s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">11</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">starttls</font></td><td><a href="connect_suite.should_fail_with_sslv3.html">should_fail_with_sslv3</a></td><td><a href="connect_suite.should_fail_with_sslv3.html#top"><</a> <a href="connect_suite.should_fail_with_sslv3.html#end">></a></td><td><font color="black">0.028s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">12</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">starttls</font></td><td><a href="connect_suite.should_fail_to_authenticate_without_starttls.html">should_fail_to_authenticate_without_starttls</a></td><td><a href="connect_suite.should_fail_to_authenticate_without_starttls.html#top"><</a> <a href="connect_suite.should_fail_to_authenticate_without_starttls.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">13</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">starttls</font></td><td><a href="connect_suite.should_not_send_other_features_with_starttls_required.html">should_not_send_other_features_with_starttls_required</a></td><td><a href="connect_suite.should_not_send_other_features_with_starttls_required.html#top"><</a> <a href="connect_suite.should_not_send_other_features_with_starttls_required.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">starttls</font></td><td><a href="connect_suite.end_per_group.931740.398.html">end_per_group</a></td><td><a href="connect_suite.end_per_group.931740.398.html#top"><</a> <a href="connect_suite.end_per_group.931740.398.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">tls</font></td><td><a href="connect_suite.init_per_group.931740.423.html">init_per_group</a></td><td><a href="connect_suite.init_per_group.931740.423.html#top"><</a> <a href="connect_suite.init_per_group.931740.423.html#end">></a></td><td><font color="black">5.711s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">14</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">tls</font></td><td><a href="connect_suite.should_pass_with_tlsv1.931746.162.html">should_pass_with_tlsv1</a></td><td><a href="connect_suite.should_pass_with_tlsv1.931746.162.html#top"><</a> <a href="connect_suite.should_pass_with_tlsv1.931746.162.html#end">></a></td><td><font color="black">0.221s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">15</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">tls</font></td><td><a href="connect_suite.%27should_pass_with_tlsv1.1%27.931746.409.html">'should_pass_with_tlsv1.1'</a></td><td><a href="connect_suite.%27should_pass_with_tlsv1.1%27.931746.409.html#top"><</a> <a href="connect_suite.%27should_pass_with_tlsv1.1%27.931746.409.html#end">></a></td><td><font color="black">0.222s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">16</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">tls</font></td><td><a href="connect_suite.%27should_pass_with_tlsv1.2%27.931746.656.html">'should_pass_with_tlsv1.2'</a></td><td><a href="connect_suite.%27should_pass_with_tlsv1.2%27.931746.656.html#top"><</a> <a href="connect_suite.%27should_pass_with_tlsv1.2%27.931746.656.html#end">></a></td><td><font color="black">0.223s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">tls</font></td><td><a href="connect_suite.end_per_group.931746.904.html">end_per_group</a></td><td><a href="connect_suite.end_per_group.931746.904.html#top"><</a> <a href="connect_suite.end_per_group.931746.904.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">ciphers_default</font></td><td><a href="connect_suite.init_per_group.931746.929.html">init_per_group</a></td><td><a href="connect_suite.init_per_group.931746.929.html#top"><</a> <a href="connect_suite.init_per_group.931746.929.html#end">></a></td><td><font color="black">5.747s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">17</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">ciphers_default</font></td><td><a href="connect_suite.clients_can_connect_with_advertised_ciphers.html">clients_can_connect_with_advertised_ciphers</a></td><td><a href="connect_suite.clients_can_connect_with_advertised_ciphers.html#top"><</a> <a href="connect_suite.clients_can_connect_with_advertised_ciphers.html#end">></a></td><td><font color="black">1.017s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">18</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">ciphers_default</font></td><td><a href="connect_suite.%27clients_can_connect_with_dhe-rsa-aes256-sha%27.html">'clients_can_connect_with_DHE-RSA-AES256-SHA'</a></td><td><a href="connect_suite.%27clients_can_connect_with_dhe-rsa-aes256-sha%27.html#top"><</a> <a href="connect_suite.%27clients_can_connect_with_dhe-rsa-aes256-sha%27.html#end">></a></td><td><font color="black">1.036s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">19</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">ciphers_default</font></td><td><a href="connect_suite.%27clients_can_connect_with_dhe-rsa-aes128-sha%27.html">'clients_can_connect_with_DHE-RSA-AES128-SHA'</a></td><td><a href="connect_suite.%27clients_can_connect_with_dhe-rsa-aes128-sha%27.html#top"><</a> <a href="connect_suite.%27clients_can_connect_with_dhe-rsa-aes128-sha%27.html#end">></a></td><td><font color="black">1.015s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">ciphers_default</font></td><td><a href="connect_suite.end_per_group.931755.848.html">end_per_group</a></td><td><a href="connect_suite.end_per_group.931755.848.html#top"><</a> <a href="connect_suite.end_per_group.931755.848.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">node2_supports_DHE-RSA-AES256-SHA_only</font></td><td><a href="connect_suite.init_per_group.931755.873.html">init_per_group</a></td><td><a href="connect_suite.init_per_group.931755.873.html#top"><</a> <a href="connect_suite.init_per_group.931755.873.html#end">></a></td><td><font color="black">9.150s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">20</font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">node2_supports_DHE-RSA-AES256-SHA_only</font></td><td><a href="connect_suite.%27clients_can_connect_with_dhe-rsa-aes256-sha_only%27.html">'clients_can_connect_with_DHE-RSA-AES256-SHA_only'</a></td><td><a href="connect_suite.%27clients_can_connect_with_dhe-rsa-aes256-sha_only%27.html#top"><</a> <a href="connect_suite.%27clients_can_connect_with_dhe-rsa-aes256-sha_only%27.html#end">></a></td><td><font color="black">0.969s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black">node2_supports_DHE-RSA-AES256-SHA_only</font></td><td><a href="connect_suite.end_per_group.931766.44.html">end_per_group</a></td><td><a href="connect_suite.end_per_group.931766.44.html#top"><</a> <a href="connect_suite.end_per_group.931766.44.html#end">></a></td><td><font color="black">11.388s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">connect_SUITE</font></td><td><font color="black"></font></td><td><a href="connect_suite.end_per_suite.html">end_per_suite</a></td><td><a href="connect_suite.end_per_suite.html#top"><</a> <a href="connect_suite.end_per_suite.html#end">></a></td><td><font color="black">7.287s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+
+</tbody>
+<tfoot>
+<tr><td></td><td><b>TOTAL</b></td><td></td><td></td><td></td><td>54.785s</td><td><b>Ok</b></td><td>20 Ok, 0 Failed of 20</td></tr>
+</tfoot>
+
+</table>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Jan 27 2016 21:55:30<!/date><br />
+</div>
+</center>
+</body>
+</html>

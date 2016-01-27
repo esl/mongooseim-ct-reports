@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test muc_SUITE:admin_member_list_allowed result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="muc_suite.src.html#admin_member_list_allowed-1">muc_SUITE:admin_member_list_allowed/1</a> (click for source code)
+
+=== Config value:
+
+    [{nick,<<"alicesnick">>},
+     {room,<<"alicesroom">>},
+     {watchdog,<0.11647.1>},
+     {preset,"pgsql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-1cccf8b9-4292-4bb0-a77c-b8fab9b03073.2016-01-27_21.48.06/ejabberd_tests.tests.muc_SUITE.logs/run.2016-01-27_22.17.38/muc_suite.admin_member_list_allowed.html"},
+     {tc_group_properties,[{name,admin}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/muc_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-1cccf8b9-4292-4bb0-a77c-b8fab9b03073.2016-01-27_21.48.06/ejabberd_tests.tests.muc_SUITE.logs/run.2016-01-27_22.17.38/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"makota">>}]},
+                     {bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]},
+                     {kate,[{username,<<"kate">>},
+                            {server,<<"localhost">>},
+                            {password,<<"makrowe;p">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-1cccf8b9-4292-4bb0-a77c-b8fab9b03073.2016-01-27_21.48.06"
+
+=== Started at 2016-01-27 22:18:20
+
+<br />
+
+<div class="error_logger"><b>*** System report during muc_SUITE:admin_member_list_allowed/1 in admin 2016-01-27 22:18:20.225 ***</b>
+
+=INFO REPORT==== 27-Jan-2016::22:18:20 ===
+DEPRECATED resource counts [1,1,1] (use [{alice, 1}, ...] or similar) at [{escalus_story,
+                                                                           clients_from_resource_counts,
+                                                                           2,
+                                                                           [{file,
+                                                                             "src/escalus_story.erl"},
+                                                                            {line,
+                                                                             174}]},
+                                                                          {escalus_story,
+                                                                           story,
+                                                                           3,
+                                                                           [{file,
+                                                                             "src/escalus_story.erl"},
+                                                                            {line,
+                                                                             34}]},
+                                                                          {muc_SUITE,
+                                                                           admin_member_list_allowed,
+                                                                           1,
+                                                                           [{file,
+                                                                             "muc_SUITE.erl"},
+                                                                            {line,
+                                                                             1555}]},
+                                                                          {test_server,
+                                                                           ts_tc,
+                                                                           3,
+                                                                           [{file,
+                                                                             "test_server.erl"},
+                                                                            {line,
+                                                                             1429}]},
+                                                                          {test_server,
+                                                                           run_test_case_eval1,
+                                                                           6,
+                                                                           [{file,
+                                                                             "test_server.erl"},
+                                                                            {line,
+                                                                             1026}]},
+                                                                          {test_server,
+                                                                           run_test_case_eval,
+                                                                           9,
+                                                                           [{file,
+                                                                             "test_server.erl"},
+                                                                            {line,
+                                                                             968}]}]
+
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-01-27 22:18:26
+=== successfully completed test case
+=== returned value = ok
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Jan 27 2016 22:18:20<!/date><br />
+</div>
+</center>
+</body>
+</html>
