@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test mam_SUITE:init_per_group result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Config function: <a href="mam_suite.src.html#init_per_group-1">mam_SUITE:init_per_group/2</a> (click for source code)
+
+=== Group properties: [{name,riak_timed_yz_buckets_muc_rsm}]
+
+=== Config value:
+
+    [{old_mam_shaper,{maxrate,1}},
+     {escalus_user_db,{module,escalus_ejabberd}},
+     {watchdog,<0.15716.0>},
+     {preset,"riak_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-fe2daee9-8b1b-490e-ab98-dd18bb3d9ad9.2016-02-01_23.12.24/ejabberd_tests.tests.mam_SUITE.logs/run.2016-02-01_23.22.03/mam_suite.init_per_group.369012.682.html"},
+     {tc_group_properties,[{name,riak_timed_yz_buckets_muc_rsm}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/mam_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-fe2daee9-8b1b-490e-ab98-dd18bb3d9ad9.2016-02-01_23.12.24/ejabberd_tests.tests.mam_SUITE.logs/run.2016-02-01_23.22.03/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-fe2daee9-8b1b-490e-ab98-dd18bb3d9ad9.2016-02-01_23.12.24"
+
+=== Started at 2016-02-01 23:23:32
+
+<br />
+
+<div class="default"><b>*** User 2016-02-01 23:23:32.688 ***</b>
+Init per group riak_timed_yz_buckets_muc_rsm; configuration riak_timed_yz_buckets; basic group muc_rsm
+</div>
+<div class="ct_internal"><b>*** CT 2016-02-01 23:23:37.530 *** history.xml</b>
+<a href="log_private/pre_rsm.xml" type=[]>pre_rsm.xml</a>
+
+</div>
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-02-01 23:23:37.932 ***</b>
+mam_SUITE:init_per_group failed
+Reason: {test_case_failed,Respond size is 0, 15 is expected.}
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-02-01 23:23:37
+=== location [{mam_SUITE,'-send_muc_rsm_messages/1-fun-0-',<a href="mam_suite.src.html#2095">2095</a>},
+              {escalus_story,story,40},
+              {mam_SUITE,send_muc_rsm_messages,<a href="mam_suite.src.html#2101">2101</a>},
+              {mam_SUITE,init_state,<a href="mam_suite.src.html#614">614</a>},
+              {mam_SUITE,init_per_group,<a href="mam_suite.src.html#338">338</a>},
+              {test_server,ts_tc,1429},
+              {test_server,run_test_case_eval1,1099}]
+=== reason = {test_case_failed,"Respond size is 0, 15 is expected."}
+=== 
+*** init_per_group failed.
+    Skipping all cases.
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Mon Feb 01 2016 23:23:32<!/date><br />
+</div>
+</center>
+</body>
+</html>
