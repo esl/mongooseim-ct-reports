@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_tests.tests.muc_SUITE results</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+// Parser for date format, e.g: Wed Jul 4 2012 11:24:15
+var monthNames = {};
+monthNames["Jan"] = "01"; monthNames["Feb"] = "02";
+monthNames["Mar"] = "03"; monthNames["Apr"] = "04";
+monthNames["May"] = "05"; monthNames["Jun"] = "06";
+monthNames["Jul"] = "07"; monthNames["Aug"] = "08";
+monthNames["Sep"] = "09"; monthNames["Oct"] = "10";
+monthNames["Nov"] = "11"; monthNames["Dec"] = "12";
+$.tablesorter.addParser({
+  id: 'CTDateSorter',
+  is: function(s) {
+      return false; },
+  format: function(s) {
+      if (s.length < 2) return 999999999;
+      else {
+          var date = s.match(/(\w{3})\s(\w{3})\s(\d{2})\s(\d{4})\s(\d{2}):(\d{2}):(\d{2})/);
+          var y = date[4]; var mo = monthNames[date[2]]; var d = String(date[3]);
+          var h = String(date[5]); var mi = String(date[6]); var sec = String(date[7]);
+          return (parseInt('' + y + mo + d + h + mi + sec)); }},
+  type: 'numeric' });
+// Parser for general text format
+$.tablesorter.addParser({
+  id: 'CTTextSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return 'zzzzzzzz';
+    else if (s == "?") return 'zzzzzzz';
+    else if (s == "-") return 'zzzzzz';
+    else if (s == "FAILED") return 'A';
+    else if (s == "SKIPPED") return 'B';
+    else if (s == "OK") return 'C';
+    else return '' + s; },
+  type: 'text' });
+// Parser for numerical values
+$.tablesorter.addParser({
+  id: 'CTValSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return '-2';
+    else if (s == "?") return '-1';
+    else if ((s.search(/(\d{1,})\s/)) >= 0) {
+      var num = s.match(/(\d{1,})\s/);
+      return (parseInt('' + num[1])); }
+    else if ((s.search(/(\d{1,})\.(\d{3})s/)) >= 0) {
+      var num = s.match(/(\d{1,})\.(\d{3})/);
+      if (num[1] == "0") return (parseInt('' + num[2]));
+      else return (parseInt('' + num[1] + num[2])); }
+    else return '' + s; },
+  type: 'numeric' });
+$(document).ready(function() {
+  $("#SortableTable").tablesorter({
+    headers: { 
+      0: { sorter: 'CTValSorter' },
+      1: { sorter: 'CTTextSorter' },
+      2: { sorter: 'CTTextSorter' },
+      3: { sorter: 'CTTextSorter' },
+      5: { sorter: 'CTValSorter' },
+      6: { sorter: 'CTTextSorter' },
+      7: { sorter: 'CTTextSorter' }
+    }
+  });
+  $("#SortableTable").trigger("update");
+  $("#SortableTable").trigger("appendCache");
+});
+</script>
+</head>
+<body>
+<div class="label">'internal_mnesia'</div>
+
+<h1>Results for <i>ejabberd_tests.tests.muc_SUITE</i></h1>
+<h4>Test started at 2016-02-01 08:59:10</h4>
+<p><b>Host info:</b><br />
+Run by travis on testing-gce-5c7c854c-daf1-4c88-9d88-557e12cc8885<br />Used Erlang v6.4 in "/home/travis/otp/17.5"</p>
+<p><ul>
+<li><a href="suite.log">Full textual log</a></li>
+<li><a href="cover.html">Coverage log</a></li>
+<li><a href="unexpected_io.log.html">Unexpected I/O log</a></li>
+</ul></p>
+<p><i>Executing <b>100</b> test cases...</i>
+<br />
+</p>
+<table id="SortableTable">
+<thead>
+<tr><th>Num</th><th>Module</th><th>Group</th><th>Case</th><th>Log</th><th>Time</th><th>Result</th><th>Comment</th></tr>
+</thead>
+<tbody>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">muc_SUITE</font></td><td><font color="black"></font></td><td><a href="muc_suite.init_per_suite.html">init_per_suite</a></td><td><a href="muc_suite.init_per_suite.html#top"><</a> <a href="muc_suite.init_per_suite.html#end">></a></td><td><font color="black">died</font></td><td><font color="red">FAILED</font></td><td><font color="red">{escalus_tcp,init,169}</font><br /><font color="green"><font color="brown">{'EXIT',{badmatch,{...}}}</font></font></td></tr>
+<tr class="even"><td><font color="black">1</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">disco</font></td><td><font color="black">disco_service</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">2</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">disco</font></td><td><font color="black">disco_features</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">3</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">disco</font></td><td><font color="black">disco_rooms</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">4</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">disco</font></td><td><font color="black">disco_info</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">5</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">disco</font></td><td><font color="black">disco_items</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">6</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">disco</font></td><td><font color="black">disco_items_nonpublic</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">7</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">disco_rsm</font></td><td><font color="black">pagination_first5</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">8</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">disco_rsm</font></td><td><font color="black">pagination_last5</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">9</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">disco_rsm</font></td><td><font color="black">pagination_before10</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">10</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">disco_rsm</font></td><td><font color="black">pagination_after10</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">11</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">disco_rsm</font></td><td><font color="black">pagination_empty_rset</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">12</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">moderator</font></td><td><font color="black">moderator_subject</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">13</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">moderator</font></td><td><font color="black">moderator_subject_unauthorized</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">14</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">moderator</font></td><td><font color="black">moderator_kick</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">15</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">moderator</font></td><td><font color="black">moderator_kick_with_reason</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">16</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">moderator</font></td><td><font color="black">moderator_kick_unauthorized</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">17</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">moderator</font></td><td><font color="black">moderator_voice</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">18</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">moderator</font></td><td><font color="black">moderator_voice_with_reason</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">19</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">moderator</font></td><td><font color="black">moderator_voice_unauthorized</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">20</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">moderator</font></td><td><font color="black">moderator_voice_list</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">21</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">moderator</font></td><td><font color="black">moderator_voice_approval</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">22</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">moderator</font></td><td><font color="black">moderator_voice_forbidden</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">23</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">moderator</font></td><td><font color="black">moderator_voice_not_occupant</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">24</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">moderator</font></td><td><font color="black">moderator_voice_nonick</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">25</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_ban</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">26</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_ban_with_reason</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">27</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_ban_list</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">28</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_get_form</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">29</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_invalid_affiliation</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">30</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_invalid_jid</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">31</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_ban_higher_user</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">32</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_membership</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">33</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_membership_with_reason</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">34</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_member_list</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">35</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_member_list_allowed</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">36</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_moderator</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">37</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_moderator_with_reason</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">38</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_moderator_revoke_owner</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">39</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_moderator_list</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">40</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_invalid_role</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">41</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin</font></td><td><font color="black">admin_invalid_nick</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">42</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin_membersonly</font></td><td><font color="black">admin_mo_revoke</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">43</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin_membersonly</font></td><td><font color="black">admin_mo_invite</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">44</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin_membersonly</font></td><td><font color="black">admin_mo_invite_with_reason</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">45</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">admin_membersonly</font></td><td><font color="black">admin_mo_invite_mere</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">46</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">groupchat_user_enter</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">47</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">groupchat_user_enter_no_nickname</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">48</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">muc_user_enter</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">49</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">enter_non_anonymous_room</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">50</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">deny_access_to_password_protected_room</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">51</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">enter_password_protected_room</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">52</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">deny_accesss_to_memebers_only_room</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">53</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">deny_entry_to_a_banned_user</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">54</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">deny_entry_nick_conflict</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">55</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">multi_sessions_enter</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">56</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">multi_sessions_messages</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">57</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">multi_sessions_exit_session</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">58</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">multi_sessions_exit</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">59</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">deny_entry_with_multiple_sessions_disallowed</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">60</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">enter_room_with_logging</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">61</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">deny_entry_user_limit_reached</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">62</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">send_history</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">63</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">history_since</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">64</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">subject</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">65</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">no_subject</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">66</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">send_to_all</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">67</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">send_and_receive_private_message</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">68</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">send_private_groupchat</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">69</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">change_nickname</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">70</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">deny_nickname_change_conflict</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">71</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">change_availability_status</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">72</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">mediated_invite</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">73</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">one2one_chat_to_muc</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">74</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">exit_room</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">75</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">occupant</font></td><td><font color="black">exit_room_with_status</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">76</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">room_creation_not_allowed</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">77</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">cant_enter_locked_room</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">78</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">create_instant_room</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">79</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">destroy_locked_room</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">80</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">create_reserved_room</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">81</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">reserved_room_cancel</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">82</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">reserved_room_unacceptable</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">83</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">reserved_room_configuration</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">84</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">owner_grant_revoke</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">85</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">owner_grant_revoke_with_reason</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">86</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">owner_list</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">87</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">owner_unauthorized</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">88</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">admin_grant_revoke</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">89</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">admin_grant_revoke_with_reason</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">90</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">admin_list</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">91</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">admin_unauthorized</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">92</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">destroy</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">93</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">destroy_unauthorized</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">94</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">config_denial</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">95</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">config_cancel</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">96</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">configure</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">97</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">configure_logging</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">98</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">owner</font></td><td><font color="black">configure_anonymous</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black">99</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">room_management</font></td><td><font color="black">create_and_destroy_room</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="odd"><td><font color="black">100</font></td><td><font color="black">muc_SUITE</font></td><td><font color="black">room_management</font></td><td><font color="black">create_and_destroy_room_multiple_x_elements</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">muc_SUITE</font></td><td><font color="black"></font></td><td><font color="black">end_per_suite</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_suite failed</td></tr>
+
+</tbody>
+<tfoot>
+<tr><td></td><td><b>TOTAL</b></td><td></td><td></td><td></td><td>0.278s</td><td><b>Ok</b></td><td>0 Ok, 0 Failed, 100 Skipped of 100</td></tr>
+</tfoot>
+
+</table>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Mon Feb 01 2016 08:59:10<!/date><br />
+</div>
+</center>
+</body>
+</html>

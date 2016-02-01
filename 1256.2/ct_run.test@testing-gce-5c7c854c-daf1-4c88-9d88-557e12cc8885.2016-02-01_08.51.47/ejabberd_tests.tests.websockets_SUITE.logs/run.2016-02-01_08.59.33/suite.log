@@ -1,0 +1,65 @@
+=== Suite started at 2016-02-01 08:59:33
+=== Starting test, 6 test cases
+=cases         6
+=user          travis
+=host          testing-gce-5c7c854c-daf1-4c88-9d88-557e12cc8885
+=hosts         testing-gce-5c7c854c-daf1-4c88-9d88-557e12cc8885 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-02-01 08:59:33
+=case          websockets_SUITE:init_per_suite
+=logfile       websockets_suite.init_per_suite.html
+=started       2016-02-01 08:59:33
+=ended         2016-02-01 08:59:33
+=result        failed: {'EXIT',{badmatch,{error,econnrefused}}}, [{escalus_tcp,
+                                                                   init,169}]
+=== *** FAILED {websockets_SUITE,init_per_suite} ***
+=== 
+=case          websockets_SUITE:chat_msg
+=group_props   [{name,"ws_chat"}]
+=started       2016-02-01 08:59:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #1 {websockets_SUITE,chat_msg} ***
+=== 
+=case          websockets_SUITE:escape_chat_msg
+=group_props   [{name,"ws_chat"}]
+=started       2016-02-01 08:59:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #2 {websockets_SUITE,escape_chat_msg} ***
+=== 
+=case          websockets_SUITE:escape_attrs
+=group_props   [{name,"ws_chat"}]
+=started       2016-02-01 08:59:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #3 {websockets_SUITE,escape_attrs} ***
+=== 
+=case          websockets_SUITE:chat_msg
+=group_props   [{name,"wss_chat"}]
+=started       2016-02-01 08:59:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #4 {websockets_SUITE,chat_msg} ***
+=== 
+=case          websockets_SUITE:escape_chat_msg
+=group_props   [{name,"wss_chat"}]
+=started       2016-02-01 08:59:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #5 {websockets_SUITE,escape_chat_msg} ***
+=== 
+=case          websockets_SUITE:escape_attrs
+=group_props   [{name,"wss_chat"}]
+=started       2016-02-01 08:59:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #6 {websockets_SUITE,escape_attrs} ***
+=== 
+=case          websockets_SUITE:end_per_suite
+=started       2016-02-01 08:59:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping {websockets_SUITE,end_per_suite} ***
+=== TEST COMPLETE, 0 ok, 0 failed, 6 skipped of 6 test cases
+
+=finished      2016-02-01 08:59:33
+=failed        0
+=successful    0
+=user_skipped  0
+=auto_skipped  6
