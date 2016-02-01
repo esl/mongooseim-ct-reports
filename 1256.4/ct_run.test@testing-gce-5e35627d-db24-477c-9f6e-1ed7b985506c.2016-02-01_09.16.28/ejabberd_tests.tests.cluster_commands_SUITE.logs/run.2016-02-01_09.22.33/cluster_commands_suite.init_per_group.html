@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test cluster_commands_SUITE:init_per_group result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Config function: <a href="cluster_commands_suite.src.html#init_per_group-1">cluster_commands_SUITE:init_per_group/2</a> (click for source code)
+
+=== Group properties: [{name,clustered}]
+
+=== Config value:
+
+    [{ctl_path,"/home/travis/build/esl/MongooseIM/dev/mongooseim_node1/bin/mongooseimctl"},
+     {{ejabberd_cwd,ejabberd2@localhost},
+      "/home/travis/build/esl/MongooseIM/dev/mongooseim_node2"},
+     {watchdog,<0.13882.0>},
+     {preset,"odbc_pgsql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-5e35627d-db24-477c-9f6e-1ed7b985506c.2016-02-01_09.16.28/ejabberd_tests.tests.cluster_commands_SUITE.logs/run.2016-02-01_09.22.33/cluster_commands_suite.init_per_group.html"},
+     {tc_group_properties,[{name,clustered}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/cluster_commands_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-5e35627d-db24-477c-9f6e-1ed7b985506c.2016-02-01_09.16.28/ejabberd_tests.tests.cluster_commands_SUITE.logs/run.2016-02-01_09.22.33/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-5e35627d-db24-477c-9f6e-1ed7b985506c.2016-02-01_09.16.28"
+
+=== Started at 2016-02-01 09:22:33
+
+<br />
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-02-01 09:23:05.124 ***</b>
+cluster_commands_SUITE:init_per_group failed
+Reason: assertMatch_failed
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-02-01 09:23:05
+=== location [{distributed_helper,'-add_node_to_cluster/1-fun-2-',43},
+              {distributed_helper,add_node_to_cluster,43},
+              {cluster_commands_SUITE,init_per_group,<a href="cluster_commands_suite.src.html#72">72</a>},
+              {test_server,ts_tc,1429},
+              {test_server,run_test_case_eval1,1099},
+              {test_server,run_test_case_eval,968}]
+=== reason = {assertMatch_failed,
+                     [{module,distributed_helper},
+                      {line,43},
+                      {expression,"Res3"},
+                      {pattern,"\"Node added to cluster\" ++ _"},
+                      {value,
+                          "Adding Node to cluster failed:  \n=ERROR REPORT==== 1-Feb-2016::09:23:02 ===\nMnesia(ejabberd2@localhost): ** ERROR ** (core dumped to file: \"/home/travis/build/esl/MongooseIM/dev/mongooseim_node2/MnesiaCore.ejabberd2@localhost_1454_318582_130366\")\n ** FATAL ** mnesia_monitor crashed: {badarg,\n                                      [{ets,lookup,\n                                        [mnesia_decision,\n                                         'test@testing-gce-5e35627d-db24-477c-9f6e-1ed7b985506c'],\n                                        []},\n                                       {mnesia_recover,has_mnesia_down,1,\n                                        [{file,\"mnesia_recover.erl\"},\n                                         {line,301}]},\n                                       {mnesia_monitor,check_mnesia_down,2,\n                                        [{file,\"mnesia_monitor.erl\"},\n                                         {line,863}]},\n                                       {mnesia_monitor,handle_info,2,\n                                        [{file,\"mnesia_monitor.erl\"},\n                                         {line,581}]},\n                                       {gen_server,try_dispatch,4,\n                                        [{file,\"gen_server.erl\"},{line,593}]},\n                                       {gen_server,handle_msg,5,\n                                        [{file,\"gen_server.erl\"},{line,659}]},\n                                       {proc_lib,init_p_do_apply,3,\n                                        [{file,\"proc_lib.erl\"},{line,237}]}]} state: {state,\n                                                                                      <0.45.0>,\n                                                                                      [],\n                                                                                      [],\n                                                                                      true,\n                                                                                      [],\n                                                                                      undefined,\n                                                                                      [],\n                                                                                      []}\n\n=INFO REPORT==== 1-Feb-2016::09:23:05 ===\n    application: mnesia\n    exited: stopped\n    type: temporary\nok\n"}]}
+  in function  distributed_helper:'-add_node_to_cluster/1-fun-2-'/1 (distributed_helper.erl, line 43)
+  in call from distributed_helper:add_node_to_cluster/1 (distributed_helper.erl, line 43)
+  in call from cluster_commands_SUITE:init_per_group/2 (cluster_commands_SUITE.erl, line 72)
+  in call from test_server:ts_tc/3 (test_server.erl, line 1429)
+  in call from test_server:run_test_case_eval1/6 (test_server.erl, line 1099)
+  in call from test_server:run_test_case_eval/9 (test_server.erl, line 968)
+=== 
+*** init_per_group failed.
+    Skipping all cases.
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Mon Feb 01 2016 09:22:33<!/date><br />
+</div>
+</center>
+</body>
+</html>
