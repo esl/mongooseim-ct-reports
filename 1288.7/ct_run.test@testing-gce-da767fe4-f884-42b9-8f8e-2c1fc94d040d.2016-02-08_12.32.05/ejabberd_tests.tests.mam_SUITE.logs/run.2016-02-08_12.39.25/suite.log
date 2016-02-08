@@ -1,0 +1,1223 @@
+=== Suite started at 2016-02-08 12:39:25
+=== Starting test, 199 test cases
+=cases         199
+=user          travis
+=host          testing-gce-da767fe4-f884-42b9-8f8e-2c1fc94d040d
+=hosts         testing-gce-da767fe4-f884-42b9-8f8e-2c1fc94d040d 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-02-08 12:39:25
+=case          mam_SUITE:init_per_suite
+=logfile       mam_suite.init_per_suite.html
+=started       2016-02-08 12:39:25
+=ended         2016-02-08 12:39:25
+=result        failed: {'EXIT',{badmatch,{error,econnrefused}}}, [{escalus_tcp,
+                                                                   init,169}]
+=== *** FAILED {mam_SUITE,init_per_suite} ***
+=== 
+=case          mam_SUITE:mam_service_discovery
+=group_props   [{name,"riak_timed_yz_buckets_mam"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #1 {mam_SUITE,mam_service_discovery} ***
+=== 
+=case          mam_SUITE:simple_archive_request
+=group_props   [{name,"riak_timed_yz_buckets_mam"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #2 {mam_SUITE,simple_archive_request} ***
+=== 
+=case          mam_SUITE:range_archive_request
+=group_props   [{name,"riak_timed_yz_buckets_mam"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #3 {mam_SUITE,range_archive_request} ***
+=== 
+=case          mam_SUITE:range_archive_request_not_empty
+=group_props   [{name,"riak_timed_yz_buckets_mam"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #4 {mam_SUITE,range_archive_request_not_empty} ***
+=== 
+=case          mam_SUITE:limit_archive_request
+=group_props   [{name,"riak_timed_yz_buckets_mam"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #5 {mam_SUITE,limit_archive_request} ***
+=== 
+=case          mam_SUITE:mam_service_discovery
+=group_props   [{name,"riak_timed_yz_buckets_mam03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #6 {mam_SUITE,mam_service_discovery} ***
+=== 
+=case          mam_SUITE:simple_archive_request
+=group_props   [{name,"riak_timed_yz_buckets_mam03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #7 {mam_SUITE,simple_archive_request} ***
+=== 
+=case          mam_SUITE:range_archive_request
+=group_props   [{name,"riak_timed_yz_buckets_mam03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #8 {mam_SUITE,range_archive_request} ***
+=== 
+=case          mam_SUITE:range_archive_request_not_empty
+=group_props   [{name,"riak_timed_yz_buckets_mam03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #9 {mam_SUITE,range_archive_request_not_empty} ***
+=== 
+=case          mam_SUITE:limit_archive_request
+=group_props   [{name,"riak_timed_yz_buckets_mam03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #10 {mam_SUITE,limit_archive_request} ***
+=== 
+=case          mam_SUITE:mam_service_discovery
+=group_props   [{name,"riak_timed_yz_buckets_mam04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #11 {mam_SUITE,mam_service_discovery} ***
+=== 
+=case          mam_SUITE:simple_archive_request
+=group_props   [{name,"riak_timed_yz_buckets_mam04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #12 {mam_SUITE,simple_archive_request} ***
+=== 
+=case          mam_SUITE:range_archive_request
+=group_props   [{name,"riak_timed_yz_buckets_mam04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #13 {mam_SUITE,range_archive_request} ***
+=== 
+=case          mam_SUITE:range_archive_request_not_empty
+=group_props   [{name,"riak_timed_yz_buckets_mam04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #14 {mam_SUITE,range_archive_request_not_empty} ***
+=== 
+=case          mam_SUITE:limit_archive_request
+=group_props   [{name,"riak_timed_yz_buckets_mam04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #15 {mam_SUITE,limit_archive_request} ***
+=== 
+=case          mam_SUITE:purge_single_message
+=group_props   [{name,"riak_timed_yz_buckets_mam_purge"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #16 {mam_SUITE,purge_single_message} ***
+=== 
+=case          mam_SUITE:purge_multiple_messages
+=group_props   [{name,"riak_timed_yz_buckets_mam_purge"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #17 {mam_SUITE,purge_multiple_messages} ***
+=== 
+=case          mam_SUITE:muc_service_discovery
+=group_props   [{name,"riak_timed_yz_buckets_muc"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #18 {mam_SUITE,muc_service_discovery} ***
+=== 
+=case          mam_SUITE:muc_archive_request
+=group_props   [{name,"riak_timed_yz_buckets_muc"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #19 {mam_SUITE,muc_archive_request} ***
+=== 
+=case          mam_SUITE:muc_archive_purge
+=group_props   [{name,"riak_timed_yz_buckets_muc"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #20 {mam_SUITE,muc_archive_purge} ***
+=== 
+=case          mam_SUITE:muc_multiple_devices
+=group_props   [{name,"riak_timed_yz_buckets_muc"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #21 {mam_SUITE,muc_multiple_devices} ***
+=== 
+=case          mam_SUITE:muc_private_message
+=group_props   [{name,"riak_timed_yz_buckets_muc"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #22 {mam_SUITE,muc_private_message} ***
+=== 
+=case          mam_SUITE:muc_deny_private_room_access
+=group_props   [{name,"riak_timed_yz_buckets_muc"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #23 {mam_SUITE,muc_deny_private_room_access} ***
+=== 
+=case          mam_SUITE:muc_allow_access_to_owner
+=group_props   [{name,"riak_timed_yz_buckets_muc"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #24 {mam_SUITE,muc_allow_access_to_owner} ***
+=== 
+=case          mam_SUITE:muc_delete_x_user_in_anon_rooms
+=group_props   [{name,"riak_timed_yz_buckets_muc"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #25 {mam_SUITE,muc_delete_x_user_in_anon_rooms} ***
+=== 
+=case          mam_SUITE:muc_show_x_user_to_moderators_in_anon_rooms
+=group_props   [{name,"riak_timed_yz_buckets_muc"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #26 {mam_SUITE,muc_show_x_user_to_moderators_in_anon_rooms} ***
+=== 
+=case          mam_SUITE:muc_querying_for_all_messages
+=group_props   [{name,"riak_timed_yz_buckets_muc"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #27 {mam_SUITE,muc_querying_for_all_messages} ***
+=== 
+=case          mam_SUITE:muc_querying_for_all_messages_with_jid
+=group_props   [{name,"riak_timed_yz_buckets_muc"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #28 {mam_SUITE,muc_querying_for_all_messages_with_jid} ***
+=== 
+=case          mam_SUITE:muc_service_discovery
+=group_props   [{name,"riak_timed_yz_buckets_muc03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #29 {mam_SUITE,muc_service_discovery} ***
+=== 
+=case          mam_SUITE:muc_archive_request
+=group_props   [{name,"riak_timed_yz_buckets_muc03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #30 {mam_SUITE,muc_archive_request} ***
+=== 
+=case          mam_SUITE:muc_archive_purge
+=group_props   [{name,"riak_timed_yz_buckets_muc03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #31 {mam_SUITE,muc_archive_purge} ***
+=== 
+=case          mam_SUITE:muc_multiple_devices
+=group_props   [{name,"riak_timed_yz_buckets_muc03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #32 {mam_SUITE,muc_multiple_devices} ***
+=== 
+=case          mam_SUITE:muc_private_message
+=group_props   [{name,"riak_timed_yz_buckets_muc03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #33 {mam_SUITE,muc_private_message} ***
+=== 
+=case          mam_SUITE:muc_deny_private_room_access
+=group_props   [{name,"riak_timed_yz_buckets_muc03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #34 {mam_SUITE,muc_deny_private_room_access} ***
+=== 
+=case          mam_SUITE:muc_allow_access_to_owner
+=group_props   [{name,"riak_timed_yz_buckets_muc03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #35 {mam_SUITE,muc_allow_access_to_owner} ***
+=== 
+=case          mam_SUITE:muc_delete_x_user_in_anon_rooms
+=group_props   [{name,"riak_timed_yz_buckets_muc03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #36 {mam_SUITE,muc_delete_x_user_in_anon_rooms} ***
+=== 
+=case          mam_SUITE:muc_show_x_user_to_moderators_in_anon_rooms
+=group_props   [{name,"riak_timed_yz_buckets_muc03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #37 {mam_SUITE,muc_show_x_user_to_moderators_in_anon_rooms} ***
+=== 
+=case          mam_SUITE:muc_querying_for_all_messages
+=group_props   [{name,"riak_timed_yz_buckets_muc03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #38 {mam_SUITE,muc_querying_for_all_messages} ***
+=== 
+=case          mam_SUITE:muc_querying_for_all_messages_with_jid
+=group_props   [{name,"riak_timed_yz_buckets_muc03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #39 {mam_SUITE,muc_querying_for_all_messages_with_jid} ***
+=== 
+=case          mam_SUITE:muc_service_discovery
+=group_props   [{name,"riak_timed_yz_buckets_muc04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #40 {mam_SUITE,muc_service_discovery} ***
+=== 
+=case          mam_SUITE:muc_archive_request
+=group_props   [{name,"riak_timed_yz_buckets_muc04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #41 {mam_SUITE,muc_archive_request} ***
+=== 
+=case          mam_SUITE:muc_archive_purge
+=group_props   [{name,"riak_timed_yz_buckets_muc04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #42 {mam_SUITE,muc_archive_purge} ***
+=== 
+=case          mam_SUITE:muc_multiple_devices
+=group_props   [{name,"riak_timed_yz_buckets_muc04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #43 {mam_SUITE,muc_multiple_devices} ***
+=== 
+=case          mam_SUITE:muc_private_message
+=group_props   [{name,"riak_timed_yz_buckets_muc04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #44 {mam_SUITE,muc_private_message} ***
+=== 
+=case          mam_SUITE:muc_deny_private_room_access
+=group_props   [{name,"riak_timed_yz_buckets_muc04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #45 {mam_SUITE,muc_deny_private_room_access} ***
+=== 
+=case          mam_SUITE:muc_allow_access_to_owner
+=group_props   [{name,"riak_timed_yz_buckets_muc04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #46 {mam_SUITE,muc_allow_access_to_owner} ***
+=== 
+=case          mam_SUITE:muc_delete_x_user_in_anon_rooms
+=group_props   [{name,"riak_timed_yz_buckets_muc04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #47 {mam_SUITE,muc_delete_x_user_in_anon_rooms} ***
+=== 
+=case          mam_SUITE:muc_show_x_user_to_moderators_in_anon_rooms
+=group_props   [{name,"riak_timed_yz_buckets_muc04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #48 {mam_SUITE,muc_show_x_user_to_moderators_in_anon_rooms} ***
+=== 
+=case          mam_SUITE:muc_querying_for_all_messages
+=group_props   [{name,"riak_timed_yz_buckets_muc04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #49 {mam_SUITE,muc_querying_for_all_messages} ***
+=== 
+=case          mam_SUITE:muc_querying_for_all_messages_with_jid
+=group_props   [{name,"riak_timed_yz_buckets_muc04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #50 {mam_SUITE,muc_querying_for_all_messages_with_jid} ***
+=== 
+=case          mam_SUITE:muc_service_discovery
+=group_props   [{name,"riak_timed_yz_buckets_muc_with_pm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #51 {mam_SUITE,muc_service_discovery} ***
+=== 
+=case          mam_SUITE:muc_archive_request
+=group_props   [{name,"riak_timed_yz_buckets_muc_with_pm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #52 {mam_SUITE,muc_archive_request} ***
+=== 
+=case          mam_SUITE:muc_archive_purge
+=group_props   [{name,"riak_timed_yz_buckets_muc_with_pm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #53 {mam_SUITE,muc_archive_purge} ***
+=== 
+=case          mam_SUITE:muc_multiple_devices
+=group_props   [{name,"riak_timed_yz_buckets_muc_with_pm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #54 {mam_SUITE,muc_multiple_devices} ***
+=== 
+=case          mam_SUITE:muc_private_message
+=group_props   [{name,"riak_timed_yz_buckets_muc_with_pm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #55 {mam_SUITE,muc_private_message} ***
+=== 
+=case          mam_SUITE:muc_deny_private_room_access
+=group_props   [{name,"riak_timed_yz_buckets_muc_with_pm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #56 {mam_SUITE,muc_deny_private_room_access} ***
+=== 
+=case          mam_SUITE:muc_allow_access_to_owner
+=group_props   [{name,"riak_timed_yz_buckets_muc_with_pm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #57 {mam_SUITE,muc_allow_access_to_owner} ***
+=== 
+=case          mam_SUITE:muc_delete_x_user_in_anon_rooms
+=group_props   [{name,"riak_timed_yz_buckets_muc_with_pm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #58 {mam_SUITE,muc_delete_x_user_in_anon_rooms} ***
+=== 
+=case          mam_SUITE:muc_show_x_user_to_moderators_in_anon_rooms
+=group_props   [{name,"riak_timed_yz_buckets_muc_with_pm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #59 {mam_SUITE,muc_show_x_user_to_moderators_in_anon_rooms} ***
+=== 
+=case          mam_SUITE:muc_querying_for_all_messages
+=group_props   [{name,"riak_timed_yz_buckets_muc_with_pm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #60 {mam_SUITE,muc_querying_for_all_messages} ***
+=== 
+=case          mam_SUITE:muc_querying_for_all_messages_with_jid
+=group_props   [{name,"riak_timed_yz_buckets_muc_with_pm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #61 {mam_SUITE,muc_querying_for_all_messages_with_jid} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #62 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #63 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #64 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #65 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #66 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #67 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #68 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #69 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #70 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #71 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #72 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #73 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #74 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #75 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #76 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #77 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #78 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #79 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #80 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #81 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #82 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #83 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #84 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #85 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #86 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #87 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #88 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #89 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #90 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #91 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #92 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #93 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #94 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #95 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #96 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #97 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #98 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #99 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #100 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #101 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #102 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #103 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #104 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #105 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #106 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #107 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #108 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #109 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #110 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #111 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #112 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #113 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #114 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #115 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #116 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #117 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #118 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #119 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #120 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #121 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #122 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #123 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #124 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #125 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #126 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #127 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #128 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #129 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #130 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #131 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #132 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #133 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #134 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #135 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #136 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #137 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #138 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #139 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #140 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #141 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #142 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #143 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #144 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #145 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #146 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #147 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #148 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #149 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #150 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #151 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #152 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #153 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #154 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #155 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #156 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #157 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #158 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #159 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #160 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #161 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #162 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #163 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #164 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #165 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #166 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #167 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #168 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #169 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #170 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #171 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #172 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #173 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #174 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #175 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #176 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #177 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #178 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #179 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #180 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #181 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #182 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #183 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #184 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #185 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #186 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #187 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:purge_old_single_message
+=group_props   [{name,"riak_timed_yz_buckets_bootstrapped"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #188 {mam_SUITE,purge_old_single_message} ***
+=== 
+=case          mam_SUITE:querying_for_all_messages_with_jid
+=group_props   [{name,"riak_timed_yz_buckets_bootstrapped"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #189 {mam_SUITE,querying_for_all_messages_with_jid} ***
+=== 
+=case          mam_SUITE:archived
+=group_props   [{name,"riak_timed_yz_buckets_archived"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #190 {mam_SUITE,archived} ***
+=== 
+=case          mam_SUITE:strip_archived
+=group_props   [{name,"riak_timed_yz_buckets_archived"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #191 {mam_SUITE,strip_archived} ***
+=== 
+=case          mam_SUITE:filter_forwarded
+=group_props   [{name,"riak_timed_yz_buckets_archived"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #192 {mam_SUITE,filter_forwarded} ***
+=== 
+=case          mam_SUITE:policy_violation
+=group_props   [{name,"riak_timed_yz_buckets_policy_violation"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #193 {mam_SUITE,policy_violation} ***
+=== 
+=case          mam_SUITE:offline_message
+=group_props   [{name,"riak_timed_yz_buckets_nostore"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #194 {mam_SUITE,offline_message} ***
+=== 
+=case          mam_SUITE:nostore_hint
+=group_props   [{name,"riak_timed_yz_buckets_nostore"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #195 {mam_SUITE,nostore_hint} ***
+=== 
+=case          mam_SUITE:prefs_set_request
+=group_props   [{name,"riak_timed_yz_buckets_prefs_cases"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #196 {mam_SUITE,prefs_set_request} ***
+=== 
+=case          mam_SUITE:prefs_set_cdata_request
+=group_props   [{name,"riak_timed_yz_buckets_prefs_cases"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #197 {mam_SUITE,prefs_set_cdata_request} ***
+=== 
+=case          mam_SUITE:run_prefs_cases
+=group_props   [{name,"riak_timed_yz_buckets_prefs_cases"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #198 {mam_SUITE,run_prefs_cases} ***
+=== 
+=case          mam_SUITE:run_set_and_get_prefs_cases
+=group_props   [{name,"riak_timed_yz_buckets_prefs_cases"}]
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #199 {mam_SUITE,run_set_and_get_prefs_cases} ***
+=== 
+=case          mam_SUITE:end_per_suite
+=started       2016-02-08 12:39:25
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping {mam_SUITE,end_per_suite} ***
+=== TEST COMPLETE, 0 ok, 0 failed, 199 skipped of 199 test cases
+
+=finished      2016-02-08 12:39:25
+=failed        0
+=successful    0
+=user_skipped  0
+=auto_skipped  199
