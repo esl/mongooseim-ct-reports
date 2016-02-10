@@ -1,0 +1,285 @@
+=== Suite started at 2016-02-10 17:42:26
+=== Starting test, 11 test cases
+=cases         11
+=user          travis
+=host          testing-gce-7d09f96b-f285-4fc4-99a9-cb2d868f4013
+=hosts         testing-gce-7d09f96b-f285-4fc4-99a9-cb2d868f4013 
+=emulator_vsn  7.1
+=emulator      beam
+=otp_release   18
+=started       2016-02-10 17:42:26
+=case          metrics_api_SUITE:init_per_suite
+=logfile       metrics_api_suite.init_per_suite.html
+=started       2016-02-10 17:42:26
+=ended         2016-02-10 17:42:26
+=result        ok
+=elapsed       0.017032
+=case          metrics_api_SUITE:init_per_group
+=logfile       metrics_api_suite.init_per_group.html
+=group_props   [{name,metrics}]
+=started       2016-02-10 17:42:26
+=ended         2016-02-10 17:42:26
+=result        ok
+=elapsed       0.501949
+=case          metrics_api_SUITE:message_flow
+=logfile       metrics_api_suite.message_flow.html
+=started       2016-02-10 17:42:26
+=ended         2016-02-10 17:42:26
+=result        failed: {test_case_failed,katt_transactions_failed}, [{test_server,
+                                                                      ts_tc,
+                                                                      1408},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      984},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      926}]
+=== *** FAILED test case 1 of 11 ***
+=case          metrics_api_SUITE:end_per_group
+=logfile       metrics_api_suite.end_per_group.html
+=group_props   [{name,metrics}]
+=started       2016-02-10 17:42:26
+=ended         2016-02-10 17:42:27
+=result        ok
+=elapsed       0.921125
+=group_time    0.594s
+=case          metrics_api_SUITE:init_per_group
+=logfile       metrics_api_suite.init_per_group.2230.html
+=group_props   [{name,stories}]
+=started       2016-02-10 17:42:27
+=ended         2016-02-10 17:42:28
+=result        ok
+=elapsed       0.503357
+=case          metrics_api_SUITE:one_client_just_logs_in
+=logfile       metrics_api_suite.one_client_just_logs_in.html
+=started       2016-02-10 17:42:28
+=ended         2016-02-10 17:42:28
+=result        failed: {test_case_failed,katt_transactions_failed}, [{metrics_api_SUITE,
+                                                                      fetch_counter_value,
+                                                                      249},
+                                                                     {metrics_api_SUITE,
+                                                                      '-fetch_all/2-lc$^0/1-0-',
+                                                                      238},
+                                                                     {metrics_api_SUITE,
+                                                                      instrumented_story,
+                                                                      230},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1408},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      984},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      926}]
+=== *** FAILED test case 2 of 11 ***
+=case          metrics_api_SUITE:two_clients_just_log_in
+=logfile       metrics_api_suite.two_clients_just_log_in.html
+=started       2016-02-10 17:42:28
+=ended         2016-02-10 17:42:28
+=result        failed: {test_case_failed,katt_transactions_failed}, [{metrics_api_SUITE,
+                                                                      fetch_counter_value,
+                                                                      249},
+                                                                     {metrics_api_SUITE,
+                                                                      '-fetch_all/2-lc$^0/1-0-',
+                                                                      238},
+                                                                     {metrics_api_SUITE,
+                                                                      instrumented_story,
+                                                                      230},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1408},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      984},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      926}]
+=== *** FAILED test case 3 of 11 ***
+=case          metrics_api_SUITE:one_message_sent
+=logfile       metrics_api_suite.one_message_sent.html
+=started       2016-02-10 17:42:28
+=ended         2016-02-10 17:42:28
+=result        failed: {test_case_failed,katt_transactions_failed}, [{metrics_api_SUITE,
+                                                                      fetch_counter_value,
+                                                                      249},
+                                                                     {metrics_api_SUITE,
+                                                                      '-fetch_all/2-lc$^0/1-0-',
+                                                                      238},
+                                                                     {metrics_api_SUITE,
+                                                                      instrumented_story,
+                                                                      230},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1408},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      984},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      926}]
+=== *** FAILED test case 4 of 11 ***
+=case          metrics_api_SUITE:one_direct_presence_sent
+=logfile       metrics_api_suite.one_direct_presence_sent.html
+=started       2016-02-10 17:42:28
+=ended         2016-02-10 17:42:28
+=result        failed: {test_case_failed,katt_transactions_failed}, [{metrics_api_SUITE,
+                                                                      fetch_counter_value,
+                                                                      249},
+                                                                     {metrics_api_SUITE,
+                                                                      '-fetch_all/2-lc$^0/1-0-',
+                                                                      238},
+                                                                     {metrics_api_SUITE,
+                                                                      instrumented_story,
+                                                                      230},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1408},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      984},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      926}]
+=== *** FAILED test case 5 of 11 ***
+=case          metrics_api_SUITE:one_iq_sent
+=logfile       metrics_api_suite.one_iq_sent.html
+=started       2016-02-10 17:42:28
+=ended         2016-02-10 17:42:28
+=result        failed: {test_case_failed,katt_transactions_failed}, [{metrics_api_SUITE,
+                                                                      fetch_counter_value,
+                                                                      249},
+                                                                     {metrics_api_SUITE,
+                                                                      '-fetch_all/2-lc$^0/1-0-',
+                                                                      238},
+                                                                     {metrics_api_SUITE,
+                                                                      instrumented_story,
+                                                                      230},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1408},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      984},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      926}]
+=== *** FAILED test case 6 of 11 ***
+=case          metrics_api_SUITE:one_message_error
+=logfile       metrics_api_suite.one_message_error.html
+=started       2016-02-10 17:42:28
+=ended         2016-02-10 17:42:28
+=result        failed: {test_case_failed,katt_transactions_failed}, [{metrics_api_SUITE,
+                                                                      fetch_counter_value,
+                                                                      249},
+                                                                     {metrics_api_SUITE,
+                                                                      '-fetch_all/2-lc$^0/1-0-',
+                                                                      238},
+                                                                     {metrics_api_SUITE,
+                                                                      instrumented_story,
+                                                                      230},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1408},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      984},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      926}]
+=== *** FAILED test case 7 of 11 ***
+=case          metrics_api_SUITE:one_iq_error
+=logfile       metrics_api_suite.one_iq_error.html
+=started       2016-02-10 17:42:28
+=ended         2016-02-10 17:42:28
+=result        failed: {test_case_failed,katt_transactions_failed}, [{metrics_api_SUITE,
+                                                                      fetch_counter_value,
+                                                                      249},
+                                                                     {metrics_api_SUITE,
+                                                                      '-fetch_all/2-lc$^0/1-0-',
+                                                                      238},
+                                                                     {metrics_api_SUITE,
+                                                                      instrumented_story,
+                                                                      230},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1408},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      984},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      926}]
+=== *** FAILED test case 8 of 11 ***
+=case          metrics_api_SUITE:one_presence_error
+=logfile       metrics_api_suite.one_presence_error.html
+=started       2016-02-10 17:42:28
+=ended         2016-02-10 17:42:28
+=result        failed: {test_case_failed,katt_transactions_failed}, [{metrics_api_SUITE,
+                                                                      fetch_counter_value,
+                                                                      249},
+                                                                     {metrics_api_SUITE,
+                                                                      '-fetch_all/2-lc$^0/1-0-',
+                                                                      238},
+                                                                     {metrics_api_SUITE,
+                                                                      instrumented_story,
+                                                                      230},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1408},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      984},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      926}]
+=== *** FAILED test case 9 of 11 ***
+=case          metrics_api_SUITE:end_per_group
+=logfile       metrics_api_suite.end_per_group.2234.html
+=group_props   [{name,stories}]
+=started       2016-02-10 17:42:28
+=ended         2016-02-10 17:42:29
+=result        ok
+=elapsed       0.923419
+=group_time    0.860s
+=case          metrics_api_SUITE:init_per_group
+=logfile       metrics_api_suite.init_per_group.2238.html
+=group_props   [{name,global}]
+=started       2016-02-10 17:42:29
+=ended         2016-02-10 17:42:30
+=result        ok
+=elapsed       0.50178
+=case          metrics_api_SUITE:session_counters
+=logfile       metrics_api_suite.session_counters.html
+=started       2016-02-10 17:42:30
+=ended         2016-02-10 17:42:31
+=result        ok
+=elapsed       1.385924
+=case          metrics_api_SUITE:node_uptime
+=logfile       metrics_api_suite.node_uptime.html
+=started       2016-02-10 17:42:31
+=ended         2016-02-10 17:42:32
+=result        ok
+=elapsed       1.010654
+=case          metrics_api_SUITE:end_per_group
+=logfile       metrics_api_suite.end_per_group.2242.html
+=group_props   [{name,global}]
+=started       2016-02-10 17:42:32
+=ended         2016-02-10 17:42:33
+=result        ok
+=elapsed       0.926635
+=group_time    2.982s
+=case          metrics_api_SUITE:end_per_suite
+=logfile       metrics_api_suite.end_per_suite.html
+=started       2016-02-10 17:42:33
+=ended         2016-02-10 17:42:33
+=result        ok
+=elapsed       0.037952
+=group_time    7.355s
+=== TEST COMPLETE, 2 ok, 9 failed of 11 test cases
+
+=finished      2016-02-10 17:42:33
+=failed        9
+=successful    2
+=user_skipped  0
+=auto_skipped  0

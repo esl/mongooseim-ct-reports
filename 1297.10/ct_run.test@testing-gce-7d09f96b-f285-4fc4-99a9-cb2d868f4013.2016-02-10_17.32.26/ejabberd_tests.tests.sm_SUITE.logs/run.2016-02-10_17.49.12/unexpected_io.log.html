@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Unexpected I/O log</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<br />
+<h3>Unexpected I/O</h3>
+<pre>
+
+<div class="error_logger"><b>*** System report during sm_SUITE:too_many_unacked_stanzas/1 in client_acking 2016-02-10 17:49:31.955 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:49:31 ===
+following stanzas shouldn't be there:
+  * <r xmlns='urn:xmpp:sm:3'/>
+
+</div>
+<div class="error_logger"><b>*** System report during sm_SUITE:server_requests_ack/1 in client_acking 2016-02-10 17:49:33.131 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:49:33 ===
+following stanzas shouldn't be there:
+  * <r xmlns='urn:xmpp:sm:3'/>
+
+</div>
+<div class="error_logger"><b>*** System report during sm_SUITE:server_requests_ack/1 in client_acking 2016-02-10 17:49:41.142 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:49:41 ===
+following stanzas shouldn't be there:
+  * <r xmlns='urn:xmpp:sm:3'/>
+
+</div>
+<div class="error_logger"><b>*** System report during sm_SUITE:too_many_unacked_stanzas/1 in client_acking 2016-02-10 17:49:48.925 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:49:48 ===
+following stanzas shouldn't be there:
+  * <r xmlns='urn:xmpp:sm:3'/>
+
+</div>
+<div class="error_logger"><b>*** System report during sm_SUITE:too_many_unacked_stanzas/1 in client_acking 2016-02-10 17:49:49.925 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:49:49 ===
+following stanzas shouldn't be there:
+  * <r xmlns='urn:xmpp:sm:3'/>
+
+</div>
+<div class="error_logger"><b>*** System report during sm_SUITE:server_requests_ack/1 in client_acking 2016-02-10 17:49:51.587 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:49:51 ===
+following stanzas shouldn't be there:
+  * <r xmlns='urn:xmpp:sm:3'/>
+
+</div>
+<div class="error_logger"><b>*** System report during sm_SUITE:server_requests_ack/1 in client_acking 2016-02-10 17:50:05.703 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:50:05 ===
+following stanzas shouldn't be there:
+  * <r xmlns='urn:xmpp:sm:3'/>
+
+</div>
+<div class="error_logger"><b>*** System report during sm_SUITE:too_many_unacked_stanzas/1 in client_acking 2016-02-10 17:50:06.650 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:50:06 ===
+following stanzas shouldn't be there:
+  * <r xmlns='urn:xmpp:sm:3'/>
+
+</div>
+<div class="error_logger"><b>*** System report during sm_SUITE:server_requests_ack/1 in client_acking 2016-02-10 17:50:08.362 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:50:08 ===
+following stanzas shouldn't be there:
+  * <r xmlns='urn:xmpp:sm:3'/>
+
+</div>
+<div class="error_logger"><b>*** System report during sm_SUITE:too_many_unacked_stanzas/1 in client_acking 2016-02-10 17:50:10.024 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:50:10 ===
+following stanzas shouldn't be there:
+  * <r xmlns='urn:xmpp:sm:3'/>
+
+</div>
+<div class="error_logger"><b>*** System report during sm_SUITE:resend_unacked_on_reconnection/1 in reconnection 2016-02-10 17:50:28.367 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:50:28 ===
+following stanzas shouldn't be there:
+  * <r xmlns='urn:xmpp:sm:3'/>
+  * <presence from='alice@localhost/escalus-default-resource' to='alicE@localhost/res1' xml:lang='en'><delay xmlns='urn:xmpp:delay' from='alice@localhost/escalus-default-resource' stamp='2016-02-10T17:50:17Z'/></presence>
+  * <r xmlns='urn:xmpp:sm:3'/>
+
+</div>
+<div class="error_logger"><b>*** System report during sm_SUITE:resume_session_state_send_message/1 in reconnection 2016-02-10 17:50:31.264 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:50:31 ===
+multi-assertion failed on:
+  * <presence from='alicE@localhost/escalus-default-resource' to='alice@localhost/escalus-default-resource' xml:lang='en'/>
+  * <message from='bOb@localhost/escalus-default-resource' to='alicE@localhost' xml:lang='en' type='chat'><body>msg-1</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-02-10T17:50:17.615930Z'>Offline Storage</delay></message>
+  * <message from='bOb@localhost/escalus-default-resource' to='alicE@localhost' xml:lang='en' type='chat'><body>msg-1</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-02-10T17:50:29.795810Z'>Offline Storage</delay></message>
+  * <message from='bOb@localhost/escalus-default-resource' to='alicE@localhost' xml:lang='en' type='chat'><body>msg-2</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-02-10T17:50:30.998589Z'>Offline Storage</delay></message>
+
+</div>
+<div class="error_logger"><b>*** System report during sm_SUITE:resend_unacked_on_reconnection/1 in reconnection 2016-02-10 17:50:44.387 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:50:44 ===
+following stanzas shouldn't be there:
+  * <r xmlns='urn:xmpp:sm:3'/>
+  * <presence from='alice@localhost/escalus-default-resource' to='alicE@localhost/res1' xml:lang='en'><delay xmlns='urn:xmpp:delay' from='alice@localhost/escalus-default-resource' stamp='2016-02-10T17:50:43Z'/></presence>
+  * <r xmlns='urn:xmpp:sm:3'/>
+
+</div>
+<div class="error_logger"><b>*** System report during sm_SUITE:resume_session_state_send_message/1 in reconnection 2016-02-10 17:51:01.531 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:51:01 ===
+multi-assertion failed on:
+  * <presence from='alicE@localhost/escalus-default-resource' to='alice@localhost/escalus-default-resource' xml:lang='en'/>
+  * <message from='bOb@localhost/escalus-default-resource' to='alicE@localhost' xml:lang='en' type='chat'><body>msg-1</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-02-10T17:50:32.136257Z'>Offline Storage</delay></message>
+  * <message from='bOb@localhost/escalus-default-resource' to='alicE@localhost' xml:lang='en' type='chat'><body>1</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-02-10T17:50:43.383033Z'>Offline Storage</delay></message>
+  * <message from='bOb@localhost/escalus-default-resource' to='alicE@localhost' xml:lang='en' type='chat'><body>2</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-02-10T17:50:43.583662Z'>Offline Storage</delay></message>
+
+</div>
+<div class="error_logger"><b>*** System report during sm_SUITE:resend_unacked_on_reconnection/1 in reconnection 2016-02-10 17:51:02.071 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:51:02 ===
+following stanzas shouldn't be there:
+  * <r xmlns='urn:xmpp:sm:3'/>
+
+</div>
+<div class="error_logger"><b>*** System report during sm_SUITE:resend_unacked_on_reconnection/1 in reconnection 2016-02-10 17:51:06.069 ***</b>
+
+=INFO REPORT==== 10-Feb-2016::17:51:06 ===
+following stanzas shouldn't be there:
+  * <r xmlns='urn:xmpp:sm:3'/>
+
+</div>
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Feb 10 2016 17:49:12<!/date><br />
+</div>
+</center>
+</body>
+</html>

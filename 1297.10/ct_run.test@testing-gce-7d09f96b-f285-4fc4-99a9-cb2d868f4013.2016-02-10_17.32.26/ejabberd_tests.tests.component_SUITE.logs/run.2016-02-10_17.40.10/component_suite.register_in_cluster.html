@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test component_SUITE:register_in_cluster result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="component_suite.src.html#register_in_cluster-1">component_SUITE:register_in_cluster/1</a> (click for source code)
+
+=== Config value:
+
+    [{{ejabberd_cwd,ejabberd2@localhost},
+      "/home/travis/build/esl/MongooseIM/dev/mongooseim_node2"},
+     {{ejabberd_cwd,mongooseim@localhost},
+      "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+     {muc_component,[{server,<<"localhost">>},
+                     {host,<<"localhost">>},
+                     {password,<<"secret">>},
+                     {component,<<"muc">>},
+                     {port,8888}]},
+     {component2,[{server,<<"localhost">>},
+                  {host,<<"localhost">>},
+                  {password,<<"secret">>},
+                  {component,<<"another_service">>},
+                  {port,8888}]},
+     {component1,[{server,<<"localhost">>},
+                  {host,<<"localhost">>},
+                  {password,<<"secret">>},
+                  {component,<<"test_service">>},
+                  {port,8888}]},
+     {watchdog,<0.15716.0>},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7d09f96b-f285-4fc4-99a9-cb2d868f4013.2016-02-10_17.32.26/ejabberd_tests.tests.component_SUITE.logs/run.2016-02-10_17.40.10/component_suite.register_in_cluster.html"},
+     {tc_group_properties,[{name,distributed}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/component_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7d09f96b-f285-4fc4-99a9-cb2d868f4013.2016-02-10_17.32.26/ejabberd_tests.tests.component_SUITE.logs/run.2016-02-10_17.40.10/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {clusterguy,[{username,<<"clusterguy">>},
+                                  {server,<<"localhost">>},
+                                  {host,<<"localhost">>},
+                                  {password,<<"distributionftw">>},
+                                  {port,5232}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7d09f96b-f285-4fc4-99a9-cb2d868f4013.2016-02-10_17.32.26"
+
+=== Started at 2016-02-10 17:40:38
+
+<br />
+<div class="ct_internal"><b>*** CT 2016-02-10 17:40:39.882 *** history.xml</b>
+<a href="log_private/register_in_cluster.xml" type=[]>register_in_cluster.xml</a>
+
+</div>
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-02-10 17:40:40.284 ***</b>
+escalus_client:wait_for_stanza failed on line 117
+Reason: timeout_when_waiting_for_stanza
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-02-10 17:40:40
+=== Location: [{escalus_client,wait_for_stanza,117},
+              {component_SUITE,'-register_in_cluster/1-fun-0-',<a href="component_suite.src.html#307">307</a>},
+              {escalus_story,story,40},
+              {component_SUITE,register_in_cluster,<a href="component_suite.src.html#285">285</a>},
+              {test_server,ts_tc,1408},
+              {test_server,run_test_case_eval1,984},
+              {test_server,run_test_case_eval,926}]
+=== Reason: timeout_when_waiting_for_stanza
+  in function  escalus_client:wait_for_stanza/2
+     called as escalus_client:wait_for_stanza({client,undefined,escalus_tcp,
+                                               #Port<0.18285>,false,false,
+                                               <0.15737.0>,undefined},
+                                              1000)
+  in call from component_SUITE:'-register_in_cluster/1-fun-0-'/5 (component_SUITE.erl, line 307)
+  in call from escalus_story:story/3 (src/escalus_story.erl, line 40)
+  in call from component_SUITE:register_in_cluster/1 (component_SUITE.erl, line 285)
+  in call from test_server:ts_tc/3 (test_server.erl, line 1408)
+  in call from test_server:run_test_case_eval1/6 (test_server.erl, line 984)
+  in call from test_server:run_test_case_eval/9 (test_server.erl, line 926)
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Feb 10 2016 17:40:38<!/date><br />
+</div>
+</center>
+</body>
+</html>
