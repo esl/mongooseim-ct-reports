@@ -1,0 +1,15 @@
+=== Suite started at 2016-02-10 17:32:04
+=== Starting test, 0 test cases
+=cases         0
+=user          travis
+=host          testing-gce-ef6f424b-e234-40ca-97d1-e13652d547d2
+=hosts         testing-gce-ef6f424b-e234-40ca-97d1-e13652d547d2 
+=emulator_vsn  5.10.4
+=emulator      beam
+=otp_release   R16B03
+=started       2016-02-10 17:32:04
+=== 
+=case          conf_reload_SUITE:all
+=started       2016-02-10 17:32:04
+=result        skipped: Make failed
+=== *** Skipping {conf_reload_SUITE,all} ***
