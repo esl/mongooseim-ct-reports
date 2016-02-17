@@ -1,0 +1,401 @@
+=== Suite started at 2016-02-17 11:59:17
+=== Starting test, 27 test cases
+=cases         27
+=user          travis
+=host          testing-gce-93a4361e-4738-4dad-8fa9-4a36991f897c
+=hosts         testing-gce-93a4361e-4738-4dad-8fa9-4a36991f897c 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-02-17 11:59:17
+=case          login_SUITE:init_per_suite
+=logfile       login_suite.init_per_suite.html
+=started       2016-02-17 11:59:17
+=ended         2016-02-17 11:59:18
+=result        ok
+=elapsed       0.002096
+=case          login_SUITE:init_per_group
+=logfile       login_suite.init_per_group.html
+=group_props   [{name,register},sequence]
+=started       2016-02-17 11:59:18
+=ended         2016-02-17 11:59:18
+=result        ok
+=elapsed       0.001277
+=case          login_SUITE:register
+=logfile       login_suite.register.html
+=started       2016-02-17 11:59:18
+=ended         2016-02-17 11:59:19
+=result        ok
+=elapsed       0.963829
+=case          login_SUITE:already_registered
+=logfile       login_suite.already_registered.html
+=started       2016-02-17 11:59:19
+=ended         2016-02-17 11:59:19
+=result        ok
+=elapsed       0.456703
+=case          login_SUITE:check_unregistered
+=logfile       login_suite.check_unregistered.html
+=started       2016-02-17 11:59:19
+=ended         2016-02-17 11:59:20
+=result        ok
+=elapsed       1.38201
+=case          login_SUITE:end_per_group
+=logfile       login_suite.end_per_group.html
+=group_props   [{name,register},sequence]
+=started       2016-02-17 11:59:20
+=ended         2016-02-17 11:59:20
+=result        ok
+=elapsed       1.0e-6
+=group_time    2.911s
+=case          login_SUITE:init_per_group
+=logfile       login_suite.init_per_group.710360.981.html
+=group_props   [{name,bad_registration},no_sequence]
+=started       2016-02-17 11:59:20
+=ended         2016-02-17 11:59:21
+=result        ok
+=elapsed       1.0e-6
+=case          login_SUITE:null_password
+=logfile       login_suite.null_password.html
+=started       2016-02-17 11:59:21
+=ended         2016-02-17 11:59:21
+=result        ok
+=elapsed       0.250193
+=case          login_SUITE:end_per_group
+=logfile       login_suite.end_per_group.710361.279.html
+=group_props   [{name,bad_registration},no_sequence]
+=started       2016-02-17 11:59:21
+=ended         2016-02-17 11:59:21
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.298s
+=case          login_SUITE:init_per_group
+=logfile       login_suite.init_per_group.710361.304.html
+=group_props   [{name,bad_cancelation},no_sequence]
+=started       2016-02-17 11:59:21
+=ended         2016-02-17 11:59:21
+=result        ok
+=elapsed       0.008933
+=case          login_SUITE:bad_request_registration_cancelation
+=logfile       login_suite.bad_request_registration_cancelation.html
+=started       2016-02-17 11:59:21
+=ended         2016-02-17 11:59:22
+=result        ok
+=elapsed       0.457047
+=case          login_SUITE:not_allowed_registration_cancelation
+=logfile       login_suite.not_allowed_registration_cancelation.html
+=started       2016-02-17 11:59:22
+=ended         2016-02-17 11:59:23
+=result        ok
+=elapsed       0.456383
+=case          login_SUITE:end_per_group
+=logfile       login_suite.end_per_group.710363.739.html
+=group_props   [{name,bad_cancelation},no_sequence]
+=started       2016-02-17 11:59:23
+=ended         2016-02-17 11:59:23
+=result        ok
+=elapsed       1.0e-6
+=group_time    2.435s
+=case          login_SUITE:init_per_group
+=logfile       login_suite.init_per_group.710363.762.html
+=group_props   [{name,registration_timeout},sequence]
+=started       2016-02-17 11:59:23
+=ended         2016-02-17 11:59:23
+=result        ok
+=elapsed       0.006266
+=case          login_SUITE:registration_timeout
+=logfile       login_suite.registration_timeout.html
+=started       2016-02-17 11:59:23
+=ended         2016-02-17 11:59:30
+=result        ok
+=elapsed       5.75904
+=case          login_SUITE:registration_failure_timeout
+=logfile       login_suite.registration_failure_timeout.html
+=started       2016-02-17 11:59:30
+=ended         2016-02-17 11:59:33
+=result        ok
+=elapsed       2.500793
+=case          login_SUITE:end_per_group
+=logfile       login_suite.end_per_group.710373.22.html
+=group_props   [{name,registration_timeout},sequence]
+=started       2016-02-17 11:59:33
+=ended         2016-02-17 11:59:33
+=result        ok
+=elapsed       1.49e-4
+=group_time    9.259s
+=case          login_SUITE:init_per_group
+=logfile       login_suite.init_per_group.710373.46.html
+=group_props   [{name,change_account_details},no_sequence]
+=started       2016-02-17 11:59:33
+=ended         2016-02-17 11:59:33
+=result        ok
+=elapsed       0.001698
+=case          login_SUITE:change_password
+=logfile       login_suite.change_password.html
+=started       2016-02-17 11:59:33
+=ended         2016-02-17 11:59:34
+=result        ok
+=elapsed       0.456952
+=case          login_SUITE:change_password_to_null
+=logfile       login_suite.change_password_to_null.html
+=started       2016-02-17 11:59:34
+=ended         2016-02-17 11:59:35
+=result        ok
+=elapsed       0.457014
+=case          login_SUITE:end_per_group
+=logfile       login_suite.end_per_group.710375.476.html
+=group_props   [{name,change_account_details},no_sequence]
+=started       2016-02-17 11:59:35
+=ended         2016-02-17 11:59:35
+=result        ok
+=elapsed       1.0e-6
+=group_time    2.430s
+=case          login_SUITE:init_per_group
+=logfile       login_suite.init_per_group.710375.508.html
+=group_props   [{name,login},sequence]
+=started       2016-02-17 11:59:35
+=ended         2016-02-17 11:59:36
+=result        ok
+=elapsed       0.500191
+=case          login_SUITE:log_one
+=logfile       login_suite.log_one.html
+=started       2016-02-17 11:59:36
+=ended         2016-02-17 11:59:36
+=result        ok
+=elapsed       0.46271
+=case          login_SUITE:log_non_existent_plain
+=logfile       login_suite.log_non_existent_plain.html
+=started       2016-02-17 11:59:36
+=ended         2016-02-17 11:59:36
+=result        ok
+=elapsed       0.201683
+=case          login_SUITE:log_one_digest
+=logfile       login_suite.log_one_digest.html
+=started       2016-02-17 11:59:36
+=ended         2016-02-17 11:59:37
+=result        ok
+=elapsed       0.901391
+=case          login_SUITE:log_non_existent_digest
+=logfile       login_suite.log_non_existent_digest.html
+=started       2016-02-17 11:59:37
+=ended         2016-02-17 11:59:37
+=result        ok
+=elapsed       0.239361
+=case          login_SUITE:log_one_scram
+=logfile       login_suite.log_one_scram.html
+=started       2016-02-17 11:59:37
+=ended         2016-02-17 11:59:38
+=result        ok
+=elapsed       0.658452
+=case          login_SUITE:log_non_existent_scram
+=logfile       login_suite.log_non_existent_scram.html
+=started       2016-02-17 11:59:38
+=ended         2016-02-17 11:59:38
+=result        ok
+=elapsed       0.202364
+=case          login_SUITE:blocked_user
+=logfile       login_suite.blocked_user.html
+=started       2016-02-17 11:59:38
+=ended         2016-02-17 11:59:39
+=result        ok
+=elapsed       0.176707
+=case          login_SUITE:end_per_group
+=logfile       login_suite.end_per_group.710379.59.html
+=group_props   [{name,login},sequence]
+=started       2016-02-17 11:59:39
+=ended         2016-02-17 11:59:40
+=result        ok
+=elapsed       0.920962
+=group_time    3.551s
+=case          login_SUITE:init_per_group
+=logfile       login_suite.init_per_group.710380.5.html
+=group_props   [{name,login_scram},sequence]
+=started       2016-02-17 11:59:40
+=ended         2016-02-17 11:59:40
+=result        ok
+=elapsed       0.525143
+=case          login_SUITE:log_one
+=logfile       login_suite.log_one.710380.561.html
+=started       2016-02-17 11:59:40
+=ended         2016-02-17 11:59:41
+=result        ok
+=elapsed       0.456836
+=case          login_SUITE:log_one_scram
+=logfile       login_suite.log_one_scram.710381.43.html
+=started       2016-02-17 11:59:41
+=ended         2016-02-17 11:59:41
+=result        ok
+=elapsed       0.658115
+=case          login_SUITE:end_per_group
+=logfile       login_suite.end_per_group.710381.727.html
+=group_props   [{name,login_scram},sequence]
+=started       2016-02-17 11:59:41
+=ended         2016-02-17 11:59:42
+=result        ok
+=elapsed       0.919564
+=group_time    1.722s
+=case          login_SUITE:init_per_group
+=logfile       login_suite.init_per_group.710382.671.html
+=group_props   [{name,login_scram_store_plain},sequence]
+=started       2016-02-17 11:59:42
+=ended         2016-02-17 11:59:43
+=result        ok
+=elapsed       0.503206
+=case          login_SUITE:log_one
+=logfile       login_suite.log_one.710383.198.html
+=started       2016-02-17 11:59:43
+=ended         2016-02-17 11:59:43
+=result        ok
+=elapsed       0.456288
+=case          login_SUITE:log_one_scram
+=logfile       login_suite.log_one_scram.710383.679.html
+=started       2016-02-17 11:59:43
+=ended         2016-02-17 11:59:44
+=result        ok
+=elapsed       0.658461
+=case          login_SUITE:end_per_group
+=logfile       login_suite.end_per_group.710384.363.html
+=group_props   [{name,login_scram_store_plain},sequence]
+=started       2016-02-17 11:59:44
+=ended         2016-02-17 11:59:45
+=result        ok
+=elapsed       0.920149
+=group_time    1.692s
+=case          login_SUITE:init_per_group
+=logfile       login_suite.init_per_group.710385.308.html
+=group_props   [{name,legacy_auth},sequence]
+=started       2016-02-17 11:59:45
+=ended         2016-02-17 11:59:45
+=result        ok
+=elapsed       0.500311
+=case          login_SUITE:legacy_successful_plain
+=logfile       login_suite.legacy_successful_plain.html
+=started       2016-02-17 11:59:45
+=ended         2016-02-17 11:59:46
+=result        ok
+=elapsed       0.201736
+=case          login_SUITE:legacy_unsuccessful_plain
+=logfile       login_suite.legacy_unsuccessful_plain.html
+=started       2016-02-17 11:59:46
+=ended         2016-02-17 11:59:46
+=result        ok
+=elapsed       0.001446
+=case          login_SUITE:legacy_successful_digest
+=logfile       login_suite.legacy_successful_digest.html
+=started       2016-02-17 11:59:46
+=ended         2016-02-17 11:59:46
+=result        ok
+=elapsed       0.201487
+=case          login_SUITE:legacy_blocked_user
+=logfile       login_suite.legacy_blocked_user.html
+=started       2016-02-17 11:59:46
+=ended         2016-02-17 11:59:46
+=result        ok
+=elapsed       0.001084
+=case          login_SUITE:end_per_group
+=logfile       login_suite.end_per_group.710386.349.html
+=group_props   [{name,legacy_auth},sequence]
+=started       2016-02-17 11:59:46
+=ended         2016-02-17 11:59:47
+=result        ok
+=elapsed       0.919487
+=group_time    1.041s
+=case          login_SUITE:init_per_group
+=logfile       login_suite.init_per_group.710387.296.html
+=group_props   [{name,messages},sequence]
+=started       2016-02-17 11:59:47
+=ended         2016-02-17 11:59:47
+=result        ok
+=elapsed       0.501149
+=case          login_SUITE:messages_story
+=logfile       login_suite.messages_story.html
+=started       2016-02-17 11:59:47
+=ended         2016-02-17 11:59:48
+=result        ok
+=elapsed       0.912711
+=case          login_SUITE:message_zlib_limit
+=logfile       login_suite.message_zlib_limit.html
+=started       2016-02-17 11:59:48
+=== WARNING: end_per_testcase crashed!
+Reason: {assertion_failed,assert,is_compressed,
+                          {xmlel,<<"failure">>,
+                                 [{<<"xmlns">>,
+                                   <<"http://jabber.org/protocol/compress">>}],
+                                 [{xmlel,<<"setup-failed">>,[],[]}]},
+                          "<failure xmlns='http://jabber.org/protocol/compress'><setup-failed/></failure>"}
+Line: [{escalus_new_assert,assert_true,84},
+              {escalus_tcp,use_zlib,113},
+              {escalus_session,maybe_use_compression,202},
+              {escalus_connection,connection_step,119},
+              {lists,foldl,1261},
+              {escalus_connection,start,105},
+              {escalus_users,delete_user,267},
+              {escalus_users,'-delete_users/2-lc$^0/1-0-',111}]
+
+=ended         2016-02-17 11:59:49
+=result        failed: {{assertion_failed,assert,is_compressed,
+                            {xmlel,<<"failure">>,
+                                [{<<"xmlns">>,
+                                  <<"http://jabber.org/protocol/compress">>}],
+                                [{xmlel,<<"setup-failed">>,[],[]}]},
+                            "<failure xmlns='http://jabber.org/protocol/compress'><setup-failed/></failure>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_tcp,use_zlib,2,
+                             [{file,"src/escalus_tcp.erl"},{line,113}]},
+                         {escalus_session,maybe_use_compression,3,
+                             [{file,"src/escalus_session.erl"},{line,202}]},
+                         {escalus_connection,connection_step,2,
+                             [{file,"src/escalus_connection.erl"},{line,119}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,105}]},
+                         {login_SUITE,'-message_zlib_limit/1-fun-0-',1,
+                             [{file,"login_SUITE.erl"},{line,458}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,40}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_tcp,
+                                                                              use_zlib,
+                                                                              113},
+                                                                             {escalus_session,
+                                                                              maybe_use_compression,
+                                                                              202},
+                                                                             {escalus_connection,
+                                                                              connection_step,
+                                                                              119},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_connection,
+                                                                              start,
+                                                                              105},
+                                                                             {login_SUITE,
+                                                                              '-message_zlib_limit/1-fun-0-',
+                                                                              458},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              40}]
+=== *** FAILED test case 27 of 27 ***
+=case          login_SUITE:end_per_group
+=logfile       login_suite.end_per_group.710389.520.html
+=group_props   [{name,messages},sequence]
+=started       2016-02-17 11:59:49
+=ended         2016-02-17 11:59:50
+=result        ok
+=elapsed       0.920124
+=group_time    2.224s
+=case          login_SUITE:end_per_suite
+=logfile       login_suite.end_per_suite.html
+=started       2016-02-17 11:59:50
+=ended         2016-02-17 11:59:50
+=result        ok
+=elapsed       0.001706
+=group_time    32.476s
+=== TEST COMPLETE, 26 ok, 1 failed of 27 test cases
+
+=finished      2016-02-17 11:59:50
+=failed        1
+=successful    26
+=user_skipped  0
+=auto_skipped  0
