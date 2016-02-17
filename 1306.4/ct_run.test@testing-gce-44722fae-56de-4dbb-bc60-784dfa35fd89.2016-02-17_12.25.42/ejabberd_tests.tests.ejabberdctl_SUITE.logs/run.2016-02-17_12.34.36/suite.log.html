@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_tests.tests.ejabberdctl_SUITE results</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+// Parser for date format, e.g: Wed Jul 4 2012 11:24:15
+var monthNames = {};
+monthNames["Jan"] = "01"; monthNames["Feb"] = "02";
+monthNames["Mar"] = "03"; monthNames["Apr"] = "04";
+monthNames["May"] = "05"; monthNames["Jun"] = "06";
+monthNames["Jul"] = "07"; monthNames["Aug"] = "08";
+monthNames["Sep"] = "09"; monthNames["Oct"] = "10";
+monthNames["Nov"] = "11"; monthNames["Dec"] = "12";
+$.tablesorter.addParser({
+  id: 'CTDateSorter',
+  is: function(s) {
+      return false; },
+  format: function(s) {
+      if (s.length < 2) return 999999999;
+      else {
+          var date = s.match(/(\w{3})\s(\w{3})\s(\d{2})\s(\d{4})\s(\d{2}):(\d{2}):(\d{2})/);
+          var y = date[4]; var mo = monthNames[date[2]]; var d = String(date[3]);
+          var h = String(date[5]); var mi = String(date[6]); var sec = String(date[7]);
+          return (parseInt('' + y + mo + d + h + mi + sec)); }},
+  type: 'numeric' });
+// Parser for general text format
+$.tablesorter.addParser({
+  id: 'CTTextSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return 'zzzzzzzz';
+    else if (s == "?") return 'zzzzzzz';
+    else if (s == "-") return 'zzzzzz';
+    else if (s == "FAILED") return 'A';
+    else if (s == "SKIPPED") return 'B';
+    else if (s == "OK") return 'C';
+    else return '' + s; },
+  type: 'text' });
+// Parser for numerical values
+$.tablesorter.addParser({
+  id: 'CTValSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return '-2';
+    else if (s == "?") return '-1';
+    else if ((s.search(/(\d{1,})\s/)) >= 0) {
+      var num = s.match(/(\d{1,})\s/);
+      return (parseInt('' + num[1])); }
+    else if ((s.search(/(\d{1,})\.(\d{3})s/)) >= 0) {
+      var num = s.match(/(\d{1,})\.(\d{3})/);
+      if (num[1] == "0") return (parseInt('' + num[2]));
+      else return (parseInt('' + num[1] + num[2])); }
+    else return '' + s; },
+  type: 'numeric' });
+$(document).ready(function() {
+  $("#SortableTable").tablesorter({
+    headers: { 
+      0: { sorter: 'CTValSorter' },
+      1: { sorter: 'CTTextSorter' },
+      2: { sorter: 'CTTextSorter' },
+      3: { sorter: 'CTTextSorter' },
+      5: { sorter: 'CTValSorter' },
+      6: { sorter: 'CTTextSorter' },
+      7: { sorter: 'CTTextSorter' }
+    }
+  });
+  $("#SortableTable").trigger("update");
+  $("#SortableTable").trigger("appendCache");
+});
+</script>
+</head>
+<body>
+<div class="label">'odbc_pgsql_mnesia'</div>
+
+<h1>Results for <i>ejabberd_tests.tests.ejabberdctl_SUITE</i></h1>
+<h4>Test started at 2016-02-17 12:34:36</h4>
+<p><b>Host info:</b><br />
+Run by travis on testing-gce-44722fae-56de-4dbb-bc60-784dfa35fd89<br />Used Erlang v6.4 in "/home/travis/otp/17.5"</p>
+<p><ul>
+<li><a href="suite.log">Full textual log</a></li>
+<li><a href="cover.html">Coverage log</a></li>
+<li><a href="unexpected_io.log.html">Unexpected I/O log</a></li>
+</ul></p>
+<p><i>Executing <b>46</b> test cases...</i>
+<br />
+</p>
+<table id="SortableTable">
+<thead>
+<tr><th>Num</th><th>Module</th><th>Group</th><th>Case</th><th>Log</th><th>Time</th><th>Result</th><th>Comment</th></tr>
+</thead>
+<tbody>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black"></font></td><td><a href="ejabberdctl_suite.init_per_suite.html">init_per_suite</a></td><td><a href="ejabberdctl_suite.init_per_suite.html#top"><</a> <a href="ejabberdctl_suite.init_per_suite.html#end">></a></td><td><font color="black">1.025s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">accounts</font></td><td><a href="ejabberdctl_suite.init_per_group.html">init_per_group</a></td><td><a href="ejabberdctl_suite.init_per_group.html#top"><</a> <a href="ejabberdctl_suite.init_per_group.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">1</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">accounts</font></td><td><a href="ejabberdctl_suite.change_password.html">change_password</a></td><td><a href="ejabberdctl_suite.change_password.html#top"><</a> <a href="ejabberdctl_suite.change_password.html#end">></a></td><td><font color="saddlebrown">0.674s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">2</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">accounts</font></td><td><a href="ejabberdctl_suite.check_password_hash.html">check_password_hash</a></td><td><a href="ejabberdctl_suite.check_password_hash.html#top"><</a> <a href="ejabberdctl_suite.check_password_hash.html#end">></a></td><td><font color="saddlebrown">0.420s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">3</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">accounts</font></td><td><a href="ejabberdctl_suite.check_password.html">check_password</a></td><td><a href="ejabberdctl_suite.check_password.html#top"><</a> <a href="ejabberdctl_suite.check_password.html#end">></a></td><td><font color="saddlebrown">0.286s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">4</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">accounts</font></td><td><a href="ejabberdctl_suite.check_account.html">check_account</a></td><td><a href="ejabberdctl_suite.check_account.html#top"><</a> <a href="ejabberdctl_suite.check_account.html#end">></a></td><td><font color="saddlebrown">0.273s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">5</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">accounts</font></td><td><a href="ejabberdctl_suite.ban_account.html">ban_account</a></td><td><a href="ejabberdctl_suite.ban_account.html#top"><</a> <a href="ejabberdctl_suite.ban_account.html#end">></a></td><td><font color="saddlebrown">0.671s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">6</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">accounts</font></td><td><a href="ejabberdctl_suite.num_active_users.html">num_active_users</a></td><td><a href="ejabberdctl_suite.num_active_users.html#top"><</a> <a href="ejabberdctl_suite.num_active_users.html#end">></a></td><td><font color="saddlebrown">0.142s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">7</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">accounts</font></td><td><a href="ejabberdctl_suite.delete_old_users.html">delete_old_users</a></td><td><a href="ejabberdctl_suite.delete_old_users.html#top"><</a> <a href="ejabberdctl_suite.delete_old_users.html#end">></a></td><td><font color="saddlebrown">0.461s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">8</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">accounts</font></td><td><a href="ejabberdctl_suite.delete_old_users_vhost.html">delete_old_users_vhost</a></td><td><a href="ejabberdctl_suite.delete_old_users_vhost.html#top"><</a> <a href="ejabberdctl_suite.delete_old_users_vhost.html#end">></a></td><td><font color="saddlebrown">0.000s</font></td><td><font color="#FF8000">SKIPPED</font></td><td>vhost_odbc_incompatible</td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">accounts</font></td><td><a href="ejabberdctl_suite.end_per_group.html">end_per_group</a></td><td><a href="ejabberdctl_suite.end_per_group.html#top"><</a> <a href="ejabberdctl_suite.end_per_group.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">sessions</font></td><td><a href="ejabberdctl_suite.init_per_group.712480.562.html">init_per_group</a></td><td><a href="ejabberdctl_suite.init_per_group.712480.562.html#top"><</a> <a href="ejabberdctl_suite.init_per_group.712480.562.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">9</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">sessions</font></td><td><a href="ejabberdctl_suite.num_resources_num.html">num_resources_num</a></td><td><a href="ejabberdctl_suite.num_resources_num.html#top"><</a> <a href="ejabberdctl_suite.num_resources_num.html#end">></a></td><td><font color="saddlebrown">2.127s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">10</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">sessions</font></td><td><a href="ejabberdctl_suite.kick_session.html">kick_session</a></td><td><a href="ejabberdctl_suite.kick_session.html#top"><</a> <a href="ejabberdctl_suite.kick_session.html#end">></a></td><td><font color="saddlebrown">0.393s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">11</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">sessions</font></td><td><a href="ejabberdctl_suite.status.html">status</a></td><td><a href="ejabberdctl_suite.status.html#top"><</a> <a href="ejabberdctl_suite.status.html#end">></a></td><td><font color="saddlebrown">2.191s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">12</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">sessions</font></td><td><a href="ejabberdctl_suite.sessions_info.html">sessions_info</a></td><td><a href="ejabberdctl_suite.sessions_info.html#top"><</a> <a href="ejabberdctl_suite.sessions_info.html#end">></a></td><td><font color="saddlebrown">1.942s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">13</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">sessions</font></td><td><a href="ejabberdctl_suite.set_presence.html">set_presence</a></td><td><a href="ejabberdctl_suite.set_presence.html#top"><</a> <a href="ejabberdctl_suite.set_presence.html#end">></a></td><td><font color="saddlebrown">0.594s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">sessions</font></td><td><a href="ejabberdctl_suite.end_per_group.712487.965.html">end_per_group</a></td><td><a href="ejabberdctl_suite.end_per_group.712487.965.html#top"><</a> <a href="ejabberdctl_suite.end_per_group.712487.965.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">vcard</font></td><td><a href="ejabberdctl_suite.init_per_group.712487.991.html">init_per_group</a></td><td><a href="ejabberdctl_suite.init_per_group.712487.991.html#top"><</a> <a href="ejabberdctl_suite.init_per_group.712487.991.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">14</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">vcard</font></td><td><a href="ejabberdctl_suite.vcard_rw.html">vcard_rw</a></td><td><a href="ejabberdctl_suite.vcard_rw.html#top"><</a> <a href="ejabberdctl_suite.vcard_rw.html#end">></a></td><td><font color="saddlebrown">0.419s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">15</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">vcard</font></td><td><a href="ejabberdctl_suite.vcard2_rw.html">vcard2_rw</a></td><td><a href="ejabberdctl_suite.vcard2_rw.html#top"><</a> <a href="ejabberdctl_suite.vcard2_rw.html#end">></a></td><td><font color="saddlebrown">0.441s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">16</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">vcard</font></td><td><a href="ejabberdctl_suite.vcard2_multi_rw.html">vcard2_multi_rw</a></td><td><a href="ejabberdctl_suite.vcard2_multi_rw.html#top"><</a> <a href="ejabberdctl_suite.vcard2_multi_rw.html#end">></a></td><td><font color="saddlebrown">0.416s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">vcard</font></td><td><a href="ejabberdctl_suite.end_per_group.712489.374.html">end_per_group</a></td><td><a href="ejabberdctl_suite.end_per_group.712489.374.html#top"><</a> <a href="ejabberdctl_suite.end_per_group.712489.374.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">roster</font></td><td><a href="ejabberdctl_suite.init_per_group.712489.399.html">init_per_group</a></td><td><a href="ejabberdctl_suite.init_per_group.712489.399.html#top"><</a> <a href="ejabberdctl_suite.init_per_group.712489.399.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">17</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">roster</font></td><td><a href="ejabberdctl_suite.rosteritem_rw.html">rosteritem_rw</a></td><td><a href="ejabberdctl_suite.rosteritem_rw.html#top"><</a> <a href="ejabberdctl_suite.rosteritem_rw.html#end">></a></td><td><font color="saddlebrown">1.195s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">18</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">roster</font></td><td><a href="ejabberdctl_suite.presence_after_add_rosteritem.html">presence_after_add_rosteritem</a></td><td><a href="ejabberdctl_suite.presence_after_add_rosteritem.html#top"><</a> <a href="ejabberdctl_suite.presence_after_add_rosteritem.html#end">></a></td><td><font color="saddlebrown">1.062s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">19</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">roster</font></td><td><a href="ejabberdctl_suite.push_roster.html">push_roster</a></td><td><a href="ejabberdctl_suite.push_roster.html#top"><</a> <a href="ejabberdctl_suite.push_roster.html#end">></a></td><td><font color="saddlebrown">0.632s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">20</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">roster</font></td><td><a href="ejabberdctl_suite.push_roster_all.html">push_roster_all</a></td><td><a href="ejabberdctl_suite.push_roster_all.html#top"><</a> <a href="ejabberdctl_suite.push_roster_all.html#end">></a></td><td><font color="saddlebrown">1.178s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">21</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">roster</font></td><td><a href="ejabberdctl_suite.push_roster_alltoall.html">push_roster_alltoall</a></td><td><a href="ejabberdctl_suite.push_roster_alltoall.html#top"><</a> <a href="ejabberdctl_suite.push_roster_alltoall.html#end">></a></td><td><font color="saddlebrown">0.664s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">roster</font></td><td><a href="ejabberdctl_suite.end_per_group.712494.292.html">end_per_group</a></td><td><a href="ejabberdctl_suite.end_per_group.712494.292.html#top"><</a> <a href="ejabberdctl_suite.end_per_group.712494.292.html#end">></a></td><td><font color="black">0.229s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">roster_advanced</font></td><td><a href="ejabberdctl_suite.init_per_group.712494.548.html">init_per_group</a></td><td><a href="ejabberdctl_suite.init_per_group.712494.548.html#top"><</a> <a href="ejabberdctl_suite.init_per_group.712494.548.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="#FF8000">SKIPPED</font></td><td>command_process_rosteritems_supports_only_mnesia</td></tr>
+<tr class="even"><td><font color="saddlebrown">22</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">roster_advanced</font></td><td><font color="saddlebrown">process_rosteritems_list_simple</font></td><td><font color="saddlebrown">< ></font></td><td><font color="saddlebrown">0.000s</font></td><td><font color="#FF8000">SKIPPED</font></td><td>command_process_rosteritems_supports_only_mnesia</td></tr>
+<tr class="odd"><td><font color="saddlebrown">23</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">roster_advanced</font></td><td><font color="saddlebrown">process_rosteritems_list_nomatch</font></td><td><font color="saddlebrown">< ></font></td><td><font color="saddlebrown">0.000s</font></td><td><font color="#FF8000">SKIPPED</font></td><td>command_process_rosteritems_supports_only_mnesia</td></tr>
+<tr class="even"><td><font color="saddlebrown">24</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">roster_advanced</font></td><td><font color="saddlebrown">process_rosteritems_list_advanced1</font></td><td><font color="saddlebrown">< ></font></td><td><font color="saddlebrown">0.000s</font></td><td><font color="#FF8000">SKIPPED</font></td><td>command_process_rosteritems_supports_only_mnesia</td></tr>
+<tr class="odd"><td><font color="saddlebrown">25</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">roster_advanced</font></td><td><font color="saddlebrown">process_rosteritems_list_advanced2</font></td><td><font color="saddlebrown">< ></font></td><td><font color="saddlebrown">0.000s</font></td><td><font color="#FF8000">SKIPPED</font></td><td>command_process_rosteritems_supports_only_mnesia</td></tr>
+<tr class="even"><td><font color="saddlebrown">26</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">roster_advanced</font></td><td><font color="saddlebrown">process_rosteritems_delete_advanced</font></td><td><font color="saddlebrown">< ></font></td><td><font color="saddlebrown">0.000s</font></td><td><font color="#FF8000">SKIPPED</font></td><td>command_process_rosteritems_supports_only_mnesia</td></tr>
+<tr class="odd"><td><font color="saddlebrown">27</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">roster_advanced</font></td><td><font color="saddlebrown">process_rosteritems_delete_advanced2</font></td><td><font color="saddlebrown">< ></font></td><td><font color="saddlebrown">0.000s</font></td><td><font color="#FF8000">SKIPPED</font></td><td>command_process_rosteritems_supports_only_mnesia</td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">roster_advanced</font></td><td><font color="black">end_per_group</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FF8000">SKIPPED</font></td><td>command_process_rosteritems_supports_only_mnesia</td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">last</font></td><td><a href="ejabberdctl_suite.init_per_group.712494.578.html">init_per_group</a></td><td><a href="ejabberdctl_suite.init_per_group.712494.578.html#top"><</a> <a href="ejabberdctl_suite.init_per_group.712494.578.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">28</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">last</font></td><td><a href="ejabberdctl_suite.set_last.html">set_last</a></td><td><a href="ejabberdctl_suite.set_last.html#top"><</a> <a href="ejabberdctl_suite.set_last.html#end">></a></td><td><font color="saddlebrown">1.177s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">last</font></td><td><a href="ejabberdctl_suite.end_per_group.712495.807.html">end_per_group</a></td><td><a href="ejabberdctl_suite.end_per_group.712495.807.html#top"><</a> <a href="ejabberdctl_suite.end_per_group.712495.807.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">private</font></td><td><a href="ejabberdctl_suite.init_per_group.712495.833.html">init_per_group</a></td><td><a href="ejabberdctl_suite.init_per_group.712495.833.html#top"><</a> <a href="ejabberdctl_suite.init_per_group.712495.833.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">29</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">private</font></td><td><a href="ejabberdctl_suite.private_rw.html">private_rw</a></td><td><a href="ejabberdctl_suite.private_rw.html#top"><</a> <a href="ejabberdctl_suite.private_rw.html#end">></a></td><td><font color="saddlebrown">0.411s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">private</font></td><td><a href="ejabberdctl_suite.end_per_group.712496.295.html">end_per_group</a></td><td><a href="ejabberdctl_suite.end_per_group.712496.295.html#top"><</a> <a href="ejabberdctl_suite.end_per_group.712496.295.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">stanza</font></td><td><a href="ejabberdctl_suite.init_per_group.712496.321.html">init_per_group</a></td><td><a href="ejabberdctl_suite.init_per_group.712496.321.html#top"><</a> <a href="ejabberdctl_suite.init_per_group.712496.321.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">30</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">stanza</font></td><td><a href="ejabberdctl_suite.send_message.html">send_message</a></td><td><a href="ejabberdctl_suite.send_message.html#top"><</a> <a href="ejabberdctl_suite.send_message.html#end">></a></td><td><font color="saddlebrown">1.646s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">31</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">stanza</font></td><td><a href="ejabberdctl_suite.send_message_wrong_jid.html">send_message_wrong_jid</a></td><td><a href="ejabberdctl_suite.send_message_wrong_jid.html#top"><</a> <a href="ejabberdctl_suite.send_message_wrong_jid.html#end">></a></td><td><font color="saddlebrown">1.197s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">32</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">stanza</font></td><td><a href="ejabberdctl_suite.send_stanza.html">send_stanza</a></td><td><a href="ejabberdctl_suite.send_stanza.html#top"><</a> <a href="ejabberdctl_suite.send_stanza.html#end">></a></td><td><font color="saddlebrown">1.068s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">33</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">stanza</font></td><td><a href="ejabberdctl_suite.send_stanzac2s_wrong.html">send_stanzac2s_wrong</a></td><td><a href="ejabberdctl_suite.send_stanzac2s_wrong.html#top"><</a> <a href="ejabberdctl_suite.send_stanzac2s_wrong.html#end">></a></td><td><font color="saddlebrown">1.204s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">stanza</font></td><td><a href="ejabberdctl_suite.end_per_group.712501.567.html">end_per_group</a></td><td><a href="ejabberdctl_suite.end_per_group.712501.567.html#top"><</a> <a href="ejabberdctl_suite.end_per_group.712501.567.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">stats</font></td><td><a href="ejabberdctl_suite.init_per_group.712501.593.html">init_per_group</a></td><td><a href="ejabberdctl_suite.init_per_group.712501.593.html#top"><</a> <a href="ejabberdctl_suite.init_per_group.712501.593.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">34</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">stats</font></td><td><a href="ejabberdctl_suite.stats_global.html">stats_global</a></td><td><a href="ejabberdctl_suite.stats_global.html#top"><</a> <a href="ejabberdctl_suite.stats_global.html#end">></a></td><td><font color="saddlebrown">0.000s</font></td><td><font color="#FF8000">SKIPPED</font></td><td>vhost_odbc_incompatible</td></tr>
+<tr class="odd"><td><font color="saddlebrown">35</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">stats</font></td><td><a href="ejabberdctl_suite.stats_host.html">stats_host</a></td><td><a href="ejabberdctl_suite.stats_host.html#top"><</a> <a href="ejabberdctl_suite.stats_host.html#end">></a></td><td><font color="saddlebrown">0.000s</font></td><td><font color="#FF8000">SKIPPED</font></td><td>vhost_odbc_incompatible</td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">stats</font></td><td><a href="ejabberdctl_suite.end_per_group.712501.670.html">end_per_group</a></td><td><a href="ejabberdctl_suite.end_per_group.712501.670.html#top"><</a> <a href="ejabberdctl_suite.end_per_group.712501.670.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">basic</font></td><td><a href="ejabberdctl_suite.init_per_group.712501.696.html">init_per_group</a></td><td><a href="ejabberdctl_suite.init_per_group.712501.696.html#top"><</a> <a href="ejabberdctl_suite.init_per_group.712501.696.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">36</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">basic</font></td><td><a href="ejabberdctl_suite.simple_register.html">simple_register</a></td><td><a href="ejabberdctl_suite.simple_register.html#top"><</a> <a href="ejabberdctl_suite.simple_register.html#end">></a></td><td><font color="saddlebrown">0.302s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">37</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">basic</font></td><td><a href="ejabberdctl_suite.simple_unregister.html">simple_unregister</a></td><td><a href="ejabberdctl_suite.simple_unregister.html#top"><</a> <a href="ejabberdctl_suite.simple_unregister.html#end">></a></td><td><font color="saddlebrown">0.312s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">38</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">basic</font></td><td><a href="ejabberdctl_suite.register_twice.html">register_twice</a></td><td><a href="ejabberdctl_suite.register_twice.html#top"><</a> <a href="ejabberdctl_suite.register_twice.html#end">></a></td><td><font color="saddlebrown">0.446s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">39</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">basic</font></td><td><a href="ejabberdctl_suite.backup_restore_mnesia.html">backup_restore_mnesia</a></td><td><a href="ejabberdctl_suite.backup_restore_mnesia.html#top"><</a> <a href="ejabberdctl_suite.backup_restore_mnesia.html#end">></a></td><td><font color="saddlebrown">0.323s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">40</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">basic</font></td><td><a href="ejabberdctl_suite.restore_mnesia_wrong.html">restore_mnesia_wrong</a></td><td><a href="ejabberdctl_suite.restore_mnesia_wrong.html#top"><</a> <a href="ejabberdctl_suite.restore_mnesia_wrong.html#end">></a></td><td><font color="saddlebrown">0.134s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">41</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">basic</font></td><td><a href="ejabberdctl_suite.dump_and_load.html">dump_and_load</a></td><td><a href="ejabberdctl_suite.dump_and_load.html#top"><</a> <a href="ejabberdctl_suite.dump_and_load.html#end">></a></td><td><font color="saddlebrown">0.291s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">42</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">basic</font></td><td><a href="ejabberdctl_suite.load_mnesia_wrong.html">load_mnesia_wrong</a></td><td><a href="ejabberdctl_suite.load_mnesia_wrong.html#top"><</a> <a href="ejabberdctl_suite.load_mnesia_wrong.html#end">></a></td><td><font color="saddlebrown">0.137s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">43</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">basic</font></td><td><a href="ejabberdctl_suite.dump_table.html">dump_table</a></td><td><a href="ejabberdctl_suite.dump_table.html#top"><</a> <a href="ejabberdctl_suite.dump_table.html#end">></a></td><td><font color="saddlebrown">0.305s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">44</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">basic</font></td><td><a href="ejabberdctl_suite.get_loglevel.html">get_loglevel</a></td><td><a href="ejabberdctl_suite.get_loglevel.html#top"><</a> <a href="ejabberdctl_suite.get_loglevel.html#end">></a></td><td><font color="saddlebrown">0.143s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">45</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">basic</font></td><td><a href="ejabberdctl_suite.remove_old_messages_test.html">remove_old_messages_test</a></td><td><a href="ejabberdctl_suite.remove_old_messages_test.html#top"><</a> <a href="ejabberdctl_suite.remove_old_messages_test.html#end">></a></td><td><font color="saddlebrown">0.618s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">46</font></td><td><font color="saddlebrown">ejabberdctl_SUITE</font></td><td><font color="saddlebrown">basic</font></td><td><a href="ejabberdctl_suite.remove_expired_messages_test.html">remove_expired_messages_test</a></td><td><a href="ejabberdctl_suite.remove_expired_messages_test.html#top"><</a> <a href="ejabberdctl_suite.remove_expired_messages_test.html#end">></a></td><td><font color="saddlebrown">0.610s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black">basic</font></td><td><a href="ejabberdctl_suite.end_per_group.712505.627.html">end_per_group</a></td><td><a href="ejabberdctl_suite.end_per_group.712505.627.html#top"><</a> <a href="ejabberdctl_suite.end_per_group.712505.627.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">ejabberdctl_SUITE</font></td><td><font color="black"></font></td><td><a href="ejabberdctl_suite.end_per_suite.html">end_per_suite</a></td><td><a href="ejabberdctl_suite.end_per_suite.html#top"><</a> <a href="ejabberdctl_suite.end_per_suite.html#end">></a></td><td><font color="black">0.053s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+
+</tbody>
+<tfoot>
+<tr><td></td><td><b>TOTAL</b></td><td></td><td></td><td></td><td>29.745s</td><td><b>Ok</b></td><td>37 Ok, 0 Failed, 9 Skipped of 46</td></tr>
+</tfoot>
+
+</table>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Feb 17 2016 12:34:36<!/date><br />
+</div>
+</center>
+</body>
+</html>
