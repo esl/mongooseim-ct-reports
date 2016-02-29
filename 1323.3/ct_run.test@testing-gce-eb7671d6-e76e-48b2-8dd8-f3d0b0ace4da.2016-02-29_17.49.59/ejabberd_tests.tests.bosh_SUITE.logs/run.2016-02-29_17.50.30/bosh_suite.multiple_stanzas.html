@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test bosh_SUITE:multiple_stanzas result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="bosh_suite.src.html#multiple_stanzas-1">bosh_SUITE:multiple_stanzas/1</a> (click for source code)
+
+=== Config value:
+
+    [{user,carol},
+     {watchdog,<0.3496.0>},
+     {escalus_user_db,{module,escalus_ejabberd}},
+     {preset,"mysql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-eb7671d6-e76e-48b2-8dd8-f3d0b0ace4da.2016-02-29_17.49.59/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-02-29_17.50.30/bosh_suite.multiple_stanzas.html"},
+     {tc_group_properties,[{shuffle,{1456,768234,90865}},
+                           {name,chat},
+                           {repeat_until_any_fail,10}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/bosh_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-eb7671d6-e76e-48b2-8dd8-f3d0b0ace4da.2016-02-29_17.49.59/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-02-29_17.50.30/log_private/"},
+     {escalus_users,[{carol,[{username,<<"carol">>},
+                             {server,<<"localhost">>},
+                             {password,<<"jinglebells">>},
+                             {transport,bosh},
+                             {path,<<"/http-bind">>},
+                             {port,5280}]},
+                     {carol_s,[{username,<<"carol_s">>},
+                               {server,<<"localhost">>},
+                               {password,<<"jinglebells_s">>},
+                               {transport,bosh},
+                               {ssl,true},
+                               {path,<<"/http-bind">>},
+                               {port,5285}]},
+                     {geralt,[{username,<<"geralt">>},
+                              {server,<<"localhost">>},
+                              {password,<<"witcher">>},
+                              {transport,ws},
+                              {port,5280},
+                              {wspath,<<"/ws-xmpp">>}]},
+                     {alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-eb7671d6-e76e-48b2-8dd8-f3d0b0ace4da.2016-02-29_17.49.59"
+
+=== Started at 2016-02-29 17:50:34
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-02-29 17:50:35
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.3623.0>},
+                      {tc_name,multiple_stanzas},
+                      {escalus_cleaner,<0.3622.0>},
+                      {watchdog,<0.3621.0>},
+                      {user,carol},
+                      {escalus_user_db,{module,escalus_ejabberd}},
+                      {preset,"mysql_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-eb7671d6-e76e-48b2-8dd8-f3d0b0ace4da.2016-02-29_17.49.59/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-02-29_17.50.30/bosh_suite.multiple_stanzas.html"},
+                      {tc_group_properties,
+                          [{shuffle,{1456,768234,90865}},
+                           {name,chat},
+                           {repeat_until_any_fail,10}]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/bosh_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-eb7671d6-e76e-48b2-8dd8-f3d0b0ace4da.2016-02-29_17.49.59/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-02-29_17.50.30/log_private/"},
+                      {escalus_users,
+                          [{carol,
+                               [{username,<<"carol">>},
+                                {server,<<"localhost">>},
+                                {password,<<"jinglebells">>},
+                                {transport,bosh},
+                                {path,<<"/http-bind">>},
+                                {port,5280}]},
+                           {carol_s,
+                               [{username,<<"carol_s">>},
+                                {server,<<"localhost">>},
+                                {password,<<"jinglebells_s">>},
+                                {transport,bosh},
+                                {ssl,true},
+                                {path,<<"/http-bind">>},
+                                {port,5285}]},
+                           {geralt,
+                               [{username,<<"geralt">>},
+                                {server,<<"localhost">>},
+                                {password,<<"witcher">>},
+                                {transport,ws},
+                                {port,5280},
+                                {wspath,<<"/ws-xmpp">>}]},
+                           {alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Mon Feb 29 2016 17:50:34<!/date><br />
+</div>
+</center>
+</body>
+</html>
