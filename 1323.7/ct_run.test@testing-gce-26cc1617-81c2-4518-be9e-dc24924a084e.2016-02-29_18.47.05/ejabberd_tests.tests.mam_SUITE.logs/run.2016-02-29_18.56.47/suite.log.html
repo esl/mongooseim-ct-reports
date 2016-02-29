@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_tests.tests.mam_SUITE results</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+// Parser for date format, e.g: Wed Jul 4 2012 11:24:15
+var monthNames = {};
+monthNames["Jan"] = "01"; monthNames["Feb"] = "02";
+monthNames["Mar"] = "03"; monthNames["Apr"] = "04";
+monthNames["May"] = "05"; monthNames["Jun"] = "06";
+monthNames["Jul"] = "07"; monthNames["Aug"] = "08";
+monthNames["Sep"] = "09"; monthNames["Oct"] = "10";
+monthNames["Nov"] = "11"; monthNames["Dec"] = "12";
+$.tablesorter.addParser({
+  id: 'CTDateSorter',
+  is: function(s) {
+      return false; },
+  format: function(s) {
+      if (s.length < 2) return 999999999;
+      else {
+          var date = s.match(/(\w{3})\s(\w{3})\s(\d{2})\s(\d{4})\s(\d{2}):(\d{2}):(\d{2})/);
+          var y = date[4]; var mo = monthNames[date[2]]; var d = String(date[3]);
+          var h = String(date[5]); var mi = String(date[6]); var sec = String(date[7]);
+          return (parseInt('' + y + mo + d + h + mi + sec)); }},
+  type: 'numeric' });
+// Parser for general text format
+$.tablesorter.addParser({
+  id: 'CTTextSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return 'zzzzzzzz';
+    else if (s == "?") return 'zzzzzzz';
+    else if (s == "-") return 'zzzzzz';
+    else if (s == "FAILED") return 'A';
+    else if (s == "SKIPPED") return 'B';
+    else if (s == "OK") return 'C';
+    else return '' + s; },
+  type: 'text' });
+// Parser for numerical values
+$.tablesorter.addParser({
+  id: 'CTValSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return '-2';
+    else if (s == "?") return '-1';
+    else if ((s.search(/(\d{1,})\s/)) >= 0) {
+      var num = s.match(/(\d{1,})\s/);
+      return (parseInt('' + num[1])); }
+    else if ((s.search(/(\d{1,})\.(\d{3})s/)) >= 0) {
+      var num = s.match(/(\d{1,})\.(\d{3})/);
+      if (num[1] == "0") return (parseInt('' + num[2]));
+      else return (parseInt('' + num[1] + num[2])); }
+    else return '' + s; },
+  type: 'numeric' });
+$(document).ready(function() {
+  $("#SortableTable").tablesorter({
+    headers: { 
+      0: { sorter: 'CTValSorter' },
+      1: { sorter: 'CTTextSorter' },
+      2: { sorter: 'CTTextSorter' },
+      3: { sorter: 'CTTextSorter' },
+      5: { sorter: 'CTValSorter' },
+      6: { sorter: 'CTTextSorter' },
+      7: { sorter: 'CTTextSorter' }
+    }
+  });
+  $("#SortableTable").trigger("update");
+  $("#SortableTable").trigger("appendCache");
+});
+</script>
+</head>
+<body>
+<div class="label">'riak_mnesia'</div>
+
+<h1>Results for <i>ejabberd_tests.tests.mam_SUITE</i></h1>
+<h4>Test started at 2016-02-29 18:56:47</h4>
+<p><b>Host info:</b><br />
+Run by travis on testing-gce-26cc1617-81c2-4518-be9e-dc24924a084e<br />Used Erlang v6.4 in "/home/travis/otp/17.5"</p>
+<p><ul>
+<li><a href="suite.log">Full textual log</a></li>
+<li><a href="cover.html">Coverage log</a></li>
+<li><a href="unexpected_io.log.html">Unexpected I/O log</a></li>
+</ul></p>
+<p><i>Executing <b>75</b> test cases...</i>
+<br />
+</p>
+<table id="SortableTable">
+<thead>
+<tr><th>Num</th><th>Module</th><th>Group</th><th>Case</th><th>Log</th><th>Time</th><th>Result</th><th>Comment</th></tr>
+</thead>
+<tbody>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black"></font></td><td><a href="mam_suite.init_per_suite.html">init_per_suite</a></td><td><a href="mam_suite.init_per_suite.html#top"><</a> <a href="mam_suite.init_per_suite.html#end">></a></td><td><font color="black">0.063s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_mam</font></td><td><a href="mam_suite.init_per_group.html">init_per_group</a></td><td><a href="mam_suite.init_per_group.html#top"><</a> <a href="mam_suite.init_per_group.html#end">></a></td><td><font color="black">0.028s</font></td><td><font color="red">FAILED</font></td><td><font color="red">{escalus_users,get_usp,177}</font><br /><font color="green"><font color="brown">{test_case_failed,{undefined_option,username,
+                                    [{server,<<"localhost">>},
+                                     {host,<<"localhost">>},
+                                     {password,<<"secret">>},
+                                     {component,<<"test_service">>},
+                                     {port,8888}]}}</font></font></td></tr>
+<tr class="odd"><td><font color="black">1</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_mam</font></td><td><font color="black">mam_service_discovery</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">2</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_mam</font></td><td><font color="black">simple_archive_request</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">3</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_mam</font></td><td><font color="black">range_archive_request</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">4</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_mam</font></td><td><font color="black">range_archive_request_not_empty</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">5</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_mam</font></td><td><font color="black">limit_archive_request</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">6</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_mam</font></td><td><font color="black">prefs_set_request</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">7</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_mam</font></td><td><font color="black">prefs_set_cdata_request</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">8</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_mam</font></td><td><font color="black">iq_spoofing</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_mam</font></td><td><font color="black">end_per_group</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_mam_purge</font></td><td><a href="mam_suite.init_per_group.772207.784.html">init_per_group</a></td><td><a href="mam_suite.init_per_group.772207.784.html#top"><</a> <a href="mam_suite.init_per_group.772207.784.html#end">></a></td><td><font color="black">0.018s</font></td><td><font color="red">FAILED</font></td><td><font color="red">{escalus_users,get_usp,177}</font><br /><font color="green"><font color="brown">{test_case_failed,{undefined_option,username,
+                                    [{server,<<"localhost">>},
+                                     {host,<<"localhost">>},
+                                     {password,<<"secret">>},
+                                     {component,<<"test_service">>},
+                                     {port,8888}]}}</font></font></td></tr>
+<tr class="odd"><td><font color="black">9</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_mam_purge</font></td><td><font color="black">purge_single_message</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">10</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_mam_purge</font></td><td><font color="black">purge_multiple_messages</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_mam_purge</font></td><td><font color="black">end_per_group</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc</font></td><td><a href="mam_suite.init_per_group.772207.829.html">init_per_group</a></td><td><a href="mam_suite.init_per_group.772207.829.html#top"><</a> <a href="mam_suite.init_per_group.772207.829.html#end">></a></td><td><font color="black">0.034s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">11</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc</font></td><td><a href="mam_suite.muc_service_discovery.html">muc_service_discovery</a></td><td><a href="mam_suite.muc_service_discovery.html#top"><</a> <a href="mam_suite.muc_service_discovery.html#end">></a></td><td><font color="black">0.463s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">12</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc</font></td><td><a href="mam_suite.muc_archive_request.html">muc_archive_request</a></td><td><a href="mam_suite.muc_archive_request.html#top"><</a> <a href="mam_suite.muc_archive_request.html#end">></a></td><td><font color="black">3.536s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">13</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc</font></td><td><a href="mam_suite.muc_archive_purge.html">muc_archive_purge</a></td><td><a href="mam_suite.muc_archive_purge.html#top"><</a> <a href="mam_suite.muc_archive_purge.html#end">></a></td><td><font color="black">4.493s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">14</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc</font></td><td><a href="mam_suite.muc_multiple_devices.html">muc_multiple_devices</a></td><td><a href="mam_suite.muc_multiple_devices.html#top"><</a> <a href="mam_suite.muc_multiple_devices.html#end">></a></td><td><font color="black">3.974s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">15</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc</font></td><td><a href="mam_suite.muc_private_message.html">muc_private_message</a></td><td><a href="mam_suite.muc_private_message.html#top"><</a> <a href="mam_suite.muc_private_message.html#end">></a></td><td><font color="black">0.976s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">16</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc</font></td><td><a href="mam_suite.muc_querying_for_all_messages.html">muc_querying_for_all_messages</a></td><td><a href="mam_suite.muc_querying_for_all_messages.html#top"><</a> <a href="mam_suite.muc_querying_for_all_messages.html#end">></a></td><td><font color="black">0.564s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">17</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc</font></td><td><a href="mam_suite.muc_querying_for_all_messages_with_jid.html">muc_querying_for_all_messages_with_jid</a></td><td><a href="mam_suite.muc_querying_for_all_messages_with_jid.html#top"><</a> <a href="mam_suite.muc_querying_for_all_messages_with_jid.html#end">></a></td><td><font color="black">0.998s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc</font></td><td><a href="mam_suite.end_per_group.html">end_per_group</a></td><td><a href="mam_suite.end_per_group.html#top"><</a> <a href="mam_suite.end_per_group.html#end">></a></td><td><font color="black">2.242s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_with_pm</font></td><td><a href="mam_suite.init_per_group.772244.539.html">init_per_group</a></td><td><a href="mam_suite.init_per_group.772244.539.html#top"><</a> <a href="mam_suite.init_per_group.772244.539.html#end">></a></td><td><font color="black">0.050s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">18</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_with_pm</font></td><td><a href="mam_suite.muc_service_discovery.772244.614.html">muc_service_discovery</a></td><td><a href="mam_suite.muc_service_discovery.772244.614.html#top"><</a> <a href="mam_suite.muc_service_discovery.772244.614.html#end">></a></td><td><font color="black">0.463s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">19</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_with_pm</font></td><td><a href="mam_suite.muc_archive_request.772245.104.html">muc_archive_request</a></td><td><a href="mam_suite.muc_archive_request.772245.104.html#top"><</a> <a href="mam_suite.muc_archive_request.772245.104.html#end">></a></td><td><font color="black">3.464s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">20</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_with_pm</font></td><td><a href="mam_suite.muc_archive_purge.772252.624.html">muc_archive_purge</a></td><td><a href="mam_suite.muc_archive_purge.772252.624.html#top"><</a> <a href="mam_suite.muc_archive_purge.772252.624.html#end">></a></td><td><font color="black">4.465s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">21</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_with_pm</font></td><td><a href="mam_suite.muc_multiple_devices.772260.127.html">muc_multiple_devices</a></td><td><a href="mam_suite.muc_multiple_devices.772260.127.html#top"><</a> <a href="mam_suite.muc_multiple_devices.772260.127.html#end">></a></td><td><font color="black">3.934s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">22</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_with_pm</font></td><td><a href="mam_suite.muc_private_message.772268.109.html">muc_private_message</a></td><td><a href="mam_suite.muc_private_message.772268.109.html#top"><</a> <a href="mam_suite.muc_private_message.772268.109.html#end">></a></td><td><font color="black">0.978s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">23</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_with_pm</font></td><td><a href="mam_suite.muc_querying_for_all_messages.772269.124.html">muc_querying_for_all_messages</a></td><td><a href="mam_suite.muc_querying_for_all_messages.772269.124.html#top"><</a> <a href="mam_suite.muc_querying_for_all_messages.772269.124.html#end">></a></td><td><font color="black">0.534s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">24</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_with_pm</font></td><td><a href="mam_suite.muc_querying_for_all_messages_with_jid.772273.634.html">muc_querying_for_all_messages_with_jid</a></td><td><a href="mam_suite.muc_querying_for_all_messages_with_jid.772273.634.html#top"><</a> <a href="mam_suite.muc_querying_for_all_messages_with_jid.772273.634.html#end">></a></td><td><font color="black">0.965s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_with_pm</font></td><td><a href="mam_suite.end_per_group.772278.509.html">end_per_group</a></td><td><a href="mam_suite.end_per_group.772278.509.html#top"><</a> <a href="mam_suite.end_per_group.772278.509.html#end">></a></td><td><font color="black">2.201s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><a href="mam_suite.init_per_group.772280.740.html">init_per_group</a></td><td><a href="mam_suite.init_per_group.772280.740.html#top"><</a> <a href="mam_suite.init_per_group.772280.740.html#end">></a></td><td><font color="black">0.045s</font></td><td><font color="red">FAILED</font></td><td><font color="red">{escalus_users,get_usp,177}</font><br /><font color="green"><font color="brown">{test_case_failed,{undefined_option,username,
+                                    [{server,<<"localhost">>},
+                                     {host,<<"localhost">>},
+                                     {password,<<"secret">>},
+                                     {component,<<"test_service">>},
+                                     {port,8888}]}}</font></font></td></tr>
+<tr class="odd"><td><font color="black">25</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><font color="black">pagination_first5</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">26</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><font color="black">pagination_last5</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">27</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><font color="black">pagination_before10</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">28</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><font color="black">pagination_after10</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">29</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><font color="black">pagination_empty_rset</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">30</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><font color="black">pagination_last_after_id5</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">31</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><font color="black">pagination_last_after_id5_before_id11</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">32</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><font color="black">pagination_simple_before10</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">33</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><font color="black">pagination_first5_opt_count</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">34</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><font color="black">pagination_last5_opt_count</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">35</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><font color="black">pagination_offset5_opt_count</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">36</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><font color="black">pagination_first25_opt_count_all</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">37</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><font color="black">pagination_last25_opt_count_all</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">38</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><font color="black">pagination_offset5_opt_count_all</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_rsm</font></td><td><font color="black">end_per_group</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><a href="mam_suite.init_per_group.772280.820.html">init_per_group</a></td><td><a href="mam_suite.init_per_group.772280.820.html#top"><</a> <a href="mam_suite.init_per_group.772280.820.html#end">></a></td><td><font color="black">0.042s</font></td><td><font color="red">FAILED</font></td><td><font color="red">{escalus_users,get_usp,177}</font><br /><font color="green"><font color="brown">{test_case_failed,{undefined_option,username,
+                                    [{server,<<"localhost">>},
+                                     {host,<<"localhost">>},
+                                     {password,<<"secret">>},
+                                     {component,<<"test_service">>},
+                                     {port,8888}]}}</font></font></td></tr>
+<tr class="odd"><td><font color="black">39</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><font color="black">pagination_first5</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">40</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><font color="black">pagination_last5</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">41</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><font color="black">pagination_before10</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">42</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><font color="black">pagination_after10</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">43</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><font color="black">pagination_empty_rset</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">44</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><font color="black">pagination_last_after_id5</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">45</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><font color="black">pagination_last_after_id5_before_id11</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">46</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><font color="black">pagination_simple_before10</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">47</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><font color="black">pagination_first5_opt_count</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">48</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><font color="black">pagination_last5_opt_count</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">49</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><font color="black">pagination_offset5_opt_count</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">50</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><font color="black">pagination_first25_opt_count_all</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">51</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><font color="black">pagination_last25_opt_count_all</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">52</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><font color="black">pagination_offset5_opt_count_all</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_with_rsm</font></td><td><font color="black">end_per_group</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.init_per_group.772280.901.html">init_per_group</a></td><td><a href="mam_suite.init_per_group.772280.901.html#top"><</a> <a href="mam_suite.init_per_group.772280.901.html#end">></a></td><td><font color="black">5.300s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">53</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.pagination_first5.html">pagination_first5</a></td><td><a href="mam_suite.pagination_first5.html#top"><</a> <a href="mam_suite.pagination_first5.html#end">></a></td><td><font color="black">0.485s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">54</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.pagination_last5.html">pagination_last5</a></td><td><a href="mam_suite.pagination_last5.html#top"><</a> <a href="mam_suite.pagination_last5.html#end">></a></td><td><font color="black">0.479s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">55</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.pagination_before10.html">pagination_before10</a></td><td><a href="mam_suite.pagination_before10.html#top"><</a> <a href="mam_suite.pagination_before10.html#end">></a></td><td><font color="black">0.489s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">56</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.pagination_after10.html">pagination_after10</a></td><td><a href="mam_suite.pagination_after10.html#top"><</a> <a href="mam_suite.pagination_after10.html#end">></a></td><td><font color="black">0.497s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">57</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.pagination_empty_rset.html">pagination_empty_rset</a></td><td><a href="mam_suite.pagination_empty_rset.html#top"><</a> <a href="mam_suite.pagination_empty_rset.html#end">></a></td><td><font color="black">0.479s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">58</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.pagination_last_after_id5.html">pagination_last_after_id5</a></td><td><a href="mam_suite.pagination_last_after_id5.html#top"><</a> <a href="mam_suite.pagination_last_after_id5.html#end">></a></td><td><font color="black">0.484s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">59</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.pagination_last_after_id5_before_id11.html">pagination_last_after_id5_before_id11</a></td><td><a href="mam_suite.pagination_last_after_id5_before_id11.html#top"><</a> <a href="mam_suite.pagination_last_after_id5_before_id11.html#end">></a></td><td><font color="black">0.490s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">60</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.pagination_simple_before10.html">pagination_simple_before10</a></td><td><a href="mam_suite.pagination_simple_before10.html#top"><</a> <a href="mam_suite.pagination_simple_before10.html#end">></a></td><td><font color="black">0.481s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">61</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.pagination_first5_opt_count.html">pagination_first5_opt_count</a></td><td><a href="mam_suite.pagination_first5_opt_count.html#top"><</a> <a href="mam_suite.pagination_first5_opt_count.html#end">></a></td><td><font color="black">0.488s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">62</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.pagination_last5_opt_count.html">pagination_last5_opt_count</a></td><td><a href="mam_suite.pagination_last5_opt_count.html#top"><</a> <a href="mam_suite.pagination_last5_opt_count.html#end">></a></td><td><font color="black">0.482s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">63</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.pagination_offset5_opt_count.html">pagination_offset5_opt_count</a></td><td><a href="mam_suite.pagination_offset5_opt_count.html#top"><</a> <a href="mam_suite.pagination_offset5_opt_count.html#end">></a></td><td><font color="black">0.487s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">64</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.pagination_first25_opt_count_all.html">pagination_first25_opt_count_all</a></td><td><a href="mam_suite.pagination_first25_opt_count_all.html#top"><</a> <a href="mam_suite.pagination_first25_opt_count_all.html#end">></a></td><td><font color="black">0.503s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">65</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.pagination_last25_opt_count_all.html">pagination_last25_opt_count_all</a></td><td><a href="mam_suite.pagination_last25_opt_count_all.html#top"><</a> <a href="mam_suite.pagination_last25_opt_count_all.html#end">></a></td><td><font color="black">0.500s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">66</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.pagination_offset5_opt_count_all.html">pagination_offset5_opt_count_all</a></td><td><a href="mam_suite.pagination_offset5_opt_count_all.html#top"><</a> <a href="mam_suite.pagination_offset5_opt_count_all.html#end">></a></td><td><font color="black">0.490s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_muc_rsm</font></td><td><a href="mam_suite.end_per_group.772293.452.html">end_per_group</a></td><td><a href="mam_suite.end_per_group.772293.452.html#top"><</a> <a href="mam_suite.end_per_group.772293.452.html#end">></a></td><td><font color="black">2.338s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_bootstrapped</font></td><td><a href="mam_suite.init_per_group.772295.818.html">init_per_group</a></td><td><a href="mam_suite.init_per_group.772295.818.html#top"><</a> <a href="mam_suite.init_per_group.772295.818.html#end">></a></td><td><font color="black">0.054s</font></td><td><font color="red">FAILED</font></td><td><font color="red">{escalus_users,get_usp,177}</font><br /><font color="green"><font color="brown">{test_case_failed,{undefined_option,username,
+                                    [{server,<<"localhost">>},
+                                     {host,<<"localhost">>},
+                                     {password,<<"secret">>},
+                                     {component,<<"test_service">>},
+                                     {port,8888}]}}</font></font></td></tr>
+<tr class="odd"><td><font color="black">67</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_bootstrapped</font></td><td><font color="black">purge_old_single_message</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">68</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_bootstrapped</font></td><td><font color="black">querying_for_all_messages_with_jid</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_bootstrapped</font></td><td><font color="black">end_per_group</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_archived</font></td><td><a href="mam_suite.init_per_group.772295.900.html">init_per_group</a></td><td><a href="mam_suite.init_per_group.772295.900.html#top"><</a> <a href="mam_suite.init_per_group.772295.900.html#end">></a></td><td><font color="black">0.038s</font></td><td><font color="red">FAILED</font></td><td><font color="red">{escalus_users,get_usp,177}</font><br /><font color="green"><font color="brown">{test_case_failed,{undefined_option,username,
+                                    [{server,<<"localhost">>},
+                                     {host,<<"localhost">>},
+                                     {password,<<"secret">>},
+                                     {component,<<"test_service">>},
+                                     {port,8888}]}}</font></font></td></tr>
+<tr class="odd"><td><font color="black">69</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_archived</font></td><td><font color="black">archived</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black">70</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_archived</font></td><td><font color="black">strip_archived</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">71</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_archived</font></td><td><font color="black">filter_forwarded</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_archived</font></td><td><font color="black">end_per_group</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_policy_violation</font></td><td><a href="mam_suite.init_per_group.772295.967.html">init_per_group</a></td><td><a href="mam_suite.init_per_group.772295.967.html#top"><</a> <a href="mam_suite.init_per_group.772295.967.html#end">></a></td><td><font color="black">0.046s</font></td><td><font color="red">FAILED</font></td><td><font color="red">{escalus_users,get_usp,177}</font><br /><font color="green"><font color="brown">{test_case_failed,{undefined_option,username,
+                                    [{server,<<"localhost">>},
+                                     {host,<<"localhost">>},
+                                     {password,<<"secret">>},
+                                     {component,<<"test_service">>},
+                                     {port,8888}]}}</font></font></td></tr>
+<tr class="even"><td><font color="black">72</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_policy_violation</font></td><td><font color="black">policy_violation</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_policy_violation</font></td><td><font color="black">end_per_group</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_offline_message</font></td><td><a href="mam_suite.init_per_group.772296.40.html">init_per_group</a></td><td><a href="mam_suite.init_per_group.772296.40.html#top"><</a> <a href="mam_suite.init_per_group.772296.40.html#end">></a></td><td><font color="black">0.031s</font></td><td><font color="red">FAILED</font></td><td><font color="red">{escalus_users,get_usp,177}</font><br /><font color="green"><font color="brown">{test_case_failed,{undefined_option,username,
+                                    [{server,<<"localhost">>},
+                                     {host,<<"localhost">>},
+                                     {password,<<"secret">>},
+                                     {component,<<"test_service">>},
+                                     {port,8888}]}}</font></font></td></tr>
+<tr class="odd"><td><font color="black">73</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_offline_message</font></td><td><font color="black">offline_message</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_offline_message</font></td><td><font color="black">end_per_group</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_prefs_cases</font></td><td><a href="mam_suite.init_per_group.772296.98.html">init_per_group</a></td><td><a href="mam_suite.init_per_group.772296.98.html#top"><</a> <a href="mam_suite.init_per_group.772296.98.html#end">></a></td><td><font color="black">0.035s</font></td><td><font color="red">FAILED</font></td><td><font color="red">{escalus_users,get_usp,177}</font><br /><font color="green"><font color="brown">{test_case_failed,{undefined_option,username,
+                                    [{server,<<"localhost">>},
+                                     {host,<<"localhost">>},
+                                     {password,<<"secret">>},
+                                     {component,<<"test_service">>},
+                                     {port,8888}]}}</font></font></td></tr>
+<tr class="even"><td><font color="black">74</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_prefs_cases</font></td><td><font color="black">run_prefs_cases</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black">75</font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_prefs_cases</font></td><td><font color="black">run_set_and_get_prefs_cases</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black">riak_timed_yz_buckets_prefs_cases</font></td><td><font color="black">end_per_group</font></td><td><font color="black">< ></font></td><td><font color="black">0.000s</font></td><td><font color="#FFA64D">SKIPPED</font></td><td>init_per_group failed</td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mam_SUITE</font></td><td><font color="black"></font></td><td><a href="mam_suite.end_per_suite.html">end_per_suite</a></td><td><a href="mam_suite.end_per_suite.html#top"><</a> <a href="mam_suite.end_per_suite.html#end">></a></td><td><font color="black">0.002s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+
+</tbody>
+<tfoot>
+<tr><td></td><td><b>TOTAL</b></td><td></td><td></td><td></td><td>88.760s</td><td><b>Ok</b></td><td>28 Ok, 0 Failed, 47 Skipped of 75</td></tr>
+</tfoot>
+
+</table>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Mon Feb 29 2016 18:56:47<!/date><br />
+</div>
+</center>
+</body>
+</html>
