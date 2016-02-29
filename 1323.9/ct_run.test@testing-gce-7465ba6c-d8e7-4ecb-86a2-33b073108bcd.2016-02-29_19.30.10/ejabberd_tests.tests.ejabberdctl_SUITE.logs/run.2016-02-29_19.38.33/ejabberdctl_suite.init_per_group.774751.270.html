@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberdctl_SUITE:init_per_group result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+=== <a href="ejabberdctl_suite.src.html#init_per_group-1">source code for ejabberdctl_SUITE:init_per_group/1</a>
+
+<pre>
+<a name="top"></a>
+=== Group properties: [{name,last},sequence]
+
+=== Test case started with:
+ejabberdctl_SUITE:init_per_group([{ctl_path,
+                                   "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1/bin/mongooseimctl"},
+                                  {ctl_auth_mods,
+                                   [ejabberd_auth_internal,
+                                    ejabberd_auth_anonymous,
+                                    ejabberd_auth_internal]},
+                                  {roster_template,
+                                   "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/roster.template"},
+                                  {watchdog,<0.15475.0>},
+                                  {preset,"internal_mnesia"},
+                                  {tc_logfile,
+                                   "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7465ba6c-d8e7-4ecb-86a2-33b073108bcd.2016-02-29_19.30.10/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-02-29_19.38.33/ejabberdctl_suite.init_per_group.774751.270.html"},
+                                  {tc_group_properties,[{name,last},sequence]},
+                                  {tc_group_path,[]},
+                                  {data_dir,
+                                   "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/ejabberdctl_SUITE_data/"},
+                                  {priv_dir,
+                                   "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7465ba6c-d8e7-4ecb-86a2-33b073108bcd.2016-02-29_19.30.10/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-02-29_19.38.33/log_private/"},
+                                  {escalus_users,
+                                   [{alice,
+                                     [{username,<<"alicE">>},
+                                      {server,<<"localhost">>},
+                                      {password,<<"matygrysa">>}]},
+                                    {mike,
+                                     [{username,<<"mike">>},
+                                      {server,<<"localhost">>},
+                                      {password,<<"nicniema">>}]},
+                                    {bob,
+                                     [{username,<<"bOb">>},
+                                      {server,<<"localhost">>},
+                                      {password,<<"makrolika">>}]},
+                                    {kate,
+                                     [{username,<<"kate">>},
+                                      {server,<<"localhost">>},
+                                      {password,<<"makrowe;p">>}]}]}])
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7465ba6c-d8e7-4ecb-86a2-33b073108bcd.2016-02-29_19.30.10"
+
+=== Started at 2016-02-29 19:39:11
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-02-29 19:39:11
+=== successfully completed test case
+=== returned value = [{watchdog,<0.15731.0>},
+                      {ctl_path,
+                          "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1/bin/mongooseimctl"},
+                      {ctl_auth_mods,
+                          [ejabberd_auth_internal,ejabberd_auth_anonymous,
+                           ejabberd_auth_internal]},
+                      {roster_template,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/roster.template"},
+                      {preset,"internal_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7465ba6c-d8e7-4ecb-86a2-33b073108bcd.2016-02-29_19.30.10/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-02-29_19.38.33/ejabberdctl_suite.init_per_group.774751.270.html"},
+                      {tc_group_properties,[{name,last},sequence]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/ejabberdctl_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7465ba6c-d8e7-4ecb-86a2-33b073108bcd.2016-02-29_19.30.10/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-02-29_19.38.33/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                           {mike,
+                               [{username,<<"mike">>},
+                                {server,<<"localhost">>},
+                                {password,<<"nicniema">>}]},
+                           {bob,
+                               [{username,<<"bOb">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]},
+                           {kate,
+                               [{username,<<"kate">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrowe;p">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Mon Feb 29 2016 19:39:11<!/date><br />
+</div>
+</center>
+</body>
+</html>
