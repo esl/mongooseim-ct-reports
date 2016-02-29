@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test sm_SUITE:resend_more_offline_messages_than_buffer_size result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="sm_suite.src.html#resend_more_offline_messages_than_buffer_size-1">sm_SUITE:resend_more_offline_messages_than_buffer_size/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.21484.0>},
+     {{saved,ack_freq},unset},
+     {preset,"ldap_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ca7d25e4-12de-4002-bcc6-3f0a92b4620b.2016-02-29_18.41.45/ejabberd_tests.tests.sm_SUITE.logs/run.2016-02-29_18.58.13/sm_suite.resend_more_offline_messages_than_buffer_size.772335.13.html"},
+     {tc_group_properties,[{shuffle,{25842,4918,4065}},
+                           {repeat,4},
+                           {name,client_acking}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/sm_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ca7d25e4-12de-4002-bcc6-3f0a92b4620b.2016-02-29_18.41.45/ejabberd_tests.tests.sm_SUITE.logs/run.2016-02-29_18.58.13/log_private/"},
+     {escalus_users,[{alice,[{manual_ack,true},
+                             {stream_management,true},
+                             {username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ca7d25e4-12de-4002-bcc6-3f0a92b4620b.2016-02-29_18.41.45"
+
+=== Started at 2016-02-29 18:58:55
+
+<br />
+
+<div class="default"><b>*** User 2016-02-29 18:59:02.209 ***</b>
+buffer_max was not set - setting to 'undefined'
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-02-29 18:59:02
+=== successfully completed test case
+=== returned value = ok
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Mon Feb 29 2016 18:58:55<!/date><br />
+</div>
+</center>
+</body>
+</html>
