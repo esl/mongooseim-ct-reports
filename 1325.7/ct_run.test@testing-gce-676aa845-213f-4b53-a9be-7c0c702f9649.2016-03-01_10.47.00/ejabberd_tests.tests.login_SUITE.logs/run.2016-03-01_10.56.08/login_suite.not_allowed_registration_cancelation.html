@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test login_SUITE:not_allowed_registration_cancelation result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="login_suite.src.html#not_allowed_registration_cancelation-1">login_SUITE:not_allowed_registration_cancelation/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.15869.0>},
+     {preset,"riak_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-676aa845-213f-4b53-a9be-7c0c702f9649.2016-03-01_10.47.00/ejabberd_tests.tests.login_SUITE.logs/run.2016-03-01_10.56.08/login_suite.not_allowed_registration_cancelation.html"},
+     {tc_group_properties,[{name,bad_cancelation},no_sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/login_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-676aa845-213f-4b53-a9be-7c0c702f9649.2016-03-01_10.47.00/ejabberd_tests.tests.login_SUITE.logs/run.2016-03-01_10.56.08/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-676aa845-213f-4b53-a9be-7c0c702f9649.2016-03-01_10.47.00"
+
+=== Started at 2016-03-01 10:56:13
+
+<br />
+stopping mod_register
+starting mod_register
+stopping mod_register
+starting mod_register
+<a name="end"></a>
+
+
+=== Ended at 2016-03-01 10:56:14
+=== successfully completed test case
+=== returned value = [{old_mod_register_opts,
+                          [{welcome_message,{[]}},
+                           {registration_watchers,[<<"admin@localhost">>]},
+                           {ip_access,
+                               [{allow,"127.0.0.0/8"},{deny,"0.0.0.0/0"}]},
+                           {access,register}]},
+                      {escalus_event_mgr,<0.15886.0>},
+                      {tc_name,not_allowed_registration_cancelation},
+                      {escalus_cleaner,<0.15885.0>},
+                      {watchdog,<0.15884.0>},
+                      {preset,"riak_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-676aa845-213f-4b53-a9be-7c0c702f9649.2016-03-01_10.47.00/ejabberd_tests.tests.login_SUITE.logs/run.2016-03-01_10.56.08/login_suite.not_allowed_registration_cancelation.html"},
+                      {tc_group_properties,
+                          [{name,bad_cancelation},no_sequence]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/login_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-676aa845-213f-4b53-a9be-7c0c702f9649.2016-03-01_10.47.00/ejabberd_tests.tests.login_SUITE.logs/run.2016-03-01_10.56.08/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Tue Mar 01 2016 10:56:13<!/date><br />
+</div>
+</center>
+</body>
+</html>
