@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_tests.tests.component_SUITE results</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+// Parser for date format, e.g: Wed Jul 4 2012 11:24:15
+var monthNames = {};
+monthNames["Jan"] = "01"; monthNames["Feb"] = "02";
+monthNames["Mar"] = "03"; monthNames["Apr"] = "04";
+monthNames["May"] = "05"; monthNames["Jun"] = "06";
+monthNames["Jul"] = "07"; monthNames["Aug"] = "08";
+monthNames["Sep"] = "09"; monthNames["Oct"] = "10";
+monthNames["Nov"] = "11"; monthNames["Dec"] = "12";
+$.tablesorter.addParser({
+  id: 'CTDateSorter',
+  is: function(s) {
+      return false; },
+  format: function(s) {
+      if (s.length < 2) return 999999999;
+      else {
+          var date = s.match(/(\w{3})\s(\w{3})\s(\d{2})\s(\d{4})\s(\d{2}):(\d{2}):(\d{2})/);
+          var y = date[4]; var mo = monthNames[date[2]]; var d = String(date[3]);
+          var h = String(date[5]); var mi = String(date[6]); var sec = String(date[7]);
+          return (parseInt('' + y + mo + d + h + mi + sec)); }},
+  type: 'numeric' });
+// Parser for general text format
+$.tablesorter.addParser({
+  id: 'CTTextSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return 'zzzzzzzz';
+    else if (s == "?") return 'zzzzzzz';
+    else if (s == "-") return 'zzzzzz';
+    else if (s == "FAILED") return 'A';
+    else if (s == "SKIPPED") return 'B';
+    else if (s == "OK") return 'C';
+    else return '' + s; },
+  type: 'text' });
+// Parser for numerical values
+$.tablesorter.addParser({
+  id: 'CTValSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return '-2';
+    else if (s == "?") return '-1';
+    else if ((s.search(/(\d{1,})\s/)) >= 0) {
+      var num = s.match(/(\d{1,})\s/);
+      return (parseInt('' + num[1])); }
+    else if ((s.search(/(\d{1,})\.(\d{3})s/)) >= 0) {
+      var num = s.match(/(\d{1,})\.(\d{3})/);
+      if (num[1] == "0") return (parseInt('' + num[2]));
+      else return (parseInt('' + num[1] + num[2])); }
+    else return '' + s; },
+  type: 'numeric' });
+$(document).ready(function() {
+  $("#SortableTable").tablesorter({
+    headers: { 
+      0: { sorter: 'CTValSorter' },
+      1: { sorter: 'CTTextSorter' },
+      2: { sorter: 'CTTextSorter' },
+      3: { sorter: 'CTTextSorter' },
+      5: { sorter: 'CTValSorter' },
+      6: { sorter: 'CTTextSorter' },
+      7: { sorter: 'CTTextSorter' }
+    }
+  });
+  $("#SortableTable").trigger("update");
+  $("#SortableTable").trigger("appendCache");
+});
+</script>
+</head>
+<body>
+<div class="label">'mysql_mnesia'</div>
+
+<h1>Results for <i>ejabberd_tests.tests.component_SUITE</i></h1>
+<h4>Test started at 2016-03-01 10:11:19</h4>
+<p><b>Host info:</b><br />
+Run by travis on testing-gce-58286deb-01bc-4592-b5af-a462dc71a456<br />Used Erlang v6.4 in "/home/travis/otp/17.5"</p>
+<p><ul>
+<li><a href="suite.log">Full textual log</a></li>
+<li><a href="cover.html">Coverage log</a></li>
+<li><a href="unexpected_io.log.html">Unexpected I/O log</a></li>
+</ul></p>
+<p><i>Executing <b>14</b> test cases...</i>
+<br />
+</p>
+<table id="SortableTable">
+<thead>
+<tr><th>Num</th><th>Module</th><th>Group</th><th>Case</th><th>Log</th><th>Time</th><th>Result</th><th>Comment</th></tr>
+</thead>
+<tbody>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">component_SUITE</font></td><td><font color="black"></font></td><td><a href="component_suite.init_per_suite.html">init_per_suite</a></td><td><a href="component_suite.init_per_suite.html#top"><</a> <a href="component_suite.init_per_suite.html#end">></a></td><td><font color="black">0.003s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_tcp</font></td><td><a href="component_suite.init_per_group.html">init_per_group</a></td><td><a href="component_suite.init_per_group.html#top"><</a> <a href="component_suite.init_per_group.html#end">></a></td><td><font color="black">0.510s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">1</font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_tcp</font></td><td><a href="component_suite.register_one_component.html">register_one_component</a></td><td><a href="component_suite.register_one_component.html#top"><</a> <a href="component_suite.register_one_component.html#end">></a></td><td><font color="black">0.469s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">2</font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_tcp</font></td><td><a href="component_suite.register_two_components.html">register_two_components</a></td><td><a href="component_suite.register_two_components.html#top"><</a> <a href="component_suite.register_two_components.html#end">></a></td><td><font color="black">0.932s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">3</font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_tcp</font></td><td><a href="component_suite.try_registering_with_wrong_password.html">try_registering_with_wrong_password</a></td><td><a href="component_suite.try_registering_with_wrong_password.html#top"><</a> <a href="component_suite.try_registering_with_wrong_password.html#end">></a></td><td><font color="black">0.003s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">4</font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_tcp</font></td><td><a href="component_suite.try_registering_component_twice.html">try_registering_component_twice</a></td><td><a href="component_suite.try_registering_component_twice.html#top"><</a> <a href="component_suite.try_registering_component_twice.html#end">></a></td><td><font color="black">0.008s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">5</font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_tcp</font></td><td><a href="component_suite.try_registering_existing_host.html">try_registering_existing_host</a></td><td><a href="component_suite.try_registering_existing_host.html#top"><</a> <a href="component_suite.try_registering_existing_host.html#end">></a></td><td><font color="black">0.005s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">6</font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_tcp</font></td><td><a href="component_suite.disco_components.html">disco_components</a></td><td><a href="component_suite.disco_components.html#top"><</a> <a href="component_suite.disco_components.html#end">></a></td><td><font color="black">0.470s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_tcp</font></td><td><a href="component_suite.end_per_group.html">end_per_group</a></td><td><a href="component_suite.end_per_group.html#top"><</a> <a href="component_suite.end_per_group.html#end">></a></td><td><font color="black">0.921s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_ws</font></td><td><a href="component_suite.init_per_group.827082.915.html">init_per_group</a></td><td><a href="component_suite.init_per_group.827082.915.html#top"><</a> <a href="component_suite.init_per_group.827082.915.html#end">></a></td><td><font color="black">0.509s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">7</font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_ws</font></td><td><a href="component_suite.register_one_component.827083.453.html">register_one_component</a></td><td><a href="component_suite.register_one_component.827083.453.html#top"><</a> <a href="component_suite.register_one_component.827083.453.html#end">></a></td><td><font color="black">0.669s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">8</font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_ws</font></td><td><a href="component_suite.register_two_components.827084.154.html">register_two_components</a></td><td><a href="component_suite.register_two_components.827084.154.html#top"><</a> <a href="component_suite.register_two_components.827084.154.html#end">></a></td><td><font color="black">1.323s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">9</font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_ws</font></td><td><a href="component_suite.try_registering_with_wrong_password.827085.506.html">try_registering_with_wrong_password</a></td><td><a href="component_suite.try_registering_with_wrong_password.827085.506.html#top"><</a> <a href="component_suite.try_registering_with_wrong_password.827085.506.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">10</font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_ws</font></td><td><a href="component_suite.try_registering_component_twice.827085.533.html">try_registering_component_twice</a></td><td><a href="component_suite.try_registering_component_twice.827085.533.html#top"><</a> <a href="component_suite.try_registering_component_twice.827085.533.html#end">></a></td><td><font color="black">0.204s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">11</font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_ws</font></td><td><a href="component_suite.try_registering_existing_host.827085.763.html">try_registering_existing_host</a></td><td><a href="component_suite.try_registering_existing_host.827085.763.html#top"><</a> <a href="component_suite.try_registering_existing_host.827085.763.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">12</font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_ws</font></td><td><a href="component_suite.disco_components.827085.793.html">disco_components</a></td><td><a href="component_suite.disco_components.827085.793.html#top"><</a> <a href="component_suite.disco_components.827085.793.html#end">></a></td><td><font color="black">0.867s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">component_SUITE</font></td><td><font color="black">xep0114_ws</font></td><td><a href="component_suite.end_per_group.827086.685.html">end_per_group</a></td><td><a href="component_suite.end_per_group.827086.685.html#top"><</a> <a href="component_suite.end_per_group.827086.685.html#end">></a></td><td><font color="black">0.922s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">component_SUITE</font></td><td><font color="black">subdomain</font></td><td><a href="component_suite.init_per_group.827087.633.html">init_per_group</a></td><td><a href="component_suite.init_per_group.827087.633.html#top"><</a> <a href="component_suite.init_per_group.827087.633.html#end">></a></td><td><font color="black">1.114s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">13</font></td><td><font color="black">component_SUITE</font></td><td><font color="black">subdomain</font></td><td><a href="component_suite.register_subdomain.html">register_subdomain</a></td><td><a href="component_suite.register_subdomain.html#top"><</a> <a href="component_suite.register_subdomain.html#end">></a></td><td><font color="black">0.921s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">component_SUITE</font></td><td><font color="black">subdomain</font></td><td><a href="component_suite.end_per_group.827089.717.html">end_per_group</a></td><td><a href="component_suite.end_per_group.827089.717.html#top"><</a> <a href="component_suite.end_per_group.827089.717.html#end">></a></td><td><font color="black">7.027s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">component_SUITE</font></td><td><font color="black">distributed</font></td><td><a href="component_suite.init_per_group.827096.769.html">init_per_group</a></td><td><a href="component_suite.init_per_group.827096.769.html#top"><</a> <a href="component_suite.init_per_group.827096.769.html#end">></a></td><td><font color="black">7.035s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">14</font></td><td><font color="black">component_SUITE</font></td><td><font color="black">distributed</font></td><td><a href="component_suite.register_in_cluster.html">register_in_cluster</a></td><td><a href="component_suite.register_in_cluster.html#top"><</a> <a href="component_suite.register_in_cluster.html#end">></a></td><td><font color="black">0.974s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">component_SUITE</font></td><td><font color="black">distributed</font></td><td><a href="component_suite.end_per_group.827104.830.html">end_per_group</a></td><td><a href="component_suite.end_per_group.827104.830.html#top"><</a> <a href="component_suite.end_per_group.827104.830.html#end">></a></td><td><font color="black">7.336s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">component_SUITE</font></td><td><font color="black"></font></td><td><a href="component_suite.end_per_suite.html">end_per_suite</a></td><td><a href="component_suite.end_per_suite.html#top"><</a> <a href="component_suite.end_per_suite.html#end">></a></td><td><font color="black">0.002s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+
+</tbody>
+<tfoot>
+<tr><td></td><td><b>TOTAL</b></td><td></td><td></td><td></td><td>32.944s</td><td><b>Ok</b></td><td>14 Ok, 0 Failed of 14</td></tr>
+</tfoot>
+
+</table>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Tue Mar 01 2016 10:11:19<!/date><br />
+</div>
+</center>
+</body>
+</html>
