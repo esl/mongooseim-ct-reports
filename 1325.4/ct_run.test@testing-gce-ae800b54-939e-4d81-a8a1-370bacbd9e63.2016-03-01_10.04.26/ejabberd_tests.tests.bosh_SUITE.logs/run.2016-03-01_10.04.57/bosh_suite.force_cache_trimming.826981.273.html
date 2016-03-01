@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test bosh_SUITE:force_cache_trimming result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="bosh_suite.src.html#force_cache_trimming-1">bosh_SUITE:force_cache_trimming/1</a> (click for source code)
+
+=== Config value:
+
+    [{user,carol},
+     {watchdog,<0.9921.0>},
+     {escalus_user_db,{module,escalus_ejabberd}},
+     {preset,"odbc_pgsql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ae800b54-939e-4d81-a8a1-370bacbd9e63.2016-03-01_10.04.26/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-03-01_10.04.57/bosh_suite.force_cache_trimming.826981.273.html"},
+     {tc_group_properties,[{shuffle,{1264,18820,5645}},{name,acks}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/bosh_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ae800b54-939e-4d81-a8a1-370bacbd9e63.2016-03-01_10.04.26/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-03-01_10.04.57/log_private/"},
+     {escalus_users,[{carol,[{username,<<"carol">>},
+                             {server,<<"localhost">>},
+                             {password,<<"jinglebells">>},
+                             {transport,bosh},
+                             {path,<<"/http-bind">>},
+                             {port,5280}]},
+                     {carol_s,[{username,<<"carol_s">>},
+                               {server,<<"localhost">>},
+                               {password,<<"jinglebells_s">>},
+                               {transport,bosh},
+                               {ssl,true},
+                               {path,<<"/http-bind">>},
+                               {port,5285}]},
+                     {geralt,[{username,<<"geralt">>},
+                              {server,<<"localhost">>},
+                              {password,<<"witcher">>},
+                              {transport,ws},
+                              {port,5280},
+                              {wspath,<<"/ws-xmpp">>}]},
+                     {alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ae800b54-939e-4d81-a8a1-370bacbd9e63.2016-03-01_10.04.26"
+
+=== Started at 2016-03-01 10:09:41
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-03-01 10:09:41
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.10012.0>},
+                      {tc_name,force_cache_trimming},
+                      {escalus_cleaner,<0.10011.0>},
+                      {watchdog,<0.10010.0>},
+                      {user,carol},
+                      {escalus_user_db,{module,escalus_ejabberd}},
+                      {preset,"odbc_pgsql_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ae800b54-939e-4d81-a8a1-370bacbd9e63.2016-03-01_10.04.26/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-03-01_10.04.57/bosh_suite.force_cache_trimming.826981.273.html"},
+                      {tc_group_properties,
+                          [{shuffle,{1264,18820,5645}},{name,acks}]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/bosh_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ae800b54-939e-4d81-a8a1-370bacbd9e63.2016-03-01_10.04.26/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-03-01_10.04.57/log_private/"},
+                      {escalus_users,
+                          [{carol,
+                               [{username,<<"carol">>},
+                                {server,<<"localhost">>},
+                                {password,<<"jinglebells">>},
+                                {transport,bosh},
+                                {path,<<"/http-bind">>},
+                                {port,5280}]},
+                           {carol_s,
+                               [{username,<<"carol_s">>},
+                                {server,<<"localhost">>},
+                                {password,<<"jinglebells_s">>},
+                                {transport,bosh},
+                                {ssl,true},
+                                {path,<<"/http-bind">>},
+                                {port,5285}]},
+                           {geralt,
+                               [{username,<<"geralt">>},
+                                {server,<<"localhost">>},
+                                {password,<<"witcher">>},
+                                {transport,ws},
+                                {port,5280},
+                                {wspath,<<"/ws-xmpp">>}]},
+                           {alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Tue Mar 01 2016 10:09:41<!/date><br />
+</div>
+</center>
+</body>
+</html>
