@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test oauth_SUITE:login_with_revoked_token_test result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="oauth_suite.src.html#login_with_revoked_token_test-1">oauth_SUITE:login_with_revoked_token_test/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.2825.2>},
+     {running,[{mod_last,[{backend,odbc}]}]},
+     {preset,"odbc_pgsql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-c682c008-7083-4eb1-8fc6-8aefc3012317.2016-03-11_09.28.29/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-11_09.53.43/oauth_suite.login_with_revoked_token_test.html"},
+     {tc_group_properties,[{name,token_revocation},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/oauth_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-c682c008-7083-4eb1-8fc6-8aefc3012317.2016-03-11_09.28.29/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-11_09.53.43/log_private/"},
+     {escalus_users,[{bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]},
+                     {alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-c682c008-7083-4eb1-8fc6-8aefc3012317.2016-03-11_09.28.29"
+
+=== Started at 2016-03-11 09:53:47
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-03-11 09:53:47
+=== successfully completed test case
+=== returned value = {{auth_failed,
+                          {xmlel,<<"failure">>,
+                              [{<<"xmlns">>,
+                                <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                              [{xmlel,<<"not-authorized">>,[],[]}]}},
+                      {client,undefined,escalus_tcp,#Port<0.29258>,false,
+                          false,<0.2845.2>,undefined},
+                      [{username,<<"bOb">>},
+                       {server,<<"localhost">>},
+                       {password,<<"makrolika">>},
+                       {host,<<"localhost">>},
+                       {oauth_token,
+                           <<114,101,102,114,101,115,104,0,98,79,98,64,108,
+                             111,99,97,108,104,111,115,116,0,54,51,54,50,52,
+                             57,57,53,54,50,55,0,48,0,50,54,48,56,99,48,53,
+                             56,53,48,98,55,48,53,49,99,54,101,98,57,56,52,
+                             97,56,52,56,98,49,98,50,48,54,98,52,100,99,49,
+                             54,97,102,48,52,101,56,51,55,101,97,48,52,101,
+                             98,99,57,99,48,49,99,102,56,51,49,52,52,48,52,
+                             102,102,101,99,53,56,98,57,99,48,56,99,48,56,
+                             55,99,49,55,57,48,56,56,98,48,98,99,98,49,102,
+                             49>>}]}
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Fri Mar 11 2016 09:53:47<!/date><br />
+</div>
+</center>
+</body>
+</html>
