@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test oauth_SUITE:login_with_malformed_token result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="oauth_suite.src.html#login_with_malformed_token-1">oauth_SUITE:login_with_malformed_token/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.2765.2>},
+     {running,[{mod_last,[{backend,odbc}]}]},
+     {preset,"pgsql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-42c232ff-ac2d-4a00-ad4d-049b73d946b9.2016-03-11_08.46.34/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-11_09.11.03/oauth_suite.login_with_malformed_token.html"},
+     {tc_group_properties,[{name,token_login},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/oauth_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-42c232ff-ac2d-4a00-ad4d-049b73d946b9.2016-03-11_08.46.34/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-11_09.11.03/log_private/"},
+     {escalus_users,[{bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]},
+                     {alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-42c232ff-ac2d-4a00-ad4d-049b73d946b9.2016-03-11_08.46.34"
+
+=== Started at 2016-03-11 09:11:07
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-03-11 09:11:07
+=== successfully completed test case
+=== returned value = {{auth_failed,
+                          {xmlel,<<"failure">>,
+                              [{<<"xmlns">>,
+                                <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                              [{xmlel,<<"not-authorized">>,[],[]}]}},
+                      {client,undefined,escalus_tcp,#Port<0.29607>,false,
+                          false,<0.2815.2>,undefined},
+                      [{username,<<"bOb">>},
+                       {server,<<"localhost">>},
+                       {password,<<"makrolika">>},
+                       {host,<<"localhost">>},
+                       {oauth_token,
+                           <<109,97,108,102,111,114,109,101,100,32,245,79,
+                             232,119,45,11,107,58,43,108,222,221,128,116,
+                             240,27,176,31,69,53,36,243,130,221,48,81,53,
+                             166,78,201,96,189,57,22,63,15,184,252,221,224,
+                             98,123,196,59,153,142,179,217,142,142,229,91,
+                             247,34,141,14,129,38,87,68,157,93,69,117>>}]}
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Fri Mar 11 2016 09:11:07<!/date><br />
+</div>
+</center>
+</body>
+</html>
