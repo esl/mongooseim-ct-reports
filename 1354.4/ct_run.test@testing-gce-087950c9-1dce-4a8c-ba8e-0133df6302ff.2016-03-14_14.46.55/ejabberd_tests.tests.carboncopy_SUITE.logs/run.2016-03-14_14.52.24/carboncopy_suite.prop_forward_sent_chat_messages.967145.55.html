@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test carboncopy_SUITE:prop_forward_sent_chat_messages result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="carboncopy_suite.src.html#prop_forward_sent_chat_messages-1">carboncopy_SUITE:prop_forward_sent_chat_messages/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.13932.0>},
+     {preset,"odbc_pgsql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-087950c9-1dce-4a8c-ba8e-0133df6302ff.2016-03-14_14.46.55/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-03-14_14.52.24/carboncopy_suite.prop_forward_sent_chat_messages.967145.55.html"},
+     {tc_group_properties,[{shuffle,{1457,967145,16838}},
+                           {suite,carboncopy_SUITE},
+                           {name,all},
+                           parallel]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/carboncopy_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-087950c9-1dce-4a8c-ba8e-0133df6302ff.2016-03-14_14.46.55/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-03-14_14.52.24/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-087950c9-1dce-4a8c-ba8e-0133df6302ff.2016-03-14_14.46.55"
+
+=== Started at 2016-03-14 14:52:25
+
+<br />
+!
+
+
+Failed: After 1 test(s).
+
+Sub-property forward_sent failed.
+
+>> An exception was raised: error:undef.
+
+>> Stacktrace: [{escalus,fresh_story,
+                    [[{escalus_event_mgr,<0.14005.0>},
+                      {tc_name,prop_forward_sent_chat_messages},
+                      {escalus_cleaner,<0.14001.0>},
+                      {watchdog,<0.13998.0>},
+                      {preset,"odbc_pgsql_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-087950c9-1dce-4a8c-ba8e-0133df6302ff.2016-03-14_14.46.55/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-03-14_14.52.24/carboncopy_suite.prop_forward_sent_chat_messages.967145.55.html"},
+                      {tc_group_properties,
+                          [{shuffle,{1457,967145,16838}},
+                           {suite,carboncopy_SUITE},
+                           {name,all},
+                           parallel]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/carboncopy_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-087950c9-1dce-4a8c-ba8e-0133df6302ff.2016-03-14_14.46.55/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-03-14_14.52.24/log_private/"}],
+                     [{alice,1},{bob,2}],
+                     #Fun<carboncopy_SUITE.18.126835995>],
+                    []},
+                {carboncopy_SUITE,true_story,3,
+                    [{file,"carboncopy_SUITE.erl"},{line,224}]}].
+
+forward_sent:
+
+>> {2,<<76,105,107,101,32,116,111,32,97,32,115,116,101,112,45,100,97,109,101,32,111,114,32,97,32,100,111,119,97,103,101,114>>}
+
+
+Shrinking 
+.
+(1 time(s))
+
+forward_sent:
+
+>> {2,<<78,111,119,44,32,102,97,105,114,32,72,105,112,112,111,108,121,116,97,44,32,111,117,114,32,110,117,112,116,105,97,108,32,104,111,117,114>>}
+
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-03-14 14:52:25.080 ***</b>
+carboncopy_SUITE:'-run_prop/2-fun-0-' failed on line 34
+Reason: assertEqual_failed
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-03-14 14:52:25
+=== location [{carboncopy_SUITE,'-run_prop/2-fun-0-',<a href="carboncopy_suite.src.html#34">34</a>},
+              {test_server,ts_tc,1429},
+              {test_server,run_test_case_eval1,1026},
+              {test_server,run_test_case_eval,968}]
+=== reason = {assertEqual_failed,
+                     [{module,carboncopy_SUITE},
+                      {line,34},
+                      {expression,
+                          "proper : quickcheck ( proper : conjunction ( [ { PropName , Property } ] ) , [ verbose , long_result , { numtests , 3 } ] )"},
+                      {expected,true},
+                      {value,
+                          [[{forward_sent,
+                                [{2,
+                                  <<"Now, fair Hippolyta, our nuptial hour">>}]}]]}]}
+  in function  carboncopy_SUITE:'-run_prop/2-fun-0-'/3 (carboncopy_SUITE.erl, line 34)
+  in call from test_server:ts_tc/3 (test_server.erl, line 1429)
+  in call from test_server:run_test_case_eval1/6 (test_server.erl, line 1026)
+  in call from test_server:run_test_case_eval/9 (test_server.erl, line 968)
