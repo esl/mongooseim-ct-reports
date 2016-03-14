@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test cluster_commands_SUITE:init_per_group result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+=== <a href="cluster_commands_suite.src.html#init_per_group-1">source code for cluster_commands_SUITE:init_per_group/1</a>
+
+<pre>
+<a name="top"></a>
+=== Group properties: [{name,clustered}]
+
+=== Test case started with:
+cluster_commands_SUITE:init_per_group([{ctl_path,
+                                        "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1/bin/mongooseimctl"},
+                                       {{ejabberd_cwd,ejabberd2@localhost},
+                                        "/home/travis/build/esl/MongooseIM/dev/mongooseim_node2"},
+                                       {watchdog,<0.13973.0>},
+                                       {preset,"internal_mnesia"},
+                                       {tc_logfile,
+                                        "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-fffc2442-fa2d-4cea-b209-76cede5eee64.2016-03-14_13.01.02/ejabberd_tests.tests.cluster_commands_SUITE.logs/run.2016-03-14_13.07.04/cluster_commands_suite.init_per_group.html"},
+                                       {tc_group_properties,
+                                        [{name,clustered}]},
+                                       {tc_group_path,[]},
+                                       {data_dir,
+                                        "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/cluster_commands_SUITE_data/"},
+                                       {priv_dir,
+                                        "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-fffc2442-fa2d-4cea-b209-76cede5eee64.2016-03-14_13.01.02/ejabberd_tests.tests.cluster_commands_SUITE.logs/run.2016-03-14_13.07.04/log_private/"}])
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-fffc2442-fa2d-4cea-b209-76cede5eee64.2016-03-14_13.01.02"
+
+=== Started at 2016-03-14 13:07:05
+
+<br />
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-03-14 13:07:10.783 ***</b>
+cluster_commands_SUITE:init_per_group failed
+Reason: assertMatch_failed
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-03-14 13:07:10
+=== location [{distributed_helper,'-add_node_to_cluster/1-fun-2-',43},
+              {distributed_helper,add_node_to_cluster,43},
+              {cluster_commands_SUITE,init_per_group,<a href="cluster_commands_suite.src.html#72">72</a>},
+              {test_server,ts_tc,1360},
+              {test_server,run_test_case_eval1,1041},
+              {test_server,run_test_case_eval,925}]
+=== reason = {assertMatch_failed,
+                     [{module,distributed_helper},
+                      {line,43},
+                      {expression,"Res3"},
+                      {pattern,"\"Node added to cluster\" ++ _"},
+                      {value,
+                          "Error: Node is already running! Stop the node and delete Mnesia database directory (/home/travis/build/esl/MongooseIM/dev/mongooseim_node2/Mnesia.ejabberd2@localhost).\n"}]}
+  in function  distributed_helper:'-add_node_to_cluster/1-fun-2-'/1 (distributed_helper.erl, line 43)
+  in call from distributed_helper:add_node_to_cluster/1 (distributed_helper.erl, line 43)
+  in call from cluster_commands_SUITE:init_per_group/2 (cluster_commands_SUITE.erl, line 72)
+  in call from test_server:ts_tc/3 (test_server.erl, line 1360)
+  in call from test_server:run_test_case_eval1/6 (test_server.erl, line 1041)
+  in call from test_server:run_test_case_eval/9 (test_server.erl, line 925)
+=== 
+*** init_per_group failed.
+    Skipping all cases.
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Mon Mar 14 2016 13:07:05<!/date><br />
+</div>
+</center>
+</body>
+</html>
