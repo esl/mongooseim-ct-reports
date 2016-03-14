@@ -1,0 +1,330 @@
+=== Suite started at 2016-03-14 14:57:35
+=== Starting test, 6 test cases
+=cases         6
+=user          travis
+=host          testing-gce-ffacab47-be1b-4ee7-8149-8ad678f25ee7
+=hosts         testing-gce-ffacab47-be1b-4ee7-8149-8ad678f25ee7 
+=emulator_vsn  7.1
+=emulator      beam
+=otp_release   18
+=started       2016-03-14 14:57:35
+=case          offline_SUITE:init_per_suite
+=logfile       offline_suite.init_per_suite.html
+=started       2016-03-14 14:57:35
+=ended         2016-03-14 14:57:35
+=result        ok
+=elapsed       0.002035
+=case          ct_framework:init_per_group
+=logfile       ct_framework.init_per_group.html
+=group_props   [{suite,offline_SUITE},
+                {name,mod_offline_tests},
+                parallel,shuffle]
+=started       2016-03-14 14:57:35
+=ended         2016-03-14 14:57:35
+=result        ok
+=elapsed       4.8e-5
+=case          offline_SUITE:offline_message_is_stored_and_delivered_at_login
+=logfile       offline_suite.offline_message_is_stored_and_delivered_at_login.2358.html
+=started       2016-03-14 14:57:35
+=ended         2016-03-14 14:57:35
+=result        failed: {undef,
+                           [{escalus,fresh_story_with_config,
+                                [[{escalus_event_mgr,<0.20331.0>},
+                                  {tc_name,
+                                      offline_message_is_stored_and_delivered_at_login},
+                                  {escalus_cleaner,<0.20329.0>},
+                                  {watchdog,<0.20327.0>},
+                                  {preset,"internal_mnesia"},
+                                  {tc_logfile,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ffacab47-be1b-4ee7-8149-8ad678f25ee7.2016-03-14_14.42.58/ejabberd_tests.tests.offline_SUITE.logs/run.2016-03-14_14.57.35/offline_suite.offline_message_is_stored_and_delivered_at_login.2358.html"},
+                                  {tc_group_properties,
+                                      [{shuffle,{1457,967455,784330}},
+                                       {suite,offline_SUITE},
+                                       {name,mod_offline_tests},
+                                       parallel]},
+                                  {tc_group_path,[]},
+                                  {data_dir,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/offline_SUITE_data/"},
+                                  {priv_dir,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ffacab47-be1b-4ee7-8149-8ad678f25ee7.2016-03-14_14.42.58/ejabberd_tests.tests.offline_SUITE.logs/run.2016-03-14_14.57.35/log_private/"}],
+                                 [{alice,1},{bob,1}],
+                                 #Fun<offline_SUITE.0.47667400>],
+                                []},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,984}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus,
+                                                                            fresh_story_with_config},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            984},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED test case 1 of 6 ***
+=case          offline_SUITE:error_message_is_not_stored
+=logfile       offline_suite.error_message_is_not_stored.95.html
+=started       2016-03-14 14:57:35
+=ended         2016-03-14 14:57:35
+=result        failed: {undef,
+                           [{escalus,fresh_story_with_config,
+                                [[{escalus_event_mgr,<0.20317.0>},
+                                  {tc_name,error_message_is_not_stored},
+                                  {escalus_cleaner,<0.20316.0>},
+                                  {watchdog,<0.20314.0>},
+                                  {preset,"internal_mnesia"},
+                                  {tc_logfile,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ffacab47-be1b-4ee7-8149-8ad678f25ee7.2016-03-14_14.42.58/ejabberd_tests.tests.offline_SUITE.logs/run.2016-03-14_14.57.35/offline_suite.error_message_is_not_stored.95.html"},
+                                  {tc_group_properties,
+                                      [{shuffle,{1457,967455,784330}},
+                                       {suite,offline_SUITE},
+                                       {name,mod_offline_tests},
+                                       parallel]},
+                                  {tc_group_path,[]},
+                                  {data_dir,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/offline_SUITE_data/"},
+                                  {priv_dir,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ffacab47-be1b-4ee7-8149-8ad678f25ee7.2016-03-14_14.42.58/ejabberd_tests.tests.offline_SUITE.logs/run.2016-03-14_14.57.35/log_private/"}],
+                                 [{alice,1},{bob,1}],
+                                 #Fun<offline_SUITE.1.47667400>],
+                                []},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,984}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus,
+                                                                            fresh_story_with_config},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            984},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED test case 2 of 6 ***
+=case          offline_SUITE:headline_message_is_not_stored
+=logfile       offline_suite.headline_message_is_not_stored.99.html
+=started       2016-03-14 14:57:35
+=ended         2016-03-14 14:57:35
+=result        failed: {undef,
+                           [{escalus,fresh_story_with_config,
+                                [[{escalus_event_mgr,<0.20325.0>},
+                                  {tc_name,headline_message_is_not_stored},
+                                  {escalus_cleaner,<0.20324.0>},
+                                  {watchdog,<0.20323.0>},
+                                  {preset,"internal_mnesia"},
+                                  {tc_logfile,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ffacab47-be1b-4ee7-8149-8ad678f25ee7.2016-03-14_14.42.58/ejabberd_tests.tests.offline_SUITE.logs/run.2016-03-14_14.57.35/offline_suite.headline_message_is_not_stored.99.html"},
+                                  {tc_group_properties,
+                                      [{shuffle,{1457,967455,784330}},
+                                       {suite,offline_SUITE},
+                                       {name,mod_offline_tests},
+                                       parallel]},
+                                  {tc_group_path,[]},
+                                  {data_dir,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/offline_SUITE_data/"},
+                                  {priv_dir,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ffacab47-be1b-4ee7-8149-8ad678f25ee7.2016-03-14_14.42.58/ejabberd_tests.tests.offline_SUITE.logs/run.2016-03-14_14.57.35/log_private/"}],
+                                 [{alice,1},{bob,1}],
+                                 #Fun<offline_SUITE.3.47667400>],
+                                []},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,984}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus,
+                                                                            fresh_story_with_config},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            984},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED test case 3 of 6 ***
+=case          offline_SUITE:groupchat_message_is_not_stored
+=logfile       offline_suite.groupchat_message_is_not_stored.103.html
+=started       2016-03-14 14:57:35
+=ended         2016-03-14 14:57:35
+=result        failed: {undef,
+                           [{escalus,fresh_story_with_config,
+                                [[{escalus_event_mgr,<0.20313.0>},
+                                  {tc_name,groupchat_message_is_not_stored},
+                                  {escalus_cleaner,<0.20312.0>},
+                                  {watchdog,<0.20310.0>},
+                                  {preset,"internal_mnesia"},
+                                  {tc_logfile,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ffacab47-be1b-4ee7-8149-8ad678f25ee7.2016-03-14_14.42.58/ejabberd_tests.tests.offline_SUITE.logs/run.2016-03-14_14.57.35/offline_suite.groupchat_message_is_not_stored.103.html"},
+                                  {tc_group_properties,
+                                      [{shuffle,{1457,967455,784330}},
+                                       {suite,offline_SUITE},
+                                       {name,mod_offline_tests},
+                                       parallel]},
+                                  {tc_group_path,[]},
+                                  {data_dir,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/offline_SUITE_data/"},
+                                  {priv_dir,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ffacab47-be1b-4ee7-8149-8ad678f25ee7.2016-03-14_14.42.58/ejabberd_tests.tests.offline_SUITE.logs/run.2016-03-14_14.57.35/log_private/"}],
+                                 [{alice,1},{bob,1}],
+                                 #Fun<offline_SUITE.2.47667400>],
+                                []},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,984}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus,
+                                                                            fresh_story_with_config},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            984},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED test case 4 of 6 ***
+=case          offline_SUITE:max_offline_messages_reached
+=logfile       offline_suite.max_offline_messages_reached.2362.html
+=started       2016-03-14 14:57:35
+=ended         2016-03-14 14:57:35
+=result        failed: {undef,
+                           [{escalus,fresh_story_with_config,
+                                [[{escalus_event_mgr,<0.20321.0>},
+                                  {tc_name,max_offline_messages_reached},
+                                  {escalus_cleaner,<0.20320.0>},
+                                  {watchdog,<0.20319.0>},
+                                  {preset,"internal_mnesia"},
+                                  {tc_logfile,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ffacab47-be1b-4ee7-8149-8ad678f25ee7.2016-03-14_14.42.58/ejabberd_tests.tests.offline_SUITE.logs/run.2016-03-14_14.57.35/offline_suite.max_offline_messages_reached.2362.html"},
+                                  {tc_group_properties,
+                                      [{shuffle,{1457,967455,784330}},
+                                       {suite,offline_SUITE},
+                                       {name,mod_offline_tests},
+                                       parallel]},
+                                  {tc_group_path,[]},
+                                  {data_dir,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/offline_SUITE_data/"},
+                                  {priv_dir,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ffacab47-be1b-4ee7-8149-8ad678f25ee7.2016-03-14_14.42.58/ejabberd_tests.tests.offline_SUITE.logs/run.2016-03-14_14.57.35/log_private/"}],
+                                 [{alice,1},{bob,4}],
+                                 #Fun<offline_SUITE.4.47667400>],
+                                []},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,984}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus,
+                                                                            fresh_story_with_config},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            984},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED test case 5 of 6 ***
+=case          offline_SUITE:expired_messages_are_not_delivered
+=logfile       offline_suite.expired_messages_are_not_delivered.107.html
+=started       2016-03-14 14:57:35
+=ended         2016-03-14 14:57:35
+=result        failed: {undef,
+                           [{escalus,fresh_story_with_config,
+                                [[{escalus_event_mgr,<0.20330.0>},
+                                  {tc_name,expired_messages_are_not_delivered},
+                                  {escalus_cleaner,<0.20328.0>},
+                                  {watchdog,<0.20326.0>},
+                                  {preset,"internal_mnesia"},
+                                  {tc_logfile,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ffacab47-be1b-4ee7-8149-8ad678f25ee7.2016-03-14_14.42.58/ejabberd_tests.tests.offline_SUITE.logs/run.2016-03-14_14.57.35/offline_suite.expired_messages_are_not_delivered.107.html"},
+                                  {tc_group_properties,
+                                      [{shuffle,{1457,967455,784330}},
+                                       {suite,offline_SUITE},
+                                       {name,mod_offline_tests},
+                                       parallel]},
+                                  {tc_group_path,[]},
+                                  {data_dir,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/offline_SUITE_data/"},
+                                  {priv_dir,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-ffacab47-be1b-4ee7-8149-8ad678f25ee7.2016-03-14_14.42.58/ejabberd_tests.tests.offline_SUITE.logs/run.2016-03-14_14.57.35/log_private/"}],
+                                 [{alice,1},{bob,1}],
+                                 #Fun<offline_SUITE.5.47667400>],
+                                []},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,984}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus,
+                                                                            fresh_story_with_config},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            984},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED test case 6 of 6 ***
+=case          ct_framework:end_per_group
+=logfile       ct_framework.end_per_group.html
+=group_props   [{suite,offline_SUITE},
+                {name,mod_offline_tests},
+                parallel,shuffle]
+=started       2016-03-14 14:57:35
+=ended         2016-03-14 14:57:35
+=result        ok
+=elapsed       4.5e-5
+=group_time    0.079s
+=case          offline_SUITE:end_per_suite
+=logfile       offline_suite.end_per_suite.html
+=started       2016-03-14 14:57:35
+=ended         2016-03-14 14:57:35
+=result        failed: {undef,
+                           [{escalus_fresh,clean,[],[]},
+                            {offline_SUITE,end_per_suite,1,
+                                [{file,"offline_SUITE.erl"},{line,43}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1057}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus_fresh,
+                                                                            clean},
+                                                                           {offline_SUITE,
+                                                                            end_per_suite,
+                                                                            43},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1057},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED {offline_SUITE,end_per_suite} ***
+=group_time    0.177s
+=== TEST COMPLETE, 0 ok, 6 failed of 6 test cases
+
+=finished      2016-03-14 14:57:35
+=failed        6
+=successful    0
+=user_skipped  0
+=auto_skipped  0
