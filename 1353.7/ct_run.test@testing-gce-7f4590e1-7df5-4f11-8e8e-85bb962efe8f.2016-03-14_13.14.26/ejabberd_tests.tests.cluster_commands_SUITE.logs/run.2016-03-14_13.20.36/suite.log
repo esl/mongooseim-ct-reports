@@ -1,0 +1,133 @@
+=== Suite started at 2016-03-14 13:20:36
+=== Starting test, 2 test cases
+=cases         2
+=user          travis
+=host          testing-gce-7f4590e1-7df5-4f11-8e8e-85bb962efe8f
+=hosts         testing-gce-7f4590e1-7df5-4f11-8e8e-85bb962efe8f 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-14 13:20:36
+=case          cluster_commands_SUITE:init_per_suite
+=logfile       cluster_commands_suite.init_per_suite.html
+=started       2016-03-14 13:20:36
+=ended         2016-03-14 13:20:36
+=result        ok
+=elapsed       0.455229
+=case          cluster_commands_SUITE:init_per_group
+=logfile       cluster_commands_suite.init_per_group.html
+=group_props   [{name,clustered}]
+=started       2016-03-14 13:20:36
+=ended         2016-03-14 13:20:42
+=result        failed: {{assertMatch_failed,
+                            [{module,distributed_helper},
+                             {line,43},
+                             {expression,"Res3"},
+                             {pattern,"\"Node added to cluster\" ++ _"},
+                             {value,
+                                 "Error: Node is already running! Stop the node and delete Mnesia database directory (/home/travis/build/esl/MongooseIM/dev/mongooseim_node2/Mnesia.ejabberd2@localhost).\n"}]},
+                        [{distributed_helper,'-add_node_to_cluster/1-fun-2-',
+                             1,
+                             [{file,"distributed_helper.erl"},{line,43}]},
+                         {distributed_helper,add_node_to_cluster,1,
+                             [{file,"distributed_helper.erl"},{line,43}]},
+                         {cluster_commands_SUITE,init_per_group,2,
+                             [{file,"cluster_commands_SUITE.erl"},{line,72}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1099}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                         '-add_node_to_cluster/1-fun-2-',
+                                                                         43},
+                                                                        {distributed_helper,
+                                                                         add_node_to_cluster,
+                                                                         43},
+                                                                        {cluster_commands_SUITE,
+                                                                         init_per_group,
+                                                                         72},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1099},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED {cluster_commands_SUITE,init_per_group} ***
+=== 
+=case          cluster_commands_SUITE:one_to_one_message
+=group_props   [{name,"clustered"}]
+=started       2016-03-14 13:20:42
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #1 {cluster_commands_SUITE,one_to_one_message} ***
+=== 
+=case          cluster_commands_SUITE:end_per_group
+=group_props   [{name,"clustered"}]
+=started       2016-03-14 13:20:42
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {cluster_commands_SUITE,end_per_group} ***
+=case          cluster_commands_SUITE:init_per_group
+=logfile       cluster_commands_suite.init_per_group.961642.205.html
+=group_props   [{name,ejabberdctl}]
+=started       2016-03-14 13:20:42
+=ended         2016-03-14 13:23:00
+=result        failed: {{timeout,starting_node},
+                        [{distributed_helper,wait_until_started,2,
+                             [{file,"distributed_helper.erl"},{line,86}]},
+                         {distributed_helper,add_node_to_cluster,1,
+                             [{file,"distributed_helper.erl"},{line,46}]},
+                         {cluster_commands_SUITE,init_per_group,2,
+                             [{file,"cluster_commands_SUITE.erl"},{line,72}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1099}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                         wait_until_started,
+                                                                         86},
+                                                                        {distributed_helper,
+                                                                         add_node_to_cluster,
+                                                                         46},
+                                                                        {cluster_commands_SUITE,
+                                                                         init_per_group,
+                                                                         72},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1099},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED {cluster_commands_SUITE,init_per_group} ***
+=== 
+=case          cluster_commands_SUITE:set_master_test
+=group_props   [{name,"ejabberdctl"}]
+=started       2016-03-14 13:23:00
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #2 {cluster_commands_SUITE,set_master_test} ***
+=== 
+=case          cluster_commands_SUITE:end_per_group
+=group_props   [{name,"ejabberdctl"}]
+=started       2016-03-14 13:23:00
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {cluster_commands_SUITE,end_per_group} ***
+=case          cluster_commands_SUITE:end_per_suite
+=logfile       cluster_commands_suite.end_per_suite.html
+=started       2016-03-14 13:23:00
+=ended         2016-03-14 13:23:06
+=result        ok
+=elapsed       5.687633
+=group_time    144.869s
+=== TEST COMPLETE, 0 ok, 0 failed, 2 skipped of 2 test cases
+
+=finished      2016-03-14 13:23:06
+=failed        0
+=successful    0
+=user_skipped  0
+=auto_skipped  2
