@@ -1,0 +1,40 @@
+=== Suite started at 2016-03-14 14:28:49
+=== Starting test (with repeated test cases)
+=cases         unknown
+=user          travis
+=host          testing-gce-1815e5ba-232c-4369-b5a7-fd6009496a1c
+=hosts         testing-gce-1815e5ba-232c-4369-b5a7-fd6009496a1c 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-14 14:28:49
+=case          users_api_SUITE:init_per_suite
+=logfile       users_api_suite.init_per_suite.html
+=started       2016-03-14 14:28:49
+=ended         2016-03-14 14:28:50
+=result        skipped: "users api not compatible with external authentication"
+=== *** SKIPPED {users_api_SUITE,init_per_suite} ***
+=== 
+=case          users_api_SUITE:user_transaction
+=group_props   [{name,"transaction"}]
+=started       2016-03-14 14:28:50
+=result        skipped: users api not compatible with external authentication
+=== *** Skipping test case #1 {users_api_SUITE,user_transaction} ***
+=== 
+=case          users_api_SUITE:negative_calls
+=group_props   [{name,"negative"}]
+=started       2016-03-14 14:28:50
+=result        skipped: users api not compatible with external authentication
+=== *** Skipping test case #2 {users_api_SUITE,negative_calls} ***
+=== 
+=case          users_api_SUITE:end_per_suite
+=started       2016-03-14 14:28:50
+=result        skipped: users api not compatible with external authentication
+=== *** Skipping {users_api_SUITE,end_per_suite} ***
+=== TEST COMPLETE, 0 ok, 0 failed, 2 skipped of 2 test cases
+
+=finished      2016-03-14 14:28:50
+=failed        0
+=successful    0
+=user_skipped  2
+=auto_skipped  0
