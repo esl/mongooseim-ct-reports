@@ -1,0 +1,159 @@
+=== Suite started at 2016-03-14 13:21:49
+=== Starting test, 4 test cases
+=cases         4
+=user          travis
+=host          testing-gce-a1487217-7ff7-4daf-8716-5b71101d8e9b
+=hosts         testing-gce-a1487217-7ff7-4daf-8716-5b71101d8e9b 
+=emulator_vsn  7.1
+=emulator      beam
+=otp_release   18
+=started       2016-03-14 13:21:49
+=case          conf_reload_SUITE:init_per_suite
+=logfile       conf_reload_suite.init_per_suite.html
+=started       2016-03-14 13:21:49
+=ended         2016-03-14 13:21:49
+=result        ok
+=elapsed       0.001889
+=case          conf_reload_SUITE:init_per_group
+=logfile       conf_reload_suite.init_per_group.html
+=group_props   [{name,xmpp_domain_local_reload}]
+=started       2016-03-14 13:21:49
+=ended         2016-03-14 13:21:49
+=result        ok
+=elapsed       0.001341
+=case          conf_reload_SUITE:domain_should_change
+=logfile       conf_reload_suite.domain_should_change.html
+=started       2016-03-14 13:21:49
+=ended         2016-03-14 13:21:56
+=result        ok
+=elapsed       0.38696
+=case          conf_reload_SUITE:user_should_be_registered_and_unregistered_via_ctl
+=logfile       conf_reload_suite.user_should_be_registered_and_unregistered_via_ctl.html
+=started       2016-03-14 13:21:56
+=ended         2016-03-14 13:22:03
+=result        ok
+=elapsed       0.402677
+=case          conf_reload_SUITE:user_should_be_registered_and_unregistered_via_xmpp
+=logfile       conf_reload_suite.user_should_be_registered_and_unregistered_via_xmpp.html
+=started       2016-03-14 13:22:03
+=ended         2016-03-14 13:22:10
+=result        ok
+=elapsed       1.115738
+=case          conf_reload_SUITE:user_should_be_disconnected_from_removed_domain
+=logfile       conf_reload_suite.user_should_be_disconnected_from_removed_domain.html
+=started       2016-03-14 13:22:10
+=ended         2016-03-14 13:22:16
+=result        failed: {{badmatch,
+                         {error,
+                          {connection_step_failed,
+                           {{escalus_session,authenticate},
+                            {client,undefined,escalus_tcp,#Port<0.14690>,
+                             false,false,<0.14684.0>,undefined},
+                            [{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"makota">>},
+                             {host,<<"localhost">>}],
+                            [{compression,[<<"zlib">>]},
+                             {starttls,true},
+                             {stream_management,true},
+                             {advanced_message_processing,true}]},
+                           {auth_failed,<<"alicE">>,
+                            {xmlel,<<"failure">>,
+                             [{<<"xmlns">>,
+                               <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                             [{xmlel,<<"not-authorized">>,[],[]}]}}}}},
+                        [{conf_reload_SUITE,connect_user,2,
+                          [{file,"conf_reload_SUITE.erl"},{line,185}]},
+                         {conf_reload_SUITE,
+                          user_should_be_disconnected_from_removed_domain,1,
+                          [{file,"conf_reload_SUITE.erl"},{line,129}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1408}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,984}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,926}]}]}, [{conf_reload_SUITE,
+                                                                      connect_user,
+                                                                      185},
+                                                                     {conf_reload_SUITE,
+                                                                      user_should_be_disconnected_from_removed_domain,
+                                                                      129},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1408},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      984},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      926}]
+=== *** FAILED test case 4 of 4 ***
+=case          conf_reload_SUITE:end_per_group
+=logfile       conf_reload_suite.end_per_group.html
+=group_props   [{name,xmpp_domain_local_reload}]
+=started       2016-03-14 13:22:17
+=ended         2016-03-14 13:22:17
+=result        failed: {{badmatch,
+                         {error,
+                          {connection_step_failed,
+                           {{escalus_session,authenticate},
+                            {client,undefined,escalus_tcp,#Port<0.14693>,
+                             false,false,<0.14690.0>,undefined},
+                            [{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {host,<<"localhost">>},
+                             {port,5222},
+                             {auth,{escalus_auth,auth_plain}},
+                             {wspath,undefined},
+                             {username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"makota">>}],
+                            [{compression,[<<"zlib">>]},
+                             {starttls,true},
+                             {stream_management,true},
+                             {advanced_message_processing,true}]},
+                           {auth_failed,<<"alicE">>,
+                            {xmlel,<<"failure">>,
+                             [{<<"xmlns">>,
+                               <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                             [{xmlel,<<"not-authorized">>,[],[]}]}}}}},
+                        [{escalus_users,delete_user,2,
+                          [{file,"src/escalus_users.erl"},{line,267}]},
+                         {escalus_users,'-delete_users/2-lc$^0/1-0-',2,
+                          [{file,"src/escalus_users.erl"},{line,111}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1408}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1057}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,926}]}]}, [{escalus_users,
+                                                                      delete_user,
+                                                                      267},
+                                                                     {escalus_users,
+                                                                      '-delete_users/2-lc$^0/1-0-',
+                                                                      111},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1408},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1057},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      926}]
+=== *** FAILED {conf_reload_SUITE,end_per_group} ***
+=group_time    27.435s
+=case          conf_reload_SUITE:end_per_suite
+=logfile       conf_reload_suite.end_per_suite.html
+=started       2016-03-14 13:22:17
+=ended         2016-03-14 13:22:17
+=result        ok
+=elapsed       0.001846
+=group_time    27.715s
+=== TEST COMPLETE, 3 ok, 1 failed of 4 test cases
+
+=finished      2016-03-14 13:22:17
+=failed        1
+=successful    3
+=user_skipped  0
+=auto_skipped  0
