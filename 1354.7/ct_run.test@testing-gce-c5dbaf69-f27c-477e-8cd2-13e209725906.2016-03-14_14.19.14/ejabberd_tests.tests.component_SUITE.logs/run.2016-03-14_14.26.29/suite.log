@@ -1,0 +1,173 @@
+=== Suite started at 2016-03-14 14:26:29
+=== Starting test, 14 test cases
+=cases         14
+=user          travis
+=host          testing-gce-c5dbaf69-f27c-477e-8cd2-13e209725906
+=hosts         testing-gce-c5dbaf69-f27c-477e-8cd2-13e209725906 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-14 14:26:29
+=case          component_SUITE:init_per_suite
+=logfile       component_suite.init_per_suite.html
+=started       2016-03-14 14:26:29
+=ended         2016-03-14 14:26:29
+=result        ok
+=elapsed       0.006895
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.html
+=group_props   [{name,xep0114_tcp}]
+=started       2016-03-14 14:26:29
+=ended         2016-03-14 14:26:30
+=result        ok
+=elapsed       0.522416
+=case          component_SUITE:register_one_component
+=logfile       component_suite.register_one_component.html
+=started       2016-03-14 14:26:30
+=ended         2016-03-14 14:26:30
+=result        ok
+=elapsed       0.473415
+=case          component_SUITE:register_two_components
+=logfile       component_suite.register_two_components.html
+=started       2016-03-14 14:26:30
+=ended         2016-03-14 14:26:31
+=result        ok
+=elapsed       0.931789
+=case          component_SUITE:try_registering_with_wrong_password
+=logfile       component_suite.try_registering_with_wrong_password.html
+=started       2016-03-14 14:26:31
+=ended         2016-03-14 14:26:31
+=result        ok
+=elapsed       0.003838
+=case          component_SUITE:try_registering_component_twice
+=logfile       component_suite.try_registering_component_twice.html
+=started       2016-03-14 14:26:31
+=ended         2016-03-14 14:26:31
+=result        ok
+=elapsed       0.011763
+=case          component_SUITE:try_registering_existing_host
+=logfile       component_suite.try_registering_existing_host.html
+=started       2016-03-14 14:26:31
+=ended         2016-03-14 14:26:31
+=result        ok
+=elapsed       0.003987
+=case          component_SUITE:disco_components
+=logfile       component_suite.disco_components.html
+=started       2016-03-14 14:26:31
+=ended         2016-03-14 14:26:32
+=result        ok
+=elapsed       0.475094
+=case          component_SUITE:end_per_group
+=logfile       component_suite.end_per_group.html
+=group_props   [{name,xep0114_tcp}]
+=started       2016-03-14 14:26:32
+=ended         2016-03-14 14:26:33
+=result        ok
+=elapsed       0.924436
+=group_time    2.622s
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.965593.295.html
+=group_props   [{name,xep0114_ws}]
+=started       2016-03-14 14:26:33
+=ended         2016-03-14 14:26:33
+=result        ok
+=elapsed       0.513415
+=case          component_SUITE:register_one_component
+=logfile       component_suite.register_one_component.965593.835.html
+=started       2016-03-14 14:26:33
+=ended         2016-03-14 14:26:34
+=result        ok
+=elapsed       0.467789
+=case          component_SUITE:register_two_components
+=logfile       component_suite.register_two_components.965594.334.html
+=started       2016-03-14 14:26:34
+=ended         2016-03-14 14:26:35
+=result        ok
+=elapsed       0.93504
+=case          component_SUITE:try_registering_with_wrong_password
+=logfile       component_suite.try_registering_with_wrong_password.965595.297.html
+=started       2016-03-14 14:26:35
+=ended         2016-03-14 14:26:35
+=result        ok
+=elapsed       0.003978
+=case          component_SUITE:try_registering_component_twice
+=logfile       component_suite.try_registering_component_twice.965595.329.html
+=started       2016-03-14 14:26:35
+=ended         2016-03-14 14:26:35
+=result        ok
+=elapsed       0.008306
+=case          component_SUITE:try_registering_existing_host
+=logfile       component_suite.try_registering_existing_host.965595.365.html
+=started       2016-03-14 14:26:35
+=ended         2016-03-14 14:26:35
+=result        ok
+=elapsed       0.004014
+=case          component_SUITE:disco_components
+=logfile       component_suite.disco_components.965595.397.html
+=started       2016-03-14 14:26:35
+=ended         2016-03-14 14:26:35
+=result        ok
+=elapsed       0.472927
+=case          component_SUITE:end_per_group
+=logfile       component_suite.end_per_group.965595.897.html
+=group_props   [{name,xep0114_ws}]
+=started       2016-03-14 14:26:35
+=ended         2016-03-14 14:26:36
+=result        ok
+=elapsed       0.921903
+=group_time    2.602s
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.965596.851.html
+=group_props   [{name,subdomain}]
+=started       2016-03-14 14:26:36
+=ended         2016-03-14 14:26:37
+=result        failed: {'EXIT',{badmatch,{error,econnrefused}}}, [{escalus_tcp,
+                                                                   init,169}]
+=== *** FAILED {component_SUITE,init_per_group} ***
+=== 
+=case          component_SUITE:register_subdomain
+=group_props   [{name,"subdomain"}]
+=started       2016-03-14 14:26:37
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #13 {component_SUITE,register_subdomain} ***
+=== 
+=case          component_SUITE:end_per_group
+=group_props   [{name,"subdomain"}]
+=started       2016-03-14 14:26:37
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {component_SUITE,end_per_group} ***
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.965597.548.html
+=group_props   [{name,distributed}]
+=started       2016-03-14 14:26:37
+=ended         2016-03-14 14:26:43
+=result        failed: {'EXIT',{badmatch,{error,econnrefused}}}, [{escalus_tcp,
+                                                                   init,169}]
+=== *** FAILED {component_SUITE,init_per_group} ***
+=== 
+=case          component_SUITE:register_in_cluster
+=group_props   [{name,"distributed"}]
+=started       2016-03-14 14:26:43
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #14 {component_SUITE,register_in_cluster} ***
+=== 
+=case          component_SUITE:end_per_group
+=group_props   [{name,"distributed"}]
+=started       2016-03-14 14:26:43
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {component_SUITE,end_per_group} ***
+=case          component_SUITE:end_per_suite
+=logfile       component_suite.end_per_suite.html
+=started       2016-03-14 14:26:43
+=ended         2016-03-14 14:26:44
+=result        failed: {'EXIT',{badmatch,{error,econnrefused}}}, [{escalus_tcp,
+                                                                   init,169}]
+=== *** FAILED {component_SUITE,end_per_suite} ***
+=group_time    14.306s
+=== TEST COMPLETE, 12 ok, 0 failed, 2 skipped of 14 test cases
+
+=finished      2016-03-14 14:26:44
+=failed        0
+=successful    12
+=user_skipped  0
+=auto_skipped  2
