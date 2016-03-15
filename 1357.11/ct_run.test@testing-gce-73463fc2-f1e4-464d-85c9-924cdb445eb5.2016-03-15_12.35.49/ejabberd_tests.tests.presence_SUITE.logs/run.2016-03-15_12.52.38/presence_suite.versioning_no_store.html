@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test presence_SUITE:versioning_no_store result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="presence_suite.src.html#versioning_no_store-1">presence_SUITE:versioning_no_store/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.20089.0>},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-73463fc2-f1e4-464d-85c9-924cdb445eb5.2016-03-15_12.35.49/ejabberd_tests.tests.presence_SUITE.logs/run.2016-03-15_12.52.38/presence_suite.versioning_no_store.html"},
+     {tc_group_properties,[{name,roster_versioning},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/presence_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-73463fc2-f1e4-464d-85c9-924cdb445eb5.2016-03-15_12.35.49/ejabberd_tests.tests.presence_SUITE.logs/run.2016-03-15_12.52.38/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"makota">>}]},
+                     {bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-73463fc2-f1e4-464d-85c9-924cdb445eb5.2016-03-15_12.35.49"
+
+=== Started at 2016-03-15 12:52:54
+
+<br />
+=== WARNING: end_per_testcase crashed!
+Reason: noproc
+Line: [{proc_lib,stop,794},
+              {escalus_event,stop,73},
+              {escalus,end_per_testcase,76},
+              {test_server,do_end_per_testcase,1257},
+              {test_server,run_test_case_eval1,1012},
+              {test_server,run_test_case_eval,926}]
+
+<a name="end"></a>
+
+
+=== Ended at 2016-03-15 12:52:55
+=== successfully completed test case
+=== Returned value: [{escalus_event_mgr,<0.20120.0>},
+                     {tc_name,versioning_no_store},
+                     {escalus_cleaner,<0.20119.0>},
+                     {versioning,true},
+                     {store_current_id,true},
+                     {watchdog,<0.20114.0>},
+                     {preset,"internal_mnesia"},
+                     {tc_logfile,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-73463fc2-f1e4-464d-85c9-924cdb445eb5.2016-03-15_12.35.49/ejabberd_tests.tests.presence_SUITE.logs/run.2016-03-15_12.52.38/presence_suite.versioning_no_store.html"},
+                     {tc_group_properties,[{name,roster_versioning},sequence]},
+                     {tc_group_path,[]},
+                     {data_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/presence_SUITE_data/"},
+                     {priv_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-73463fc2-f1e4-464d-85c9-924cdb445eb5.2016-03-15_12.35.49/ejabberd_tests.tests.presence_SUITE.logs/run.2016-03-15_12.52.38/log_private/"},
+                     {escalus_users,
+                         [{alice,
+                              [{username,<<"alicE">>},
+                               {server,<<"localhost">>},
+                               {password,<<"makota">>}]},
+                          {bob,
+                              [{username,<<"bOb">>},
+                               {server,<<"localhost">>},
+                               {password,<<"makrolika">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Tue Mar 15 2016 12:52:54<!/date><br />
+</div>
+</center>
+</body>
+</html>
