@@ -1,0 +1,38 @@
+=== Suite started at 2016-03-16 14:30:08
+=== Starting test, 1 test cases
+=cases         1
+=user          travis
+=host          testing-gce-fe8335d8-a10a-4a09-ba48-363c3b145e54
+=hosts         testing-gce-fe8335d8-a10a-4a09-ba48-363c3b145e54 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-16 14:30:08
+=case          ct_framework:init_per_suite
+=logfile       ct_framework.init_per_suite.html
+=group_props   [{suite,mongoose_sanity_checks_SUITE}]
+=started       2016-03-16 14:30:08
+=ended         2016-03-16 14:30:08
+=result        ok
+=elapsed       1.0e-6
+=case          mongoose_sanity_checks_SUITE:is_mongooseim
+=logfile       mongoose_sanity_checks_suite.is_mongooseim.html
+=started       2016-03-16 14:30:08
+=ended         2016-03-16 14:30:09
+=result        ok
+=elapsed       0.003925
+=case          ct_framework:end_per_suite
+=logfile       ct_framework.end_per_suite.html
+=group_props   [{suite,mongoose_sanity_checks_SUITE}]
+=started       2016-03-16 14:30:09
+=ended         2016-03-16 14:30:09
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.063s
+=== TEST COMPLETE, 1 ok, 0 failed of 1 test cases
+
+=finished      2016-03-16 14:30:09
+=failed        0
+=successful    1
+=user_skipped  0
+=auto_skipped  0
