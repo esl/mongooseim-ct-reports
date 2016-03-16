@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test sm_SUITE:preserve_order result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="sm_suite.src.html#preserve_order-1">sm_SUITE:preserve_order/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.22294.0>},
+     {{saved,ack_freq},unset},
+     {preset,"internal_redis"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-0dbb7bfa-498b-4051-afc3-6c2c29716231.2016-03-16_12.29.27/ejabberd_tests.tests.sm_SUITE.logs/run.2016-03-16_12.46.57/sm_suite.preserve_order.132579.435.html"},
+     {tc_group_properties,[{shuffle,{17738,14581,18602}},
+                           {repeat,3},
+                           {name,reconnection}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/sm_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-0dbb7bfa-498b-4051-afc3-6c2c29716231.2016-03-16_12.29.27/ejabberd_tests.tests.sm_SUITE.logs/run.2016-03-16_12.46.57/log_private/"},
+     {escalus_users,[{alice,[{manual_ack,true},
+                             {stream_management,true},
+                             {username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-0dbb7bfa-498b-4051-afc3-6c2c29716231.2016-03-16_12.29.27"
+
+=== Started at 2016-03-16 12:49:39
+
+<br />
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-03-16 12:49:40.437 ***</b>
+escalus_new_assert:assert_true failed on line 84
+Reason: {{assertion_failed,assert,is_chat_message,...},
+ [{escalus_new_assert,...},{...}|...]}
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-03-16 12:49:40
+=== location [{escalus_new_assert,assert_true,84},
+              {sm_SUITE,receive_all_ordered,<a href="sm_suite.src.html#486">486</a>},
+              {sm_SUITE,preserve_order,<a href="sm_suite.src.html#462">462</a>},
+              {test_server,ts_tc,1429},
+              {test_server,run_test_case_eval1,1026},
+              {test_server,run_test_case_eval,968}]
+=== reason = {assertion_failed,assert,is_chat_message,
+                     [<<"4">>],
+                     {xmlel,<<"message">>,
+                         [{<<"from">>,
+                           <<"bOb@localhost/escalus-default-resource">>},
+                          {<<"to">>,<<"alicE@localhost">>},
+                          {<<"xml:lang">>,<<"en">>},
+                          {<<"type">>,<<"chat">>}],
+                         [{xmlel,<<"body">>,[],[{xmlcdata,<<"5">>}]},
+                          {xmlel,<<"delay">>,
+                              [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                               {<<"from">>,<<"localhost">>},
+                               {<<"stamp">>,
+                                <<"2016-03-16T12:49:40.353218Z">>}],
+                              [{xmlcdata,<<"Offline Storage">>}]}]},
+                     "<message from='bOb@localhost/escalus-default-resource' to='alicE@localhost' xml:lang='en' type='chat'><body>5</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-03-16T12:49:40.353218Z'>Offline Storage</delay></message>"}
+  in function  escalus_new_assert:assert_true/2 (src/escalus_new_assert.erl, line 84)
+  in call from sm_SUITE:receive_all_ordered/2 (sm_SUITE.erl, line 486)
+  in call from sm_SUITE:preserve_order/1 (sm_SUITE.erl, line 462)
+  in call from test_server:ts_tc/3 (test_server.erl, line 1429)
+  in call from test_server:run_test_case_eval1/6 (test_server.erl, line 1026)
+  in call from test_server:run_test_case_eval/9 (test_server.erl, line 968)
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Mar 16 2016 12:49:39<!/date><br />
+</div>
+</center>
+</body>
+</html>

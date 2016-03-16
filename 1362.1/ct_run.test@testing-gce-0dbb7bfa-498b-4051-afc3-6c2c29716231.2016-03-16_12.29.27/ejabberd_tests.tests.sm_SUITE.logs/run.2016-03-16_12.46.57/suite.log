@@ -1,0 +1,1443 @@
+=== Suite started at 2016-03-16 12:46:57
+=== Starting test (with repeated test cases)
+=cases         unknown
+=user          travis
+=host          testing-gce-0dbb7bfa-498b-4051-afc3-6c2c29716231
+=hosts         testing-gce-0dbb7bfa-498b-4051-afc3-6c2c29716231 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-16 12:46:57
+=case          sm_SUITE:init_per_suite
+=logfile       sm_suite.init_per_suite.html
+=started       2016-03-16 12:46:57
+=ended         2016-03-16 12:46:58
+=result        ok
+=elapsed       0.506466
+=case          sm_SUITE:server_string_type
+=logfile       sm_suite.server_string_type.html
+=started       2016-03-16 12:46:58
+=ended         2016-03-16 12:46:58
+=result        ok
+=elapsed       0.002818
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.html
+=group_props   [{name,negotiation},shuffle,{repeat,5}]
+=started       2016-03-16 12:46:58
+=ended         2016-03-16 12:46:58
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:server_enables_sm_after_session
+=logfile       sm_suite.server_enables_sm_after_session.html
+=started       2016-03-16 12:46:58
+=ended         2016-03-16 12:46:58
+=result        ok
+=elapsed       0.259961
+=case          sm_SUITE:server_returns_failed_after_auth
+=logfile       sm_suite.server_returns_failed_after_auth.html
+=started       2016-03-16 12:46:58
+=ended         2016-03-16 12:46:58
+=result        ok
+=elapsed       0.177441
+=case          sm_SUITE:server_enables_sm_before_session
+=logfile       sm_suite.server_enables_sm_before_session.html
+=started       2016-03-16 12:46:58
+=ended         2016-03-16 12:46:59
+=result        ok
+=elapsed       0.179081
+=case          sm_SUITE:server_announces_sm
+=logfile       sm_suite.server_announces_sm.html
+=started       2016-03-16 12:46:59
+=ended         2016-03-16 12:46:59
+=result        ok
+=elapsed       9.99e-4
+=case          sm_SUITE:server_enables_resumption
+=logfile       sm_suite.server_enables_resumption.html
+=started       2016-03-16 12:46:59
+=ended         2016-03-16 12:46:59
+=result        ok
+=elapsed       0.461398
+=case          sm_SUITE:server_returns_failed_after_start
+=logfile       sm_suite.server_returns_failed_after_start.html
+=started       2016-03-16 12:46:59
+=ended         2016-03-16 12:46:59
+=result        ok
+=elapsed       0.002259
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.html
+=group_props   [{name,negotiation},shuffle,{repeat,5}]
+=started       2016-03-16 12:46:59
+=ended         2016-03-16 12:46:59
+=result        ok
+=elapsed       1.0e-6
+=group_time    1.271s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132419.638.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,negotiation}]
+=started       2016-03-16 12:46:59
+=ended         2016-03-16 12:46:59
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:server_returns_failed_after_auth
+=logfile       sm_suite.server_returns_failed_after_auth.132419.664.html
+=started       2016-03-16 12:46:59
+=ended         2016-03-16 12:46:59
+=result        ok
+=elapsed       0.178296
+=case          sm_SUITE:server_announces_sm
+=logfile       sm_suite.server_announces_sm.132419.868.html
+=started       2016-03-16 12:46:59
+=ended         2016-03-16 12:46:59
+=result        ok
+=elapsed       0.001314
+=case          sm_SUITE:server_returns_failed_after_start
+=logfile       sm_suite.server_returns_failed_after_start.132419.898.html
+=started       2016-03-16 12:46:59
+=ended         2016-03-16 12:46:59
+=result        ok
+=elapsed       0.001243
+=case          sm_SUITE:server_enables_sm_before_session
+=logfile       sm_suite.server_enables_sm_before_session.132419.925.html
+=started       2016-03-16 12:46:59
+=ended         2016-03-16 12:47:00
+=result        ok
+=elapsed       0.178072
+=case          sm_SUITE:server_enables_resumption
+=logfile       sm_suite.server_enables_resumption.132420.134.html
+=started       2016-03-16 12:47:00
+=ended         2016-03-16 12:47:00
+=result        ok
+=elapsed       0.460105
+=case          sm_SUITE:server_enables_sm_after_session
+=logfile       sm_suite.server_enables_sm_after_session.132420.620.html
+=started       2016-03-16 12:47:00
+=ended         2016-03-16 12:47:00
+=result        ok
+=elapsed       0.260543
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132420.907.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,negotiation}]
+=started       2016-03-16 12:47:00
+=ended         2016-03-16 12:47:00
+=result        ok
+=elapsed       1.0e-6
+=group_time    1.269s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132420.934.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,negotiation}]
+=started       2016-03-16 12:47:00
+=ended         2016-03-16 12:47:00
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:server_enables_sm_before_session
+=logfile       sm_suite.server_enables_sm_before_session.132420.961.html
+=started       2016-03-16 12:47:00
+=ended         2016-03-16 12:47:01
+=result        ok
+=elapsed       0.178782
+=case          sm_SUITE:server_enables_sm_after_session
+=logfile       sm_suite.server_enables_sm_after_session.132421.168.html
+=started       2016-03-16 12:47:01
+=ended         2016-03-16 12:47:01
+=result        ok
+=elapsed       0.260601
+=case          sm_SUITE:server_returns_failed_after_start
+=logfile       sm_suite.server_returns_failed_after_start.132421.455.html
+=started       2016-03-16 12:47:01
+=ended         2016-03-16 12:47:01
+=result        ok
+=elapsed       0.001702
+=case          sm_SUITE:server_enables_resumption
+=logfile       sm_suite.server_enables_resumption.132421.483.html
+=started       2016-03-16 12:47:01
+=ended         2016-03-16 12:47:01
+=result        ok
+=elapsed       0.46047
+=case          sm_SUITE:server_returns_failed_after_auth
+=logfile       sm_suite.server_returns_failed_after_auth.132421.969.html
+=started       2016-03-16 12:47:01
+=ended         2016-03-16 12:47:02
+=result        ok
+=elapsed       0.177803
+=case          sm_SUITE:server_announces_sm
+=logfile       sm_suite.server_announces_sm.132422.174.html
+=started       2016-03-16 12:47:02
+=ended         2016-03-16 12:47:02
+=result        ok
+=elapsed       0.001126
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132422.201.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,negotiation}]
+=started       2016-03-16 12:47:02
+=ended         2016-03-16 12:47:02
+=result        ok
+=elapsed       1.0e-6
+=group_time    1.267s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132422.226.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,negotiation}]
+=started       2016-03-16 12:47:02
+=ended         2016-03-16 12:47:02
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:server_enables_sm_after_session
+=logfile       sm_suite.server_enables_sm_after_session.132422.254.html
+=started       2016-03-16 12:47:02
+=ended         2016-03-16 12:47:02
+=result        ok
+=elapsed       0.25983
+=case          sm_SUITE:server_enables_sm_before_session
+=logfile       sm_suite.server_enables_sm_before_session.132422.540.html
+=started       2016-03-16 12:47:02
+=ended         2016-03-16 12:47:02
+=result        ok
+=elapsed       0.178488
+=case          sm_SUITE:server_enables_resumption
+=logfile       sm_suite.server_enables_resumption.132422.744.html
+=started       2016-03-16 12:47:02
+=ended         2016-03-16 12:47:03
+=result        ok
+=elapsed       0.461216
+=case          sm_SUITE:server_returns_failed_after_auth
+=logfile       sm_suite.server_returns_failed_after_auth.132423.232.html
+=started       2016-03-16 12:47:03
+=ended         2016-03-16 12:47:03
+=result        ok
+=elapsed       0.177316
+=case          sm_SUITE:server_returns_failed_after_start
+=logfile       sm_suite.server_returns_failed_after_start.132423.436.html
+=started       2016-03-16 12:47:03
+=ended         2016-03-16 12:47:03
+=result        ok
+=elapsed       0.001384
+=case          sm_SUITE:server_announces_sm
+=logfile       sm_suite.server_announces_sm.132423.463.html
+=started       2016-03-16 12:47:03
+=ended         2016-03-16 12:47:03
+=result        ok
+=elapsed       0.001195
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132423.489.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,negotiation}]
+=started       2016-03-16 12:47:03
+=ended         2016-03-16 12:47:03
+=result        ok
+=elapsed       1.0e-6
+=group_time    1.263s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132423.515.html
+=group_props   [{shuffle,repeated},{name,negotiation}]
+=started       2016-03-16 12:47:03
+=ended         2016-03-16 12:47:03
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:server_returns_failed_after_start
+=logfile       sm_suite.server_returns_failed_after_start.132423.541.html
+=started       2016-03-16 12:47:03
+=ended         2016-03-16 12:47:03
+=result        ok
+=elapsed       0.001462
+=case          sm_SUITE:server_announces_sm
+=logfile       sm_suite.server_announces_sm.132423.568.html
+=started       2016-03-16 12:47:03
+=ended         2016-03-16 12:47:03
+=result        ok
+=elapsed       7.35e-4
+=case          sm_SUITE:server_enables_sm_before_session
+=logfile       sm_suite.server_enables_sm_before_session.132423.594.html
+=started       2016-03-16 12:47:03
+=ended         2016-03-16 12:47:03
+=result        ok
+=elapsed       0.17876
+=case          sm_SUITE:server_enables_resumption
+=logfile       sm_suite.server_enables_resumption.132423.800.html
+=started       2016-03-16 12:47:03
+=ended         2016-03-16 12:47:04
+=result        ok
+=elapsed       0.460423
+=case          sm_SUITE:server_enables_sm_after_session
+=logfile       sm_suite.server_enables_sm_after_session.132424.288.html
+=started       2016-03-16 12:47:04
+=ended         2016-03-16 12:47:04
+=result        ok
+=elapsed       0.260293
+=case          sm_SUITE:server_returns_failed_after_auth
+=logfile       sm_suite.server_returns_failed_after_auth.132424.575.html
+=started       2016-03-16 12:47:04
+=ended         2016-03-16 12:47:04
+=result        ok
+=elapsed       0.177852
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132424.782.html
+=group_props   [{shuffle,repeated},{name,negotiation}]
+=started       2016-03-16 12:47:04
+=ended         2016-03-16 12:47:04
+=result        ok
+=elapsed       1.0e-6
+=group_time    1.264s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132424.808.html
+=group_props   [{name,server_acking},shuffle,{repeat,5}]
+=started       2016-03-16 12:47:04
+=ended         2016-03-16 12:47:04
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:h_ok_after_a_chat
+=logfile       sm_suite.h_ok_after_a_chat.html
+=started       2016-03-16 12:47:04
+=ended         2016-03-16 12:47:05
+=result        ok
+=elapsed       0.997946
+=case          sm_SUITE:h_ok_before_session
+=logfile       sm_suite.h_ok_before_session.html
+=started       2016-03-16 12:47:05
+=ended         2016-03-16 12:47:06
+=result        ok
+=elapsed       0.201469
+=case          sm_SUITE:basic_ack
+=logfile       sm_suite.basic_ack.html
+=started       2016-03-16 12:47:06
+=ended         2016-03-16 12:47:06
+=result        ok
+=elapsed       0.311535
+=case          sm_SUITE:h_ok_after_session_enabled_after_session
+=logfile       sm_suite.h_ok_after_session_enabled_after_session.html
+=started       2016-03-16 12:47:06
+=ended         2016-03-16 12:47:06
+=result        ok
+=elapsed       0.310643
+=case          sm_SUITE:h_ok_after_session_enabled_before_session
+=logfile       sm_suite.h_ok_after_session_enabled_before_session.html
+=started       2016-03-16 12:47:06
+=ended         2016-03-16 12:47:07
+=result        ok
+=elapsed       0.312734
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132427.102.html
+=group_props   [{name,server_acking},shuffle,{repeat,5}]
+=started       2016-03-16 12:47:07
+=ended         2016-03-16 12:47:07
+=result        ok
+=elapsed       1.0e-6
+=group_time    2.294s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132427.127.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,server_acking}]
+=started       2016-03-16 12:47:07
+=ended         2016-03-16 12:47:07
+=result        ok
+=elapsed       1.2e-5
+=case          sm_SUITE:h_ok_after_session_enabled_before_session
+=logfile       sm_suite.h_ok_after_session_enabled_before_session.132427.154.html
+=started       2016-03-16 12:47:07
+=ended         2016-03-16 12:47:07
+=result        ok
+=elapsed       0.312864
+=case          sm_SUITE:basic_ack
+=logfile       sm_suite.basic_ack.132427.492.html
+=started       2016-03-16 12:47:07
+=ended         2016-03-16 12:47:07
+=result        ok
+=elapsed       0.311059
+=case          sm_SUITE:h_ok_after_session_enabled_after_session
+=logfile       sm_suite.h_ok_after_session_enabled_after_session.132427.828.html
+=started       2016-03-16 12:47:07
+=ended         2016-03-16 12:47:08
+=result        ok
+=elapsed       0.31101
+=case          sm_SUITE:h_ok_after_a_chat
+=logfile       sm_suite.h_ok_after_a_chat.132428.166.html
+=started       2016-03-16 12:47:08
+=ended         2016-03-16 12:47:09
+=result        ok
+=elapsed       0.998573
+=case          sm_SUITE:h_ok_before_session
+=logfile       sm_suite.h_ok_before_session.132429.194.html
+=started       2016-03-16 12:47:09
+=ended         2016-03-16 12:47:09
+=result        ok
+=elapsed       0.201671
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132429.421.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,server_acking}]
+=started       2016-03-16 12:47:09
+=ended         2016-03-16 12:47:09
+=result        ok
+=elapsed       1.0e-6
+=group_time    2.294s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132429.446.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,server_acking}]
+=started       2016-03-16 12:47:09
+=ended         2016-03-16 12:47:09
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:h_ok_after_a_chat
+=logfile       sm_suite.h_ok_after_a_chat.132429.471.html
+=started       2016-03-16 12:47:09
+=ended         2016-03-16 12:47:10
+=result        ok
+=elapsed       0.994096
+=case          sm_SUITE:h_ok_before_session
+=logfile       sm_suite.h_ok_before_session.132430.490.html
+=started       2016-03-16 12:47:10
+=ended         2016-03-16 12:47:10
+=result        ok
+=elapsed       0.202604
+=case          sm_SUITE:basic_ack
+=logfile       sm_suite.basic_ack.132430.720.html
+=started       2016-03-16 12:47:10
+=ended         2016-03-16 12:47:11
+=result        ok
+=elapsed       0.311626
+=case          sm_SUITE:h_ok_after_session_enabled_after_session
+=logfile       sm_suite.h_ok_after_session_enabled_after_session.132431.58.html
+=started       2016-03-16 12:47:11
+=ended         2016-03-16 12:47:11
+=result        ok
+=elapsed       0.312299
+=case          sm_SUITE:h_ok_after_session_enabled_before_session
+=logfile       sm_suite.h_ok_after_session_enabled_before_session.132431.396.html
+=started       2016-03-16 12:47:11
+=ended         2016-03-16 12:47:11
+=result        ok
+=elapsed       0.312135
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132431.734.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,server_acking}]
+=started       2016-03-16 12:47:11
+=ended         2016-03-16 12:47:11
+=result        ok
+=elapsed       1.0e-6
+=group_time    2.288s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132431.759.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,server_acking}]
+=started       2016-03-16 12:47:11
+=ended         2016-03-16 12:47:11
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:basic_ack
+=logfile       sm_suite.basic_ack.132431.786.html
+=started       2016-03-16 12:47:11
+=ended         2016-03-16 12:47:12
+=result        ok
+=elapsed       0.31076
+=case          sm_SUITE:h_ok_after_session_enabled_after_session
+=logfile       sm_suite.h_ok_after_session_enabled_after_session.132432.122.html
+=started       2016-03-16 12:47:12
+=ended         2016-03-16 12:47:12
+=result        ok
+=elapsed       0.31212
+=case          sm_SUITE:h_ok_after_a_chat
+=logfile       sm_suite.h_ok_after_a_chat.132432.459.html
+=started       2016-03-16 12:47:12
+=ended         2016-03-16 12:47:13
+=result        ok
+=elapsed       0.997652
+=case          sm_SUITE:h_ok_before_session
+=logfile       sm_suite.h_ok_before_session.132433.482.html
+=started       2016-03-16 12:47:13
+=ended         2016-03-16 12:47:13
+=result        ok
+=elapsed       0.20174
+=case          sm_SUITE:h_ok_after_session_enabled_before_session
+=logfile       sm_suite.h_ok_after_session_enabled_before_session.132433.709.html
+=started       2016-03-16 12:47:13
+=ended         2016-03-16 12:47:14
+=result        ok
+=elapsed       0.31363
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132434.48.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,server_acking}]
+=started       2016-03-16 12:47:14
+=ended         2016-03-16 12:47:14
+=result        ok
+=elapsed       1.0e-6
+=group_time    2.289s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132434.73.html
+=group_props   [{shuffle,repeated},{name,server_acking}]
+=started       2016-03-16 12:47:14
+=ended         2016-03-16 12:47:14
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:h_ok_before_session
+=logfile       sm_suite.h_ok_before_session.132434.98.html
+=started       2016-03-16 12:47:14
+=ended         2016-03-16 12:47:14
+=result        ok
+=elapsed       0.200847
+=case          sm_SUITE:h_ok_after_session_enabled_before_session
+=logfile       sm_suite.h_ok_after_session_enabled_before_session.132434.327.html
+=started       2016-03-16 12:47:14
+=ended         2016-03-16 12:47:14
+=result        ok
+=elapsed       0.312499
+=case          sm_SUITE:h_ok_after_session_enabled_after_session
+=logfile       sm_suite.h_ok_after_session_enabled_after_session.132434.669.html
+=started       2016-03-16 12:47:14
+=ended         2016-03-16 12:47:15
+=result        ok
+=elapsed       0.312505
+=case          sm_SUITE:basic_ack
+=logfile       sm_suite.basic_ack.132435.7.html
+=started       2016-03-16 12:47:15
+=ended         2016-03-16 12:47:15
+=result        ok
+=elapsed       0.311598
+=case          sm_SUITE:h_ok_after_a_chat
+=logfile       sm_suite.h_ok_after_a_chat.132435.343.html
+=started       2016-03-16 12:47:15
+=ended         2016-03-16 12:47:16
+=result        ok
+=elapsed       0.993754
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132436.362.html
+=group_props   [{shuffle,repeated},{name,server_acking}]
+=started       2016-03-16 12:47:16
+=ended         2016-03-16 12:47:16
+=result        ok
+=elapsed       2.0e-6
+=group_time    2.289s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132436.387.html
+=group_props   [{name,client_acking},shuffle,{repeat,5}]
+=started       2016-03-16 12:47:16
+=ended         2016-03-16 12:47:16
+=result        ok
+=elapsed       4.0e-6
+=case          sm_SUITE:client_acks_more_than_sent
+=logfile       sm_suite.client_acks_more_than_sent.html
+=started       2016-03-16 12:47:16
+=ended         2016-03-16 12:47:16
+=result        ok
+=elapsed       0.264177
+=case          sm_SUITE:server_requests_ack_after_session
+=logfile       sm_suite.server_requests_ack_after_session.html
+=started       2016-03-16 12:47:16
+=ended         2016-03-16 12:47:16
+=result        ok
+=elapsed       0.201717
+=case          sm_SUITE:resend_more_offline_messages_than_buffer_size
+=logfile       sm_suite.resend_more_offline_messages_than_buffer_size.html
+=started       2016-03-16 12:47:16
+=ended         2016-03-16 12:47:24
+=result        ok
+=elapsed       7.191076
+=case          sm_SUITE:too_many_unacked_stanzas
+=logfile       sm_suite.too_many_unacked_stanzas.html
+=started       2016-03-16 12:47:24
+=ended         2016-03-16 12:47:30
+=result        ok
+=elapsed       5.981017
+=case          sm_SUITE:server_requests_ack
+=logfile       sm_suite.server_requests_ack.html
+=started       2016-03-16 12:47:30
+=ended         2016-03-16 12:47:31
+=result        ok
+=elapsed       1.187579
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132451.386.html
+=group_props   [{name,client_acking},shuffle,{repeat,5}]
+=started       2016-03-16 12:47:31
+=ended         2016-03-16 12:47:31
+=result        ok
+=elapsed       1.0e-6
+=group_time    14.999s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132451.411.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,client_acking}]
+=started       2016-03-16 12:47:31
+=ended         2016-03-16 12:47:31
+=result        ok
+=elapsed       5.0e-6
+=case          sm_SUITE:resend_more_offline_messages_than_buffer_size
+=logfile       sm_suite.resend_more_offline_messages_than_buffer_size.132451.438.html
+=started       2016-03-16 12:47:31
+=ended         2016-03-16 12:47:38
+=result        ok
+=elapsed       7.189716
+=case          sm_SUITE:client_acks_more_than_sent
+=logfile       sm_suite.client_acks_more_than_sent.132458.656.html
+=started       2016-03-16 12:47:38
+=ended         2016-03-16 12:47:39
+=result        ok
+=elapsed       0.463421
+=case          sm_SUITE:server_requests_ack
+=logfile       sm_suite.server_requests_ack.132459.145.html
+=started       2016-03-16 12:47:39
+=ended         2016-03-16 12:47:40
+=result        ok
+=elapsed       1.186248
+=case          sm_SUITE:server_requests_ack_after_session
+=logfile       sm_suite.server_requests_ack_after_session.132460.358.html
+=started       2016-03-16 12:47:40
+=ended         2016-03-16 12:47:40
+=result        ok
+=elapsed       0.202432
+=case          sm_SUITE:too_many_unacked_stanzas
+=logfile       sm_suite.too_many_unacked_stanzas.132460.584.html
+=started       2016-03-16 12:47:40
+=ended         2016-03-16 12:47:46
+=result        ok
+=elapsed       6.024527
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132466.635.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,client_acking}]
+=started       2016-03-16 12:47:46
+=ended         2016-03-16 12:47:46
+=result        ok
+=elapsed       1.0e-6
+=group_time    15.224s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132466.659.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,client_acking}]
+=started       2016-03-16 12:47:46
+=ended         2016-03-16 12:47:46
+=result        ok
+=elapsed       4.0e-6
+=case          sm_SUITE:client_acks_more_than_sent
+=logfile       sm_suite.client_acks_more_than_sent.132466.686.html
+=started       2016-03-16 12:47:46
+=ended         2016-03-16 12:47:46
+=result        ok
+=elapsed       0.263472
+=case          sm_SUITE:server_requests_ack
+=logfile       sm_suite.server_requests_ack.132466.974.html
+=started       2016-03-16 12:47:46
+=ended         2016-03-16 12:47:48
+=result        ok
+=elapsed       1.182256
+=case          sm_SUITE:server_requests_ack_after_session
+=logfile       sm_suite.server_requests_ack_after_session.132468.190.html
+=started       2016-03-16 12:47:48
+=ended         2016-03-16 12:47:48
+=result        ok
+=elapsed       0.201513
+=case          sm_SUITE:resend_more_offline_messages_than_buffer_size
+=logfile       sm_suite.resend_more_offline_messages_than_buffer_size.132468.417.html
+=started       2016-03-16 12:47:48
+=ended         2016-03-16 12:47:55
+=result        ok
+=elapsed       7.196274
+=case          sm_SUITE:too_many_unacked_stanzas
+=logfile       sm_suite.too_many_unacked_stanzas.132475.641.html
+=started       2016-03-16 12:47:55
+=ended         2016-03-16 12:48:01
+=result        ok
+=elapsed       6.017632
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132481.684.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,client_acking}]
+=started       2016-03-16 12:48:01
+=ended         2016-03-16 12:48:01
+=result        ok
+=elapsed       1.0e-6
+=group_time    15.024s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132481.709.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,client_acking}]
+=started       2016-03-16 12:48:01
+=ended         2016-03-16 12:48:01
+=result        ok
+=elapsed       4.0e-6
+=case          sm_SUITE:server_requests_ack_after_session
+=logfile       sm_suite.server_requests_ack_after_session.132481.734.html
+=started       2016-03-16 12:48:01
+=ended         2016-03-16 12:48:01
+=result        ok
+=elapsed       0.202066
+=case          sm_SUITE:resend_more_offline_messages_than_buffer_size
+=logfile       sm_suite.resend_more_offline_messages_than_buffer_size.132481.962.html
+=started       2016-03-16 12:48:01
+=ended         2016-03-16 12:48:09
+=result        ok
+=elapsed       7.19294
+=case          sm_SUITE:client_acks_more_than_sent
+=logfile       sm_suite.client_acks_more_than_sent.132489.181.html
+=started       2016-03-16 12:48:09
+=ended         2016-03-16 12:48:09
+=result        ok
+=elapsed       0.263482
+=case          sm_SUITE:server_requests_ack
+=logfile       sm_suite.server_requests_ack.132489.470.html
+=started       2016-03-16 12:48:09
+=ended         2016-03-16 12:48:10
+=result        ok
+=elapsed       1.180744
+=case          sm_SUITE:too_many_unacked_stanzas
+=logfile       sm_suite.too_many_unacked_stanzas.132490.678.html
+=started       2016-03-16 12:48:10
+=ended         2016-03-16 12:48:16
+=result        ok
+=elapsed       6.021976
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132496.731.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,client_acking}]
+=started       2016-03-16 12:48:16
+=ended         2016-03-16 12:48:16
+=result        ok
+=elapsed       1.0e-6
+=group_time    15.022s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132496.756.html
+=group_props   [{shuffle,repeated},{name,client_acking}]
+=started       2016-03-16 12:48:16
+=ended         2016-03-16 12:48:16
+=result        ok
+=elapsed       5.0e-6
+=case          sm_SUITE:client_acks_more_than_sent
+=logfile       sm_suite.client_acks_more_than_sent.132496.781.html
+=started       2016-03-16 12:48:16
+=ended         2016-03-16 12:48:17
+=result        ok
+=elapsed       0.262505
+=case          sm_SUITE:server_requests_ack_after_session
+=logfile       sm_suite.server_requests_ack_after_session.132497.68.html
+=started       2016-03-16 12:48:17
+=ended         2016-03-16 12:48:17
+=result        ok
+=elapsed       0.200828
+=case          sm_SUITE:too_many_unacked_stanzas
+=logfile       sm_suite.too_many_unacked_stanzas.132497.295.html
+=started       2016-03-16 12:48:17
+=ended         2016-03-16 12:48:23
+=result        ok
+=elapsed       6.019739
+=case          sm_SUITE:resend_more_offline_messages_than_buffer_size
+=logfile       sm_suite.resend_more_offline_messages_than_buffer_size.132503.348.html
+=started       2016-03-16 12:48:23
+=ended         2016-03-16 12:48:30
+=result        ok
+=elapsed       7.187542
+=case          sm_SUITE:server_requests_ack
+=logfile       sm_suite.server_requests_ack.132510.564.html
+=started       2016-03-16 12:48:30
+=ended         2016-03-16 12:48:31
+=result        ok
+=elapsed       1.18286
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132511.777.html
+=group_props   [{shuffle,repeated},{name,client_acking}]
+=started       2016-03-16 12:48:31
+=ended         2016-03-16 12:48:31
+=result        ok
+=elapsed       1.0e-6
+=group_time    15.022s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132511.807.html
+=group_props   [{name,reconnection},shuffle,{repeat,5}]
+=started       2016-03-16 12:48:31
+=ended         2016-03-16 12:48:31
+=result        ok
+=elapsed       5.0e-6
+=case          sm_SUITE:preserve_order
+=logfile       sm_suite.preserve_order.html
+=started       2016-03-16 12:48:31
+=ended         2016-03-16 12:48:36
+=result        ok
+=elapsed       4.850312
+=case          sm_SUITE:resume_session_state_stop_c2s
+=logfile       sm_suite.resume_session_state_stop_c2s.html
+=started       2016-03-16 12:48:36
+=ended         2016-03-16 12:48:40
+=result        ok
+=elapsed       3.652367
+=case          sm_SUITE:resend_unacked_on_reconnection
+=logfile       sm_suite.resend_unacked_on_reconnection.html
+=started       2016-03-16 12:48:40
+=ended         2016-03-16 12:48:41
+=result        ok
+=elapsed       1.221961
+=case          sm_SUITE:resend_unacked_after_resume_timeout
+=logfile       sm_suite.resend_unacked_after_resume_timeout.html
+=started       2016-03-16 12:48:41
+=ended         2016-03-16 12:48:53
+=result        ok
+=elapsed       11.464563
+=case          sm_SUITE:resume_session_state_send_message
+=logfile       sm_suite.resume_session_state_send_message.html
+=started       2016-03-16 12:48:53
+=ended         2016-03-16 12:48:55
+=result        ok
+=elapsed       2.652411
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132535.802.html
+=group_props   [{name,reconnection},shuffle,{repeat,5}]
+=started       2016-03-16 12:48:55
+=ended         2016-03-16 12:48:56
+=result        ok
+=elapsed       0.26363
+=group_time    23.996s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132536.91.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,reconnection}]
+=started       2016-03-16 12:48:56
+=ended         2016-03-16 12:48:56
+=result        ok
+=elapsed       3.0e-6
+=case          sm_SUITE:resend_unacked_on_reconnection
+=logfile       sm_suite.resend_unacked_on_reconnection.132536.115.html
+=started       2016-03-16 12:48:56
+=ended         2016-03-16 12:48:57
+=result        ok
+=elapsed       1.185519
+=case          sm_SUITE:resume_session_state_stop_c2s
+=logfile       sm_suite.resume_session_state_stop_c2s.132537.326.html
+=started       2016-03-16 12:48:57
+=ended         2016-03-16 12:49:01
+=result        ok
+=elapsed       3.652919
+=case          sm_SUITE:resend_unacked_after_resume_timeout
+=logfile       sm_suite.resend_unacked_after_resume_timeout.132541.4.html
+=started       2016-03-16 12:49:01
+=ended         2016-03-16 12:49:12
+=result        ok
+=elapsed       11.455779
+=case          sm_SUITE:resume_session_state_send_message
+=logfile       sm_suite.resume_session_state_send_message.132552.485.html
+=started       2016-03-16 12:49:12
+=ended         2016-03-16 12:49:15
+=result        ok
+=elapsed       2.650744
+=case          sm_SUITE:preserve_order
+=logfile       sm_suite.preserve_order.132555.161.html
+=started       2016-03-16 12:49:15
+=ended         2016-03-16 12:49:20
+=result        ok
+=elapsed       4.848153
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132560.34.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,reconnection}]
+=started       2016-03-16 12:49:20
+=ended         2016-03-16 12:49:20
+=result        ok
+=elapsed       0.263688
+=group_time    23.943s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132560.322.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,reconnection}]
+=started       2016-03-16 12:49:20
+=ended         2016-03-16 12:49:20
+=result        ok
+=elapsed       3.0e-6
+=case          sm_SUITE:resume_session_state_send_message
+=logfile       sm_suite.resume_session_state_send_message.132560.347.html
+=started       2016-03-16 12:49:20
+=ended         2016-03-16 12:49:23
+=result        ok
+=elapsed       2.655533
+=case          sm_SUITE:resend_unacked_on_reconnection
+=logfile       sm_suite.resend_unacked_on_reconnection.132563.28.html
+=started       2016-03-16 12:49:23
+=ended         2016-03-16 12:49:24
+=result        ok
+=elapsed       1.22603
+=case          sm_SUITE:resume_session_state_stop_c2s
+=logfile       sm_suite.resume_session_state_stop_c2s.132564.279.html
+=started       2016-03-16 12:49:24
+=ended         2016-03-16 12:49:27
+=result        ok
+=elapsed       3.652327
+=case          sm_SUITE:resend_unacked_after_resume_timeout
+=logfile       sm_suite.resend_unacked_after_resume_timeout.132567.958.html
+=started       2016-03-16 12:49:27
+=ended         2016-03-16 12:49:39
+=result        ok
+=elapsed       11.450939
+=case          sm_SUITE:preserve_order
+=logfile       sm_suite.preserve_order.132579.435.html
+=started       2016-03-16 12:49:39
+=ended         2016-03-16 12:49:40
+=result        failed: {{assertion_failed,assert,is_chat_message,
+                            [<<"4">>],
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,
+                                  <<"bOb@localhost/escalus-default-resource">>},
+                                 {<<"to">>,<<"alicE@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],[{xmlcdata,<<"5">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-03-16T12:49:40.353218Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/escalus-default-resource' to='alicE@localhost' xml:lang='en' type='chat'><body>5</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-03-16T12:49:40.353218Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {sm_SUITE,receive_all_ordered,2,
+                             [{file,"sm_SUITE.erl"},{line,486}]},
+                         {sm_SUITE,preserve_order,1,
+                             [{file,"sm_SUITE.erl"},{line,462}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_new_assert,
+                                                                         assert_true,
+                                                                         84},
+                                                                        {sm_SUITE,
+                                                                         receive_all_ordered,
+                                                                         486},
+                                                                        {sm_SUITE,
+                                                                         preserve_order,
+                                                                         462},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 96 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132580.467.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,reconnection}]
+=started       2016-03-16 12:49:40
+=ended         2016-03-16 12:49:40
+=result        failed: {{badmatch,false},
+                        [{escalus_session,stream_management,3,
+                             [{file,"src/escalus_session.erl"},{line,234}]},
+                         {escalus_connection,connection_step,2,
+                             [{file,"src/escalus_connection.erl"},{line,119}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,105}]},
+                         {sm_SUITE,discard_offline_messages,3,
+                             [{file,"sm_SUITE.erl"},{line,749}]},
+                         {sm_SUITE,end_per_group,2,
+                             [{file,"sm_SUITE.erl"},{line,89}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1099}]}]}, [{escalus_session,
+                                                                          stream_management,
+                                                                          234},
+                                                                         {escalus_connection,
+                                                                          connection_step,
+                                                                          119},
+                                                                         {lists,
+                                                                          foldl,
+                                                                          1261},
+                                                                         {escalus_connection,
+                                                                          start,
+                                                                          105},
+                                                                         {sm_SUITE,
+                                                                          discard_offline_messages,
+                                                                          749},
+                                                                         {sm_SUITE,
+                                                                          end_per_group,
+                                                                          89},
+                                                                         {test_server,
+                                                                          ts_tc,
+                                                                          1429},
+                                                                         {test_server,
+                                                                          run_test_case_eval1,
+                                                                          1099}]
+=== *** FAILED {sm_SUITE,end_per_group} ***
+=group_time    20.145s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132580.679.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,reconnection}]
+=started       2016-03-16 12:49:40
+=ended         2016-03-16 12:49:40
+=result        ok
+=elapsed       4.0e-6
+=case          sm_SUITE:resume_session_state_send_message
+=logfile       sm_suite.resume_session_state_send_message.132580.704.html
+=started       2016-03-16 12:49:40
+=ended         2016-03-16 12:49:42
+=result        failed: {{assertion_failed,assert_many,true,
+                            [is_presence,#Fun<sm_SUITE.13.35637055>,
+                             #Fun<sm_SUITE.13.35637055>,
+                             #Fun<sm_SUITE.13.35637055>],
+                            [{xmlel,<<"presence">>,
+                                 [{<<"from">>,
+                                   <<"alicE@localhost/escalus-default-resource">>},
+                                  {<<"to">>,
+                                   <<"alice@localhost/escalus-default-resource">>},
+                                  {<<"xml:lang">>,<<"en">>}],
+                                 []},
+                             {xmlel,<<"message">>,
+                                 [{<<"from">>,
+                                   <<"bOb@localhost/escalus-default-resource">>},
+                                  {<<"to">>,<<"alicE@localhost">>},
+                                  {<<"xml:lang">>,<<"en">>},
+                                  {<<"type">>,<<"chat">>}],
+                                 [{xmlel,<<"body">>,[],[{xmlcdata,<<"1">>}]},
+                                  {xmlel,<<"delay">>,
+                                      [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                       {<<"from">>,<<"localhost">>},
+                                       {<<"stamp">>,
+                                        <<"2016-03-16T12:49:39.982163Z">>}],
+                                      [{xmlcdata,<<"Offline Storage">>}]}]},
+                             {xmlel,<<"message">>,
+                                 [{<<"from">>,
+                                   <<"bOb@localhost/escalus-default-resource">>},
+                                  {<<"to">>,<<"alicE@localhost">>},
+                                  {<<"xml:lang">>,<<"en">>},
+                                  {<<"type">>,<<"chat">>}],
+                                 [{xmlel,<<"body">>,[],[{xmlcdata,<<"2">>}]},
+                                  {xmlel,<<"delay">>,
+                                      [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                       {<<"from">>,<<"localhost">>},
+                                       {<<"stamp">>,
+                                        <<"2016-03-16T12:49:40.184987Z">>}],
+                                      [{xmlcdata,<<"Offline Storage">>}]}]},
+                             {xmlel,<<"message">>,
+                                 [{<<"from">>,
+                                   <<"bOb@localhost/escalus-default-resource">>},
+                                  {<<"to">>,<<"alicE@localhost">>},
+                                  {<<"xml:lang">>,<<"en">>},
+                                  {<<"type">>,<<"chat">>}],
+                                 [{xmlel,<<"body">>,[],[{xmlcdata,<<"3">>}]},
+                                  {xmlel,<<"delay">>,
+                                      [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                       {<<"from">>,<<"localhost">>},
+                                       {<<"stamp">>,
+                                        <<"2016-03-16T12:49:40.185332Z">>}],
+                                      [{xmlcdata,<<"Offline Storage">>}]}]}],
+                            "     <presence from='alicE@localhost/escalus-default-resource' to='alice@localhost/escalus-default-resource' xml:lang='en'/>     <message from='bOb@localhost/escalus-default-resource' to='alicE@localhost' xml:lang='en' type='chat'><body>1</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-03-16T12:49:39.982163Z'>Offline Storage</delay></message>     <message from='bOb@localhost/escalus-default-resource' to='alicE@localhost' xml:lang='en' type='chat'><body>2</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-03-16T12:49:40.184987Z'>Offline Storage</delay></message>     <message from='bOb@localhost/escalus-default-resource' to='alicE@localhost' xml:lang='en' type='chat'><body>3</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-03-16T12:49:40.185332Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {sm_SUITE,resume_session_state_send_message,1,
+                             [{file,"sm_SUITE.erl"},{line,589}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_new_assert,
+                                                                         assert_true,
+                                                                         84},
+                                                                        {sm_SUITE,
+                                                                         resume_session_state_send_message,
+                                                                         589},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 97 ***
+=case          sm_SUITE:resume_session_state_stop_c2s
+=logfile       sm_suite.resume_session_state_stop_c2s.132582.730.html
+=started       2016-03-16 12:49:42
+=ended         2016-03-16 12:49:46
+=result        ok
+=elapsed       3.657556
+=case          sm_SUITE:resend_unacked_on_reconnection
+=logfile       sm_suite.resend_unacked_on_reconnection.132586.413.html
+=started       2016-03-16 12:49:46
+=ended         2016-03-16 12:49:47
+=result        ok
+=elapsed       1.224302
+=case          sm_SUITE:preserve_order
+=logfile       sm_suite.preserve_order.132587.662.html
+=started       2016-03-16 12:49:47
+=ended         2016-03-16 12:49:52
+=result        ok
+=elapsed       4.850085
+=case          sm_SUITE:resend_unacked_after_resume_timeout
+=logfile       sm_suite.resend_unacked_after_resume_timeout.132592.541.html
+=started       2016-03-16 12:49:52
+=ended         2016-03-16 12:50:04
+=result        ok
+=elapsed       11.460084
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132604.26.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,reconnection}]
+=started       2016-03-16 12:50:04
+=ended         2016-03-16 12:50:04
+=result        ok
+=elapsed       0.263426
+=group_time    23.347s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132604.315.html
+=group_props   [{shuffle,repeated},{name,reconnection}]
+=started       2016-03-16 12:50:04
+=ended         2016-03-16 12:50:04
+=result        ok
+=elapsed       4.0e-6
+=case          sm_SUITE:preserve_order
+=logfile       sm_suite.preserve_order.132604.339.html
+=started       2016-03-16 12:50:04
+=ended         2016-03-16 12:50:05
+=result        failed: {{assertion_failed,assert,is_chat_message,
+                            [<<"4">>],
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,
+                                  <<"bOb@localhost/escalus-default-resource">>},
+                                 {<<"to">>,<<"alicE@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],[{xmlcdata,<<"5">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-03-16T12:50:05.249668Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/escalus-default-resource' to='alicE@localhost' xml:lang='en' type='chat'><body>5</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-03-16T12:50:05.249668Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {sm_SUITE,receive_all_ordered,2,
+                             [{file,"sm_SUITE.erl"},{line,486}]},
+                         {sm_SUITE,preserve_order,1,
+                             [{file,"sm_SUITE.erl"},{line,462}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_new_assert,
+                                                                         assert_true,
+                                                                         84},
+                                                                        {sm_SUITE,
+                                                                         receive_all_ordered,
+                                                                         486},
+                                                                        {sm_SUITE,
+                                                                         preserve_order,
+                                                                         462},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 102 ***
+=case          sm_SUITE:resume_session_state_stop_c2s
+=logfile       sm_suite.resume_session_state_stop_c2s.132605.359.html
+=started       2016-03-16 12:50:05
+=ended         2016-03-16 12:50:05
+=result        failed: {{badmatch,false},
+                        [{escalus_session,stream_resumption,3,
+                             [{file,"src/escalus_session.erl"},{line,250}]},
+                         {escalus_connection,connection_step,2,
+                             [{file,"src/escalus_connection.erl"},{line,119}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,105}]},
+                         {sm_SUITE,resume_session_state_stop_c2s,1,
+                             [{file,"sm_SUITE.erl"},{line,614}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_session,
+                                                                         stream_resumption,
+                                                                         250},
+                                                                        {escalus_connection,
+                                                                         connection_step,
+                                                                         119},
+                                                                        {lists,
+                                                                         foldl,
+                                                                         1261},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         105},
+                                                                        {sm_SUITE,
+                                                                         resume_session_state_stop_c2s,
+                                                                         614},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 103 ***
+=case          sm_SUITE:resume_session_state_send_message
+=logfile       sm_suite.resume_session_state_send_message.132605.833.html
+=started       2016-03-16 12:50:05
+=ended         2016-03-16 12:50:07
+=result        failed: {{assertion_failed,assert_many,true,
+                            [is_presence,#Fun<sm_SUITE.13.35637055>,
+                             #Fun<sm_SUITE.13.35637055>,
+                             #Fun<sm_SUITE.13.35637055>],
+                            [{xmlel,<<"presence">>,
+                                 [{<<"from">>,
+                                   <<"alicE@localhost/escalus-default-resource">>},
+                                  {<<"to">>,
+                                   <<"alice@localhost/escalus-default-resource">>},
+                                  {<<"xml:lang">>,<<"en">>}],
+                                 []},
+                             {xmlel,<<"message">>,
+                                 [{<<"from">>,
+                                   <<"bOb@localhost/escalus-default-resource">>},
+                                  {<<"to">>,<<"alicE@localhost">>},
+                                  {<<"xml:lang">>,<<"en">>},
+                                  {<<"type">>,<<"chat">>}],
+                                 [{xmlel,<<"body">>,[],[{xmlcdata,<<"1">>}]},
+                                  {xmlel,<<"delay">>,
+                                      [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                       {<<"from">>,<<"localhost">>},
+                                       {<<"stamp">>,
+                                        <<"2016-03-16T12:50:04.884123Z">>}],
+                                      [{xmlcdata,<<"Offline Storage">>}]}]},
+                             {xmlel,<<"message">>,
+                                 [{<<"from">>,
+                                   <<"bOb@localhost/escalus-default-resource">>},
+                                  {<<"to">>,<<"alicE@localhost">>},
+                                  {<<"xml:lang">>,<<"en">>},
+                                  {<<"type">>,<<"chat">>}],
+                                 [{xmlel,<<"body">>,[],[{xmlcdata,<<"2">>}]},
+                                  {xmlel,<<"delay">>,
+                                      [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                       {<<"from">>,<<"localhost">>},
+                                       {<<"stamp">>,
+                                        <<"2016-03-16T12:50:05.080381Z">>}],
+                                      [{xmlcdata,<<"Offline Storage">>}]}]},
+                             {xmlel,<<"message">>,
+                                 [{<<"from">>,
+                                   <<"bOb@localhost/escalus-default-resource">>},
+                                  {<<"to">>,<<"alicE@localhost">>},
+                                  {<<"xml:lang">>,<<"en">>},
+                                  {<<"type">>,<<"chat">>}],
+                                 [{xmlel,<<"body">>,[],[{xmlcdata,<<"3">>}]},
+                                  {xmlel,<<"delay">>,
+                                      [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                       {<<"from">>,<<"localhost">>},
+                                       {<<"stamp">>,
+                                        <<"2016-03-16T12:50:05.080826Z">>}],
+                                      [{xmlcdata,<<"Offline Storage">>}]}]}],
+                            "     <presence from='alicE@localhost/escalus-default-resource' to='alice@localhost/escalus-default-resource' xml:lang='en'/>     <message from='bOb@localhost/escalus-default-resource' to='alicE@localhost' xml:lang='en' type='chat'><body>1</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-03-16T12:50:04.884123Z'>Offline Storage</delay></message>     <message from='bOb@localhost/escalus-default-resource' to='alicE@localhost' xml:lang='en' type='chat'><body>2</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-03-16T12:50:05.080381Z'>Offline Storage</delay></message>     <message from='bOb@localhost/escalus-default-resource' to='alicE@localhost' xml:lang='en' type='chat'><body>3</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-03-16T12:50:05.080826Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {sm_SUITE,resume_session_state_send_message,1,
+                             [{file,"sm_SUITE.erl"},{line,589}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_new_assert,
+                                                                         assert_true,
+                                                                         84},
+                                                                        {sm_SUITE,
+                                                                         resume_session_state_send_message,
+                                                                         589},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 104 ***
+=case          sm_SUITE:resend_unacked_after_resume_timeout
+=logfile       sm_suite.resend_unacked_after_resume_timeout.132607.856.html
+=started       2016-03-16 12:50:07
+=ended         2016-03-16 12:50:19
+=result        ok
+=elapsed       11.463059
+=case          sm_SUITE:resend_unacked_on_reconnection
+=logfile       sm_suite.resend_unacked_on_reconnection.132619.345.html
+=started       2016-03-16 12:50:19
+=ended         2016-03-16 12:50:20
+=result        ok
+=elapsed       1.22154
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132620.595.html
+=group_props   [{shuffle,repeated},{name,reconnection}]
+=started       2016-03-16 12:50:20
+=ended         2016-03-16 12:50:20
+=result        ok
+=elapsed       0.264317
+=group_time    16.280s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132620.885.html
+=group_props   [{name,resumption},shuffle,{repeat,5}]
+=started       2016-03-16 12:50:20
+=ended         2016-03-16 12:50:20
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:resume_session
+=logfile       sm_suite.resume_session.html
+=started       2016-03-16 12:50:20
+=ended         2016-03-16 12:50:22
+=result        ok
+=elapsed       1.322197
+=case          sm_SUITE:session_established
+=logfile       sm_suite.session_established.html
+=started       2016-03-16 12:50:22
+=ended         2016-03-16 12:50:22
+=result        ok
+=elapsed       0.461006
+=case          sm_SUITE:wait_for_resumption
+=logfile       sm_suite.wait_for_resumption.html
+=started       2016-03-16 12:50:22
+=ended         2016-03-16 12:50:23
+=result        ok
+=elapsed       0.941059
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132623.895.html
+=group_props   [{name,resumption},shuffle,{repeat,5}]
+=started       2016-03-16 12:50:23
+=ended         2016-03-16 12:50:23
+=result        ok
+=elapsed       2.0e-6
+=group_time    3.010s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132623.921.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,resumption}]
+=started       2016-03-16 12:50:23
+=ended         2016-03-16 12:50:23
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:wait_for_resumption
+=logfile       sm_suite.wait_for_resumption.132623.948.html
+=started       2016-03-16 12:50:23
+=ended         2016-03-16 12:50:25
+=result        ok
+=elapsed       0.938497
+=case          sm_SUITE:resume_session
+=logfile       sm_suite.resume_session.132625.95.html
+=started       2016-03-16 12:50:25
+=ended         2016-03-16 12:50:26
+=result        ok
+=elapsed       1.319861
+=case          sm_SUITE:session_established
+=logfile       sm_suite.session_established.132626.440.html
+=started       2016-03-16 12:50:26
+=ended         2016-03-16 12:50:26
+=result        ok
+=elapsed       0.464425
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132626.931.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,resumption}]
+=started       2016-03-16 12:50:26
+=ended         2016-03-16 12:50:26
+=result        ok
+=elapsed       1.0e-6
+=group_time    3.010s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132626.957.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,resumption}]
+=started       2016-03-16 12:50:26
+=ended         2016-03-16 12:50:26
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:session_established
+=logfile       sm_suite.session_established.132626.982.html
+=started       2016-03-16 12:50:26
+=ended         2016-03-16 12:50:27
+=result        ok
+=elapsed       0.462849
+=case          sm_SUITE:resume_session
+=logfile       sm_suite.resume_session.132627.470.html
+=started       2016-03-16 12:50:27
+=ended         2016-03-16 12:50:28
+=result        ok
+=elapsed       1.318419
+=case          sm_SUITE:wait_for_resumption
+=logfile       sm_suite.wait_for_resumption.132628.814.html
+=started       2016-03-16 12:50:28
+=ended         2016-03-16 12:50:29
+=result        ok
+=elapsed       0.938874
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132629.963.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,resumption}]
+=started       2016-03-16 12:50:29
+=ended         2016-03-16 12:50:29
+=result        ok
+=elapsed       1.0e-6
+=group_time    3.006s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132629.994.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,resumption}]
+=started       2016-03-16 12:50:30
+=ended         2016-03-16 12:50:30
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:session_established
+=logfile       sm_suite.session_established.132630.19.html
+=started       2016-03-16 12:50:30
+=ended         2016-03-16 12:50:30
+=result        ok
+=elapsed       0.466963
+=case          sm_SUITE:resume_session
+=logfile       sm_suite.resume_session.132630.511.html
+=started       2016-03-16 12:50:30
+=ended         2016-03-16 12:50:31
+=result        ok
+=elapsed       1.321986
+=case          sm_SUITE:wait_for_resumption
+=logfile       sm_suite.wait_for_resumption.132631.860.html
+=started       2016-03-16 12:50:31
+=ended         2016-03-16 12:50:33
+=result        ok
+=elapsed       0.942057
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132633.18.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,resumption}]
+=started       2016-03-16 12:50:33
+=ended         2016-03-16 12:50:33
+=result        ok
+=elapsed       1.0e-6
+=group_time    3.024s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.132633.43.html
+=group_props   [{shuffle,repeated},{name,resumption}]
+=started       2016-03-16 12:50:33
+=ended         2016-03-16 12:50:33
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:session_established
+=logfile       sm_suite.session_established.132633.67.html
+=started       2016-03-16 12:50:33
+=ended         2016-03-16 12:50:33
+=result        ok
+=elapsed       0.463748
+=case          sm_SUITE:wait_for_resumption
+=logfile       sm_suite.wait_for_resumption.132633.556.html
+=started       2016-03-16 12:50:33
+=ended         2016-03-16 12:50:34
+=result        ok
+=elapsed       0.940871
+=case          sm_SUITE:resume_session
+=logfile       sm_suite.resume_session.132634.709.html
+=started       2016-03-16 12:50:34
+=ended         2016-03-16 12:50:36
+=result        ok
+=elapsed       1.325216
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.132636.59.html
+=group_props   [{shuffle,repeated},{name,resumption}]
+=started       2016-03-16 12:50:36
+=ended         2016-03-16 12:50:36
+=result        ok
+=elapsed       1.0e-6
+=group_time    3.016s
+=case          sm_SUITE:end_per_suite
+=logfile       sm_suite.end_per_suite.html
+=started       2016-03-16 12:50:36
+=ended         2016-03-16 12:50:37
+=result        ok
+=elapsed       0.928117
+=group_time    218.365s
+=== TEST COMPLETE, 116 ok, 5 failed of 121 test cases
+
+=finished      2016-03-16 12:50:37
+=failed        5
+=successful    116
+=user_skipped  0
+=auto_skipped  0
