@@ -1,0 +1,429 @@
+=== Suite started at 2016-03-16 15:36:28
+=== Starting test, 27 test cases
+=cases         27
+=user          travis
+=host          testing-gce-6802d3d3-4f15-49aa-a865-b22ce5409b0f
+=hosts         testing-gce-6802d3d3-4f15-49aa-a865-b22ce5409b0f 
+=emulator_vsn  7.1
+=emulator      beam
+=otp_release   18
+=started       2016-03-16 15:36:28
+=case          connect_SUITE:init_per_suite
+=logfile       connect_suite.init_per_suite.html
+=started       2016-03-16 15:36:28
+=ended         2016-03-16 15:36:28
+=result        ok
+=elapsed       0.010355
+=case          connect_SUITE:init_per_group
+=logfile       connect_suite.init_per_group.html
+=group_props   [{name,c2s_noproc}]
+=started       2016-03-16 15:36:28
+=ended         2016-03-16 15:36:28
+=result        ok
+=elapsed       0.0
+=case          connect_SUITE:reset_stream_noproc
+=logfile       connect_suite.reset_stream_noproc.html
+=started       2016-03-16 15:36:28
+=ended         2016-03-16 15:36:29
+=result        ok
+=elapsed       1.004722
+=case          connect_SUITE:starttls_noproc
+=logfile       connect_suite.starttls_noproc.html
+=started       2016-03-16 15:36:29
+=ended         2016-03-16 15:36:30
+=result        ok
+=elapsed       1.009119
+=case          connect_SUITE:compress_noproc
+=logfile       connect_suite.compress_noproc.html
+=started       2016-03-16 15:36:30
+=ended         2016-03-16 15:36:31
+=result        ok
+=elapsed       1.004152
+=case          connect_SUITE:end_per_group
+=logfile       connect_suite.end_per_group.html
+=group_props   [{name,c2s_noproc}]
+=started       2016-03-16 15:36:31
+=ended         2016-03-16 15:36:31
+=result        ok
+=elapsed       1.0e-6
+=group_time    3.120s
+=case          connect_SUITE:init_per_group
+=logfile       connect_suite.init_per_group.1974.html
+=group_props   [{name,negative}]
+=started       2016-03-16 15:36:31
+=ended         2016-03-16 15:36:31
+=result        ok
+=elapsed       1.0e-6
+=case          connect_SUITE:bad_xml
+=logfile       connect_suite.bad_xml.html
+=started       2016-03-16 15:36:31
+=ended         2016-03-16 15:36:31
+=result        ok
+=elapsed       0.001062
+=case          connect_SUITE:invalid_host
+=logfile       connect_suite.invalid_host.html
+=started       2016-03-16 15:36:31
+=ended         2016-03-16 15:36:31
+=result        ok
+=elapsed       7.87e-4
+=case          connect_SUITE:invalid_stream_namespace
+=logfile       connect_suite.invalid_stream_namespace.html
+=started       2016-03-16 15:36:31
+=ended         2016-03-16 15:36:31
+=result        ok
+=elapsed       0.00112
+=case          connect_SUITE:end_per_group
+=logfile       connect_suite.end_per_group.1978.html
+=group_props   [{name,negative}]
+=started       2016-03-16 15:36:31
+=ended         2016-03-16 15:36:31
+=result        ok
+=elapsed       0.0
+=group_time    0.103s
+=case          connect_SUITE:init_per_group
+=logfile       connect_suite.init_per_group.1982.html
+=group_props   [{name,pre_xmpp_1_0}]
+=started       2016-03-16 15:36:31
+=ended         2016-03-16 15:36:31
+=result        ok
+=elapsed       0.0
+=case          connect_SUITE:pre_xmpp_1_0_stream
+=logfile       connect_suite.pre_xmpp_1_0_stream.html
+=started       2016-03-16 15:36:31
+=ended         2016-03-16 15:36:31
+=result        ok
+=elapsed       0.202225
+=case          connect_SUITE:end_per_group
+=logfile       connect_suite.end_per_group.1986.html
+=group_props   [{name,pre_xmpp_1_0}]
+=started       2016-03-16 15:36:31
+=ended         2016-03-16 15:36:31
+=result        ok
+=elapsed       0.0
+=group_time    0.252s
+=case          connect_SUITE:init_per_group
+=logfile       connect_suite.init_per_group.1990.html
+=group_props   [{name,starttls}]
+=started       2016-03-16 15:36:31
+=ended         2016-03-16 15:36:37
+=result        ok
+=elapsed       5.702497
+=case          connect_SUITE:should_pass_with_tlsv1
+=logfile       connect_suite.should_pass_with_tlsv1.html
+=started       2016-03-16 15:36:37
+=ended         2016-03-16 15:36:37
+=result        ok
+=elapsed       0.242363
+=case          connect_SUITE:'should_pass_with_tlsv1.1'
+=logfile       connect_suite.'should_pass_with_tlsv1.1'.html
+=started       2016-03-16 15:36:37
+=ended         2016-03-16 15:36:38
+=result        ok
+=elapsed       0.24159
+=case          connect_SUITE:'should_pass_with_tlsv1.2'
+=logfile       connect_suite.'should_pass_with_tlsv1.2'.html
+=started       2016-03-16 15:36:38
+=ended         2016-03-16 15:36:38
+=result        ok
+=elapsed       0.240768
+=case          connect_SUITE:should_fail_with_sslv3
+=logfile       connect_suite.should_fail_with_sslv3.html
+=started       2016-03-16 15:36:38
+=ended         2016-03-16 15:36:38
+=result        ok
+=elapsed       0.027636
+=case          connect_SUITE:should_fail_to_authenticate_without_starttls
+=logfile       connect_suite.should_fail_to_authenticate_without_starttls.html
+=started       2016-03-16 15:36:38
+=ended         2016-03-16 15:36:38
+=result        ok
+=elapsed       0.001343
+=case          connect_SUITE:should_not_send_other_features_with_starttls_required
+=logfile       connect_suite.should_not_send_other_features_with_starttls_required.html
+=started       2016-03-16 15:36:38
+=ended         2016-03-16 15:36:38
+=result        ok
+=elapsed       0.001024
+=case          connect_SUITE:end_per_group
+=logfile       connect_suite.end_per_group.1994.html
+=group_props   [{name,starttls}]
+=started       2016-03-16 15:36:38
+=ended         2016-03-16 15:36:38
+=result        ok
+=elapsed       0.0
+=group_time    6.638s
+=case          connect_SUITE:init_per_group
+=logfile       connect_suite.init_per_group.1998.html
+=group_props   [{name,feature_order}]
+=started       2016-03-16 15:36:38
+=ended         2016-03-16 15:36:44
+=result        ok
+=elapsed       5.663258
+=case          connect_SUITE:stream_features_test
+=logfile       connect_suite.stream_features_test.html
+=started       2016-03-16 15:36:44
+=ended         2016-03-16 15:36:45
+=result        ok
+=elapsed       1.338855
+=case          connect_SUITE:tls_authenticate
+=logfile       connect_suite.tls_authenticate.html
+=started       2016-03-16 15:36:45
+=ended         2016-03-16 15:36:45
+=result        ok
+=elapsed       0.13735
+=case          connect_SUITE:tls_compression_fail
+=logfile       connect_suite.tls_compression_fail.html
+=started       2016-03-16 15:36:45
+=ended         2016-03-16 15:36:45
+=result        ok
+=elapsed       0.135348
+=case          connect_SUITE:tls_compression_authenticate_fail
+=logfile       connect_suite.tls_compression_authenticate_fail.html
+=started       2016-03-16 15:36:45
+=ended         2016-03-16 15:36:46
+=result        ok
+=elapsed       0.13533
+=case          connect_SUITE:tls_authenticate_compression
+=logfile       connect_suite.tls_authenticate_compression.html
+=started       2016-03-16 15:36:46
+=ended         2016-03-16 15:36:47
+=result        failed: {{badmatch,
+                         {error,
+                          {connection_step_failed,
+                           {{escalus_session,maybe_use_compression},
+                            {client,undefined,escalus_tcp,
+                             {sslsocket,
+                              {gen_tcp,#Port<0.15528>,tls_connection,
+                               undefined},
+                              <0.14865.0>},
+                             true,false,<0.14864.0>,undefined},
+                            [{username,<<"secure_joe">>},
+                             {server,<<"localhost">>},
+                             {password,<<"break_me">>},
+                             {compression,<<"zlib">>},
+                             {starttls,required},
+                             {host,<<"localhost">>}],
+                            [{compression,[<<"zlib">>]},
+                             {starttls,false},
+                             {stream_management,true},
+                             {advanced_message_processing,false}]},
+                           {timeout,wait_for_stream}}}},
+                        [{connect_SUITE,tls_authenticate_compression,1,
+                          [{file,"connect_SUITE.erl"},{line,515}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1408}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,984}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,926}]}]}, [{connect_SUITE,
+                                                                      tls_authenticate_compression,
+                                                                      515},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1408},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      984},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      926}]
+=== *** FAILED test case 18 of 27 ***
+=case          connect_SUITE:auth_compression_bind_session
+=logfile       connect_suite.auth_compression_bind_session.html
+=started       2016-03-16 15:36:47
+=ended         2016-03-16 15:36:48
+=result        failed: {{badmatch,
+                         {error,
+                          {connection_step_failed,
+                           {{escalus_session,maybe_use_compression},
+                            {client,undefined,escalus_tcp,
+                             {sslsocket,
+                              {gen_tcp,#Port<0.15554>,tls_connection,
+                               undefined},
+                              <0.14870.0>},
+                             true,false,<0.14869.0>,undefined},
+                            [{username,<<"secure_joe">>},
+                             {server,<<"localhost">>},
+                             {password,<<"break_me">>},
+                             {compression,<<"zlib">>},
+                             {starttls,required},
+                             {host,<<"localhost">>}],
+                            [{compression,[<<"zlib">>]},
+                             {starttls,false},
+                             {stream_management,true},
+                             {advanced_message_processing,false}]},
+                           {timeout,wait_for_stream}}}},
+                        [{connect_SUITE,auth_compression_bind_session,1,
+                          [{file,"connect_SUITE.erl"},{line,557}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1408}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,984}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,926}]}]}, [{connect_SUITE,
+                                                                      auth_compression_bind_session,
+                                                                      557},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1408},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      984},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      926}]
+=== *** FAILED test case 19 of 27 ***
+=case          connect_SUITE:auth_bind_compression_session
+=logfile       connect_suite.auth_bind_compression_session.html
+=started       2016-03-16 15:36:48
+=ended         2016-03-16 15:36:50
+=result        failed: {{badmatch,
+                         {error,
+                          {connection_step_failed,
+                           {{escalus_session,maybe_use_compression},
+                            {client,undefined,escalus_tcp,
+                             {sslsocket,
+                              {gen_tcp,#Port<0.15558>,tls_connection,
+                               undefined},
+                              <0.14875.0>},
+                             true,false,<0.14874.0>,undefined},
+                            [{username,<<"secure_joe">>},
+                             {server,<<"localhost">>},
+                             {password,<<"break_me">>},
+                             {compression,<<"zlib">>},
+                             {starttls,required},
+                             {host,<<"localhost">>}],
+                            [{compression,[<<"zlib">>]},
+                             {starttls,false},
+                             {stream_management,true},
+                             {advanced_message_processing,false}]},
+                           {timeout,wait_for_stream}}}},
+                        [{connect_SUITE,auth_bind_compression_session,1,
+                          [{file,"connect_SUITE.erl"},{line,568}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1408}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,984}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,926}]}]}, [{connect_SUITE,
+                                                                      auth_bind_compression_session,
+                                                                      568},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1408},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      984},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      926}]
+=== *** FAILED test case 20 of 27 ***
+=case          connect_SUITE:end_per_group
+=logfile       connect_suite.end_per_group.2002.html
+=group_props   [{name,feature_order}]
+=started       2016-03-16 15:36:50
+=ended         2016-03-16 15:36:50
+=result        ok
+=elapsed       1.0e-6
+=group_time    11.955s
+=case          connect_SUITE:init_per_group
+=logfile       connect_suite.init_per_group.2006.html
+=group_props   [{name,tls}]
+=started       2016-03-16 15:36:50
+=ended         2016-03-16 15:36:56
+=result        ok
+=elapsed       5.652745
+=case          connect_SUITE:should_pass_with_tlsv1
+=logfile       connect_suite.should_pass_with_tlsv1.2010.html
+=started       2016-03-16 15:36:56
+=ended         2016-03-16 15:36:56
+=result        ok
+=elapsed       0.221408
+=case          connect_SUITE:'should_pass_with_tlsv1.1'
+=logfile       connect_suite.'should_pass_with_tlsv1.1'.2014.html
+=started       2016-03-16 15:36:56
+=ended         2016-03-16 15:36:56
+=result        ok
+=elapsed       0.224271
+=case          connect_SUITE:'should_pass_with_tlsv1.2'
+=logfile       connect_suite.'should_pass_with_tlsv1.2'.2018.html
+=started       2016-03-16 15:36:56
+=ended         2016-03-16 15:36:56
+=result        ok
+=elapsed       0.221778
+=case          connect_SUITE:end_per_group
+=logfile       connect_suite.end_per_group.2022.html
+=group_props   [{name,tls}]
+=started       2016-03-16 15:36:56
+=ended         2016-03-16 15:36:56
+=result        ok
+=elapsed       0.0
+=group_time    6.419s
+=case          connect_SUITE:init_per_group
+=logfile       connect_suite.init_per_group.2026.html
+=group_props   [{name,ciphers_default}]
+=started       2016-03-16 15:36:56
+=ended         2016-03-16 15:37:02
+=result        ok
+=elapsed       5.662166
+=case          connect_SUITE:clients_can_connect_with_advertised_ciphers
+=logfile       connect_suite.clients_can_connect_with_advertised_ciphers.html
+=started       2016-03-16 15:37:02
+=ended         2016-03-16 15:37:03
+=result        ok
+=elapsed       1.06271
+=case          connect_SUITE:'clients_can_connect_with_DHE-RSA-AES256-SHA'
+=logfile       connect_suite.'clients_can_connect_with_dhe-rsa-aes256-sha'.html
+=started       2016-03-16 15:37:03
+=ended         2016-03-16 15:37:04
+=result        ok
+=elapsed       1.114945
+=case          connect_SUITE:'clients_can_connect_with_DHE-RSA-AES128-SHA'
+=logfile       connect_suite.'clients_can_connect_with_dhe-rsa-aes128-sha'.html
+=started       2016-03-16 15:37:04
+=ended         2016-03-16 15:37:05
+=result        ok
+=elapsed       1.083839
+=case          connect_SUITE:end_per_group
+=logfile       connect_suite.end_per_group.2030.html
+=group_props   [{name,ciphers_default}]
+=started       2016-03-16 15:37:05
+=ended         2016-03-16 15:37:05
+=result        ok
+=elapsed       1.0e-6
+=group_time    9.026s
+=case          connect_SUITE:init_per_group
+=logfile       connect_suite.init_per_group.2034.html
+=group_props   [{name,'node2_supports_DHE-RSA-AES256-SHA_only'}]
+=started       2016-03-16 15:37:05
+=ended         2016-03-16 15:37:14
+=result        ok
+=elapsed       8.538403
+=case          connect_SUITE:'clients_can_connect_with_DHE-RSA-AES256-SHA_only'
+=logfile       connect_suite.'clients_can_connect_with_dhe-rsa-aes256-sha_only'.html
+=started       2016-03-16 15:37:14
+=ended         2016-03-16 15:37:15
+=result        ok
+=elapsed       0.984781
+=case          connect_SUITE:end_per_group
+=logfile       connect_suite.end_per_group.2038.html
+=group_props   [{name,'node2_supports_DHE-RSA-AES256-SHA_only'}]
+=started       2016-03-16 15:37:15
+=ended         2016-03-16 15:37:22
+=result        ok
+=elapsed       6.548706
+=group_time    9.576s
+=case          connect_SUITE:end_per_suite
+=logfile       connect_suite.end_per_suite.html
+=started       2016-03-16 15:37:22
+=ended         2016-03-16 15:37:29
+=result        ok
+=elapsed       7.203686
+=group_time    53.891s
+=== TEST COMPLETE, 24 ok, 3 failed of 27 test cases
+
+=finished      2016-03-16 15:37:29
+=failed        3
+=successful    24
+=user_skipped  0
+=auto_skipped  0
