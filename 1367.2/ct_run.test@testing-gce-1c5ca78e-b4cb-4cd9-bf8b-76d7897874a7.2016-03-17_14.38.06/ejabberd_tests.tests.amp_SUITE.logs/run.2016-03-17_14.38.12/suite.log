@@ -1,0 +1,156 @@
+=== Suite started at 2016-03-17 14:38:12
+=== Starting test, 17 test cases
+=cases         17
+=user          travis
+=host          testing-gce-1c5ca78e-b4cb-4cd9-bf8b-76d7897874a7
+=hosts         testing-gce-1c5ca78e-b4cb-4cd9-bf8b-76d7897874a7 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-17 14:38:12
+=case          amp_SUITE:init_per_suite
+=logfile       amp_suite.init_per_suite.html
+=started       2016-03-17 14:38:12
+=ended         2016-03-17 14:38:12
+=result        failed: {function_clause,
+                           [{escalus_users,
+                                '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                [{by_name,[alice,bob]}],
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {escalus_users,create_users_via_xmpp,2,
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1099}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{escalus_users,
+                                                                            '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                                                            99},
+                                                                           {escalus_users,
+                                                                            create_users_via_xmpp,
+                                                                            99},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1099},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED {amp_SUITE,init_per_suite} ***
+=== 
+=case          amp_SUITE:stream_feature_test
+=group_props   [{name,"discovery"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #1 {amp_SUITE,stream_feature_test} ***
+=== 
+=case          amp_SUITE:initial_service_discovery_test
+=group_props   [{name,"discovery"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #2 {amp_SUITE,initial_service_discovery_test} ***
+=== 
+=case          amp_SUITE:actions_and_conditions_discovery_test
+=group_props   [{name,"discovery"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #3 {amp_SUITE,actions_and_conditions_discovery_test} ***
+=== 
+=case          amp_SUITE:unsupported_actions_test
+=group_props   [{name,"rule_errors"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #4 {amp_SUITE,unsupported_actions_test} ***
+=== 
+=case          amp_SUITE:unsupported_conditions_test
+=group_props   [{name,"rule_errors"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #5 {amp_SUITE,unsupported_conditions_test} ***
+=== 
+=case          amp_SUITE:unacceptable_rules_test
+=group_props   [{name,"rule_errors"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #6 {amp_SUITE,unacceptable_rules_test} ***
+=== 
+=case          amp_SUITE:notify_deliver_direct_test
+=group_props   [{name,"notify_action"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #7 {amp_SUITE,notify_deliver_direct_test} ***
+=== 
+=case          amp_SUITE:notify_deliver_forward_test
+=group_props   [{name,"notify_action"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #8 {amp_SUITE,notify_deliver_forward_test} ***
+=== 
+=case          amp_SUITE:notify_deliver_none_test
+=group_props   [{name,"notify_action"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #9 {amp_SUITE,notify_deliver_none_test} ***
+=== 
+=case          amp_SUITE:notify_match_resource_any_test
+=group_props   [{name,"notify_action"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #10 {amp_SUITE,notify_match_resource_any_test} ***
+=== 
+=case          amp_SUITE:notify_match_resource_exact_test
+=group_props   [{name,"notify_action"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #11 {amp_SUITE,notify_match_resource_exact_test} ***
+=== 
+=case          amp_SUITE:notify_match_resource_other_test
+=group_props   [{name,"notify_action"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #12 {amp_SUITE,notify_match_resource_other_test} ***
+=== 
+=case          amp_SUITE:error_deliver_direct_test
+=group_props   [{name,"error_action"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #13 {amp_SUITE,error_deliver_direct_test} ***
+=== 
+=case          amp_SUITE:error_deliver_forward_test
+=group_props   [{name,"error_action"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #14 {amp_SUITE,error_deliver_forward_test} ***
+=== 
+=case          amp_SUITE:error_deliver_none_test
+=group_props   [{name,"error_action"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #15 {amp_SUITE,error_deliver_none_test} ***
+=== 
+=case          amp_SUITE:error_deliver_doesnt_apply_test
+=group_props   [{name,"rules_dont_apply"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #16 {amp_SUITE,error_deliver_doesnt_apply_test} ***
+=== 
+=case          amp_SUITE:last_rule_applies_test
+=group_props   [{name,"multiple_rules"}]
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #17 {amp_SUITE,last_rule_applies_test} ***
+=== 
+=case          amp_SUITE:end_per_suite
+=started       2016-03-17 14:38:12
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping {amp_SUITE,end_per_suite} ***
+=== TEST COMPLETE, 0 ok, 0 failed, 17 skipped of 17 test cases
+
+=finished      2016-03-17 14:38:12
+=failed        0
+=successful    0
+=user_skipped  0
+=auto_skipped  17

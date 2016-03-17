@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test metrics_c2s_SUITE:init_per_group result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Config function: <a href="metrics_c2s_suite.src.html#init_per_group-1">metrics_c2s_SUITE:init_per_group/2</a> (click for source code)
+
+=== Group properties: [{name,errors},sequence]
+
+=== Config value:
+
+    [{running,
+         [{mod_offline,
+              [{access_max_user_messages,max_user_offline_messages}]}]},
+     {watchdog,<0.4753.0>},
+     {preset,"internal_mnesia"},
+     {tc_logfile,
+         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-1c5ca78e-b4cb-4cd9-bf8b-76d7897874a7.2016-03-17_14.38.06/ejabberd_tests.tests.metrics_c2s_SUITE.logs/run.2016-03-17_14.39.04/metrics_c2s_suite.init_per_group.225544.309.html"},
+     {tc_group_properties,[{name,errors},sequence]},
+     {tc_group_path,[]},
+     {data_dir,
+         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/metrics_c2s_SUITE_data/"},
+     {priv_dir,
+         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-1c5ca78e-b4cb-4cd9-bf8b-76d7897874a7.2016-03-17_14.38.06/ejabberd_tests.tests.metrics_c2s_SUITE.logs/run.2016-03-17_14.39.04/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-1c5ca78e-b4cb-4cd9-bf8b-76d7897874a7.2016-03-17_14.38.06"
+
+=== Started at 2016-03-17 14:39:04
+
+<br />
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-03-17 14:39:04.313 ***</b>
+metrics_c2s_SUITE:init_per_group failed
+Reason: function_clause
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-03-17 14:39:04
+=== location [{escalus_users,'-create_users_via_xmpp/2-lc$^0/1-0-',99},
+              {escalus_users,create_users_via_xmpp,99},
+              {test_server,ts_tc,1429},
+              {test_server,run_test_case_eval1,1099},
+              {test_server,run_test_case_eval,968}]
+=== reason = no function clause matching 
+                 escalus_users:'-create_users_via_xmpp/2-lc$^0/1-0-'({by_name,
+                                                                      [alice,
+                                                                       bob]}) (src/escalus_users.erl, line 99)
+  in function  escalus_users:create_users_via_xmpp/2 (src/escalus_users.erl, line 99)
+  in call from test_server:ts_tc/3 (test_server.erl, line 1429)
+  in call from test_server:run_test_case_eval1/6 (test_server.erl, line 1099)
+  in call from test_server:run_test_case_eval/9 (test_server.erl, line 968)
+=== 
+*** init_per_group failed.
+    Skipping all cases.
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Thu Mar 17 2016 14:39:04<!/date><br />
+</div>
+</center>
+</body>
+</html>

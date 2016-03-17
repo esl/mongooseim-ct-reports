@@ -1,0 +1,1548 @@
+=== Suite started at 2016-03-17 14:38:15
+=== Starting test (with repeated test cases)
+=cases         unknown
+=user          travis
+=host          testing-gce-1c5ca78e-b4cb-4cd9-bf8b-76d7897874a7
+=hosts         testing-gce-1c5ca78e-b4cb-4cd9-bf8b-76d7897874a7 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-17 14:38:15
+=case          bosh_SUITE:init_per_suite
+=logfile       bosh_suite.init_per_suite.html
+=started       2016-03-17 14:38:15
+=ended         2016-03-17 14:38:15
+=result        ok
+=elapsed       0.005019
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.html
+=group_props   [{name,essential},shuffle,{repeat_until_any_fail,10}]
+=started       2016-03-17 14:38:15
+=ended         2016-03-17 14:38:15
+=result        ok
+=elapsed       2.0e-6
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.html
+=started       2016-03-17 14:38:15
+=ended         2016-03-17 14:38:15
+=result        ok
+=elapsed       0.0159
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.html
+=started       2016-03-17 14:38:15
+=ended         2016-03-17 14:38:15
+=result        ok
+=elapsed       8.34e-4
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.html
+=started       2016-03-17 14:38:15
+=ended         2016-03-17 14:38:15
+=result        ok
+=elapsed       0.125471
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.html
+=started       2016-03-17 14:38:15
+=ended         2016-03-17 14:38:15
+=result        ok
+=elapsed       0.013534
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.html
+=started       2016-03-17 14:38:15
+=ended         2016-03-17 14:38:15
+=result        ok
+=elapsed       0.001108
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.html
+=started       2016-03-17 14:38:15
+=ended         2016-03-17 14:38:15
+=result        ok
+=elapsed       7.42e-4
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.html
+=started       2016-03-17 14:38:15
+=ended         2016-03-17 14:38:15
+=result        ok
+=elapsed       7.72e-4
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.html
+=group_props   [{name,essential},shuffle,{repeat_until_any_fail,10}]
+=started       2016-03-17 14:38:15
+=ended         2016-03-17 14:38:15
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.370s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225495.971.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,9},{name,essential}]
+=started       2016-03-17 14:38:15
+=ended         2016-03-17 14:38:15
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225495.997.html
+=started       2016-03-17 14:38:15
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       6.72e-4
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225496.24.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       6.74e-4
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225496.51.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       9.08e-4
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225496.78.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       0.114638
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225496.218.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       7.54e-4
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225496.245.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       9.02e-4
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225496.272.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       0.012284
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225496.310.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,9},{name,essential}]
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.339s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225496.336.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,8},{name,essential}]
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225496.362.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       6.85e-4
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225496.388.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       8.75e-4
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225496.415.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       7.17e-4
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225496.441.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       0.114277
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225496.581.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       0.01645
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225496.623.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       9.51e-4
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225496.650.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       6.55e-4
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225496.676.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,8},{name,essential}]
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       2.0e-6
+=group_time    0.340s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225496.701.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,7},{name,essential}]
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225496.726.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       9.36e-4
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225496.753.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       8.18e-4
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225496.779.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       9.19e-4
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225496.806.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       7.48e-4
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225496.832.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       7.82e-4
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225496.858.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:16
+=result        ok
+=elapsed       0.115345
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225496.999.html
+=started       2016-03-17 14:38:16
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       0.012876
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225497.38.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,7},{name,essential}]
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.337s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225497.63.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,6},{name,essential}]
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225497.89.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       7.65e-4
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225497.115.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       0.114244
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225497.255.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       0.012985
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225497.294.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       6.69e-4
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225497.320.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       8.58e-4
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225497.346.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       7.12e-4
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225497.372.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       0.001105
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225497.404.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,6},{name,essential}]
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.341s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225497.430.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,5},{name,essential}]
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225497.456.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       0.114562
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225497.596.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       0.001036
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225497.623.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       0.012883
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225497.662.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       6.5e-4
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225497.688.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       0.001023
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225497.715.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       6.91e-4
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225497.741.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       8.6e-4
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225497.768.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,5},{name,essential}]
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.337s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225497.794.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,4},{name,essential}]
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225497.819.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       9.85e-4
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225497.846.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       9.36e-4
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225497.873.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:17
+=result        ok
+=elapsed       0.013235
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225497.912.html
+=started       2016-03-17 14:38:17
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       0.114573
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225498.52.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       9.42e-4
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225498.79.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       6.28e-4
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225498.105.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       7.44e-4
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225498.131.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,4},{name,essential}]
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.337s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225498.156.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,3},{name,essential}]
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225498.182.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       6.47e-4
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225498.208.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       8.86e-4
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225498.235.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       7.49e-4
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225498.261.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       7.38e-4
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225498.287.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       7.01e-4
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225498.314.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       0.012963
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225498.353.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       0.113626
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225498.492.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,3},{name,essential}]
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.336s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225498.518.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,2},{name,essential}]
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225498.544.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       8.25e-4
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225498.570.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       0.115204
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225498.711.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       0.012501
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225498.750.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       7.34e-4
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225498.778.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       0.001059
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225498.805.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       8.06e-4
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225498.831.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       6.58e-4
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225498.857.html
+=group_props   [{shuffle,repeated},{repeat_until_any_fail,2},{name,essential}]
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.339s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225498.883.html
+=group_props   [{shuffle,repeated},{name,essential}]
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225498.908.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       0.013157
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225498.947.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       7.61e-4
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225498.973.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:18
+=result        ok
+=elapsed       7.93e-4
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225498.999.html
+=started       2016-03-17 14:38:18
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       0.001003
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225499.26.html
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       0.115292
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225499.167.html
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       0.00105
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225499.194.html
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       8.6e-4
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225499.220.html
+=group_props   [{shuffle,repeated},{name,essential}]
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.337s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225499.245.html
+=group_props   [{name,chat},shuffle,{repeat_until_any_fail,10}]
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        failed: {function_clause,
+                           [{lists,foreach,
+                                [#Fun<escalus_ejabberd.1.24911657>,
+                                 {by_name,[carol,carol_s,geralt,alice]}],
+                                [{file,"lists.erl"},{line,1335}]},
+                            {escalus_ejabberd,create_users,2,
+                                [{file,"src/escalus_ejabberd.erl"},
+                                 {line,214}]},
+                            {bosh_SUITE,init_per_group,2,
+                                [{file,"bosh_SUITE.erl"},{line,108}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1099}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{lists,
+                                                                            foreach,
+                                                                            1335},
+                                                                           {escalus_ejabberd,
+                                                                            create_users,
+                                                                            214},
+                                                                           {bosh_SUITE,
+                                                                            init_per_group,
+                                                                            108},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1099},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED {bosh_SUITE,init_per_group} ***
+=== Aborting repeat operation (configuration case failed)
+=== 
+=case          bosh_SUITE:cant_send_invalid_rid
+=group_props   [{name,"chat"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #71 {bosh_SUITE,cant_send_invalid_rid} ***
+=== 
+=case          bosh_SUITE:cdata_escape_chat
+=group_props   [{name,"chat"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #72 {bosh_SUITE,cdata_escape_chat} ***
+=== 
+=case          bosh_SUITE:interleave_requests
+=group_props   [{name,"chat"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #73 {bosh_SUITE,interleave_requests} ***
+=== 
+=case          bosh_SUITE:namespace
+=group_props   [{name,"chat"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #74 {bosh_SUITE,namespace} ***
+=== 
+=case          bosh_SUITE:escape_attr_chat
+=group_props   [{name,"chat"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #75 {bosh_SUITE,escape_attr_chat} ***
+=== 
+=case          bosh_SUITE:multiple_stanzas
+=group_props   [{name,"chat"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #76 {bosh_SUITE,multiple_stanzas} ***
+=== 
+=case          bosh_SUITE:stream_error
+=group_props   [{name,"chat"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #77 {bosh_SUITE,stream_error} ***
+=== 
+=case          bosh_SUITE:simple_chat
+=group_props   [{name,"chat"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #78 {bosh_SUITE,simple_chat} ***
+=== 
+=case          bosh_SUITE:end_per_group
+=group_props   [{name,"chat"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {bosh_SUITE,end_per_group} ***
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225499.280.html
+=group_props   [{name,time},shuffle,{repeat_until_any_fail,10}]
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        failed: {function_clause,
+                           [{lists,foreach,
+                                [#Fun<escalus_ejabberd.1.24911657>,
+                                 {by_name,[carol,carol_s,geralt,alice]}],
+                                [{file,"lists.erl"},{line,1335}]},
+                            {escalus_ejabberd,create_users,2,
+                                [{file,"src/escalus_ejabberd.erl"},
+                                 {line,214}]},
+                            {bosh_SUITE,init_per_group,2,
+                                [{file,"bosh_SUITE.erl"},{line,108}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1099}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{lists,
+                                                                            foreach,
+                                                                            1335},
+                                                                           {escalus_ejabberd,
+                                                                            create_users,
+                                                                            214},
+                                                                           {bosh_SUITE,
+                                                                            init_per_group,
+                                                                            108},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1099},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED {bosh_SUITE,init_per_group} ***
+=== Aborting repeat operation (configuration case failed)
+=== 
+=case          bosh_SUITE:reply_in_time
+=group_props   [{name,"time"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #79 {bosh_SUITE,reply_in_time} ***
+=== 
+=case          bosh_SUITE:disconnect_inactive
+=group_props   [{name,"time"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #80 {bosh_SUITE,disconnect_inactive} ***
+=== 
+=case          bosh_SUITE:reply_on_pause
+=group_props   [{name,"time"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #81 {bosh_SUITE,reply_on_pause} ***
+=== 
+=case          bosh_SUITE:interrupt_long_poll_is_activity
+=group_props   [{name,"time"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #82 {bosh_SUITE,interrupt_long_poll_is_activity} ***
+=== 
+=case          bosh_SUITE:pause_request_is_activity
+=group_props   [{name,"time"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #83 {bosh_SUITE,pause_request_is_activity} ***
+=== 
+=case          bosh_SUITE:connection_interrupted
+=group_props   [{name,"time"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #84 {bosh_SUITE,connection_interrupted} ***
+=== 
+=case          bosh_SUITE:cant_pause_for_too_long
+=group_props   [{name,"time"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #85 {bosh_SUITE,cant_pause_for_too_long} ***
+=== 
+=case          bosh_SUITE:end_per_group
+=group_props   [{name,"time"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {bosh_SUITE,end_per_group} ***
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225499.315.html
+=group_props   [{name,acks},shuffle,{repeat_until_any_fail,5}]
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        failed: {function_clause,
+                           [{lists,foreach,
+                                [#Fun<escalus_ejabberd.1.24911657>,
+                                 {by_name,[carol,carol_s,geralt,alice]}],
+                                [{file,"lists.erl"},{line,1335}]},
+                            {escalus_ejabberd,create_users,2,
+                                [{file,"src/escalus_ejabberd.erl"},
+                                 {line,214}]},
+                            {bosh_SUITE,init_per_group,2,
+                                [{file,"bosh_SUITE.erl"},{line,108}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1099}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{lists,
+                                                                            foreach,
+                                                                            1335},
+                                                                           {escalus_ejabberd,
+                                                                            create_users,
+                                                                            214},
+                                                                           {bosh_SUITE,
+                                                                            init_per_group,
+                                                                            108},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1099},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED {bosh_SUITE,init_per_group} ***
+=== Aborting repeat operation (configuration case failed)
+=== 
+=case          bosh_SUITE:force_retransmission
+=group_props   [{name,"acks"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #86 {bosh_SUITE,force_retransmission} ***
+=== 
+=case          bosh_SUITE:server_acks
+=group_props   [{name,"acks"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #87 {bosh_SUITE,server_acks} ***
+=== 
+=case          bosh_SUITE:force_report
+=group_props   [{name,"acks"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #88 {bosh_SUITE,force_report} ***
+=== 
+=case          bosh_SUITE:force_cache_trimming
+=group_props   [{name,"acks"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #89 {bosh_SUITE,force_cache_trimming} ***
+=== 
+=case          bosh_SUITE:end_per_group
+=group_props   [{name,"acks"}]
+=started       2016-03-17 14:38:19
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {bosh_SUITE,end_per_group} ***
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225499.347.html
+=group_props   [{name,essential_https},shuffle,{repeat_until_any_fail,10}]
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225499.373.html
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       0.125039
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225499.526.html
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       0.002321
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225499.555.html
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       0.014747
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225499.595.html
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       0.001925
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225499.622.html
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       0.001741
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225499.650.html
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       0.119797
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225499.796.html
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       0.002313
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225499.825.html
+=group_props   [{name,essential_https},shuffle,{repeat_until_any_fail,10}]
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       2.0e-6
+=group_time    0.478s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225499.850.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,9},
+                {name,essential_https}]
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225499.876.html
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       0.001676
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225499.903.html
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       0.014575
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225499.943.html
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       0.001843
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225499.970.html
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:19
+=result        ok
+=elapsed       0.001682
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225499.997.html
+=started       2016-03-17 14:38:19
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.002055
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225500.25.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.002066
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225500.53.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.115624
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225500.194.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,9},
+                {name,essential_https}]
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.344s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225500.220.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,8},
+                {name,essential_https}]
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225500.246.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.002916
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225500.277.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.001297
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225500.302.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.001797
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225500.333.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.117726
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225500.475.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.013232
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225500.512.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.001219
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225500.540.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.001136
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225500.566.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,8},
+                {name,essential_https}]
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.346s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225500.593.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,7},
+                {name,essential_https}]
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225500.617.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.001534
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225500.644.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.001566
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225500.670.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.013329
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225500.707.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.001406
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225500.733.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.001365
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225500.760.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.001159
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225500.788.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.113714
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225500.927.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,7},
+                {name,essential_https}]
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.334s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225500.953.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,6},
+                {name,essential_https}]
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225500.977.html
+=started       2016-03-17 14:38:20
+=ended         2016-03-17 14:38:20
+=result        ok
+=elapsed       0.00154
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225501.5.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.001534
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225501.30.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.001493
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225501.56.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.015381
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225501.96.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.001332
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225501.122.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.113796
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225501.260.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.001515
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225501.286.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,6},
+                {name,essential_https}]
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.333s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225501.310.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,5},
+                {name,essential_https}]
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225501.335.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.00151
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225501.360.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.001403
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225501.386.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.001252
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225501.411.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.001439
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225501.437.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.001325
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225501.463.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.114823
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225501.602.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.013739
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225501.640.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,5},
+                {name,essential_https}]
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       2.0e-6
+=group_time    0.331s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225501.665.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,4},
+                {name,essential_https}]
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225501.688.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.002106
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225501.715.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.001628
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225501.744.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.001368
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225501.771.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.002435
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225501.798.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.113592
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225501.937.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.001346
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225501.963.html
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:21
+=result        ok
+=elapsed       0.013407
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225502.1.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,4},
+                {name,essential_https}]
+=started       2016-03-17 14:38:21
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       2.0e-6
+=group_time    0.336s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225502.25.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,3},
+                {name,essential_https}]
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225502.52.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.001344
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225502.78.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.001468
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225502.104.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.114593
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225502.243.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.001671
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225502.270.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.001691
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225502.296.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.01338
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225502.334.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.001231
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225502.360.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,3},
+                {name,essential_https}]
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.335s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225502.384.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,2},
+                {name,essential_https}]
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       6.0e-6
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225502.407.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.115559
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225502.548.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.002079
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225502.575.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.001558
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225502.601.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.013719
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225502.639.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.001377
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225502.668.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.001496
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225502.695.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.001245
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225502.720.html
+=group_props   [{shuffle,repeated},
+                {repeat_until_any_fail,2},
+                {name,essential_https}]
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.337s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225502.745.html
+=group_props   [{shuffle,repeated},{name,essential_https}]
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       1.0e-6
+=case          bosh_SUITE:create_and_terminate_session
+=logfile       bosh_suite.create_and_terminate_session.225502.772.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.115416
+=case          bosh_SUITE:get_request
+=logfile       bosh_suite.get_request.225502.913.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.001657
+=case          bosh_SUITE:accept_higher_hold_value
+=logfile       bosh_suite.accept_higher_hold_value.225502.939.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:22
+=result        ok
+=elapsed       0.019203
+=case          bosh_SUITE:options_request
+=logfile       bosh_suite.options_request.225502.983.html
+=started       2016-03-17 14:38:22
+=ended         2016-03-17 14:38:23
+=result        ok
+=elapsed       0.001296
+=case          bosh_SUITE:do_not_accept_0_hold_value
+=logfile       bosh_suite.do_not_accept_0_hold_value.225503.9.html
+=started       2016-03-17 14:38:23
+=ended         2016-03-17 14:38:23
+=result        ok
+=elapsed       0.001513
+=case          bosh_SUITE:put_request
+=logfile       bosh_suite.put_request.225503.35.html
+=started       2016-03-17 14:38:23
+=ended         2016-03-17 14:38:23
+=result        ok
+=elapsed       0.001345
+=case          bosh_SUITE:post_empty_body
+=logfile       bosh_suite.post_empty_body.225503.60.html
+=started       2016-03-17 14:38:23
+=ended         2016-03-17 14:38:23
+=result        ok
+=elapsed       0.001529
+=case          bosh_SUITE:end_per_group
+=logfile       bosh_suite.end_per_group.225503.86.html
+=group_props   [{shuffle,repeated},{name,essential_https}]
+=started       2016-03-17 14:38:23
+=ended         2016-03-17 14:38:23
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.342s
+=case          bosh_SUITE:init_per_group
+=logfile       bosh_suite.init_per_group.225503.111.html
+=group_props   [{name,chat_https},shuffle,{repeat_until_any_fail,10}]
+=started       2016-03-17 14:38:23
+=ended         2016-03-17 14:38:23
+=result        failed: {function_clause,
+                           [{lists,foreach,
+                                [#Fun<escalus_ejabberd.1.24911657>,
+                                 {by_name,[carol,carol_s,geralt,alice]}],
+                                [{file,"lists.erl"},{line,1335}]},
+                            {escalus_ejabberd,create_users,2,
+                                [{file,"src/escalus_ejabberd.erl"},
+                                 {line,214}]},
+                            {bosh_SUITE,init_per_group,2,
+                                [{file,"bosh_SUITE.erl"},{line,105}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1099}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{lists,
+                                                                            foreach,
+                                                                            1335},
+                                                                           {escalus_ejabberd,
+                                                                            create_users,
+                                                                            214},
+                                                                           {bosh_SUITE,
+                                                                            init_per_group,
+                                                                            105},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1099},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED {bosh_SUITE,init_per_group} ***
+=== Aborting repeat operation (configuration case failed)
+=== 
+=case          bosh_SUITE:multiple_stanzas
+=group_props   [{name,"chat_https"}]
+=started       2016-03-17 14:38:23
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #160 {bosh_SUITE,multiple_stanzas} ***
+=== 
+=case          bosh_SUITE:escape_attr_chat
+=group_props   [{name,"chat_https"}]
+=started       2016-03-17 14:38:23
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #161 {bosh_SUITE,escape_attr_chat} ***
+=== 
+=case          bosh_SUITE:namespace
+=group_props   [{name,"chat_https"}]
+=started       2016-03-17 14:38:23
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #162 {bosh_SUITE,namespace} ***
+=== 
+=case          bosh_SUITE:cant_send_invalid_rid
+=group_props   [{name,"chat_https"}]
+=started       2016-03-17 14:38:23
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #163 {bosh_SUITE,cant_send_invalid_rid} ***
+=== 
+=case          bosh_SUITE:simple_chat
+=group_props   [{name,"chat_https"}]
+=started       2016-03-17 14:38:23
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #164 {bosh_SUITE,simple_chat} ***
+=== 
+=case          bosh_SUITE:stream_error
+=group_props   [{name,"chat_https"}]
+=started       2016-03-17 14:38:23
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #165 {bosh_SUITE,stream_error} ***
+=== 
+=case          bosh_SUITE:cdata_escape_chat
+=group_props   [{name,"chat_https"}]
+=started       2016-03-17 14:38:23
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #166 {bosh_SUITE,cdata_escape_chat} ***
+=== 
+=case          bosh_SUITE:interleave_requests
+=group_props   [{name,"chat_https"}]
+=started       2016-03-17 14:38:23
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #167 {bosh_SUITE,interleave_requests} ***
+=== 
+=case          bosh_SUITE:end_per_group
+=group_props   [{name,"chat_https"}]
+=started       2016-03-17 14:38:23
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {bosh_SUITE,end_per_group} ***
+=case          bosh_SUITE:end_per_suite
+=logfile       bosh_suite.end_per_suite.html
+=started       2016-03-17 14:38:23
+=ended         2016-03-17 14:38:23
+=result        ok
+=elapsed       0.00168
+=group_time    7.608s
+=== TEST COMPLETE, 140 ok, 0 failed, 27 skipped of 167 test cases
+
+=finished      2016-03-17 14:38:23
+=failed        0
+=successful    140
+=user_skipped  0
+=auto_skipped  27

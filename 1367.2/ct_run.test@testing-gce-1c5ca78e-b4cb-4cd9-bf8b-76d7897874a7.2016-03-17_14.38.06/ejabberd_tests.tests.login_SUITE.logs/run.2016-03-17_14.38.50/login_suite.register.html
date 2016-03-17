@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test login_SUITE:register result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="login_suite.src.html#register-1">login_SUITE:register/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.4383.0>},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-1c5ca78e-b4cb-4cd9-bf8b-76d7897874a7.2016-03-17_14.38.06/ejabberd_tests.tests.login_SUITE.logs/run.2016-03-17_14.38.50/login_suite.register.html"},
+     {tc_group_properties,[{name,register},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/login_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-1c5ca78e-b4cb-4cd9-bf8b-76d7897874a7.2016-03-17_14.38.06/ejabberd_tests.tests.login_SUITE.logs/run.2016-03-17_14.38.50/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-1c5ca78e-b4cb-4cd9-bf8b-76d7897874a7.2016-03-17_14.38.06"
+
+=== Started at 2016-03-17 14:38:50
+
+<br />
+
+<div class="error_logger"><b>*** System report during login_SUITE:register/1 in register 2016-03-17 14:38:50.827 ***</b>
+
+=INFO REPORT==== 17-Mar-2016::14:38:50 ===
+passing {by_name, Names} is deprecated; pass Names directly instead at [{escalus_users,
+                                                                         get_users,
+                                                                         1,
+                                                                         [{file,
+                                                                           "src/escalus_users.erl"},
+                                                                          {line,
+                                                                           228}]},
+                                                                        {login_SUITE,
+                                                                         register,
+                                                                         1,
+                                                                         [{file,
+                                                                           "login_SUITE.erl"},
+                                                                          {line,
+                                                                           225}]},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         3,
+                                                                         [{file,
+                                                                           "test_server.erl"},
+                                                                          {line,
+                                                                           1429}]},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         6,
+                                                                         [{file,
+                                                                           "test_server.erl"},
+                                                                          {line,
+                                                                           1026}]},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         9,
+                                                                         [{file,
+                                                                           "test_server.erl"},
+                                                                          {line,
+                                                                           968}]}]
+
+</div>
+
+<div class="error_logger"><b>*** System report during login_SUITE:register/1 in register 2016-03-17 14:38:50.832 ***</b>
+
+=INFO REPORT==== 17-Mar-2016::14:38:50 ===
+passing {by_name, Names} is deprecated; pass Names directly instead at [{escalus_users,
+                                                                         get_users,
+                                                                         1,
+                                                                         [{file,
+                                                                           "src/escalus_users.erl"},
+                                                                          {line,
+                                                                           228}]},
+                                                                        {login_SUITE,
+                                                                         register,
+                                                                         1,
+                                                                         [{file,
+                                                                           "login_SUITE.erl"},
+                                                                          {line,
+                                                                           226}]},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         3,
+                                                                         [{file,
+                                                                           "test_server.erl"},
+                                                                          {line,
+                                                                           1429}]},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         6,
+                                                                         [{file,
+                                                                           "test_server.erl"},
+                                                                          {line,
+                                                                           1026}]},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         9,
+                                                                         [{file,
+                                                                           "test_server.erl"},
+                                                                          {line,
+                                                                           968}]}]
+
+</div>
+<div class="ct_internal"><b>*** CT 2016-03-17 14:38:51.109 *** history.xml</b>
+<a href="log_private/register.xml" type=[]>register.xml</a>
+
+</div>
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-03-17 14:38:51.310 ***</b>
+escalus_users:'-create_users_via_xmpp/2-lc$^0/1-0-' failed on line 99
+Reason: function_clause
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-03-17 14:38:51
+=== location [{escalus_users,'-create_users_via_xmpp/2-lc$^0/1-0-',99},
+              {escalus_users,create_users_via_xmpp,99},
+              {login_SUITE,'-register/1-fun-1-',<a href="login_suite.src.html#234">234</a>},
+              {escalus_story,story,40},
+              {test_server,ts_tc,1429},
+              {test_server,run_test_case_eval1,1026},
+              {test_server,run_test_case_eval,968}]
+=== reason = no function clause matching 
+                 escalus_users:'-create_users_via_xmpp/2-lc$^0/1-0-'({by_name,
+                                                                      [alice,
+                                                                       bob]}) (src/escalus_users.erl, line 99)
+  in function  escalus_users:create_users_via_xmpp/2 (src/escalus_users.erl, line 99)
+  in call from login_SUITE:'-register/1-fun-1-'/6 (login_SUITE.erl, line 234)
+  in call from escalus_story:story/3 (src/escalus_story.erl, line 40)
+  in call from test_server:ts_tc/3 (test_server.erl, line 1429)
+  in call from test_server:run_test_case_eval1/6 (test_server.erl, line 1026)
+  in call from test_server:run_test_case_eval/9 (test_server.erl, line 968)
+=== 
+*** register failed.
+    Skipping all other cases in sequence.
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Thu Mar 17 2016 14:38:50<!/date><br />
+</div>
+</center>
+</body>
+</html>
