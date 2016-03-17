@@ -1,0 +1,154 @@
+=== Suite started at 2016-03-17 14:49:25
+=== Starting test, 6 test cases
+=cases         6
+=user          travis
+=host          testing-gce-d807cacd-a2c1-4338-bd51-498c674f8686
+=hosts         testing-gce-d807cacd-a2c1-4338-bd51-498c674f8686 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-17 14:49:25
+=case          websockets_SUITE:init_per_suite
+=logfile       websockets_suite.init_per_suite.html
+=started       2016-03-17 14:49:25
+=ended         2016-03-17 14:49:25
+=result        ok
+=elapsed       0.008752
+=case          websockets_SUITE:init_per_group
+=logfile       websockets_suite.init_per_group.html
+=group_props   [{name,ws_chat},sequence]
+=started       2016-03-17 14:49:26
+=ended         2016-03-17 14:49:26
+=result        failed: {function_clause,
+                           [{escalus_users,
+                                '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                [{by_name,[alice,geralt,geralt_s,oldie]}],
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {escalus_users,create_users_via_xmpp,2,
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {websockets_SUITE,init_per_group,2,
+                                [{file,"websockets_SUITE.erl"},{line,57}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1099}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{escalus_users,
+                                                                            '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                                                            99},
+                                                                           {escalus_users,
+                                                                            create_users_via_xmpp,
+                                                                            99},
+                                                                           {websockets_SUITE,
+                                                                            init_per_group,
+                                                                            57},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1099},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED {websockets_SUITE,init_per_group} ***
+=== 
+=case          websockets_SUITE:chat_msg
+=group_props   [{name,"ws_chat"}]
+=started       2016-03-17 14:49:26
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #1 {websockets_SUITE,chat_msg} ***
+=== 
+=case          websockets_SUITE:escape_chat_msg
+=group_props   [{name,"ws_chat"}]
+=started       2016-03-17 14:49:26
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #2 {websockets_SUITE,escape_chat_msg} ***
+=== 
+=case          websockets_SUITE:escape_attrs
+=group_props   [{name,"ws_chat"}]
+=started       2016-03-17 14:49:26
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #3 {websockets_SUITE,escape_attrs} ***
+=== 
+=case          websockets_SUITE:end_per_group
+=group_props   [{name,"ws_chat"}]
+=started       2016-03-17 14:49:26
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {websockets_SUITE,end_per_group} ***
+=case          websockets_SUITE:init_per_group
+=logfile       websockets_suite.init_per_group.226166.32.html
+=group_props   [{name,wss_chat},sequence]
+=started       2016-03-17 14:49:26
+=ended         2016-03-17 14:49:26
+=result        failed: {function_clause,
+                           [{escalus_users,
+                                '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                [{by_name,[alice,geralt,geralt_s,oldie]}],
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {escalus_users,create_users_via_xmpp,2,
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {websockets_SUITE,init_per_group,2,
+                                [{file,"websockets_SUITE.erl"},{line,57}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1099}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{escalus_users,
+                                                                            '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                                                            99},
+                                                                           {escalus_users,
+                                                                            create_users_via_xmpp,
+                                                                            99},
+                                                                           {websockets_SUITE,
+                                                                            init_per_group,
+                                                                            57},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1099},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED {websockets_SUITE,init_per_group} ***
+=== 
+=case          websockets_SUITE:chat_msg
+=group_props   [{name,"wss_chat"}]
+=started       2016-03-17 14:49:26
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #4 {websockets_SUITE,chat_msg} ***
+=== 
+=case          websockets_SUITE:escape_chat_msg
+=group_props   [{name,"wss_chat"}]
+=started       2016-03-17 14:49:26
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #5 {websockets_SUITE,escape_chat_msg} ***
+=== 
+=case          websockets_SUITE:escape_attrs
+=group_props   [{name,"wss_chat"}]
+=started       2016-03-17 14:49:26
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #6 {websockets_SUITE,escape_attrs} ***
+=== 
+=case          websockets_SUITE:end_per_group
+=group_props   [{name,"wss_chat"}]
+=started       2016-03-17 14:49:26
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {websockets_SUITE,end_per_group} ***
+=case          websockets_SUITE:end_per_suite
+=logfile       websockets_suite.end_per_suite.html
+=started       2016-03-17 14:49:26
+=ended         2016-03-17 14:49:26
+=result        ok
+=elapsed       0.001226
+=group_time    0.146s
+=== TEST COMPLETE, 0 ok, 0 failed, 6 skipped of 6 test cases
+
+=finished      2016-03-17 14:49:26
+=failed        0
+=successful    0
+=user_skipped  0
+=auto_skipped  6
