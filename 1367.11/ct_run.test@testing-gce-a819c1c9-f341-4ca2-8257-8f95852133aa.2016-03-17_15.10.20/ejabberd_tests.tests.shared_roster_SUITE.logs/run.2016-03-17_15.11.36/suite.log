@@ -1,0 +1,93 @@
+=== Suite started at 2016-03-17 15:11:36
+=== Starting test, 4 test cases
+=cases         4
+=user          travis
+=host          testing-gce-a819c1c9-f341-4ca2-8257-8f95852133aa
+=hosts         testing-gce-a819c1c9-f341-4ca2-8257-8f95852133aa 
+=emulator_vsn  7.1
+=emulator      beam
+=otp_release   18
+=started       2016-03-17 15:11:36
+=case          shared_roster_SUITE:init_per_suite
+=logfile       shared_roster_suite.init_per_suite.html
+=started       2016-03-17 15:11:36
+=ended         2016-03-17 15:11:37
+=result        ok
+=elapsed       0.002568
+=case          shared_roster_SUITE:init_per_group
+=logfile       shared_roster_suite.init_per_group.html
+=group_props   [{name,shared_roster},sequence]
+=started       2016-03-17 15:11:37
+=ended         2016-03-17 15:11:37
+=result        failed: {function_clause,
+                           [{escalus_users,
+                                '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                [{by_name,[alice,bob]}],
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {escalus_users,create_users_via_xmpp,2,
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1057}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus_users,
+                                                                            '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                                                            99},
+                                                                           {escalus_users,
+                                                                            create_users_via_xmpp,
+                                                                            99},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1057},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED {shared_roster_SUITE,init_per_group} ***
+=== 
+=case          shared_roster_SUITE:receive_presences
+=group_props   [{name,"shared_roster"}]
+=started       2016-03-17 15:11:37
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #1 {shared_roster_SUITE,receive_presences} ***
+=== 
+=case          shared_roster_SUITE:get_contacts
+=group_props   [{name,"shared_roster"}]
+=started       2016-03-17 15:11:37
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #2 {shared_roster_SUITE,get_contacts} ***
+=== 
+=case          shared_roster_SUITE:delete_user
+=group_props   [{name,"shared_roster"}]
+=started       2016-03-17 15:11:37
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #3 {shared_roster_SUITE,delete_user} ***
+=== 
+=case          shared_roster_SUITE:add_user
+=group_props   [{name,"shared_roster"}]
+=started       2016-03-17 15:11:37
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #4 {shared_roster_SUITE,add_user} ***
+=== 
+=case          shared_roster_SUITE:end_per_group
+=group_props   [{name,"shared_roster"}]
+=started       2016-03-17 15:11:37
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {shared_roster_SUITE,end_per_group} ***
+=case          shared_roster_SUITE:end_per_suite
+=logfile       shared_roster_suite.end_per_suite.html
+=started       2016-03-17 15:11:37
+=ended         2016-03-17 15:11:37
+=result        ok
+=elapsed       0.001222
+=group_time    0.100s
+=== TEST COMPLETE, 0 ok, 0 failed, 4 skipped of 4 test cases
+
+=finished      2016-03-17 15:11:37
+=failed        0
+=successful    0
+=user_skipped  0
+=auto_skipped  4

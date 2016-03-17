@@ -1,0 +1,66 @@
+=== Suite started at 2016-03-17 15:11:38
+=== Starting test, 2 test cases
+=cases         2
+=user          travis
+=host          testing-gce-a819c1c9-f341-4ca2-8257-8f95852133aa
+=hosts         testing-gce-a819c1c9-f341-4ca2-8257-8f95852133aa 
+=emulator_vsn  7.1
+=emulator      beam
+=otp_release   18
+=started       2016-03-17 15:11:38
+=case          sic_SUITE:init_per_suite
+=logfile       sic_suite.init_per_suite.html
+=started       2016-03-17 15:11:38
+=ended         2016-03-17 15:11:38
+=result        failed: {function_clause,
+                           [{escalus_users,
+                                '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                [{by_name,[alice,bob]}],
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {escalus_users,create_users_via_xmpp,2,
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1057}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus_users,
+                                                                            '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                                                            99},
+                                                                           {escalus_users,
+                                                                            create_users_via_xmpp,
+                                                                            99},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1057},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED {sic_SUITE,init_per_suite} ***
+=== 
+=case          sic_SUITE:user_sic
+=group_props   [{name,"mod_sic_tests"}]
+=started       2016-03-17 15:11:38
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #1 {sic_SUITE,user_sic} ***
+=== 
+=case          sic_SUITE:forbidden_user_sic
+=group_props   [{name,"mod_sic_tests"}]
+=started       2016-03-17 15:11:38
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #2 {sic_SUITE,forbidden_user_sic} ***
+=== 
+=case          sic_SUITE:end_per_suite
+=started       2016-03-17 15:11:38
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping {sic_SUITE,end_per_suite} ***
+=== TEST COMPLETE, 0 ok, 0 failed, 2 skipped of 2 test cases
+
+=finished      2016-03-17 15:11:38
+=failed        0
+=successful    0
+=user_skipped  0
+=auto_skipped  2
