@@ -1,0 +1,291 @@
+=== Suite started at 2016-03-17 14:46:35
+=== Starting test, 24 test cases
+=cases         24
+=user          travis
+=host          testing-gce-014cb3e3-3045-40b4-af40-7d98cedb8504
+=hosts         testing-gce-014cb3e3-3045-40b4-af40-7d98cedb8504 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-17 14:46:35
+=case          privacy_SUITE:init_per_suite
+=logfile       privacy_suite.init_per_suite.html
+=started       2016-03-17 14:46:35
+=ended         2016-03-17 14:46:35
+=result        ok
+=elapsed       0.008528
+=case          privacy_SUITE:init_per_group
+=logfile       privacy_suite.init_per_group.html
+=group_props   [{name,management},sequence]
+=started       2016-03-17 14:46:35
+=ended         2016-03-17 14:46:35
+=result        failed: {function_clause,
+                           [{escalus_users,
+                                '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                [{by_name,[alice,bob]}],
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {escalus_users,create_users_via_xmpp,2,
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1099}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{escalus_users,
+                                                                            '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                                                            99},
+                                                                           {escalus_users,
+                                                                            create_users_via_xmpp,
+                                                                            99},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1099},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED {privacy_SUITE,init_per_group} ***
+=== 
+=case          privacy_SUITE:get_all_lists
+=group_props   [{name,"management"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #1 {privacy_SUITE,get_all_lists} ***
+=== 
+=case          privacy_SUITE:get_existing_list
+=group_props   [{name,"management"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #2 {privacy_SUITE,get_existing_list} ***
+=== 
+=case          privacy_SUITE:get_many_lists
+=group_props   [{name,"management"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #3 {privacy_SUITE,get_many_lists} ***
+=== 
+=case          privacy_SUITE:get_nonexistent_list
+=group_props   [{name,"management"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #4 {privacy_SUITE,get_nonexistent_list} ***
+=== 
+=case          privacy_SUITE:set_list
+=group_props   [{name,"management"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #5 {privacy_SUITE,set_list} ***
+=== 
+=case          privacy_SUITE:activate
+=group_props   [{name,"management"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #6 {privacy_SUITE,activate} ***
+=== 
+=case          privacy_SUITE:activate_nonexistent
+=group_props   [{name,"management"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #7 {privacy_SUITE,activate_nonexistent} ***
+=== 
+=case          privacy_SUITE:deactivate
+=group_props   [{name,"management"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #8 {privacy_SUITE,deactivate} ***
+=== 
+=case          privacy_SUITE:default
+=group_props   [{name,"management"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #9 {privacy_SUITE,default} ***
+=== 
+=case          privacy_SUITE:default_nonexistent
+=group_props   [{name,"management"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #10 {privacy_SUITE,default_nonexistent} ***
+=== 
+=case          privacy_SUITE:no_default
+=group_props   [{name,"management"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #11 {privacy_SUITE,no_default} ***
+=== 
+=case          privacy_SUITE:remove_list
+=group_props   [{name,"management"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #12 {privacy_SUITE,remove_list} ***
+=== 
+=case          privacy_SUITE:get_all_lists_with_active
+=group_props   [{name,"management"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #13 {privacy_SUITE,get_all_lists_with_active} ***
+=== 
+=case          privacy_SUITE:end_per_group
+=group_props   [{name,"management"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {privacy_SUITE,end_per_group} ***
+=case          privacy_SUITE:init_per_group
+=logfile       privacy_suite.init_per_group.225995.801.html
+=group_props   [{name,blocking},sequence]
+=started       2016-03-17 14:46:35
+=ended         2016-03-17 14:46:35
+=result        failed: {function_clause,
+                           [{escalus_users,
+                                '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                [{by_name,[alice,bob]}],
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {escalus_users,create_users_via_xmpp,2,
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1099}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{escalus_users,
+                                                                            '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                                                            99},
+                                                                           {escalus_users,
+                                                                            create_users_via_xmpp,
+                                                                            99},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1099},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED {privacy_SUITE,init_per_group} ***
+=== 
+=case          privacy_SUITE:block_jid_message
+=group_props   [{name,"blocking"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #14 {privacy_SUITE,block_jid_message} ***
+=== 
+=case          privacy_SUITE:block_group_message
+=group_props   [{name,"blocking"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #15 {privacy_SUITE,block_group_message} ***
+=== 
+=case          privacy_SUITE:block_subscription_message
+=group_props   [{name,"blocking"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #16 {privacy_SUITE,block_subscription_message} ***
+=== 
+=case          privacy_SUITE:block_all_message
+=group_props   [{name,"blocking"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #17 {privacy_SUITE,block_all_message} ***
+=== 
+=case          privacy_SUITE:block_jid_presence_in
+=group_props   [{name,"blocking"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #18 {privacy_SUITE,block_jid_presence_in} ***
+=== 
+=case          privacy_SUITE:block_jid_presence_out
+=group_props   [{name,"blocking"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #19 {privacy_SUITE,block_jid_presence_out} ***
+=== 
+=case          privacy_SUITE:block_jid_iq
+=group_props   [{name,"blocking"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #20 {privacy_SUITE,block_jid_iq} ***
+=== 
+=case          privacy_SUITE:block_jid_all
+=group_props   [{name,"blocking"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #21 {privacy_SUITE,block_jid_all} ***
+=== 
+=case          privacy_SUITE:block_jid_message_but_not_presence
+=group_props   [{name,"blocking"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #22 {privacy_SUITE,block_jid_message_but_not_presence} ***
+=== 
+=case          privacy_SUITE:end_per_group
+=group_props   [{name,"blocking"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {privacy_SUITE,end_per_group} ***
+=case          privacy_SUITE:init_per_group
+=logfile       privacy_suite.init_per_group.225995.832.html
+=group_props   [{name,allowing},sequence]
+=started       2016-03-17 14:46:35
+=ended         2016-03-17 14:46:35
+=result        failed: {function_clause,
+                           [{escalus_users,
+                                '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                [{by_name,[alice,bob]}],
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {escalus_users,create_users_via_xmpp,2,
+                                [{file,"src/escalus_users.erl"},{line,99}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1099}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{escalus_users,
+                                                                            '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                                                            99},
+                                                                           {escalus_users,
+                                                                            create_users_via_xmpp,
+                                                                            99},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1099},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED {privacy_SUITE,init_per_group} ***
+=== 
+=case          privacy_SUITE:allow_subscription_to_from_message
+=group_props   [{name,"allowing"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #23 {privacy_SUITE,allow_subscription_to_from_message} ***
+=== 
+=case          privacy_SUITE:allow_subscription_both_message
+=group_props   [{name,"allowing"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #24 {privacy_SUITE,allow_subscription_both_message} ***
+=== 
+=case          privacy_SUITE:end_per_group
+=group_props   [{name,"allowing"}]
+=started       2016-03-17 14:46:35
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {privacy_SUITE,end_per_group} ***
+=case          privacy_SUITE:end_per_suite
+=logfile       privacy_suite.end_per_suite.html
+=started       2016-03-17 14:46:35
+=ended         2016-03-17 14:46:35
+=result        ok
+=elapsed       9.82e-4
+=group_time    0.163s
+=== TEST COMPLETE, 0 ok, 0 failed, 24 skipped of 24 test cases
+
+=finished      2016-03-17 14:46:35
+=failed        0
+=successful    0
+=user_skipped  0
+=auto_skipped  24
