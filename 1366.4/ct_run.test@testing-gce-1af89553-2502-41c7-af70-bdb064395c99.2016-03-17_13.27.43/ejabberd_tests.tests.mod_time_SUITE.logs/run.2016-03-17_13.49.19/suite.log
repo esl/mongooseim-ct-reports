@@ -1,0 +1,57 @@
+=== Suite started at 2016-03-17 13:49:19
+=== Starting test, 2 test cases
+=cases         2
+=user          travis
+=host          testing-gce-1af89553-2502-41c7-af70-bdb064395c99
+=hosts         testing-gce-1af89553-2502-41c7-af70-bdb064395c99 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-17 13:49:19
+=case          mod_time_SUITE:init_per_suite
+=logfile       mod_time_suite.init_per_suite.html
+=started       2016-03-17 13:49:19
+=ended         2016-03-17 13:49:19
+=result        ok
+=elapsed       0.009369
+=case          mod_time_SUITE:init_per_group
+=logfile       mod_time_suite.init_per_group.html
+=group_props   [{name,mod_time}]
+=started       2016-03-17 13:49:19
+=ended         2016-03-17 13:49:20
+=result        ok
+=elapsed       0.25438
+=case          mod_time_SUITE:ask_for_time
+=logfile       mod_time_suite.ask_for_time.html
+=started       2016-03-17 13:49:20
+=ended         2016-03-17 13:49:20
+=result        ok
+=elapsed       0.45993
+=case          mod_time_SUITE:time_service_discovery
+=logfile       mod_time_suite.time_service_discovery.html
+=started       2016-03-17 13:49:20
+=ended         2016-03-17 13:49:21
+=result        ok
+=elapsed       0.464543
+=case          mod_time_SUITE:end_per_group
+=logfile       mod_time_suite.end_per_group.html
+=group_props   [{name,mod_time}]
+=started       2016-03-17 13:49:21
+=ended         2016-03-17 13:49:21
+=result        ok
+=elapsed       0.460728
+=group_time    1.257s
+=case          mod_time_SUITE:end_per_suite
+=logfile       mod_time_suite.end_per_suite.html
+=started       2016-03-17 13:49:21
+=ended         2016-03-17 13:49:21
+=result        ok
+=elapsed       0.002437
+=group_time    1.811s
+=== TEST COMPLETE, 2 ok, 0 failed of 2 test cases
+
+=finished      2016-03-17 13:49:21
+=failed        0
+=successful    2
+=user_skipped  0
+=auto_skipped  0
