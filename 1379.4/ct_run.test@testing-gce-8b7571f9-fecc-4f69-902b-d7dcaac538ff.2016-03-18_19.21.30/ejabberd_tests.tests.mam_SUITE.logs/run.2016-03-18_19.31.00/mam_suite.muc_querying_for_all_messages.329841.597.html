@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test mam_SUITE:muc_querying_for_all_messages result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="mam_suite.src.html#muc_querying_for_all_messages-1">mam_SUITE:muc_querying_for_all_messages/1</a> (click for source code)
+
+=== Config value:
+
+    [{basic_group,muc_with_pm},
+     {configuration,odbc_mnesia_muc_cache},
+     {watchdog,<0.24749.1>},
+     {old_mam_shaper,{{maxrate,1},{maxrate,1000},{maxrate,50000}}},
+     {escalus_user_db,{module,escalus_ejabberd}},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-8b7571f9-fecc-4f69-902b-d7dcaac538ff.2016-03-18_19.21.30/ejabberd_tests.tests.mam_SUITE.logs/run.2016-03-18_19.31.00/mam_suite.muc_querying_for_all_messages.329841.597.html"},
+     {tc_group_properties,[{name,odbc_mnesia_muc_cache_muc_with_pm}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/mam_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-8b7571f9-fecc-4f69-902b-d7dcaac538ff.2016-03-18_19.21.30/ejabberd_tests.tests.mam_SUITE.logs/run.2016-03-18_19.31.00/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]},
+                     {kate,[{username,<<"kate">>},
+                            {server,<<"localhost">>},
+                            {password,<<"makrowe;p">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-8b7571f9-fecc-4f69-902b-d7dcaac538ff.2016-03-18_19.21.30"
+
+=== Started at 2016-03-18 19:37:21
+
+<br />
+Could not find element yz_wait in Config.
+
+Could not find element props in Config.
+
+Could not find element yz_wait in Config.
+
+
+<div class="default"><b>*** User 2016-03-18 19:37:21.692 ***</b>
+Stanza {xmlel,<<"iq">>,
+              [{<<"from">>,<<"alicesroom@muc.localhost">>},
+               {<<"to">>,<<"alicE@localhost/res1">>},
+               {<<"id">>,<<"4eeb233b53c79cac7cea88dc426bbaf3">>},
+               {<<"type">>,<<"error">>}],
+              [{xmlel,<<"error">>,
+                      [{<<"code">>,<<"500">>},{<<"type">>,<<"wait">>}],
+                      [{xmlel,<<"internal-server-error">>,
+                              [{<<"xmlns">>,
+                                <<"urn:ietf:params:xml:ns:xmpp-stanzas">>}],
+                              []}]}]}
+</div>
+<div class="ct_internal"><b>*** CT 2016-03-18 19:37:21.695 *** history.xml</b>
+<a href="log_private/muc_querying_for_all_messages.xml" type=[]>muc_querying_for_all_messages.xml</a>
+
+</div>
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-03-18 19:37:21.897 ***</b>
+mam_SUITE:wait_archive_respond_v02 failed on line 1119
+Reason: {test_case_failed,Unexpected error IQ.}
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-03-18 19:37:21
+=== location [{mam_SUITE,wait_archive_respond_v02,<a href="mam_suite.src.html#1119">1119</a>},
+              {mam_SUITE,wait_archive_respond_nofin,<a href="mam_suite.src.html#1108">1108</a>},
+              {mam_SUITE,'-muc_querying_for_all_messages/1-fun-0-',<a href="mam_suite.src.html#959">959</a>},
+              {escalus_story,story,40},
+              {test_server,ts_tc,1429},
+              {test_server,run_test_case_eval1,1026},
+              {test_server,run_test_case_eval,968}]
+=== reason = {test_case_failed,"Unexpected error IQ."}
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Fri Mar 18 2016 19:37:21<!/date><br />
+</div>
+</center>
+</body>
+</html>

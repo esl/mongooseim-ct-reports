@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test websockets_SUITE:end_per_group result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Config function: <a href="websockets_suite.src.html#end_per_group-1">websockets_SUITE:end_per_group/2</a> (click for source code)
+
+=== Group properties: [{name,wss_chat},sequence]
+
+=== Config value:
+
+    [{user,geralt_s},
+     {watchdog,<0.263.2>},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-8b7571f9-fecc-4f69-902b-d7dcaac538ff.2016-03-18_19.21.30/ejabberd_tests.tests.websockets_SUITE.logs/run.2016-03-18_19.49.52/websockets_suite.end_per_group.330601.728.html"},
+     {tc_group_properties,[{name,wss_chat},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/websockets_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-8b7571f9-fecc-4f69-902b-d7dcaac538ff.2016-03-18_19.21.30/ejabberd_tests.tests.websockets_SUITE.logs/run.2016-03-18_19.49.52/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {geralt,[{username,<<"geralt">>},
+                              {server,<<"localhost">>},
+                              {password,<<"witcher">>},
+                              {transport,ws},
+                              {port,5280},
+                              {wspath,<<"/ws-xmpp">>}]},
+                     {geralt_s,[{username,<<"geralt_s">>},
+                                {server,<<"localhost">>},
+                                {password,<<"witcher_s">>},
+                                {transport,ws},
+                                {ssl,true},
+                                {port,5285},
+                                {wspath,<<"/ws-xmpp">>}]},
+                     {oldie,[{username,<<"oldie">>},
+                             {server,<<"localhost">>},
+                             {password,<<"legacy">>},
+                             {transport,ws},
+                             {port,5280},
+                             {wspath,<<"/ws-xmpp">>},
+                             {wslegacy,true}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-8b7571f9-fecc-4f69-902b-d7dcaac538ff.2016-03-18_19.21.30"
+
+=== Started at 2016-03-18 19:50:01
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-03-18 19:50:02
+=== successfully completed test case
+=== returned value = [{ok,result,
+                          {xmlel,<<"iq">>,
+                              [{<<"from">>,<<>>},
+                               {<<"to">>,
+                                <<"alicE@localhost/escalus-default-resource">>},
+                               {<<"id">>,
+                                <<"cf6e8008ec0f3ea6100ede403a463709">>},
+                               {<<"type">>,<<"result">>}],
+                              [{xmlel,<<"query">>,
+                                   [{<<"xmlns">>,<<"jabber:iq:register">>}],
+                                   [{xmlel,<<"remove">>,[],[]}]}]}},
+                      {ok,result,
+                          {xmlel,<<"iq">>,
+                              [{<<"xmlns">>,<<"jabber:client">>},
+                               {<<"from">>,<<>>},
+                               {<<"to">>,
+                                <<"geralt@localhost/escalus-default-resource">>},
+                               {<<"id">>,
+                                <<"c7dfa8b9622fad9e015b9f8f3894d471">>},
+                               {<<"type">>,<<"result">>}],
+                              [{xmlel,<<"query">>,
+                                   [{<<"xmlns">>,<<"jabber:iq:register">>}],
+                                   [{xmlel,<<"remove">>,[],[]}]}]}},
+                      {ok,result,
+                          {xmlel,<<"iq">>,
+                              [{<<"xmlns">>,<<"jabber:client">>},
+                               {<<"from">>,<<>>},
+                               {<<"to">>,
+                                <<"geralt_s@localhost/escalus-default-resource">>},
+                               {<<"id">>,
+                                <<"4d5736b60839177b3b424613179eaec1">>},
+                               {<<"type">>,<<"result">>}],
+                              [{xmlel,<<"query">>,
+                                   [{<<"xmlns">>,<<"jabber:iq:register">>}],
+                                   [{xmlel,<<"remove">>,[],[]}]}]}},
+                      {ok,result,
+                          {xmlel,<<"iq">>,
+                              [{<<"from">>,<<>>},
+                               {<<"to">>,
+                                <<"oldie@localhost/escalus-default-resource">>},
+                               {<<"id">>,
+                                <<"5e73310ad56e52305c335f408f9ad765">>},
+                               {<<"type">>,<<"result">>}],
+                              [{xmlel,<<"query">>,
+                                   [{<<"xmlns">>,<<"jabber:iq:register">>}],
+                                   [{xmlel,<<"remove">>,[],[]}]}]}}]
+=== 
+=== Total execution time of group: 3.975s
+
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Fri Mar 18 2016 19:50:01<!/date><br />
+</div>
+</center>
+</body>
+</html>
