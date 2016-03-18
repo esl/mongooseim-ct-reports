@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test oauth_SUITE:request_tokens_test result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="oauth_suite.src.html#request_tokens_test-1">oauth_SUITE:request_tokens_test/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.28552.1>},
+     {running,[{mod_last,[{backend,odbc}]}]},
+     {preset,"odbc_pgsql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7dc1da4e-5de6-44e0-818d-1db3e62fb9bc.2016-03-18_20.38.19/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-18_20.59.32/oauth_suite.request_tokens_test.html"},
+     {tc_group_properties,[{name,token_login},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/oauth_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7dc1da4e-5de6-44e0-818d-1db3e62fb9bc.2016-03-18_20.38.19/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-18_20.59.32/log_private/"},
+     {escalus_users,[{bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]},
+                     {alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7dc1da4e-5de6-44e0-818d-1db3e62fb9bc.2016-03-18_20.38.19"
+
+=== Started at 2016-03-18 20:59:33
+
+<br />
+<div class="ct_internal"><b>*** CT 2016-03-18 20:59:33.886 *** history.xml</b>
+<a href="log_private/request_tokens_test.xml" type=[]>request_tokens_test.xml</a>
+
+</div>
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-03-18 20:59:34.087 ***</b>
+oauth_SUITE:extract_tokens failed on line 304
+Reason: function_clause
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-03-18 20:59:34
+=== location [{oauth_SUITE,extract_tokens,<a href="oauth_suite.src.html#304">304</a>},
+              {oauth_SUITE,'-request_tokens_once_logged_in_impl/2-fun-0-',<a href="oauth_suite.src.html#157">157</a>},
+              {escalus_story,story,40},
+              {oauth_SUITE,request_tokens_once_logged_in_impl,<a href="oauth_suite.src.html#151">151</a>},
+              {test_server,ts_tc,1429},
+              {test_server,run_test_case_eval1,1026},
+              {test_server,run_test_case_eval,968}]
+=== reason = no function clause matching 
+                 oauth_SUITE:extract_tokens({xmlel,<<"iq">>,
+                                             [{<<"from">>,<<"bOb@localhost">>},
+                                              {<<"to">>,
+                                               <<"bOb@localhost/res1">>},
+                                              {<<"id">>,
+                                               <<"ff308fec31e54d309baf0c069a72a2c4">>},
+                                              {<<"type">>,<<"error">>}],
+                                             [{xmlel,<<"error">>,
+                                               [{<<"code">>,<<"500">>},
+                                                {<<"type">>,<<"wait">>}],
+                                               [{xmlel,
+                                                 <<"internal-server-error">>,
+                                                 [{<<"xmlns">>,
+                                                   <<"urn:ietf:params:xml:ns:xmpp-stanzas">>}],
+                                                 []}]}]}) (oauth_SUITE.erl, line 304)
+  in function  oauth_SUITE:'-request_tokens_once_logged_in_impl/2-fun-0-'/3 (oauth_SUITE.erl, line 157)
+  in call from escalus_story:story/3 (src/escalus_story.erl, line 40)
+  in call from oauth_SUITE:request_tokens_once_logged_in_impl/2 (oauth_SUITE.erl, line 151)
+  in call from test_server:ts_tc/3 (test_server.erl, line 1429)
+  in call from test_server:run_test_case_eval1/6 (test_server.erl, line 1026)
+  in call from test_server:run_test_case_eval/9 (test_server.erl, line 968)
+=== 
+*** request_tokens_test failed.
+    Skipping all other cases in sequence.
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Fri Mar 18 2016 20:59:33<!/date><br />
+</div>
+</center>
+</body>
+</html>
