@@ -1,0 +1,140 @@
+=== Suite started at 2016-03-20 09:15:50
+=== Starting test, 11 test cases
+=cases         11
+=user          travis
+=host          testing-gce-ded9a49c-f022-4a13-b1f9-39e03daaf948
+=hosts         testing-gce-ded9a49c-f022-4a13-b1f9-39e03daaf948 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-20 09:15:50
+=case          carboncopy_SUITE:init_per_suite
+=logfile       carboncopy_suite.init_per_suite.html
+=started       2016-03-20 09:15:50
+=ended         2016-03-20 09:15:50
+=result        ok
+=elapsed       0.001687
+=case          ct_framework:init_per_group
+=logfile       ct_framework.init_per_group.html
+=group_props   [{suite,carboncopy_SUITE},{name,all},parallel,shuffle]
+=started       2016-03-20 09:15:50
+=ended         2016-03-20 09:15:50
+=result        ok
+=elapsed       2.7e-5
+=case          carboncopy_SUITE:prop_forward_received_chat_messages
+=logfile       carboncopy_suite.prop_forward_received_chat_messages.465350.809.html
+=started       2016-03-20 09:15:50
+=ended         2016-03-20 09:15:56
+=result        ok
+=elapsed       5.740894
+=case          carboncopy_SUITE:non_enabled_clients_dont_get_received_carbons
+=logfile       carboncopy_suite.non_enabled_clients_dont_get_received_carbons.465350.811.html
+=started       2016-03-20 09:15:50
+=ended         2016-03-20 09:15:53
+=result        ok
+=elapsed       2.922414
+=case          carboncopy_SUITE:enabled_single_resource_doesnt_get_carbons
+=logfile       carboncopy_suite.enabled_single_resource_doesnt_get_carbons.465350.813.html
+=started       2016-03-20 09:15:50
+=ended         2016-03-20 09:15:52
+=result        ok
+=elapsed       1.46121
+=case          carboncopy_SUITE:discovering_support
+=logfile       carboncopy_suite.discovering_support.465350.819.html
+=started       2016-03-20 09:15:50
+=ended         2016-03-20 09:15:51
+=result        ok
+=elapsed       0.745901
+=case          carboncopy_SUITE:enabling_carbons
+=logfile       carboncopy_suite.enabling_carbons.465350.829.html
+=started       2016-03-20 09:15:50
+=ended         2016-03-20 09:15:51
+=result        ok
+=elapsed       0.737336
+=case          carboncopy_SUITE:disabling_carbons
+=logfile       carboncopy_suite.disabling_carbons.465350.815.html
+=started       2016-03-20 09:15:50
+=ended         2016-03-20 09:15:51
+=result        ok
+=elapsed       0.771248
+=case          carboncopy_SUITE:prop_forward_sent_chat_messages
+=logfile       carboncopy_suite.prop_forward_sent_chat_messages.465350.823.html
+=started       2016-03-20 09:15:50
+=ended         2016-03-20 09:15:56
+=result        ok
+=elapsed       5.736459
+=case          carboncopy_SUITE:dropped_client_doesnt_create_duplicate_carbons
+=logfile       carboncopy_suite.dropped_client_doesnt_create_duplicate_carbons.465350.817.html
+=started       2016-03-20 09:15:50
+=ended         2016-03-20 09:15:53
+=result        ok
+=elapsed       2.22529
+=case          carboncopy_SUITE:avoiding_carbons
+=logfile       carboncopy_suite.avoiding_carbons.465350.827.html
+=started       2016-03-20 09:15:50
+=ended         2016-03-20 09:15:53
+=result        ok
+=elapsed       2.937046
+=case          carboncopy_SUITE:non_enabled_clients_dont_get_sent_carbons
+=logfile       carboncopy_suite.non_enabled_clients_dont_get_sent_carbons.465350.825.html
+=started       2016-03-20 09:15:50
+=ended         2016-03-20 09:15:53
+=result        ok
+=elapsed       2.922448
+=case          carboncopy_SUITE:prop_normal_routing_to_bare_jid
+=logfile       carboncopy_suite.prop_normal_routing_to_bare_jid.465350.821.html
+=started       2016-03-20 09:15:50
+=ended         2016-03-20 09:15:56
+=result        ok
+=elapsed       5.721657
+=case          ct_framework:end_per_group
+=logfile       ct_framework.end_per_group.html
+=group_props   [{suite,carboncopy_SUITE},{name,all},parallel,shuffle]
+=started       2016-03-20 09:15:56
+=ended         2016-03-20 09:15:56
+=result        ok
+=elapsed       3.3e-5
+=group_time    5.813s
+=case          carboncopy_SUITE:end_per_suite
+=logfile       carboncopy_suite.end_per_suite.html
+=started       2016-03-20 09:15:56
+=ended         2016-03-20 09:16:01
+=result        failed: {{partial_results,[]},
+                        [{escalus_fresh,collect,3,
+                             [{file,"src/escalus_fresh.erl"},{line,110}]},
+                         {escalus_fresh,clean,0,
+                             [{file,"src/escalus_fresh.erl"},{line,54}]},
+                         {carboncopy_SUITE,end_per_suite,1,
+                             [{file,"carboncopy_SUITE.erl"},{line,29}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1099}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_fresh,
+                                                                         collect,
+                                                                         110},
+                                                                        {escalus_fresh,
+                                                                         clean,
+                                                                         54},
+                                                                        {carboncopy_SUITE,
+                                                                         end_per_suite,
+                                                                         29},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1099},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED {carboncopy_SUITE,end_per_suite} ***
+=group_time    5.874s
+=== TEST COMPLETE, 11 ok, 0 failed of 11 test cases
+
+=finished      2016-03-20 09:16:01
+=failed        0
+=successful    11
+=user_skipped  0
+=auto_skipped  0
