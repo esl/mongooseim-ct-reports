@@ -1,0 +1,170 @@
+=== Suite started at 2016-03-20 08:39:17
+=== Starting test, 16 test cases
+=cases         16
+=user          travis
+=host          testing-gce-320fb987-963c-4c98-bd20-6f76ea1bdb27
+=hosts         testing-gce-320fb987-963c-4c98-bd20-6f76ea1bdb27 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-20 08:39:17
+=case          amp_SUITE:init_per_suite
+=logfile       amp_suite.init_per_suite.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:17
+=result        ok
+=elapsed       0.002537
+=case          ct_framework:init_per_group
+=logfile       ct_framework.init_per_group.html
+=group_props   [{suite,amp_SUITE},{name,all},parallel,shuffle]
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:17
+=result        ok
+=elapsed       3.7e-5
+=case          amp_SUITE:notify_deliver_none_test
+=logfile       amp_suite.notify_deliver_none_test.463157.299.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:18
+=result        ok
+=elapsed       0.733079
+=case          amp_SUITE:notify_match_resource_other_test
+=logfile       amp_suite.notify_match_resource_other_test.463157.301.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:18
+=result        ok
+=elapsed       1.45733
+=case          amp_SUITE:actions_and_conditions_discovery_test
+=logfile       amp_suite.actions_and_conditions_discovery_test.463157.333.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:18
+=result        ok
+=elapsed       0.769185
+=case          amp_SUITE:notify_match_resource_exact_test
+=logfile       amp_suite.notify_match_resource_exact_test.463157.329.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:20
+=result        ok
+=elapsed       2.883576
+=case          amp_SUITE:notify_deliver_direct_test
+=logfile       amp_suite.notify_deliver_direct_test.463157.305.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:18
+=result        ok
+=elapsed       1.459282
+=case          amp_SUITE:last_rule_applies_test
+=logfile       amp_suite.last_rule_applies_test.463157.307.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:18
+=result        ok
+=elapsed       1.452648
+=case          amp_SUITE:notify_deliver_forward_test
+=logfile       amp_suite.notify_deliver_forward_test.463157.331.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:18
+=result        ok
+=elapsed       1.483929
+=case          amp_SUITE:error_deliver_direct_test
+=logfile       amp_suite.error_deliver_direct_test.463157.321.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:19
+=result        ok
+=elapsed       1.756268
+=case          amp_SUITE:unsupported_actions_test
+=logfile       amp_suite.unsupported_actions_test.463157.313.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:18
+=result        ok
+=elapsed       1.47127
+=case          amp_SUITE:unacceptable_rules_test
+=logfile       amp_suite.unacceptable_rules_test.463157.323.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:18
+=result        ok
+=elapsed       1.493435
+=case          amp_SUITE:error_deliver_none_test
+=logfile       amp_suite.error_deliver_none_test.463157.315.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:18
+=result        ok
+=elapsed       0.752127
+=case          amp_SUITE:error_deliver_doesnt_apply_test
+=logfile       amp_suite.error_deliver_doesnt_apply_test.463157.335.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:19
+=result        ok
+=elapsed       1.750805
+=case          amp_SUITE:unsupported_conditions_test
+=logfile       amp_suite.unsupported_conditions_test.463157.317.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:18
+=result        ok
+=elapsed       1.463028
+=case          amp_SUITE:notify_match_resource_any_test
+=logfile       amp_suite.notify_match_resource_any_test.463157.309.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:20
+=result        ok
+=elapsed       2.88116
+=case          amp_SUITE:initial_service_discovery_test
+=logfile       amp_suite.initial_service_discovery_test.463157.311.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:18
+=result        ok
+=elapsed       0.731945
+=case          amp_SUITE:error_deliver_forward_test
+=logfile       amp_suite.error_deliver_forward_test.463157.319.html
+=started       2016-03-20 08:39:17
+=ended         2016-03-20 08:39:19
+=result        ok
+=elapsed       1.793733
+=case          ct_framework:end_per_group
+=logfile       ct_framework.end_per_group.html
+=group_props   [{suite,amp_SUITE},{name,all},parallel,shuffle]
+=started       2016-03-20 08:39:20
+=ended         2016-03-20 08:39:20
+=result        ok
+=elapsed       4.9e-5
+=group_time    3.003s
+=case          amp_SUITE:end_per_suite
+=logfile       amp_suite.end_per_suite.html
+=started       2016-03-20 08:39:20
+=ended         2016-03-20 08:39:25
+=result        failed: {{partial_results,[]},
+                        [{escalus_fresh,collect,3,
+                             [{file,"src/escalus_fresh.erl"},{line,110}]},
+                         {escalus_fresh,clean,0,
+                             [{file,"src/escalus_fresh.erl"},{line,54}]},
+                         {amp_SUITE,end_per_suite,1,
+                             [{file,"amp_SUITE.erl"},{line,44}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1099}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_fresh,
+                                                                         collect,
+                                                                         110},
+                                                                        {escalus_fresh,
+                                                                         clean,
+                                                                         54},
+                                                                        {amp_SUITE,
+                                                                         end_per_suite,
+                                                                         44},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1099},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED {amp_SUITE,end_per_suite} ***
+=group_time    3.063s
+=== TEST COMPLETE, 16 ok, 0 failed of 16 test cases
+
+=finished      2016-03-20 08:39:25
+=failed        0
+=successful    16
+=user_skipped  0
+=auto_skipped  0
