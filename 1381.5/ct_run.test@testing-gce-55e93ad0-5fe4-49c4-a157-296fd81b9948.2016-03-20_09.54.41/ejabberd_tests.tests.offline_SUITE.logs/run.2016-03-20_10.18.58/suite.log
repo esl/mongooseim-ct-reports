@@ -1,0 +1,114 @@
+=== Suite started at 2016-03-20 10:18:58
+=== Starting test, 6 test cases
+=cases         6
+=user          travis
+=host          testing-gce-55e93ad0-5fe4-49c4-a157-296fd81b9948
+=hosts         testing-gce-55e93ad0-5fe4-49c4-a157-296fd81b9948 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-20 10:18:58
+=case          offline_SUITE:init_per_suite
+=logfile       offline_suite.init_per_suite.html
+=started       2016-03-20 10:18:58
+=ended         2016-03-20 10:18:59
+=result        ok
+=elapsed       0.001647
+=case          ct_framework:init_per_group
+=logfile       ct_framework.init_per_group.html
+=group_props   [{suite,offline_SUITE},
+                {name,mod_offline_tests},
+                parallel,shuffle]
+=started       2016-03-20 10:18:59
+=ended         2016-03-20 10:18:59
+=result        ok
+=elapsed       4.2e-5
+=case          offline_SUITE:expired_messages_are_not_delivered
+=logfile       offline_suite.expired_messages_are_not_delivered.469139.68.html
+=started       2016-03-20 10:18:59
+=ended         2016-03-20 10:19:03
+=result        ok
+=elapsed       4.49506
+=case          offline_SUITE:offline_message_is_stored_and_delivered_at_login
+=logfile       offline_suite.offline_message_is_stored_and_delivered_at_login.469139.69.html
+=started       2016-03-20 10:18:59
+=ended         2016-03-20 10:19:01
+=result        ok
+=elapsed       2.001551
+=case          offline_SUITE:error_message_is_not_stored
+=logfile       offline_suite.error_message_is_not_stored.469139.74.html
+=started       2016-03-20 10:18:59
+=ended         2016-03-20 10:19:01
+=result        ok
+=elapsed       2.500346
+=case          offline_SUITE:headline_message_is_not_stored
+=logfile       offline_suite.headline_message_is_not_stored.469139.80.html
+=started       2016-03-20 10:18:59
+=ended         2016-03-20 10:19:01
+=result        ok
+=elapsed       2.502684
+=case          offline_SUITE:groupchat_message_is_not_stored
+=logfile       offline_suite.groupchat_message_is_not_stored.469139.78.html
+=started       2016-03-20 10:18:59
+=ended         2016-03-20 10:19:01
+=result        ok
+=elapsed       2.503591
+=case          offline_SUITE:max_offline_messages_reached
+=logfile       offline_suite.max_offline_messages_reached.469139.76.html
+=started       2016-03-20 10:18:59
+=ended         2016-03-20 10:19:05
+=result        ok
+=elapsed       6.551154
+=case          ct_framework:end_per_group
+=logfile       ct_framework.end_per_group.html
+=group_props   [{suite,offline_SUITE},
+                {name,mod_offline_tests},
+                parallel,shuffle]
+=started       2016-03-20 10:19:05
+=ended         2016-03-20 10:19:05
+=result        ok
+=elapsed       4.2e-5
+=group_time    6.618s
+=case          offline_SUITE:end_per_suite
+=logfile       offline_suite.end_per_suite.html
+=started       2016-03-20 10:19:05
+=ended         2016-03-20 10:19:10
+=result        failed: {{partial_results,[]},
+                        [{escalus_fresh,collect,3,
+                             [{file,"src/escalus_fresh.erl"},{line,110}]},
+                         {escalus_fresh,clean,0,
+                             [{file,"src/escalus_fresh.erl"},{line,54}]},
+                         {offline_SUITE,end_per_suite,1,
+                             [{file,"offline_SUITE.erl"},{line,43}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1099}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_fresh,
+                                                                         collect,
+                                                                         110},
+                                                                        {escalus_fresh,
+                                                                         clean,
+                                                                         54},
+                                                                        {offline_SUITE,
+                                                                         end_per_suite,
+                                                                         43},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1099},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED {offline_SUITE,end_per_suite} ***
+=group_time    6.707s
+=== TEST COMPLETE, 6 ok, 0 failed of 6 test cases
+
+=finished      2016-03-20 10:19:10
+=failed        0
+=successful    6
+=user_skipped  0
+=auto_skipped  0
