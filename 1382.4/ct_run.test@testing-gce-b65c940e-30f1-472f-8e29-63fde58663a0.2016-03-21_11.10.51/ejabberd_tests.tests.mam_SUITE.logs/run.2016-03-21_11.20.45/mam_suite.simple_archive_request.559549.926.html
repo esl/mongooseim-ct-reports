@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test mam_SUITE:simple_archive_request result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="mam_suite.src.html#simple_archive_request-1">mam_SUITE:simple_archive_request/1</a> (click for source code)
+
+=== Config value:
+
+    [{basic_group,mam03},
+     {configuration,odbc_mnesia_cache},
+     {props,[{data_form,true},
+             {final_message,true},
+             {result_format,mess_fin},
+             {mam_ns,<<"urn:xmpp:mam:0">>}]},
+     {watchdog,<0.17888.1>},
+     {old_mam_shaper,{{maxrate,1},{maxrate,1000},{maxrate,50000}}},
+     {escalus_user_db,{module,escalus_ejabberd}},
+     {preset,"odbc_pgsql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-b65c940e-30f1-472f-8e29-63fde58663a0.2016-03-21_11.10.51/ejabberd_tests.tests.mam_SUITE.logs/run.2016-03-21_11.20.45/mam_suite.simple_archive_request.559549.926.html"},
+     {tc_group_properties,[{name,odbc_mnesia_cache_mam03}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/mam_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-b65c940e-30f1-472f-8e29-63fde58663a0.2016-03-21_11.10.51/ejabberd_tests.tests.mam_SUITE.logs/run.2016-03-21_11.20.45/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]},
+                     {kate,[{username,<<"kate">>},
+                            {server,<<"localhost">>},
+                            {password,<<"makrowe;p">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-b65c940e-30f1-472f-8e29-63fde58663a0.2016-03-21_11.10.51"
+
+=== Started at 2016-03-21 11:25:49
+
+<br />
+Could not find element yz_wait in Config.
+
+
+<div class="default"><b>*** User 2016-03-21 11:25:50.001 ***</b>
+Stanza {xmlel,<<"iq">>,
+              [{<<"from">>,<<"alicE@localhost">>},
+               {<<"to">>,<<"alicE@localhost/res1">>},
+               {<<"id">>,<<"106015a6e722906ab945abde365a05c3">>},
+               {<<"type">>,<<"error">>}],
+              [{xmlel,<<"error">>,
+                      [{<<"code">>,<<"500">>},{<<"type">>,<<"wait">>}],
+                      [{xmlel,<<"internal-server-error">>,
+                              [{<<"xmlns">>,
+                                <<"urn:ietf:params:xml:ns:xmpp-stanzas">>}],
+                              []}]}]}
+</div>
+<div class="ct_internal"><b>*** CT 2016-03-21 11:25:50.005 *** history.xml</b>
+<a href="log_private/simple_archive_request.xml" type=[]>simple_archive_request.xml</a>
+
+</div>
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-03-21 11:25:50.407 ***</b>
+mam_SUITE:wait_archive_respond_v03 failed on line 1133
+Reason: {test_case_failed,Unexpected error IQ.}
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-03-21 11:25:50
+=== location [{mam_SUITE,wait_archive_respond_v03,<a href="mam_suite.src.html#1133">1133</a>},
+              {mam_SUITE,wait_archive_respond_fin,<a href="mam_suite.src.html#1099">1099</a>},
+              {mam_SUITE,'-simple_archive_request/1-fun-0-',<a href="mam_suite.src.html#922">922</a>},
+              {escalus_story,story,40},
+              {test_server,ts_tc,1429},
+              {test_server,run_test_case_eval1,1026},
+              {test_server,run_test_case_eval,968}]
+=== reason = {test_case_failed,"Unexpected error IQ."}
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Mon Mar 21 2016 11:25:49<!/date><br />
+</div>
+</center>
+</body>
+</html>
