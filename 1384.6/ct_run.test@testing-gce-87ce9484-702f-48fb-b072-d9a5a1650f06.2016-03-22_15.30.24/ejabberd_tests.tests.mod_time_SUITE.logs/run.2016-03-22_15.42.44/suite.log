@@ -1,0 +1,103 @@
+=== Suite started at 2016-03-22 15:42:44
+=== Starting test, 2 test cases
+=cases         2
+=user          travis
+=host          testing-gce-87ce9484-702f-48fb-b072-d9a5a1650f06
+=hosts         testing-gce-87ce9484-702f-48fb-b072-d9a5a1650f06 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-22 15:42:44
+=case          mod_time_SUITE:init_per_suite
+=logfile       mod_time_suite.init_per_suite.html
+=started       2016-03-22 15:42:44
+=ended         2016-03-22 15:42:44
+=result        ok
+=elapsed       0.007262
+=case          mod_time_SUITE:init_per_group
+=logfile       mod_time_suite.init_per_group.html
+=group_props   [{name,mod_time}]
+=started       2016-03-22 15:42:44
+=ended         2016-03-22 15:42:44
+=result        ok
+=elapsed       0.257002
+=case          mod_time_SUITE:ask_for_time
+=logfile       mod_time_suite.ask_for_time.html
+=started       2016-03-22 15:42:44
+=== WARNING! mod_time_SUITE:end_per_testcase(ask_for_time, [{tc_status,
+                                                         {failed,
+                                                          {function_clause,
+                                                           {lists,map,
+                                                            [#Fun<exml.1.126785588>,
+                                                             {xmlel,
+                                                              <<"time">>,
+                                                              [{<<"xmlns">>,
+                                                                <<"urn:xmpp:time">>}],
+                                                              []}],
+                                                            [{file,
+                                                              "lists.erl"},
+                                                             {line,1236}]}}}},
+                                                        {escalus_event_mgr,
+                                                         <0.18155.0>},
+                                                        {tc_name,ask_for_time},
+                                                        {escalus_cleaner,
+                                                         <0.18154.0>},
+                                                        {watchdog,<0.18153.0>},
+                                                        {preset,"ldap_mnesia"},
+                                                        {tc_logfile,
+                                                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-87ce9484-702f-48fb-b072-d9a5a1650f06.2016-03-22_15.30.24/ejabberd_tests.tests.mod_time_SUITE.logs/run.2016-03-22_15.42.44/mod_time_suite.ask_for_time.html"},
+                                                        {tc_group_properties,
+                                                         [{name,mod_time}]},
+                                                        {tc_group_path,[]},
+                                                        {data_dir,
+                                                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/mod_time_SUITE_data/"},
+                                                        {priv_dir,
+                                                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-87ce9484-702f-48fb-b072-d9a5a1650f06.2016-03-22_15.30.24/ejabberd_tests.tests.mod_time_SUITE.logs/run.2016-03-22_15.42.44/log_private/"},
+                                                        {escalus_users,
+                                                         [{alice,
+                                                           [{username,
+                                                             <<"alicE">>},
+                                                            {server,
+                                                             <<"localhost">>},
+                                                            {password,
+                                                             <<"matygrysa">>}]}]}]) crashed!
+	Reason: noproc
+
+=ended         2016-03-22 15:42:44
+=result        failed: {'EXIT',
+                        {function_clause,
+                         {lists,map,
+                          [#Fun<exml.1.126785588>,
+                           {xmlel,<<"time">>,
+                            [{<<"xmlns">>,<<"urn:xmpp:time">>}],
+                            []}],
+                          [{file,"lists.erl"},{line,1236}]}}}, unknown
+=== *** FAILED test case 1 of 2 ***
+=case          mod_time_SUITE:time_service_discovery
+=logfile       mod_time_suite.time_service_discovery.html
+=started       2016-03-22 15:42:44
+=ended         2016-03-22 15:42:45
+=result        ok
+=elapsed       0.46391
+=case          mod_time_SUITE:end_per_group
+=logfile       mod_time_suite.end_per_group.html
+=group_props   [{name,mod_time}]
+=started       2016-03-22 15:42:45
+=ended         2016-03-22 15:42:45
+=result        ok
+=elapsed       0.464727
+=group_time    1.060s
+=case          mod_time_SUITE:end_per_suite
+=logfile       mod_time_suite.end_per_suite.html
+=started       2016-03-22 15:42:45
+=ended         2016-03-22 15:42:45
+=result        ok
+=elapsed       0.003319
+=group_time    1.627s
+=== TEST COMPLETE, 1 ok, 1 failed of 2 test cases
+
+=finished      2016-03-22 15:42:45
+=failed        1
+=successful    1
+=user_skipped  0
+=auto_skipped  0
