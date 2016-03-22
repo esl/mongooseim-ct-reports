@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_tests.tests.users_api_SUITE results</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+// Parser for date format, e.g: Wed Jul 4 2012 11:24:15
+var monthNames = {};
+monthNames["Jan"] = "01"; monthNames["Feb"] = "02";
+monthNames["Mar"] = "03"; monthNames["Apr"] = "04";
+monthNames["May"] = "05"; monthNames["Jun"] = "06";
+monthNames["Jul"] = "07"; monthNames["Aug"] = "08";
+monthNames["Sep"] = "09"; monthNames["Oct"] = "10";
+monthNames["Nov"] = "11"; monthNames["Dec"] = "12";
+$.tablesorter.addParser({
+  id: 'CTDateSorter',
+  is: function(s) {
+      return false; },
+  format: function(s) {
+      if (s.length < 2) return 999999999;
+      else {
+          var date = s.match(/(\w{3})\s(\w{3})\s(\d{2})\s(\d{4})\s(\d{2}):(\d{2}):(\d{2})/);
+          var y = date[4]; var mo = monthNames[date[2]]; var d = String(date[3]);
+          var h = String(date[5]); var mi = String(date[6]); var sec = String(date[7]);
+          return (parseInt('' + y + mo + d + h + mi + sec)); }},
+  type: 'numeric' });
+// Parser for general text format
+$.tablesorter.addParser({
+  id: 'CTTextSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return 'zzzzzzzz';
+    else if (s == "?") return 'zzzzzzz';
+    else if (s == "-") return 'zzzzzz';
+    else if (s == "FAILED") return 'A';
+    else if (s == "SKIPPED") return 'B';
+    else if (s == "OK") return 'C';
+    else return '' + s; },
+  type: 'text' });
+// Parser for numerical values
+$.tablesorter.addParser({
+  id: 'CTValSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return '-2';
+    else if (s == "?") return '-1';
+    else if ((s.search(/(\d{1,})\s/)) >= 0) {
+      var num = s.match(/(\d{1,})\s/);
+      return (parseInt('' + num[1])); }
+    else if ((s.search(/(\d{1,})\.(\d{3})s/)) >= 0) {
+      var num = s.match(/(\d{1,})\.(\d{3})/);
+      if (num[1] == "0") return (parseInt('' + num[2]));
+      else return (parseInt('' + num[1] + num[2])); }
+    else return '' + s; },
+  type: 'numeric' });
+$(document).ready(function() {
+  $("#SortableTable").tablesorter({
+    headers: { 
+      0: { sorter: 'CTValSorter' },
+      1: { sorter: 'CTTextSorter' },
+      2: { sorter: 'CTTextSorter' },
+      3: { sorter: 'CTTextSorter' },
+      5: { sorter: 'CTValSorter' },
+      6: { sorter: 'CTTextSorter' },
+      7: { sorter: 'CTTextSorter' }
+    }
+  });
+  $("#SortableTable").trigger("update");
+  $("#SortableTable").trigger("appendCache");
+});
+</script>
+</head>
+<body>
+<div class="label">'internal_mnesia'</div>
+
+<h1>Results for <i>ejabberd_tests.tests.users_api_SUITE</i></h1>
+<h4>Test started at 2016-03-22 16:12:18</h4>
+<p><b>Host info:</b><br />
+Run by travis on testing-gce-68722642-f7fe-4703-bc73-88ac265eb97a<br />Used Erlang v7.1 in "/home/travis/otp/18.1"</p>
+<p><ul>
+<li><a href="suite.log">Full textual log</a></li>
+<li><a href="cover.html">Coverage log</a></li>
+<li><a href="unexpected_io.log.html">Unexpected I/O log</a></li>
+</ul></p>
+<p></p>
+<table id="SortableTable">
+<thead>
+<tr><th>Num</th><th>Module</th><th>Group</th><th>Case</th><th>Log</th><th>Time</th><th>Result</th><th>Comment</th></tr>
+</thead>
+<tbody>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black"></font></td><td><a href="users_api_suite.init_per_suite.html">init_per_suite</a></td><td><a href="users_api_suite.init_per_suite.html#top"><</a> <a href="users_api_suite.init_per_suite.html#end">></a></td><td><font color="black">0.006s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.init_per_group.html">init_per_group</a></td><td><a href="users_api_suite.init_per_group.html#top"><</a> <a href="users_api_suite.init_per_group.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">1</font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.user_transaction.html">user_transaction</a></td><td><a href="users_api_suite.user_transaction.html#top"><</a> <a href="users_api_suite.user_transaction.html#end">></a></td><td><font color="black">0.029s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.end_per_group.html">end_per_group</a></td><td><a href="users_api_suite.end_per_group.html#top"><</a> <a href="users_api_suite.end_per_group.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.init_per_group.3106.html">init_per_group</a></td><td><a href="users_api_suite.init_per_group.3106.html#top"><</a> <a href="users_api_suite.init_per_group.3106.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">2</font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.user_transaction.3110.html">user_transaction</a></td><td><a href="users_api_suite.user_transaction.3110.html#top"><</a> <a href="users_api_suite.user_transaction.3110.html#end">></a></td><td><font color="black">0.029s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.end_per_group.3114.html">end_per_group</a></td><td><a href="users_api_suite.end_per_group.3114.html#top"><</a> <a href="users_api_suite.end_per_group.3114.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.init_per_group.3118.html">init_per_group</a></td><td><a href="users_api_suite.init_per_group.3118.html#top"><</a> <a href="users_api_suite.init_per_group.3118.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">3</font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.user_transaction.3122.html">user_transaction</a></td><td><a href="users_api_suite.user_transaction.3122.html#top"><</a> <a href="users_api_suite.user_transaction.3122.html#end">></a></td><td><font color="black">0.029s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.end_per_group.3126.html">end_per_group</a></td><td><a href="users_api_suite.end_per_group.3126.html#top"><</a> <a href="users_api_suite.end_per_group.3126.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.init_per_group.3130.html">init_per_group</a></td><td><a href="users_api_suite.init_per_group.3130.html#top"><</a> <a href="users_api_suite.init_per_group.3130.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">4</font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.user_transaction.3134.html">user_transaction</a></td><td><a href="users_api_suite.user_transaction.3134.html#top"><</a> <a href="users_api_suite.user_transaction.3134.html#end">></a></td><td><font color="black">0.031s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.end_per_group.3138.html">end_per_group</a></td><td><a href="users_api_suite.end_per_group.3138.html#top"><</a> <a href="users_api_suite.end_per_group.3138.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.init_per_group.3142.html">init_per_group</a></td><td><a href="users_api_suite.init_per_group.3142.html#top"><</a> <a href="users_api_suite.init_per_group.3142.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">5</font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.user_transaction.3146.html">user_transaction</a></td><td><a href="users_api_suite.user_transaction.3146.html#top"><</a> <a href="users_api_suite.user_transaction.3146.html#end">></a></td><td><font color="black">0.034s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.end_per_group.3150.html">end_per_group</a></td><td><a href="users_api_suite.end_per_group.3150.html#top"><</a> <a href="users_api_suite.end_per_group.3150.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.init_per_group.3154.html">init_per_group</a></td><td><a href="users_api_suite.init_per_group.3154.html#top"><</a> <a href="users_api_suite.init_per_group.3154.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">6</font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.user_transaction.3158.html">user_transaction</a></td><td><a href="users_api_suite.user_transaction.3158.html#top"><</a> <a href="users_api_suite.user_transaction.3158.html#end">></a></td><td><font color="black">0.026s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.end_per_group.3162.html">end_per_group</a></td><td><a href="users_api_suite.end_per_group.3162.html#top"><</a> <a href="users_api_suite.end_per_group.3162.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.init_per_group.3166.html">init_per_group</a></td><td><a href="users_api_suite.init_per_group.3166.html#top"><</a> <a href="users_api_suite.init_per_group.3166.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">7</font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.user_transaction.3170.html">user_transaction</a></td><td><a href="users_api_suite.user_transaction.3170.html#top"><</a> <a href="users_api_suite.user_transaction.3170.html#end">></a></td><td><font color="black">0.027s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.end_per_group.3174.html">end_per_group</a></td><td><a href="users_api_suite.end_per_group.3174.html#top"><</a> <a href="users_api_suite.end_per_group.3174.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.init_per_group.3178.html">init_per_group</a></td><td><a href="users_api_suite.init_per_group.3178.html#top"><</a> <a href="users_api_suite.init_per_group.3178.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">8</font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.user_transaction.3182.html">user_transaction</a></td><td><a href="users_api_suite.user_transaction.3182.html#top"><</a> <a href="users_api_suite.user_transaction.3182.html#end">></a></td><td><font color="black">0.028s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.end_per_group.3186.html">end_per_group</a></td><td><a href="users_api_suite.end_per_group.3186.html#top"><</a> <a href="users_api_suite.end_per_group.3186.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.init_per_group.3190.html">init_per_group</a></td><td><a href="users_api_suite.init_per_group.3190.html#top"><</a> <a href="users_api_suite.init_per_group.3190.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">9</font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.user_transaction.3194.html">user_transaction</a></td><td><a href="users_api_suite.user_transaction.3194.html#top"><</a> <a href="users_api_suite.user_transaction.3194.html#end">></a></td><td><font color="black">0.030s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.end_per_group.3198.html">end_per_group</a></td><td><a href="users_api_suite.end_per_group.3198.html#top"><</a> <a href="users_api_suite.end_per_group.3198.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.init_per_group.3202.html">init_per_group</a></td><td><a href="users_api_suite.init_per_group.3202.html#top"><</a> <a href="users_api_suite.init_per_group.3202.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">10</font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.user_transaction.3206.html">user_transaction</a></td><td><a href="users_api_suite.user_transaction.3206.html#top"><</a> <a href="users_api_suite.user_transaction.3206.html#end">></a></td><td><font color="black">0.025s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">transaction</font></td><td><a href="users_api_suite.end_per_group.3210.html">end_per_group</a></td><td><a href="users_api_suite.end_per_group.3210.html#top"><</a> <a href="users_api_suite.end_per_group.3210.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">negative</font></td><td><a href="users_api_suite.init_per_group.3214.html">init_per_group</a></td><td><a href="users_api_suite.init_per_group.3214.html#top"><</a> <a href="users_api_suite.init_per_group.3214.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">11</font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">negative</font></td><td><a href="users_api_suite.negative_calls.html">negative_calls</a></td><td><a href="users_api_suite.negative_calls.html#top"><</a> <a href="users_api_suite.negative_calls.html#end">></a></td><td><font color="black">0.006s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black">negative</font></td><td><a href="users_api_suite.end_per_group.3218.html">end_per_group</a></td><td><a href="users_api_suite.end_per_group.3218.html#top"><</a> <a href="users_api_suite.end_per_group.3218.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">users_api_SUITE</font></td><td><font color="black"></font></td><td><a href="users_api_suite.end_per_suite.html">end_per_suite</a></td><td><a href="users_api_suite.end_per_suite.html#top"><</a> <a href="users_api_suite.end_per_suite.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+
+</tbody>
+<tfoot>
+<tr><td></td><td><b>TOTAL</b></td><td></td><td></td><td></td><td>1.252s</td><td><b>Ok</b></td><td>11 Ok, 0 Failed of 11</td></tr>
+</tfoot>
+
+</table>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Tue Mar 22 2016 16:12:18<!/date><br />
+</div>
+</center>
+</body>
+</html>
