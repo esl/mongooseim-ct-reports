@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test mod_time_SUITE:ask_for_time result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="mod_time_suite.src.html#ask_for_time-1">mod_time_SUITE:ask_for_time/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.18249.0>},
+     {preset,"internal_redis"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-dbc6ba49-1d19-4e5f-b34b-781a4748af1f.2016-03-22_14.54.28/ejabberd_tests.tests.mod_time_SUITE.logs/run.2016-03-22_15.06.53/mod_time_suite.ask_for_time.html"},
+     {tc_group_properties,[{name,mod_time}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/mod_time_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-dbc6ba49-1d19-4e5f-b34b-781a4748af1f.2016-03-22_14.54.28/ejabberd_tests.tests.mod_time_SUITE.logs/run.2016-03-22_15.06.53/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-dbc6ba49-1d19-4e5f-b34b-781a4748af1f.2016-03-22_14.54.28"
+
+=== Started at 2016-03-22 15:06:53
+
+<br />
+
+<div class="error_logger"><b>*** System report during mod_time_SUITE:ask_for_time/1 in mod_time 2016-03-22 15:06:53.974 ***</b>
+
+=ERROR REPORT==== 22-Mar-2016::15:06:53 ===
+** Generic server <0.18257.0> terminating 
+** Last message in was {'$gen_cast',
+                           {send,
+                               {client,<<"alicE@localhost/res1">>,
+                                   escalus_tcp,#Port<0.24886>,false,false,
+                                   <0.18257.0>,
+                                   [{event_manager,<0.18256.0>},
+                                    {server,<<"localhost">>},
+                                    {username,<<"alicE">>},
+                                    {resource,<<"res1">>}]},
+                               {xmlel,<<"iq">>,
+                                   [{<<"type">>,<<"get">>},
+                                    {<<"id">>,
+                                     <<"55f874b21da37515d75924bcba42de07">>},
+                                    {<<"to">>,<<"localhost">>}],
+                                   {xmlel,<<"time">>,
+                                       [{<<"xmlns">>,<<"urn:xmpp:time">>}],
+                                       []}}}}
+** When Server state == {state,<0.18253.0>,#Port<0.24886>,
+                            {parser,<<>>,
+                                {config,false,false},
+                                [{xmlel,<<"stream:stream">>,
+                                     [{<<"xmlns">>,<<"jabber:client">>},
+                                      {<<"xmlns:stream">>,
+                                       <<"http://etherx.jabber.org/streams">>},
+                                      {<<"id">>,<<"2D1679D1C384C5A6">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"version">>,<<"1.0">>},
+                                      {<<"xml:lang">>,<<"en">>}],
+                                     []}]},
+                            undefined,false,false,
+                            [{event_manager,<0.18256.0>},
+                             {server,<<"localhost">>},
+                             {username,<<"alicE">>},
+                             {resource,<<"res1">>}],
+                            #Fun<escalus_tcp.0.37540784>,
+                            #Fun<escalus_tcp.1.37540784>,true,
+                            {false,0,inactive},
+                            [{xmlel,<<"presence">>,
+                                 [{<<"from">>,<<"alicE@localhost/res1">>},
+                                  {<<"to">>,<<"alice@localhost/res1">>},
+                                  {<<"xml:lang">>,<<"en">>}],
+                                 []}]}
+** Reason for termination == 
+** {function_clause,[{lists,map,
+                            [#Fun<exml.1.126785588>,
+                             {xmlel,<<"time">>,
+                                    [{<<"xmlns">>,<<"urn:xmpp:time">>}],
+                                    []}],
+                            [{file,"lists.erl"},{line,1236}]},
+                     {exml,element_to_iolist,1,
+                           [{file,"src/exml.erl"},{line,101}]},
+                     {escalus_tcp,handle_cast,2,
+                                  [{file,"src/escalus_tcp.erl"},{line,236}]},
+                     {gen_server,try_dispatch,4,
+                                 [{file,"gen_server.erl"},{line,593}]},
+                     {gen_server,handle_msg,5,
+                                 [{file,"gen_server.erl"},{line,659}]},
+                     {proc_lib,init_p_do_apply,3,
+                               [{file,"proc_lib.erl"},{line,237}]}]}
+
+</div>
+=== WARNING! mod_time_SUITE:end_per_testcase(ask_for_time, [{tc_status,
+                                                         {failed,
+                                                          {function_clause,
+                                                           {lists,map,
+                                                            [#Fun<exml.1.126785588>,
+                                                             {xmlel,
+                                                              <<"time">>,
+                                                              [{<<"xmlns">>,
+                                                                <<"urn:xmpp:time">>}],
+                                                              []}],
+                                                            [{file,
+                                                              "lists.erl"},
+                                                             {line,1236}]}}}},
+                                                        {escalus_event_mgr,
+                                                         <0.18256.0>},
+                                                        {tc_name,ask_for_time},
+                                                        {escalus_cleaner,
+                                                         <0.18255.0>},
+                                                        {watchdog,<0.18254.0>},
+                                                        {preset,
+                                                         "internal_redis"},
+                                                        {tc_logfile,
+                                                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-dbc6ba49-1d19-4e5f-b34b-781a4748af1f.2016-03-22_14.54.28/ejabberd_tests.tests.mod_time_SUITE.logs/run.2016-03-22_15.06.53/mod_time_suite.ask_for_time.html"},
+                                                        {tc_group_properties,
+                                                         [{name,mod_time}]},
+                                                        {tc_group_path,[]},
+                                                        {data_dir,
+                                                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/mod_time_SUITE_data/"},
+                                                        {priv_dir,
+                                                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-dbc6ba49-1d19-4e5f-b34b-781a4748af1f.2016-03-22_14.54.28/ejabberd_tests.tests.mod_time_SUITE.logs/run.2016-03-22_15.06.53/log_private/"},
+                                                        {escalus_users,
+                                                         [{alice,
+                                                           [{username,
+                                                             <<"alicE">>},
+                                                            {server,
+                                                             <<"localhost">>},
+                                                            {password,
+                                                             <<"matygrysa">>}]}]}]) crashed!
+	Reason: noproc
+
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-03-22 15:06:53.976 ***</b>
+Error detected: {'EXIT',{function_clause,{...}}}
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-03-22 15:06:53
+=== location unknown
+=== reason = {'EXIT',
+                     {function_clause,
+                         {lists,map,
+                             [#Fun<exml.1.126785588>,
+                              {xmlel,<<"time">>,
+                                  [{<<"xmlns">>,<<"urn:xmpp:time">>}],
+                                  []}],
+                             [{file,"lists.erl"},{line,1236}]}}}
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Tue Mar 22 2016 15:06:53<!/date><br />
+</div>
+</center>
+</body>
+</html>

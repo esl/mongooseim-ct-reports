@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test bosh_SUITE:post_empty_body result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="bosh_suite.src.html#post_empty_body-1">bosh_SUITE:post_empty_body/1</a> (click for source code)
+
+=== Config value:
+
+    [{user,carol},
+     {watchdog,<0.3185.0>},
+     {escalus_user_db,{module,escalus_ejabberd}},
+     {preset,"internal_redis"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-dbc6ba49-1d19-4e5f-b34b-781a4748af1f.2016-03-22_14.54.28/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-03-22_14.54.59/bosh_suite.post_empty_body.658501.669.html"},
+     {tc_group_properties,[{shuffle,{27429,1026,7886}},
+                           {repeat_until_any_fail,5},
+                           {name,essential}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/bosh_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-dbc6ba49-1d19-4e5f-b34b-781a4748af1f.2016-03-22_14.54.28/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-03-22_14.54.59/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-dbc6ba49-1d19-4e5f-b34b-781a4748af1f.2016-03-22_14.54.28"
+
+=== Started at 2016-03-22 14:55:01
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-03-22 14:55:01
+=== successfully completed test case
+=== returned value = {{<<"400">>,<<"Bad Request">>},
+                      [{<<"access-control-max-age">>,<<"1728000">>},
+                       {<<"access-control-allow-headers">>,<<"Content-Type">>},
+                       {<<"access-control-allow-methods">>,
+                        <<"POST, OPTIONS, GET">>},
+                       {<<"access-control-allow-origin">>,<<"*">>},
+                       {<<"content-length">>,<<"20">>},
+                       {<<"date">>,<<"Tue, 22 Mar 2016 14:55:01 GMT">>},
+                       {<<"server">>,<<"Cowboy">>}],
+                      <<"Missing request body">>,280,187}
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Tue Mar 22 2016 14:55:01<!/date><br />
+</div>
+</center>
+</body>
+</html>
