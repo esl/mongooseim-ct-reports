@@ -1,0 +1,120 @@
+=== Suite started at 2016-03-22 15:17:08
+=== Starting test, 2 test cases
+=cases         2
+=user          travis
+=host          testing-gce-bda803e2-b63d-4bce-b012-1a5d65dd4b2a
+=hosts         testing-gce-bda803e2-b63d-4bce-b012-1a5d65dd4b2a 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-22 15:17:08
+=case          mod_time_SUITE:init_per_suite
+=logfile       mod_time_suite.init_per_suite.html
+=started       2016-03-22 15:17:08
+=ended         2016-03-22 15:17:08
+=result        ok
+=elapsed       0.004626
+=case          mod_time_SUITE:init_per_group
+=logfile       mod_time_suite.init_per_group.html
+=group_props   [{name,mod_time}]
+=started       2016-03-22 15:17:08
+=ended         2016-03-22 15:17:09
+=result        ok
+=elapsed       0.254749
+=case          mod_time_SUITE:ask_for_time
+=logfile       mod_time_suite.ask_for_time.html
+=started       2016-03-22 15:17:09
+=== WARNING! mod_time_SUITE:end_per_testcase(ask_for_time, [{tc_status,
+                                                         {failed,
+                                                          {function_clause,
+                                                           {lists,map,
+                                                            [#Fun<exml.1.126785588>,
+                                                             {xmlel,
+                                                              <<"time">>,
+                                                              [{<<"xmlns">>,
+                                                                <<"urn:xmpp:time">>}],
+                                                              []}],
+                                                            [{file,
+                                                              "lists.erl"},
+                                                             {line,1236}]}}}},
+                                                        {escalus_event_mgr,
+                                                         <0.1537.2>},
+                                                        {tc_name,ask_for_time},
+                                                        {escalus_cleaner,
+                                                         <0.1536.2>},
+                                                        {watchdog,<0.1535.2>},
+                                                        {preset,
+                                                         "mysql_mnesia"},
+                                                        {tc_logfile,
+                                                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-bda803e2-b63d-4bce-b012-1a5d65dd4b2a.2016-03-22_14.55.19/ejabberd_tests.tests.mod_time_SUITE.logs/run.2016-03-22_15.17.08/mod_time_suite.ask_for_time.html"},
+                                                        {tc_group_properties,
+                                                         [{name,mod_time}]},
+                                                        {tc_group_path,[]},
+                                                        {data_dir,
+                                                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/mod_time_SUITE_data/"},
+                                                        {priv_dir,
+                                                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-bda803e2-b63d-4bce-b012-1a5d65dd4b2a.2016-03-22_14.55.19/ejabberd_tests.tests.mod_time_SUITE.logs/run.2016-03-22_15.17.08/log_private/"},
+                                                        {escalus_users,
+                                                         [{alice,
+                                                           [{username,
+                                                             <<"alicE">>},
+                                                            {server,
+                                                             <<"localhost">>},
+                                                            {password,
+                                                             <<"matygrysa">>}]}]}]) crashed!
+	Reason: {function_clause,
+                    [{lists,map,
+                         [#Fun<exml.1.126785588>,
+                          {xmlel,<<"time">>,
+                              [{<<"xmlns">>,<<"urn:xmpp:time">>}],
+                              []}],
+                         [{file,"lists.erl"},{line,1236}]},
+                     {exml,element_to_iolist,1,
+                         [{file,"src/exml.erl"},{line,101}]},
+                     {escalus_tcp,handle_cast,2,
+                         [{file,"src/escalus_tcp.erl"},{line,236}]},
+                     {gen_server,try_dispatch,4,
+                         [{file,"gen_server.erl"},{line,593}]},
+                     {gen_server,handle_msg,5,
+                         [{file,"gen_server.erl"},{line,659}]},
+                     {proc_lib,init_p_do_apply,3,
+                         [{file,"proc_lib.erl"},{line,237}]}]}
+
+=ended         2016-03-22 15:17:09
+=result        failed: {'EXIT',
+                        {function_clause,
+                         {lists,map,
+                          [#Fun<exml.1.126785588>,
+                           {xmlel,<<"time">>,
+                            [{<<"xmlns">>,<<"urn:xmpp:time">>}],
+                            []}],
+                          [{file,"lists.erl"},{line,1236}]}}}, unknown
+=== *** FAILED test case 1 of 2 ***
+=case          mod_time_SUITE:time_service_discovery
+=logfile       mod_time_suite.time_service_discovery.html
+=started       2016-03-22 15:17:09
+=ended         2016-03-22 15:17:09
+=result        ok
+=elapsed       0.459852
+=case          mod_time_SUITE:end_per_group
+=logfile       mod_time_suite.end_per_group.html
+=group_props   [{name,mod_time}]
+=started       2016-03-22 15:17:10
+=ended         2016-03-22 15:17:10
+=result        ok
+=elapsed       0.462548
+=group_time    1.058s
+=case          mod_time_SUITE:end_per_suite
+=logfile       mod_time_suite.end_per_suite.html
+=started       2016-03-22 15:17:10
+=ended         2016-03-22 15:17:10
+=result        ok
+=elapsed       0.002285
+=group_time    1.611s
+=== TEST COMPLETE, 1 ok, 1 failed of 2 test cases
+
+=finished      2016-03-22 15:17:10
+=failed        1
+=successful    1
+=user_skipped  0
+=auto_skipped  0

@@ -1,0 +1,247 @@
+=== Suite started at 2016-03-22 15:14:51
+=== Starting test, 12 test cases
+=cases         12
+=user          travis
+=host          testing-gce-bda803e2-b63d-4bce-b012-1a5d65dd4b2a
+=hosts         testing-gce-bda803e2-b63d-4bce-b012-1a5d65dd4b2a 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-22 15:14:51
+=case          metrics_c2s_SUITE:init_per_suite
+=logfile       metrics_c2s_suite.init_per_suite.html
+=started       2016-03-22 15:14:51
+=ended         2016-03-22 15:14:51
+=result        ok
+=elapsed       0.003169
+=case          metrics_c2s_SUITE:init_per_group
+=logfile       metrics_c2s_suite.init_per_group.html
+=group_props   [{name,single},sequence]
+=started       2016-03-22 15:14:51
+=ended         2016-03-22 15:14:52
+=result        ok
+=elapsed       0.507508
+=case          metrics_c2s_SUITE:message_one
+=logfile       metrics_c2s_suite.message_one.html
+=started       2016-03-22 15:14:52
+=ended         2016-03-22 15:14:53
+=result        ok
+=elapsed       0.917427
+=case          metrics_c2s_SUITE:stanza_one
+=logfile       metrics_c2s_suite.stanza_one.html
+=started       2016-03-22 15:14:53
+=ended         2016-03-22 15:14:54
+=result        ok
+=elapsed       0.915922
+=case          metrics_c2s_SUITE:presence_one
+=logfile       metrics_c2s_suite.presence_one.html
+=started       2016-03-22 15:14:54
+=ended         2016-03-22 15:14:54
+=result        ok
+=elapsed       0.458213
+=case          metrics_c2s_SUITE:presence_direct_one
+=logfile       metrics_c2s_suite.presence_direct_one.html
+=started       2016-03-22 15:14:54
+=ended         2016-03-22 15:14:55
+=result        ok
+=elapsed       0.914667
+=case          metrics_c2s_SUITE:iq_one
+=logfile       metrics_c2s_suite.iq_one.html
+=started       2016-03-22 15:14:55
+=ended         2016-03-22 15:14:55
+=result        ok
+=elapsed       0.460621
+=case          metrics_c2s_SUITE:end_per_group
+=logfile       metrics_c2s_suite.end_per_group.html
+=group_props   [{name,single},sequence]
+=started       2016-03-22 15:14:55
+=ended         2016-03-22 15:14:56
+=result        ok
+=elapsed       0.921028
+=group_time    4.336s
+=case          metrics_c2s_SUITE:init_per_group
+=logfile       metrics_c2s_suite.init_per_group.659696.877.html
+=group_props   [{name,multiple},sequence]
+=started       2016-03-22 15:14:56
+=ended         2016-03-22 15:14:57
+=result        ok
+=elapsed       0.508824
+=case          metrics_c2s_SUITE:messages
+=logfile       metrics_c2s_suite.messages.html
+=started       2016-03-22 15:14:57
+=ended         2016-03-22 15:14:58
+=result        ok
+=elapsed       0.951127
+=case          metrics_c2s_SUITE:end_per_group
+=logfile       metrics_c2s_suite.end_per_group.659698.389.html
+=group_props   [{name,multiple},sequence]
+=started       2016-03-22 15:14:58
+=ended         2016-03-22 15:14:59
+=result        ok
+=elapsed       0.92213
+=group_time    1.513s
+=case          metrics_c2s_SUITE:init_per_group
+=logfile       metrics_c2s_suite.init_per_group.659699.341.html
+=group_props   [{name,drop},sequence]
+=started       2016-03-22 15:14:59
+=ended         2016-03-22 15:14:59
+=result        ok
+=elapsed       0.511214
+=case          metrics_c2s_SUITE:bounced
+=logfile       metrics_c2s_suite.bounced.html
+=started       2016-03-22 15:14:59
+=ended         2016-03-22 15:15:01
+=result        ok
+=elapsed       1.115522
+=case          metrics_c2s_SUITE:end_per_group
+=logfile       metrics_c2s_suite.end_per_group.659701.25.html
+=group_props   [{name,drop},sequence]
+=started       2016-03-22 15:15:01
+=ended         2016-03-22 15:15:01
+=result        ok
+=elapsed       0.921412
+=group_time    1.684s
+=case          metrics_c2s_SUITE:init_per_group
+=logfile       metrics_c2s_suite.init_per_group.659701.972.html
+=group_props   [{name,errors},sequence]
+=started       2016-03-22 15:15:01
+=ended         2016-03-22 15:15:02
+=result        ok
+=elapsed       0.508509
+=case          metrics_c2s_SUITE:error_total
+=logfile       metrics_c2s_suite.error_total.html
+=started       2016-03-22 15:15:02
+=ended         2016-03-22 15:15:03
+=result        ok
+=elapsed       1.115986
+=case          metrics_c2s_SUITE:error_mesg
+=logfile       metrics_c2s_suite.error_mesg.html
+=started       2016-03-22 15:15:03
+=ended         2016-03-22 15:15:04
+=result        ok
+=elapsed       1.116193
+=case          metrics_c2s_SUITE:error_iq
+=logfile       metrics_c2s_suite.error_iq.html
+=started       2016-03-22 15:15:04
+=ended         2016-03-22 15:15:05
+=result        ok
+=elapsed       0.350542
+=case          metrics_c2s_SUITE:error_presence
+=logfile       metrics_c2s_suite.error_presence.html
+=started       2016-03-22 15:15:05
+=== WARNING! metrics_c2s_SUITE:end_per_testcase(error_presence, [{tc_status,
+                                                              {failed,
+                                                               {function_clause,
+                                                                {lists,map,
+                                                                 [#Fun<exml.1.126785588>,
+                                                                  {xmlel,
+                                                                   <<"error">>,
+                                                                   [{<<"type">>,
+                                                                     <<"cancel">>}],
+                                                                   [{xmlel,
+                                                                     <<"gone">>,
+                                                                     [{<<"xmlns">>,
+                                                                       <<"urn:ietf:params:xml:ns:xmpp-stanzas">>}],
+                                                                     []}]}],
+                                                                 [{file,
+                                                                   "lists.erl"},
+                                                                  {line,
+                                                                   1236}]}}}},
+                                                             {escalus_event_mgr,
+                                                              <0.589.2>},
+                                                             {tc_name,
+                                                              error_presence},
+                                                             {escalus_cleaner,
+                                                              <0.588.2>},
+                                                             {watchdog,
+                                                              <0.587.2>},
+                                                             {running,
+                                                              [{mod_offline,
+                                                                [{backend,
+                                                                  odbc}]}]},
+                                                             {preset,
+                                                              "mysql_mnesia"},
+                                                             {tc_logfile,
+                                                              "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-bda803e2-b63d-4bce-b012-1a5d65dd4b2a.2016-03-22_14.55.19/ejabberd_tests.tests.metrics_c2s_SUITE.logs/run.2016-03-22_15.14.51/metrics_c2s_suite.error_presence.html"},
+                                                             {tc_group_properties,
+                                                              [{name,errors},
+                                                               sequence]},
+                                                             {tc_group_path,
+                                                              []},
+                                                             {data_dir,
+                                                              "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/metrics_c2s_SUITE_data/"},
+                                                             {priv_dir,
+                                                              "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-bda803e2-b63d-4bce-b012-1a5d65dd4b2a.2016-03-22_14.55.19/ejabberd_tests.tests.metrics_c2s_SUITE.logs/run.2016-03-22_15.14.51/log_private/"},
+                                                             {escalus_users,
+                                                              [{alice,
+                                                                [{username,
+                                                                  <<"alicE">>},
+                                                                 {server,
+                                                                  <<"localhost">>},
+                                                                 {password,
+                                                                  <<"matygrysa">>}]},
+                                                               {bob,
+                                                                [{username,
+                                                                  <<"bOb">>},
+                                                                 {server,
+                                                                  <<"localhost">>},
+                                                                 {password,
+                                                                  <<"makrolika">>}]}]}]) crashed!
+	Reason: noproc
+
+=ended         2016-03-22 15:15:05
+=result        failed: {'EXIT',
+                        {function_clause,
+                         {lists,map,
+                          [#Fun<exml.1.126785588>,
+                           {xmlel,<<"error">>,
+                            [{<<"type">>,<<"cancel">>}],
+                            [{xmlel,<<"gone">>,
+                              [{<<"xmlns">>,
+                                <<"urn:ietf:params:xml:ns:xmpp-stanzas">>}],
+                              []}]}],
+                          [{file,"lists.erl"},{line,1236}]}}}, unknown
+=== *** FAILED test case 11 of 12 ***
+=case          metrics_c2s_SUITE:end_per_group
+=logfile       metrics_c2s_suite.end_per_group.659705.725.html
+=group_props   [{name,errors},sequence]
+=started       2016-03-22 15:15:05
+=ended         2016-03-22 15:15:06
+=result        ok
+=elapsed       0.921363
+=group_time    3.753s
+=case          metrics_c2s_SUITE:init_per_group
+=logfile       metrics_c2s_suite.init_per_group.659706.673.html
+=group_props   [{name,count},sequence]
+=started       2016-03-22 15:15:06
+=ended         2016-03-22 15:15:07
+=result        ok
+=elapsed       0.508268
+=case          metrics_c2s_SUITE:stanza_count
+=logfile       metrics_c2s_suite.stanza_count.html
+=started       2016-03-22 15:15:07
+=ended         2016-03-22 15:15:08
+=result        ok
+=elapsed       0.950438
+=case          metrics_c2s_SUITE:end_per_group
+=logfile       metrics_c2s_suite.end_per_group.659708.193.html
+=group_props   [{name,count},sequence]
+=started       2016-03-22 15:15:08
+=ended         2016-03-22 15:15:09
+=result        ok
+=elapsed       0.92223
+=group_time    1.512s
+=case          metrics_c2s_SUITE:end_per_suite
+=logfile       metrics_c2s_suite.end_per_suite.html
+=started       2016-03-22 15:15:09
+=ended         2016-03-22 15:15:09
+=result        ok
+=elapsed       0.035229
+=group_time    17.602s
+=== TEST COMPLETE, 11 ok, 1 failed of 12 test cases
+
+=finished      2016-03-22 15:15:09
+=failed        1
+=successful    11
+=user_skipped  0
+=auto_skipped  0
