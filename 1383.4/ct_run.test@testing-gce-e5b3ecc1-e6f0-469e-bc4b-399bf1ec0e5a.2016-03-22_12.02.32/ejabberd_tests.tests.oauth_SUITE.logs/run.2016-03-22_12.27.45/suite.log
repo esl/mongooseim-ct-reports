@@ -1,0 +1,348 @@
+=== Suite started at 2016-03-22 12:27:45
+=== Starting test, 11 test cases
+=cases         11
+=user          travis
+=host          testing-gce-e5b3ecc1-e6f0-469e-bc4b-399bf1ec0e5a
+=hosts         testing-gce-e5b3ecc1-e6f0-469e-bc4b-399bf1ec0e5a 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-22 12:27:45
+=case          oauth_SUITE:init_per_suite
+=logfile       oauth_suite.init_per_suite.html
+=started       2016-03-22 12:27:45
+=ended         2016-03-22 12:27:45
+=result        ok
+=elapsed       0.005715
+=case          oauth_SUITE:init_per_group
+=logfile       oauth_suite.init_per_group.html
+=group_props   [{name,token_login},sequence]
+=started       2016-03-22 12:27:45
+=ended         2016-03-22 12:27:45
+=result        ok
+=elapsed       0.517568
+=case          oauth_SUITE:request_tokens_test
+=logfile       oauth_suite.request_tokens_test.html
+=started       2016-03-22 12:27:45
+=ended         2016-03-22 12:27:46
+=result        failed: {function_clause,
+                        [{oauth_SUITE,extract_tokens,
+                          [{xmlel,<<"iq">>,
+                            [{<<"from">>,<<"bOb@localhost">>},
+                             {<<"to">>,<<"bOb@localhost/res1">>},
+                             {<<"id">>,<<"a35403673b99b80fd4df453ab3c2363d">>},
+                             {<<"type">>,<<"error">>}],
+                            [{xmlel,<<"error">>,
+                              [{<<"code">>,<<"500">>},{<<"type">>,<<"wait">>}],
+                              [{xmlel,<<"internal-server-error">>,
+                                [{<<"xmlns">>,
+                                  <<"urn:ietf:params:xml:ns:xmpp-stanzas">>}],
+                                []}]}]}],
+                          [{file,"oauth_SUITE.erl"},{line,304}]},
+                         {oauth_SUITE,
+                          '-request_tokens_once_logged_in_impl/2-fun-0-',3,
+                          [{file,"oauth_SUITE.erl"},{line,157}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,40}]},
+                         {oauth_SUITE,request_tokens_once_logged_in_impl,2,
+                          [{file,"oauth_SUITE.erl"},{line,151}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{oauth_SUITE,
+                                                                      extract_tokens,
+                                                                      304},
+                                                                     {oauth_SUITE,
+                                                                      '-request_tokens_once_logged_in_impl/2-fun-0-',
+                                                                      157},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      40},
+                                                                     {oauth_SUITE,
+                                                                      request_tokens_once_logged_in_impl,
+                                                                      151},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 1 of 11 ***
+=== 
+=case          oauth_SUITE:login_access_token_test
+=group_props   [{name,"token_login"}]
+=started       2016-03-22 12:27:46
+=result        auto_skipped: {failed,{oauth_SUITE,request_tokens_test}}
+=== *** Skipping test case #2 {oauth_SUITE,login_access_token_test} ***
+=== 
+=case          oauth_SUITE:login_refresh_token_test
+=group_props   [{name,"token_login"}]
+=started       2016-03-22 12:27:46
+=result        auto_skipped: {failed,{oauth_SUITE,request_tokens_test}}
+=== *** Skipping test case #3 {oauth_SUITE,login_refresh_token_test} ***
+=== 
+=case          oauth_SUITE:login_with_other_users_token
+=group_props   [{name,"token_login"}]
+=started       2016-03-22 12:27:46
+=result        auto_skipped: {failed,{oauth_SUITE,request_tokens_test}}
+=== *** Skipping test case #4 {oauth_SUITE,login_with_other_users_token} ***
+=== 
+=case          oauth_SUITE:login_with_malformed_token
+=group_props   [{name,"token_login"}]
+=started       2016-03-22 12:27:46
+=result        auto_skipped: {failed,{oauth_SUITE,request_tokens_test}}
+=== *** Skipping test case #5 {oauth_SUITE,login_with_malformed_token} ***
+=case          oauth_SUITE:end_per_group
+=logfile       oauth_suite.end_per_group.html
+=group_props   [{name,token_login},sequence]
+=started       2016-03-22 12:27:46
+=ended         2016-03-22 12:27:47
+=result        ok
+=elapsed       0.921377
+=group_time    1.046s
+=case          oauth_SUITE:init_per_group
+=logfile       oauth_suite.init_per_group.649667.139.html
+=group_props   [{name,token_revocation},sequence]
+=started       2016-03-22 12:27:47
+=ended         2016-03-22 12:27:47
+=result        ok
+=elapsed       0.51518
+=case          oauth_SUITE:login_with_revoked_token_test
+=logfile       oauth_suite.login_with_revoked_token_test.html
+=started       2016-03-22 12:27:47
+=ended         2016-03-22 12:27:47
+=result        failed: {badarith,
+                           [{oauth_SUITE,invalid_sequence_no,1,
+                                [{file,"oauth_SUITE.erl"},{line,143}]},
+                            {oauth_SUITE,get_revoked_token,2,
+                                [{file,"oauth_SUITE.erl"},{line,136}]},
+                            {oauth_SUITE,login_with_revoked_token_test,1,
+                                [{file,"oauth_SUITE.erl"},{line,121}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1026}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{oauth_SUITE,
+                                                                            invalid_sequence_no,
+                                                                            143},
+                                                                           {oauth_SUITE,
+                                                                            get_revoked_token,
+                                                                            136},
+                                                                           {oauth_SUITE,
+                                                                            login_with_revoked_token_test,
+                                                                            121},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1026},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED test case 6 of 11 ***
+=== 
+=case          oauth_SUITE:token_revocation_test
+=group_props   [{name,"token_revocation"}]
+=started       2016-03-22 12:27:47
+=result        auto_skipped: {failed,{oauth_SUITE,login_with_revoked_token_test}}
+=== *** Skipping test case #7 {oauth_SUITE,token_revocation_test} ***
+=case          oauth_SUITE:end_per_group
+=logfile       oauth_suite.end_per_group.649667.717.html
+=group_props   [{name,token_revocation},sequence]
+=started       2016-03-22 12:27:47
+=ended         2016-03-22 12:27:48
+=result        ok
+=elapsed       0.923911
+=group_time    0.578s
+=case          oauth_SUITE:init_per_group
+=logfile       oauth_suite.init_per_group.649668.666.html
+=group_props   [{name,provision_token}]
+=started       2016-03-22 12:27:48
+=ended         2016-03-22 12:27:49
+=result        ok
+=elapsed       0.511157
+=case          oauth_SUITE:provision_token_login
+=logfile       oauth_suite.provision_token_login.html
+=started       2016-03-22 12:27:49
+=ended         2016-03-22 12:27:49
+=result        ok
+=elapsed       0.397133
+=case          oauth_SUITE:end_per_group
+=logfile       oauth_suite.end_per_group.649669.632.html
+=group_props   [{name,provision_token}]
+=started       2016-03-22 12:27:49
+=ended         2016-03-22 12:27:50
+=result        ok
+=elapsed       0.922165
+=group_time    0.965s
+=case          oauth_SUITE:init_per_group
+=logfile       oauth_suite.init_per_group.649670.579.html
+=group_props   [{name,commands}]
+=started       2016-03-22 12:27:50
+=ended         2016-03-22 12:27:51
+=result        ok
+=elapsed       0.513721
+=case          oauth_SUITE:revoke_token_cmd_when_no_token
+=logfile       oauth_suite.revoke_token_cmd_when_no_token.html
+=started       2016-03-22 12:27:51
+=ended         2016-03-22 12:27:51
+=result        ok
+=elapsed       0.144939
+=case          oauth_SUITE:revoke_token_cmd
+=logfile       oauth_suite.revoke_token_cmd.html
+=started       2016-03-22 12:27:51
+=ended         2016-03-22 12:27:51
+=result        failed: {function_clause,
+                        [{oauth_SUITE,extract_tokens,
+                          [{xmlel,<<"iq">>,
+                            [{<<"from">>,<<"bOb@localhost">>},
+                             {<<"to">>,<<"bOb@localhost/res1">>},
+                             {<<"id">>,<<"09de26fdd0a1e62fe0c5206559a6131a">>},
+                             {<<"type">>,<<"error">>}],
+                            [{xmlel,<<"error">>,
+                              [{<<"code">>,<<"500">>},{<<"type">>,<<"wait">>}],
+                              [{xmlel,<<"internal-server-error">>,
+                                [{<<"xmlns">>,
+                                  <<"urn:ietf:params:xml:ns:xmpp-stanzas">>}],
+                                []}]}]}],
+                          [{file,"oauth_SUITE.erl"},{line,304}]},
+                         {oauth_SUITE,
+                          '-request_tokens_once_logged_in_impl/2-fun-0-',3,
+                          [{file,"oauth_SUITE.erl"},{line,157}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,40}]},
+                         {oauth_SUITE,request_tokens_once_logged_in_impl,2,
+                          [{file,"oauth_SUITE.erl"},{line,151}]},
+                         {oauth_SUITE,revoke_token_cmd,1,
+                          [{file,"oauth_SUITE.erl"},{line,267}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{oauth_SUITE,
+                                                                      extract_tokens,
+                                                                      304},
+                                                                     {oauth_SUITE,
+                                                                      '-request_tokens_once_logged_in_impl/2-fun-0-',
+                                                                      157},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      40},
+                                                                     {oauth_SUITE,
+                                                                      request_tokens_once_logged_in_impl,
+                                                                      151},
+                                                                     {oauth_SUITE,
+                                                                      revoke_token_cmd,
+                                                                      267},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 10 of 11 ***
+=case          oauth_SUITE:end_per_group
+=logfile       oauth_suite.end_per_group.649671.798.html
+=group_props   [{name,commands}]
+=started       2016-03-22 12:27:51
+=ended         2016-03-22 12:27:52
+=result        ok
+=elapsed       0.924291
+=group_time    1.219s
+=case          oauth_SUITE:init_per_group
+=logfile       oauth_suite.init_per_group.649672.748.html
+=group_props   [{name,cleanup}]
+=started       2016-03-22 12:27:52
+=ended         2016-03-22 12:27:53
+=result        ok
+=elapsed       0.510766
+=case          oauth_SUITE:token_removed_on_user_removal
+=logfile       oauth_suite.token_removed_on_user_removal.html
+=started       2016-03-22 12:27:53
+=ended         2016-03-22 12:27:53
+=result        failed: {function_clause,
+                        [{oauth_SUITE,extract_tokens,
+                          [{xmlel,<<"iq">>,
+                            [{<<"from">>,<<"bOb@localhost">>},
+                             {<<"to">>,<<"bOb@localhost/res1">>},
+                             {<<"id">>,<<"c9ef7c6fe64a979ad6402bb6d5d3f39c">>},
+                             {<<"type">>,<<"error">>}],
+                            [{xmlel,<<"error">>,
+                              [{<<"code">>,<<"500">>},{<<"type">>,<<"wait">>}],
+                              [{xmlel,<<"internal-server-error">>,
+                                [{<<"xmlns">>,
+                                  <<"urn:ietf:params:xml:ns:xmpp-stanzas">>}],
+                                []}]}]}],
+                          [{file,"oauth_SUITE.erl"},{line,304}]},
+                         {oauth_SUITE,
+                          '-request_tokens_once_logged_in_impl/2-fun-0-',3,
+                          [{file,"oauth_SUITE.erl"},{line,157}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,40}]},
+                         {oauth_SUITE,request_tokens_once_logged_in_impl,2,
+                          [{file,"oauth_SUITE.erl"},{line,151}]},
+                         {oauth_SUITE,token_removed_on_user_removal,1,
+                          [{file,"oauth_SUITE.erl"},{line,275}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{oauth_SUITE,
+                                                                      extract_tokens,
+                                                                      304},
+                                                                     {oauth_SUITE,
+                                                                      '-request_tokens_once_logged_in_impl/2-fun-0-',
+                                                                      157},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      40},
+                                                                     {oauth_SUITE,
+                                                                      request_tokens_once_logged_in_impl,
+                                                                      151},
+                                                                     {oauth_SUITE,
+                                                                      token_removed_on_user_removal,
+                                                                      275},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 11 of 11 ***
+=case          oauth_SUITE:end_per_group
+=logfile       oauth_suite.end_per_group.649673.775.html
+=group_props   [{name,cleanup}]
+=started       2016-03-22 12:27:53
+=ended         2016-03-22 12:27:54
+=result        ok
+=elapsed       0.46246
+=group_time    1.027s
+=case          oauth_SUITE:end_per_suite
+=logfile       oauth_suite.end_per_suite.html
+=started       2016-03-22 12:27:54
+=ended         2016-03-22 12:27:54
+=result        ok
+=elapsed       0.029288
+=group_time    9.185s
+=== TEST COMPLETE, 2 ok, 4 failed, 5 skipped of 11 test cases
+
+=finished      2016-03-22 12:27:54
+=failed        4
+=successful    2
+=user_skipped  0
+=auto_skipped  5
