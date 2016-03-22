@@ -1,0 +1,393 @@
+=== Suite started at 2016-03-22 15:16:35
+=== Starting test, 11 test cases
+=cases         11
+=user          travis
+=host          testing-gce-c05b3b54-1e4f-497e-a74d-7018d88dce8b
+=hosts         testing-gce-c05b3b54-1e4f-497e-a74d-7018d88dce8b 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-22 15:16:35
+=case          oauth_SUITE:init_per_suite
+=logfile       oauth_suite.init_per_suite.html
+=started       2016-03-22 15:16:35
+=ended         2016-03-22 15:16:35
+=result        ok
+=elapsed       0.005925
+=case          oauth_SUITE:init_per_group
+=logfile       oauth_suite.init_per_group.html
+=group_props   [{name,token_login},sequence]
+=started       2016-03-22 15:16:35
+=ended         2016-03-22 15:16:35
+=result        ok
+=elapsed       0.510634
+=case          oauth_SUITE:request_tokens_test
+=logfile       oauth_suite.request_tokens_test.html
+=started       2016-03-22 15:16:35
+=== WARNING! oauth_SUITE:end_per_testcase(request_tokens_test, [{tc_status,
+                                                             {failed,
+                                                              {function_clause,
+                                                               {lists,map,
+                                                                [#Fun<exml.1.126785588>,
+                                                                 {xmlel,
+                                                                  <<"query">>,
+                                                                  [{<<"xmlns">>,
+                                                                    <<"erlang-solutions.com:xmpp:token-auth:0">>}],
+                                                                  []}],
+                                                                [{file,
+                                                                  "lists.erl"},
+                                                                 {line,
+                                                                  1236}]}}}},
+                                                            {escalus_event_mgr,
+                                                             <0.28575.1>},
+                                                            {tc_name,
+                                                             request_tokens_test},
+                                                            {escalus_cleaner,
+                                                             <0.28574.1>},
+                                                            {watchdog,
+                                                             <0.28572.1>},
+                                                            {running,
+                                                             [{mod_last,
+                                                               [{backend,
+                                                                 odbc}]}]},
+                                                            {preset,
+                                                             "odbc_pgsql_mnesia"},
+                                                            {tc_logfile,
+                                                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-c05b3b54-1e4f-497e-a74d-7018d88dce8b.2016-03-22_14.55.17/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-22_15.16.35/oauth_suite.request_tokens_test.html"},
+                                                            {tc_group_properties,
+                                                             [{name,
+                                                               token_login},
+                                                              sequence]},
+                                                            {tc_group_path,[]},
+                                                            {data_dir,
+                                                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/oauth_SUITE_data/"},
+                                                            {priv_dir,
+                                                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-c05b3b54-1e4f-497e-a74d-7018d88dce8b.2016-03-22_14.55.17/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-22_15.16.35/log_private/"},
+                                                            {escalus_users,
+                                                             [{bob,
+                                                               [{username,
+                                                                 <<"bOb">>},
+                                                                {server,
+                                                                 <<"localhost">>},
+                                                                {password,
+                                                                 <<"makrolika">>}]},
+                                                              {alice,
+                                                               [{username,
+                                                                 <<"alicE">>},
+                                                                {server,
+                                                                 <<"localhost">>},
+                                                                {password,
+                                                                 <<"matygrysa">>}]}]}]) crashed!
+	Reason: noproc
+
+=ended         2016-03-22 15:16:35
+=result        failed: {'EXIT',
+                        {function_clause,
+                         {lists,map,
+                          [#Fun<exml.1.126785588>,
+                           {xmlel,<<"query">>,
+                            [{<<"xmlns">>,
+                              <<"erlang-solutions.com:xmpp:token-auth:0">>}],
+                            []}],
+                          [{file,"lists.erl"},{line,1236}]}}}, unknown
+=== *** FAILED test case 1 of 11 ***
+=== 
+=case          oauth_SUITE:login_access_token_test
+=group_props   [{name,"token_login"}]
+=started       2016-03-22 15:16:35
+=result        auto_skipped: {failed,{oauth_SUITE,request_tokens_test}}
+=== *** Skipping test case #2 {oauth_SUITE,login_access_token_test} ***
+=== 
+=case          oauth_SUITE:login_refresh_token_test
+=group_props   [{name,"token_login"}]
+=started       2016-03-22 15:16:35
+=result        auto_skipped: {failed,{oauth_SUITE,request_tokens_test}}
+=== *** Skipping test case #3 {oauth_SUITE,login_refresh_token_test} ***
+=== 
+=case          oauth_SUITE:login_with_other_users_token
+=group_props   [{name,"token_login"}]
+=started       2016-03-22 15:16:35
+=result        auto_skipped: {failed,{oauth_SUITE,request_tokens_test}}
+=== *** Skipping test case #4 {oauth_SUITE,login_with_other_users_token} ***
+=== 
+=case          oauth_SUITE:login_with_malformed_token
+=group_props   [{name,"token_login"}]
+=started       2016-03-22 15:16:35
+=result        auto_skipped: {failed,{oauth_SUITE,request_tokens_test}}
+=== *** Skipping test case #5 {oauth_SUITE,login_with_malformed_token} ***
+=case          oauth_SUITE:end_per_group
+=logfile       oauth_suite.end_per_group.html
+=group_props   [{name,token_login},sequence]
+=started       2016-03-22 15:16:35
+=ended         2016-03-22 15:16:36
+=result        ok
+=elapsed       0.926234
+=group_time    0.837s
+=case          oauth_SUITE:init_per_group
+=logfile       oauth_suite.init_per_group.659796.952.html
+=group_props   [{name,token_revocation},sequence]
+=started       2016-03-22 15:16:36
+=ended         2016-03-22 15:16:37
+=result        ok
+=elapsed       0.509767
+=case          oauth_SUITE:login_with_revoked_token_test
+=logfile       oauth_suite.login_with_revoked_token_test.html
+=started       2016-03-22 15:16:37
+=ended         2016-03-22 15:16:37
+=result        failed: {badarith,
+                           [{oauth_SUITE,invalid_sequence_no,1,
+                                [{file,"oauth_SUITE.erl"},{line,143}]},
+                            {oauth_SUITE,get_revoked_token,2,
+                                [{file,"oauth_SUITE.erl"},{line,136}]},
+                            {oauth_SUITE,login_with_revoked_token_test,1,
+                                [{file,"oauth_SUITE.erl"},{line,121}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1026}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{oauth_SUITE,
+                                                                            invalid_sequence_no,
+                                                                            143},
+                                                                           {oauth_SUITE,
+                                                                            get_revoked_token,
+                                                                            136},
+                                                                           {oauth_SUITE,
+                                                                            login_with_revoked_token_test,
+                                                                            121},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1026},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED test case 6 of 11 ***
+=== 
+=case          oauth_SUITE:token_revocation_test
+=group_props   [{name,"token_revocation"}]
+=started       2016-03-22 15:16:37
+=result        auto_skipped: {failed,{oauth_SUITE,login_with_revoked_token_test}}
+=== *** Skipping test case #7 {oauth_SUITE,token_revocation_test} ***
+=case          oauth_SUITE:end_per_group
+=logfile       oauth_suite.end_per_group.659797.533.html
+=group_props   [{name,token_revocation},sequence]
+=started       2016-03-22 15:16:37
+=ended         2016-03-22 15:16:38
+=result        ok
+=elapsed       0.923563
+=group_time    0.581s
+=case          oauth_SUITE:init_per_group
+=logfile       oauth_suite.init_per_group.659798.483.html
+=group_props   [{name,provision_token}]
+=started       2016-03-22 15:16:38
+=ended         2016-03-22 15:16:39
+=result        ok
+=elapsed       0.510622
+=case          oauth_SUITE:provision_token_login
+=logfile       oauth_suite.provision_token_login.html
+=started       2016-03-22 15:16:39
+=ended         2016-03-22 15:16:39
+=result        ok
+=elapsed       0.39381
+=case          oauth_SUITE:end_per_group
+=logfile       oauth_suite.end_per_group.659799.448.html
+=group_props   [{name,provision_token}]
+=started       2016-03-22 15:16:39
+=ended         2016-03-22 15:16:40
+=result        ok
+=elapsed       0.924653
+=group_time    0.965s
+=case          oauth_SUITE:init_per_group
+=logfile       oauth_suite.init_per_group.659800.404.html
+=group_props   [{name,commands}]
+=started       2016-03-22 15:16:40
+=ended         2016-03-22 15:16:40
+=result        ok
+=elapsed       0.509407
+=case          oauth_SUITE:revoke_token_cmd_when_no_token
+=logfile       oauth_suite.revoke_token_cmd_when_no_token.html
+=started       2016-03-22 15:16:40
+=ended         2016-03-22 15:16:41
+=result        ok
+=elapsed       0.134348
+=case          oauth_SUITE:revoke_token_cmd
+=logfile       oauth_suite.revoke_token_cmd.html
+=started       2016-03-22 15:16:41
+=== WARNING! oauth_SUITE:end_per_testcase(revoke_token_cmd, [{tc_status,
+                                                          {failed,
+                                                           {function_clause,
+                                                            {lists,map,
+                                                             [#Fun<exml.1.126785588>,
+                                                              {xmlel,
+                                                               <<"query">>,
+                                                               [{<<"xmlns">>,
+                                                                 <<"erlang-solutions.com:xmpp:token-auth:0">>}],
+                                                               []}],
+                                                             [{file,
+                                                               "lists.erl"},
+                                                              {line,1236}]}}}},
+                                                         {escalus_event_mgr,
+                                                          <0.28673.1>},
+                                                         {tc_name,
+                                                          revoke_token_cmd},
+                                                         {escalus_cleaner,
+                                                          <0.28672.1>},
+                                                         {watchdog,
+                                                          <0.28670.1>},
+                                                         {{ejabberd_cwd,
+                                                           mongooseim@localhost},
+                                                          "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+                                                         {running,
+                                                          [{mod_last,
+                                                            [{backend,
+                                                              odbc}]}]},
+                                                         {preset,
+                                                          "odbc_pgsql_mnesia"},
+                                                         {tc_logfile,
+                                                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-c05b3b54-1e4f-497e-a74d-7018d88dce8b.2016-03-22_14.55.17/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-22_15.16.35/oauth_suite.revoke_token_cmd.html"},
+                                                         {tc_group_properties,
+                                                          [{name,commands}]},
+                                                         {tc_group_path,[]},
+                                                         {data_dir,
+                                                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/oauth_SUITE_data/"},
+                                                         {priv_dir,
+                                                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-c05b3b54-1e4f-497e-a74d-7018d88dce8b.2016-03-22_14.55.17/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-22_15.16.35/log_private/"},
+                                                         {escalus_users,
+                                                          [{bob,
+                                                            [{username,
+                                                              <<"bOb">>},
+                                                             {server,
+                                                              <<"localhost">>},
+                                                             {password,
+                                                              <<"makrolika">>}]},
+                                                           {alice,
+                                                            [{username,
+                                                              <<"alicE">>},
+                                                             {server,
+                                                              <<"localhost">>},
+                                                             {password,
+                                                              <<"matygrysa">>}]}]}]) crashed!
+	Reason: noproc
+
+=ended         2016-03-22 15:16:41
+=result        failed: {'EXIT',
+                        {function_clause,
+                         {lists,map,
+                          [#Fun<exml.1.126785588>,
+                           {xmlel,<<"query">>,
+                            [{<<"xmlns">>,
+                              <<"erlang-solutions.com:xmpp:token-auth:0">>}],
+                            []}],
+                          [{file,"lists.erl"},{line,1236}]}}}, unknown
+=== *** FAILED test case 10 of 11 ***
+=case          oauth_SUITE:end_per_group
+=logfile       oauth_suite.end_per_group.659801.397.html
+=group_props   [{name,commands}]
+=started       2016-03-22 15:16:41
+=ended         2016-03-22 15:16:42
+=result        ok
+=elapsed       0.924204
+=group_time    0.993s
+=case          oauth_SUITE:init_per_group
+=logfile       oauth_suite.init_per_group.659802.347.html
+=group_props   [{name,cleanup}]
+=started       2016-03-22 15:16:42
+=ended         2016-03-22 15:16:42
+=result        ok
+=elapsed       0.513814
+=case          oauth_SUITE:token_removed_on_user_removal
+=logfile       oauth_suite.token_removed_on_user_removal.html
+=started       2016-03-22 15:16:42
+=== WARNING! oauth_SUITE:end_per_testcase(token_removed_on_user_removal, [{tc_status,
+                                                                       {failed,
+                                                                        {function_clause,
+                                                                         {lists,
+                                                                          map,
+                                                                          [#Fun<exml.1.126785588>,
+                                                                           {xmlel,
+                                                                            <<"query">>,
+                                                                            [{<<"xmlns">>,
+                                                                              <<"erlang-solutions.com:xmpp:token-auth:0">>}],
+                                                                            []}],
+                                                                          [{file,
+                                                                            "lists.erl"},
+                                                                           {line,
+                                                                            1236}]}}}},
+                                                                      {escalus_event_mgr,
+                                                                       <0.28705.1>},
+                                                                      {tc_name,
+                                                                       token_removed_on_user_removal},
+                                                                      {escalus_cleaner,
+                                                                       <0.28704.1>},
+                                                                      {watchdog,
+                                                                       <0.28702.1>},
+                                                                      {running,
+                                                                       [{mod_last,
+                                                                         [{backend,
+                                                                           odbc}]}]},
+                                                                      {preset,
+                                                                       "odbc_pgsql_mnesia"},
+                                                                      {tc_logfile,
+                                                                       "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-c05b3b54-1e4f-497e-a74d-7018d88dce8b.2016-03-22_14.55.17/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-22_15.16.35/oauth_suite.token_removed_on_user_removal.html"},
+                                                                      {tc_group_properties,
+                                                                       [{name,
+                                                                         cleanup}]},
+                                                                      {tc_group_path,
+                                                                       []},
+                                                                      {data_dir,
+                                                                       "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/oauth_SUITE_data/"},
+                                                                      {priv_dir,
+                                                                       "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-c05b3b54-1e4f-497e-a74d-7018d88dce8b.2016-03-22_14.55.17/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-22_15.16.35/log_private/"},
+                                                                      {escalus_users,
+                                                                       [{bob,
+                                                                         [{username,
+                                                                           <<"bOb">>},
+                                                                          {server,
+                                                                           <<"localhost">>},
+                                                                          {password,
+                                                                           <<"makrolika">>}]},
+                                                                        {alice,
+                                                                         [{username,
+                                                                           <<"alicE">>},
+                                                                          {server,
+                                                                           <<"localhost">>},
+                                                                          {password,
+                                                                           <<"matygrysa">>}]}]}]) crashed!
+	Reason: noproc
+
+=ended         2016-03-22 15:16:43
+=result        failed: {'EXIT',
+                        {function_clause,
+                         {lists,map,
+                          [#Fun<exml.1.126785588>,
+                           {xmlel,<<"query">>,
+                            [{<<"xmlns">>,
+                              <<"erlang-solutions.com:xmpp:token-auth:0">>}],
+                            []}],
+                          [{file,"lists.erl"},{line,1236}]}}}, unknown
+=== *** FAILED test case 11 of 11 ***
+=case          oauth_SUITE:end_per_group
+=logfile       oauth_suite.end_per_group.659803.178.html
+=group_props   [{name,cleanup}]
+=started       2016-03-22 15:16:43
+=ended         2016-03-22 15:16:43
+=result        ok
+=elapsed       0.462986
+=group_time    0.831s
+=case          oauth_SUITE:end_per_suite
+=logfile       oauth_suite.end_per_suite.html
+=started       2016-03-22 15:16:43
+=ended         2016-03-22 15:16:43
+=result        ok
+=elapsed       0.034467
+=group_time    8.577s
+=== TEST COMPLETE, 2 ok, 4 failed, 5 skipped of 11 test cases
+
+=finished      2016-03-22 15:16:43
+=failed        4
+=successful    2
+=user_skipped  0
+=auto_skipped  5
