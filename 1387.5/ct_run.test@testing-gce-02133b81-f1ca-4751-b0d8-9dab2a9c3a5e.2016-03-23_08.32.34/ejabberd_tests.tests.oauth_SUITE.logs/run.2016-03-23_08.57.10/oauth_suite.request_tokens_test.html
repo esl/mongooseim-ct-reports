@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test oauth_SUITE:request_tokens_test result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="oauth_suite.src.html#request_tokens_test-1">oauth_SUITE:request_tokens_test/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.2745.2>},
+     {running,[{mod_last,[{backend,odbc}]}]},
+     {preset,"pgsql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-02133b81-f1ca-4751-b0d8-9dab2a9c3a5e.2016-03-23_08.32.34/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-23_08.57.10/oauth_suite.request_tokens_test.html"},
+     {tc_group_properties,[{name,token_login},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/oauth_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-02133b81-f1ca-4751-b0d8-9dab2a9c3a5e.2016-03-23_08.32.34/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-23_08.57.10/log_private/"},
+     {escalus_users,[{bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]},
+                     {alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-02133b81-f1ca-4751-b0d8-9dab2a9c3a5e.2016-03-23_08.32.34"
+
+=== Started at 2016-03-23 08:57:10
+
+<br />
+
+<div class="error_logger"><b>*** System report during oauth_SUITE:request_tokens_test/1 in token_login 2016-03-23 08:57:11.000 ***</b>
+
+=ERROR REPORT==== 23-Mar-2016::08:57:10 ===
+** Generic server <0.2760.2> terminating 
+** Last message in was {'$gen_cast',
+                           {send,
+                               {client,<<"bOb@localhost/res1">>,escalus_tcp,
+                                   #Port<0.29572>,false,false,<0.2760.2>,
+                                   [{event_manager,<0.2759.2>},
+                                    {server,<<"localhost">>},
+                                    {username,<<"bOb">>},
+                                    {resource,<<"res1">>}]},
+                               {xmlel,<<"iq">>,
+                                   [{<<"to">>,<<"bOb@localhost">>},
+                                    {<<"type">>,<<"get">>},
+                                    {<<"id">>,
+                                     <<"670559bbc918e47cd86befa340b15969">>}],
+                                   {xmlel,<<"query">>,
+                                       [{<<"xmlns">>,
+                                         <<"erlang-solutions.com:xmpp:token-auth:0">>}],
+                                       []}}}}
+** When Server state == {state,<0.2755.2>,#Port<0.29572>,
+                            {parser,<<>>,
+                                {config,false,false},
+                                [{xmlel,<<"stream:stream">>,
+                                     [{<<"xmlns">>,<<"jabber:client">>},
+                                      {<<"xmlns:stream">>,
+                                       <<"http://etherx.jabber.org/streams">>},
+                                      {<<"id">>,<<"68D5031C7AECA13A">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"version">>,<<"1.0">>},
+                                      {<<"xml:lang">>,<<"en">>}],
+                                     []}]},
+                            undefined,false,false,
+                            [{event_manager,<0.2759.2>},
+                             {server,<<"localhost">>},
+                             {username,<<"bOb">>},
+                             {resource,<<"res1">>}],
+                            #Fun<escalus_tcp.0.37540784>,
+                            #Fun<escalus_tcp.1.37540784>,true,
+                            {false,0,inactive},
+                            [{xmlel,<<"presence">>,
+                                 [{<<"from">>,<<"bOb@localhost/res1">>},
+                                  {<<"to">>,<<"bob@localhost/res1">>},
+                                  {<<"xml:lang">>,<<"en">>}],
+                                 []}]}
+** Reason for termination == 
+** {function_clause,[{lists,map,
+                            [#Fun<exml.1.126785588>,
+                             {xmlel,<<"query">>,
+                                    [{<<"xmlns">>,
+                                      <<"erlang-solutions.com:xmpp:token-auth:0">>}],
+                                    []}],
+                            [{file,"lists.erl"},{line,1236}]},
+                     {exml,element_to_iolist,1,
+                           [{file,"src/exml.erl"},{line,101}]},
+                     {escalus_tcp,handle_cast,2,
+                                  [{file,"src/escalus_tcp.erl"},{line,236}]},
+                     {gen_server,try_dispatch,4,
+                                 [{file,"gen_server.erl"},{line,593}]},
+                     {gen_server,handle_msg,5,
+                                 [{file,"gen_server.erl"},{line,659}]},
+                     {proc_lib,init_p_do_apply,3,
+                               [{file,"proc_lib.erl"},{line,237}]}]}
+
+</div>
+=== WARNING! oauth_SUITE:end_per_testcase(request_tokens_test, [{tc_status,
+                                                             {failed,
+                                                              {function_clause,
+                                                               {lists,map,
+                                                                [#Fun<exml.1.126785588>,
+                                                                 {xmlel,
+                                                                  <<"query">>,
+                                                                  [{<<"xmlns">>,
+                                                                    <<"erlang-solutions.com:xmpp:token-auth:0">>}],
+                                                                  []}],
+                                                                [{file,
+                                                                  "lists.erl"},
+                                                                 {line,
+                                                                  1236}]}}}},
+                                                            {escalus_event_mgr,
+                                                             <0.2759.2>},
+                                                            {tc_name,
+                                                             request_tokens_test},
+                                                            {escalus_cleaner,
+                                                             <0.2758.2>},
+                                                            {watchdog,
+                                                             <0.2756.2>},
+                                                            {running,
+                                                             [{mod_last,
+                                                               [{backend,
+                                                                 odbc}]}]},
+                                                            {preset,
+                                                             "pgsql_mnesia"},
+                                                            {tc_logfile,
+                                                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-02133b81-f1ca-4751-b0d8-9dab2a9c3a5e.2016-03-23_08.32.34/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-23_08.57.10/oauth_suite.request_tokens_test.html"},
+                                                            {tc_group_properties,
+                                                             [{name,
+                                                               token_login},
+                                                              sequence]},
+                                                            {tc_group_path,[]},
+                                                            {data_dir,
+                                                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/oauth_SUITE_data/"},
+                                                            {priv_dir,
+                                                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-02133b81-f1ca-4751-b0d8-9dab2a9c3a5e.2016-03-23_08.32.34/ejabberd_tests.tests.oauth_SUITE.logs/run.2016-03-23_08.57.10/log_private/"},
+                                                            {escalus_users,
+                                                             [{bob,
+                                                               [{username,
+                                                                 <<"bOb">>},
+                                                                {server,
+                                                                 <<"localhost">>},
+                                                                {password,
+                                                                 <<"makrolika">>}]},
+                                                              {alice,
+                                                               [{username,
+                                                                 <<"alicE">>},
+                                                                {server,
+                                                                 <<"localhost">>},
+                                                                {password,
+                                                                 <<"matygrysa">>}]}]}]) crashed!
+	Reason: noproc
+
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-03-23 08:57:11.004 ***</b>
+Error detected: {'EXIT',{function_clause,{...}}}
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-03-23 08:57:11
+=== location unknown
+=== reason = {'EXIT',
+                     {function_clause,
+                         {lists,map,
+                             [#Fun<exml.1.126785588>,
+                              {xmlel,<<"query">>,
+                                  [{<<"xmlns">>,
+                                    <<"erlang-solutions.com:xmpp:token-auth:0">>}],
+                                  []}],
+                             [{file,"lists.erl"},{line,1236}]}}}
+=== 
+*** request_tokens_test failed.
+    Skipping all other cases in sequence.
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Mar 23 2016 08:57:10<!/date><br />
+</div>
+</center>
+</body>
+</html>
