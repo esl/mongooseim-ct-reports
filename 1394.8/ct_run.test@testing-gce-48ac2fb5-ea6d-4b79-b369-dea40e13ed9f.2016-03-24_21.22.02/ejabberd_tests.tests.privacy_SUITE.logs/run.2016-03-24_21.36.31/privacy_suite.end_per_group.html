@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test privacy_SUITE:end_per_group result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Config function: <a href="privacy_suite.src.html#end_per_group-1">privacy_SUITE:end_per_group/2</a> (click for source code)
+
+=== Group properties: [{name,management},sequence]
+
+=== Config value:
+
+    [{watchdog,<0.18948.0>},
+     {escalus_no_stanzas_after_story,true},
+     {preset,"external_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-48ac2fb5-ea6d-4b79-b369-dea40e13ed9f.2016-03-24_21.22.02/ejabberd_tests.tests.privacy_SUITE.logs/run.2016-03-24_21.36.31/privacy_suite.end_per_group.html"},
+     {tc_group_properties,[{name,management},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/privacy_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-48ac2fb5-ea6d-4b79-b369-dea40e13ed9f.2016-03-24_21.22.02/ejabberd_tests.tests.privacy_SUITE.logs/run.2016-03-24_21.36.31/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-48ac2fb5-ea6d-4b79-b369-dea40e13ed9f.2016-03-24_21.22.02"
+
+=== Started at 2016-03-24 21:36:42
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-03-24 21:36:43
+=== successfully completed test case
+=== returned value = [{ok,result,
+                          {xmlel,<<"iq">>,
+                              [{<<"from">>,<<>>},
+                               {<<"to">>,
+                                <<"alicE@localhost/escalus-default-resource">>},
+                               {<<"id">>,
+                                <<"324a47228b9aeb3a9f30415c354f5ce0">>},
+                               {<<"type">>,<<"result">>}],
+                              [{xmlel,<<"query">>,
+                                   [{<<"xmlns">>,<<"jabber:iq:register">>}],
+                                   [{xmlel,<<"remove">>,[],[]}]}]}},
+                      {ok,result,
+                          {xmlel,<<"iq">>,
+                              [{<<"from">>,<<>>},
+                               {<<"to">>,
+                                <<"bOb@localhost/escalus-default-resource">>},
+                               {<<"id">>,
+                                <<"c5961179e2f023b15f1f4ff6ef7c17ae">>},
+                               {<<"type">>,<<"result">>}],
+                              [{xmlel,<<"query">>,
+                                   [{<<"xmlns">>,<<"jabber:iq:register">>}],
+                                   [{xmlel,<<"remove">>,[],[]}]}]}}]
+=== 
+=== Total execution time of group: 11.078s
+
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Thu Mar 24 2016 21:36:42<!/date><br />
+</div>
+</center>
+</body>
+</html>
