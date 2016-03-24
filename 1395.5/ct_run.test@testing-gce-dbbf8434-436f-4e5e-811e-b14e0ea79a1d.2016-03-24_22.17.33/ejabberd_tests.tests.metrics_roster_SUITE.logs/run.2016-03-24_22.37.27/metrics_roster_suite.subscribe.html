@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test metrics_roster_SUITE:subscribe result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="metrics_roster_suite.src.html#subscribe-1">metrics_roster_SUITE:subscribe/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.865.2>},
+     {mongoose_metrics,[{[data,xmpp,received,xml_stanza_size],changed},
+                        {[data,xmpp,sent,xml_stanza_size],changed},
+                        {#Fun<metrics_roster_SUITE.0.77062949>,
+                         [data,odbc,regular],
+                         [{recv_oct,'>'},{send_oct,'>'}]},
+                        {[backends,mod_roster,get_subscription_lists],
+                         changed}]},
+     {preset,"pgsql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-dbbf8434-436f-4e5e-811e-b14e0ea79a1d.2016-03-24_22.17.33/ejabberd_tests.tests.metrics_roster_SUITE.logs/run.2016-03-24_22.37.27/metrics_roster_suite.subscribe.html"},
+     {tc_group_properties,[{name,subscriptions},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/metrics_roster_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-dbbf8434-436f-4e5e-811e-b14e0ea79a1d.2016-03-24_22.17.33/ejabberd_tests.tests.metrics_roster_SUITE.logs/run.2016-03-24_22.37.27/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-dbbf8434-436f-4e5e-811e-b14e0ea79a1d.2016-03-24_22.17.33"
+
+=== Started at 2016-03-24 22:37:34
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-03-24 22:37:35
+=== successfully completed test case
+=== returned value = [{mongoose_metrics_initial,
+                          [{{['_',modPresenceSubscriptions],1},spiral,17},
+                           {{[backends,mod_roster,get_subscription_lists],
+                             changed},
+                            histogram,
+                            [{n,0},
+                             {mean,0},
+                             {min,0},
+                             {max,0},
+                             {median,0},
+                             {50,0},
+                             {75,0},
+                             {90,0},
+                             {95,0},
+                             {99,0},
+                             {999,0}]},
+                           {{[data,odbc,regular],
+                             [{recv_oct,'>'},{send_oct,'>'}]},
+                            function,
+                            [{workers,30},
+                             {recv_oct,7762522},
+                             {recv_cnt,69798},
+                             {recv_max,1460},
+                             {send_oct,7544815},
+                             {send_max,745},
+                             {send_cnt,66793},
+                             {send_pend,0}]},
+                           {{[data,xmpp,sent,xml_stanza_size],changed},
+                            histogram,
+                            [{n,0},
+                             {mean,0},
+                             {min,0},
+                             {max,0},
+                             {median,0},
+                             {50,0},
+                             {75,0},
+                             {90,0},
+                             {95,0},
+                             {99,0},
+                             {999,0}]},
+                           {{[data,xmpp,received,xml_stanza_size],changed},
+                            histogram,
+                            [{n,0},
+                             {mean,0},
+                             {min,0},
+                             {max,0},
+                             {median,0},
+                             {50,0},
+                             {75,0},
+                             {90,0},
+                             {95,0},
+                             {99,0},
+                             {999,0}]}]},
+                      {mongoose_metrics,
+                          [{[data,xmpp,received,xml_stanza_size],changed},
+                           {[data,xmpp,sent,xml_stanza_size],changed},
+                           {#Fun<metrics_roster_SUITE.0.77062949>,
+                            [data,odbc,regular],
+                            [{recv_oct,'>'},{send_oct,'>'}]},
+                           {[backends,mod_roster,get_subscription_lists],
+                            changed},
+                           {['_',modPresenceSubscriptions],1}]},
+                      {escalus_event_mgr,<0.933.2>},
+                      {tc_name,subscribe},
+                      {escalus_cleaner,<0.932.2>},
+                      {watchdog,<0.931.2>},
+                      {mongoose_metrics,
+                          [{[data,xmpp,received,xml_stanza_size],changed},
+                           {[data,xmpp,sent,xml_stanza_size],changed},
+                           {#Fun<metrics_roster_SUITE.0.77062949>,
+                            [data,odbc,regular],
+                            [{recv_oct,'>'},{send_oct,'>'}]},
+                           {[backends,mod_roster,get_subscription_lists],
+                            changed}]},
+                      {preset,"pgsql_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-dbbf8434-436f-4e5e-811e-b14e0ea79a1d.2016-03-24_22.17.33/ejabberd_tests.tests.metrics_roster_SUITE.logs/run.2016-03-24_22.37.27/metrics_roster_suite.subscribe.html"},
+                      {tc_group_properties,[{name,subscriptions},sequence]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/metrics_roster_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-dbbf8434-436f-4e5e-811e-b14e0ea79a1d.2016-03-24_22.17.33/ejabberd_tests.tests.metrics_roster_SUITE.logs/run.2016-03-24_22.37.27/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                           {bob,
+                               [{username,<<"bOb">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Thu Mar 24 2016 22:37:34<!/date><br />
+</div>
+</center>
+</body>
+</html>
