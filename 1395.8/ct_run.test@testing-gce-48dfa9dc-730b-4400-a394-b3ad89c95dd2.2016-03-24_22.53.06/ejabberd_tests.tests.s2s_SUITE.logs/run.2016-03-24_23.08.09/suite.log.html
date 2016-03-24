@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_tests.tests.s2s_SUITE results</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+// Parser for date format, e.g: Wed Jul 4 2012 11:24:15
+var monthNames = {};
+monthNames["Jan"] = "01"; monthNames["Feb"] = "02";
+monthNames["Mar"] = "03"; monthNames["Apr"] = "04";
+monthNames["May"] = "05"; monthNames["Jun"] = "06";
+monthNames["Jul"] = "07"; monthNames["Aug"] = "08";
+monthNames["Sep"] = "09"; monthNames["Oct"] = "10";
+monthNames["Nov"] = "11"; monthNames["Dec"] = "12";
+$.tablesorter.addParser({
+  id: 'CTDateSorter',
+  is: function(s) {
+      return false; },
+  format: function(s) {
+      if (s.length < 2) return 999999999;
+      else {
+          var date = s.match(/(\w{3})\s(\w{3})\s(\d{2})\s(\d{4})\s(\d{2}):(\d{2}):(\d{2})/);
+          var y = date[4]; var mo = monthNames[date[2]]; var d = String(date[3]);
+          var h = String(date[5]); var mi = String(date[6]); var sec = String(date[7]);
+          return (parseInt('' + y + mo + d + h + mi + sec)); }},
+  type: 'numeric' });
+// Parser for general text format
+$.tablesorter.addParser({
+  id: 'CTTextSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return 'zzzzzzzz';
+    else if (s == "?") return 'zzzzzzz';
+    else if (s == "-") return 'zzzzzz';
+    else if (s == "FAILED") return 'A';
+    else if (s == "SKIPPED") return 'B';
+    else if (s == "OK") return 'C';
+    else return '' + s; },
+  type: 'text' });
+// Parser for numerical values
+$.tablesorter.addParser({
+  id: 'CTValSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return '-2';
+    else if (s == "?") return '-1';
+    else if ((s.search(/(\d{1,})\s/)) >= 0) {
+      var num = s.match(/(\d{1,})\s/);
+      return (parseInt('' + num[1])); }
+    else if ((s.search(/(\d{1,})\.(\d{3})s/)) >= 0) {
+      var num = s.match(/(\d{1,})\.(\d{3})/);
+      if (num[1] == "0") return (parseInt('' + num[2]));
+      else return (parseInt('' + num[1] + num[2])); }
+    else return '' + s; },
+  type: 'numeric' });
+$(document).ready(function() {
+  $("#SortableTable").tablesorter({
+    headers: { 
+      0: { sorter: 'CTValSorter' },
+      1: { sorter: 'CTTextSorter' },
+      2: { sorter: 'CTTextSorter' },
+      3: { sorter: 'CTTextSorter' },
+      5: { sorter: 'CTValSorter' },
+      6: { sorter: 'CTTextSorter' },
+      7: { sorter: 'CTTextSorter' }
+    }
+  });
+  $("#SortableTable").trigger("update");
+  $("#SortableTable").trigger("appendCache");
+});
+</script>
+</head>
+<body>
+<div class="label">'external_mnesia'</div>
+
+<h1>Results for <i>ejabberd_tests.tests.s2s_SUITE</i></h1>
+<h4>Test started at 2016-03-24 23:08:09</h4>
+<p><b>Host info:</b><br />
+Run by travis on testing-gce-48dfa9dc-730b-4400-a394-b3ad89c95dd2<br />Used Erlang v6.4 in "/home/travis/otp/17.5"</p>
+<p><ul>
+<li><a href="suite.log">Full textual log</a></li>
+<li><a href="cover.html">Coverage log</a></li>
+<li><a href="unexpected_io.log.html">Unexpected I/O log</a></li>
+</ul></p>
+<p><i>Executing <b>12</b> test cases...</i>
+<br />
+</p>
+<table id="SortableTable">
+<thead>
+<tr><th>Num</th><th>Module</th><th>Group</th><th>Case</th><th>Log</th><th>Time</th><th>Result</th><th>Comment</th></tr>
+</thead>
+<tbody>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black"></font></td><td><a href="s2s_suite.init_per_suite.html">init_per_suite</a></td><td><a href="s2s_suite.init_per_suite.html#top"><</a> <a href="s2s_suite.init_per_suite.html#end">></a></td><td><font color="black">6.067s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">both_plain</font></td><td><a href="s2s_suite.init_per_group.html">init_per_group</a></td><td><a href="s2s_suite.init_per_group.html#top"><</a> <a href="s2s_suite.init_per_group.html#end">></a></td><td><font color="black">0.004s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">1</font></td><td><font color="saddlebrown">s2s_SUITE</font></td><td><font color="saddlebrown">both_plain</font></td><td><a href="s2s_suite.simple_message.html">simple_message</a></td><td><a href="s2s_suite.simple_message.html#top"><</a> <a href="s2s_suite.simple_message.html#end">></a></td><td><font color="saddlebrown">1.203s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">2</font></td><td><font color="saddlebrown">s2s_SUITE</font></td><td><font color="saddlebrown">both_plain</font></td><td><a href="s2s_suite.nonexistent_user.html">nonexistent_user</a></td><td><a href="s2s_suite.nonexistent_user.html#top"><</a> <a href="s2s_suite.nonexistent_user.html#end">></a></td><td><font color="saddlebrown">0.914s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">3</font></td><td><font color="saddlebrown">s2s_SUITE</font></td><td><font color="saddlebrown">both_plain</font></td><td><a href="s2s_suite.unknown_domain.html">unknown_domain</a></td><td><a href="s2s_suite.unknown_domain.html#top"><</a> <a href="s2s_suite.unknown_domain.html#end">></a></td><td><font color="saddlebrown">0.507s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">both_plain</font></td><td><a href="s2s_suite.end_per_group.html">end_per_group</a></td><td><a href="s2s_suite.end_per_group.html#top"><</a> <a href="s2s_suite.end_per_group.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">both_tls_optional</font></td><td><a href="s2s_suite.init_per_group.860898.829.html">init_per_group</a></td><td><a href="s2s_suite.init_per_group.860898.829.html#top"><</a> <a href="s2s_suite.init_per_group.860898.829.html#end">></a></td><td><font color="black">0.009s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">4</font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">both_tls_optional</font></td><td><a href="s2s_suite.simple_message.860898.864.html">simple_message</a></td><td><a href="s2s_suite.simple_message.860898.864.html#top"><</a> <a href="s2s_suite.simple_message.860898.864.html#end">></a></td><td><font color="black">1.283s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">both_tls_optional</font></td><td><a href="s2s_suite.end_per_group.860900.174.html">end_per_group</a></td><td><a href="s2s_suite.end_per_group.860900.174.html#top"><</a> <a href="s2s_suite.end_per_group.860900.174.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">both_tls_required</font></td><td><a href="s2s_suite.init_per_group.860900.200.html">init_per_group</a></td><td><a href="s2s_suite.init_per_group.860900.200.html#top"><</a> <a href="s2s_suite.init_per_group.860900.200.html#end">></a></td><td><font color="black">0.013s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">5</font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">both_tls_required</font></td><td><a href="s2s_suite.simple_message.860900.239.html">simple_message</a></td><td><a href="s2s_suite.simple_message.860900.239.html#top"><</a> <a href="s2s_suite.simple_message.860900.239.html#end">></a></td><td><font color="black">1.234s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">both_tls_required</font></td><td><a href="s2s_suite.end_per_group.860901.499.html">end_per_group</a></td><td><a href="s2s_suite.end_per_group.860901.499.html#top"><</a> <a href="s2s_suite.end_per_group.860901.499.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_optional_node2_tls_required</font></td><td><a href="s2s_suite.init_per_group.860901.527.html">init_per_group</a></td><td><a href="s2s_suite.init_per_group.860901.527.html#top"><</a> <a href="s2s_suite.init_per_group.860901.527.html#end">></a></td><td><font color="black">0.009s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">6</font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_optional_node2_tls_required</font></td><td><a href="s2s_suite.simple_message.860901.562.html">simple_message</a></td><td><a href="s2s_suite.simple_message.860901.562.html#top"><</a> <a href="s2s_suite.simple_message.860901.562.html#end">></a></td><td><font color="black">1.234s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_optional_node2_tls_required</font></td><td><a href="s2s_suite.end_per_group.860902.823.html">end_per_group</a></td><td><a href="s2s_suite.end_per_group.860902.823.html#top"><</a> <a href="s2s_suite.end_per_group.860902.823.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_required_node2_tls_optional</font></td><td><a href="s2s_suite.init_per_group.860902.850.html">init_per_group</a></td><td><a href="s2s_suite.init_per_group.860902.850.html#top"><</a> <a href="s2s_suite.init_per_group.860902.850.html#end">></a></td><td><font color="black">0.005s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">7</font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_required_node2_tls_optional</font></td><td><a href="s2s_suite.simple_message.860902.881.html">simple_message</a></td><td><a href="s2s_suite.simple_message.860902.881.html#top"><</a> <a href="s2s_suite.simple_message.860902.881.html#end">></a></td><td><font color="black">1.238s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_required_node2_tls_optional</font></td><td><a href="s2s_suite.end_per_group.860904.145.html">end_per_group</a></td><td><a href="s2s_suite.end_per_group.860904.145.html#top"><</a> <a href="s2s_suite.end_per_group.860904.145.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_required_trusted_node2_tls_optional</font></td><td><a href="s2s_suite.init_per_group.860904.171.html">init_per_group</a></td><td><a href="s2s_suite.init_per_group.860904.171.html#top"><</a> <a href="s2s_suite.init_per_group.860904.171.html#end">></a></td><td><font color="black">0.011s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">8</font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_required_trusted_node2_tls_optional</font></td><td><a href="s2s_suite.timeout_waiting_for_message.html">timeout_waiting_for_message</a></td><td><a href="s2s_suite.timeout_waiting_for_message.html#top"><</a> <a href="s2s_suite.timeout_waiting_for_message.html#end">></a></td><td><font color="black">10.928s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_required_trusted_node2_tls_optional</font></td><td><a href="s2s_suite.end_per_group.860915.162.html">end_per_group</a></td><td><a href="s2s_suite.end_per_group.860915.162.html#top"><</a> <a href="s2s_suite.end_per_group.860915.162.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_false_node2_tls_optional</font></td><td><a href="s2s_suite.init_per_group.860915.187.html">init_per_group</a></td><td><a href="s2s_suite.init_per_group.860915.187.html#top"><</a> <a href="s2s_suite.init_per_group.860915.187.html#end">></a></td><td><font color="black">0.002s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">9</font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_false_node2_tls_optional</font></td><td><a href="s2s_suite.simple_message.860915.213.html">simple_message</a></td><td><a href="s2s_suite.simple_message.860915.213.html#top"><</a> <a href="s2s_suite.simple_message.860915.213.html#end">></a></td><td><font color="black">0.955s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_false_node2_tls_optional</font></td><td><a href="s2s_suite.end_per_group.860916.192.html">end_per_group</a></td><td><a href="s2s_suite.end_per_group.860916.192.html#top"><</a> <a href="s2s_suite.end_per_group.860916.192.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_optional_node2_tls_false</font></td><td><a href="s2s_suite.init_per_group.860916.216.html">init_per_group</a></td><td><a href="s2s_suite.init_per_group.860916.216.html#top"><</a> <a href="s2s_suite.init_per_group.860916.216.html#end">></a></td><td><font color="black">0.005s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">10</font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_optional_node2_tls_false</font></td><td><a href="s2s_suite.simple_message.860916.247.html">simple_message</a></td><td><a href="s2s_suite.simple_message.860916.247.html#top"><</a> <a href="s2s_suite.simple_message.860916.247.html#end">></a></td><td><font color="black">0.925s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_optional_node2_tls_false</font></td><td><a href="s2s_suite.end_per_group.860917.196.html">end_per_group</a></td><td><a href="s2s_suite.end_per_group.860917.196.html#top"><</a> <a href="s2s_suite.end_per_group.860917.196.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_false_node2_tls_required</font></td><td><a href="s2s_suite.init_per_group.860917.220.html">init_per_group</a></td><td><a href="s2s_suite.init_per_group.860917.220.html#top"><</a> <a href="s2s_suite.init_per_group.860917.220.html#end">></a></td><td><font color="black">0.013s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">11</font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_false_node2_tls_required</font></td><td><a href="s2s_suite.timeout_waiting_for_message.860917.257.html">timeout_waiting_for_message</a></td><td><a href="s2s_suite.timeout_waiting_for_message.860917.257.html#top"><</a> <a href="s2s_suite.timeout_waiting_for_message.860917.257.html#end">></a></td><td><font color="black">10.920s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_false_node2_tls_required</font></td><td><a href="s2s_suite.end_per_group.860928.201.html">end_per_group</a></td><td><a href="s2s_suite.end_per_group.860928.201.html#top"><</a> <a href="s2s_suite.end_per_group.860928.201.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_required_node2_tls_false</font></td><td><a href="s2s_suite.init_per_group.860928.225.html">init_per_group</a></td><td><a href="s2s_suite.init_per_group.860928.225.html#top"><</a> <a href="s2s_suite.init_per_group.860928.225.html#end">></a></td><td><font color="black">0.006s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">12</font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_required_node2_tls_false</font></td><td><a href="s2s_suite.timeout_waiting_for_message.860928.257.html">timeout_waiting_for_message</a></td><td><a href="s2s_suite.timeout_waiting_for_message.860928.257.html#top"><</a> <a href="s2s_suite.timeout_waiting_for_message.860928.257.html#end">></a></td><td><font color="black">10.926s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black">node1_tls_required_node2_tls_false</font></td><td><a href="s2s_suite.end_per_group.860939.206.html">end_per_group</a></td><td><a href="s2s_suite.end_per_group.860939.206.html#top"><</a> <a href="s2s_suite.end_per_group.860939.206.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">s2s_SUITE</font></td><td><font color="black"></font></td><td><a href="s2s_suite.end_per_suite.html">end_per_suite</a></td><td><a href="s2s_suite.end_per_suite.html#top"><</a> <a href="s2s_suite.end_per_suite.html#end">></a></td><td><font color="black">5.934s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+
+</tbody>
+<tfoot>
+<tr><td></td><td><b>TOTAL</b></td><td></td><td></td><td></td><td>55.297s</td><td><b>Ok</b></td><td>12 Ok, 0 Failed of 12</td></tr>
+</tfoot>
+
+</table>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Thu Mar 24 2016 23:08:09<!/date><br />
+</div>
+</center>
+</body>
+</html>
