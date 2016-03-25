@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test conf_reload_SUITE:init_per_group result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Config function: <a href="conf_reload_suite.src.html#init_per_group-1">conf_reload_SUITE:init_per_group/2</a> (click for source code)
+
+=== Group properties: [{name,xmpp_domain_local_reload}]
+
+=== Config value:
+
+    [{{ejabberd_cwd,mongooseim@localhost},
+      "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+     {watchdog,<0.14313.0>},
+     {preset,"mysql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-cef61d03-1d08-4154-970a-03ad98e14849.2016-03-25_01.18.50/ejabberd_tests.tests.conf_reload_SUITE.logs/run.2016-03-25_01.25.39/conf_reload_suite.init_per_group.html"},
+     {tc_group_properties,[{name,xmpp_domain_local_reload}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/conf_reload_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-cef61d03-1d08-4154-970a-03ad98e14849.2016-03-25_01.18.50/ejabberd_tests.tests.conf_reload_SUITE.logs/run.2016-03-25_01.25.39/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-cef61d03-1d08-4154-970a-03ad98e14849.2016-03-25_01.18.50"
+
+=== Started at 2016-03-25 01:25:39
+
+<br />
+
+<div class="error_logger"><b>*** System report during conf_reload_SUITE:init_per_group/2 for xmpp_domain_local_reload 2016-03-25 01:25:39.926 ***</b>
+
+=INFO REPORT==== 25-Mar-2016::01:25:39 ===
+user already existed: <iq from='localhost' id='ebd890212efcea1b90d1d2de01c6a14c' type='error'><query xmlns='jabber:iq:register'><username>alicE</username><password>matygrysa</password></query><error code='409' type='cancel'><conflict xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/></error></iq>
+
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-03-25 01:25:39
+=== successfully completed test case
+=== returned value = [{new_hosts_value,[<<"sogndal">>]},
+                      {modify_config_file_fun,
+                          #Fun<conf_reload_SUITE.0.84379330>},
+                      {watchdog,<0.14317.0>},
+                      {{ejabberd_cwd,mongooseim@localhost},
+                       "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+                      {preset,"mysql_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-cef61d03-1d08-4154-970a-03ad98e14849.2016-03-25_01.18.50/ejabberd_tests.tests.conf_reload_SUITE.logs/run.2016-03-25_01.25.39/conf_reload_suite.init_per_group.html"},
+                      {tc_group_properties,[{name,xmpp_domain_local_reload}]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/conf_reload_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-cef61d03-1d08-4154-970a-03ad98e14849.2016-03-25_01.18.50/ejabberd_tests.tests.conf_reload_SUITE.logs/run.2016-03-25_01.25.39/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Fri Mar 25 2016 01:25:39<!/date><br />
+</div>
+</center>
+</body>
+</html>
