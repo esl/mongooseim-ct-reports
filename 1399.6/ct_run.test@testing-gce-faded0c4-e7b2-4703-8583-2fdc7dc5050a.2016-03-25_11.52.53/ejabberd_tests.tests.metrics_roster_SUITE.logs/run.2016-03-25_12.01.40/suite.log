@@ -1,0 +1,148 @@
+=== Suite started at 2016-03-25 12:01:40
+=== Starting test, 6 test cases
+=cases         6
+=user          travis
+=host          testing-gce-faded0c4-e7b2-4703-8583-2fdc7dc5050a
+=hosts         testing-gce-faded0c4-e7b2-4703-8583-2fdc7dc5050a 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-25 12:01:40
+=case          metrics_roster_SUITE:init_per_suite
+=logfile       metrics_roster_suite.init_per_suite.html
+=started       2016-03-25 12:01:40
+=ended         2016-03-25 12:01:40
+=result        ok
+=elapsed       0.002378
+=case          metrics_roster_SUITE:init_per_group
+=logfile       metrics_roster_suite.init_per_group.html
+=group_props   [{name,roster},sequence]
+=started       2016-03-25 12:01:40
+=ended         2016-03-25 12:01:41
+=result        failed: {failed_to_register,
+                           [{escalus_users,verify_creation,1,
+                                [{file,"src/escalus_users.erl"},{line,268}]},
+                            {lists,foreach,2,[{file,"lists.erl"},{line,1336}]},
+                            {escalus_users,create_users_via_xmpp,2,
+                                [{file,"src/escalus_users.erl"},{line,100}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1099}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{escalus_users,
+                                                                            verify_creation,
+                                                                            268},
+                                                                           {lists,
+                                                                            foreach,
+                                                                            1336},
+                                                                           {escalus_users,
+                                                                            create_users_via_xmpp,
+                                                                            100},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1099},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED {metrics_roster_SUITE,init_per_group} ***
+=== 
+=case          metrics_roster_SUITE:get_roster
+=group_props   [{name,"roster"}]
+=started       2016-03-25 12:01:41
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #1 {metrics_roster_SUITE,get_roster} ***
+=== 
+=case          metrics_roster_SUITE:add_contact
+=group_props   [{name,"roster"}]
+=started       2016-03-25 12:01:41
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #2 {metrics_roster_SUITE,add_contact} ***
+=== 
+=case          metrics_roster_SUITE:roster_push
+=group_props   [{name,"roster"}]
+=started       2016-03-25 12:01:41
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #3 {metrics_roster_SUITE,roster_push} ***
+=== 
+=case          metrics_roster_SUITE:end_per_group
+=group_props   [{name,"roster"}]
+=started       2016-03-25 12:01:41
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {metrics_roster_SUITE,end_per_group} ***
+=case          metrics_roster_SUITE:init_per_group
+=logfile       metrics_roster_suite.init_per_group.907301.313.html
+=group_props   [{name,subscriptions},sequence]
+=started       2016-03-25 12:01:41
+=ended         2016-03-25 12:01:41
+=result        failed: {failed_to_register,
+                           [{escalus_users,verify_creation,1,
+                                [{file,"src/escalus_users.erl"},{line,268}]},
+                            {lists,foreach,2,[{file,"lists.erl"},{line,1336}]},
+                            {escalus_users,create_users_via_xmpp,2,
+                                [{file,"src/escalus_users.erl"},{line,100}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1099}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{escalus_users,
+                                                                            verify_creation,
+                                                                            268},
+                                                                           {lists,
+                                                                            foreach,
+                                                                            1336},
+                                                                           {escalus_users,
+                                                                            create_users_via_xmpp,
+                                                                            100},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1099},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED {metrics_roster_SUITE,init_per_group} ***
+=== 
+=case          metrics_roster_SUITE:unsubscribe
+=group_props   [{name,"subscriptions"}]
+=started       2016-03-25 12:01:41
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #4 {metrics_roster_SUITE,unsubscribe} ***
+=== 
+=case          metrics_roster_SUITE:decline_subscription
+=group_props   [{name,"subscriptions"}]
+=started       2016-03-25 12:01:41
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #5 {metrics_roster_SUITE,decline_subscription} ***
+=== 
+=case          metrics_roster_SUITE:subscribe
+=group_props   [{name,"subscriptions"}]
+=started       2016-03-25 12:01:41
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #6 {metrics_roster_SUITE,subscribe} ***
+=== 
+=case          metrics_roster_SUITE:end_per_group
+=group_props   [{name,"subscriptions"}]
+=started       2016-03-25 12:01:41
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {metrics_roster_SUITE,end_per_group} ***
+=case          metrics_roster_SUITE:end_per_suite
+=logfile       metrics_roster_suite.end_per_suite.html
+=started       2016-03-25 12:01:41
+=ended         2016-03-25 12:01:41
+=result        ok
+=elapsed       0.001683
+=group_time    1.112s
+=== TEST COMPLETE, 0 ok, 0 failed, 6 skipped of 6 test cases
+
+=finished      2016-03-25 12:01:41
+=failed        0
+=successful    0
+=user_skipped  0
+=auto_skipped  6
