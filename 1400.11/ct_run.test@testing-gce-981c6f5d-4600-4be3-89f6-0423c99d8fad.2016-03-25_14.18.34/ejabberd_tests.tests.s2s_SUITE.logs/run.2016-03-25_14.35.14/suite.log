@@ -1,0 +1,504 @@
+=== Suite started at 2016-03-25 14:35:14
+=== Starting test, 12 test cases
+=cases         12
+=user          travis
+=host          testing-gce-981c6f5d-4600-4be3-89f6-0423c99d8fad
+=hosts         testing-gce-981c6f5d-4600-4be3-89f6-0423c99d8fad 
+=emulator_vsn  7.1
+=emulator      beam
+=otp_release   18
+=started       2016-03-25 14:35:14
+=case          s2s_SUITE:init_per_suite
+=logfile       s2s_suite.init_per_suite.html
+=started       2016-03-25 14:35:14
+=ended         2016-03-25 14:35:20
+=result        ok
+=elapsed       6.050578
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.html
+=group_props   [{name,both_plain},sequence]
+=started       2016-03-25 14:35:20
+=ended         2016-03-25 14:35:20
+=result        ok
+=elapsed       0.004082
+=case          s2s_SUITE:simple_message
+=logfile       s2s_suite.simple_message.html
+=started       2016-03-25 14:35:20
+=ended         2016-03-25 14:35:31
+=result        failed: {timeout_when_waiting_for_stanza,
+                           [{escalus_client,wait_for_stanza,
+                                [{client,<<"alice@fed1/res1">>,escalus_tcp,
+                                     #Port<0.26519>,false,false,<0.21447.0>,
+                                     [{event_manager,<0.21446.0>},
+                                      {server,<<"fed1">>},
+                                      {username,<<"alice">>},
+                                      {resource,<<"res1">>}]},
+                                 10000],
+                                [{file,"src/escalus_client.erl"},{line,117}]},
+                            {s2s_SUITE,'-simple_message/1-fun-0-',2,
+                                [{file,"s2s_SUITE.erl"},{line,172}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,984}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus_client,
+                                                                            wait_for_stanza,
+                                                                            117},
+                                                                           {s2s_SUITE,
+                                                                            '-simple_message/1-fun-0-',
+                                                                            172},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            984},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED test case 1 of 12 ***
+=== 
+=case          s2s_SUITE:nonexistent_user
+=group_props   [{name,"both_plain"}]
+=started       2016-03-25 14:35:31
+=result        auto_skipped: {failed,{s2s_SUITE,simple_message}}
+=== *** Skipping test case #2 {s2s_SUITE,nonexistent_user} ***
+=== 
+=case          s2s_SUITE:unknown_domain
+=group_props   [{name,"both_plain"}]
+=started       2016-03-25 14:35:31
+=result        auto_skipped: {failed,{s2s_SUITE,simple_message}}
+=== *** Skipping test case #3 {s2s_SUITE,unknown_domain} ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.html
+=group_props   [{name,both_plain},sequence]
+=started       2016-03-25 14:35:31
+=ended         2016-03-25 14:35:31
+=result        ok
+=elapsed       1.0e-6
+=group_time    10.994s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.2438.html
+=group_props   [{name,both_tls_optional}]
+=started       2016-03-25 14:35:31
+=ended         2016-03-25 14:35:31
+=result        ok
+=elapsed       0.008919
+=case          s2s_SUITE:simple_message
+=logfile       s2s_suite.simple_message.2442.html
+=started       2016-03-25 14:35:31
+=ended         2016-03-25 14:35:42
+=result        failed: {timeout_when_waiting_for_stanza,
+                           [{escalus_client,wait_for_stanza,
+                                [{client,<<"alice@fed1/res1">>,escalus_tcp,
+                                     #Port<0.26525>,false,false,<0.21470.0>,
+                                     [{event_manager,<0.21469.0>},
+                                      {server,<<"fed1">>},
+                                      {username,<<"alice">>},
+                                      {resource,<<"res1">>}]},
+                                 10000],
+                                [{file,"src/escalus_client.erl"},{line,117}]},
+                            {s2s_SUITE,'-simple_message/1-fun-0-',2,
+                                [{file,"s2s_SUITE.erl"},{line,172}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,984}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus_client,
+                                                                            wait_for_stanza,
+                                                                            117},
+                                                                           {s2s_SUITE,
+                                                                            '-simple_message/1-fun-0-',
+                                                                            172},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            984},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED test case 4 of 12 ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.2446.html
+=group_props   [{name,both_tls_optional}]
+=started       2016-03-25 14:35:42
+=ended         2016-03-25 14:35:42
+=result        ok
+=elapsed       1.0e-6
+=group_time    10.988s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.2450.html
+=group_props   [{name,both_tls_required}]
+=started       2016-03-25 14:35:42
+=ended         2016-03-25 14:35:42
+=result        ok
+=elapsed       0.002299
+=case          s2s_SUITE:simple_message
+=logfile       s2s_suite.simple_message.2454.html
+=started       2016-03-25 14:35:42
+=ended         2016-03-25 14:35:53
+=result        failed: {timeout_when_waiting_for_stanza,
+                           [{escalus_client,wait_for_stanza,
+                                [{client,<<"alice@fed1/res1">>,escalus_tcp,
+                                     #Port<0.26531>,false,false,<0.21493.0>,
+                                     [{event_manager,<0.21492.0>},
+                                      {server,<<"fed1">>},
+                                      {username,<<"alice">>},
+                                      {resource,<<"res1">>}]},
+                                 10000],
+                                [{file,"src/escalus_client.erl"},{line,117}]},
+                            {s2s_SUITE,'-simple_message/1-fun-0-',2,
+                                [{file,"s2s_SUITE.erl"},{line,172}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,984}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus_client,
+                                                                            wait_for_stanza,
+                                                                            117},
+                                                                           {s2s_SUITE,
+                                                                            '-simple_message/1-fun-0-',
+                                                                            172},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            984},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED test case 5 of 12 ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.2458.html
+=group_props   [{name,both_tls_required}]
+=started       2016-03-25 14:35:53
+=ended         2016-03-25 14:35:53
+=result        ok
+=elapsed       1.0e-6
+=group_time    10.974s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.2462.html
+=group_props   [{name,node1_tls_optional_node2_tls_required}]
+=started       2016-03-25 14:35:53
+=ended         2016-03-25 14:35:53
+=result        ok
+=elapsed       0.00507
+=case          s2s_SUITE:simple_message
+=logfile       s2s_suite.simple_message.2466.html
+=started       2016-03-25 14:35:53
+=ended         2016-03-25 14:36:04
+=result        failed: {timeout_when_waiting_for_stanza,
+                           [{escalus_client,wait_for_stanza,
+                                [{client,<<"alice@fed1/res1">>,escalus_tcp,
+                                     #Port<0.26537>,false,false,<0.21516.0>,
+                                     [{event_manager,<0.21515.0>},
+                                      {server,<<"fed1">>},
+                                      {username,<<"alice">>},
+                                      {resource,<<"res1">>}]},
+                                 10000],
+                                [{file,"src/escalus_client.erl"},{line,117}]},
+                            {s2s_SUITE,'-simple_message/1-fun-0-',2,
+                                [{file,"s2s_SUITE.erl"},{line,172}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,984}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus_client,
+                                                                            wait_for_stanza,
+                                                                            117},
+                                                                           {s2s_SUITE,
+                                                                            '-simple_message/1-fun-0-',
+                                                                            172},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            984},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED test case 6 of 12 ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.2470.html
+=group_props   [{name,node1_tls_optional_node2_tls_required}]
+=started       2016-03-25 14:36:04
+=ended         2016-03-25 14:36:04
+=result        ok
+=elapsed       1.0e-6
+=group_time    10.984s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.2474.html
+=group_props   [{name,node1_tls_required_node2_tls_optional}]
+=started       2016-03-25 14:36:04
+=ended         2016-03-25 14:36:04
+=result        ok
+=elapsed       0.001982
+=case          s2s_SUITE:simple_message
+=logfile       s2s_suite.simple_message.2478.html
+=started       2016-03-25 14:36:04
+=ended         2016-03-25 14:36:15
+=result        failed: {timeout_when_waiting_for_stanza,
+                           [{escalus_client,wait_for_stanza,
+                                [{client,<<"alice@fed1/res1">>,escalus_tcp,
+                                     #Port<0.26543>,false,false,<0.21539.0>,
+                                     [{event_manager,<0.21538.0>},
+                                      {server,<<"fed1">>},
+                                      {username,<<"alice">>},
+                                      {resource,<<"res1">>}]},
+                                 10000],
+                                [{file,"src/escalus_client.erl"},{line,117}]},
+                            {s2s_SUITE,'-simple_message/1-fun-0-',2,
+                                [{file,"s2s_SUITE.erl"},{line,172}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,984}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus_client,
+                                                                            wait_for_stanza,
+                                                                            117},
+                                                                           {s2s_SUITE,
+                                                                            '-simple_message/1-fun-0-',
+                                                                            172},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            984},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED test case 7 of 12 ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.2482.html
+=group_props   [{name,node1_tls_required_node2_tls_optional}]
+=started       2016-03-25 14:36:15
+=ended         2016-03-25 14:36:15
+=result        ok
+=elapsed       1.0e-6
+=group_time    10.978s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.2486.html
+=group_props   [{name,node1_tls_required_trusted_node2_tls_optional}]
+=started       2016-03-25 14:36:15
+=ended         2016-03-25 14:36:15
+=result        ok
+=elapsed       0.001719
+=case          s2s_SUITE:timeout_waiting_for_message
+=logfile       s2s_suite.timeout_waiting_for_message.html
+=started       2016-03-25 14:36:15
+=ended         2016-03-25 14:36:26
+=result        ok
+=elapsed       10.919722
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.2490.html
+=group_props   [{name,node1_tls_required_trusted_node2_tls_optional}]
+=started       2016-03-25 14:36:26
+=ended         2016-03-25 14:36:26
+=result        ok
+=elapsed       1.0e-6
+=group_time    10.972s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.2494.html
+=group_props   [{name,node1_tls_false_node2_tls_optional}]
+=started       2016-03-25 14:36:26
+=ended         2016-03-25 14:36:26
+=result        ok
+=elapsed       0.002105
+=case          s2s_SUITE:simple_message
+=logfile       s2s_suite.simple_message.2498.html
+=started       2016-03-25 14:36:26
+=ended         2016-03-25 14:36:37
+=result        failed: {timeout_when_waiting_for_stanza,
+                           [{escalus_client,wait_for_stanza,
+                                [{client,<<"alice@fed1/res1">>,escalus_tcp,
+                                     #Port<0.26555>,false,false,<0.21585.0>,
+                                     [{event_manager,<0.21584.0>},
+                                      {server,<<"fed1">>},
+                                      {username,<<"alice">>},
+                                      {resource,<<"res1">>}]},
+                                 10000],
+                                [{file,"src/escalus_client.erl"},{line,117}]},
+                            {s2s_SUITE,'-simple_message/1-fun-0-',2,
+                                [{file,"s2s_SUITE.erl"},{line,172}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,984}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus_client,
+                                                                            wait_for_stanza,
+                                                                            117},
+                                                                           {s2s_SUITE,
+                                                                            '-simple_message/1-fun-0-',
+                                                                            172},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            984},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED test case 9 of 12 ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.2502.html
+=group_props   [{name,node1_tls_false_node2_tls_optional}]
+=started       2016-03-25 14:36:37
+=ended         2016-03-25 14:36:37
+=result        ok
+=elapsed       2.0e-6
+=group_time    10.977s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.2506.html
+=group_props   [{name,node1_tls_optional_node2_tls_false}]
+=started       2016-03-25 14:36:37
+=ended         2016-03-25 14:36:37
+=result        ok
+=elapsed       0.001941
+=case          s2s_SUITE:simple_message
+=logfile       s2s_suite.simple_message.2510.html
+=started       2016-03-25 14:36:37
+=ended         2016-03-25 14:36:48
+=result        failed: {timeout_when_waiting_for_stanza,
+                           [{escalus_client,wait_for_stanza,
+                                [{client,<<"alice@fed1/res1">>,escalus_tcp,
+                                     #Port<0.26561>,false,false,<0.21608.0>,
+                                     [{event_manager,<0.21607.0>},
+                                      {server,<<"fed1">>},
+                                      {username,<<"alice">>},
+                                      {resource,<<"res1">>}]},
+                                 10000],
+                                [{file,"src/escalus_client.erl"},{line,117}]},
+                            {s2s_SUITE,'-simple_message/1-fun-0-',2,
+                                [{file,"s2s_SUITE.erl"},{line,172}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1408}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,984}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,926}]}]}, [{escalus_client,
+                                                                            wait_for_stanza,
+                                                                            117},
+                                                                           {s2s_SUITE,
+                                                                            '-simple_message/1-fun-0-',
+                                                                            172},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1408},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            984},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            926}]
+=== *** FAILED test case 10 of 12 ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.2514.html
+=group_props   [{name,node1_tls_optional_node2_tls_false}]
+=started       2016-03-25 14:36:48
+=ended         2016-03-25 14:36:48
+=result        ok
+=elapsed       1.0e-6
+=group_time    10.970s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.2518.html
+=group_props   [{name,node1_tls_false_node2_tls_required}]
+=started       2016-03-25 14:36:48
+=ended         2016-03-25 14:36:48
+=result        ok
+=elapsed       0.001806
+=case          s2s_SUITE:timeout_waiting_for_message
+=logfile       s2s_suite.timeout_waiting_for_message.2522.html
+=started       2016-03-25 14:36:48
+=ended         2016-03-25 14:36:59
+=result        ok
+=elapsed       10.923932
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.2526.html
+=group_props   [{name,node1_tls_false_node2_tls_required}]
+=started       2016-03-25 14:36:59
+=ended         2016-03-25 14:36:59
+=result        ok
+=elapsed       1.0e-6
+=group_time    10.980s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.2530.html
+=group_props   [{name,node1_tls_required_node2_tls_false}]
+=started       2016-03-25 14:36:59
+=ended         2016-03-25 14:36:59
+=result        ok
+=elapsed       0.001913
+=case          s2s_SUITE:timeout_waiting_for_message
+=logfile       s2s_suite.timeout_waiting_for_message.2534.html
+=started       2016-03-25 14:36:59
+=ended         2016-03-25 14:37:10
+=result        ok
+=elapsed       10.915296
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.2538.html
+=group_props   [{name,node1_tls_required_node2_tls_false}]
+=started       2016-03-25 14:37:10
+=ended         2016-03-25 14:37:10
+=result        ok
+=elapsed       1.2e-5
+=group_time    10.969s
+=case          s2s_SUITE:end_per_suite
+=logfile       s2s_suite.end_per_suite.html
+=started       2016-03-25 14:37:10
+=ended         2016-03-25 14:37:16
+=result        ok
+=elapsed       5.935835
+=group_time    116.160s
+=== TEST COMPLETE, 3 ok, 7 failed, 2 skipped of 12 test cases
+
+=finished      2016-03-25 14:37:16
+=failed        7
+=successful    3
+=user_skipped  0
+=auto_skipped  2

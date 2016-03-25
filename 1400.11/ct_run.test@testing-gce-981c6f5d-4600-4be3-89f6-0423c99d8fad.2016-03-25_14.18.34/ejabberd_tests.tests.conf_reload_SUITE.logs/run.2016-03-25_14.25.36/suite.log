@@ -1,0 +1,119 @@
+=== Suite started at 2016-03-25 14:25:36
+=== Starting test, 4 test cases
+=cases         4
+=user          travis
+=host          testing-gce-981c6f5d-4600-4be3-89f6-0423c99d8fad
+=hosts         testing-gce-981c6f5d-4600-4be3-89f6-0423c99d8fad 
+=emulator_vsn  7.1
+=emulator      beam
+=otp_release   18
+=started       2016-03-25 14:25:36
+=case          conf_reload_SUITE:init_per_suite
+=logfile       conf_reload_suite.init_per_suite.html
+=started       2016-03-25 14:25:36
+=ended         2016-03-25 14:25:36
+=result        ok
+=elapsed       0.002792
+=case          conf_reload_SUITE:init_per_group
+=logfile       conf_reload_suite.init_per_group.html
+=group_props   [{name,xmpp_domain_local_reload}]
+=started       2016-03-25 14:25:36
+=ended         2016-03-25 14:25:36
+=result        ok
+=elapsed       0.252673
+=case          conf_reload_SUITE:domain_should_change
+=logfile       conf_reload_suite.domain_should_change.html
+=started       2016-03-25 14:25:36
+=ended         2016-03-25 14:25:43
+=result        ok
+=elapsed       0.445721
+=case          conf_reload_SUITE:user_should_be_registered_and_unregistered_via_ctl
+=logfile       conf_reload_suite.user_should_be_registered_and_unregistered_via_ctl.html
+=started       2016-03-25 14:25:43
+=ended         2016-03-25 14:25:49
+=result        ok
+=elapsed       0.223215
+=case          conf_reload_SUITE:user_should_be_registered_and_unregistered_via_xmpp
+=logfile       conf_reload_suite.user_should_be_registered_and_unregistered_via_xmpp.html
+=started       2016-03-25 14:25:49
+=ended         2016-03-25 14:25:56
+=result        failed: {{badmatch,
+                         {error,failed_to_register,
+                          {xmlel,<<"iq">>,
+                           [{<<"from">>,<<"sogndal">>},
+                            {<<"id">>,<<"1f7b43f3db91ff5f1ac52a5db47fca3f">>},
+                            {<<"type">>,<<"error">>}],
+                           [{xmlel,<<"error">>,
+                             [{<<"code">>,<<"503">>},
+                              {<<"type">>,<<"cancel">>}],
+                             [{xmlel,<<"service-unavailable">>,
+                               [{<<"xmlns">>,
+                                 <<"urn:ietf:params:xml:ns:xmpp-stanzas">>}],
+                               []}]}]}}},
+                        [{escalus_users,create_user,2,
+                          [{file,"src/escalus_users.erl"},{line,252}]},
+                         {conf_reload_SUITE,create_user,2,
+                          [{file,"conf_reload_SUITE.erl"},{line,178}]},
+                         {conf_reload_SUITE,
+                          '-user_should_be_registered_and_unregistered_via_xmpp/1-fun-1-',
+                          1,
+                          [{file,"conf_reload_SUITE.erl"},{line,122}]},
+                         {conf_reload_SUITE,
+                          user_should_be_registered_and_unregistered_via_xmpp,
+                          1,
+                          [{file,"conf_reload_SUITE.erl"},{line,122}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1408}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,984}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,926}]}]}, [{escalus_users,
+                                                                      create_user,
+                                                                      252},
+                                                                     {conf_reload_SUITE,
+                                                                      create_user,
+                                                                      178},
+                                                                     {conf_reload_SUITE,
+                                                                      '-user_should_be_registered_and_unregistered_via_xmpp/1-fun-1-',
+                                                                      122},
+                                                                     {conf_reload_SUITE,
+                                                                      user_should_be_registered_and_unregistered_via_xmpp,
+                                                                      122},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1408},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      984},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      926}]
+=== *** FAILED test case 3 of 4 ***
+=case          conf_reload_SUITE:user_should_be_disconnected_from_removed_domain
+=logfile       conf_reload_suite.user_should_be_disconnected_from_removed_domain.html
+=started       2016-03-25 14:25:56
+=ended         2016-03-25 14:26:03
+=result        ok
+=elapsed       0.397632
+=case          conf_reload_SUITE:end_per_group
+=logfile       conf_reload_suite.end_per_group.html
+=group_props   [{name,xmpp_domain_local_reload}]
+=started       2016-03-25 14:26:03
+=ended         2016-03-25 14:26:03
+=result        ok
+=elapsed       0.463289
+=group_time    26.986s
+=case          conf_reload_SUITE:end_per_suite
+=logfile       conf_reload_suite.end_per_suite.html
+=started       2016-03-25 14:26:03
+=ended         2016-03-25 14:26:03
+=result        ok
+=elapsed       0.001704
+=group_time    27.522s
+=== TEST COMPLETE, 3 ok, 1 failed of 4 test cases
+
+=finished      2016-03-25 14:26:03
+=failed        1
+=successful    3
+=user_skipped  0
+=auto_skipped  0
