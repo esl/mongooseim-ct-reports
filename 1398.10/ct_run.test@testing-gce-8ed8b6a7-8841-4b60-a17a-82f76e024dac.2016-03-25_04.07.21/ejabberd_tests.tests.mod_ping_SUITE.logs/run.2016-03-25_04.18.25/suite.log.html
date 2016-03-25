@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_tests.tests.mod_ping_SUITE results</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+// Parser for date format, e.g: Wed Jul 4 2012 11:24:15
+var monthNames = {};
+monthNames["Jan"] = "01"; monthNames["Feb"] = "02";
+monthNames["Mar"] = "03"; monthNames["Apr"] = "04";
+monthNames["May"] = "05"; monthNames["Jun"] = "06";
+monthNames["Jul"] = "07"; monthNames["Aug"] = "08";
+monthNames["Sep"] = "09"; monthNames["Oct"] = "10";
+monthNames["Nov"] = "11"; monthNames["Dec"] = "12";
+$.tablesorter.addParser({
+  id: 'CTDateSorter',
+  is: function(s) {
+      return false; },
+  format: function(s) {
+      if (s.length < 2) return 999999999;
+      else {
+          var date = s.match(/(\w{3})\s(\w{3})\s(\d{2})\s(\d{4})\s(\d{2}):(\d{2}):(\d{2})/);
+          var y = date[4]; var mo = monthNames[date[2]]; var d = String(date[3]);
+          var h = String(date[5]); var mi = String(date[6]); var sec = String(date[7]);
+          return (parseInt('' + y + mo + d + h + mi + sec)); }},
+  type: 'numeric' });
+// Parser for general text format
+$.tablesorter.addParser({
+  id: 'CTTextSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return 'zzzzzzzz';
+    else if (s == "?") return 'zzzzzzz';
+    else if (s == "-") return 'zzzzzz';
+    else if (s == "FAILED") return 'A';
+    else if (s == "SKIPPED") return 'B';
+    else if (s == "OK") return 'C';
+    else return '' + s; },
+  type: 'text' });
+// Parser for numerical values
+$.tablesorter.addParser({
+  id: 'CTValSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return '-2';
+    else if (s == "?") return '-1';
+    else if ((s.search(/(\d{1,})\s/)) >= 0) {
+      var num = s.match(/(\d{1,})\s/);
+      return (parseInt('' + num[1])); }
+    else if ((s.search(/(\d{1,})\.(\d{3})s/)) >= 0) {
+      var num = s.match(/(\d{1,})\.(\d{3})/);
+      if (num[1] == "0") return (parseInt('' + num[2]));
+      else return (parseInt('' + num[1] + num[2])); }
+    else return '' + s; },
+  type: 'numeric' });
+$(document).ready(function() {
+  $("#SortableTable").tablesorter({
+    headers: { 
+      0: { sorter: 'CTValSorter' },
+      1: { sorter: 'CTTextSorter' },
+      2: { sorter: 'CTTextSorter' },
+      3: { sorter: 'CTTextSorter' },
+      5: { sorter: 'CTValSorter' },
+      6: { sorter: 'CTTextSorter' },
+      7: { sorter: 'CTTextSorter' }
+    }
+  });
+  $("#SortableTable").trigger("update");
+  $("#SortableTable").trigger("appendCache");
+});
+</script>
+</head>
+<body>
+<div class="label">'internal_mnesia'</div>
+
+<h1>Results for <i>ejabberd_tests.tests.mod_ping_SUITE</i></h1>
+<h4>Test started at 2016-03-25 04:18:25</h4>
+<p><b>Host info:</b><br />
+Run by travis on testing-gce-8ed8b6a7-8841-4b60-a17a-82f76e024dac<br />Used Erlang v5.10.4 in "/home/travis/otp/R16B03"</p>
+<p><ul>
+<li><a href="suite.log">Full textual log</a></li>
+<li><a href="cover.html">Coverage log</a></li>
+<li><a href="unexpected_io.log.html">Unexpected I/O log</a></li>
+</ul></p>
+<p><i>Executing <b>11</b> test cases...</i>
+<br />
+</p>
+<table id="SortableTable">
+<thead>
+<tr><th>Num</th><th>Module</th><th>Group</th><th>Case</th><th>Log</th><th>Time</th><th>Result</th><th>Comment</th></tr>
+</thead>
+<tbody>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black"></font></td><td><a href="mod_ping_suite.init_per_suite.html">init_per_suite</a></td><td><a href="mod_ping_suite.init_per_suite.html#top"><</a> <a href="mod_ping_suite.init_per_suite.html#end">></a></td><td><font color="black">0.002s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">client_ping</font></td><td><a href="mod_ping_suite.init_per_group.html">init_per_group</a></td><td><a href="mod_ping_suite.init_per_group.html#top"><</a> <a href="mod_ping_suite.init_per_group.html#end">></a></td><td><font color="black">0.252s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">1</font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">client_ping</font></td><td><a href="mod_ping_suite.ping.html">ping</a></td><td><a href="mod_ping_suite.ping.html#top"><</a> <a href="mod_ping_suite.ping.html#end">></a></td><td><font color="black">0.458s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">client_ping</font></td><td><a href="mod_ping_suite.end_per_group.html">end_per_group</a></td><td><a href="mod_ping_suite.end_per_group.html#top"><</a> <a href="mod_ping_suite.end_per_group.html#end">></a></td><td><font color="black">0.463s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">server_ping</font></td><td><a href="mod_ping_suite.init_per_group.879507.321.html">init_per_group</a></td><td><a href="mod_ping_suite.init_per_group.879507.321.html#top"><</a> <a href="mod_ping_suite.init_per_group.879507.321.html#end">></a></td><td><font color="black">0.256s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">2</font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">server_ping</font></td><td><a href="mod_ping_suite.ping.879507.602.html">ping</a></td><td><a href="mod_ping_suite.ping.879507.602.html#top"><</a> <a href="mod_ping_suite.ping.879507.602.html#end">></a></td><td><font color="black">0.458s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">3</font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">server_ping</font></td><td><a href="mod_ping_suite.active.html">active</a></td><td><a href="mod_ping_suite.active.html#top"><</a> <a href="mod_ping_suite.active.html#end">></a></td><td><font color="black">10.465s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">4</font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">server_ping</font></td><td><a href="mod_ping_suite.active_keep_alive.html">active_keep_alive</a></td><td><a href="mod_ping_suite.active_keep_alive.html#top"><</a> <a href="mod_ping_suite.active_keep_alive.html#end">></a></td><td><font color="black">10.464s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">5</font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">server_ping</font></td><td><a href="mod_ping_suite.server_ping_pong.html">server_ping_pong</a></td><td><a href="mod_ping_suite.server_ping_pong.html#top"><</a> <a href="mod_ping_suite.server_ping_pong.html#end">></a></td><td><font color="black">8.458s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">6</font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">server_ping</font></td><td><a href="mod_ping_suite.server_ping_pang.html">server_ping_pang</a></td><td><a href="mod_ping_suite.server_ping_pang.html#top"><</a> <a href="mod_ping_suite.server_ping_pang.html#end">></a></td><td><font color="black">13.460s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">server_ping</font></td><td><a href="mod_ping_suite.end_per_group.879551.45.html">end_per_group</a></td><td><a href="mod_ping_suite.end_per_group.879551.45.html#top"><</a> <a href="mod_ping_suite.end_per_group.879551.45.html#end">></a></td><td><font color="black">0.463s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">server_ping_kill</font></td><td><a href="mod_ping_suite.init_per_group.879551.533.html">init_per_group</a></td><td><a href="mod_ping_suite.init_per_group.879551.533.html#top"><</a> <a href="mod_ping_suite.init_per_group.879551.533.html#end">></a></td><td><font color="black">0.257s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">7</font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">server_ping_kill</font></td><td><a href="mod_ping_suite.ping.879551.815.html">ping</a></td><td><a href="mod_ping_suite.ping.879551.815.html#top"><</a> <a href="mod_ping_suite.ping.879551.815.html#end">></a></td><td><font color="black">0.457s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">8</font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">server_ping_kill</font></td><td><a href="mod_ping_suite.active.879552.298.html">active</a></td><td><a href="mod_ping_suite.active.879552.298.html#top"><</a> <a href="mod_ping_suite.active.879552.298.html#end">></a></td><td><font color="black">10.465s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">9</font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">server_ping_kill</font></td><td><a href="mod_ping_suite.active_keep_alive.879562.795.html">active_keep_alive</a></td><td><a href="mod_ping_suite.active_keep_alive.879562.795.html#top"><</a> <a href="mod_ping_suite.active_keep_alive.879562.795.html#end">></a></td><td><font color="black">10.462s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">10</font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">server_ping_kill</font></td><td><a href="mod_ping_suite.server_ping_pong.879573.285.html">server_ping_pong</a></td><td><a href="mod_ping_suite.server_ping_pong.879573.285.html#top"><</a> <a href="mod_ping_suite.server_ping_pong.879573.285.html#end">></a></td><td><font color="black">8.458s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">11</font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">server_ping_kill</font></td><td><a href="mod_ping_suite.server_ping_pang.879581.769.html">server_ping_pang</a></td><td><a href="mod_ping_suite.server_ping_pang.879581.769.html#top"><</a> <a href="mod_ping_suite.server_ping_pang.879581.769.html#end">></a></td><td><font color="black">13.259s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black">server_ping_kill</font></td><td><a href="mod_ping_suite.end_per_group.879595.53.html">end_per_group</a></td><td><a href="mod_ping_suite.end_per_group.879595.53.html#top"><</a> <a href="mod_ping_suite.end_per_group.879595.53.html#end">></a></td><td><font color="black">0.463s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">mod_ping_SUITE</font></td><td><font color="black"></font></td><td><a href="mod_ping_suite.end_per_suite.html">end_per_suite</a></td><td><a href="mod_ping_suite.end_per_suite.html#top"><</a> <a href="mod_ping_suite.end_per_suite.html#end">></a></td><td><font color="black">0.002s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+
+</tbody>
+<tfoot>
+<tr><td></td><td><b>TOTAL</b></td><td></td><td></td><td></td><td>89.586s</td><td><b>Ok</b></td><td>11 Ok, 0 Failed of 11</td></tr>
+</tfoot>
+
+</table>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Fri Mar 25 2016 04:18:25<!/date><br />
+</div>
+</center>
+</body>
+</html>
