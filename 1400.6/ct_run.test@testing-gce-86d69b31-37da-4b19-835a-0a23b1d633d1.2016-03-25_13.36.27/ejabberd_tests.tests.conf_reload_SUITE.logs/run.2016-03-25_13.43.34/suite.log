@@ -1,0 +1,158 @@
+=== Suite started at 2016-03-25 13:43:34
+=== Starting test, 4 test cases
+=cases         4
+=user          travis
+=host          testing-gce-86d69b31-37da-4b19-835a-0a23b1d633d1
+=hosts         testing-gce-86d69b31-37da-4b19-835a-0a23b1d633d1 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-25 13:43:34
+=case          conf_reload_SUITE:init_per_suite
+=logfile       conf_reload_suite.init_per_suite.html
+=started       2016-03-25 13:43:34
+=ended         2016-03-25 13:43:34
+=result        ok
+=elapsed       0.00419
+=case          conf_reload_SUITE:init_per_group
+=logfile       conf_reload_suite.init_per_group.html
+=group_props   [{name,xmpp_domain_local_reload}]
+=started       2016-03-25 13:43:34
+=ended         2016-03-25 13:43:35
+=result        ok
+=elapsed       0.254678
+=case          conf_reload_SUITE:domain_should_change
+=logfile       conf_reload_suite.domain_should_change.html
+=started       2016-03-25 13:43:35
+=ended         2016-03-25 13:43:41
+=result        ok
+=elapsed       0.412585
+=case          conf_reload_SUITE:user_should_be_registered_and_unregistered_via_ctl
+=logfile       conf_reload_suite.user_should_be_registered_and_unregistered_via_ctl.html
+=started       2016-03-25 13:43:41
+=ended         2016-03-25 13:43:48
+=result        failed: {{assertMatch_failed,
+                         [{module,conf_reload_SUITE},
+                          {line,108},
+                          {expression,
+                           "register_user_by_ejabberd_admin ( ? SAMPLE_USERNAME , NewHost )"},
+                          {pattern,"{ ok , _ }"},
+                          {value,
+                           {badrpc,
+                            {'EXIT',
+                             {noproc,
+                              {gen_server,call,
+                               [ejabberd_auth_ldap_sogndal,get_state]}}}}}]},
+                        [{conf_reload_SUITE,
+                          '-user_should_be_registered_and_unregistered_via_ctl/1-fun-1-',
+                          1,
+                          [{file,"conf_reload_SUITE.erl"},{line,108}]},
+                         {conf_reload_SUITE,
+                          user_should_be_registered_and_unregistered_via_ctl,
+                          1,
+                          [{file,"conf_reload_SUITE.erl"},{line,108}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{conf_reload_SUITE,
+                                                                      '-user_should_be_registered_and_unregistered_via_ctl/1-fun-1-',
+                                                                      108},
+                                                                     {conf_reload_SUITE,
+                                                                      user_should_be_registered_and_unregistered_via_ctl,
+                                                                      108},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 2 of 4 ***
+=case          conf_reload_SUITE:user_should_be_registered_and_unregistered_via_xmpp
+=logfile       conf_reload_suite.user_should_be_registered_and_unregistered_via_xmpp.html
+=started       2016-03-25 13:43:48
+=ended         2016-03-25 13:43:54
+=result        failed: {{badmatch,
+                         {error,failed_to_register,
+                          {xmlel,<<"iq">>,
+                           [{<<"from">>,<<"sogndal">>},
+                            {<<"id">>,<<"bfdd098cf925c3e64e0626eb306d8aa1">>},
+                            {<<"type">>,<<"error">>}],
+                           [{xmlel,<<"error">>,
+                             [{<<"code">>,<<"503">>},
+                              {<<"type">>,<<"cancel">>}],
+                             [{xmlel,<<"service-unavailable">>,
+                               [{<<"xmlns">>,
+                                 <<"urn:ietf:params:xml:ns:xmpp-stanzas">>}],
+                               []}]}]}}},
+                        [{escalus_users,create_user,2,
+                          [{file,"src/escalus_users.erl"},{line,252}]},
+                         {conf_reload_SUITE,create_user,2,
+                          [{file,"conf_reload_SUITE.erl"},{line,178}]},
+                         {conf_reload_SUITE,
+                          '-user_should_be_registered_and_unregistered_via_xmpp/1-fun-1-',
+                          1,
+                          [{file,"conf_reload_SUITE.erl"},{line,122}]},
+                         {conf_reload_SUITE,
+                          user_should_be_registered_and_unregistered_via_xmpp,
+                          1,
+                          [{file,"conf_reload_SUITE.erl"},{line,122}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{escalus_users,
+                                                                      create_user,
+                                                                      252},
+                                                                     {conf_reload_SUITE,
+                                                                      create_user,
+                                                                      178},
+                                                                     {conf_reload_SUITE,
+                                                                      '-user_should_be_registered_and_unregistered_via_xmpp/1-fun-1-',
+                                                                      122},
+                                                                     {conf_reload_SUITE,
+                                                                      user_should_be_registered_and_unregistered_via_xmpp,
+                                                                      122},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 3 of 4 ***
+=case          conf_reload_SUITE:user_should_be_disconnected_from_removed_domain
+=logfile       conf_reload_suite.user_should_be_disconnected_from_removed_domain.html
+=started       2016-03-25 13:43:54
+=ended         2016-03-25 13:44:01
+=result        ok
+=elapsed       0.388556
+=case          conf_reload_SUITE:end_per_group
+=logfile       conf_reload_suite.end_per_group.html
+=group_props   [{name,xmpp_domain_local_reload}]
+=started       2016-03-25 13:44:01
+=ended         2016-03-25 13:44:01
+=result        ok
+=elapsed       0.469794
+=group_time    26.354s
+=case          conf_reload_SUITE:end_per_suite
+=logfile       conf_reload_suite.end_per_suite.html
+=started       2016-03-25 13:44:01
+=ended         2016-03-25 13:44:01
+=result        ok
+=elapsed       0.001532
+=group_time    26.891s
+=== TEST COMPLETE, 2 ok, 2 failed of 4 test cases
+
+=finished      2016-03-25 13:44:01
+=failed        2
+=successful    2
+=user_skipped  0
+=auto_skipped  0
