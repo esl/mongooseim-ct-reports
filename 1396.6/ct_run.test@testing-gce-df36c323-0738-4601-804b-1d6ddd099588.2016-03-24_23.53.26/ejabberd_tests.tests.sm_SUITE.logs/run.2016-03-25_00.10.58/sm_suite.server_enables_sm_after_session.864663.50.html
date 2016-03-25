@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test sm_SUITE:server_enables_sm_after_session result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="sm_suite.src.html#server_enables_sm_after_session-1">sm_SUITE:server_enables_sm_after_session/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.21439.0>},
+     {{saved,ack_freq},unset},
+     {preset,"ldap_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-df36c323-0738-4601-804b-1d6ddd099588.2016-03-24_23.53.26/ejabberd_tests.tests.sm_SUITE.logs/run.2016-03-25_00.10.58/sm_suite.server_enables_sm_after_session.864663.50.html"},
+     {tc_group_properties,[{shuffle,{1388,19552,14526}},
+                           {repeat,2},
+                           {name,negotiation}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/sm_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-df36c323-0738-4601-804b-1d6ddd099588.2016-03-24_23.53.26/ejabberd_tests.tests.sm_SUITE.logs/run.2016-03-25_00.10.58/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-df36c323-0738-4601-804b-1d6ddd099588.2016-03-24_23.53.26"
+
+=== Started at 2016-03-25 00:11:03
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-03-25 00:11:03
+=== successfully completed test case
+=== returned value = {ok,{client,undefined,escalus_tcp,#Port<0.26661>,false,
+                                 false,<0.21451.0>,undefined},
+                         [{stream_management,true},
+                          {username,<<"alicE">>},
+                          {server,<<"localhost">>},
+                          {host,<<"localhost">>},
+                          {port,5222},
+                          {auth,{escalus_auth,auth_plain}},
+                          {wspath,undefined},
+                          {username,<<"alicE">>},
+                          {server,<<"localhost">>},
+                          {password,<<"matygrysa">>}],
+                         [{compression,[<<"zlib">>]},
+                          {starttls,true},
+                          {stream_management,true},
+                          {advanced_message_processing,true},
+                          {auth_plain,true},
+                          {auth_sasl_oauth,true}]}
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Fri Mar 25 2016 00:11:03<!/date><br />
+</div>
+</center>
+</body>
+</html>
