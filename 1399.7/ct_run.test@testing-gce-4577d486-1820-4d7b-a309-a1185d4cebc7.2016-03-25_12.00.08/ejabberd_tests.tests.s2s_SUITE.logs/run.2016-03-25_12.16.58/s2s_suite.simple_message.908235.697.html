@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test s2s_SUITE:simple_message result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="s2s_suite.src.html#simple_message-1">s2s_SUITE:simple_message/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.20520.0>},
+     {s2s_opts,{s2s_opts,"priv/ssl/fake_server.pem",optional,
+                         "priv/ssl/fake_server.pem",optional}},
+     {preset,"riak_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-4577d486-1820-4d7b-a309-a1185d4cebc7.2016-03-25_12.00.08/ejabberd_tests.tests.s2s_SUITE.logs/run.2016-03-25_12.16.58/s2s_suite.simple_message.908235.697.html"},
+     {tc_group_properties,[{name,both_tls_optional}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/s2s_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-4577d486-1820-4d7b-a309-a1185d4cebc7.2016-03-25_12.00.08/ejabberd_tests.tests.s2s_SUITE.logs/run.2016-03-25_12.16.58/log_private/"},
+     {escalus_users,[{alice2,[{username,<<"alice">>},
+                              {server,<<"fed1">>},
+                              {host,<<"localhost">>},
+                              {port,5242},
+                              {password,<<"makota2">>}]},
+                     {bob2,[{username,<<"bob">>},
+                            {server,<<109,105,99,104,97,197,130>>},
+                            {host,<<"localhost">>},
+                            {port,5242},
+                            {password,<<"makota3">>}]},
+                     {alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-4577d486-1820-4d7b-a309-a1185d4cebc7.2016-03-25_12.00.08"
+
+=== Started at 2016-03-25 12:17:15
+
+<br />
+<div class="ct_internal"><b>*** CT 2016-03-25 12:17:26.219 *** history.xml</b>
+<a href="log_private/simple_message.xml" type=[]>simple_message.xml</a>
+
+</div>
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-03-25 12:17:26.621 ***</b>
+escalus_client:wait_for_stanza failed on line 117
+Reason: timeout_when_waiting_for_stanza
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-03-25 12:17:26
+=== location [{escalus_client,wait_for_stanza,117},
+              {s2s_SUITE,'-simple_message/1-fun-0-',<a href="s2s_suite.src.html#172">172</a>},
+              {escalus_story,story,40},
+              {test_server,ts_tc,1429},
+              {test_server,run_test_case_eval1,1026},
+              {test_server,run_test_case_eval,968}]
+=== reason = timeout_when_waiting_for_stanza
+  in function  escalus_client:wait_for_stanza/2
+     called as escalus_client:wait_for_stanza({client,<<"alice@fed1/res1">>,
+                                               escalus_tcp,#Port<0.25829>,
+                                               false,false,<0.20534.0>,
+                                               [{event_manager,<0.20533.0>},
+                                                {server,<<"fed1">>},
+                                                {username,<<"alice">>},
+                                                {resource,<<"res1">>}]},
+                                              10000)
+  in call from s2s_SUITE:'-simple_message/1-fun-0-'/2 (s2s_SUITE.erl, line 172)
+  in call from escalus_story:story/3 (src/escalus_story.erl, line 40)
+  in call from test_server:ts_tc/3 (test_server.erl, line 1429)
+  in call from test_server:run_test_case_eval1/6 (test_server.erl, line 1026)
+  in call from test_server:run_test_case_eval/9 (test_server.erl, line 968)
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Fri Mar 25 2016 12:17:15<!/date><br />
+</div>
+</center>
+</body>
+</html>
