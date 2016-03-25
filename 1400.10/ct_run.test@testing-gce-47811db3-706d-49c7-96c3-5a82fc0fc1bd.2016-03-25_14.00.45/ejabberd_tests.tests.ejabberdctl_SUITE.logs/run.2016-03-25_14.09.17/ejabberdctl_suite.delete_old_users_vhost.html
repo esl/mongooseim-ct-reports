@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberdctl_SUITE:delete_old_users_vhost result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+=== <a href="ejabberdctl_suite.src.html#delete_old_users_vhost-1">source code for ejabberdctl_SUITE:delete_old_users_vhost/1</a>
+
+<pre>
+<a name="top"></a>
+=== Test case started with:
+ejabberdctl_SUITE:delete_old_users_vhost([{watchdog,<0.15468.0>},
+                                          {ctl_path,
+                                           "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1/bin/mongooseimctl"},
+                                          {ctl_auth_mods,
+                                           [ejabberd_auth_internal]},
+                                          {roster_template,
+                                           "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/roster.template"},
+                                          {preset,"internal_mnesia"},
+                                          {tc_logfile,
+                                           "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-47811db3-706d-49c7-96c3-5a82fc0fc1bd.2016-03-25_14.00.45/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-03-25_14.09.17/ejabberdctl_suite.delete_old_users_vhost.html"},
+                                          {tc_group_properties,
+                                           [{name,accounts},sequence]},
+                                          {tc_group_path,[]},
+                                          {data_dir,
+                                           "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/ejabberdctl_SUITE_data/"},
+                                          {priv_dir,
+                                           "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-47811db3-706d-49c7-96c3-5a82fc0fc1bd.2016-03-25_14.00.45/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-03-25_14.09.17/log_private/"},
+                                          {escalus_users,
+                                           [{alice,
+                                             [{username,<<"alicE">>},
+                                              {server,<<"localhost">>},
+                                              {password,<<"matygrysa">>}]},
+                                            {mike,
+                                             [{username,<<"mike">>},
+                                              {server,<<"localhost">>},
+                                              {password,<<"nicniema">>}]},
+                                            {bob,
+                                             [{username,<<"bOb">>},
+                                              {server,<<"localhost">>},
+                                              {password,<<"makrolika">>}]},
+                                            {kate,
+                                             [{username,<<"kate">>},
+                                              {server,<<"localhost">>},
+                                              {password,<<"makrowe;p">>}]}]}])
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-47811db3-706d-49c7-96c3-5a82fc0fc1bd.2016-03-25_14.00.45"
+
+=== Started at 2016-03-25 14:09:22
+
+<br />
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-03-25 14:09:22.543 ***</b>
+ejabberdctl_SUITE:delete_old_users_vhost failed on line 290
+Reason: {badmatch,{"Can't register user kate@localhost.bis at node m...}
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-03-25 14:09:22
+=== location [{ejabberdctl_SUITE,delete_old_users_vhost,<a href="ejabberdctl_suite.src.html#290">290</a>},
+              {test_server,ts_tc,1360},
+              {test_server,run_test_case_eval1,977},
+              {test_server,run_test_case_eval,925}]
+=== reason = no match of right hand side value {"Can't register user kate@localhost.bis at node mongooseim@localhost: not_allowed\n",
+                                                    1}
+  in function  ejabberdctl_SUITE:delete_old_users_vhost/1 (ejabberdctl_SUITE.erl, line 290)
+  in call from test_server:ts_tc/3 (test_server.erl, line 1360)
+  in call from test_server:run_test_case_eval1/6 (test_server.erl, line 977)
+  in call from test_server:run_test_case_eval/9 (test_server.erl, line 925)
+=== 
+*** delete_old_users_vhost failed.
+    Skipping all other cases in sequence.
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Fri Mar 25 2016 14:09:22<!/date><br />
+</div>
+</center>
+</body>
+</html>
