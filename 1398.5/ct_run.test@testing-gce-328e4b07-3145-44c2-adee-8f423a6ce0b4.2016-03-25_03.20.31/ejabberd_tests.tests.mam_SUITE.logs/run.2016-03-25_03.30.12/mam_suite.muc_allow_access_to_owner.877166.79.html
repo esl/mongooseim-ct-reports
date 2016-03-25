@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test mam_SUITE:muc_allow_access_to_owner result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="mam_suite.src.html#muc_allow_access_to_owner-1">mam_SUITE:muc_allow_access_to_owner/1</a> (click for source code)
+
+=== Config value:
+
+    [{basic_group,muc04},
+     {configuration,odbc_mnesia_muc_cache},
+     {props,[{data_form,true},
+             {result_format,iq_fin},
+             {mam_ns,<<"urn:xmpp:mam:1">>}]},
+     {with_rsm,true},
+     {watchdog,<0.30876.1>},
+     {old_mam_shaper,{{maxrate,1},{maxrate,1000},{maxrate,50000}}},
+     {escalus_user_db,{module,escalus_ejabberd}},
+     {preset,"pgsql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-328e4b07-3145-44c2-adee-8f423a6ce0b4.2016-03-25_03.20.31/ejabberd_tests.tests.mam_SUITE.logs/run.2016-03-25_03.30.12/mam_suite.muc_allow_access_to_owner.877166.79.html"},
+     {tc_group_properties,[{name,odbc_mnesia_muc_cache_muc04}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/mam_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-328e4b07-3145-44c2-adee-8f423a6ce0b4.2016-03-25_03.20.31/ejabberd_tests.tests.mam_SUITE.logs/run.2016-03-25_03.30.12/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]},
+                     {kate,[{username,<<"kate">>},
+                            {server,<<"localhost">>},
+                            {password,<<"makrowe;p">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-328e4b07-3145-44c2-adee-8f423a6ce0b4.2016-03-25_03.20.31"
+
+=== Started at 2016-03-25 03:39:26
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-03-25 03:39:26
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.30963.1>},
+                      {tc_name,muc_allow_access_to_owner},
+                      {escalus_cleaner,<0.30962.1>},
+                      {nick,<<"alicesnick">>},
+                      {room,<<"alicesroom">>},
+                      {watchdog,<0.30960.1>},
+                      {basic_group,muc04},
+                      {configuration,odbc_mnesia_muc_cache},
+                      {props,
+                          [{data_form,true},
+                           {result_format,iq_fin},
+                           {mam_ns,<<"urn:xmpp:mam:1">>}]},
+                      {with_rsm,true},
+                      {old_mam_shaper,
+                          {{maxrate,1},{maxrate,1000},{maxrate,50000}}},
+                      {escalus_user_db,{module,escalus_ejabberd}},
+                      {preset,"pgsql_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-328e4b07-3145-44c2-adee-8f423a6ce0b4.2016-03-25_03.20.31/ejabberd_tests.tests.mam_SUITE.logs/run.2016-03-25_03.30.12/mam_suite.muc_allow_access_to_owner.877166.79.html"},
+                      {tc_group_properties,
+                          [{name,odbc_mnesia_muc_cache_muc04}]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/mam_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-328e4b07-3145-44c2-adee-8f423a6ce0b4.2016-03-25_03.20.31/ejabberd_tests.tests.mam_SUITE.logs/run.2016-03-25_03.30.12/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                           {bob,
+                               [{username,<<"bOb">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]},
+                           {kate,
+                               [{username,<<"kate">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrowe;p">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Fri Mar 25 2016 03:39:26<!/date><br />
+</div>
+</center>
+</body>
+</html>
