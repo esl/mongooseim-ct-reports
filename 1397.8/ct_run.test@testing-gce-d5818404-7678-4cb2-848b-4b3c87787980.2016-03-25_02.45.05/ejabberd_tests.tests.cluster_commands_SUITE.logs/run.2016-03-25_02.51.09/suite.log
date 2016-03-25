@@ -1,0 +1,174 @@
+=== Suite started at 2016-03-25 02:51:09
+=== Starting test, 6 test cases
+=cases         6
+=user          travis
+=host          testing-gce-d5818404-7678-4cb2-848b-4b3c87787980
+=hosts         testing-gce-d5818404-7678-4cb2-848b-4b3c87787980 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-25 02:51:09
+=case          cluster_commands_SUITE:init_per_suite
+=logfile       cluster_commands_suite.init_per_suite.html
+=started       2016-03-25 02:51:09
+=ended         2016-03-25 02:51:09
+=result        ok
+=elapsed       0.242376
+=case          cluster_commands_SUITE:init_per_group
+=logfile       cluster_commands_suite.init_per_group.html
+=group_props   [{name,clustered}]
+=started       2016-03-25 02:51:09
+=ended         2016-03-25 02:51:15
+=result        ok
+=elapsed       6.395807
+=case          cluster_commands_SUITE:one_to_one_message
+=logfile       cluster_commands_suite.one_to_one_message.html
+=started       2016-03-25 02:51:15
+=ended         2016-03-25 02:51:16
+=result        ok
+=elapsed       0.927047
+=case          cluster_commands_SUITE:end_per_group
+=logfile       cluster_commands_suite.end_per_group.html
+=group_props   [{name,clustered}]
+=started       2016-03-25 02:51:16
+=ended         2016-03-25 02:51:23
+=result        ok
+=elapsed       6.78348
+=group_time    7.373s
+=case          cluster_commands_SUITE:init_per_group
+=logfile       cluster_commands_suite.init_per_group.874283.752.html
+=group_props   [{name,ejabberdctl}]
+=started       2016-03-25 02:51:23
+=ended         2016-03-25 02:51:30
+=result        ok
+=elapsed       6.405323
+=case          cluster_commands_SUITE:set_master_test
+=logfile       cluster_commands_suite.set_master_test.html
+=started       2016-03-25 02:51:30
+=ended         2016-03-25 02:51:30
+=result        ok
+=elapsed       0.52586
+=case          cluster_commands_SUITE:end_per_group
+=logfile       cluster_commands_suite.end_per_group.874290.736.html
+=group_props   [{name,ejabberdctl}]
+=started       2016-03-25 02:51:30
+=ended         2016-03-25 02:51:37
+=result        ok
+=elapsed       6.8117
+=group_time    6.985s
+=case          cluster_commands_SUITE:init_per_group
+=logfile       cluster_commands_suite.init_per_group.874297.574.html
+=group_props   [{name,clustering}]
+=started       2016-03-25 02:51:37
+=ended         2016-03-25 02:51:38
+=result        ok
+=elapsed       0.502343
+=case          cluster_commands_SUITE:join_successful
+=logfile       cluster_commands_suite.join_successful.html
+=started       2016-03-25 02:51:38
+=ended         2016-03-25 02:51:38
+=result        failed: {{assertEqual_failed,
+                            [{module,distributed_helper},
+                             {line,69},
+                             {expression,"lists : member ( Element , List )"},
+                             {expected,true},
+                             {value,false}]},
+                        [{distributed_helper,'-verify_result/1-fun-0-',3,
+                             [{file,"distributed_helper.erl"},{line,69}]},
+                         {distributed_helper,'-verify_result/1-lc$^0/1-0-',1,
+                             [{file,"distributed_helper.erl"},{line,69}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                         '-verify_result/1-fun-0-',
+                                                                         69},
+                                                                        {distributed_helper,
+                                                                         '-verify_result/1-lc$^0/1-0-',
+                                                                         69},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 3 of 6 ***
+=case          cluster_commands_SUITE:leave_successful
+=logfile       cluster_commands_suite.leave_successful.html
+=started       2016-03-25 02:51:38
+=ended         2016-03-25 02:51:38
+=result        ok
+=elapsed       0.115788
+=case          cluster_commands_SUITE:join_unsuccessful
+=logfile       cluster_commands_suite.join_unsuccessful.html
+=started       2016-03-25 02:51:38
+=ended         2016-03-25 02:51:38
+=result        ok
+=elapsed       0.007435
+=case          cluster_commands_SUITE:leave_unsuccessful
+=logfile       cluster_commands_suite.leave_unsuccessful.html
+=started       2016-03-25 02:51:38
+=ended         2016-03-25 02:51:38
+=result        failed: {{assertEqual_failed,
+                            [{module,distributed_helper},
+                             {line,69},
+                             {expression,"lists : member ( Element , List )"},
+                             {expected,true},
+                             {value,false}]},
+                        [{distributed_helper,'-verify_result/1-fun-0-',3,
+                             [{file,"distributed_helper.erl"},{line,69}]},
+                         {distributed_helper,'-verify_result/1-lc$^0/1-0-',1,
+                             [{file,"distributed_helper.erl"},{line,69}]},
+                         {cluster_commands_SUITE,leave_unsuccessful,1,
+                             [{file,"cluster_commands_SUITE.erl"},{line,169}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                         '-verify_result/1-fun-0-',
+                                                                         69},
+                                                                        {distributed_helper,
+                                                                         '-verify_result/1-lc$^0/1-0-',
+                                                                         69},
+                                                                        {cluster_commands_SUITE,
+                                                                         leave_unsuccessful,
+                                                                         169},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 6 of 6 ***
+=case          cluster_commands_SUITE:end_per_group
+=logfile       cluster_commands_suite.end_per_group.874298.594.html
+=group_props   [{name,clustering}]
+=started       2016-03-25 02:51:38
+=ended         2016-03-25 02:51:44
+=result        ok
+=elapsed       5.851997
+=group_time    1.020s
+=case          cluster_commands_SUITE:end_per_suite
+=logfile       cluster_commands_suite.end_per_suite.html
+=started       2016-03-25 02:51:44
+=ended         2016-03-25 02:51:50
+=result        ok
+=elapsed       6.097415
+=group_time    35.180s
+=== TEST COMPLETE, 4 ok, 2 failed of 6 test cases
+
+=finished      2016-03-25 02:51:50
+=failed        2
+=successful    4
+=user_skipped  0
+=auto_skipped  0
