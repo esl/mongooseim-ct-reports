@@ -1,0 +1,220 @@
+=== Suite started at 2016-03-25 12:16:58
+=== Starting test, 14 test cases
+=cases         14
+=user          travis
+=host          testing-gce-6de9592f-aaa5-4a43-8c92-c2164fad8305
+=hosts         testing-gce-6de9592f-aaa5-4a43-8c92-c2164fad8305 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-25 12:16:58
+=case          component_SUITE:init_per_suite
+=logfile       component_suite.init_per_suite.html
+=started       2016-03-25 12:16:58
+=ended         2016-03-25 12:16:58
+=result        ok
+=elapsed       0.006722
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.html
+=group_props   [{name,xep0114_tcp}]
+=started       2016-03-25 12:16:58
+=ended         2016-03-25 12:16:59
+=result        ok
+=elapsed       0.503026
+=case          component_SUITE:register_one_component
+=logfile       component_suite.register_one_component.html
+=started       2016-03-25 12:16:59
+=ended         2016-03-25 12:16:59
+=result        ok
+=elapsed       0.463533
+=case          component_SUITE:register_two_components
+=logfile       component_suite.register_two_components.html
+=started       2016-03-25 12:16:59
+=ended         2016-03-25 12:17:00
+=result        ok
+=elapsed       0.929868
+=case          component_SUITE:try_registering_with_wrong_password
+=logfile       component_suite.try_registering_with_wrong_password.html
+=started       2016-03-25 12:17:00
+=ended         2016-03-25 12:17:00
+=result        ok
+=elapsed       0.003511
+=case          component_SUITE:try_registering_component_twice
+=logfile       component_suite.try_registering_component_twice.html
+=started       2016-03-25 12:17:00
+=ended         2016-03-25 12:17:00
+=result        ok
+=elapsed       0.006905
+=case          component_SUITE:try_registering_existing_host
+=logfile       component_suite.try_registering_existing_host.html
+=started       2016-03-25 12:17:00
+=ended         2016-03-25 12:17:00
+=result        ok
+=elapsed       0.00397
+=case          component_SUITE:disco_components
+=logfile       component_suite.disco_components.html
+=started       2016-03-25 12:17:00
+=ended         2016-03-25 12:17:01
+=result        ok
+=elapsed       0.474398
+=case          component_SUITE:end_per_group
+=logfile       component_suite.end_per_group.html
+=group_props   [{name,xep0114_tcp}]
+=started       2016-03-25 12:17:01
+=ended         2016-03-25 12:17:02
+=result        ok
+=elapsed       0.922763
+=group_time    2.573s
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.908222.300.html
+=group_props   [{name,xep0114_ws}]
+=started       2016-03-25 12:17:02
+=ended         2016-03-25 12:17:02
+=result        ok
+=elapsed       0.502681
+=case          component_SUITE:register_one_component
+=logfile       component_suite.register_one_component.908222.830.html
+=started       2016-03-25 12:17:02
+=ended         2016-03-25 12:17:03
+=result        ok
+=elapsed       0.469639
+=case          component_SUITE:register_two_components
+=logfile       component_suite.register_two_components.908223.326.html
+=started       2016-03-25 12:17:03
+=ended         2016-03-25 12:17:04
+=result        ok
+=elapsed       0.93076
+=case          component_SUITE:try_registering_with_wrong_password
+=logfile       component_suite.try_registering_with_wrong_password.908224.284.html
+=started       2016-03-25 12:17:04
+=ended         2016-03-25 12:17:04
+=result        ok
+=elapsed       0.003842
+=case          component_SUITE:try_registering_component_twice
+=logfile       component_suite.try_registering_component_twice.908224.314.html
+=started       2016-03-25 12:17:04
+=ended         2016-03-25 12:17:04
+=result        ok
+=elapsed       0.008267
+=case          component_SUITE:try_registering_existing_host
+=logfile       component_suite.try_registering_existing_host.908224.348.html
+=started       2016-03-25 12:17:04
+=ended         2016-03-25 12:17:04
+=result        ok
+=elapsed       0.003928
+=case          component_SUITE:disco_components
+=logfile       component_suite.disco_components.908224.378.html
+=started       2016-03-25 12:17:04
+=ended         2016-03-25 12:17:04
+=result        ok
+=elapsed       0.467144
+=case          component_SUITE:end_per_group
+=logfile       component_suite.end_per_group.908224.871.html
+=group_props   [{name,xep0114_ws}]
+=started       2016-03-25 12:17:04
+=ended         2016-03-25 12:17:05
+=result        ok
+=elapsed       0.922485
+=group_time    2.571s
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.908225.820.html
+=group_props   [{name,subdomain}]
+=started       2016-03-25 12:17:05
+=ended         2016-03-25 12:17:06
+=result        failed: {{badmatch,
+                         {error,failed_to_register,
+                          {xmlel,<<"iq">>,
+                           [{<<"from">>,<<"sogndal">>},
+                            {<<"id">>,<<"8369c4401d94a74754274302aeafc625">>},
+                            {<<"type">>,<<"error">>}],
+                           [{xmlel,<<"error">>,
+                             [{<<"code">>,<<"503">>},
+                              {<<"type">>,<<"cancel">>}],
+                             [{xmlel,<<"service-unavailable">>,
+                               [{<<"xmlns">>,
+                                 <<"urn:ietf:params:xml:ns:xmpp-stanzas">>}],
+                               []}]}]}}},
+                        [{escalus_users,create_user,2,
+                          [{file,"src/escalus_users.erl"},{line,252}]},
+                         {escalus_users,
+                          '-create_users_via_xmpp/2-lc$^0/1-0-',2,
+                          [{file,"src/escalus_users.erl"},{line,99}]},
+                         {escalus_users,
+                          '-create_users_via_xmpp/2-lc$^0/1-0-',2,
+                          [{file,"src/escalus_users.erl"},{line,99}]},
+                         {escalus_users,create_users_via_xmpp,2,
+                          [{file,"src/escalus_users.erl"},{line,99}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1099}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{escalus_users,
+                                                                      create_user,
+                                                                      252},
+                                                                     {escalus_users,
+                                                                      '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                                                      99},
+                                                                     {escalus_users,
+                                                                      '-create_users_via_xmpp/2-lc$^0/1-0-',
+                                                                      99},
+                                                                     {escalus_users,
+                                                                      create_users_via_xmpp,
+                                                                      99},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1099},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED {component_SUITE,init_per_group} ***
+=== 
+=case          component_SUITE:register_subdomain
+=group_props   [{name,"subdomain"}]
+=started       2016-03-25 12:17:06
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #13 {component_SUITE,register_subdomain} ***
+=== 
+=case          component_SUITE:end_per_group
+=group_props   [{name,"subdomain"}]
+=started       2016-03-25 12:17:06
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {component_SUITE,end_per_group} ***
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.908226.414.html
+=group_props   [{name,distributed}]
+=started       2016-03-25 12:17:06
+=ended         2016-03-25 12:17:13
+=result        ok
+=elapsed       6.914569
+=case          component_SUITE:register_in_cluster
+=logfile       component_suite.register_in_cluster.html
+=started       2016-03-25 12:17:13
+=ended         2016-03-25 12:17:14
+=result        ok
+=elapsed       0.969316
+=case          component_SUITE:end_per_group
+=logfile       component_suite.end_per_group.908234.349.html
+=group_props   [{name,distributed}]
+=started       2016-03-25 12:17:14
+=ended         2016-03-25 12:17:21
+=result        ok
+=elapsed       7.500098
+=group_time    7.935s
+=case          component_SUITE:end_per_suite
+=logfile       component_suite.end_per_suite.html
+=started       2016-03-25 12:17:21
+=ended         2016-03-25 12:17:21
+=result        ok
+=elapsed       0.002359
+=group_time    23.152s
+=== TEST COMPLETE, 13 ok, 0 failed, 1 skipped of 14 test cases
+
+=finished      2016-03-25 12:17:21
+=failed        0
+=successful    13
+=user_skipped  0
+=auto_skipped  1
