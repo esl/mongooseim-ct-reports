@@ -1,0 +1,84 @@
+=== Suite started at 2016-03-25 13:20:30
+=== Starting test (with repeated test cases)
+=cases         unknown
+=user          travis
+=host          testing-gce-4819596a-c570-4fe0-93e2-273cb1fedf6a
+=hosts         testing-gce-4819596a-c570-4fe0-93e2-273cb1fedf6a 
+=emulator_vsn  5.10.4
+=emulator      beam
+=otp_release   R16B03
+=started       2016-03-25 13:20:30
+=case          users_api_SUITE:init_per_suite
+=logfile       users_api_suite.init_per_suite.html
+=started       2016-03-25 13:20:30
+=ended         2016-03-25 13:20:30
+=result        ok
+=elapsed       0.001879
+=case          users_api_SUITE:init_per_group
+=logfile       users_api_suite.init_per_group.html
+=group_props   [{name,transaction},{repeat_until_any_fail,10}]
+=started       2016-03-25 13:20:30
+=ended         2016-03-25 13:20:31
+=result        ok
+=elapsed       1.0e-6
+=case          users_api_SUITE:user_transaction
+=logfile       users_api_suite.user_transaction.html
+=started       2016-03-25 13:20:31
+=ended         2016-03-25 13:20:31
+=result        failed: {test_case_failed,katt_transactions_failed}, [{users_api_SUITE,
+                                                                      user_transaction,
+                                                                      63},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1360},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      977},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      925}]
+=== *** FAILED test case 1 ***
+=case          users_api_SUITE:end_per_group
+=logfile       users_api_suite.end_per_group.html
+=group_props   [{name,transaction},{repeat_until_any_fail,10}]
+=started       2016-03-25 13:20:31
+=ended         2016-03-25 13:20:31
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.066s
+=== Stopping repeat operation {repeat_until_any_fail,10}
+=case          users_api_SUITE:init_per_group
+=logfile       users_api_suite.init_per_group.912031.80.html
+=group_props   [{name,negative}]
+=started       2016-03-25 13:20:31
+=ended         2016-03-25 13:20:31
+=result        ok
+=elapsed       1.0e-6
+=case          users_api_SUITE:negative_calls
+=logfile       users_api_suite.negative_calls.html
+=started       2016-03-25 13:20:31
+=ended         2016-03-25 13:20:31
+=result        ok
+=elapsed       0.005434
+=case          users_api_SUITE:end_per_group
+=logfile       users_api_suite.end_per_group.912031.136.html
+=group_props   [{name,negative}]
+=started       2016-03-25 13:20:31
+=ended         2016-03-25 13:20:31
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.056s
+=case          users_api_SUITE:end_per_suite
+=logfile       users_api_suite.end_per_suite.html
+=started       2016-03-25 13:20:31
+=ended         2016-03-25 13:20:31
+=result        ok
+=elapsed       0.001174
+=group_time    0.257s
+=== TEST COMPLETE, 1 ok, 1 failed of 2 test cases
+
+=finished      2016-03-25 13:20:31
+=failed        1
+=successful    1
+=user_skipped  0
+=auto_skipped  0
