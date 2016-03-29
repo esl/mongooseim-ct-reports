@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberdctl_SUITE:end_per_group result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Config function: <a href="ejabberdctl_suite.src.html#end_per_group-1">ejabberdctl_SUITE:end_per_group/2</a> (click for source code)
+
+=== Group properties: [{name,basic},sequence]
+
+=== Config value:
+
+    [{watchdog,<0.15703.0>},
+     {ctl_path,"/home/travis/build/esl/MongooseIM/dev/mongooseim_node1/bin/mongooseimctl"},
+     {ctl_auth_mods,[ejabberd_auth_internal,ejabberd_auth_anonymous,
+                     ejabberd_auth_internal]},
+     {roster_template,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/roster.template"},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-f0748975-91d3-472c-b5a2-db62fc010a1b.2016-03-29_13.32.44/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-03-29_13.41.02/ejabberdctl_suite.end_per_group.258913.825.html"},
+     {tc_group_properties,[{name,basic},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/ejabberdctl_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-f0748975-91d3-472c-b5a2-db62fc010a1b.2016-03-29_13.32.44/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-03-29_13.41.02/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {mike,[{username,<<"mike">>},
+                            {server,<<"localhost">>},
+                            {password,<<"nicniema">>}]},
+                     {bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]},
+                     {kate,[{username,<<"kate">>},
+                            {server,<<"localhost">>},
+                            {password,<<"makrowe;p">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-f0748975-91d3-472c-b5a2-db62fc010a1b.2016-03-29_13.32.44"
+
+=== Started at 2016-03-29 13:41:53
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-03-29 13:41:53
+=== successfully completed test case
+=== returned value = [{watchdog,<0.15784.0>},
+                      {tc_group_result,
+                          [{ok,[{ejabberdctl_SUITE,simple_register},
+                                {ejabberdctl_SUITE,simple_unregister},
+                                {ejabberdctl_SUITE,register_twice},
+                                {ejabberdctl_SUITE,backup_restore_mnesia},
+                                {ejabberdctl_SUITE,restore_mnesia_wrong},
+                                {ejabberdctl_SUITE,dump_and_load},
+                                {ejabberdctl_SUITE,load_mnesia_wrong},
+                                {ejabberdctl_SUITE,dump_table},
+                                {ejabberdctl_SUITE,get_loglevel},
+                                {ejabberdctl_SUITE,remove_old_messages_test},
+                                {ejabberdctl_SUITE,
+                                    remove_expired_messages_test}]},
+                           {skipped,[]},
+                           {failed,[]}]},
+                      {ctl_path,
+                          "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1/bin/mongooseimctl"},
+                      {ctl_auth_mods,
+                          [ejabberd_auth_internal,ejabberd_auth_anonymous,
+                           ejabberd_auth_internal]},
+                      {roster_template,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/roster.template"},
+                      {preset,"internal_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-f0748975-91d3-472c-b5a2-db62fc010a1b.2016-03-29_13.32.44/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-03-29_13.41.02/ejabberdctl_suite.end_per_group.258913.825.html"},
+                      {tc_group_properties,[{name,basic},sequence]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/ejabberdctl_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-f0748975-91d3-472c-b5a2-db62fc010a1b.2016-03-29_13.32.44/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-03-29_13.41.02/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                           {mike,
+                               [{username,<<"mike">>},
+                                {server,<<"localhost">>},
+                                {password,<<"nicniema">>}]},
+                           {bob,
+                               [{username,<<"bOb">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]},
+                           {kate,
+                               [{username,<<"kate">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrowe;p">>}]}]}]
+=== 
+=== Total execution time of group: 3.608s
+
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Tue Mar 29 2016 13:41:53<!/date><br />
+</div>
+</center>
+</body>
+</html>
