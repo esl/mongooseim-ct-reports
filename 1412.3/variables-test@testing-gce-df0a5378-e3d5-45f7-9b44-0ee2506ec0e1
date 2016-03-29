@@ -1,0 +1,4 @@
+{config,[{ct_config_plain,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/test.config"}]}.
+{event_handler,[]}.
+{ct_hooks,[ct_tty_hook]}.
+{enable_builtin_hooks,true}.
