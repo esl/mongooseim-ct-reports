@@ -1,0 +1,22 @@
+=== Suite started at 2016-03-29 19:48:02
+=== Starting test, 0 test cases
+=cases         0
+=user          travis
+=host          testing-gce-e45afb41-bd93-4726-9668-31075ce012ea
+=hosts         testing-gce-e45afb41-bd93-4726-9668-31075ce012ea 
+=emulator_vsn  5.10.4
+=emulator      beam
+=otp_release   R16B03
+=started       2016-03-29 19:48:02
+=== 
+=case          mam_SUITE:all
+=started       2016-03-29 19:48:02
+=result        skipped: [require_odbc]
+=== *** Skipping {mam_SUITE,all} ***
+=== TEST COMPLETE, 0 ok, 0 failed of 0 test cases
+
+=finished      2016-03-29 19:48:02
+=failed        0
+=successful    0
+=user_skipped  0
+=auto_skipped  0
