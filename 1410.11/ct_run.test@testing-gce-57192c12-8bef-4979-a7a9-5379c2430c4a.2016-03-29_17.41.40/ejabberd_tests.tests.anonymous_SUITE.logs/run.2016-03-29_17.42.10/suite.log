@@ -1,0 +1,51 @@
+=== Suite started at 2016-03-29 17:42:10
+=== Starting test, 1 test cases
+=cases         1
+=user          travis
+=host          testing-gce-57192c12-8bef-4979-a7a9-5379c2430c4a
+=hosts         testing-gce-57192c12-8bef-4979-a7a9-5379c2430c4a 
+=emulator_vsn  5.10.4
+=emulator      beam
+=otp_release   R16B03
+=started       2016-03-29 17:42:10
+=case          anonymous_SUITE:init_per_suite
+=logfile       anonymous_suite.init_per_suite.html
+=started       2016-03-29 17:42:10
+=ended         2016-03-29 17:42:10
+=result        ok
+=elapsed       0.007438
+=case          anonymous_SUITE:init_per_group
+=logfile       anonymous_suite.init_per_group.html
+=group_props   [{name,anonymous},sequence]
+=started       2016-03-29 17:42:10
+=ended         2016-03-29 17:42:11
+=result        ok
+=elapsed       0.250387
+=case          anonymous_SUITE:messages_story
+=logfile       anonymous_suite.messages_story.html
+=started       2016-03-29 17:42:11
+=ended         2016-03-29 17:42:12
+=result        ok
+=elapsed       0.914303
+=case          anonymous_SUITE:end_per_group
+=logfile       anonymous_suite.end_per_group.html
+=group_props   [{name,anonymous},sequence]
+=started       2016-03-29 17:42:12
+=ended         2016-03-29 17:42:12
+=result        ok
+=elapsed       0.462778
+=group_time    1.220s
+=case          anonymous_SUITE:end_per_suite
+=logfile       anonymous_suite.end_per_suite.html
+=started       2016-03-29 17:42:12
+=ended         2016-03-29 17:42:12
+=result        ok
+=elapsed       0.001942
+=group_time    1.750s
+=== TEST COMPLETE, 1 ok, 0 failed of 1 test cases
+
+=finished      2016-03-29 17:42:12
+=failed        0
+=successful    1
+=user_skipped  0
+=auto_skipped  0
