@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test mam_SUITE:init_per_group result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Config function: <a href="mam_suite.src.html#init_per_group-1">mam_SUITE:init_per_group/2</a> (click for source code)
+
+=== Group properties: [{name,odbc_mnesia_muc_cache_muc_rsm04}]
+
+=== Config value:
+
+    [{old_mam_shaper,{{maxrate,1},{maxrate,1000},{maxrate,50000}}},
+     {escalus_user_db,{module,escalus_ejabberd}},
+     {watchdog,<0.16594.0>},
+     {preset,"odbc_pgsql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-cb1fa70a-2d9f-4b1d-8f72-b0a73970ed36.2016-03-30_06.31.10/ejabberd_tests.tests.mam_SUITE.logs/run.2016-03-30_06.40.29/mam_suite.init_per_group.320627.520.html"},
+     {tc_group_properties,[{name,odbc_mnesia_muc_cache_muc_rsm04}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/mam_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-cb1fa70a-2d9f-4b1d-8f72-b0a73970ed36.2016-03-30_06.31.10/ejabberd_tests.tests.mam_SUITE.logs/run.2016-03-30_06.40.29/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-cb1fa70a-2d9f-4b1d-8f72-b0a73970ed36.2016-03-30_06.31.10"
+
+=== Started at 2016-03-30 06:50:27
+
+<br />
+
+<div class="default"><b>*** User 2016-03-30 06:50:27.592 ***</b>
+Init per group odbc_mnesia_muc_cache_muc_rsm04; configuration odbc_mnesia_muc_cache; basic group muc_rsm04
+</div>
+Could not find element props in Config.
+
+<div class="ct_internal"><b>*** CT 2016-03-30 06:50:27.823 *** history.xml</b>
+<a href="log_private/pre_rsm.xml" type=[]>pre_rsm.xml</a>
+
+</div>
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-03-30 06:50:27.824 ***</b>
+mam_SUITE:init_per_group failed
+Reason: {badmatch,{error,{connection_step_failed,{{escalus_session,a...}
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-03-30 06:50:27
+=== location [{escalus_story,'-start_ready_clients/2-fun-0-',94},
+              {lists,foldl,1261},
+              {escalus_story,start_ready_clients,91},
+              {lists,flatmap,1248},
+              {escalus_story,story,37},
+              {mam_SUITE,send_muc_rsm_messages,<a href="mam_suite.src.html#2564">2564</a>},
+              {mam_SUITE,init_state,<a href="mam_suite.src.html#660">660</a>},
+              {mam_SUITE,init_state,<a href="mam_suite.src.html#655">655</a>}]
+=== reason = no match of right hand side value 
+                 {error,
+                     {connection_step_failed,
+                         {{escalus_session,authenticate},
+                          {client,undefined,escalus_tcp,#Port<0.27407>,false,
+                              false,<0.32322.1>,
+                              [{event_manager,<0.32321.1>},
+                               {server,<<"localhost">>},
+                               {username,<<"alicE">>},
+                               {resource,<<"res1">>}]},
+                          [{event_client,
+                               [{event_manager,<0.32321.1>},
+                                {server,<<"localhost">>},
+                                {username,<<"alicE">>},
+                                {resource,<<"res1">>}]},
+                           {resource,<<"res1">>},
+                           {username,<<"alicE">>},
+                           {server,<<"localhost">>},
+                           {host,<<"localhost">>},
+                           {port,5222},
+                           {auth,{escalus_auth,auth_plain}},
+                           {wspath,undefined},
+                           {username,<<"alicE">>},
+                           {server,<<"localhost">>},
+                           {password,<<"matygrysa">>}],
+                          [{compression,[<<"zlib">>]},
+                           {starttls,true},
+                           {stream_management,true},
+                           {advanced_message_processing,true},
+                           {auth_plain,true},
+                           {auth_sasl_oauth,true},
+                           {auth_digest_md5,true},
+                           {auth_sasl_scram_sha1,true}]},
+                         {auth_failed,<<"alicE">>,
+                             {xmlel,<<"failure">>,
+                                 [{<<"xmlns">>,
+                                   <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                                 [{xmlel,<<"not-authorized">>,[],[]}]}}}}
+  in function  escalus_story:'-start_ready_clients/2-fun-0-'/3 (src/escalus_story.erl, line 94)
+  in call from lists:foldl/3 (lists.erl, line 1261)
+  in call from escalus_story:start_ready_clients/2 (src/escalus_story.erl, line 91)
+  in call from lists:flatmap/2 (lists.erl, line 1248)
+  in call from escalus_story:story/3 (src/escalus_story.erl, line 37)
+  in call from mam_SUITE:send_muc_rsm_messages/1 (mam_SUITE.erl, line 2564)
+  in call from mam_SUITE:init_state/3 (mam_SUITE.erl, line 660)
+  in call from mam_SUITE:init_state/3 (mam_SUITE.erl, line 655)
+=== 
+*** init_per_group failed.
+    Skipping all cases.
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Mar 30 2016 06:50:27<!/date><br />
+</div>
+</center>
+</body>
+</html>
