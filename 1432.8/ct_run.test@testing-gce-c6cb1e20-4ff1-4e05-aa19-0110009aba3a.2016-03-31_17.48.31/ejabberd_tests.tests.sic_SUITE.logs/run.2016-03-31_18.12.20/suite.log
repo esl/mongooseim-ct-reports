@@ -1,0 +1,57 @@
+=== Suite started at 2016-03-31 18:12:20
+=== Starting test, 2 test cases
+=cases         2
+=user          travis
+=host          testing-gce-c6cb1e20-4ff1-4e05-aa19-0110009aba3a
+=hosts         testing-gce-c6cb1e20-4ff1-4e05-aa19-0110009aba3a 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-03-31 18:12:20
+=case          sic_SUITE:init_per_suite
+=logfile       sic_suite.init_per_suite.html
+=started       2016-03-31 18:12:20
+=ended         2016-03-31 18:12:20
+=result        ok
+=elapsed       0.528985
+=case          sic_SUITE:init_per_group
+=logfile       sic_suite.init_per_group.html
+=group_props   [{name,mod_sic_tests},sequence]
+=started       2016-03-31 18:12:20
+=ended         2016-03-31 18:12:20
+=result        ok
+=elapsed       1.0e-6
+=case          sic_SUITE:user_sic
+=logfile       sic_suite.user_sic.html
+=started       2016-03-31 18:12:20
+=ended         2016-03-31 18:12:21
+=result        ok
+=elapsed       0.468911
+=case          sic_SUITE:forbidden_user_sic
+=logfile       sic_suite.forbidden_user_sic.html
+=started       2016-03-31 18:12:21
+=ended         2016-03-31 18:12:22
+=result        ok
+=elapsed       0.940802
+=case          sic_SUITE:end_per_group
+=logfile       sic_suite.end_per_group.html
+=group_props   [{name,mod_sic_tests},sequence]
+=started       2016-03-31 18:12:22
+=ended         2016-03-31 18:12:22
+=result        ok
+=elapsed       1.0e-6
+=group_time    1.491s
+=case          sic_SUITE:end_per_suite
+=logfile       sic_suite.end_per_suite.html
+=started       2016-03-31 18:12:22
+=ended         2016-03-31 18:12:23
+=result        ok
+=elapsed       0.925026
+=group_time    2.175s
+=== TEST COMPLETE, 2 ok, 0 failed of 2 test cases
+
+=finished      2016-03-31 18:12:23
+=failed        0
+=successful    2
+=user_skipped  0
+=auto_skipped  0
