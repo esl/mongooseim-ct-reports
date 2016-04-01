@@ -1,0 +1,173 @@
+=== Suite started at 2016-04-01 14:05:46
+=== Starting test, 24 test cases
+=cases         24
+=user          travis
+=host          testing-gce-1f6a0c53-f222-407b-b6d0-fe50e47c62bd
+=hosts         testing-gce-1f6a0c53-f222-407b-b6d0-fe50e47c62bd 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-01 14:05:46
+=case          privacy_SUITE:init_per_suite
+=logfile       privacy_suite.init_per_suite.html
+=started       2016-04-01 14:05:46
+=ended         2016-04-01 14:05:46
+=result        failed: {'EXIT',{badmatch,{error,econnrefused}}}, [{escalus_tcp,
+                                                                   init,170}]
+=== *** FAILED {privacy_SUITE,init_per_suite} ***
+=== 
+=case          privacy_SUITE:get_all_lists
+=group_props   [{name,"management"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #1 {privacy_SUITE,get_all_lists} ***
+=== 
+=case          privacy_SUITE:get_existing_list
+=group_props   [{name,"management"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #2 {privacy_SUITE,get_existing_list} ***
+=== 
+=case          privacy_SUITE:get_many_lists
+=group_props   [{name,"management"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #3 {privacy_SUITE,get_many_lists} ***
+=== 
+=case          privacy_SUITE:get_nonexistent_list
+=group_props   [{name,"management"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #4 {privacy_SUITE,get_nonexistent_list} ***
+=== 
+=case          privacy_SUITE:set_list
+=group_props   [{name,"management"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #5 {privacy_SUITE,set_list} ***
+=== 
+=case          privacy_SUITE:activate
+=group_props   [{name,"management"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #6 {privacy_SUITE,activate} ***
+=== 
+=case          privacy_SUITE:activate_nonexistent
+=group_props   [{name,"management"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #7 {privacy_SUITE,activate_nonexistent} ***
+=== 
+=case          privacy_SUITE:deactivate
+=group_props   [{name,"management"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #8 {privacy_SUITE,deactivate} ***
+=== 
+=case          privacy_SUITE:default
+=group_props   [{name,"management"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #9 {privacy_SUITE,default} ***
+=== 
+=case          privacy_SUITE:default_nonexistent
+=group_props   [{name,"management"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #10 {privacy_SUITE,default_nonexistent} ***
+=== 
+=case          privacy_SUITE:no_default
+=group_props   [{name,"management"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #11 {privacy_SUITE,no_default} ***
+=== 
+=case          privacy_SUITE:remove_list
+=group_props   [{name,"management"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #12 {privacy_SUITE,remove_list} ***
+=== 
+=case          privacy_SUITE:get_all_lists_with_active
+=group_props   [{name,"management"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #13 {privacy_SUITE,get_all_lists_with_active} ***
+=== 
+=case          privacy_SUITE:block_jid_message
+=group_props   [{name,"blocking"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #14 {privacy_SUITE,block_jid_message} ***
+=== 
+=case          privacy_SUITE:block_group_message
+=group_props   [{name,"blocking"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #15 {privacy_SUITE,block_group_message} ***
+=== 
+=case          privacy_SUITE:block_subscription_message
+=group_props   [{name,"blocking"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #16 {privacy_SUITE,block_subscription_message} ***
+=== 
+=case          privacy_SUITE:block_all_message
+=group_props   [{name,"blocking"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #17 {privacy_SUITE,block_all_message} ***
+=== 
+=case          privacy_SUITE:block_jid_presence_in
+=group_props   [{name,"blocking"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #18 {privacy_SUITE,block_jid_presence_in} ***
+=== 
+=case          privacy_SUITE:block_jid_presence_out
+=group_props   [{name,"blocking"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #19 {privacy_SUITE,block_jid_presence_out} ***
+=== 
+=case          privacy_SUITE:block_jid_iq
+=group_props   [{name,"blocking"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #20 {privacy_SUITE,block_jid_iq} ***
+=== 
+=case          privacy_SUITE:block_jid_all
+=group_props   [{name,"blocking"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #21 {privacy_SUITE,block_jid_all} ***
+=== 
+=case          privacy_SUITE:block_jid_message_but_not_presence
+=group_props   [{name,"blocking"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #22 {privacy_SUITE,block_jid_message_but_not_presence} ***
+=== 
+=case          privacy_SUITE:allow_subscription_to_from_message
+=group_props   [{name,"allowing"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #23 {privacy_SUITE,allow_subscription_to_from_message} ***
+=== 
+=case          privacy_SUITE:allow_subscription_both_message
+=group_props   [{name,"allowing"}]
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #24 {privacy_SUITE,allow_subscription_both_message} ***
+=== 
+=case          privacy_SUITE:end_per_suite
+=started       2016-04-01 14:05:46
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping {privacy_SUITE,end_per_suite} ***
+=== TEST COMPLETE, 0 ok, 0 failed, 24 skipped of 24 test cases
+
+=finished      2016-04-01 14:05:46
+=failed        0
+=successful    0
+=user_skipped  0
+=auto_skipped  24
