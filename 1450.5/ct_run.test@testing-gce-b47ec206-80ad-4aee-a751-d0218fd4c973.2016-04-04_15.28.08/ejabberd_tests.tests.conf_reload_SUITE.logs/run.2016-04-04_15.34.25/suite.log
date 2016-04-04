@@ -1,0 +1,162 @@
+=== Suite started at 2016-04-04 15:34:25
+=== Starting test, 4 test cases
+=cases         4
+=user          travis
+=host          testing-gce-b47ec206-80ad-4aee-a751-d0218fd4c973
+=hosts         testing-gce-b47ec206-80ad-4aee-a751-d0218fd4c973 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-04 15:34:25
+=case          conf_reload_SUITE:init_per_suite
+=logfile       conf_reload_suite.init_per_suite.html
+=started       2016-04-04 15:34:25
+=ended         2016-04-04 15:34:25
+=result        ok
+=elapsed       0.008942
+=case          conf_reload_SUITE:init_per_group
+=logfile       conf_reload_suite.init_per_group.html
+=group_props   [{name,xmpp_domain_local_reload}]
+=started       2016-04-04 15:34:25
+=ended         2016-04-04 15:34:25
+=result        ok
+=elapsed       0.253416
+=case          conf_reload_SUITE:domain_should_change
+=logfile       conf_reload_suite.domain_should_change.html
+=started       2016-04-04 15:34:25
+=ended         2016-04-04 15:34:32
+=result        ok
+=elapsed       0.504053
+=case          conf_reload_SUITE:user_should_be_registered_and_unregistered_via_ctl
+=logfile       conf_reload_suite.user_should_be_registered_and_unregistered_via_ctl.html
+=started       2016-04-04 15:34:32
+=ended         2016-04-04 15:34:40
+=result        ok
+=elapsed       0.549767
+=case          conf_reload_SUITE:user_should_be_registered_and_unregistered_via_xmpp
+=logfile       conf_reload_suite.user_should_be_registered_and_unregistered_via_xmpp.html
+=started       2016-04-04 15:34:40
+=== WARNING! conf_reload_SUITE:end_per_testcase(user_should_be_registered_and_unregistered_via_xmpp, [{tc_status,
+                                                                                                   {failed,
+                                                                                                    {badmatch,
+                                                                                                     {error,
+                                                                                                      econnrefused}}}},
+                                                                                                  {escalus_event_mgr,
+                                                                                                   <0.14572.0>},
+                                                                                                  {tc_name,
+                                                                                                   user_should_be_registered_and_unregistered_via_xmpp},
+                                                                                                  {escalus_cleaner,
+                                                                                                   <0.14571.0>},
+                                                                                                  {watchdog,
+                                                                                                   <0.14570.0>},
+                                                                                                  {new_hosts_value,
+                                                                                                   [<<"sogndal">>]},
+                                                                                                  {modify_config_file_fun,
+                                                                                                   #Fun<conf_reload_SUITE.0.84379330>},
+                                                                                                  {{ejabberd_cwd,
+                                                                                                    mongooseim@localhost},
+                                                                                                   "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+                                                                                                  {preset,
+                                                                                                   "odbc_pgsql_mnesia"},
+                                                                                                  {tc_logfile,
+                                                                                                   "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-b47ec206-80ad-4aee-a751-d0218fd4c973.2016-04-04_15.28.08/ejabberd_tests.tests.conf_reload_SUITE.logs/run.2016-04-04_15.34.25/conf_reload_suite.user_should_be_registered_and_unregistered_via_xmpp.html"},
+                                                                                                  {tc_group_properties,
+                                                                                                   [{name,
+                                                                                                     xmpp_domain_local_reload}]},
+                                                                                                  {tc_group_path,
+                                                                                                   []},
+                                                                                                  {data_dir,
+                                                                                                   "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/conf_reload_SUITE_data/"},
+                                                                                                  {priv_dir,
+                                                                                                   "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-b47ec206-80ad-4aee-a751-d0218fd4c973.2016-04-04_15.28.08/ejabberd_tests.tests.conf_reload_SUITE.logs/run.2016-04-04_15.34.25/log_private/"},
+                                                                                                  {escalus_users,
+                                                                                                   [{alice,
+                                                                                                     [{username,
+                                                                                                       <<"alicE">>},
+                                                                                                      {server,
+                                                                                                       <<"localhost">>},
+                                                                                                      {password,
+                                                                                                       <<"matygrysa">>}]}]}]) crashed!
+	Reason: noproc
+
+=ended         2016-04-04 15:34:40
+=result        failed: {'EXIT',{badmatch,{error,econnrefused}}}, unknown
+=== *** FAILED test case 3 of 4 ***
+=case          conf_reload_SUITE:user_should_be_disconnected_from_removed_domain
+=logfile       conf_reload_suite.user_should_be_disconnected_from_removed_domain.html
+=started       2016-04-04 15:34:40
+=== WARNING! conf_reload_SUITE:end_per_testcase(user_should_be_disconnected_from_removed_domain, [{tc_status,
+                                                                                               {failed,
+                                                                                                {badmatch,
+                                                                                                 {error,
+                                                                                                  econnrefused}}}},
+                                                                                              {escalus_event_mgr,
+                                                                                               <0.14583.0>},
+                                                                                              {tc_name,
+                                                                                               user_should_be_disconnected_from_removed_domain},
+                                                                                              {escalus_cleaner,
+                                                                                               <0.14582.0>},
+                                                                                              {watchdog,
+                                                                                               <0.14581.0>},
+                                                                                              {new_hosts_value,
+                                                                                               [<<"sogndal">>]},
+                                                                                              {modify_config_file_fun,
+                                                                                               #Fun<conf_reload_SUITE.0.84379330>},
+                                                                                              {{ejabberd_cwd,
+                                                                                                mongooseim@localhost},
+                                                                                               "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+                                                                                              {preset,
+                                                                                               "odbc_pgsql_mnesia"},
+                                                                                              {tc_logfile,
+                                                                                               "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-b47ec206-80ad-4aee-a751-d0218fd4c973.2016-04-04_15.28.08/ejabberd_tests.tests.conf_reload_SUITE.logs/run.2016-04-04_15.34.25/conf_reload_suite.user_should_be_disconnected_from_removed_domain.html"},
+                                                                                              {tc_group_properties,
+                                                                                               [{name,
+                                                                                                 xmpp_domain_local_reload}]},
+                                                                                              {tc_group_path,
+                                                                                               []},
+                                                                                              {data_dir,
+                                                                                               "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/conf_reload_SUITE_data/"},
+                                                                                              {priv_dir,
+                                                                                               "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-b47ec206-80ad-4aee-a751-d0218fd4c973.2016-04-04_15.28.08/ejabberd_tests.tests.conf_reload_SUITE.logs/run.2016-04-04_15.34.25/log_private/"},
+                                                                                              {escalus_users,
+                                                                                               [{alice,
+                                                                                                 [{username,
+                                                                                                   <<"alicE">>},
+                                                                                                  {server,
+                                                                                                   <<"localhost">>},
+                                                                                                  {password,
+                                                                                                   <<"matygrysa">>}]}]}]) crashed!
+	Reason: {{badmatch,{error,econnrefused}},
+                 [{escalus_tcp,init,1,
+                               [{file,"src/escalus_tcp.erl"},{line,170}]},
+                  {gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},
+                  {proc_lib,init_p_do_apply,3,
+                            [{file,"proc_lib.erl"},{line,237}]}]}
+
+=ended         2016-04-04 15:34:40
+=result        failed: {'EXIT',{badmatch,{error,econnrefused}}}, unknown
+=== *** FAILED test case 4 of 4 ***
+=case          conf_reload_SUITE:end_per_group
+=logfile       conf_reload_suite.end_per_group.html
+=group_props   [{name,xmpp_domain_local_reload}]
+=started       2016-04-04 15:34:40
+=ended         2016-04-04 15:34:40
+=result        failed: {'EXIT',{badmatch,{error,econnrefused}}}, [{escalus_tcp,
+                                                                   init,170}]
+=== *** FAILED {conf_reload_SUITE,end_per_group} ***
+=group_time    15.165s
+=case          conf_reload_SUITE:end_per_suite
+=logfile       conf_reload_suite.end_per_suite.html
+=started       2016-04-04 15:34:40
+=ended         2016-04-04 15:34:40
+=result        failed: {'EXIT',{badmatch,{error,econnrefused}}}, [{escalus_tcp,
+                                                                   init,170}]
+=== *** FAILED {conf_reload_SUITE,end_per_suite} ***
+=group_time    15.244s
+=== TEST COMPLETE, 2 ok, 2 failed of 4 test cases
+
+=finished      2016-04-04 15:34:40
+=failed        2
+=successful    2
+=user_skipped  0
+=auto_skipped  0
