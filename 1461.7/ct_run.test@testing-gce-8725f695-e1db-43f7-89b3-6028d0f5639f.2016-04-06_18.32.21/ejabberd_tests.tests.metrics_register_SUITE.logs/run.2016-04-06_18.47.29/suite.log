@@ -1,0 +1,126 @@
+=== Suite started at 2016-04-06 18:47:29
+=== Starting test, 2 test cases
+=cases         2
+=user          travis
+=host          testing-gce-8725f695-e1db-43f7-89b3-6028d0f5639f
+=hosts         testing-gce-8725f695-e1db-43f7-89b3-6028d0f5639f 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-06 18:47:29
+=case          metrics_register_SUITE:init_per_suite
+=logfile       metrics_register_suite.init_per_suite.html
+=started       2016-04-06 18:47:29
+=ended         2016-04-06 18:47:29
+=result        ok
+=elapsed       0.008012
+=case          metrics_register_SUITE:init_per_group
+=logfile       metrics_register_suite.init_per_group.html
+=group_props   [{name,registration},sequence]
+=started       2016-04-06 18:47:29
+=ended         2016-04-06 18:47:29
+=result        ok
+=elapsed       1.0e-6
+=case          metrics_register_SUITE:register
+=logfile       metrics_register_suite.register.html
+=started       2016-04-06 18:47:29
+=== WARNING: end_per_testcase crashed!
+Reason: {badmatch,
+            {error,
+                {connection_step_failed,
+                    {{escalus_session,authenticate},
+                     {client,undefined,escalus_tcp,#Port<0.26905>,false,
+                         false,<0.24558.0>,undefined},
+                     [{username,<<"alicE">>},
+                      {server,<<"localhost">>},
+                      {host,<<"localhost">>},
+                      {port,5222},
+                      {auth,{escalus_auth,auth_plain}},
+                      {wspath,undefined},
+                      {username,<<"alicE">>},
+                      {server,<<"localhost">>},
+                      {password,<<"matygrysa">>}],
+                     [{compression,[<<"zlib">>]},
+                      {starttls,true},
+                      {stream_management,true},
+                      {advanced_message_processing,true},
+                      {client_state_indication,false},
+                      {auth_plain,true},
+                      {auth_sasl_oauth,true},
+                      {auth_digest_md5,true},
+                      {auth_sasl_scram_sha1,true}]},
+                    {auth_failed,<<"alicE">>,
+                        {xmlel,<<"failure">>,
+                            [{<<"xmlns">>,
+                              <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                            [{xmlel,<<"not-authorized">>,[],[]}]}}}}}
+Line: [{escalus_users,delete_user,274},
+              {test_server,do_end_per_testcase,1299},
+              {test_server,run_test_case_eval1,1054},
+              {test_server,run_test_case_eval,968}]
+
+=ended         2016-04-06 18:47:29
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {escalus_users,create_user,2,
+                             [{file,"src/escalus_users.erl"},{line,247}]},
+                         {metrics_register_SUITE,register,1,
+                             [{file,"metrics_register_SUITE.erl"},{line,91}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {escalus_users,
+                                                                         create_user,
+                                                                         247},
+                                                                        {metrics_register_SUITE,
+                                                                         register,
+                                                                         91},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 1 of 2 ***
+=== 
+=case          metrics_register_SUITE:unregister
+=group_props   [{name,"registration"}]
+=started       2016-04-06 18:47:29
+=result        auto_skipped: {failed,{metrics_register_SUITE,register}}
+=== *** Skipping test case #2 {metrics_register_SUITE,unregister} ***
+=case          metrics_register_SUITE:end_per_group
+=logfile       metrics_register_suite.end_per_group.html
+=group_props   [{name,registration},sequence]
+=started       2016-04-06 18:47:29
+=ended         2016-04-06 18:47:29
+=result        ok
+=elapsed       4.0e-6
+=group_time    0.263s
+=case          metrics_register_SUITE:end_per_suite
+=logfile       metrics_register_suite.end_per_suite.html
+=started       2016-04-06 18:47:29
+=ended         2016-04-06 18:47:29
+=result        ok
+=elapsed       0.001659
+=group_time    0.361s
+=== TEST COMPLETE, 0 ok, 1 failed, 1 skipped of 2 test cases
+
+=finished      2016-04-06 18:47:29
+=failed        1
+=successful    0
+=user_skipped  0
+=auto_skipped  1

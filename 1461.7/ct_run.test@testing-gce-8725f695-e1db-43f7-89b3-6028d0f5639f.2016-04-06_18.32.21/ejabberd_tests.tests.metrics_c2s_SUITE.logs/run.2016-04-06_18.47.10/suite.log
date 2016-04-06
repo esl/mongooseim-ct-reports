@@ -1,0 +1,211 @@
+=== Suite started at 2016-04-06 18:47:10
+=== Starting test, 12 test cases
+=cases         12
+=user          travis
+=host          testing-gce-8725f695-e1db-43f7-89b3-6028d0f5639f
+=hosts         testing-gce-8725f695-e1db-43f7-89b3-6028d0f5639f 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-06 18:47:10
+=case          metrics_c2s_SUITE:init_per_suite
+=logfile       metrics_c2s_suite.init_per_suite.html
+=started       2016-04-06 18:47:10
+=ended         2016-04-06 18:47:10
+=result        ok
+=elapsed       0.004823
+=case          metrics_c2s_SUITE:init_per_group
+=logfile       metrics_c2s_suite.init_per_group.html
+=group_props   [{name,single},sequence]
+=started       2016-04-06 18:47:10
+=ended         2016-04-06 18:47:10
+=result        ok
+=elapsed       0.01474
+=case          metrics_c2s_SUITE:message_one
+=logfile       metrics_c2s_suite.message_one.html
+=started       2016-04-06 18:47:10
+=ended         2016-04-06 18:47:11
+=result        ok
+=elapsed       0.924784
+=case          metrics_c2s_SUITE:stanza_one
+=logfile       metrics_c2s_suite.stanza_one.html
+=started       2016-04-06 18:47:11
+=ended         2016-04-06 18:47:12
+=result        ok
+=elapsed       0.91723
+=case          metrics_c2s_SUITE:presence_one
+=logfile       metrics_c2s_suite.presence_one.html
+=started       2016-04-06 18:47:12
+=ended         2016-04-06 18:47:12
+=result        ok
+=elapsed       0.460411
+=case          metrics_c2s_SUITE:presence_direct_one
+=logfile       metrics_c2s_suite.presence_direct_one.html
+=started       2016-04-06 18:47:12
+=ended         2016-04-06 18:47:13
+=result        ok
+=elapsed       0.918601
+=case          metrics_c2s_SUITE:iq_one
+=logfile       metrics_c2s_suite.iq_one.html
+=started       2016-04-06 18:47:13
+=ended         2016-04-06 18:47:14
+=result        ok
+=elapsed       0.461282
+=case          metrics_c2s_SUITE:end_per_group
+=logfile       metrics_c2s_suite.end_per_group.html
+=group_props   [{name,single},sequence]
+=started       2016-04-06 18:47:14
+=ended         2016-04-06 18:47:14
+=result        ok
+=elapsed       0.044636
+=group_time    3.869s
+=case          metrics_c2s_SUITE:init_per_group
+=logfile       metrics_c2s_suite.init_per_group.968434.120.html
+=group_props   [{name,multiple},sequence]
+=started       2016-04-06 18:47:14
+=ended         2016-04-06 18:47:14
+=result        ok
+=elapsed       0.006981
+=case          metrics_c2s_SUITE:messages
+=logfile       metrics_c2s_suite.messages.html
+=started       2016-04-06 18:47:14
+=ended         2016-04-06 18:47:15
+=result        ok
+=elapsed       0.951944
+=case          metrics_c2s_SUITE:end_per_group
+=logfile       metrics_c2s_suite.end_per_group.968435.131.html
+=group_props   [{name,multiple},sequence]
+=started       2016-04-06 18:47:15
+=ended         2016-04-06 18:47:15
+=result        ok
+=elapsed       0.033984
+=group_time    1.011s
+=case          metrics_c2s_SUITE:init_per_group
+=logfile       metrics_c2s_suite.init_per_group.968435.193.html
+=group_props   [{name,drop},sequence]
+=started       2016-04-06 18:47:15
+=ended         2016-04-06 18:47:15
+=result        ok
+=elapsed       0.009982
+=case          metrics_c2s_SUITE:bounced
+=logfile       metrics_c2s_suite.bounced.html
+=started       2016-04-06 18:47:15
+=ended         2016-04-06 18:47:16
+=result        ok
+=elapsed       1.116089
+=case          metrics_c2s_SUITE:end_per_group
+=logfile       metrics_c2s_suite.end_per_group.968436.373.html
+=group_props   [{name,drop},sequence]
+=started       2016-04-06 18:47:16
+=ended         2016-04-06 18:47:16
+=result        ok
+=elapsed       0.033742
+=group_time    1.180s
+=case          metrics_c2s_SUITE:init_per_group
+=logfile       metrics_c2s_suite.init_per_group.968436.437.html
+=group_props   [{name,errors},sequence]
+=started       2016-04-06 18:47:16
+=ended         2016-04-06 18:47:16
+=result        ok
+=elapsed       0.010363
+=case          metrics_c2s_SUITE:error_total
+=logfile       metrics_c2s_suite.error_total.html
+=started       2016-04-06 18:47:16
+=ended         2016-04-06 18:47:17
+=result        ok
+=elapsed       1.117377
+=case          metrics_c2s_SUITE:error_mesg
+=logfile       metrics_c2s_suite.error_mesg.html
+=started       2016-04-06 18:47:17
+=ended         2016-04-06 18:47:18
+=result        ok
+=elapsed       1.117002
+=case          metrics_c2s_SUITE:error_iq
+=logfile       metrics_c2s_suite.error_iq.html
+=started       2016-04-06 18:47:18
+=ended         2016-04-06 18:47:18
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {escalus_users,create_user,2,
+                             [{file,"src/escalus_users.erl"},{line,247}]},
+                         {metrics_c2s_SUITE,error_iq,1,
+                             [{file,"metrics_c2s_SUITE.erl"},{line,269}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {escalus_users,
+                                                                         create_user,
+                                                                         247},
+                                                                        {metrics_c2s_SUITE,
+                                                                         error_iq,
+                                                                         269},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 10 of 12 ***
+=== 
+=case          metrics_c2s_SUITE:error_presence
+=group_props   [{name,"errors"}]
+=started       2016-04-06 18:47:18
+=result        auto_skipped: {failed,{metrics_c2s_SUITE,error_iq}}
+=== *** Skipping test case #11 {metrics_c2s_SUITE,error_presence} ***
+=case          metrics_c2s_SUITE:end_per_group
+=logfile       metrics_c2s_suite.end_per_group.968438.796.html
+=group_props   [{name,errors},sequence]
+=started       2016-04-06 18:47:18
+=ended         2016-04-06 18:47:18
+=result        ok
+=elapsed       0.032803
+=group_time    2.360s
+=case          metrics_c2s_SUITE:init_per_group
+=logfile       metrics_c2s_suite.init_per_group.968438.861.html
+=group_props   [{name,count},sequence]
+=started       2016-04-06 18:47:18
+=ended         2016-04-06 18:47:18
+=result        ok
+=elapsed       0.006344
+=case          metrics_c2s_SUITE:stanza_count
+=logfile       metrics_c2s_suite.stanza_count.html
+=started       2016-04-06 18:47:18
+=ended         2016-04-06 18:47:19
+=result        ok
+=elapsed       0.953222
+=case          metrics_c2s_SUITE:end_per_group
+=logfile       metrics_c2s_suite.end_per_group.968439.877.html
+=group_props   [{name,count},sequence]
+=started       2016-04-06 18:47:19
+=ended         2016-04-06 18:47:19
+=result        ok
+=elapsed       0.037662
+=group_time    1.016s
+=case          metrics_c2s_SUITE:end_per_suite
+=logfile       metrics_c2s_suite.end_per_suite.html
+=started       2016-04-06 18:47:19
+=ended         2016-04-06 18:47:20
+=result        ok
+=elapsed       0.030894
+=group_time    9.830s
+=== TEST COMPLETE, 10 ok, 1 failed, 1 skipped of 12 test cases
+
+=finished      2016-04-06 18:47:20
+=failed        1
+=successful    10
+=user_skipped  0
+=auto_skipped  1

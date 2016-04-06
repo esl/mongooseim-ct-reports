@@ -1,0 +1,1022 @@
+=== Suite started at 2016-04-06 18:52:46
+=== Starting test, 12 test cases
+=cases         12
+=user          travis
+=host          testing-gce-8725f695-e1db-43f7-89b3-6028d0f5639f
+=hosts         testing-gce-8725f695-e1db-43f7-89b3-6028d0f5639f 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-06 18:52:46
+=case          s2s_SUITE:init_per_suite
+=logfile       s2s_suite.init_per_suite.html
+=started       2016-04-06 18:52:46
+=ended         2016-04-06 18:52:51
+=result        ok
+=elapsed       5.027811
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.html
+=group_props   [{name,both_plain},sequence]
+=started       2016-04-06 18:52:51
+=ended         2016-04-06 18:52:51
+=result        ok
+=elapsed       0.003727
+=case          s2s_SUITE:simple_message
+=logfile       s2s_suite.simple_message.html
+=started       2016-04-06 18:52:51
+=ended         2016-04-06 18:52:51
+=result        failed: {{badmatch,
+                         {error,
+                          {connection_step_failed,
+                           {{escalus_session,authenticate},
+                            {client,undefined,escalus_tcp,#Port<0.28880>,
+                             false,false,<0.27522.0>,
+                             [{event_manager,<0.27521.0>},
+                              {server,<<"fed1">>},
+                              {username,<<"alice">>},
+                              {resource,<<"res1">>}]},
+                            [{event_client,
+                              [{event_manager,<0.27521.0>},
+                               {server,<<"fed1">>},
+                               {username,<<"alice">>},
+                               {resource,<<"res1">>}]},
+                             {resource,<<"res1">>},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {auth,{escalus_auth,auth_plain}},
+                             {wspath,undefined},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {password,<<"makota2">>}],
+                            [{compression,false},
+                             {starttls,true},
+                             {stream_management,true},
+                             {advanced_message_processing,false},
+                             {client_state_indication,false},
+                             {auth_plain,true},
+                             {auth_sasl_oauth,true},
+                             {auth_digest_md5,true},
+                             {auth_sasl_scram_sha1,true}]},
+                           {auth_failed,<<"alice">>,
+                            {xmlel,<<"failure">>,
+                             [{<<"xmlns">>,
+                               <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                             [{xmlel,<<"not-authorized">>,[],[]}]}}}}},
+                        [{escalus_story,'-start_ready_clients/2-fun-0-',3,
+                          [{file,"src/escalus_story.erl"},{line,94}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                          [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,37}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{escalus_story,
+                                                                      '-start_ready_clients/2-fun-0-',
+                                                                      94},
+                                                                     {lists,
+                                                                      foldl,
+                                                                      1261},
+                                                                     {escalus_story,
+                                                                      start_ready_clients,
+                                                                      91},
+                                                                     {lists,
+                                                                      flatmap,
+                                                                      1248},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      37},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 1 of 12 ***
+=== 
+=case          s2s_SUITE:nonexistent_user
+=group_props   [{name,"both_plain"}]
+=started       2016-04-06 18:52:51
+=result        auto_skipped: {failed,{s2s_SUITE,simple_message}}
+=== *** Skipping test case #2 {s2s_SUITE,nonexistent_user} ***
+=== 
+=case          s2s_SUITE:unknown_domain
+=group_props   [{name,"both_plain"}]
+=started       2016-04-06 18:52:51
+=result        auto_skipped: {failed,{s2s_SUITE,simple_message}}
+=== *** Skipping test case #3 {s2s_SUITE,unknown_domain} ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.html
+=group_props   [{name,both_plain},sequence]
+=started       2016-04-06 18:52:51
+=ended         2016-04-06 18:52:51
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.302s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.968771.934.html
+=group_props   [{name,both_tls_optional}]
+=started       2016-04-06 18:52:51
+=ended         2016-04-06 18:52:51
+=result        ok
+=elapsed       0.00878
+=case          s2s_SUITE:simple_message
+=logfile       s2s_suite.simple_message.968771.971.html
+=started       2016-04-06 18:52:51
+=ended         2016-04-06 18:52:52
+=result        failed: {{badmatch,
+                         {error,
+                          {connection_step_failed,
+                           {{escalus_session,authenticate},
+                            {client,undefined,escalus_tcp,#Port<0.28885>,
+                             false,false,<0.27543.0>,
+                             [{event_manager,<0.27542.0>},
+                              {server,<<"fed1">>},
+                              {username,<<"alice">>},
+                              {resource,<<"res1">>}]},
+                            [{event_client,
+                              [{event_manager,<0.27542.0>},
+                               {server,<<"fed1">>},
+                               {username,<<"alice">>},
+                               {resource,<<"res1">>}]},
+                             {resource,<<"res1">>},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {auth,{escalus_auth,auth_plain}},
+                             {wspath,undefined},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {password,<<"makota2">>}],
+                            [{compression,false},
+                             {starttls,true},
+                             {stream_management,true},
+                             {advanced_message_processing,false},
+                             {client_state_indication,false},
+                             {auth_plain,true},
+                             {auth_sasl_oauth,true},
+                             {auth_digest_md5,true},
+                             {auth_sasl_scram_sha1,true}]},
+                           {auth_failed,<<"alice">>,
+                            {xmlel,<<"failure">>,
+                             [{<<"xmlns">>,
+                               <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                             [{xmlel,<<"not-authorized">>,[],[]}]}}}}},
+                        [{escalus_story,'-start_ready_clients/2-fun-0-',3,
+                          [{file,"src/escalus_story.erl"},{line,94}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                          [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,37}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{escalus_story,
+                                                                      '-start_ready_clients/2-fun-0-',
+                                                                      94},
+                                                                     {lists,
+                                                                      foldl,
+                                                                      1261},
+                                                                     {escalus_story,
+                                                                      start_ready_clients,
+                                                                      91},
+                                                                     {lists,
+                                                                      flatmap,
+                                                                      1248},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      37},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 4 of 12 ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.968772.217.html
+=group_props   [{name,both_tls_optional}]
+=started       2016-04-06 18:52:52
+=ended         2016-04-06 18:52:52
+=result        ok
+=elapsed       2.0e-6
+=group_time    0.283s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.968772.251.html
+=group_props   [{name,both_tls_required}]
+=started       2016-04-06 18:52:52
+=ended         2016-04-06 18:52:52
+=result        ok
+=elapsed       0.01048
+=case          s2s_SUITE:simple_message
+=logfile       s2s_suite.simple_message.968772.289.html
+=started       2016-04-06 18:52:52
+=ended         2016-04-06 18:52:52
+=result        failed: {{badmatch,
+                         {error,
+                          {connection_step_failed,
+                           {{escalus_session,authenticate},
+                            {client,undefined,escalus_tcp,#Port<0.28890>,
+                             false,false,<0.27564.0>,
+                             [{event_manager,<0.27563.0>},
+                              {server,<<"fed1">>},
+                              {username,<<"alice">>},
+                              {resource,<<"res1">>}]},
+                            [{event_client,
+                              [{event_manager,<0.27563.0>},
+                               {server,<<"fed1">>},
+                               {username,<<"alice">>},
+                               {resource,<<"res1">>}]},
+                             {resource,<<"res1">>},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {auth,{escalus_auth,auth_plain}},
+                             {wspath,undefined},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {password,<<"makota2">>}],
+                            [{compression,false},
+                             {starttls,true},
+                             {stream_management,true},
+                             {advanced_message_processing,false},
+                             {client_state_indication,false},
+                             {auth_plain,true},
+                             {auth_sasl_oauth,true},
+                             {auth_digest_md5,true},
+                             {auth_sasl_scram_sha1,true}]},
+                           {auth_failed,<<"alice">>,
+                            {xmlel,<<"failure">>,
+                             [{<<"xmlns">>,
+                               <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                             [{xmlel,<<"not-authorized">>,[],[]}]}}}}},
+                        [{escalus_story,'-start_ready_clients/2-fun-0-',3,
+                          [{file,"src/escalus_story.erl"},{line,94}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                          [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,37}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{escalus_story,
+                                                                      '-start_ready_clients/2-fun-0-',
+                                                                      94},
+                                                                     {lists,
+                                                                      foldl,
+                                                                      1261},
+                                                                     {escalus_story,
+                                                                      start_ready_clients,
+                                                                      91},
+                                                                     {lists,
+                                                                      flatmap,
+                                                                      1248},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      37},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 5 of 12 ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.968772.525.html
+=group_props   [{name,both_tls_required}]
+=started       2016-04-06 18:52:52
+=ended         2016-04-06 18:52:52
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.273s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.968772.555.html
+=group_props   [{name,node1_tls_optional_node2_tls_required}]
+=started       2016-04-06 18:52:52
+=ended         2016-04-06 18:52:52
+=result        ok
+=elapsed       0.004763
+=case          s2s_SUITE:simple_message
+=logfile       s2s_suite.simple_message.968772.587.html
+=started       2016-04-06 18:52:52
+=ended         2016-04-06 18:52:52
+=result        failed: {{badmatch,
+                         {error,
+                          {connection_step_failed,
+                           {{escalus_session,authenticate},
+                            {client,undefined,escalus_tcp,#Port<0.28895>,
+                             false,false,<0.27585.0>,
+                             [{event_manager,<0.27584.0>},
+                              {server,<<"fed1">>},
+                              {username,<<"alice">>},
+                              {resource,<<"res1">>}]},
+                            [{event_client,
+                              [{event_manager,<0.27584.0>},
+                               {server,<<"fed1">>},
+                               {username,<<"alice">>},
+                               {resource,<<"res1">>}]},
+                             {resource,<<"res1">>},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {auth,{escalus_auth,auth_plain}},
+                             {wspath,undefined},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {password,<<"makota2">>}],
+                            [{compression,false},
+                             {starttls,true},
+                             {stream_management,true},
+                             {advanced_message_processing,false},
+                             {client_state_indication,false},
+                             {auth_plain,true},
+                             {auth_sasl_oauth,true},
+                             {auth_digest_md5,true},
+                             {auth_sasl_scram_sha1,true}]},
+                           {auth_failed,<<"alice">>,
+                            {xmlel,<<"failure">>,
+                             [{<<"xmlns">>,
+                               <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                             [{xmlel,<<"not-authorized">>,[],[]}]}}}}},
+                        [{escalus_story,'-start_ready_clients/2-fun-0-',3,
+                          [{file,"src/escalus_story.erl"},{line,94}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                          [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,37}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{escalus_story,
+                                                                      '-start_ready_clients/2-fun-0-',
+                                                                      94},
+                                                                     {lists,
+                                                                      foldl,
+                                                                      1261},
+                                                                     {escalus_story,
+                                                                      start_ready_clients,
+                                                                      91},
+                                                                     {lists,
+                                                                      flatmap,
+                                                                      1248},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      37},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 6 of 12 ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.968772.827.html
+=group_props   [{name,node1_tls_optional_node2_tls_required}]
+=started       2016-04-06 18:52:52
+=ended         2016-04-06 18:52:52
+=result        ok
+=elapsed       2.0e-6
+=group_time    0.273s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.968772.855.html
+=group_props   [{name,node1_tls_required_node2_tls_optional}]
+=started       2016-04-06 18:52:52
+=ended         2016-04-06 18:52:52
+=result        ok
+=elapsed       0.002867
+=case          s2s_SUITE:simple_message
+=logfile       s2s_suite.simple_message.968772.886.html
+=started       2016-04-06 18:52:52
+=ended         2016-04-06 18:52:53
+=result        failed: {{badmatch,
+                         {error,
+                          {connection_step_failed,
+                           {{escalus_session,authenticate},
+                            {client,undefined,escalus_tcp,#Port<0.28900>,
+                             false,false,<0.27606.0>,
+                             [{event_manager,<0.27605.0>},
+                              {server,<<"fed1">>},
+                              {username,<<"alice">>},
+                              {resource,<<"res1">>}]},
+                            [{event_client,
+                              [{event_manager,<0.27605.0>},
+                               {server,<<"fed1">>},
+                               {username,<<"alice">>},
+                               {resource,<<"res1">>}]},
+                             {resource,<<"res1">>},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {auth,{escalus_auth,auth_plain}},
+                             {wspath,undefined},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {password,<<"makota2">>}],
+                            [{compression,false},
+                             {starttls,true},
+                             {stream_management,true},
+                             {advanced_message_processing,false},
+                             {client_state_indication,false},
+                             {auth_plain,true},
+                             {auth_sasl_oauth,true},
+                             {auth_digest_md5,true},
+                             {auth_sasl_scram_sha1,true}]},
+                           {auth_failed,<<"alice">>,
+                            {xmlel,<<"failure">>,
+                             [{<<"xmlns">>,
+                               <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                             [{xmlel,<<"not-authorized">>,[],[]}]}}}}},
+                        [{escalus_story,'-start_ready_clients/2-fun-0-',3,
+                          [{file,"src/escalus_story.erl"},{line,94}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                          [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,37}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{escalus_story,
+                                                                      '-start_ready_clients/2-fun-0-',
+                                                                      94},
+                                                                     {lists,
+                                                                      foldl,
+                                                                      1261},
+                                                                     {escalus_story,
+                                                                      start_ready_clients,
+                                                                      91},
+                                                                     {lists,
+                                                                      flatmap,
+                                                                      1248},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      37},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 7 of 12 ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.968773.136.html
+=group_props   [{name,node1_tls_required_node2_tls_optional}]
+=started       2016-04-06 18:52:53
+=ended         2016-04-06 18:52:53
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.281s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.968773.164.html
+=group_props   [{name,node1_tls_required_trusted_node2_tls_optional}]
+=started       2016-04-06 18:52:53
+=ended         2016-04-06 18:52:53
+=result        ok
+=elapsed       0.00271
+=case          s2s_SUITE:timeout_waiting_for_message
+=logfile       s2s_suite.timeout_waiting_for_message.html
+=started       2016-04-06 18:52:53
+=ended         2016-04-06 18:52:53
+=result        failed: {{badmatch,
+                         {error,
+                          {connection_step_failed,
+                           {{escalus_session,authenticate},
+                            {client,undefined,escalus_tcp,#Port<0.28905>,
+                             false,false,<0.27627.0>,
+                             [{event_manager,<0.27626.0>},
+                              {server,<<"fed1">>},
+                              {username,<<"alice">>},
+                              {resource,<<"res1">>}]},
+                            [{event_client,
+                              [{event_manager,<0.27626.0>},
+                               {server,<<"fed1">>},
+                               {username,<<"alice">>},
+                               {resource,<<"res1">>}]},
+                             {resource,<<"res1">>},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {auth,{escalus_auth,auth_plain}},
+                             {wspath,undefined},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {password,<<"makota2">>}],
+                            [{compression,false},
+                             {starttls,true},
+                             {stream_management,true},
+                             {advanced_message_processing,false},
+                             {client_state_indication,false},
+                             {auth_plain,true},
+                             {auth_sasl_oauth,true},
+                             {auth_digest_md5,true},
+                             {auth_sasl_scram_sha1,true}]},
+                           {auth_failed,<<"alice">>,
+                            {xmlel,<<"failure">>,
+                             [{<<"xmlns">>,
+                               <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                             [{xmlel,<<"not-authorized">>,[],[]}]}}}}},
+                        [{escalus_story,'-start_ready_clients/2-fun-0-',3,
+                          [{file,"src/escalus_story.erl"},{line,94}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                          [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,37}]},
+                         {s2s_SUITE,timeout_waiting_for_message,1,
+                          [{file,"s2s_SUITE.erl"},{line,186}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]}]}, [{escalus_story,
+                                                                       '-start_ready_clients/2-fun-0-',
+                                                                       94},
+                                                                      {lists,
+                                                                       foldl,
+                                                                       1261},
+                                                                      {escalus_story,
+                                                                       start_ready_clients,
+                                                                       91},
+                                                                      {lists,
+                                                                       flatmap,
+                                                                       1248},
+                                                                      {escalus_story,
+                                                                       story,
+                                                                       37},
+                                                                      {s2s_SUITE,
+                                                                       timeout_waiting_for_message,
+                                                                       186},
+                                                                      {test_server,
+                                                                       ts_tc,
+                                                                       1429},
+                                                                      {test_server,
+                                                                       run_test_case_eval1,
+                                                                       1026}]
+=== *** FAILED test case 8 of 12 ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.968773.438.html
+=group_props   [{name,node1_tls_required_trusted_node2_tls_optional}]
+=started       2016-04-06 18:52:53
+=ended         2016-04-06 18:52:53
+=result        ok
+=elapsed       2.0e-6
+=group_time    0.274s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.968773.466.html
+=group_props   [{name,node1_tls_false_node2_tls_optional}]
+=started       2016-04-06 18:52:53
+=ended         2016-04-06 18:52:53
+=result        ok
+=elapsed       0.002949
+=case          s2s_SUITE:simple_message
+=logfile       s2s_suite.simple_message.968773.496.html
+=started       2016-04-06 18:52:53
+=ended         2016-04-06 18:52:53
+=result        failed: {{badmatch,
+                         {error,
+                          {connection_step_failed,
+                           {{escalus_session,authenticate},
+                            {client,undefined,escalus_tcp,#Port<0.28910>,
+                             false,false,<0.27648.0>,
+                             [{event_manager,<0.27647.0>},
+                              {server,<<"fed1">>},
+                              {username,<<"alice">>},
+                              {resource,<<"res1">>}]},
+                            [{event_client,
+                              [{event_manager,<0.27647.0>},
+                               {server,<<"fed1">>},
+                               {username,<<"alice">>},
+                               {resource,<<"res1">>}]},
+                             {resource,<<"res1">>},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {auth,{escalus_auth,auth_plain}},
+                             {wspath,undefined},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {password,<<"makota2">>}],
+                            [{compression,false},
+                             {starttls,true},
+                             {stream_management,true},
+                             {advanced_message_processing,false},
+                             {client_state_indication,false},
+                             {auth_plain,true},
+                             {auth_sasl_oauth,true},
+                             {auth_digest_md5,true},
+                             {auth_sasl_scram_sha1,true}]},
+                           {auth_failed,<<"alice">>,
+                            {xmlel,<<"failure">>,
+                             [{<<"xmlns">>,
+                               <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                             [{xmlel,<<"not-authorized">>,[],[]}]}}}}},
+                        [{escalus_story,'-start_ready_clients/2-fun-0-',3,
+                          [{file,"src/escalus_story.erl"},{line,94}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                          [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,37}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{escalus_story,
+                                                                      '-start_ready_clients/2-fun-0-',
+                                                                      94},
+                                                                     {lists,
+                                                                      foldl,
+                                                                      1261},
+                                                                     {escalus_story,
+                                                                      start_ready_clients,
+                                                                      91},
+                                                                     {lists,
+                                                                      flatmap,
+                                                                      1248},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      37},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 9 of 12 ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.968773.750.html
+=group_props   [{name,node1_tls_false_node2_tls_optional}]
+=started       2016-04-06 18:52:53
+=ended         2016-04-06 18:52:53
+=result        ok
+=elapsed       2.0e-6
+=group_time    0.284s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.968773.778.html
+=group_props   [{name,node1_tls_optional_node2_tls_false}]
+=started       2016-04-06 18:52:53
+=ended         2016-04-06 18:52:53
+=result        ok
+=elapsed       0.002814
+=case          s2s_SUITE:simple_message
+=logfile       s2s_suite.simple_message.968773.809.html
+=started       2016-04-06 18:52:53
+=ended         2016-04-06 18:52:54
+=result        failed: {{badmatch,
+                         {error,
+                          {connection_step_failed,
+                           {{escalus_session,authenticate},
+                            {client,undefined,escalus_tcp,#Port<0.28915>,
+                             false,false,<0.27669.0>,
+                             [{event_manager,<0.27668.0>},
+                              {server,<<"fed1">>},
+                              {username,<<"alice">>},
+                              {resource,<<"res1">>}]},
+                            [{event_client,
+                              [{event_manager,<0.27668.0>},
+                               {server,<<"fed1">>},
+                               {username,<<"alice">>},
+                               {resource,<<"res1">>}]},
+                             {resource,<<"res1">>},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {auth,{escalus_auth,auth_plain}},
+                             {wspath,undefined},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {password,<<"makota2">>}],
+                            [{compression,false},
+                             {starttls,true},
+                             {stream_management,true},
+                             {advanced_message_processing,false},
+                             {client_state_indication,false},
+                             {auth_plain,true},
+                             {auth_sasl_oauth,true},
+                             {auth_digest_md5,true},
+                             {auth_sasl_scram_sha1,true}]},
+                           {auth_failed,<<"alice">>,
+                            {xmlel,<<"failure">>,
+                             [{<<"xmlns">>,
+                               <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                             [{xmlel,<<"not-authorized">>,[],[]}]}}}}},
+                        [{escalus_story,'-start_ready_clients/2-fun-0-',3,
+                          [{file,"src/escalus_story.erl"},{line,94}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                          [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,37}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{escalus_story,
+                                                                      '-start_ready_clients/2-fun-0-',
+                                                                      94},
+                                                                     {lists,
+                                                                      foldl,
+                                                                      1261},
+                                                                     {escalus_story,
+                                                                      start_ready_clients,
+                                                                      91},
+                                                                     {lists,
+                                                                      flatmap,
+                                                                      1248},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      37},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 10 of 12 ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.968774.54.html
+=group_props   [{name,node1_tls_optional_node2_tls_false}]
+=started       2016-04-06 18:52:54
+=ended         2016-04-06 18:52:54
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.276s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.968774.88.html
+=group_props   [{name,node1_tls_false_node2_tls_required}]
+=started       2016-04-06 18:52:54
+=ended         2016-04-06 18:52:54
+=result        ok
+=elapsed       0.004297
+=case          s2s_SUITE:timeout_waiting_for_message
+=logfile       s2s_suite.timeout_waiting_for_message.968774.120.html
+=started       2016-04-06 18:52:54
+=ended         2016-04-06 18:52:54
+=result        failed: {{badmatch,
+                         {error,
+                          {connection_step_failed,
+                           {{escalus_session,authenticate},
+                            {client,undefined,escalus_tcp,#Port<0.28920>,
+                             false,false,<0.27690.0>,
+                             [{event_manager,<0.27689.0>},
+                              {server,<<"fed1">>},
+                              {username,<<"alice">>},
+                              {resource,<<"res1">>}]},
+                            [{event_client,
+                              [{event_manager,<0.27689.0>},
+                               {server,<<"fed1">>},
+                               {username,<<"alice">>},
+                               {resource,<<"res1">>}]},
+                             {resource,<<"res1">>},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {auth,{escalus_auth,auth_plain}},
+                             {wspath,undefined},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {password,<<"makota2">>}],
+                            [{compression,false},
+                             {starttls,true},
+                             {stream_management,true},
+                             {advanced_message_processing,false},
+                             {client_state_indication,false},
+                             {auth_plain,true},
+                             {auth_sasl_oauth,true},
+                             {auth_digest_md5,true},
+                             {auth_sasl_scram_sha1,true}]},
+                           {auth_failed,<<"alice">>,
+                            {xmlel,<<"failure">>,
+                             [{<<"xmlns">>,
+                               <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                             [{xmlel,<<"not-authorized">>,[],[]}]}}}}},
+                        [{escalus_story,'-start_ready_clients/2-fun-0-',3,
+                          [{file,"src/escalus_story.erl"},{line,94}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                          [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,37}]},
+                         {s2s_SUITE,timeout_waiting_for_message,1,
+                          [{file,"s2s_SUITE.erl"},{line,186}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]}]}, [{escalus_story,
+                                                                       '-start_ready_clients/2-fun-0-',
+                                                                       94},
+                                                                      {lists,
+                                                                       foldl,
+                                                                       1261},
+                                                                      {escalus_story,
+                                                                       start_ready_clients,
+                                                                       91},
+                                                                      {lists,
+                                                                       flatmap,
+                                                                       1248},
+                                                                      {escalus_story,
+                                                                       story,
+                                                                       37},
+                                                                      {s2s_SUITE,
+                                                                       timeout_waiting_for_message,
+                                                                       186},
+                                                                      {test_server,
+                                                                       ts_tc,
+                                                                       1429},
+                                                                      {test_server,
+                                                                       run_test_case_eval1,
+                                                                       1026}]
+=== *** FAILED test case 11 of 12 ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.968774.366.html
+=group_props   [{name,node1_tls_false_node2_tls_required}]
+=started       2016-04-06 18:52:54
+=ended         2016-04-06 18:52:54
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.278s
+=case          s2s_SUITE:init_per_group
+=logfile       s2s_suite.init_per_group.968774.394.html
+=group_props   [{name,node1_tls_required_node2_tls_false}]
+=started       2016-04-06 18:52:54
+=ended         2016-04-06 18:52:54
+=result        ok
+=elapsed       0.003775
+=case          s2s_SUITE:timeout_waiting_for_message
+=logfile       s2s_suite.timeout_waiting_for_message.968774.426.html
+=started       2016-04-06 18:52:54
+=ended         2016-04-06 18:52:54
+=result        failed: {{badmatch,
+                         {error,
+                          {connection_step_failed,
+                           {{escalus_session,authenticate},
+                            {client,undefined,escalus_tcp,#Port<0.28925>,
+                             false,false,<0.27711.0>,
+                             [{event_manager,<0.27710.0>},
+                              {server,<<"fed1">>},
+                              {username,<<"alice">>},
+                              {resource,<<"res1">>}]},
+                            [{event_client,
+                              [{event_manager,<0.27710.0>},
+                               {server,<<"fed1">>},
+                               {username,<<"alice">>},
+                               {resource,<<"res1">>}]},
+                             {resource,<<"res1">>},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {auth,{escalus_auth,auth_plain}},
+                             {wspath,undefined},
+                             {username,<<"alice">>},
+                             {server,<<"fed1">>},
+                             {host,<<"localhost">>},
+                             {port,5242},
+                             {password,<<"makota2">>}],
+                            [{compression,false},
+                             {starttls,true},
+                             {stream_management,true},
+                             {advanced_message_processing,false},
+                             {client_state_indication,false},
+                             {auth_plain,true},
+                             {auth_sasl_oauth,true},
+                             {auth_digest_md5,true},
+                             {auth_sasl_scram_sha1,true}]},
+                           {auth_failed,<<"alice">>,
+                            {xmlel,<<"failure">>,
+                             [{<<"xmlns">>,
+                               <<"urn:ietf:params:xml:ns:xmpp-sasl">>}],
+                             [{xmlel,<<"not-authorized">>,[],[]}]}}}}},
+                        [{escalus_story,'-start_ready_clients/2-fun-0-',3,
+                          [{file,"src/escalus_story.erl"},{line,94}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                          [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,37}]},
+                         {s2s_SUITE,timeout_waiting_for_message,1,
+                          [{file,"s2s_SUITE.erl"},{line,186}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]}]}, [{escalus_story,
+                                                                       '-start_ready_clients/2-fun-0-',
+                                                                       94},
+                                                                      {lists,
+                                                                       foldl,
+                                                                       1261},
+                                                                      {escalus_story,
+                                                                       start_ready_clients,
+                                                                       91},
+                                                                      {lists,
+                                                                       flatmap,
+                                                                       1248},
+                                                                      {escalus_story,
+                                                                       story,
+                                                                       37},
+                                                                      {s2s_SUITE,
+                                                                       timeout_waiting_for_message,
+                                                                       186},
+                                                                      {test_server,
+                                                                       ts_tc,
+                                                                       1429},
+                                                                      {test_server,
+                                                                       run_test_case_eval1,
+                                                                       1026}]
+=== *** FAILED test case 12 of 12 ***
+=case          s2s_SUITE:end_per_group
+=logfile       s2s_suite.end_per_group.968774.664.html
+=group_props   [{name,node1_tls_required_node2_tls_false}]
+=started       2016-04-06 18:52:54
+=ended         2016-04-06 18:52:54
+=result        ok
+=elapsed       1.3e-5
+=group_time    0.270s
+=case          s2s_SUITE:end_per_suite
+=logfile       s2s_suite.end_per_suite.html
+=started       2016-04-06 18:52:54
+=ended         2016-04-06 18:52:59
+=result        ok
+=elapsed       5.077579
+=group_time    8.205s
+=== TEST COMPLETE, 0 ok, 10 failed, 2 skipped of 12 test cases
+
+=finished      2016-04-06 18:52:59
+=failed        10
+=successful    0
+=user_skipped  0
+=auto_skipped  2

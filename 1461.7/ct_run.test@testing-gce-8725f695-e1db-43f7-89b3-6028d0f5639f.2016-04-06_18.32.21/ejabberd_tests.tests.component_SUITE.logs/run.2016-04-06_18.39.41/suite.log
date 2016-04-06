@@ -1,0 +1,514 @@
+=== Suite started at 2016-04-06 18:39:41
+=== Starting test, 14 test cases
+=cases         14
+=user          travis
+=host          testing-gce-8725f695-e1db-43f7-89b3-6028d0f5639f
+=hosts         testing-gce-8725f695-e1db-43f7-89b3-6028d0f5639f 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-06 18:39:41
+=case          component_SUITE:init_per_suite
+=logfile       component_suite.init_per_suite.html
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        ok
+=elapsed       0.001995
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.html
+=group_props   [{name,xep0114_tcp}]
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        ok
+=elapsed       0.011803
+=case          component_SUITE:register_one_component
+=logfile       component_suite.register_one_component.html
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,148}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {component_SUITE,connect_component,2,
+                             [{file,"component_SUITE.erl"},{line,357}]},
+                         {component_SUITE,register_one_component,1,
+                             [{file,"component_SUITE.erl"},{line,115}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         148},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {component_SUITE,
+                                                                         connect_component,
+                                                                         357},
+                                                                        {component_SUITE,
+                                                                         register_one_component,
+                                                                         115},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 1 of 14 ***
+=case          component_SUITE:register_two_components
+=logfile       component_suite.register_two_components.html
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,148}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {component_SUITE,connect_component,2,
+                             [{file,"component_SUITE.erl"},{line,357}]},
+                         {component_SUITE,register_two_components,1,
+                             [{file,"component_SUITE.erl"},{line,141}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         148},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {component_SUITE,
+                                                                         connect_component,
+                                                                         357},
+                                                                        {component_SUITE,
+                                                                         register_two_components,
+                                                                         141},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 2 of 14 ***
+=case          component_SUITE:try_registering_with_wrong_password
+=logfile       component_suite.try_registering_with_wrong_password.html
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        ok
+=elapsed       0.002383
+=case          component_SUITE:try_registering_component_twice
+=logfile       component_suite.try_registering_component_twice.html
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,148}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {component_SUITE,connect_component,2,
+                             [{file,"component_SUITE.erl"},{line,357}]},
+                         {component_SUITE,try_registering_component_twice,1,
+                             [{file,"component_SUITE.erl"},{line,198}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         148},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {component_SUITE,
+                                                                         connect_component,
+                                                                         357},
+                                                                        {component_SUITE,
+                                                                         try_registering_component_twice,
+                                                                         198},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 4 of 14 ***
+=case          component_SUITE:try_registering_existing_host
+=logfile       component_suite.try_registering_existing_host.html
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        ok
+=elapsed       0.004277
+=case          component_SUITE:disco_components
+=logfile       component_suite.disco_components.html
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,148}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {component_SUITE,connect_component,2,
+                             [{file,"component_SUITE.erl"},{line,357}]},
+                         {component_SUITE,disco_components,1,
+                             [{file,"component_SUITE.erl"},{line,230}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         148},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {component_SUITE,
+                                                                         connect_component,
+                                                                         357},
+                                                                        {component_SUITE,
+                                                                         disco_components,
+                                                                         230},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 6 of 14 ***
+=case          component_SUITE:end_per_group
+=logfile       component_suite.end_per_group.html
+=group_props   [{name,xep0114_tcp}]
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        ok
+=elapsed       0.046986
+=group_time    0.231s
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.967982.368.html
+=group_props   [{name,xep0114_ws}]
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        ok
+=elapsed       0.007815
+=case          component_SUITE:register_one_component
+=logfile       component_suite.register_one_component.967982.404.html
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,148}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {component_SUITE,connect_component,2,
+                             [{file,"component_SUITE.erl"},{line,357}]},
+                         {component_SUITE,register_one_component,1,
+                             [{file,"component_SUITE.erl"},{line,115}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         148},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {component_SUITE,
+                                                                         connect_component,
+                                                                         357},
+                                                                        {component_SUITE,
+                                                                         register_one_component,
+                                                                         115},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 7 of 14 ***
+=case          component_SUITE:register_two_components
+=logfile       component_suite.register_two_components.967982.436.html
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,148}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {component_SUITE,connect_component,2,
+                             [{file,"component_SUITE.erl"},{line,357}]},
+                         {component_SUITE,register_two_components,1,
+                             [{file,"component_SUITE.erl"},{line,141}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         148},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {component_SUITE,
+                                                                         connect_component,
+                                                                         357},
+                                                                        {component_SUITE,
+                                                                         register_two_components,
+                                                                         141},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 8 of 14 ***
+=case          component_SUITE:try_registering_with_wrong_password
+=logfile       component_suite.try_registering_with_wrong_password.967982.468.html
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        ok
+=elapsed       0.003395
+=case          component_SUITE:try_registering_component_twice
+=logfile       component_suite.try_registering_component_twice.967982.498.html
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,148}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {component_SUITE,connect_component,2,
+                             [{file,"component_SUITE.erl"},{line,357}]},
+                         {component_SUITE,try_registering_component_twice,1,
+                             [{file,"component_SUITE.erl"},{line,198}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         148},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {component_SUITE,
+                                                                         connect_component,
+                                                                         357},
+                                                                        {component_SUITE,
+                                                                         try_registering_component_twice,
+                                                                         198},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 10 of 14 ***
+=case          component_SUITE:try_registering_existing_host
+=logfile       component_suite.try_registering_existing_host.967982.532.html
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        ok
+=elapsed       0.003565
+=case          component_SUITE:disco_components
+=logfile       component_suite.disco_components.967982.565.html
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,148}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {component_SUITE,connect_component,2,
+                             [{file,"component_SUITE.erl"},{line,357}]},
+                         {component_SUITE,disco_components,1,
+                             [{file,"component_SUITE.erl"},{line,230}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         148},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {component_SUITE,
+                                                                         connect_component,
+                                                                         357},
+                                                                        {component_SUITE,
+                                                                         disco_components,
+                                                                         230},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 12 of 14 ***
+=case          component_SUITE:end_per_group
+=logfile       component_suite.end_per_group.967982.599.html
+=group_props   [{name,xep0114_ws}]
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:42
+=result        ok
+=elapsed       0.051144
+=group_time    0.230s
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.967982.677.html
+=group_props   [{name,subdomain}]
+=started       2016-04-06 18:39:42
+=ended         2016-04-06 18:39:43
+=result        ok
+=elapsed       0.658717
+=case          component_SUITE:register_subdomain
+=logfile       component_suite.register_subdomain.html
+=started       2016-04-06 18:39:43
+=ended         2016-04-06 18:39:43
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,148}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {component_SUITE,connect_component,2,
+                             [{file,"component_SUITE.erl"},{line,357}]},
+                         {component_SUITE,register_subdomain,1,
+                             [{file,"component_SUITE.erl"},{line,251}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         148},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {component_SUITE,
+                                                                         connect_component,
+                                                                         357},
+                                                                        {component_SUITE,
+                                                                         register_subdomain,
+                                                                         251},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 13 of 14 ***
+=case          component_SUITE:end_per_group
+=logfile       component_suite.end_per_group.967983.401.html
+=group_props   [{name,subdomain}]
+=started       2016-04-06 18:39:43
+=ended         2016-04-06 18:39:49
+=result        ok
+=elapsed       6.393121
+=group_time    0.724s
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.967989.822.html
+=group_props   [{name,distributed}]
+=started       2016-04-06 18:39:49
+=ended         2016-04-06 18:39:56
+=result        ok
+=elapsed       6.704396
+=case          component_SUITE:register_in_cluster
+=logfile       component_suite.register_in_cluster.html
+=started       2016-04-06 18:39:56
+=ended         2016-04-06 18:39:56
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,148}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {component_SUITE,connect_component,2,
+                             [{file,"component_SUITE.erl"},{line,357}]},
+                         {component_SUITE,register_in_cluster,1,
+                             [{file,"component_SUITE.erl"},{line,283}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         148},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {component_SUITE,
+                                                                         connect_component,
+                                                                         357},
+                                                                        {component_SUITE,
+                                                                         register_in_cluster,
+                                                                         283},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 14 of 14 ***
+=case          component_SUITE:end_per_group
+=logfile       component_suite.end_per_group.967996.587.html
+=group_props   [{name,distributed}]
+=started       2016-04-06 18:39:56
+=ended         2016-04-06 18:40:03
+=result        ok
+=elapsed       6.588072
+=group_time    6.766s
+=case          component_SUITE:end_per_suite
+=logfile       component_suite.end_per_suite.html
+=started       2016-04-06 18:40:03
+=ended         2016-04-06 18:40:03
+=result        ok
+=elapsed       0.00175
+=group_time    21.196s
+=== TEST COMPLETE, 4 ok, 10 failed of 14 test cases
+
+=finished      2016-04-06 18:40:03
+=failed        10
+=successful    4
+=user_skipped  0
+=auto_skipped  0

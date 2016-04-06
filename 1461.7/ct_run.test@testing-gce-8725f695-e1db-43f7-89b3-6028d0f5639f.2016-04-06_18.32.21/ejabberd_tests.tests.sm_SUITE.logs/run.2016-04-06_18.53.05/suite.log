@@ -1,0 +1,2942 @@
+=== Suite started at 2016-04-06 18:53:05
+=== Starting test (with repeated test cases)
+=cases         unknown
+=user          travis
+=host          testing-gce-8725f695-e1db-43f7-89b3-6028d0f5639f
+=hosts         testing-gce-8725f695-e1db-43f7-89b3-6028d0f5639f 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-06 18:53:05
+=case          sm_SUITE:init_per_suite
+=logfile       sm_suite.init_per_suite.html
+=started       2016-04-06 18:53:06
+=ended         2016-04-06 18:53:06
+=result        ok
+=elapsed       0.016845
+=case          sm_SUITE:server_string_type
+=logfile       sm_suite.server_string_type.html
+=started       2016-04-06 18:53:06
+=ended         2016-04-06 18:53:06
+=result        ok
+=elapsed       8.82e-4
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.html
+=group_props   [{name,negotiation},shuffle,{repeat,5}]
+=started       2016-04-06 18:53:06
+=ended         2016-04-06 18:53:06
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:server_enables_resumption
+=logfile       sm_suite.server_enables_resumption.html
+=started       2016-04-06 18:53:06
+=ended         2016-04-06 18:53:06
+=result        ok
+=elapsed       0.461367
+=case          sm_SUITE:server_returns_failed_after_auth
+=logfile       sm_suite.server_returns_failed_after_auth.html
+=started       2016-04-06 18:53:06
+=ended         2016-04-06 18:53:06
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {sm_SUITE,server_returns_failed,2,
+                             [{file,"sm_SUITE.erl"},{line,203}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {sm_SUITE,
+                                                                         server_returns_failed,
+                                                                         203},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 3 ***
+=case          sm_SUITE:server_enables_sm_before_session
+=logfile       sm_suite.server_enables_sm_before_session.html
+=started       2016-04-06 18:53:06
+=ended         2016-04-06 18:53:07
+=result        ok
+=elapsed       0.178568
+=case          sm_SUITE:server_returns_failed_after_start
+=logfile       sm_suite.server_returns_failed_after_start.html
+=started       2016-04-06 18:53:07
+=ended         2016-04-06 18:53:07
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {sm_SUITE,server_returns_failed,2,
+                             [{file,"sm_SUITE.erl"},{line,203}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {sm_SUITE,
+                                                                         server_returns_failed,
+                                                                         203},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 5 ***
+=case          sm_SUITE:server_announces_sm
+=logfile       sm_suite.server_announces_sm.html
+=started       2016-04-06 18:53:07
+=ended         2016-04-06 18:53:07
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {sm_SUITE,server_announces_sm,1,
+                             [{file,"sm_SUITE.erl"},{line,155}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {sm_SUITE,
+                                                                         server_announces_sm,
+                                                                         155},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 6 ***
+=case          sm_SUITE:server_enables_sm_after_session
+=logfile       sm_suite.server_enables_sm_after_session.html
+=started       2016-04-06 18:53:07
+=ended         2016-04-06 18:53:07
+=result        ok
+=elapsed       0.261297
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.html
+=group_props   [{name,negotiation},shuffle,{repeat,5}]
+=started       2016-04-06 18:53:07
+=ended         2016-04-06 18:53:07
+=result        ok
+=elapsed       1.0e-6
+=group_time    1.195s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968787.406.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,negotiation}]
+=started       2016-04-06 18:53:07
+=ended         2016-04-06 18:53:07
+=result        ok
+=elapsed       2.0e-6
+=case          sm_SUITE:server_enables_resumption
+=logfile       sm_suite.server_enables_resumption.968787.434.html
+=started       2016-04-06 18:53:07
+=ended         2016-04-06 18:53:07
+=result        ok
+=elapsed       0.461456
+=case          sm_SUITE:server_enables_sm_before_session
+=logfile       sm_suite.server_enables_sm_before_session.968787.925.html
+=started       2016-04-06 18:53:07
+=ended         2016-04-06 18:53:08
+=result        ok
+=elapsed       0.178414
+=case          sm_SUITE:server_returns_failed_after_start
+=logfile       sm_suite.server_returns_failed_after_start.968788.133.html
+=started       2016-04-06 18:53:08
+=ended         2016-04-06 18:53:08
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {sm_SUITE,server_returns_failed,2,
+                             [{file,"sm_SUITE.erl"},{line,203}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {sm_SUITE,
+                                                                         server_returns_failed,
+                                                                         203},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 10 ***
+=case          sm_SUITE:server_returns_failed_after_auth
+=logfile       sm_suite.server_returns_failed_after_auth.968788.169.html
+=started       2016-04-06 18:53:08
+=ended         2016-04-06 18:53:08
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {sm_SUITE,server_returns_failed,2,
+                             [{file,"sm_SUITE.erl"},{line,203}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {sm_SUITE,
+                                                                         server_returns_failed,
+                                                                         203},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 11 ***
+=case          sm_SUITE:server_announces_sm
+=logfile       sm_suite.server_announces_sm.968788.253.html
+=started       2016-04-06 18:53:08
+=ended         2016-04-06 18:53:08
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {sm_SUITE,server_announces_sm,1,
+                             [{file,"sm_SUITE.erl"},{line,155}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {sm_SUITE,
+                                                                         server_announces_sm,
+                                                                         155},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 12 ***
+=case          sm_SUITE:server_enables_sm_after_session
+=logfile       sm_suite.server_enables_sm_after_session.968788.282.html
+=started       2016-04-06 18:53:08
+=ended         2016-04-06 18:53:08
+=result        ok
+=elapsed       0.260887
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968788.570.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,negotiation}]
+=started       2016-04-06 18:53:08
+=ended         2016-04-06 18:53:08
+=result        ok
+=elapsed       1.0e-6
+=group_time    1.164s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968788.598.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,negotiation}]
+=started       2016-04-06 18:53:08
+=ended         2016-04-06 18:53:08
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:server_enables_sm_before_session
+=logfile       sm_suite.server_enables_sm_before_session.968788.628.html
+=started       2016-04-06 18:53:08
+=ended         2016-04-06 18:53:08
+=result        ok
+=elapsed       0.179686
+=case          sm_SUITE:server_enables_resumption
+=logfile       sm_suite.server_enables_resumption.968788.835.html
+=started       2016-04-06 18:53:08
+=ended         2016-04-06 18:53:09
+=result        ok
+=elapsed       0.460819
+=case          sm_SUITE:server_returns_failed_after_start
+=logfile       sm_suite.server_returns_failed_after_start.968789.325.html
+=started       2016-04-06 18:53:09
+=ended         2016-04-06 18:53:09
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {sm_SUITE,server_returns_failed,2,
+                             [{file,"sm_SUITE.erl"},{line,203}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {sm_SUITE,
+                                                                         server_returns_failed,
+                                                                         203},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 16 ***
+=case          sm_SUITE:server_enables_sm_after_session
+=logfile       sm_suite.server_enables_sm_after_session.968789.354.html
+=started       2016-04-06 18:53:09
+=ended         2016-04-06 18:53:09
+=result        ok
+=elapsed       0.259931
+=case          sm_SUITE:server_returns_failed_after_auth
+=logfile       sm_suite.server_returns_failed_after_auth.968789.645.html
+=started       2016-04-06 18:53:09
+=ended         2016-04-06 18:53:09
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {sm_SUITE,server_returns_failed,2,
+                             [{file,"sm_SUITE.erl"},{line,203}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {sm_SUITE,
+                                                                         server_returns_failed,
+                                                                         203},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 18 ***
+=case          sm_SUITE:server_announces_sm
+=logfile       sm_suite.server_announces_sm.968789.724.html
+=started       2016-04-06 18:53:09
+=ended         2016-04-06 18:53:09
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {sm_SUITE,server_announces_sm,1,
+                             [{file,"sm_SUITE.erl"},{line,155}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {sm_SUITE,
+                                                                         server_announces_sm,
+                                                                         155},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 19 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968789.753.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,negotiation}]
+=started       2016-04-06 18:53:09
+=ended         2016-04-06 18:53:09
+=result        ok
+=elapsed       1.0e-6
+=group_time    1.155s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968789.784.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,negotiation}]
+=started       2016-04-06 18:53:09
+=ended         2016-04-06 18:53:09
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:server_returns_failed_after_auth
+=logfile       sm_suite.server_returns_failed_after_auth.968789.811.html
+=started       2016-04-06 18:53:09
+=ended         2016-04-06 18:53:09
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {sm_SUITE,server_returns_failed,2,
+                             [{file,"sm_SUITE.erl"},{line,203}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {sm_SUITE,
+                                                                         server_returns_failed,
+                                                                         203},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 20 ***
+=case          sm_SUITE:server_announces_sm
+=logfile       sm_suite.server_announces_sm.968789.889.html
+=started       2016-04-06 18:53:09
+=ended         2016-04-06 18:53:09
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {sm_SUITE,server_announces_sm,1,
+                             [{file,"sm_SUITE.erl"},{line,155}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {sm_SUITE,
+                                                                         server_announces_sm,
+                                                                         155},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 21 ***
+=case          sm_SUITE:server_enables_sm_before_session
+=logfile       sm_suite.server_enables_sm_before_session.968789.921.html
+=started       2016-04-06 18:53:09
+=ended         2016-04-06 18:53:10
+=result        ok
+=elapsed       0.178112
+=case          sm_SUITE:server_enables_sm_after_session
+=logfile       sm_suite.server_enables_sm_after_session.968790.127.html
+=started       2016-04-06 18:53:10
+=ended         2016-04-06 18:53:10
+=result        ok
+=elapsed       0.260414
+=case          sm_SUITE:server_enables_resumption
+=logfile       sm_suite.server_enables_resumption.968790.417.html
+=started       2016-04-06 18:53:10
+=ended         2016-04-06 18:53:10
+=result        ok
+=elapsed       0.461273
+=case          sm_SUITE:server_returns_failed_after_start
+=logfile       sm_suite.server_returns_failed_after_start.968790.909.html
+=started       2016-04-06 18:53:10
+=ended         2016-04-06 18:53:10
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {sm_SUITE,server_returns_failed,2,
+                             [{file,"sm_SUITE.erl"},{line,203}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {sm_SUITE,
+                                                                         server_returns_failed,
+                                                                         203},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 25 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968790.939.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,negotiation}]
+=started       2016-04-06 18:53:10
+=ended         2016-04-06 18:53:10
+=result        ok
+=elapsed       1.0e-6
+=group_time    1.155s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968790.966.html
+=group_props   [{shuffle,repeated},{name,negotiation}]
+=started       2016-04-06 18:53:10
+=ended         2016-04-06 18:53:10
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:server_returns_failed_after_start
+=logfile       sm_suite.server_returns_failed_after_start.968790.992.html
+=started       2016-04-06 18:53:10
+=ended         2016-04-06 18:53:11
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {sm_SUITE,server_returns_failed,2,
+                             [{file,"sm_SUITE.erl"},{line,203}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {sm_SUITE,
+                                                                         server_returns_failed,
+                                                                         203},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 26 ***
+=case          sm_SUITE:server_returns_failed_after_auth
+=logfile       sm_suite.server_returns_failed_after_auth.968791.21.html
+=started       2016-04-06 18:53:11
+=ended         2016-04-06 18:53:11
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {sm_SUITE,server_returns_failed,2,
+                             [{file,"sm_SUITE.erl"},{line,203}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {sm_SUITE,
+                                                                         server_returns_failed,
+                                                                         203},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 27 ***
+=case          sm_SUITE:server_enables_sm_after_session
+=logfile       sm_suite.server_enables_sm_after_session.968791.100.html
+=started       2016-04-06 18:53:11
+=ended         2016-04-06 18:53:11
+=result        ok
+=elapsed       0.25993
+=case          sm_SUITE:server_announces_sm
+=logfile       sm_suite.server_announces_sm.968791.392.html
+=started       2016-04-06 18:53:11
+=ended         2016-04-06 18:53:11
+=result        failed: {{badmatch,false},
+                        [{escalus_utils,make_jid,1,
+                             [{file,"src/escalus_utils.erl"},{line,150}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,109}]},
+                         {sm_SUITE,server_announces_sm,1,
+                             [{file,"sm_SUITE.erl"},{line,155}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,968}]}]}, [{escalus_utils,
+                                                                         make_jid,
+                                                                         150},
+                                                                        {escalus_connection,
+                                                                         start,
+                                                                         109},
+                                                                        {sm_SUITE,
+                                                                         server_announces_sm,
+                                                                         155},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1429},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         1026},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         968}]
+=== *** FAILED test case 29 ***
+=case          sm_SUITE:server_enables_resumption
+=logfile       sm_suite.server_enables_resumption.968791.423.html
+=started       2016-04-06 18:53:11
+=ended         2016-04-06 18:53:11
+=result        ok
+=elapsed       0.461617
+=case          sm_SUITE:server_enables_sm_before_session
+=logfile       sm_suite.server_enables_sm_before_session.968791.916.html
+=started       2016-04-06 18:53:11
+=ended         2016-04-06 18:53:12
+=result        ok
+=elapsed       0.179179
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968792.123.html
+=group_props   [{shuffle,repeated},{name,negotiation}]
+=started       2016-04-06 18:53:12
+=ended         2016-04-06 18:53:12
+=result        ok
+=elapsed       1.0e-6
+=group_time    1.157s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968792.152.html
+=group_props   [{name,server_acking},shuffle,{repeat,5}]
+=started       2016-04-06 18:53:12
+=ended         2016-04-06 18:53:12
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:h_ok_after_session_enabled_after_session
+=logfile       sm_suite.h_ok_after_session_enabled_after_session.html
+=started       2016-04-06 18:53:12
+=ended         2016-04-06 18:53:13
+=result        failed: {thrown,{timeout,roster_result}}, [{sm_SUITE,
+                                                           h_ok_after_session_enabled_after_session}]
+=== *** FAILED test case 32 ***
+=case          sm_SUITE:h_ok_after_a_chat
+=logfile       sm_suite.h_ok_after_a_chat.html
+=started       2016-04-06 18:53:13
+=ended         2016-04-06 18:53:14
+=result        ok
+=elapsed       1.005461
+=case          sm_SUITE:h_ok_before_session
+=logfile       sm_suite.h_ok_before_session.html
+=started       2016-04-06 18:53:14
+=ended         2016-04-06 18:53:15
+=result        failed: {thrown,{timeout,stream_mgmt_ack}}, [{sm_SUITE,
+                                                             h_ok_before_session}]
+=== *** FAILED test case 34 ***
+=case          sm_SUITE:basic_ack
+=logfile       sm_suite.basic_ack.html
+=started       2016-04-06 18:53:15
+=ended         2016-04-06 18:53:16
+=result        failed: {thrown,{timeout,roster_result}}, [{sm_SUITE,
+                                                           basic_ack}]
+=== *** FAILED test case 35 ***
+=case          sm_SUITE:h_ok_after_session_enabled_before_session
+=logfile       sm_suite.h_ok_after_session_enabled_before_session.html
+=started       2016-04-06 18:53:17
+=ended         2016-04-06 18:53:18
+=result        failed: {thrown,{timeout,stream_mgmt_ack}}, [{sm_SUITE,
+                                                             h_ok_after_session_enabled_before_session}]
+=== *** FAILED test case 36 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968798.236.html
+=group_props   [{name,server_acking},shuffle,{repeat,5}]
+=started       2016-04-06 18:53:18
+=ended         2016-04-06 18:53:18
+=result        ok
+=elapsed       1.0e-6
+=group_time    6.083s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968798.262.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,server_acking}]
+=started       2016-04-06 18:53:18
+=ended         2016-04-06 18:53:18
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:h_ok_after_session_enabled_before_session
+=logfile       sm_suite.h_ok_after_session_enabled_before_session.968798.288.html
+=started       2016-04-06 18:53:18
+=ended         2016-04-06 18:53:19
+=result        failed: {thrown,{timeout,stream_mgmt_ack}}, [{sm_SUITE,
+                                                             h_ok_after_session_enabled_before_session}]
+=== *** FAILED test case 37 ***
+=case          sm_SUITE:h_ok_before_session
+=logfile       sm_suite.h_ok_before_session.968799.519.html
+=started       2016-04-06 18:53:19
+=ended         2016-04-06 18:53:20
+=result        failed: {thrown,{timeout,stream_mgmt_ack}}, [{sm_SUITE,
+                                                             h_ok_before_session}]
+=== *** FAILED test case 38 ***
+=case          sm_SUITE:basic_ack
+=logfile       sm_suite.basic_ack.968800.725.html
+=started       2016-04-06 18:53:20
+=ended         2016-04-06 18:53:22
+=result        failed: {thrown,{timeout,roster_result}}, [{sm_SUITE,
+                                                           basic_ack}]
+=== *** FAILED test case 39 ***
+=case          sm_SUITE:h_ok_after_session_enabled_after_session
+=logfile       sm_suite.h_ok_after_session_enabled_after_session.968802.17.html
+=started       2016-04-06 18:53:22
+=ended         2016-04-06 18:53:23
+=result        failed: {thrown,{timeout,roster_result}}, [{sm_SUITE,
+                                                           h_ok_after_session_enabled_after_session}]
+=== *** FAILED test case 40 ***
+=case          sm_SUITE:h_ok_after_a_chat
+=logfile       sm_suite.h_ok_after_a_chat.968803.310.html
+=started       2016-04-06 18:53:23
+=ended         2016-04-06 18:53:24
+=result        ok
+=elapsed       1.000913
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968804.338.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,server_acking}]
+=started       2016-04-06 18:53:24
+=ended         2016-04-06 18:53:24
+=result        ok
+=elapsed       1.0e-6
+=group_time    6.076s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968804.364.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,server_acking}]
+=started       2016-04-06 18:53:24
+=ended         2016-04-06 18:53:24
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:h_ok_after_session_enabled_before_session
+=logfile       sm_suite.h_ok_after_session_enabled_before_session.968804.389.html
+=started       2016-04-06 18:53:24
+=ended         2016-04-06 18:53:25
+=result        failed: {thrown,{timeout,stream_mgmt_ack}}, [{sm_SUITE,
+                                                             h_ok_after_session_enabled_before_session}]
+=== *** FAILED test case 42 ***
+=case          sm_SUITE:basic_ack
+=logfile       sm_suite.basic_ack.968805.618.html
+=started       2016-04-06 18:53:25
+=ended         2016-04-06 18:53:26
+=result        failed: {thrown,{timeout,roster_result}}, [{sm_SUITE,
+                                                           basic_ack}]
+=== *** FAILED test case 43 ***
+=case          sm_SUITE:h_ok_before_session
+=logfile       sm_suite.h_ok_before_session.968806.909.html
+=started       2016-04-06 18:53:26
+=ended         2016-04-06 18:53:28
+=result        failed: {thrown,{timeout,stream_mgmt_ack}}, [{sm_SUITE,
+                                                             h_ok_before_session}]
+=== *** FAILED test case 44 ***
+=case          sm_SUITE:h_ok_after_a_chat
+=logfile       sm_suite.h_ok_after_a_chat.968808.116.html
+=started       2016-04-06 18:53:28
+=ended         2016-04-06 18:53:29
+=result        ok
+=elapsed       1.003588
+=case          sm_SUITE:h_ok_after_session_enabled_after_session
+=logfile       sm_suite.h_ok_after_session_enabled_after_session.968809.149.html
+=started       2016-04-06 18:53:29
+=ended         2016-04-06 18:53:30
+=result        failed: {thrown,{timeout,roster_result}}, [{sm_SUITE,
+                                                           h_ok_after_session_enabled_after_session}]
+=== *** FAILED test case 46 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968810.438.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,server_acking}]
+=started       2016-04-06 18:53:30
+=ended         2016-04-06 18:53:30
+=result        ok
+=elapsed       1.0e-6
+=group_time    6.075s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968810.464.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,server_acking}]
+=started       2016-04-06 18:53:30
+=ended         2016-04-06 18:53:30
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:h_ok_before_session
+=logfile       sm_suite.h_ok_before_session.968810.490.html
+=started       2016-04-06 18:53:30
+=ended         2016-04-06 18:53:31
+=result        failed: {thrown,{timeout,stream_mgmt_ack}}, [{sm_SUITE,
+                                                             h_ok_before_session}]
+=== *** FAILED test case 47 ***
+=case          sm_SUITE:h_ok_after_session_enabled_after_session
+=logfile       sm_suite.h_ok_after_session_enabled_after_session.968811.705.html
+=started       2016-04-06 18:53:31
+=ended         2016-04-06 18:53:32
+=result        failed: {thrown,{timeout,roster_result}}, [{sm_SUITE,
+                                                           h_ok_after_session_enabled_after_session}]
+=== *** FAILED test case 48 ***
+=case          sm_SUITE:h_ok_after_a_chat
+=logfile       sm_suite.h_ok_after_a_chat.968812.997.html
+=started       2016-04-06 18:53:32
+=ended         2016-04-06 18:53:34
+=result        ok
+=elapsed       0.998289
+=case          sm_SUITE:basic_ack
+=logfile       sm_suite.basic_ack.968814.22.html
+=started       2016-04-06 18:53:34
+=ended         2016-04-06 18:53:35
+=result        failed: {thrown,{timeout,roster_result}}, [{sm_SUITE,
+                                                           basic_ack}]
+=== *** FAILED test case 50 ***
+=case          sm_SUITE:h_ok_after_session_enabled_before_session
+=logfile       sm_suite.h_ok_after_session_enabled_before_session.968815.311.html
+=started       2016-04-06 18:53:35
+=ended         2016-04-06 18:53:36
+=result        failed: {thrown,{timeout,stream_mgmt_ack}}, [{sm_SUITE,
+                                                             h_ok_after_session_enabled_before_session}]
+=== *** FAILED test case 51 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968816.542.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,server_acking}]
+=started       2016-04-06 18:53:36
+=ended         2016-04-06 18:53:36
+=result        ok
+=elapsed       1.0e-6
+=group_time    6.079s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968816.568.html
+=group_props   [{shuffle,repeated},{name,server_acking}]
+=started       2016-04-06 18:53:36
+=ended         2016-04-06 18:53:36
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:h_ok_after_session_enabled_before_session
+=logfile       sm_suite.h_ok_after_session_enabled_before_session.968816.594.html
+=started       2016-04-06 18:53:36
+=ended         2016-04-06 18:53:37
+=result        failed: {thrown,{timeout,stream_mgmt_ack}}, [{sm_SUITE,
+                                                             h_ok_after_session_enabled_before_session}]
+=== *** FAILED test case 52 ***
+=case          sm_SUITE:h_ok_before_session
+=logfile       sm_suite.h_ok_before_session.968817.826.html
+=started       2016-04-06 18:53:37
+=ended         2016-04-06 18:53:39
+=result        failed: {thrown,{timeout,stream_mgmt_ack}}, [{sm_SUITE,
+                                                             h_ok_before_session}]
+=== *** FAILED test case 53 ***
+=case          sm_SUITE:h_ok_after_session_enabled_after_session
+=logfile       sm_suite.h_ok_after_session_enabled_after_session.968819.36.html
+=started       2016-04-06 18:53:39
+=ended         2016-04-06 18:53:40
+=result        failed: {thrown,{timeout,roster_result}}, [{sm_SUITE,
+                                                           h_ok_after_session_enabled_after_session}]
+=== *** FAILED test case 54 ***
+=case          sm_SUITE:h_ok_after_a_chat
+=logfile       sm_suite.h_ok_after_a_chat.968820.326.html
+=started       2016-04-06 18:53:40
+=ended         2016-04-06 18:53:41
+=result        ok
+=elapsed       1.001266
+=case          sm_SUITE:basic_ack
+=logfile       sm_suite.basic_ack.968821.353.html
+=started       2016-04-06 18:53:41
+=ended         2016-04-06 18:53:42
+=result        failed: {thrown,{timeout,roster_result}}, [{sm_SUITE,
+                                                           basic_ack}]
+=== *** FAILED test case 56 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968822.648.html
+=group_props   [{shuffle,repeated},{name,server_acking}]
+=started       2016-04-06 18:53:42
+=ended         2016-04-06 18:53:42
+=result        ok
+=elapsed       1.0e-6
+=group_time    6.080s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968822.674.html
+=group_props   [{name,client_acking},shuffle,{repeat,5}]
+=started       2016-04-06 18:53:42
+=ended         2016-04-06 18:53:42
+=result        ok
+=elapsed       5.0e-6
+=case          sm_SUITE:server_requests_ack_after_session
+=logfile       sm_suite.server_requests_ack_after_session.html
+=started       2016-04-06 18:53:42
+=ended         2016-04-06 18:53:43
+=result        failed: {thrown,{timeout,stream_mgmt_req}}, [{sm_SUITE,
+                                                             server_requests_ack_after_session}]
+=== *** FAILED test case 57 ***
+=case          sm_SUITE:too_many_unacked_stanzas
+=logfile       sm_suite.too_many_unacked_stanzas.html
+=started       2016-04-06 18:53:43
+=ended         2016-04-06 18:53:50
+=result        failed: {thrown,{timeout,maybe_offline_msg}}, [{sm_SUITE,
+                                                               too_many_unacked_stanzas}]
+=== *** FAILED test case 58 ***
+=case          sm_SUITE:client_acks_more_than_sent
+=logfile       sm_suite.client_acks_more_than_sent.html
+=started       2016-04-06 18:53:50
+=ended         2016-04-06 18:53:51
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 59 ***
+=case          sm_SUITE:server_requests_ack
+=logfile       sm_suite.server_requests_ack.html
+=started       2016-04-06 18:53:51
+=ended         2016-04-06 18:53:51
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 60 ***
+=case          sm_SUITE:resend_more_offline_messages_than_buffer_size
+=logfile       sm_suite.resend_more_offline_messages_than_buffer_size.html
+=started       2016-04-06 18:53:51
+=ended         2016-04-06 18:53:53
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resend_more_offline_messages_than_buffer_size}]
+=== *** FAILED test case 61 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968833.159.html
+=group_props   [{name,client_acking},shuffle,{repeat,5}]
+=started       2016-04-06 18:53:53
+=ended         2016-04-06 18:53:53
+=result        ok
+=elapsed       1.0e-6
+=group_time    10.485s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968833.189.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,client_acking}]
+=started       2016-04-06 18:53:53
+=ended         2016-04-06 18:53:53
+=result        ok
+=elapsed       4.0e-6
+=case          sm_SUITE:server_requests_ack_after_session
+=logfile       sm_suite.server_requests_ack_after_session.968833.225.html
+=started       2016-04-06 18:53:53
+=ended         2016-04-06 18:53:54
+=result        failed: {thrown,{timeout,stream_mgmt_req}}, [{sm_SUITE,
+                                                             server_requests_ack_after_session}]
+=== *** FAILED test case 62 ***
+=case          sm_SUITE:server_requests_ack
+=logfile       sm_suite.server_requests_ack.968834.457.html
+=started       2016-04-06 18:53:54
+=ended         2016-04-06 18:53:54
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 63 ***
+=case          sm_SUITE:client_acks_more_than_sent
+=logfile       sm_suite.client_acks_more_than_sent.968834.973.html
+=started       2016-04-06 18:53:54
+=ended         2016-04-06 18:53:55
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 64 ***
+=case          sm_SUITE:resend_more_offline_messages_than_buffer_size
+=logfile       sm_suite.resend_more_offline_messages_than_buffer_size.968835.474.html
+=started       2016-04-06 18:53:55
+=ended         2016-04-06 18:53:56
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resend_more_offline_messages_than_buffer_size}]
+=== *** FAILED test case 65 ***
+=case          sm_SUITE:too_many_unacked_stanzas
+=logfile       sm_suite.too_many_unacked_stanzas.968836.686.html
+=started       2016-04-06 18:53:56
+=ended         2016-04-06 18:53:57
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 66 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968837.192.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,client_acking}]
+=started       2016-04-06 18:53:57
+=ended         2016-04-06 18:53:57
+=result        ok
+=elapsed       1.0e-6
+=group_time    4.004s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968837.219.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,client_acking}]
+=started       2016-04-06 18:53:57
+=ended         2016-04-06 18:53:57
+=result        ok
+=elapsed       4.0e-6
+=case          sm_SUITE:too_many_unacked_stanzas
+=logfile       sm_suite.too_many_unacked_stanzas.968837.246.html
+=started       2016-04-06 18:53:57
+=ended         2016-04-06 18:53:57
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 67 ***
+=case          sm_SUITE:server_requests_ack
+=logfile       sm_suite.server_requests_ack.968837.749.html
+=started       2016-04-06 18:53:57
+=ended         2016-04-06 18:53:58
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 68 ***
+=case          sm_SUITE:client_acks_more_than_sent
+=logfile       sm_suite.client_acks_more_than_sent.968838.259.html
+=started       2016-04-06 18:53:58
+=ended         2016-04-06 18:53:58
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 69 ***
+=case          sm_SUITE:server_requests_ack_after_session
+=logfile       sm_suite.server_requests_ack_after_session.968838.763.html
+=started       2016-04-06 18:53:58
+=ended         2016-04-06 18:53:59
+=result        failed: {thrown,{timeout,stream_mgmt_req}}, [{sm_SUITE,
+                                                             server_requests_ack_after_session}]
+=== *** FAILED test case 70 ***
+=case          sm_SUITE:resend_more_offline_messages_than_buffer_size
+=logfile       sm_suite.resend_more_offline_messages_than_buffer_size.968839.995.html
+=started       2016-04-06 18:53:59
+=ended         2016-04-06 18:54:01
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resend_more_offline_messages_than_buffer_size}]
+=== *** FAILED test case 71 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968841.203.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,client_acking}]
+=started       2016-04-06 18:54:01
+=ended         2016-04-06 18:54:01
+=result        ok
+=elapsed       1.0e-6
+=group_time    3.984s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968841.230.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,client_acking}]
+=started       2016-04-06 18:54:01
+=ended         2016-04-06 18:54:01
+=result        ok
+=elapsed       4.0e-6
+=case          sm_SUITE:server_requests_ack_after_session
+=logfile       sm_suite.server_requests_ack_after_session.968841.257.html
+=started       2016-04-06 18:54:01
+=ended         2016-04-06 18:54:02
+=result        failed: {thrown,{timeout,stream_mgmt_req}}, [{sm_SUITE,
+                                                             server_requests_ack_after_session}]
+=== *** FAILED test case 72 ***
+=case          sm_SUITE:client_acks_more_than_sent
+=logfile       sm_suite.client_acks_more_than_sent.968842.496.html
+=started       2016-04-06 18:54:02
+=ended         2016-04-06 18:54:03
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 73 ***
+=case          sm_SUITE:server_requests_ack
+=logfile       sm_suite.server_requests_ack.968843.15.html
+=started       2016-04-06 18:54:03
+=ended         2016-04-06 18:54:03
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 74 ***
+=case          sm_SUITE:resend_more_offline_messages_than_buffer_size
+=logfile       sm_suite.resend_more_offline_messages_than_buffer_size.968843.525.html
+=started       2016-04-06 18:54:03
+=ended         2016-04-06 18:54:04
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resend_more_offline_messages_than_buffer_size}]
+=== *** FAILED test case 75 ***
+=case          sm_SUITE:too_many_unacked_stanzas
+=logfile       sm_suite.too_many_unacked_stanzas.968844.734.html
+=started       2016-04-06 18:54:04
+=ended         2016-04-06 18:54:05
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 76 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968845.245.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,client_acking}]
+=started       2016-04-06 18:54:05
+=ended         2016-04-06 18:54:05
+=result        ok
+=elapsed       1.0e-6
+=group_time    4.014s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968845.277.html
+=group_props   [{shuffle,repeated},{name,client_acking}]
+=started       2016-04-06 18:54:05
+=ended         2016-04-06 18:54:05
+=result        ok
+=elapsed       5.0e-6
+=case          sm_SUITE:client_acks_more_than_sent
+=logfile       sm_suite.client_acks_more_than_sent.968845.308.html
+=started       2016-04-06 18:54:05
+=ended         2016-04-06 18:54:05
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 77 ***
+=case          sm_SUITE:server_requests_ack
+=logfile       sm_suite.server_requests_ack.968845.811.html
+=started       2016-04-06 18:54:05
+=ended         2016-04-06 18:54:06
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 78 ***
+=case          sm_SUITE:too_many_unacked_stanzas
+=logfile       sm_suite.too_many_unacked_stanzas.968846.316.html
+=started       2016-04-06 18:54:06
+=ended         2016-04-06 18:54:06
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 79 ***
+=case          sm_SUITE:server_requests_ack_after_session
+=logfile       sm_suite.server_requests_ack_after_session.968846.820.html
+=started       2016-04-06 18:54:06
+=ended         2016-04-06 18:54:08
+=result        failed: {thrown,{timeout,stream_mgmt_req}}, [{sm_SUITE,
+                                                             server_requests_ack_after_session}]
+=== *** FAILED test case 80 ***
+=case          sm_SUITE:resend_more_offline_messages_than_buffer_size
+=logfile       sm_suite.resend_more_offline_messages_than_buffer_size.968848.52.html
+=started       2016-04-06 18:54:08
+=ended         2016-04-06 18:54:09
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resend_more_offline_messages_than_buffer_size}]
+=== *** FAILED test case 81 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968849.263.html
+=group_props   [{shuffle,repeated},{name,client_acking}]
+=started       2016-04-06 18:54:09
+=ended         2016-04-06 18:54:09
+=result        ok
+=elapsed       1.0e-6
+=group_time    3.986s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968849.290.html
+=group_props   [{name,reconnection},shuffle,{repeat,5}]
+=started       2016-04-06 18:54:09
+=ended         2016-04-06 18:54:09
+=result        ok
+=elapsed       6.0e-6
+=case          sm_SUITE:resend_unacked_on_reconnection
+=logfile       sm_suite.resend_unacked_on_reconnection.html
+=started       2016-04-06 18:54:09
+=ended         2016-04-06 18:54:09
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 82 ***
+=case          sm_SUITE:preserve_order
+=logfile       sm_suite.preserve_order.html
+=started       2016-04-06 18:54:09
+=ended         2016-04-06 18:54:11
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      preserve_order}]
+=== *** FAILED test case 83 ***
+=case          sm_SUITE:resend_unacked_after_resume_timeout
+=logfile       sm_suite.resend_unacked_after_resume_timeout.html
+=started       2016-04-06 18:54:11
+=ended         2016-04-06 18:54:12
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resend_unacked_after_resume_timeout}]
+=== *** FAILED test case 84 ***
+=case          sm_SUITE:resume_session_state_stop_c2s
+=logfile       sm_suite.resume_session_state_stop_c2s.html
+=started       2016-04-06 18:54:12
+=ended         2016-04-06 18:54:13
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resume_session_state_stop_c2s}]
+=== *** FAILED test case 85 ***
+=case          sm_SUITE:resume_session_state_send_message
+=logfile       sm_suite.resume_session_state_send_message.html
+=started       2016-04-06 18:54:13
+=ended         2016-04-06 18:54:14
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resume_session_state_send_message}]
+=== *** FAILED test case 86 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968854.661.html
+=group_props   [{name,reconnection},shuffle,{repeat,5}]
+=started       2016-04-06 18:54:14
+=ended         2016-04-06 18:54:15
+=result        failed: {thrown,{timeout,maybe_offline_msg}}, [{escalus_connection,
+                                                               get_stanza,165},
+                                                              {sm_SUITE,
+                                                               discard_offline_messages,
+                                                               753},
+                                                              {sm_SUITE,
+                                                               end_per_group,
+                                                               89},
+                                                              {test_server,
+                                                               ts_tc,1429},
+                                                              {test_server,
+                                                               run_test_case_eval1,
+                                                               1099},
+                                                              {test_server,
+                                                               run_test_case_eval,
+                                                               968}]
+=== *** FAILED {sm_SUITE,end_per_group} ***
+=group_time    5.371s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968855.951.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,reconnection}]
+=started       2016-04-06 18:54:15
+=ended         2016-04-06 18:54:15
+=result        ok
+=elapsed       5.0e-6
+=case          sm_SUITE:resume_session_state_stop_c2s
+=logfile       sm_suite.resume_session_state_stop_c2s.968855.978.html
+=started       2016-04-06 18:54:15
+=ended         2016-04-06 18:54:17
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resume_session_state_stop_c2s}]
+=== *** FAILED test case 87 ***
+=case          sm_SUITE:preserve_order
+=logfile       sm_suite.preserve_order.968857.184.html
+=started       2016-04-06 18:54:17
+=ended         2016-04-06 18:54:18
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      preserve_order}]
+=== *** FAILED test case 88 ***
+=case          sm_SUITE:resume_session_state_send_message
+=logfile       sm_suite.resume_session_state_send_message.968858.397.html
+=started       2016-04-06 18:54:18
+=ended         2016-04-06 18:54:19
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resume_session_state_send_message}]
+=== *** FAILED test case 89 ***
+=case          sm_SUITE:resend_unacked_after_resume_timeout
+=logfile       sm_suite.resend_unacked_after_resume_timeout.968859.606.html
+=started       2016-04-06 18:54:19
+=ended         2016-04-06 18:54:20
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resend_unacked_after_resume_timeout}]
+=== *** FAILED test case 90 ***
+=case          sm_SUITE:resend_unacked_on_reconnection
+=logfile       sm_suite.resend_unacked_on_reconnection.968860.812.html
+=started       2016-04-06 18:54:20
+=ended         2016-04-06 18:54:21
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 91 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968861.316.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,reconnection}]
+=started       2016-04-06 18:54:21
+=ended         2016-04-06 18:54:22
+=result        failed: {thrown,{timeout,maybe_offline_msg}}, [{escalus_connection,
+                                                               get_stanza,165},
+                                                              {sm_SUITE,
+                                                               discard_offline_messages,
+                                                               753},
+                                                              {sm_SUITE,
+                                                               end_per_group,
+                                                               89},
+                                                              {test_server,
+                                                               ts_tc,1429},
+                                                              {test_server,
+                                                               run_test_case_eval1,
+                                                               1099},
+                                                              {test_server,
+                                                               run_test_case_eval,
+                                                               968}]
+=== *** FAILED {sm_SUITE,end_per_group} ***
+=group_time    5.365s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968862.612.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,reconnection}]
+=started       2016-04-06 18:54:22
+=ended         2016-04-06 18:54:22
+=result        ok
+=elapsed       5.0e-6
+=case          sm_SUITE:resend_unacked_after_resume_timeout
+=logfile       sm_suite.resend_unacked_after_resume_timeout.968862.638.html
+=started       2016-04-06 18:54:22
+=ended         2016-04-06 18:54:23
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resend_unacked_after_resume_timeout}]
+=== *** FAILED test case 92 ***
+=case          sm_SUITE:preserve_order
+=logfile       sm_suite.preserve_order.968863.846.html
+=started       2016-04-06 18:54:23
+=ended         2016-04-06 18:54:25
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      preserve_order}]
+=== *** FAILED test case 93 ***
+=case          sm_SUITE:resend_unacked_on_reconnection
+=logfile       sm_suite.resend_unacked_on_reconnection.968865.53.html
+=started       2016-04-06 18:54:25
+=ended         2016-04-06 18:54:25
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 94 ***
+=case          sm_SUITE:resume_session_state_stop_c2s
+=logfile       sm_suite.resume_session_state_stop_c2s.968865.556.html
+=started       2016-04-06 18:54:25
+=ended         2016-04-06 18:54:26
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resume_session_state_stop_c2s}]
+=== *** FAILED test case 95 ***
+=case          sm_SUITE:resume_session_state_send_message
+=logfile       sm_suite.resume_session_state_send_message.968866.766.html
+=started       2016-04-06 18:54:26
+=ended         2016-04-06 18:54:27
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resume_session_state_send_message}]
+=== *** FAILED test case 96 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968867.975.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,reconnection}]
+=started       2016-04-06 18:54:27
+=ended         2016-04-06 18:54:29
+=result        failed: {thrown,{timeout,maybe_offline_msg}}, [{escalus_connection,
+                                                               get_stanza,165},
+                                                              {sm_SUITE,
+                                                               discard_offline_messages,
+                                                               753},
+                                                              {sm_SUITE,
+                                                               end_per_group,
+                                                               89},
+                                                              {test_server,
+                                                               ts_tc,1429},
+                                                              {test_server,
+                                                               run_test_case_eval1,
+                                                               1099},
+                                                              {test_server,
+                                                               run_test_case_eval,
+                                                               968}]
+=== *** FAILED {sm_SUITE,end_per_group} ***
+=group_time    5.364s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968869.273.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,reconnection}]
+=started       2016-04-06 18:54:29
+=ended         2016-04-06 18:54:29
+=result        ok
+=elapsed       1.8e-5
+=case          sm_SUITE:resume_session_state_stop_c2s
+=logfile       sm_suite.resume_session_state_stop_c2s.968869.300.html
+=started       2016-04-06 18:54:29
+=ended         2016-04-06 18:54:30
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resume_session_state_stop_c2s}]
+=== *** FAILED test case 97 ***
+=case          sm_SUITE:preserve_order
+=logfile       sm_suite.preserve_order.968870.506.html
+=started       2016-04-06 18:54:30
+=ended         2016-04-06 18:54:31
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      preserve_order}]
+=== *** FAILED test case 98 ***
+=case          sm_SUITE:resend_unacked_after_resume_timeout
+=logfile       sm_suite.resend_unacked_after_resume_timeout.968871.718.html
+=started       2016-04-06 18:54:31
+=ended         2016-04-06 18:54:32
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resend_unacked_after_resume_timeout}]
+=== *** FAILED test case 99 ***
+=case          sm_SUITE:resend_unacked_on_reconnection
+=logfile       sm_suite.resend_unacked_on_reconnection.968872.934.html
+=started       2016-04-06 18:54:32
+=ended         2016-04-06 18:54:33
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 100 ***
+=case          sm_SUITE:resume_session_state_send_message
+=logfile       sm_suite.resume_session_state_send_message.968873.441.html
+=started       2016-04-06 18:54:33
+=ended         2016-04-06 18:54:34
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resume_session_state_send_message}]
+=== *** FAILED test case 101 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968874.652.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,reconnection}]
+=started       2016-04-06 18:54:34
+=ended         2016-04-06 18:54:35
+=result        failed: {thrown,{timeout,maybe_offline_msg}}, [{escalus_connection,
+                                                               get_stanza,165},
+                                                              {sm_SUITE,
+                                                               discard_offline_messages,
+                                                               753},
+                                                              {sm_SUITE,
+                                                               end_per_group,
+                                                               89},
+                                                              {test_server,
+                                                               ts_tc,1429},
+                                                              {test_server,
+                                                               run_test_case_eval1,
+                                                               1099},
+                                                              {test_server,
+                                                               run_test_case_eval,
+                                                               968}]
+=== *** FAILED {sm_SUITE,end_per_group} ***
+=group_time    5.379s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968875.948.html
+=group_props   [{shuffle,repeated},{name,reconnection}]
+=started       2016-04-06 18:54:35
+=ended         2016-04-06 18:54:35
+=result        ok
+=elapsed       5.0e-6
+=case          sm_SUITE:resend_unacked_after_resume_timeout
+=logfile       sm_suite.resend_unacked_after_resume_timeout.968875.975.html
+=started       2016-04-06 18:54:35
+=ended         2016-04-06 18:54:37
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resend_unacked_after_resume_timeout}]
+=== *** FAILED test case 102 ***
+=case          sm_SUITE:preserve_order
+=logfile       sm_suite.preserve_order.968877.190.html
+=started       2016-04-06 18:54:37
+=ended         2016-04-06 18:54:38
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      preserve_order}]
+=== *** FAILED test case 103 ***
+=case          sm_SUITE:resume_session_state_stop_c2s
+=logfile       sm_suite.resume_session_state_stop_c2s.968878.398.html
+=started       2016-04-06 18:54:38
+=ended         2016-04-06 18:54:39
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resume_session_state_stop_c2s}]
+=== *** FAILED test case 104 ***
+=case          sm_SUITE:resume_session_state_send_message
+=logfile       sm_suite.resume_session_state_send_message.968879.610.html
+=started       2016-04-06 18:54:39
+=ended         2016-04-06 18:54:40
+=result        failed: {thrown,{timeout,presence}}, [{sm_SUITE,
+                                                      resume_session_state_send_message}]
+=== *** FAILED test case 105 ***
+=case          sm_SUITE:resend_unacked_on_reconnection
+=logfile       sm_suite.resend_unacked_on_reconnection.968880.816.html
+=started       2016-04-06 18:54:40
+=ended         2016-04-06 18:54:41
+=result        failed: {{assertion_failed,assert,is_presence,
+                            {xmlel,<<"message">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost">>},
+                                 {<<"xml:lang">>,<<"en">>},
+                                 {<<"type">>,<<"chat">>}],
+                                [{xmlel,<<"body">>,[],
+                                     [{xmlcdata,<<"Hi, Alice!">>}]},
+                                 {xmlel,<<"delay">>,
+                                     [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                                      {<<"from">>,<<"localhost">>},
+                                      {<<"stamp">>,
+                                       <<"2016-04-06T18:53:44.452174Z">>}],
+                                     [{xmlcdata,<<"Offline Storage">>}]}]},
+                            "<message from='bOb@localhost/res1' to='alice@localhost' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T18:53:44.452174Z'>Offline Storage</delay></message>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {escalus_story,'-drop_presences/2-lc$^0/1-0-',1,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,drop_presences,2,
+                             [{file,"src/escalus_story.erl"},{line,145}]},
+                         {escalus_story,'-start_ready_clients/2-fun-0-',3,
+                             [{file,"src/escalus_story.erl"},{line,98}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_story,start_ready_clients,2,
+                             [{file,"src/escalus_story.erl"},{line,91}]},
+                         {lists,flatmap,2,[{file,"lists.erl"},{line,1248}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,37}]}]}, [{escalus_new_assert,
+                                                                              assert_true,
+                                                                              84},
+                                                                             {escalus_story,
+                                                                              '-drop_presences/2-lc$^0/1-0-',
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              drop_presences,
+                                                                              145},
+                                                                             {escalus_story,
+                                                                              '-start_ready_clients/2-fun-0-',
+                                                                              98},
+                                                                             {lists,
+                                                                              foldl,
+                                                                              1261},
+                                                                             {escalus_story,
+                                                                              start_ready_clients,
+                                                                              91},
+                                                                             {lists,
+                                                                              flatmap,
+                                                                              1248},
+                                                                             {escalus_story,
+                                                                              story,
+                                                                              37}]
+=== *** FAILED test case 106 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968881.324.html
+=group_props   [{shuffle,repeated},{name,reconnection}]
+=started       2016-04-06 18:54:41
+=ended         2016-04-06 18:54:42
+=result        failed: {thrown,{timeout,maybe_offline_msg}}, [{escalus_connection,
+                                                               get_stanza,165},
+                                                              {sm_SUITE,
+                                                               discard_offline_messages,
+                                                               753},
+                                                              {sm_SUITE,
+                                                               end_per_group,
+                                                               89},
+                                                              {test_server,
+                                                               ts_tc,1429},
+                                                              {test_server,
+                                                               run_test_case_eval1,
+                                                               1099},
+                                                              {test_server,
+                                                               run_test_case_eval,
+                                                               968}]
+=== *** FAILED {sm_SUITE,end_per_group} ***
+=group_time    5.376s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968882.618.html
+=group_props   [{name,resumption},shuffle,{repeat,5}]
+=started       2016-04-06 18:54:42
+=ended         2016-04-06 18:54:42
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:wait_for_resumption
+=logfile       sm_suite.wait_for_resumption.html
+=started       2016-04-06 18:54:42
+=== WARNING: end_per_testcase thrown!
+Reason: {timeout,maybe_offline_msg}
+Line: [{escalus_connection,get_stanza,165},
+              {sm_SUITE,discard_offline_messages,<a href="sm_suite.src.html#753">753</a>},
+              {sm_SUITE,end_per_testcase,<a href="sm_suite.src.html#138">138</a>},
+              {test_server,do_end_per_testcase,1299},
+              {test_server,run_test_case_eval1,1054},
+              {test_server,run_test_case_eval,968}]
+
+=ended         2016-04-06 18:54:45
+=result        failed: {thrown,{timeout,presence1}}, [{sm_SUITE,
+                                                       wait_for_resumption}]
+=== *** FAILED test case 107 ***
+=case          sm_SUITE:resume_session
+=logfile       sm_suite.resume_session.html
+=started       2016-04-06 18:54:45
+=ended         2016-04-06 18:54:47
+=result        failed: {thrown,{timeout,presence1}}, [{sm_SUITE,
+                                                       resume_session}]
+=== *** FAILED test case 108 ***
+=case          sm_SUITE:session_established
+=logfile       sm_suite.session_established.html
+=started       2016-04-06 18:54:47
+=ended         2016-04-06 18:54:47
+=result        failed: {test_case_failed,
+                        {has_stanzas_but_shouldnt,
+                         {client,<<"alicE@localhost/res1">>,escalus_tcp,
+                          #Port<0.29653>,false,false,<0.29130.0>,
+                          [{event_manager,<0.29129.0>},
+                           {server,<<"localhost">>},
+                           {username,<<"alicE">>},
+                           {resource,<<"res1">>}]},
+                         [{xmlel,<<"presence">>,
+                           [{<<"from">>,
+                             <<"alice@localhost/escalus-default-resource">>},
+                            {<<"to">>,<<"alicE@localhost/res1">>},
+                            {<<"xml:lang">>,<<"en">>},
+                            {<<"id">>,<<"presence1">>}],
+                           [{xmlel,<<"delay">>,
+                             [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                              {<<"from">>,
+                               <<"alice@localhost/escalus-default-resource">>},
+                              {<<"stamp">>,<<"2016-04-06T18:54:46Z">>}],
+                             []}]}]}}, [{lists,foreach,1336},
+                                        {escalus_story,start_ready_clients,
+                                         107},
+                                        {lists,flatmap,1248},
+                                        {escalus_story,story,37},
+                                        {test_server,ts_tc,1429},
+                                        {test_server,run_test_case_eval1,1026},
+                                        {test_server,run_test_case_eval,968}]
+=== *** FAILED test case 109 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968887.839.html
+=group_props   [{name,resumption},shuffle,{repeat,5}]
+=started       2016-04-06 18:54:47
+=ended         2016-04-06 18:54:47
+=result        ok
+=elapsed       1.0e-6
+=group_time    5.221s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968887.869.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,resumption}]
+=started       2016-04-06 18:54:47
+=ended         2016-04-06 18:54:47
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:session_established
+=logfile       sm_suite.session_established.968887.897.html
+=started       2016-04-06 18:54:47
+=ended         2016-04-06 18:54:48
+=result        ok
+=elapsed       0.474972
+=case          sm_SUITE:wait_for_resumption
+=logfile       sm_suite.wait_for_resumption.968888.399.html
+=started       2016-04-06 18:54:48
+=== WARNING: end_per_testcase thrown!
+Reason: {timeout,maybe_offline_msg}
+Line: [{escalus_connection,get_stanza,165},
+              {sm_SUITE,discard_offline_messages,<a href="sm_suite.src.html#753">753</a>},
+              {sm_SUITE,end_per_testcase,<a href="sm_suite.src.html#138">138</a>},
+              {test_server,do_end_per_testcase,1299},
+              {test_server,run_test_case_eval1,1054},
+              {test_server,run_test_case_eval,968}]
+
+=ended         2016-04-06 18:54:50
+=result        failed: {{badmatch,false},
+                        [{escalus_session,stream_resumption,3,
+                             [{file,"src/escalus_session.erl"},{line,252}]},
+                         {escalus_connection,connection_step,2,
+                             [{file,"src/escalus_connection.erl"},{line,121}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,105}]},
+                         {sm_SUITE,buffer_unacked_messages_and_die,3,
+                             [{file,"sm_SUITE.erl"},{line,717}]},
+                         {sm_SUITE,'-wait_for_resumption/1-fun-0-',2,
+                             [{file,"sm_SUITE.erl"},{line,669}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,40}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]}]}, [{escalus_session,
+                                                                          stream_resumption,
+                                                                          252},
+                                                                         {escalus_connection,
+                                                                          connection_step,
+                                                                          121},
+                                                                         {lists,
+                                                                          foldl,
+                                                                          1261},
+                                                                         {escalus_connection,
+                                                                          start,
+                                                                          105},
+                                                                         {sm_SUITE,
+                                                                          buffer_unacked_messages_and_die,
+                                                                          717},
+                                                                         {sm_SUITE,
+                                                                          '-wait_for_resumption/1-fun-0-',
+                                                                          669},
+                                                                         {escalus_story,
+                                                                          story,
+                                                                          40},
+                                                                         {test_server,
+                                                                          ts_tc,
+                                                                          1429}]
+=== *** FAILED test case 111 ***
+=case          sm_SUITE:resume_session
+=logfile       sm_suite.resume_session.968890.274.html
+=started       2016-04-06 18:54:50
+=ended         2016-04-06 18:54:52
+=result        failed: {thrown,{timeout,presence1}}, [{sm_SUITE,
+                                                       resume_session}]
+=== *** FAILED test case 112 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968892.29.html
+=group_props   [{shuffle,repeated},{repeat,4},{name,resumption}]
+=started       2016-04-06 18:54:52
+=ended         2016-04-06 18:54:52
+=result        ok
+=elapsed       1.0e-6
+=group_time    4.160s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968892.57.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,resumption}]
+=started       2016-04-06 18:54:52
+=ended         2016-04-06 18:54:52
+=result        ok
+=elapsed       6.0e-6
+=case          sm_SUITE:wait_for_resumption
+=logfile       sm_suite.wait_for_resumption.968892.85.html
+=started       2016-04-06 18:54:52
+=== WARNING: end_per_testcase thrown!
+Reason: {timeout,maybe_offline_msg}
+Line: [{escalus_connection,get_stanza,165},
+              {sm_SUITE,discard_offline_messages,<a href="sm_suite.src.html#753">753</a>},
+              {sm_SUITE,end_per_testcase,<a href="sm_suite.src.html#138">138</a>},
+              {test_server,do_end_per_testcase,1299},
+              {test_server,run_test_case_eval1,1054},
+              {test_server,run_test_case_eval,968}]
+
+=ended         2016-04-06 18:54:53
+=result        failed: {{badmatch,false},
+                        [{escalus_session,stream_resumption,3,
+                             [{file,"src/escalus_session.erl"},{line,252}]},
+                         {escalus_connection,connection_step,2,
+                             [{file,"src/escalus_connection.erl"},{line,121}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,105}]},
+                         {sm_SUITE,buffer_unacked_messages_and_die,3,
+                             [{file,"sm_SUITE.erl"},{line,717}]},
+                         {sm_SUITE,'-wait_for_resumption/1-fun-0-',2,
+                             [{file,"sm_SUITE.erl"},{line,669}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,40}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]}]}, [{escalus_session,
+                                                                          stream_resumption,
+                                                                          252},
+                                                                         {escalus_connection,
+                                                                          connection_step,
+                                                                          121},
+                                                                         {lists,
+                                                                          foldl,
+                                                                          1261},
+                                                                         {escalus_connection,
+                                                                          start,
+                                                                          105},
+                                                                         {sm_SUITE,
+                                                                          buffer_unacked_messages_and_die,
+                                                                          717},
+                                                                         {sm_SUITE,
+                                                                          '-wait_for_resumption/1-fun-0-',
+                                                                          669},
+                                                                         {escalus_story,
+                                                                          story,
+                                                                          40},
+                                                                         {test_server,
+                                                                          ts_tc,
+                                                                          1429}]
+=== *** FAILED test case 113 ***
+=case          sm_SUITE:session_established
+=logfile       sm_suite.session_established.968893.965.html
+=started       2016-04-06 18:54:53
+=ended         2016-04-06 18:54:54
+=result        ok
+=elapsed       0.473008
+=case          sm_SUITE:resume_session
+=logfile       sm_suite.resume_session.968894.467.html
+=started       2016-04-06 18:54:54
+=ended         2016-04-06 18:54:56
+=result        failed: {thrown,{timeout,presence1}}, [{sm_SUITE,
+                                                       resume_session}]
+=== *** FAILED test case 115 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968896.218.html
+=group_props   [{shuffle,repeated},{repeat,3},{name,resumption}]
+=started       2016-04-06 18:54:56
+=ended         2016-04-06 18:54:56
+=result        ok
+=elapsed       1.0e-6
+=group_time    4.160s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968896.245.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,resumption}]
+=started       2016-04-06 18:54:56
+=ended         2016-04-06 18:54:56
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:session_established
+=logfile       sm_suite.session_established.968896.272.html
+=started       2016-04-06 18:54:56
+=ended         2016-04-06 18:54:56
+=result        failed: {test_case_failed,
+                        {has_stanzas_but_shouldnt,
+                         {client,<<"alicE@localhost/res1">>,escalus_tcp,
+                          #Port<0.29684>,false,false,<0.29226.0>,
+                          [{event_manager,<0.29225.0>},
+                           {server,<<"localhost">>},
+                           {username,<<"alicE">>},
+                           {resource,<<"res1">>}]},
+                         [{xmlel,<<"presence">>,
+                           [{<<"from">>,
+                             <<"alice@localhost/escalus-default-resource">>},
+                            {<<"to">>,<<"alicE@localhost/res1">>},
+                            {<<"xml:lang">>,<<"en">>},
+                            {<<"id">>,<<"presence1">>}],
+                           [{xmlel,<<"delay">>,
+                             [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                              {<<"from">>,
+                               <<"alice@localhost/escalus-default-resource">>},
+                              {<<"stamp">>,<<"2016-04-06T18:54:54Z">>}],
+                             []}]}]}}, [{lists,foreach,1336},
+                                        {escalus_story,start_ready_clients,
+                                         107},
+                                        {lists,flatmap,1248},
+                                        {escalus_story,story,37},
+                                        {test_server,ts_tc,1429},
+                                        {test_server,run_test_case_eval1,1026},
+                                        {test_server,run_test_case_eval,968}]
+=== *** FAILED test case 116 ***
+=case          sm_SUITE:wait_for_resumption
+=logfile       sm_suite.wait_for_resumption.968896.779.html
+=started       2016-04-06 18:54:56
+=== WARNING: end_per_testcase thrown!
+Reason: {timeout,maybe_offline_msg}
+Line: [{escalus_connection,get_stanza,165},
+              {sm_SUITE,discard_offline_messages,<a href="sm_suite.src.html#753">753</a>},
+              {sm_SUITE,end_per_testcase,<a href="sm_suite.src.html#138">138</a>},
+              {test_server,do_end_per_testcase,1299},
+              {test_server,run_test_case_eval1,1054},
+              {test_server,run_test_case_eval,968}]
+
+=ended         2016-04-06 18:54:58
+=result        failed: {{badmatch,false},
+                        [{escalus_session,stream_resumption,3,
+                             [{file,"src/escalus_session.erl"},{line,252}]},
+                         {escalus_connection,connection_step,2,
+                             [{file,"src/escalus_connection.erl"},{line,121}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,105}]},
+                         {sm_SUITE,buffer_unacked_messages_and_die,3,
+                             [{file,"sm_SUITE.erl"},{line,717}]},
+                         {sm_SUITE,'-wait_for_resumption/1-fun-0-',2,
+                             [{file,"sm_SUITE.erl"},{line,669}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,40}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]}]}, [{escalus_session,
+                                                                          stream_resumption,
+                                                                          252},
+                                                                         {escalus_connection,
+                                                                          connection_step,
+                                                                          121},
+                                                                         {lists,
+                                                                          foldl,
+                                                                          1261},
+                                                                         {escalus_connection,
+                                                                          start,
+                                                                          105},
+                                                                         {sm_SUITE,
+                                                                          buffer_unacked_messages_and_die,
+                                                                          717},
+                                                                         {sm_SUITE,
+                                                                          '-wait_for_resumption/1-fun-0-',
+                                                                          669},
+                                                                         {escalus_story,
+                                                                          story,
+                                                                          40},
+                                                                         {test_server,
+                                                                          ts_tc,
+                                                                          1429}]
+=== *** FAILED test case 117 ***
+=case          sm_SUITE:resume_session
+=logfile       sm_suite.resume_session.968898.641.html
+=started       2016-04-06 18:54:58
+=ended         2016-04-06 18:55:00
+=result        failed: {thrown,{timeout,presence1}}, [{sm_SUITE,
+                                                       resume_session}]
+=== *** FAILED test case 118 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968900.397.html
+=group_props   [{shuffle,repeated},{repeat,2},{name,resumption}]
+=started       2016-04-06 18:55:00
+=ended         2016-04-06 18:55:00
+=result        ok
+=elapsed       1.0e-6
+=group_time    4.151s
+=case          sm_SUITE:init_per_group
+=logfile       sm_suite.init_per_group.968900.425.html
+=group_props   [{shuffle,repeated},{name,resumption}]
+=started       2016-04-06 18:55:00
+=ended         2016-04-06 18:55:00
+=result        ok
+=elapsed       1.0e-6
+=case          sm_SUITE:wait_for_resumption
+=logfile       sm_suite.wait_for_resumption.968900.451.html
+=started       2016-04-06 18:55:00
+=== WARNING: end_per_testcase thrown!
+Reason: {timeout,maybe_offline_msg}
+Line: [{escalus_connection,get_stanza,165},
+              {sm_SUITE,discard_offline_messages,<a href="sm_suite.src.html#753">753</a>},
+              {sm_SUITE,end_per_testcase,<a href="sm_suite.src.html#138">138</a>},
+              {test_server,do_end_per_testcase,1299},
+              {test_server,run_test_case_eval1,1054},
+              {test_server,run_test_case_eval,968}]
+
+=ended         2016-04-06 18:55:02
+=result        failed: {{badmatch,false},
+                        [{escalus_session,stream_resumption,3,
+                             [{file,"src/escalus_session.erl"},{line,252}]},
+                         {escalus_connection,connection_step,2,
+                             [{file,"src/escalus_connection.erl"},{line,121}]},
+                         {lists,foldl,3,[{file,"lists.erl"},{line,1261}]},
+                         {escalus_connection,start,2,
+                             [{file,"src/escalus_connection.erl"},{line,105}]},
+                         {sm_SUITE,buffer_unacked_messages_and_die,3,
+                             [{file,"sm_SUITE.erl"},{line,717}]},
+                         {sm_SUITE,'-wait_for_resumption/1-fun-0-',2,
+                             [{file,"sm_SUITE.erl"},{line,669}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,40}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1429}]}]}, [{escalus_session,
+                                                                          stream_resumption,
+                                                                          252},
+                                                                         {escalus_connection,
+                                                                          connection_step,
+                                                                          121},
+                                                                         {lists,
+                                                                          foldl,
+                                                                          1261},
+                                                                         {escalus_connection,
+                                                                          start,
+                                                                          105},
+                                                                         {sm_SUITE,
+                                                                          buffer_unacked_messages_and_die,
+                                                                          717},
+                                                                         {sm_SUITE,
+                                                                          '-wait_for_resumption/1-fun-0-',
+                                                                          669},
+                                                                         {escalus_story,
+                                                                          story,
+                                                                          40},
+                                                                         {test_server,
+                                                                          ts_tc,
+                                                                          1429}]
+=== *** FAILED test case 119 ***
+=case          sm_SUITE:resume_session
+=logfile       sm_suite.resume_session.968902.305.html
+=started       2016-04-06 18:55:02
+=ended         2016-04-06 18:55:04
+=result        failed: {thrown,{timeout,presence1}}, [{sm_SUITE,
+                                                       resume_session}]
+=== *** FAILED test case 120 ***
+=case          sm_SUITE:session_established
+=logfile       sm_suite.session_established.968904.63.html
+=started       2016-04-06 18:55:04
+=ended         2016-04-06 18:55:04
+=result        failed: {test_case_failed,
+                        {has_stanzas_but_shouldnt,
+                         {client,<<"alicE@localhost/res1">>,escalus_tcp,
+                          #Port<0.29707>,false,false,<0.29274.0>,
+                          [{event_manager,<0.29273.0>},
+                           {server,<<"localhost">>},
+                           {username,<<"alicE">>},
+                           {resource,<<"res1">>}]},
+                         [{xmlel,<<"presence">>,
+                           [{<<"from">>,
+                             <<"alice@localhost/escalus-default-resource">>},
+                            {<<"to">>,<<"alicE@localhost/res1">>},
+                            {<<"xml:lang">>,<<"en">>},
+                            {<<"id">>,<<"presence1">>}],
+                           [{xmlel,<<"delay">>,
+                             [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                              {<<"from">>,
+                               <<"alice@localhost/escalus-default-resource">>},
+                              {<<"stamp">>,<<"2016-04-06T18:55:02Z">>}],
+                             []}]}]}}, [{lists,foreach,1336},
+                                        {escalus_story,start_ready_clients,
+                                         107},
+                                        {lists,flatmap,1248},
+                                        {escalus_story,story,37},
+                                        {test_server,ts_tc,1429},
+                                        {test_server,run_test_case_eval1,1026},
+                                        {test_server,run_test_case_eval,968}]
+=== *** FAILED test case 121 ***
+=case          sm_SUITE:end_per_group
+=logfile       sm_suite.end_per_group.968904.556.html
+=group_props   [{shuffle,repeated},{name,resumption}]
+=started       2016-04-06 18:55:04
+=ended         2016-04-06 18:55:04
+=result        ok
+=elapsed       1.0e-6
+=group_time    4.131s
+=case          sm_SUITE:end_per_suite
+=logfile       sm_suite.end_per_suite.html
+=started       2016-04-06 18:55:04
+=ended         2016-04-06 18:55:04
+=result        ok
+=elapsed       0.042446
+=group_time    118.567s
+=== TEST COMPLETE, 23 ok, 98 failed of 121 test cases
+
+=finished      2016-04-06 18:55:04
+=failed        98
+=successful    23
+=user_skipped  0
+=auto_skipped  0
