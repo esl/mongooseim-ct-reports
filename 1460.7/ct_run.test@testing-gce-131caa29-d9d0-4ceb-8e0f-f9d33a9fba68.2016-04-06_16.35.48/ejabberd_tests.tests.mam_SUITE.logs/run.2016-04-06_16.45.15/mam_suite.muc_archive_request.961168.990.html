@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test mam_SUITE:muc_archive_request result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="mam_suite.src.html#muc_archive_request-1">mam_SUITE:muc_archive_request/1</a> (click for source code)
+
+=== Config value:
+
+    [{basic_group,muc03},
+     {configuration,riak_timed_yz_buckets},
+     {props,[{data_form,true},
+             {final_message,true},
+             {result_format,mess_fin},
+             {mam_ns,<<"urn:xmpp:mam:0">>}]},
+     {with_rsm,true},
+     {yz_wait,2500},
+     {watchdog,<0.18698.0>},
+     {old_mam_shaper,{{maxrate,1},{maxrate,1000},{maxrate,50000}}},
+     {escalus_user_db,{module,escalus_ejabberd}},
+     {preset,"riak_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-131caa29-d9d0-4ceb-8e0f-f9d33a9fba68.2016-04-06_16.35.48/ejabberd_tests.tests.mam_SUITE.logs/run.2016-04-06_16.45.15/mam_suite.muc_archive_request.961168.990.html"},
+     {tc_group_properties,[{name,riak_timed_yz_buckets_muc03}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/mam_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-131caa29-d9d0-4ceb-8e0f-f9d33a9fba68.2016-04-06_16.35.48/ejabberd_tests.tests.mam_SUITE.logs/run.2016-04-06_16.45.15/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]},
+                     {kate,[{username,<<"kate">>},
+                            {server,<<"localhost">>},
+                            {password,<<"makrowe;p">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-131caa29-d9d0-4ceb-8e0f-f9d33a9fba68.2016-04-06_16.35.48"
+
+=== Started at 2016-04-06 16:46:08
+
+<br />
+<div class="ct_internal"><b>*** CT 2016-04-06 16:46:09.090 *** history.xml</b>
+<a href="log_private/muc_archive_request.xml" type=[]>muc_archive_request.xml</a>
+
+</div>
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-04-06 16:46:09.492 ***</b>
+exml_query:attr failed on line 83
+Reason: function_clause
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-06 16:46:09
+=== location [{exml_query,attr,83},
+              {mam_SUITE,'-muc_archive_request/1-fun-0-',<a href="mam_suite.src.html#1335">1335</a>},
+              {escalus_story,story,40},
+              {test_server,ts_tc,1429},
+              {test_server,run_test_case_eval1,1026},
+              {test_server,run_test_case_eval,968}]
+=== reason = no function clause matching 
+                 exml_query:attr(undefined,<<"by">>,undefined) (src/exml_query.erl, line 83)
+  in function  mam_SUITE:'-muc_archive_request/1-fun-0-'/4 (mam_SUITE.erl, line 1335)
+  in call from escalus_story:story/3 (src/escalus_story.erl, line 40)
+  in call from test_server:ts_tc/3 (test_server.erl, line 1429)
+  in call from test_server:run_test_case_eval1/6 (test_server.erl, line 1026)
+  in call from test_server:run_test_case_eval/9 (test_server.erl, line 968)
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 06 2016 16:46:08<!/date><br />
+</div>
+</center>
+</body>
+</html>
