@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test sm_SUITE:resend_unacked_on_reconnection result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+=== <a href="sm_suite.src.html#resend_unacked_on_reconnection-1">source code for sm_SUITE:resend_unacked_on_reconnection/1</a>
+
+<pre>
+<a name="top"></a>
+=== Test case started with:
+sm_SUITE:resend_unacked_on_reconnection([{watchdog,<0.22733.0>},
+                                         {{saved,ack_freq},unset},
+                                         {preset,"internal_mnesia"},
+                                         {tc_logfile,
+                                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-4119d237-0c2b-446e-a5c5-db9cac82a933.2016-04-06_19.10.05/ejabberd_tests.tests.sm_SUITE.logs/run.2016-04-06_19.24.55/sm_suite.resend_unacked_on_reconnection.970777.578.html"},
+                                         {tc_group_properties,
+                                          [{shuffle,{21455,18670,1281}},
+                                           {repeat,2},
+                                           {name,reconnection}]},
+                                         {tc_group_path,[]},
+                                         {data_dir,
+                                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/sm_SUITE_data/"},
+                                         {priv_dir,
+                                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-4119d237-0c2b-446e-a5c5-db9cac82a933.2016-04-06_19.10.05/ejabberd_tests.tests.sm_SUITE.logs/run.2016-04-06_19.24.55/log_private/"},
+                                         {escalus_users,
+                                          [{alice,
+                                            [{manual_ack,true},
+                                             {stream_management,true},
+                                             {username,<<"alicE">>},
+                                             {server,<<"localhost">>},
+                                             {password,<<"matygrysa">>}]},
+                                           {bob,
+                                            [{username,<<"bOb">>},
+                                             {server,<<"localhost">>},
+                                             {password,<<"makrolika">>}]}]}])
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-4119d237-0c2b-446e-a5c5-db9cac82a933.2016-04-06_19.10.05"
+
+=== Started at 2016-04-06 19:26:17
+
+<br />
+<div class="ct_internal"><b>*** CT 2016-04-06 19:26:17.842 *** history.xml</b>
+<a href="log_private/resend_unacked_on_reconnection.xml" type=[]>resend_unacked_on_reconnection.xml</a>
+
+</div>
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-04-06 19:26:18.043 ***</b>
+escalus_new_assert:assert_true failed on line 84
+Reason: {{assertion_failed,assert,is_presence,...},
+ [{escalus_new_assert,...},{...}|...]}
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-06 19:26:18
+=== location [{escalus_new_assert,assert_true,84},
+              {escalus_story,'-drop_presences/2-lc$^0/1-0-',145},
+              {escalus_story,drop_presences,145},
+              {escalus_story,'-start_ready_clients/2-fun-0-',98},
+              {lists,foldl,1248},
+              {escalus_story,start_ready_clients,91},
+              {lists,flatmap,1235},
+              {escalus_story,story,37}]
+=== reason = {assertion_failed,assert,is_presence,
+                     {xmlel,<<"message">>,
+                         [{<<"from">>,<<"bOb@localhost/res1">>},
+                          {<<"to">>,<<"alicE@localhost/res1">>},
+                          {<<"xml:lang">>,<<"en">>},
+                          {<<"type">>,<<"chat">>}],
+                         [{xmlel,<<"body">>,[],[{xmlcdata,<<"Hi, Alice!">>}]},
+                          {xmlel,<<"delay">>,
+                              [{<<"xmlns">>,<<"urn:xmpp:delay">>},
+                               {<<"from">>,<<"localhost">>},
+                               {<<"stamp">>,
+                                <<"2016-04-06T19:25:33.409166Z">>}],
+                              [{xmlcdata,<<"Offline Storage">>}]}]},
+                     "<message from='bOb@localhost/res1' to='alicE@localhost/res1' xml:lang='en' type='chat'><body>Hi, Alice!</body><delay xmlns='urn:xmpp:delay' from='localhost' stamp='2016-04-06T19:25:33.409166Z'>Offline Storage</delay></message>"}
+  in function  escalus_new_assert:assert_true/2 (src/escalus_new_assert.erl, line 84)
+  in call from escalus_story:'-drop_presences/2-lc$^0/1-0-'/1 (src/escalus_story.erl, line 145)
+  in call from escalus_story:drop_presences/2 (src/escalus_story.erl, line 145)
+  in call from escalus_story:'-start_ready_clients/2-fun-0-'/3 (src/escalus_story.erl, line 98)
+  in call from lists:foldl/3 (lists.erl, line 1248)
+  in call from escalus_story:start_ready_clients/2 (src/escalus_story.erl, line 91)
+  in call from lists:flatmap/2 (lists.erl, line 1235)
+  in call from escalus_story:story/3 (src/escalus_story.erl, line 37)
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 06 2016 19:26:17<!/date><br />
+</div>
+</center>
+</body>
+</html>
