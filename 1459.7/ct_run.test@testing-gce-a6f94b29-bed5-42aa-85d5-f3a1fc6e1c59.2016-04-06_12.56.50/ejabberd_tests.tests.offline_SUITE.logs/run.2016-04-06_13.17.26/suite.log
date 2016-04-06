@@ -1,0 +1,85 @@
+=== Suite started at 2016-04-06 13:17:26
+=== Starting test, 6 test cases
+=cases         6
+=user          travis
+=host          testing-gce-a6f94b29-bed5-42aa-85d5-f3a1fc6e1c59
+=hosts         testing-gce-a6f94b29-bed5-42aa-85d5-f3a1fc6e1c59 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-06 13:17:26
+=case          offline_SUITE:init_per_suite
+=logfile       offline_suite.init_per_suite.html
+=started       2016-04-06 13:17:26
+=ended         2016-04-06 13:17:26
+=result        ok
+=elapsed       0.002548
+=case          ct_framework:init_per_group
+=logfile       ct_framework.init_per_group.html
+=group_props   [{suite,offline_SUITE},
+                {name,mod_offline_tests},
+                parallel,shuffle]
+=started       2016-04-06 13:17:26
+=ended         2016-04-06 13:17:26
+=result        ok
+=elapsed       4.6e-5
+=case          offline_SUITE:expired_messages_are_not_delivered
+=logfile       offline_suite.expired_messages_are_not_delivered.948646.671.html
+=started       2016-04-06 13:17:26
+=ended         2016-04-06 13:17:31
+=result        ok
+=elapsed       4.547637
+=case          offline_SUITE:headline_message_is_not_stored
+=logfile       offline_suite.headline_message_is_not_stored.948646.673.html
+=started       2016-04-06 13:17:26
+=ended         2016-04-06 13:17:29
+=result        ok
+=elapsed       2.534936
+=case          offline_SUITE:offline_message_is_stored_and_delivered_at_login
+=logfile       offline_suite.offline_message_is_stored_and_delivered_at_login.948646.679.html
+=started       2016-04-06 13:17:26
+=ended         2016-04-06 13:17:28
+=result        ok
+=elapsed       2.066682
+=case          offline_SUITE:error_message_is_not_stored
+=logfile       offline_suite.error_message_is_not_stored.948646.683.html
+=started       2016-04-06 13:17:26
+=ended         2016-04-06 13:17:29
+=result        ok
+=elapsed       2.567797
+=case          offline_SUITE:groupchat_message_is_not_stored
+=logfile       offline_suite.groupchat_message_is_not_stored.948646.677.html
+=started       2016-04-06 13:17:26
+=ended         2016-04-06 13:17:29
+=result        ok
+=elapsed       2.573777
+=case          offline_SUITE:max_offline_messages_reached
+=logfile       offline_suite.max_offline_messages_reached.948646.681.html
+=started       2016-04-06 13:17:26
+=ended         2016-04-06 13:17:33
+=result        ok
+=elapsed       7.039643
+=case          ct_framework:end_per_group
+=logfile       ct_framework.end_per_group.html
+=group_props   [{suite,offline_SUITE},
+                {name,mod_offline_tests},
+                parallel,shuffle]
+=started       2016-04-06 13:17:33
+=ended         2016-04-06 13:17:33
+=result        ok
+=elapsed       7.6e-5
+=group_time    7.114s
+=case          offline_SUITE:end_per_suite
+=logfile       offline_suite.end_per_suite.html
+=started       2016-04-06 13:17:33
+=ended         2016-04-06 13:17:34
+=result        ok
+=elapsed       1.048046
+=group_time    7.222s
+=== TEST COMPLETE, 6 ok, 0 failed of 6 test cases
+
+=finished      2016-04-06 13:17:34
+=failed        0
+=successful    6
+=user_skipped  0
+=auto_skipped  0
