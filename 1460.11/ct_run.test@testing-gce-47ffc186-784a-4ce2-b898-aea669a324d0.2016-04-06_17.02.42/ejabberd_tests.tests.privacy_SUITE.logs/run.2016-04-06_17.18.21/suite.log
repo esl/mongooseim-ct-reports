@@ -1,0 +1,256 @@
+=== Suite started at 2016-04-06 17:18:21
+=== Starting test, 24 test cases
+=cases         24
+=user          travis
+=host          testing-gce-47ffc186-784a-4ce2-b898-aea669a324d0
+=hosts         testing-gce-47ffc186-784a-4ce2-b898-aea669a324d0 
+=emulator_vsn  5.10.4
+=emulator      beam
+=otp_release   R16B03
+=started       2016-04-06 17:18:21
+=case          privacy_SUITE:init_per_suite
+=logfile       privacy_suite.init_per_suite.html
+=started       2016-04-06 17:18:21
+=ended         2016-04-06 17:18:21
+=result        ok
+=elapsed       0.001997
+=case          privacy_SUITE:init_per_group
+=logfile       privacy_suite.init_per_group.html
+=group_props   [{name,management},sequence]
+=started       2016-04-06 17:18:21
+=ended         2016-04-06 17:18:21
+=result        ok
+=elapsed       0.500716
+=case          privacy_SUITE:get_all_lists
+=logfile       privacy_suite.get_all_lists.html
+=started       2016-04-06 17:18:21
+=ended         2016-04-06 17:18:22
+=result        ok
+=elapsed       0.459413
+=case          privacy_SUITE:get_existing_list
+=logfile       privacy_suite.get_existing_list.html
+=started       2016-04-06 17:18:22
+=ended         2016-04-06 17:18:23
+=result        ok
+=elapsed       0.99289
+=case          privacy_SUITE:get_many_lists
+=logfile       privacy_suite.get_many_lists.html
+=started       2016-04-06 17:18:23
+=ended         2016-04-06 17:18:23
+=result        ok
+=elapsed       0.458522
+=case          privacy_SUITE:get_nonexistent_list
+=logfile       privacy_suite.get_nonexistent_list.html
+=started       2016-04-06 17:18:23
+=ended         2016-04-06 17:18:24
+=result        ok
+=elapsed       0.458744
+=case          privacy_SUITE:set_list
+=logfile       privacy_suite.set_list.html
+=started       2016-04-06 17:18:24
+=ended         2016-04-06 17:18:26
+=result        ok
+=elapsed       1.836694
+=case          privacy_SUITE:activate
+=logfile       privacy_suite.activate.html
+=started       2016-04-06 17:18:26
+=ended         2016-04-06 17:18:27
+=result        ok
+=elapsed       0.993761
+=case          privacy_SUITE:activate_nonexistent
+=logfile       privacy_suite.activate_nonexistent.html
+=started       2016-04-06 17:18:27
+=ended         2016-04-06 17:18:27
+=result        ok
+=elapsed       0.460362
+=case          privacy_SUITE:deactivate
+=logfile       privacy_suite.deactivate.html
+=started       2016-04-06 17:18:27
+=ended         2016-04-06 17:18:28
+=result        ok
+=elapsed       0.459262
+=case          privacy_SUITE:default
+=logfile       privacy_suite.default.html
+=started       2016-04-06 17:18:28
+=ended         2016-04-06 17:18:29
+=result        ok
+=elapsed       0.994104
+=case          privacy_SUITE:default_nonexistent
+=logfile       privacy_suite.default_nonexistent.html
+=started       2016-04-06 17:18:29
+=ended         2016-04-06 17:18:29
+=result        ok
+=elapsed       0.460332
+=case          privacy_SUITE:no_default
+=logfile       privacy_suite.no_default.html
+=started       2016-04-06 17:18:29
+=ended         2016-04-06 17:18:30
+=result        ok
+=elapsed       0.458195
+=case          privacy_SUITE:remove_list
+=logfile       privacy_suite.remove_list.html
+=started       2016-04-06 17:18:30
+=ended         2016-04-06 17:18:31
+=result        ok
+=elapsed       0.996071
+=case          privacy_SUITE:get_all_lists_with_active
+=logfile       privacy_suite.get_all_lists_with_active.html
+=started       2016-04-06 17:18:31
+=ended         2016-04-06 17:18:32
+=result        ok
+=elapsed       1.118437
+=case          privacy_SUITE:end_per_group
+=logfile       privacy_suite.end_per_group.html
+=group_props   [{name,management},sequence]
+=started       2016-04-06 17:18:32
+=ended         2016-04-06 17:18:33
+=result        ok
+=elapsed       0.921864
+=group_time    11.035s
+=case          privacy_SUITE:init_per_group
+=logfile       privacy_suite.init_per_group.963113.296.html
+=group_props   [{name,blocking},sequence]
+=started       2016-04-06 17:18:33
+=ended         2016-04-06 17:18:33
+=result        ok
+=elapsed       0.499853
+=case          privacy_SUITE:block_jid_message
+=logfile       privacy_suite.block_jid_message.html
+=started       2016-04-06 17:18:33
+=ended         2016-04-06 17:18:34
+=result        ok
+=elapsed       1.052155
+=case          privacy_SUITE:block_group_message
+=logfile       privacy_suite.block_group_message.html
+=started       2016-04-06 17:18:34
+=ended         2016-04-06 17:18:36
+=result        ok
+=elapsed       1.359703
+=case          privacy_SUITE:block_subscription_message
+=logfile       privacy_suite.block_subscription_message.html
+=started       2016-04-06 17:18:36
+=ended         2016-04-06 17:18:37
+=result        ok
+=elapsed       1.070741
+=case          privacy_SUITE:block_all_message
+=logfile       privacy_suite.block_all_message.html
+=started       2016-04-06 17:18:37
+=ended         2016-04-06 17:18:38
+=result        ok
+=elapsed       1.051597
+=case          privacy_SUITE:block_jid_presence_in
+=logfile       privacy_suite.block_jid_presence_in.html
+=started       2016-04-06 17:18:38
+=ended         2016-04-06 17:18:39
+=result        ok
+=elapsed       1.05759
+=case          privacy_SUITE:block_jid_presence_out
+=logfile       privacy_suite.block_jid_presence_out.html
+=started       2016-04-06 17:18:39
+=ended         2016-04-06 17:18:40
+=result        ok
+=elapsed       1.358285
+=case          privacy_SUITE:block_jid_iq
+=logfile       privacy_suite.block_jid_iq.html
+=started       2016-04-06 17:18:40
+=ended         2016-04-06 17:18:42
+=result        ok
+=elapsed       1.051855
+=case          privacy_SUITE:block_jid_all
+=logfile       privacy_suite.block_jid_all.html
+=started       2016-04-06 17:18:42
+=ended         2016-04-06 17:18:43
+=result        ok
+=elapsed       1.168275
+=case          privacy_SUITE:block_jid_message_but_not_presence
+=logfile       privacy_suite.block_jid_message_but_not_presence.html
+=started       2016-04-06 17:18:43
+=ended         2016-04-06 17:18:44
+=result        ok
+=elapsed       1.051773
+=case          privacy_SUITE:end_per_group
+=logfile       privacy_suite.end_per_group.963124.304.html
+=group_props   [{name,blocking},sequence]
+=started       2016-04-06 17:18:44
+=ended         2016-04-06 17:18:45
+=result        ok
+=elapsed       0.9225
+=group_time    11.008s
+=case          privacy_SUITE:init_per_group
+=logfile       privacy_suite.init_per_group.963125.253.html
+=group_props   [{name,allowing},sequence]
+=started       2016-04-06 17:18:45
+=ended         2016-04-06 17:18:45
+=result        ok
+=elapsed       0.500868
+=case          privacy_SUITE:allow_subscription_to_from_message
+=logfile       privacy_suite.allow_subscription_to_from_message.html
+=started       2016-04-06 17:18:45
+=ended         2016-04-06 17:18:47
+=result        failed: {{assertion_failed,assert,is_chat_message,
+                            [<<"Hi, Alice XYZ!">>],
+                            {xmlel,<<"presence">>,
+                                [{<<"from">>,<<"bOb@localhost/res1">>},
+                                 {<<"to">>,<<"alice@localhost/res1">>},
+                                 {<<"xml:lang">>,<<"en">>}],
+                                []},
+                            "<presence from='bOb@localhost/res1' to='alice@localhost/res1' xml:lang='en'/>"},
+                        [{escalus_new_assert,assert_true,2,
+                             [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {privacy_SUITE,
+                             '-allow_subscription_to_from_message/1-fun-0-',2,
+                             [{file,"privacy_SUITE.erl"},{line,455}]},
+                         {escalus_story,story,3,
+                             [{file,"src/escalus_story.erl"},{line,40}]},
+                         {test_server,ts_tc,3,
+                             [{file,"test_server.erl"},{line,1360}]},
+                         {test_server,run_test_case_eval1,6,
+                             [{file,"test_server.erl"},{line,977}]},
+                         {test_server,run_test_case_eval,9,
+                             [{file,"test_server.erl"},{line,925}]}]}, [{escalus_new_assert,
+                                                                         assert_true,
+                                                                         84},
+                                                                        {privacy_SUITE,
+                                                                         '-allow_subscription_to_from_message/1-fun-0-',
+                                                                         455},
+                                                                        {escalus_story,
+                                                                         story,
+                                                                         40},
+                                                                        {test_server,
+                                                                         ts_tc,
+                                                                         1360},
+                                                                        {test_server,
+                                                                         run_test_case_eval1,
+                                                                         977},
+                                                                        {test_server,
+                                                                         run_test_case_eval,
+                                                                         925}]
+=== *** FAILED test case 23 of 24 ***
+=== 
+=case          privacy_SUITE:allow_subscription_both_message
+=group_props   [{name,"allowing"}]
+=started       2016-04-06 17:18:47
+=result        auto_skipped: {failed,{privacy_SUITE,allow_subscription_to_from_message}}
+=== *** Skipping test case #24 {privacy_SUITE,allow_subscription_both_message} ***
+=case          privacy_SUITE:end_per_group
+=logfile       privacy_suite.end_per_group.963127.181.html
+=group_props   [{name,allowing},sequence]
+=started       2016-04-06 17:18:47
+=ended         2016-04-06 17:18:48
+=result        ok
+=elapsed       0.922492
+=group_time    1.928s
+=case          privacy_SUITE:end_per_suite
+=logfile       privacy_suite.end_per_suite.html
+=started       2016-04-06 17:18:48
+=ended         2016-04-06 17:18:48
+=result        ok
+=elapsed       0.002281
+=group_time    26.902s
+=== TEST COMPLETE, 22 ok, 1 failed, 1 skipped of 24 test cases
+
+=finished      2016-04-06 17:18:48
+=failed        1
+=successful    22
+=user_skipped  0
+=auto_skipped  1
