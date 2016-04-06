@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test sm_SUITE:server_returns_failed_after_auth result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="sm_suite.src.html#server_returns_failed_after_auth-1">sm_SUITE:server_returns_failed_after_auth/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.21995.0>},
+     {{saved,ack_freq},unset},
+     {preset,"internal_redis"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-96c2a039-c17e-41b4-b2d1-2d41ac5f5cdf.2016-04-06_17.15.33/ejabberd_tests.tests.sm_SUITE.logs/run.2016-04-06_17.30.14/sm_suite.server_returns_failed_after_auth.963820.589.html"},
+     {tc_group_properties,[{shuffle,{28448,22889,29240}},{name,negotiation}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/sm_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-96c2a039-c17e-41b4-b2d1-2d41ac5f5cdf.2016-04-06_17.15.33/ejabberd_tests.tests.sm_SUITE.logs/run.2016-04-06_17.30.14/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-96c2a039-c17e-41b4-b2d1-2d41ac5f5cdf.2016-04-06_17.15.33"
+
+=== Started at 2016-04-06 17:30:20
+
+<br />
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-04-06 17:30:20.644 ***</b>
+escalus_utils:make_jid failed on line 150
+Reason: {badmatch,false}
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-06 17:30:20
+=== location [{escalus_utils,make_jid,150},
+              {escalus_connection,start,109},
+              {sm_SUITE,server_returns_failed,<a href="sm_suite.src.html#203">203</a>},
+              {test_server,ts_tc,1429},
+              {test_server,run_test_case_eval1,1026},
+              {test_server,run_test_case_eval,968}]
+=== reason = no match of right hand side value false
+  in function  escalus_utils:make_jid/1 (src/escalus_utils.erl, line 150)
+  in call from escalus_connection:start/2 (src/escalus_connection.erl, line 109)
+  in call from sm_SUITE:server_returns_failed/2 (sm_SUITE.erl, line 203)
+  in call from test_server:ts_tc/3 (test_server.erl, line 1429)
+  in call from test_server:run_test_case_eval1/6 (test_server.erl, line 1026)
+  in call from test_server:run_test_case_eval/9 (test_server.erl, line 968)
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 06 2016 17:30:20<!/date><br />
+</div>
+</center>
+</body>
+</html>

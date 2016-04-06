@@ -1,0 +1,68 @@
+=== Suite started at 2016-04-06 17:21:05
+=== Starting test, 2 test cases
+=cases         2
+=user          travis
+=host          testing-gce-96c2a039-c17e-41b4-b2d1-2d41ac5f5cdf
+=hosts         testing-gce-96c2a039-c17e-41b4-b2d1-2d41ac5f5cdf 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-06 17:21:05
+=case          cluster_commands_SUITE:init_per_suite
+=logfile       cluster_commands_suite.init_per_suite.html
+=started       2016-04-06 17:21:05
+=ended         2016-04-06 17:21:05
+=result        ok
+=elapsed       0.271638
+=case          cluster_commands_SUITE:init_per_group
+=logfile       cluster_commands_suite.init_per_group.html
+=group_props   [{name,clustered}]
+=started       2016-04-06 17:21:05
+=ended         2016-04-06 17:21:17
+=result        skipped: nondistributed_sm
+=== *** SKIPPED {cluster_commands_SUITE,init_per_group} ***
+=== 
+=case          cluster_commands_SUITE:one_to_one_message
+=group_props   [{name,"clustered"}]
+=started       2016-04-06 17:21:17
+=result        skipped: nondistributed_sm
+=== *** Skipping test case #1 {cluster_commands_SUITE,one_to_one_message} ***
+=== 
+=case          cluster_commands_SUITE:end_per_group
+=group_props   [{name,"clustered"}]
+=started       2016-04-06 17:21:17
+=result        skipped: nondistributed_sm
+=== *** Skipping {cluster_commands_SUITE,end_per_group} ***
+=case          cluster_commands_SUITE:init_per_group
+=logfile       cluster_commands_suite.init_per_group.963277.526.html
+=group_props   [{name,ejabberdctl}]
+=started       2016-04-06 17:21:17
+=ended         2016-04-06 17:21:29
+=result        skipped: nondistributed_sm
+=== *** SKIPPED {cluster_commands_SUITE,init_per_group} ***
+=== 
+=case          cluster_commands_SUITE:set_master_test
+=group_props   [{name,"ejabberdctl"}]
+=started       2016-04-06 17:21:29
+=result        skipped: nondistributed_sm
+=== *** Skipping test case #2 {cluster_commands_SUITE,set_master_test} ***
+=== 
+=case          cluster_commands_SUITE:end_per_group
+=group_props   [{name,"ejabberdctl"}]
+=started       2016-04-06 17:21:29
+=result        skipped: nondistributed_sm
+=== *** Skipping {cluster_commands_SUITE,end_per_group} ***
+=case          cluster_commands_SUITE:end_per_suite
+=logfile       cluster_commands_suite.end_per_suite.html
+=started       2016-04-06 17:21:29
+=ended         2016-04-06 17:21:35
+=result        ok
+=elapsed       6.081732
+=group_time    24.601s
+=== TEST COMPLETE, 0 ok, 0 failed, 2 skipped of 2 test cases
+
+=finished      2016-04-06 17:21:35
+=failed        0
+=successful    0
+=user_skipped  2
+=auto_skipped  0
