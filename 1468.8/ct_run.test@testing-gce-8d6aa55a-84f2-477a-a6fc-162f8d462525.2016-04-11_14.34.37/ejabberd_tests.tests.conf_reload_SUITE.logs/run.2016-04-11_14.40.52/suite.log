@@ -1,0 +1,195 @@
+=== Suite started at 2016-04-11 14:40:52
+=== Starting test, 4 test cases
+=cases         4
+=user          travis
+=host          testing-gce-8d6aa55a-84f2-477a-a6fc-162f8d462525
+=hosts         testing-gce-8d6aa55a-84f2-477a-a6fc-162f8d462525 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-11 14:40:52
+=case          conf_reload_SUITE:init_per_suite
+=logfile       conf_reload_suite.init_per_suite.html
+=started       2016-04-11 14:40:52
+=ended         2016-04-11 14:40:52
+=result        ok
+=elapsed       0.006725
+=case          conf_reload_SUITE:init_per_group
+=logfile       conf_reload_suite.init_per_group.html
+=group_props   [{name,xmpp_domain_local_reload}]
+=started       2016-04-11 14:40:52
+=ended         2016-04-11 14:40:52
+=result        ok
+=elapsed       0.26019
+=case          conf_reload_SUITE:domain_should_change
+=logfile       conf_reload_suite.domain_should_change.html
+=started       2016-04-11 14:40:52
+=ended         2016-04-11 14:40:59
+=result        failed: {undef,
+                           [{distributed_helper,rpc,
+                                [mongooseim@localhost,os,cmd,
+                                 ["/home/travis/build/esl/MongooseIM/dev/mongooseim_node1/bin/mongooseimctl reload_local"]],
+                                []},
+                            {reload_helper,reload_through_ctl,2,
+                                [{file,"reload_helper.erl"},{line,47}]},
+                            {conf_reload_SUITE,domain_should_change,1,
+                                [{file,"conf_reload_SUITE.erl"},{line,93}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1026}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                            rpc},
+                                                                           {reload_helper,
+                                                                            reload_through_ctl,
+                                                                            47},
+                                                                           {conf_reload_SUITE,
+                                                                            domain_should_change,
+                                                                            93},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1026},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED test case 1 of 4 ***
+=case          conf_reload_SUITE:user_should_be_registered_and_unregistered_via_ctl
+=logfile       conf_reload_suite.user_should_be_registered_and_unregistered_via_ctl.html
+=started       2016-04-11 14:40:59
+=ended         2016-04-11 14:41:05
+=result        failed: {undef,
+                           [{distributed_helper,rpc,
+                                [mongooseim@localhost,os,cmd,
+                                 ["/home/travis/build/esl/MongooseIM/dev/mongooseim_node1/bin/mongooseimctl reload_local"]],
+                                []},
+                            {reload_helper,reload_through_ctl,2,
+                                [{file,"reload_helper.erl"},{line,47}]},
+                            {conf_reload_SUITE,
+                                user_should_be_registered_and_unregistered_via_ctl,
+                                1,
+                                [{file,"conf_reload_SUITE.erl"},{line,105}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1026}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                            rpc},
+                                                                           {reload_helper,
+                                                                            reload_through_ctl,
+                                                                            47},
+                                                                           {conf_reload_SUITE,
+                                                                            user_should_be_registered_and_unregistered_via_ctl,
+                                                                            105},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1026},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED test case 2 of 4 ***
+=case          conf_reload_SUITE:user_should_be_registered_and_unregistered_via_xmpp
+=logfile       conf_reload_suite.user_should_be_registered_and_unregistered_via_xmpp.html
+=started       2016-04-11 14:41:05
+=ended         2016-04-11 14:41:12
+=result        failed: {undef,
+                           [{distributed_helper,rpc,
+                                [mongooseim@localhost,os,cmd,
+                                 ["/home/travis/build/esl/MongooseIM/dev/mongooseim_node1/bin/mongooseimctl reload_local"]],
+                                []},
+                            {reload_helper,reload_through_ctl,2,
+                                [{file,"reload_helper.erl"},{line,47}]},
+                            {conf_reload_SUITE,
+                                user_should_be_registered_and_unregistered_via_xmpp,
+                                1,
+                                [{file,"conf_reload_SUITE.erl"},{line,119}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1026}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                            rpc},
+                                                                           {reload_helper,
+                                                                            reload_through_ctl,
+                                                                            47},
+                                                                           {conf_reload_SUITE,
+                                                                            user_should_be_registered_and_unregistered_via_xmpp,
+                                                                            119},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1026},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED test case 3 of 4 ***
+=case          conf_reload_SUITE:user_should_be_disconnected_from_removed_domain
+=logfile       conf_reload_suite.user_should_be_disconnected_from_removed_domain.html
+=started       2016-04-11 14:41:12
+=ended         2016-04-11 14:41:19
+=result        failed: {undef,
+                           [{distributed_helper,rpc,
+                                [mongooseim@localhost,os,cmd,
+                                 ["/home/travis/build/esl/MongooseIM/dev/mongooseim_node1/bin/mongooseimctl reload_local"]],
+                                []},
+                            {reload_helper,reload_through_ctl,2,
+                                [{file,"reload_helper.erl"},{line,47}]},
+                            {conf_reload_SUITE,
+                                user_should_be_disconnected_from_removed_domain,
+                                1,
+                                [{file,"conf_reload_SUITE.erl"},{line,131}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1026}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                            rpc},
+                                                                           {reload_helper,
+                                                                            reload_through_ctl,
+                                                                            47},
+                                                                           {conf_reload_SUITE,
+                                                                            user_should_be_disconnected_from_removed_domain,
+                                                                            131},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1026},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED test case 4 of 4 ***
+=case          conf_reload_SUITE:end_per_group
+=logfile       conf_reload_suite.end_per_group.html
+=group_props   [{name,xmpp_domain_local_reload}]
+=started       2016-04-11 14:41:19
+=ended         2016-04-11 14:41:19
+=result        ok
+=elapsed       0.463701
+=group_time    26.503s
+=case          conf_reload_SUITE:end_per_suite
+=logfile       conf_reload_suite.end_per_suite.html
+=started       2016-04-11 14:41:19
+=ended         2016-04-11 14:41:19
+=result        ok
+=elapsed       0.002295
+=group_time    27.048s
+=== TEST COMPLETE, 0 ok, 4 failed of 4 test cases
+
+=finished      2016-04-11 14:41:19
+=failed        4
+=successful    0
+=user_skipped  0
+=auto_skipped  0
