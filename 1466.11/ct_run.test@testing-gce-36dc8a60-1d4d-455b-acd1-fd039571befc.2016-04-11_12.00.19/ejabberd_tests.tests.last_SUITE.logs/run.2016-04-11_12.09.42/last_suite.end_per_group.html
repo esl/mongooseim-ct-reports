@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test last_SUITE:end_per_group result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+=== <a href="last_suite.src.html#end_per_group-1">source code for last_SUITE:end_per_group/1</a>
+
+<pre>
+<a name="top"></a>
+=== Group properties: [{name,last},sequence]
+
+=== Test case started with:
+last_SUITE:end_per_group([{everyone_is_friends,true},
+                          {watchdog,<0.16297.0>},
+                          {preset,"internal_mnesia"},
+                          {tc_logfile,
+                              "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-36dc8a60-1d4d-455b-acd1-fd039571befc.2016-04-11_12.00.19/ejabberd_tests.tests.last_SUITE.logs/run.2016-04-11_12.09.42/last_suite.end_per_group.html"},
+                          {tc_group_properties,[{name,last},sequence]},
+                          {tc_group_path,[]},
+                          {data_dir,
+                              "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/last_SUITE_data/"},
+                          {priv_dir,
+                              "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-36dc8a60-1d4d-455b-acd1-fd039571befc.2016-04-11_12.00.19/ejabberd_tests.tests.last_SUITE.logs/run.2016-04-11_12.09.42/log_private/"},
+                          {escalus_users,
+                              [{alice,
+                                   [{username,<<"alice">>},
+                                    {server,<<"localhost">>},
+                                    {password,<<"matygrysa">>}]},
+                               {bob,
+                                   [{username,<<"bob">>},
+                                    {server,<<"localhost">>},
+                                    {password,<<"makrolika">>}]}]}])
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-36dc8a60-1d4d-455b-acd1-fd039571befc.2016-04-11_12.00.19"
+
+=== Started at 2016-04-11 12:09:47
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-04-11 12:09:48
+=== successfully completed test case
+=== returned value = [{ok,result,
+                          {xmlel,<<"iq">>,
+                              [{<<"from">>,<<>>},
+                               {<<"to">>,
+                                <<"alice@localhost/escalus-default-resource">>},
+                               {<<"id">>,
+                                <<"be16a44ded6d713f73a6b566ac87df89">>},
+                               {<<"type">>,<<"result">>}],
+                              [{xmlel,<<"query">>,
+                                   [{<<"xmlns">>,<<"jabber:iq:register">>}],
+                                   [{xmlel,<<"remove">>,[],[]}]}]}},
+                      {ok,result,
+                          {xmlel,<<"iq">>,
+                              [{<<"from">>,<<>>},
+                               {<<"to">>,
+                                <<"bob@localhost/escalus-default-resource">>},
+                               {<<"id">>,
+                                <<"a18725e2a9aa95492ac06cf23dc1c2ec">>},
+                               {<<"type">>,<<"result">>}],
+                              [{xmlel,<<"query">>,
+                                   [{<<"xmlns">>,<<"jabber:iq:register">>}],
+                                   [{xmlel,<<"remove">>,[],[]}]}]}}]
+=== 
+=== Total execution time of group: 4.807s
+
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Mon Apr 11 2016 12:09:47<!/date><br />
+</div>
+</center>
+</body>
+</html>

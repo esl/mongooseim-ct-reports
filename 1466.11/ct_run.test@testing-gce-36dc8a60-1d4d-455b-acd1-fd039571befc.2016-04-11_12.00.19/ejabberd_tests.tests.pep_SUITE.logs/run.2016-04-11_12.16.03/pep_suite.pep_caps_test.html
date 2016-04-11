@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test pep_SUITE:pep_caps_test result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+=== <a href="pep_suite.src.html#pep_caps_test-1">source code for pep_SUITE:pep_caps_test/1</a>
+
+<pre>
+<a name="top"></a>
+=== Test case started with:
+pep_SUITE:pep_caps_test([{everyone_is_friends,true},
+                         {watchdog,<0.20361.0>},
+                         {saved_modules,
+                             [{mod_websockets,[]},
+                              {mod_stream_management,[]},
+                              {mod_private,[]},
+                              {mod_auth_token,
+                                  [{{validity_period,access},{60,minutes}},
+                                   {{validity_period,refresh},{1,days}}]},
+                              {mod_roster,[]},
+                              {mod_keystore,
+                                  [{keys,
+                                       [{token_secret,ram},
+                                        {provision_pre_shared,ram}]}]},
+                              {mod_http_notification,
+                                  [{worker_timeout,500},
+                                   {host,"http://localhost:8000"}]},
+                              {mod_offline,
+                                  [{access_max_user_messages,
+                                       max_user_offline_messages}]},
+                              {mod_muc,
+                                  [{host,"muc.@HOST@"},
+                                   {access,muc},
+                                   {access_create,muc_create}]},
+                              {mod_adhoc,[]},
+                              {mod_register,
+                                  [{welcome_message,{[]}},
+                                   {registration_watchers,
+                                       [<<"admin@localhost">>]},
+                                   {ip_access,
+                                       [{allow,"127.0.0.0/8"},
+                                        {deny,"0.0.0.0/0"}]},
+                                   {access,register}]},
+                              {mod_vcard,[]},
+                              {mod_muc_log,
+                                  [{outdir,"/tmp/muclogs"},{access_log,muc}]},
+                              {mod_disco,[]},
+                              {mod_sic,[]},
+                              {mod_privacy,[]},
+                              {mod_amp,[]},
+                              {mod_carboncopy,[]},
+                              {mod_admin_extra,[]},
+                              {mod_last,[]},
+                              {mod_bosh,[]}]},
+                         {preset,"internal_mnesia"},
+                         {tc_logfile,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-36dc8a60-1d4d-455b-acd1-fd039571befc.2016-04-11_12.00.19/ejabberd_tests.tests.pep_SUITE.logs/run.2016-04-11_12.16.03/pep_suite.pep_caps_test.html"},
+                         {tc_group_properties,[{name,pep_tests},sequence]},
+                         {tc_group_path,[]},
+                         {data_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/pep_SUITE_data/"},
+                         {priv_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-36dc8a60-1d4d-455b-acd1-fd039571befc.2016-04-11_12.00.19/ejabberd_tests.tests.pep_SUITE.logs/run.2016-04-11_12.16.03/log_private/"}])
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-36dc8a60-1d4d-455b-acd1-fd039571befc.2016-04-11_12.00.19"
+
+=== Started at 2016-04-11 12:16:04
+
+<br />
+<div class="ct_internal"><b>*** CT 2016-04-11 12:16:06.202 *** history.xml</b>
+<a href="log_private/pep_caps_test.xml" type=[]>pep_caps_test.xml</a>
+
+</div>
+
+<div class="ct_error_notify"><b>*** CT Error Notification 2016-04-11 12:16:06.403 ***</b>
+escalus_client:wait_for_stanza failed on line 118
+Reason: timeout_when_waiting_for_stanza
+
+<a href="#end">Full error description and stacktrace</a>
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-11 12:16:06
+=== location [{escalus_client,wait_for_stanza,118},
+              {pep_SUITE,receive_presence_with_caps,<a href="pep_suite.src.html#204">204</a>},
+              {pep_SUITE,send_presence_with_caps,<a href="pep_suite.src.html#155">155</a>},
+              {pep_SUITE,'-pep_caps_test/1-fun-0-',<a href="pep_suite.src.html#90">90</a>},
+              {escalus_story,story,40},
+              {test_server,ts_tc,1360},
+              {test_server,run_test_case_eval1,977},
+              {test_server,run_test_case_eval,925}]
+=== reason = timeout_when_waiting_for_stanza
+  in function  escalus_client:wait_for_stanza/2
+     called as escalus_client:wait_for_stanza({client,
+                                               <<"bob@localhost/res1">>,
+                                               escalus_tcp,#Port<0.30029>,
+                                               false,false,<0.20377.0>,
+                                               [{event_manager,<0.20376.0>},
+                                                {server,<<"localhost">>},
+                                                {username,<<"bob">>},
+                                                {resource,<<"res1">>}]},
+                                              1000)
+  in call from pep_SUITE:receive_presence_with_caps/3 (pep_SUITE.erl, line 204)
+  in call from pep_SUITE:send_presence_with_caps/3 (pep_SUITE.erl, line 155)
+  in call from pep_SUITE:'-pep_caps_test/1-fun-0-'/1 (pep_SUITE.erl, line 90)
+  in call from escalus_story:story/3 (src/escalus_story.erl, line 40)
+  in call from test_server:ts_tc/3 (test_server.erl, line 1360)
+  in call from test_server:run_test_case_eval1/6 (test_server.erl, line 977)
+  in call from test_server:run_test_case_eval/9 (test_server.erl, line 925)
+=== 
+*** pep_caps_test failed.
+    Skipping all other cases in sequence.
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Mon Apr 11 2016 12:16:04<!/date><br />
+</div>
+</center>
+</body>
+</html>

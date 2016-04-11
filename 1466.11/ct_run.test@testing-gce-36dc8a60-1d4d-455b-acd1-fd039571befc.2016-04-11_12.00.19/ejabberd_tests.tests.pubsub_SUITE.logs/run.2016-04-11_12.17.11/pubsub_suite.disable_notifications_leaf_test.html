@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test pubsub_SUITE:disable_notifications_leaf_test result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+=== <a href="pubsub_suite.src.html#disable_notifications_leaf_test-1">source code for pubsub_SUITE:disable_notifications_leaf_test/1</a>
+
+<pre>
+<a name="top"></a>
+=== Test case started with:
+pubsub_SUITE:disable_notifications_leaf_test([{saved_modules,
+                                               [{mod_websockets,[]},
+                                                {mod_stream_management,[]},
+                                                {mod_private,[]},
+                                                {mod_auth_token,
+                                                 [{{validity_period,access},
+                                                   {60,minutes}},
+                                                  {{validity_period,refresh},
+                                                   {1,days}}]},
+                                                {mod_roster,
+                                                 [{versioning,true},
+                                                  {store_current_id,false}]},
+                                                {mod_keystore,
+                                                 [{keys,
+                                                   [{token_secret,ram},
+                                                    {provision_pre_shared,
+                                                     ram}]}]},
+                                                {mod_http_notification,
+                                                 [{worker_timeout,500},
+                                                  {host,
+                                                   "http://localhost:8000"}]},
+                                                {mod_offline,
+                                                 [{access_max_user_messages,
+                                                   max_user_offline_messages}]},
+                                                {mod_muc,
+                                                 [{host,"muc.@HOST@"},
+                                                  {access,muc},
+                                                  {access_create,muc_create}]},
+                                                {mod_adhoc,[]},
+                                                {mod_register,
+                                                 [{welcome_message,{[]}},
+                                                  {registration_watchers,
+                                                   [<<"admin@localhost">>]},
+                                                  {ip_access,
+                                                   [{allow,"127.0.0.0/8"},
+                                                    {deny,"0.0.0.0/0"}]},
+                                                  {access,register}]},
+                                                {mod_vcard,[]},
+                                                {mod_muc_log,
+                                                 [{outdir,"/tmp/muclogs"},
+                                                  {access_log,muc}]},
+                                                {mod_disco,[]},
+                                                {mod_sic,[]},
+                                                {mod_privacy,[]},
+                                                {mod_amp,[]},
+                                                {mod_carboncopy,[]},
+                                                {mod_admin_extra,[]},
+                                                {mod_last,[]},
+                                                {mod_bosh,[]}]},
+                                              {watchdog,<0.21385.0>},
+                                              {preset,"internal_mnesia"},
+                                              {tc_logfile,
+                                               "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-36dc8a60-1d4d-455b-acd1-fd039571befc.2016-04-11_12.00.19/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-11_12.17.11/pubsub_suite.disable_notifications_leaf_test.html"},
+                                              {tc_group_properties,[]},
+                                              {tc_group_path,[]},
+                                              {data_dir,
+                                               "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/pubsub_SUITE_data/"},
+                                              {priv_dir,
+                                               "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-36dc8a60-1d4d-455b-acd1-fd039571befc.2016-04-11_12.00.19/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-11_12.17.11/log_private/"}])
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-36dc8a60-1d4d-455b-acd1-fd039571befc.2016-04-11_12.00.19"
+
+=== Started at 2016-04-11 12:18:04
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-04-11 12:18:06
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.21860.0>},
+                      {tc_name,disable_notifications_leaf_test},
+                      {escalus_cleaner,<0.21859.0>},
+                      {watchdog,<0.21858.0>},
+                      {saved_modules,
+                          [{mod_websockets,[]},
+                           {mod_stream_management,[]},
+                           {mod_private,[]},
+                           {mod_auth_token,
+                               [{{validity_period,access},{60,minutes}},
+                                {{validity_period,refresh},{1,days}}]},
+                           {mod_roster,
+                               [{versioning,true},{store_current_id,false}]},
+                           {mod_keystore,
+                               [{keys,
+                                    [{token_secret,ram},
+                                     {provision_pre_shared,ram}]}]},
+                           {mod_http_notification,
+                               [{worker_timeout,500},
+                                {host,"http://localhost:8000"}]},
+                           {mod_offline,
+                               [{access_max_user_messages,
+                                    max_user_offline_messages}]},
+                           {mod_muc,
+                               [{host,"muc.@HOST@"},
+                                {access,muc},
+                                {access_create,muc_create}]},
+                           {mod_adhoc,[]},
+                           {mod_register,
+                               [{welcome_message,{[]}},
+                                {registration_watchers,
+                                    [<<"admin@localhost">>]},
+                                {ip_access,
+                                    [{allow,"127.0.0.0/8"},
+                                     {deny,"0.0.0.0/0"}]},
+                                {access,register}]},
+                           {mod_vcard,[]},
+                           {mod_muc_log,
+                               [{outdir,"/tmp/muclogs"},{access_log,muc}]},
+                           {mod_disco,[]},
+                           {mod_sic,[]},
+                           {mod_privacy,[]},
+                           {mod_amp,[]},
+                           {mod_carboncopy,[]},
+                           {mod_admin_extra,[]},
+                           {mod_last,[]},
+                           {mod_bosh,[]}]},
+                      {preset,"internal_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-36dc8a60-1d4d-455b-acd1-fd039571befc.2016-04-11_12.00.19/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-11_12.17.11/pubsub_suite.disable_notifications_leaf_test.html"},
+                      {tc_group_properties,[]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/pubsub_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-36dc8a60-1d4d-455b-acd1-fd039571befc.2016-04-11_12.00.19/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-11_12.17.11/log_private/"}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Mon Apr 11 2016 12:18:04<!/date><br />
+</div>
+</center>
+</body>
+</html>
