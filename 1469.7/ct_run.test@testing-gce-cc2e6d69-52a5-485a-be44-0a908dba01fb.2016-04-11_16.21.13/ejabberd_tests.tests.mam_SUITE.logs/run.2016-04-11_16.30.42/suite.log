@@ -1,0 +1,3011 @@
+=== Suite started at 2016-04-11 16:30:42
+=== Starting test, 203 test cases
+=cases         203
+=user          travis
+=host          testing-gce-cc2e6d69-52a5-485a-be44-0a908dba01fb
+=hosts         testing-gce-cc2e6d69-52a5-485a-be44-0a908dba01fb 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-11 16:30:42
+=case          mam_SUITE:init_per_suite
+=logfile       mam_suite.init_per_suite.html
+=started       2016-04-11 16:30:42
+=ended         2016-04-11 16:30:42
+=result        ok
+=elapsed       0.068914
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.html
+=group_props   [{name,riak_timed_yz_buckets_mam}]
+=started       2016-04-11 16:30:42
+=ended         2016-04-11 16:30:42
+=result        ok
+=elapsed       0.121076
+=case          mam_SUITE:mam_service_discovery
+=logfile       mam_suite.mam_service_discovery.html
+=started       2016-04-11 16:30:42
+=ended         2016-04-11 16:30:42
+=result        ok
+=elapsed       0.21963
+=case          mam_SUITE:simple_archive_request
+=logfile       mam_suite.simple_archive_request.html
+=started       2016-04-11 16:30:42
+=ended         2016-04-11 16:30:45
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-simple_archive_request/1-fun-0-',
+                                                                    922},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 2 of 203 ***
+=case          mam_SUITE:range_archive_request
+=logfile       mam_suite.range_archive_request.html
+=started       2016-04-11 16:30:45
+=ended         2016-04-11 16:30:46
+=result        failed: {{assertion_failed,assert,is_iq_result,
+                         {xmlel,<<"iq">>,
+                          [{<<"from">>,<<"alicE@localhost">>},
+                           {<<"to">>,<<"alicE@localhost/res1">>},
+                           {<<"id">>,<<"3e93b3f61ae3789b9d96c33de10d6272">>},
+                           {<<"type">>,<<"error">>}],
+                          [{xmlel,<<"error">>,
+                            [{<<"code">>,<<"500">>},{<<"type">>,<<"wait">>}],
+                            [{xmlel,<<"internal-server-error">>,
+                              [{<<"xmlns">>,
+                                <<"urn:ietf:params:xml:ns:xmpp-stanzas">>}],
+                              []}]}]},
+                         "<iq from='alicE@localhost' to='alicE@localhost/res1' id='3e93b3f61ae3789b9d96c33de10d6272' type='error'><error code='500' type='wait'><internal-server-error xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/></error></iq>"},
+                        [{escalus_new_assert,assert_true,2,
+                          [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {mam_SUITE,'-range_archive_request/1-fun-0-',2,
+                          [{file,"mam_SUITE.erl"},{line,1657}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,40}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{escalus_new_assert,
+                                                                      assert_true,
+                                                                      84},
+                                                                     {mam_SUITE,
+                                                                      '-range_archive_request/1-fun-0-',
+                                                                      1657},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      40},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 3 of 203 ***
+=case          mam_SUITE:range_archive_request_not_empty
+=logfile       mam_suite.range_archive_request_not_empty.html
+=started       2016-04-11 16:30:46
+=ended         2016-04-11 16:30:49
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-range_archive_request_not_empty/1-fun-0-',
+                                                                    1682},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 4 of 203 ***
+=case          mam_SUITE:limit_archive_request
+=logfile       mam_suite.limit_archive_request.html
+=started       2016-04-11 16:30:49
+=ended         2016-04-11 16:30:49
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-limit_archive_request/1-fun-0-',
+                                                                    1715},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 5 of 203 ***
+=case          mam_SUITE:end_per_group
+=logfile       mam_suite.end_per_group.html
+=group_props   [{name,riak_timed_yz_buckets_mam}]
+=started       2016-04-11 16:30:49
+=ended         2016-04-11 16:30:49
+=result        ok
+=elapsed       0.065185
+=group_time    7.307s
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392249.801.html
+=group_props   [{name,riak_timed_yz_buckets_mam03}]
+=started       2016-04-11 16:30:49
+=ended         2016-04-11 16:30:49
+=result        ok
+=elapsed       0.098403
+=case          mam_SUITE:mam_service_discovery
+=logfile       mam_suite.mam_service_discovery.392249.929.html
+=started       2016-04-11 16:30:49
+=ended         2016-04-11 16:30:50
+=result        ok
+=elapsed       0.221554
+=case          mam_SUITE:simple_archive_request
+=logfile       mam_suite.simple_archive_request.392250.177.html
+=started       2016-04-11 16:30:50
+=ended         2016-04-11 16:30:53
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v03,
+                                                                    1133},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_fin,
+                                                                    1099},
+                                                                   {mam_SUITE,
+                                                                    '-simple_archive_request/1-fun-0-',
+                                                                    922},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 7 of 203 ***
+=case          mam_SUITE:range_archive_request
+=logfile       mam_suite.range_archive_request.392253.152.html
+=started       2016-04-11 16:30:53
+=ended         2016-04-11 16:30:53
+=result        failed: {{assertion_failed,assert,is_iq_result,
+                         {xmlel,<<"iq">>,
+                          [{<<"from">>,<<"alicE@localhost">>},
+                           {<<"to">>,<<"alicE@localhost/res1">>},
+                           {<<"id">>,<<"f0c6c5f098882f89cbee9866cee1a21d">>},
+                           {<<"type">>,<<"error">>}],
+                          [{xmlel,<<"error">>,
+                            [{<<"code">>,<<"500">>},{<<"type">>,<<"wait">>}],
+                            [{xmlel,<<"internal-server-error">>,
+                              [{<<"xmlns">>,
+                                <<"urn:ietf:params:xml:ns:xmpp-stanzas">>}],
+                              []}]}]},
+                         "<iq from='alicE@localhost' to='alicE@localhost/res1' id='f0c6c5f098882f89cbee9866cee1a21d' type='error'><error code='500' type='wait'><internal-server-error xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/></error></iq>"},
+                        [{escalus_new_assert,assert_true,2,
+                          [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {mam_SUITE,'-range_archive_request/1-fun-0-',2,
+                          [{file,"mam_SUITE.erl"},{line,1657}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,40}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{escalus_new_assert,
+                                                                      assert_true,
+                                                                      84},
+                                                                     {mam_SUITE,
+                                                                      '-range_archive_request/1-fun-0-',
+                                                                      1657},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      40},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 8 of 203 ***
+=case          mam_SUITE:range_archive_request_not_empty
+=logfile       mam_suite.range_archive_request_not_empty.392253.405.html
+=started       2016-04-11 16:30:53
+=ended         2016-04-11 16:30:56
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v03,
+                                                                    1133},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_fin,
+                                                                    1099},
+                                                                   {mam_SUITE,
+                                                                    '-range_archive_request_not_empty/1-fun-0-',
+                                                                    1682},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 9 of 203 ***
+=case          mam_SUITE:limit_archive_request
+=logfile       mam_suite.limit_archive_request.392256.885.html
+=started       2016-04-11 16:30:56
+=ended         2016-04-11 16:30:57
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v03,
+                                                                    1133},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_fin,
+                                                                    1099},
+                                                                   {mam_SUITE,
+                                                                    '-limit_archive_request/1-fun-0-',
+                                                                    1715},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 10 of 203 ***
+=case          mam_SUITE:end_per_group
+=logfile       mam_suite.end_per_group.392257.141.html
+=group_props   [{name,riak_timed_yz_buckets_mam03}]
+=started       2016-04-11 16:30:57
+=ended         2016-04-11 16:30:57
+=result        ok
+=elapsed       0.073135
+=group_time    7.340s
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392257.245.html
+=group_props   [{name,riak_timed_yz_buckets_mam04}]
+=started       2016-04-11 16:30:57
+=ended         2016-04-11 16:30:57
+=result        ok
+=elapsed       0.210075
+=case          mam_SUITE:mam_service_discovery
+=logfile       mam_suite.mam_service_discovery.392257.482.html
+=started       2016-04-11 16:30:57
+=ended         2016-04-11 16:30:57
+=result        ok
+=elapsed       0.220551
+=case          mam_SUITE:simple_archive_request
+=logfile       mam_suite.simple_archive_request.392257.729.html
+=started       2016-04-11 16:30:57
+=ended         2016-04-11 16:31:00
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-simple_archive_request/1-fun-0-',
+                                                                    922},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 12 of 203 ***
+=case          mam_SUITE:range_archive_request
+=logfile       mam_suite.range_archive_request.392260.701.html
+=started       2016-04-11 16:31:00
+=ended         2016-04-11 16:31:00
+=result        failed: {{assertion_failed,assert,is_iq_result,
+                         {xmlel,<<"iq">>,
+                          [{<<"from">>,<<"alicE@localhost">>},
+                           {<<"to">>,<<"alicE@localhost/res1">>},
+                           {<<"id">>,<<"422411d278882c7eeaf221df456ace42">>},
+                           {<<"type">>,<<"error">>}],
+                          [{xmlel,<<"error">>,
+                            [{<<"code">>,<<"500">>},{<<"type">>,<<"wait">>}],
+                            [{xmlel,<<"internal-server-error">>,
+                              [{<<"xmlns">>,
+                                <<"urn:ietf:params:xml:ns:xmpp-stanzas">>}],
+                              []}]}]},
+                         "<iq from='alicE@localhost' to='alicE@localhost/res1' id='422411d278882c7eeaf221df456ace42' type='error'><error code='500' type='wait'><internal-server-error xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/></error></iq>"},
+                        [{escalus_new_assert,assert_true,2,
+                          [{file,"src/escalus_new_assert.erl"},{line,84}]},
+                         {mam_SUITE,'-range_archive_request/1-fun-0-',2,
+                          [{file,"mam_SUITE.erl"},{line,1657}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,40}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{escalus_new_assert,
+                                                                      assert_true,
+                                                                      84},
+                                                                     {mam_SUITE,
+                                                                      '-range_archive_request/1-fun-0-',
+                                                                      1657},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      40},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 13 of 203 ***
+=case          mam_SUITE:range_archive_request_not_empty
+=logfile       mam_suite.range_archive_request_not_empty.392260.952.html
+=started       2016-04-11 16:31:00
+=ended         2016-04-11 16:31:04
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-range_archive_request_not_empty/1-fun-0-',
+                                                                    1682},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 14 of 203 ***
+=case          mam_SUITE:limit_archive_request
+=logfile       mam_suite.limit_archive_request.392264.448.html
+=started       2016-04-11 16:31:04
+=ended         2016-04-11 16:31:04
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-limit_archive_request/1-fun-0-',
+                                                                    1715},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 15 of 203 ***
+=case          mam_SUITE:end_per_group
+=logfile       mam_suite.end_per_group.392264.707.html
+=group_props   [{name,riak_timed_yz_buckets_mam04}]
+=started       2016-04-11 16:31:04
+=ended         2016-04-11 16:31:04
+=result        ok
+=elapsed       0.068707
+=group_time    7.462s
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392264.803.html
+=group_props   [{name,riak_timed_yz_buckets_mam_purge}]
+=started       2016-04-11 16:31:04
+=ended         2016-04-11 16:31:05
+=result        ok
+=elapsed       0.206516
+=case          mam_SUITE:purge_single_message
+=logfile       mam_suite.purge_single_message.html
+=started       2016-04-11 16:31:05
+=ended         2016-04-11 16:31:08
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-purge_single_message/1-fun-0-',
+                                                                    1249},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 16 of 203 ***
+=case          mam_SUITE:purge_multiple_messages
+=logfile       mam_suite.purge_multiple_messages.html
+=started       2016-04-11 16:31:08
+=ended         2016-04-11 16:31:11
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-purge_multiple_messages/1-fun-0-',
+                                                                    1300},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 17 of 203 ***
+=case          mam_SUITE:end_per_group
+=logfile       mam_suite.end_per_group.392271.208.html
+=group_props   [{name,riak_timed_yz_buckets_mam_purge}]
+=started       2016-04-11 16:31:11
+=ended         2016-04-11 16:31:11
+=result        ok
+=elapsed       0.080388
+=group_time    6.405s
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392271.318.html
+=group_props   [{name,riak_timed_yz_buckets_muc}]
+=started       2016-04-11 16:31:11
+=ended         2016-04-11 16:31:11
+=result        ok
+=elapsed       0.098718
+=case          mam_SUITE:muc_service_discovery
+=logfile       mam_suite.muc_service_discovery.html
+=started       2016-04-11 16:31:11
+=ended         2016-04-11 16:31:11
+=result        ok
+=elapsed       0.219582
+=case          mam_SUITE:muc_archive_request
+=logfile       mam_suite.muc_archive_request.html
+=started       2016-04-11 16:31:11
+=ended         2016-04-11 16:31:12
+=result        failed: {function_clause,
+                           [{exml_query,attr,
+                                [undefined,<<"by">>,undefined],
+                                [{file,"src/exml_query.erl"},{line,83}]},
+                            {mam_SUITE,'-muc_archive_request/1-fun-0-',4,
+                                [{file,"mam_SUITE.erl"},{line,1335}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1026}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{exml_query,
+                                                                            attr,
+                                                                            83},
+                                                                           {mam_SUITE,
+                                                                            '-muc_archive_request/1-fun-0-',
+                                                                            1335},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1026},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED test case 19 of 203 ***
+=case          mam_SUITE:muc_archive_purge
+=logfile       mam_suite.muc_archive_purge.html
+=started       2016-04-11 16:31:12
+=ended         2016-04-11 16:31:16
+=result        ok
+=elapsed       3.954275
+=case          mam_SUITE:muc_multiple_devices
+=logfile       mam_suite.muc_multiple_devices.html
+=started       2016-04-11 16:31:16
+=ended         2016-04-11 16:31:16
+=result        failed: {function_clause,
+                           [{exml_query,attr,
+                                [undefined,<<"by">>,undefined],
+                                [{file,"src/exml_query.erl"},{line,83}]},
+                            {mam_SUITE,'-muc_multiple_devices/1-fun-0-',5,
+                                [{file,"mam_SUITE.erl"},{line,1441}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1026}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{exml_query,
+                                                                            attr,
+                                                                            83},
+                                                                           {mam_SUITE,
+                                                                            '-muc_multiple_devices/1-fun-0-',
+                                                                            1441},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1026},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED test case 21 of 203 ***
+=case          mam_SUITE:muc_protected_message
+=logfile       mam_suite.muc_protected_message.html
+=started       2016-04-11 16:31:16
+=ended         2016-04-11 16:31:17
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_protected_message/1-fun-0-',
+                                                                    1494},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 22 of 203 ***
+=case          mam_SUITE:muc_deny_protected_room_access
+=logfile       mam_suite.muc_deny_protected_room_access.html
+=started       2016-04-11 16:31:17
+=ended         2016-04-11 16:31:17
+=result        ok
+=elapsed       0.443837
+=case          mam_SUITE:muc_allow_access_to_owner
+=logfile       mam_suite.muc_allow_access_to_owner.html
+=started       2016-04-11 16:31:17
+=ended         2016-04-11 16:31:18
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_allow_access_to_owner/1-fun-0-',
+                                                                    1534},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 24 of 203 ***
+=case          mam_SUITE:muc_delete_x_user_in_anon_rooms
+=logfile       mam_suite.muc_delete_x_user_in_anon_rooms.html
+=started       2016-04-11 16:31:18
+=ended         2016-04-11 16:31:21
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_delete_x_user_in_anon_rooms/1-fun-0-',
+                                                                    1566},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 25 of 203 ***
+=case          mam_SUITE:muc_show_x_user_to_moderators_in_anon_rooms
+=logfile       mam_suite.muc_show_x_user_to_moderators_in_anon_rooms.html
+=started       2016-04-11 16:31:21
+=ended         2016-04-11 16:31:24
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_show_x_user_to_moderators_in_anon_rooms/1-fun-0-',
+                                                                    1601},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 26 of 203 ***
+=case          mam_SUITE:muc_show_x_user_for_your_own_messages_in_anon_rooms
+=logfile       mam_suite.muc_show_x_user_for_your_own_messages_in_anon_rooms.html
+=started       2016-04-11 16:31:24
+=ended         2016-04-11 16:31:27
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_show_x_user_for_your_own_messages_in_anon_rooms/1-fun-0-',
+                                                                    1636},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 27 of 203 ***
+=case          mam_SUITE:muc_querying_for_all_messages
+=logfile       mam_suite.muc_querying_for_all_messages.html
+=started       2016-04-11 16:31:27
+=ended         2016-04-11 16:31:32
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_querying_for_all_messages/1-fun-0-',
+                                                                    959},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 28 of 203 ***
+=case          mam_SUITE:muc_querying_for_all_messages_with_jid
+=logfile       mam_suite.muc_querying_for_all_messages_with_jid.html
+=started       2016-04-11 16:31:32
+=ended         2016-04-11 16:31:35
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_querying_for_all_messages_with_jid/1-fun-0-',
+                                                                    977},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 29 of 203 ***
+=case          mam_SUITE:end_per_group
+=logfile       mam_suite.end_per_group.392295.685.html
+=group_props   [{name,riak_timed_yz_buckets_muc}]
+=started       2016-04-11 16:31:35
+=ended         2016-04-11 16:31:35
+=result        ok
+=elapsed       0.068971
+=group_time    24.367s
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392295.789.html
+=group_props   [{name,riak_timed_yz_buckets_muc03}]
+=started       2016-04-11 16:31:35
+=ended         2016-04-11 16:31:35
+=result        ok
+=elapsed       0.099244
+=case          mam_SUITE:muc_service_discovery
+=logfile       mam_suite.muc_service_discovery.392295.914.html
+=started       2016-04-11 16:31:35
+=ended         2016-04-11 16:31:36
+=result        ok
+=elapsed       0.222708
+=case          mam_SUITE:muc_archive_request
+=logfile       mam_suite.muc_archive_request.392296.163.html
+=started       2016-04-11 16:31:36
+=ended         2016-04-11 16:31:36
+=result        failed: {function_clause,
+                           [{exml_query,attr,
+                                [undefined,<<"by">>,undefined],
+                                [{file,"src/exml_query.erl"},{line,83}]},
+                            {mam_SUITE,'-muc_archive_request/1-fun-0-',4,
+                                [{file,"mam_SUITE.erl"},{line,1335}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1026}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{exml_query,
+                                                                            attr,
+                                                                            83},
+                                                                           {mam_SUITE,
+                                                                            '-muc_archive_request/1-fun-0-',
+                                                                            1335},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1026},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED test case 31 of 203 ***
+=case          mam_SUITE:muc_archive_purge
+=logfile       mam_suite.muc_archive_purge.392296.705.html
+=started       2016-04-11 16:31:36
+=ended         2016-04-11 16:31:40
+=result        ok
+=elapsed       3.944638
+=case          mam_SUITE:muc_multiple_devices
+=logfile       mam_suite.muc_multiple_devices.392300.679.html
+=started       2016-04-11 16:31:40
+=ended         2016-04-11 16:31:41
+=result        failed: {function_clause,
+                           [{exml_query,attr,
+                                [undefined,<<"by">>,undefined],
+                                [{file,"src/exml_query.erl"},{line,83}]},
+                            {mam_SUITE,'-muc_multiple_devices/1-fun-0-',5,
+                                [{file,"mam_SUITE.erl"},{line,1441}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1026}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{exml_query,
+                                                                            attr,
+                                                                            83},
+                                                                           {mam_SUITE,
+                                                                            '-muc_multiple_devices/1-fun-0-',
+                                                                            1441},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1026},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED test case 33 of 203 ***
+=case          mam_SUITE:muc_protected_message
+=logfile       mam_suite.muc_protected_message.392301.381.html
+=started       2016-04-11 16:31:41
+=ended         2016-04-11 16:31:41
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v03,
+                                                                    1133},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_fin,
+                                                                    1099},
+                                                                   {mam_SUITE,
+                                                                    '-muc_protected_message/1-fun-0-',
+                                                                    1494},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 34 of 203 ***
+=case          mam_SUITE:muc_deny_protected_room_access
+=logfile       mam_suite.muc_deny_protected_room_access.392301.867.html
+=started       2016-04-11 16:31:41
+=ended         2016-04-11 16:31:42
+=result        ok
+=elapsed       0.441085
+=case          mam_SUITE:muc_allow_access_to_owner
+=logfile       mam_suite.muc_allow_access_to_owner.392302.341.html
+=started       2016-04-11 16:31:42
+=ended         2016-04-11 16:31:42
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v03,
+                                                                    1133},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_fin,
+                                                                    1099},
+                                                                   {mam_SUITE,
+                                                                    '-muc_allow_access_to_owner/1-fun-0-',
+                                                                    1534},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 36 of 203 ***
+=case          mam_SUITE:muc_delete_x_user_in_anon_rooms
+=logfile       mam_suite.muc_delete_x_user_in_anon_rooms.392302.810.html
+=started       2016-04-11 16:31:42
+=ended         2016-04-11 16:31:45
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v03,
+                                                                    1133},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_fin,
+                                                                    1099},
+                                                                   {mam_SUITE,
+                                                                    '-muc_delete_x_user_in_anon_rooms/1-fun-0-',
+                                                                    1566},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 37 of 203 ***
+=case          mam_SUITE:muc_show_x_user_to_moderators_in_anon_rooms
+=logfile       mam_suite.muc_show_x_user_to_moderators_in_anon_rooms.392305.793.html
+=started       2016-04-11 16:31:45
+=ended         2016-04-11 16:31:48
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v03,
+                                                                    1133},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_fin,
+                                                                    1099},
+                                                                   {mam_SUITE,
+                                                                    '-muc_show_x_user_to_moderators_in_anon_rooms/1-fun-0-',
+                                                                    1601},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 38 of 203 ***
+=case          mam_SUITE:muc_show_x_user_for_your_own_messages_in_anon_rooms
+=logfile       mam_suite.muc_show_x_user_for_your_own_messages_in_anon_rooms.392308.773.html
+=started       2016-04-11 16:31:48
+=ended         2016-04-11 16:31:51
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v03,
+                                                                    1133},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_fin,
+                                                                    1099},
+                                                                   {mam_SUITE,
+                                                                    '-muc_show_x_user_for_your_own_messages_in_anon_rooms/1-fun-0-',
+                                                                    1636},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 39 of 203 ***
+=case          mam_SUITE:muc_querying_for_all_messages
+=logfile       mam_suite.muc_querying_for_all_messages.392311.760.html
+=started       2016-04-11 16:31:51
+=ended         2016-04-11 16:31:57
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v03,
+                                                                    1133},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_fin,
+                                                                    1099},
+                                                                   {mam_SUITE,
+                                                                    '-muc_querying_for_all_messages/1-fun-0-',
+                                                                    959},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 40 of 203 ***
+=case          mam_SUITE:muc_querying_for_all_messages_with_jid
+=logfile       mam_suite.muc_querying_for_all_messages_with_jid.392317.80.html
+=started       2016-04-11 16:31:57
+=ended         2016-04-11 16:32:00
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v03,
+                                                                    1133},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_fin,
+                                                                    1099},
+                                                                   {mam_SUITE,
+                                                                    '-muc_querying_for_all_messages_with_jid/1-fun-0-',
+                                                                    977},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 41 of 203 ***
+=case          mam_SUITE:end_per_group
+=logfile       mam_suite.end_per_group.392320.105.html
+=group_props   [{name,riak_timed_yz_buckets_muc03}]
+=started       2016-04-11 16:32:00
+=ended         2016-04-11 16:32:00
+=result        ok
+=elapsed       0.06644
+=group_time    24.316s
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392320.197.html
+=group_props   [{name,riak_timed_yz_buckets_muc04}]
+=started       2016-04-11 16:32:00
+=ended         2016-04-11 16:32:00
+=result        ok
+=elapsed       0.099366
+=case          mam_SUITE:muc_service_discovery
+=logfile       mam_suite.muc_service_discovery.392320.324.html
+=started       2016-04-11 16:32:00
+=ended         2016-04-11 16:32:00
+=result        ok
+=elapsed       0.227077
+=case          mam_SUITE:muc_archive_request
+=logfile       mam_suite.muc_archive_request.392320.581.html
+=started       2016-04-11 16:32:00
+=ended         2016-04-11 16:32:01
+=result        failed: {function_clause,
+                           [{exml_query,attr,
+                                [undefined,<<"by">>,undefined],
+                                [{file,"src/exml_query.erl"},{line,83}]},
+                            {mam_SUITE,'-muc_archive_request/1-fun-0-',4,
+                                [{file,"mam_SUITE.erl"},{line,1335}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1026}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{exml_query,
+                                                                            attr,
+                                                                            83},
+                                                                           {mam_SUITE,
+                                                                            '-muc_archive_request/1-fun-0-',
+                                                                            1335},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1026},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED test case 43 of 203 ***
+=case          mam_SUITE:muc_archive_purge
+=logfile       mam_suite.muc_archive_purge.392321.93.html
+=started       2016-04-11 16:32:01
+=ended         2016-04-11 16:32:05
+=result        ok
+=elapsed       3.95588
+=case          mam_SUITE:muc_multiple_devices
+=logfile       mam_suite.muc_multiple_devices.392325.77.html
+=started       2016-04-11 16:32:05
+=ended         2016-04-11 16:32:05
+=result        failed: {function_clause,
+                           [{exml_query,attr,
+                                [undefined,<<"by">>,undefined],
+                                [{file,"src/exml_query.erl"},{line,83}]},
+                            {mam_SUITE,'-muc_multiple_devices/1-fun-0-',5,
+                                [{file,"mam_SUITE.erl"},{line,1441}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1026}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{exml_query,
+                                                                            attr,
+                                                                            83},
+                                                                           {mam_SUITE,
+                                                                            '-muc_multiple_devices/1-fun-0-',
+                                                                            1441},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1026},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED test case 45 of 203 ***
+=case          mam_SUITE:muc_protected_message
+=logfile       mam_suite.muc_protected_message.392325.764.html
+=started       2016-04-11 16:32:05
+=ended         2016-04-11 16:32:06
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_protected_message/1-fun-0-',
+                                                                    1494},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 46 of 203 ***
+=case          mam_SUITE:muc_deny_protected_room_access
+=logfile       mam_suite.muc_deny_protected_room_access.392326.240.html
+=started       2016-04-11 16:32:06
+=ended         2016-04-11 16:32:06
+=result        ok
+=elapsed       0.434229
+=case          mam_SUITE:muc_allow_access_to_owner
+=logfile       mam_suite.muc_allow_access_to_owner.392326.703.html
+=started       2016-04-11 16:32:06
+=ended         2016-04-11 16:32:07
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_allow_access_to_owner/1-fun-0-',
+                                                                    1534},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 48 of 203 ***
+=case          mam_SUITE:muc_delete_x_user_in_anon_rooms
+=logfile       mam_suite.muc_delete_x_user_in_anon_rooms.392327.177.html
+=started       2016-04-11 16:32:07
+=ended         2016-04-11 16:32:10
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_delete_x_user_in_anon_rooms/1-fun-0-',
+                                                                    1566},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 49 of 203 ***
+=case          mam_SUITE:muc_show_x_user_to_moderators_in_anon_rooms
+=logfile       mam_suite.muc_show_x_user_to_moderators_in_anon_rooms.392330.152.html
+=started       2016-04-11 16:32:10
+=ended         2016-04-11 16:32:13
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_show_x_user_to_moderators_in_anon_rooms/1-fun-0-',
+                                                                    1601},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 50 of 203 ***
+=case          mam_SUITE:muc_show_x_user_for_your_own_messages_in_anon_rooms
+=logfile       mam_suite.muc_show_x_user_for_your_own_messages_in_anon_rooms.392333.133.html
+=started       2016-04-11 16:32:13
+=ended         2016-04-11 16:32:16
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_show_x_user_for_your_own_messages_in_anon_rooms/1-fun-0-',
+                                                                    1636},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 51 of 203 ***
+=case          mam_SUITE:muc_querying_for_all_messages
+=logfile       mam_suite.muc_querying_for_all_messages.392336.117.html
+=started       2016-04-11 16:32:16
+=ended         2016-04-11 16:32:21
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_querying_for_all_messages/1-fun-0-',
+                                                                    959},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 52 of 203 ***
+=case          mam_SUITE:muc_querying_for_all_messages_with_jid
+=logfile       mam_suite.muc_querying_for_all_messages_with_jid.392341.438.html
+=started       2016-04-11 16:32:21
+=ended         2016-04-11 16:32:24
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_querying_for_all_messages_with_jid/1-fun-0-',
+                                                                    977},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 53 of 203 ***
+=case          mam_SUITE:end_per_group
+=logfile       mam_suite.end_per_group.392344.477.html
+=group_props   [{name,riak_timed_yz_buckets_muc04}]
+=started       2016-04-11 16:32:24
+=ended         2016-04-11 16:32:24
+=result        ok
+=elapsed       0.072352
+=group_time    24.279s
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392344.585.html
+=group_props   [{name,riak_timed_yz_buckets_muc_with_pm}]
+=started       2016-04-11 16:32:24
+=ended         2016-04-11 16:32:24
+=result        ok
+=elapsed       0.103988
+=case          mam_SUITE:muc_service_discovery
+=logfile       mam_suite.muc_service_discovery.392344.717.html
+=started       2016-04-11 16:32:24
+=ended         2016-04-11 16:32:24
+=result        ok
+=elapsed       0.212938
+=case          mam_SUITE:muc_archive_request
+=logfile       mam_suite.muc_archive_request.392344.961.html
+=started       2016-04-11 16:32:24
+=ended         2016-04-11 16:32:25
+=result        failed: {function_clause,
+                           [{exml_query,attr,
+                                [undefined,<<"by">>,undefined],
+                                [{file,"src/exml_query.erl"},{line,83}]},
+                            {mam_SUITE,'-muc_archive_request/1-fun-0-',4,
+                                [{file,"mam_SUITE.erl"},{line,1335}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1026}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{exml_query,
+                                                                            attr,
+                                                                            83},
+                                                                           {mam_SUITE,
+                                                                            '-muc_archive_request/1-fun-0-',
+                                                                            1335},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1026},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED test case 55 of 203 ***
+=case          mam_SUITE:muc_archive_purge
+=logfile       mam_suite.muc_archive_purge.392345.457.html
+=started       2016-04-11 16:32:25
+=ended         2016-04-11 16:32:29
+=result        ok
+=elapsed       3.95698
+=case          mam_SUITE:muc_multiple_devices
+=logfile       mam_suite.muc_multiple_devices.392349.447.html
+=started       2016-04-11 16:32:29
+=ended         2016-04-11 16:32:30
+=result        failed: {function_clause,
+                           [{exml_query,attr,
+                                [undefined,<<"by">>,undefined],
+                                [{file,"src/exml_query.erl"},{line,83}]},
+                            {mam_SUITE,'-muc_multiple_devices/1-fun-0-',5,
+                                [{file,"mam_SUITE.erl"},{line,1441}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1026}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{exml_query,
+                                                                            attr,
+                                                                            83},
+                                                                           {mam_SUITE,
+                                                                            '-muc_multiple_devices/1-fun-0-',
+                                                                            1441},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1026},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED test case 57 of 203 ***
+=case          mam_SUITE:muc_protected_message
+=logfile       mam_suite.muc_protected_message.392350.157.html
+=started       2016-04-11 16:32:30
+=ended         2016-04-11 16:32:30
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_protected_message/1-fun-0-',
+                                                                    1494},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 58 of 203 ***
+=case          mam_SUITE:muc_deny_protected_room_access
+=logfile       mam_suite.muc_deny_protected_room_access.392350.643.html
+=started       2016-04-11 16:32:30
+=ended         2016-04-11 16:32:31
+=result        ok
+=elapsed       0.434688
+=case          mam_SUITE:muc_allow_access_to_owner
+=logfile       mam_suite.muc_allow_access_to_owner.392351.109.html
+=started       2016-04-11 16:32:31
+=ended         2016-04-11 16:32:31
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_allow_access_to_owner/1-fun-0-',
+                                                                    1534},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 60 of 203 ***
+=case          mam_SUITE:muc_delete_x_user_in_anon_rooms
+=logfile       mam_suite.muc_delete_x_user_in_anon_rooms.392351.582.html
+=started       2016-04-11 16:32:31
+=ended         2016-04-11 16:32:34
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_delete_x_user_in_anon_rooms/1-fun-0-',
+                                                                    1566},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 61 of 203 ***
+=case          mam_SUITE:muc_show_x_user_to_moderators_in_anon_rooms
+=logfile       mam_suite.muc_show_x_user_to_moderators_in_anon_rooms.392354.569.html
+=started       2016-04-11 16:32:34
+=ended         2016-04-11 16:32:37
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_show_x_user_to_moderators_in_anon_rooms/1-fun-0-',
+                                                                    1601},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 62 of 203 ***
+=case          mam_SUITE:muc_show_x_user_for_your_own_messages_in_anon_rooms
+=logfile       mam_suite.muc_show_x_user_for_your_own_messages_in_anon_rooms.392357.561.html
+=started       2016-04-11 16:32:37
+=ended         2016-04-11 16:32:40
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_show_x_user_for_your_own_messages_in_anon_rooms/1-fun-0-',
+                                                                    1636},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 63 of 203 ***
+=case          mam_SUITE:muc_querying_for_all_messages
+=logfile       mam_suite.muc_querying_for_all_messages.392360.540.html
+=started       2016-04-11 16:32:40
+=ended         2016-04-11 16:32:45
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_querying_for_all_messages/1-fun-0-',
+                                                                    959},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 64 of 203 ***
+=case          mam_SUITE:muc_querying_for_all_messages_with_jid
+=logfile       mam_suite.muc_querying_for_all_messages_with_jid.392365.853.html
+=started       2016-04-11 16:32:45
+=ended         2016-04-11 16:32:48
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-muc_querying_for_all_messages_with_jid/1-fun-0-',
+                                                                    977},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 65 of 203 ***
+=case          mam_SUITE:end_per_group
+=logfile       mam_suite.end_per_group.392368.889.html
+=group_props   [{name,riak_timed_yz_buckets_muc_with_pm}]
+=started       2016-04-11 16:32:48
+=ended         2016-04-11 16:32:48
+=result        ok
+=elapsed       0.07218
+=group_time    24.304s
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392368.988.html
+=group_props   [{name,riak_timed_yz_buckets_rsm}]
+=started       2016-04-11 16:32:48
+=ended         2016-04-11 16:32:52
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-send_rsm_messages/1-fun-0-',
+                                                                    2586},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {mam_SUITE,
+                                                                    send_rsm_messages,
+                                                                    2592},
+                                                                   {mam_SUITE,
+                                                                    init_per_group,
+                                                                    390},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429}]
+=== *** FAILED {mam_SUITE,init_per_group} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-04-11 16:32:52
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #66 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-04-11 16:32:52
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #67 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-04-11 16:32:52
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #68 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-04-11 16:32:52
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #69 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-04-11 16:32:52
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #70 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-04-11 16:32:52
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #71 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-04-11 16:32:52
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #72 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-04-11 16:32:52
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #73 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-04-11 16:32:52
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #74 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-04-11 16:32:52
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #75 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-04-11 16:32:52
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #76 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-04-11 16:32:52
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #77 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-04-11 16:32:52
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #78 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-04-11 16:32:52
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #79 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:end_per_group
+=group_props   [{name,"riak_timed_yz_buckets_rsm"}]
+=started       2016-04-11 16:32:52
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {mam_SUITE,end_per_group} ***
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392372.266.html
+=group_props   [{name,riak_timed_yz_buckets_rsm03}]
+=started       2016-04-11 16:32:52
+=ended         2016-04-11 16:32:55
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v03,
+                                                                    1133},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_fin,
+                                                                    1099},
+                                                                   {mam_SUITE,
+                                                                    '-send_rsm_messages/1-fun-0-',
+                                                                    2586},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {mam_SUITE,
+                                                                    send_rsm_messages,
+                                                                    2592},
+                                                                   {mam_SUITE,
+                                                                    init_per_group,
+                                                                    390},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429}]
+=== *** FAILED {mam_SUITE,init_per_group} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-04-11 16:32:55
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #80 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-04-11 16:32:55
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #81 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-04-11 16:32:55
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #82 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-04-11 16:32:55
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #83 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-04-11 16:32:55
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #84 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-04-11 16:32:55
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #85 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-04-11 16:32:55
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #86 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-04-11 16:32:55
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #87 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-04-11 16:32:55
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #88 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-04-11 16:32:55
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #89 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-04-11 16:32:55
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #90 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-04-11 16:32:55
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #91 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-04-11 16:32:55
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #92 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-04-11 16:32:55
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #93 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:end_per_group
+=group_props   [{name,"riak_timed_yz_buckets_rsm03"}]
+=started       2016-04-11 16:32:55
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {mam_SUITE,end_per_group} ***
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392375.540.html
+=group_props   [{name,riak_timed_yz_buckets_rsm04}]
+=started       2016-04-11 16:32:55
+=ended         2016-04-11 16:32:58
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-send_rsm_messages/1-fun-0-',
+                                                                    2586},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {mam_SUITE,
+                                                                    send_rsm_messages,
+                                                                    2592},
+                                                                   {mam_SUITE,
+                                                                    init_per_group,
+                                                                    390},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429}]
+=== *** FAILED {mam_SUITE,init_per_group} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-04-11 16:32:58
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #94 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-04-11 16:32:58
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #95 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-04-11 16:32:58
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #96 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-04-11 16:32:58
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #97 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-04-11 16:32:58
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #98 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-04-11 16:32:58
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #99 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-04-11 16:32:58
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #100 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-04-11 16:32:58
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #101 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-04-11 16:32:58
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #102 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-04-11 16:32:58
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #103 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-04-11 16:32:58
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #104 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-04-11 16:32:58
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #105 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-04-11 16:32:58
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #106 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-04-11 16:32:58
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #107 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:end_per_group
+=group_props   [{name,"riak_timed_yz_buckets_rsm04"}]
+=started       2016-04-11 16:32:58
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {mam_SUITE,end_per_group} ***
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392378.784.html
+=group_props   [{name,riak_timed_yz_buckets_with_rsm}]
+=started       2016-04-11 16:32:58
+=ended         2016-04-11 16:33:02
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-send_rsm_messages/1-fun-0-',
+                                                                    2586},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {mam_SUITE,
+                                                                    send_rsm_messages,
+                                                                    2592},
+                                                                   {mam_SUITE,
+                                                                    init_per_group,
+                                                                    390},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429}]
+=== *** FAILED {mam_SUITE,init_per_group} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-04-11 16:33:02
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #108 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-04-11 16:33:02
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #109 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-04-11 16:33:02
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #110 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-04-11 16:33:02
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #111 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-04-11 16:33:02
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #112 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-04-11 16:33:02
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #113 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-04-11 16:33:02
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #114 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-04-11 16:33:02
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #115 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-04-11 16:33:02
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #116 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-04-11 16:33:02
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #117 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-04-11 16:33:02
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #118 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-04-11 16:33:02
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #119 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-04-11 16:33:02
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #120 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-04-11 16:33:02
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #121 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:end_per_group
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm"}]
+=started       2016-04-11 16:33:02
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {mam_SUITE,end_per_group} ***
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392382.27.html
+=group_props   [{name,riak_timed_yz_buckets_with_rsm03}]
+=started       2016-04-11 16:33:02
+=ended         2016-04-11 16:33:05
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v03,
+                                                                    1133},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_fin,
+                                                                    1099},
+                                                                   {mam_SUITE,
+                                                                    '-send_rsm_messages/1-fun-0-',
+                                                                    2586},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {mam_SUITE,
+                                                                    send_rsm_messages,
+                                                                    2592},
+                                                                   {mam_SUITE,
+                                                                    init_per_group,
+                                                                    390},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429}]
+=== *** FAILED {mam_SUITE,init_per_group} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-04-11 16:33:05
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #122 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-04-11 16:33:05
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #123 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-04-11 16:33:05
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #124 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-04-11 16:33:05
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #125 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-04-11 16:33:05
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #126 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-04-11 16:33:05
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #127 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-04-11 16:33:05
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #128 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-04-11 16:33:05
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #129 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-04-11 16:33:05
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #130 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-04-11 16:33:05
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #131 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-04-11 16:33:05
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #132 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-04-11 16:33:05
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #133 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-04-11 16:33:05
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #134 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-04-11 16:33:05
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #135 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:end_per_group
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm03"}]
+=started       2016-04-11 16:33:05
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {mam_SUITE,end_per_group} ***
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392385.311.html
+=group_props   [{name,riak_timed_yz_buckets_with_rsm04}]
+=started       2016-04-11 16:33:05
+=ended         2016-04-11 16:33:08
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-send_rsm_messages/1-fun-0-',
+                                                                    2586},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {mam_SUITE,
+                                                                    send_rsm_messages,
+                                                                    2592},
+                                                                   {mam_SUITE,
+                                                                    init_per_group,
+                                                                    390},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429}]
+=== *** FAILED {mam_SUITE,init_per_group} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-04-11 16:33:08
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #136 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-04-11 16:33:08
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #137 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-04-11 16:33:08
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #138 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-04-11 16:33:08
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #139 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-04-11 16:33:08
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #140 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-04-11 16:33:08
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #141 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-04-11 16:33:08
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #142 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-04-11 16:33:08
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #143 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-04-11 16:33:08
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #144 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-04-11 16:33:08
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #145 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-04-11 16:33:08
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #146 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-04-11 16:33:08
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #147 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-04-11 16:33:08
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #148 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-04-11 16:33:08
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #149 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:end_per_group
+=group_props   [{name,"riak_timed_yz_buckets_with_rsm04"}]
+=started       2016-04-11 16:33:08
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {mam_SUITE,end_per_group} ***
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392388.567.html
+=group_props   [{name,riak_timed_yz_buckets_muc_rsm}]
+=started       2016-04-11 16:33:08
+=ended         2016-04-11 16:33:11
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-send_muc_rsm_messages/1-fun-0-',
+                                                                    2558},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {mam_SUITE,
+                                                                    send_muc_rsm_messages,
+                                                                    2564},
+                                                                   {mam_SUITE,
+                                                                    init_state,
+                                                                    660},
+                                                                   {mam_SUITE,
+                                                                    init_per_group,
+                                                                    390}]
+=== *** FAILED {mam_SUITE,init_per_group} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-04-11 16:33:11
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #150 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-04-11 16:33:11
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #151 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-04-11 16:33:11
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #152 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-04-11 16:33:11
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #153 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-04-11 16:33:11
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #154 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-04-11 16:33:11
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #155 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-04-11 16:33:11
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #156 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-04-11 16:33:11
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #157 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-04-11 16:33:11
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #158 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-04-11 16:33:11
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #159 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-04-11 16:33:11
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #160 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-04-11 16:33:11
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #161 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-04-11 16:33:11
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #162 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-04-11 16:33:11
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #163 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:end_per_group
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm"}]
+=started       2016-04-11 16:33:11
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {mam_SUITE,end_per_group} ***
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392391.712.html
+=group_props   [{name,riak_timed_yz_buckets_muc_rsm03}]
+=started       2016-04-11 16:33:11
+=ended         2016-04-11 16:33:14
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-send_muc_rsm_messages/1-fun-0-',
+                                                                    2558},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {mam_SUITE,
+                                                                    send_muc_rsm_messages,
+                                                                    2564},
+                                                                   {mam_SUITE,
+                                                                    init_state,
+                                                                    660},
+                                                                   {mam_SUITE,
+                                                                    init_state,
+                                                                    652}]
+=== *** FAILED {mam_SUITE,init_per_group} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-04-11 16:33:14
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #164 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-04-11 16:33:14
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #165 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-04-11 16:33:14
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #166 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-04-11 16:33:14
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #167 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-04-11 16:33:14
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #168 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-04-11 16:33:14
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #169 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-04-11 16:33:14
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #170 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-04-11 16:33:14
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #171 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-04-11 16:33:14
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #172 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-04-11 16:33:14
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #173 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-04-11 16:33:14
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #174 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-04-11 16:33:14
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #175 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-04-11 16:33:14
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #176 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-04-11 16:33:14
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #177 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:end_per_group
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm03"}]
+=started       2016-04-11 16:33:14
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {mam_SUITE,end_per_group} ***
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392394.842.html
+=group_props   [{name,riak_timed_yz_buckets_muc_rsm04}]
+=started       2016-04-11 16:33:14
+=ended         2016-04-11 16:33:17
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-send_muc_rsm_messages/1-fun-0-',
+                                                                    2558},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {mam_SUITE,
+                                                                    send_muc_rsm_messages,
+                                                                    2564},
+                                                                   {mam_SUITE,
+                                                                    init_state,
+                                                                    660},
+                                                                   {mam_SUITE,
+                                                                    init_state,
+                                                                    655}]
+=== *** FAILED {mam_SUITE,init_per_group} ***
+=== 
+=case          mam_SUITE:pagination_first5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-04-11 16:33:17
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #178 {mam_SUITE,pagination_first5} ***
+=== 
+=case          mam_SUITE:pagination_last5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-04-11 16:33:17
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #179 {mam_SUITE,pagination_last5} ***
+=== 
+=case          mam_SUITE:pagination_before10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-04-11 16:33:17
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #180 {mam_SUITE,pagination_before10} ***
+=== 
+=case          mam_SUITE:pagination_after10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-04-11 16:33:17
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #181 {mam_SUITE,pagination_after10} ***
+=== 
+=case          mam_SUITE:pagination_empty_rset
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-04-11 16:33:17
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #182 {mam_SUITE,pagination_empty_rset} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-04-11 16:33:17
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #183 {mam_SUITE,pagination_last_after_id5} ***
+=== 
+=case          mam_SUITE:pagination_last_after_id5_before_id11
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-04-11 16:33:17
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #184 {mam_SUITE,pagination_last_after_id5_before_id11} ***
+=== 
+=case          mam_SUITE:pagination_simple_before10
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-04-11 16:33:17
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #185 {mam_SUITE,pagination_simple_before10} ***
+=== 
+=case          mam_SUITE:pagination_first5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-04-11 16:33:17
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #186 {mam_SUITE,pagination_first5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_last5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-04-11 16:33:17
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #187 {mam_SUITE,pagination_last5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-04-11 16:33:17
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #188 {mam_SUITE,pagination_offset5_opt_count} ***
+=== 
+=case          mam_SUITE:pagination_first25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-04-11 16:33:17
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #189 {mam_SUITE,pagination_first25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_last25_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-04-11 16:33:17
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #190 {mam_SUITE,pagination_last25_opt_count_all} ***
+=== 
+=case          mam_SUITE:pagination_offset5_opt_count_all
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-04-11 16:33:17
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #191 {mam_SUITE,pagination_offset5_opt_count_all} ***
+=== 
+=case          mam_SUITE:end_per_group
+=group_props   [{name,"riak_timed_yz_buckets_muc_rsm04"}]
+=started       2016-04-11 16:33:17
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {mam_SUITE,end_per_group} ***
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392398.0.html
+=group_props   [{name,riak_timed_yz_buckets_bootstrapped}]
+=started       2016-04-11 16:33:17
+=ended         2016-04-11 16:33:18
+=result        ok
+=elapsed       0.198027
+=case          mam_SUITE:purge_old_single_message
+=logfile       mam_suite.purge_old_single_message.html
+=started       2016-04-11 16:33:18
+=ended         2016-04-11 16:33:21
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-purge_old_single_message/1-fun-0-',
+                                                                    1268},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 192 of 203 ***
+=case          mam_SUITE:querying_for_all_messages_with_jid
+=logfile       mam_suite.querying_for_all_messages_with_jid.html
+=started       2016-04-11 16:33:21
+=ended         2016-04-11 16:33:25
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-querying_for_all_messages_with_jid/1-fun-0-',
+                                                                    943},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 193 of 203 ***
+=case          mam_SUITE:end_per_group
+=logfile       mam_suite.end_per_group.392405.197.html
+=group_props   [{name,riak_timed_yz_buckets_bootstrapped}]
+=started       2016-04-11 16:33:25
+=ended         2016-04-11 16:33:25
+=result        ok
+=elapsed       0.069237
+=group_time    7.197s
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392405.292.html
+=group_props   [{name,riak_timed_yz_buckets_archived}]
+=started       2016-04-11 16:33:25
+=ended         2016-04-11 16:33:25
+=result        ok
+=elapsed       0.18875
+=case          mam_SUITE:archived
+=logfile       mam_suite.archived.html
+=started       2016-04-11 16:33:25
+=ended         2016-04-11 16:33:26
+=result        failed: {function_clause,
+                           [{exml_query,attr,
+                                [undefined,<<"by">>,undefined],
+                                [{file,"src/exml_query.erl"},{line,83}]},
+                            {mam_SUITE,'-archived/1-fun-0-',4,
+                                [{file,"mam_SUITE.erl"},{line,996}]},
+                            {escalus_story,story,3,
+                                [{file,"src/escalus_story.erl"},{line,40}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1026}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{exml_query,
+                                                                            attr,
+                                                                            83},
+                                                                           {mam_SUITE,
+                                                                            '-archived/1-fun-0-',
+                                                                            996},
+                                                                           {escalus_story,
+                                                                            story,
+                                                                            40},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1026},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED test case 194 of 203 ***
+=case          mam_SUITE:strip_archived
+=logfile       mam_suite.strip_archived.html
+=started       2016-04-11 16:33:26
+=ended         2016-04-11 16:33:29
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-strip_archived/1-fun-0-',
+                                                                    1060},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 195 of 203 ***
+=case          mam_SUITE:filter_forwarded
+=logfile       mam_suite.filter_forwarded.html
+=started       2016-04-11 16:33:29
+=ended         2016-04-11 16:33:32
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-filter_forwarded/1-fun-0-',
+                                                                    1027},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 196 of 203 ***
+=case          mam_SUITE:end_per_group
+=logfile       mam_suite.end_per_group.392412.164.html
+=group_props   [{name,riak_timed_yz_buckets_archived}]
+=started       2016-04-11 16:33:32
+=ended         2016-04-11 16:33:32
+=result        ok
+=elapsed       0.074394
+=group_time    6.872s
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392412.264.html
+=group_props   [{name,riak_timed_yz_buckets_policy_violation}]
+=started       2016-04-11 16:33:32
+=ended         2016-04-11 16:33:32
+=result        ok
+=elapsed       0.207476
+=case          mam_SUITE:policy_violation
+=logfile       mam_suite.policy_violation.html
+=started       2016-04-11 16:33:32
+=ended         2016-04-11 16:33:35
+=result        failed: {test_case_failed,
+                           "ASSERT EQUAL\n\tExpected <<\"policy-violation\">>\n\tValue <<\"internal-server-error\">>\n"}, [{mam_SUITE,
+                                                                                                                            '-policy_violation/1-fun-0-',
+                                                                                                                            1186},
+                                                                                                                           {escalus_story,
+                                                                                                                            story,
+                                                                                                                            40},
+                                                                                                                           {test_server,
+                                                                                                                            ts_tc,
+                                                                                                                            1429},
+                                                                                                                           {test_server,
+                                                                                                                            run_test_case_eval1,
+                                                                                                                            1026},
+                                                                                                                           {test_server,
+                                                                                                                            run_test_case_eval,
+                                                                                                                            968}]
+=== *** FAILED test case 197 of 203 ***
+=case          mam_SUITE:end_per_group
+=logfile       mam_suite.end_per_group.392415.694.html
+=group_props   [{name,riak_timed_yz_buckets_policy_violation}]
+=started       2016-04-11 16:33:35
+=ended         2016-04-11 16:33:35
+=result        ok
+=elapsed       0.069895
+=group_time    3.430s
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392415.790.html
+=group_props   [{name,riak_timed_yz_buckets_nostore}]
+=started       2016-04-11 16:33:35
+=ended         2016-04-11 16:33:36
+=result        ok
+=elapsed       0.194336
+=case          mam_SUITE:offline_message
+=logfile       mam_suite.offline_message.html
+=started       2016-04-11 16:33:36
+=ended         2016-04-11 16:33:41
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    offline_message,
+                                                                    1220},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 198 of 203 ***
+=case          mam_SUITE:nostore_hint
+=logfile       mam_suite.nostore_hint.html
+=started       2016-04-11 16:33:41
+=ended         2016-04-11 16:33:44
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    '-nostore_hint/1-fun-0-',
+                                                                    1237},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026},
+                                                                   {test_server,
+                                                                    run_test_case_eval,
+                                                                    968}]
+=== *** FAILED test case 199 of 203 ***
+=case          mam_SUITE:end_per_group
+=logfile       mam_suite.end_per_group.392424.963.html
+=group_props   [{name,riak_timed_yz_buckets_nostore}]
+=started       2016-04-11 16:33:44
+=ended         2016-04-11 16:33:45
+=result        ok
+=elapsed       0.061542
+=group_time    9.172s
+=case          mam_SUITE:init_per_group
+=logfile       mam_suite.init_per_group.392425.50.html
+=group_props   [{name,riak_timed_yz_buckets_prefs_cases}]
+=started       2016-04-11 16:33:45
+=ended         2016-04-11 16:33:45
+=result        ok
+=elapsed       0.196552
+=case          mam_SUITE:prefs_set_request
+=logfile       mam_suite.prefs_set_request.html
+=started       2016-04-11 16:33:45
+=ended         2016-04-11 16:33:45
+=result        skipped: "prefs not implemented for riak"
+=== *** SKIPPED test case 200 of 203 ***
+=case          mam_SUITE:prefs_set_cdata_request
+=logfile       mam_suite.prefs_set_cdata_request.html
+=started       2016-04-11 16:33:45
+=ended         2016-04-11 16:33:45
+=result        skipped: "prefs not implemented for riak"
+=== *** SKIPPED test case 201 of 203 ***
+=case          mam_SUITE:run_prefs_cases
+=logfile       mam_suite.run_prefs_cases.html
+=started       2016-04-11 16:33:45
+=ended         2016-04-11 16:33:48
+=result        failed: {test_case_failed,"Unexpected error IQ."}, [{mam_SUITE,
+                                                                    wait_archive_respond_v02,
+                                                                    1119},
+                                                                   {mam_SUITE,
+                                                                    wait_archive_respond_nofin,
+                                                                    1108},
+                                                                   {mam_SUITE,
+                                                                    get_all_messages,
+                                                                    3031},
+                                                                   {mam_SUITE,
+                                                                    '-run_prefs_cases/1-fun-0-',
+                                                                    2965},
+                                                                   {escalus_story,
+                                                                    story,40},
+                                                                   {test_server,
+                                                                    ts_tc,
+                                                                    1429},
+                                                                   {test_server,
+                                                                    run_test_case_eval1,
+                                                                    1026}]
+=== *** FAILED test case 202 of 203 ***
+=case          mam_SUITE:run_set_and_get_prefs_cases
+=logfile       mam_suite.run_set_and_get_prefs_cases.html
+=started       2016-04-11 16:33:48
+=ended         2016-04-11 16:33:49
+=result        ok
+=elapsed       0.42621
+=case          mam_SUITE:end_per_group
+=logfile       mam_suite.end_per_group.392429.299.html
+=group_props   [{name,riak_timed_yz_buckets_prefs_cases}]
+=started       2016-04-11 16:33:49
+=ended         2016-04-11 16:33:49
+=result        ok
+=elapsed       0.095891
+=group_time    4.249s
+=case          mam_SUITE:end_per_suite
+=logfile       mam_suite.end_per_suite.html
+=started       2016-04-11 16:33:49
+=ended         2016-04-11 16:33:49
+=result        ok
+=elapsed       0.003403
+=group_time    187.140s
+=== TEST COMPLETE, 16 ok, 59 failed, 128 skipped of 203 test cases
+
+=finished      2016-04-11 16:33:49
+=failed        59
+=successful    16
+=user_skipped  2
+=auto_skipped  126
