@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test bosh_SUITE:simple_chat result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+=== <a href="bosh_suite.src.html#simple_chat-1">source code for bosh_SUITE:simple_chat/1</a>
+
+<pre>
+<a name="top"></a>
+=== Test case started with:
+bosh_SUITE:simple_chat([{user,carol_s},
+                        {watchdog,<0.13850.0>},
+                        {escalus_user_db,{module,escalus_ejabberd}},
+                        {preset,"internal_mnesia"},
+                        {tc_logfile,
+                            "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-90a650a8-27e1-4034-83f9-6e506d1af529.2016-04-11_19.57.45/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-04-11_19.58.02/bosh_suite.simple_chat.404992.802.html"},
+                        {tc_group_properties,
+                            [{shuffle,{4614,7762,15787}},{name,chat_https}]},
+                        {tc_group_path,[]},
+                        {data_dir,
+                            "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/bosh_SUITE_data/"},
+                        {priv_dir,
+                            "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-90a650a8-27e1-4034-83f9-6e506d1af529.2016-04-11_19.57.45/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-04-11_19.58.02/log_private/"},
+                        {escalus_users,
+                            [{carol,
+                                 [{username,<<"carol">>},
+                                  {server,<<"localhost">>},
+                                  {password,<<"jinglebells">>},
+                                  {transport,bosh},
+                                  {path,<<"/http-bind">>},
+                                  {port,5280}]},
+                             {carol_s,
+                                 [{username,<<"carol_s">>},
+                                  {server,<<"localhost">>},
+                                  {password,<<"jinglebells_s">>},
+                                  {transport,bosh},
+                                  {ssl,true},
+                                  {path,<<"/http-bind">>},
+                                  {port,5285}]},
+                             {geralt,
+                                 [{username,<<"geralt">>},
+                                  {server,<<"localhost">>},
+                                  {password,<<"witcher">>},
+                                  {transport,ws},
+                                  {port,5280},
+                                  {wspath,<<"/ws-xmpp">>}]},
+                             {alice,
+                                 [{username,<<"alicE">>},
+                                  {server,<<"localhost">>},
+                                  {password,<<"matygrysa">>}]}]}])
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-90a650a8-27e1-4034-83f9-6e506d1af529.2016-04-11_19.57.45"
+
+=== Started at 2016-04-11 20:03:12
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-04-11 20:03:13
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.14074.0>},
+                      {tc_name,simple_chat},
+                      {escalus_cleaner,<0.14073.0>},
+                      {watchdog,<0.14072.0>},
+                      {user,carol_s},
+                      {escalus_user_db,{module,escalus_ejabberd}},
+                      {preset,"internal_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-90a650a8-27e1-4034-83f9-6e506d1af529.2016-04-11_19.57.45/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-04-11_19.58.02/bosh_suite.simple_chat.404992.802.html"},
+                      {tc_group_properties,
+                          [{shuffle,{4614,7762,15787}},{name,chat_https}]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/bosh_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-90a650a8-27e1-4034-83f9-6e506d1af529.2016-04-11_19.57.45/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-04-11_19.58.02/log_private/"},
+                      {escalus_users,
+                          [{carol,
+                               [{username,<<"carol">>},
+                                {server,<<"localhost">>},
+                                {password,<<"jinglebells">>},
+                                {transport,bosh},
+                                {path,<<"/http-bind">>},
+                                {port,5280}]},
+                           {carol_s,
+                               [{username,<<"carol_s">>},
+                                {server,<<"localhost">>},
+                                {password,<<"jinglebells_s">>},
+                                {transport,bosh},
+                                {ssl,true},
+                                {path,<<"/http-bind">>},
+                                {port,5285}]},
+                           {geralt,
+                               [{username,<<"geralt">>},
+                                {server,<<"localhost">>},
+                                {password,<<"witcher">>},
+                                {transport,ws},
+                                {port,5280},
+                                {wspath,<<"/ws-xmpp">>}]},
+                           {alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Mon Apr 11 2016 20:03:12<!/date><br />
+</div>
+</center>
+</body>
+</html>
