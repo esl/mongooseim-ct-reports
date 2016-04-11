@@ -1,0 +1,259 @@
+=== Suite started at 2016-04-11 13:51:54
+=== Starting test, 14 test cases
+=cases         14
+=user          travis
+=host          testing-gce-5bdf57c6-fd23-4c19-9f86-ec09378fcdfe
+=hosts         testing-gce-5bdf57c6-fd23-4c19-9f86-ec09378fcdfe 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-11 13:51:54
+=case          component_SUITE:init_per_suite
+=logfile       component_suite.init_per_suite.html
+=started       2016-04-11 13:51:54
+=ended         2016-04-11 13:51:54
+=result        ok
+=elapsed       0.003301
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.html
+=group_props   [{name,xep0114_tcp}]
+=started       2016-04-11 13:51:54
+=ended         2016-04-11 13:51:54
+=result        ok
+=elapsed       0.503866
+=case          component_SUITE:register_one_component
+=logfile       component_suite.register_one_component.html
+=started       2016-04-11 13:51:54
+=ended         2016-04-11 13:51:55
+=result        ok
+=elapsed       0.472028
+=case          component_SUITE:register_two_components
+=logfile       component_suite.register_two_components.html
+=started       2016-04-11 13:51:55
+=ended         2016-04-11 13:51:56
+=result        ok
+=elapsed       0.938206
+=case          component_SUITE:try_registering_with_wrong_password
+=logfile       component_suite.try_registering_with_wrong_password.html
+=started       2016-04-11 13:51:56
+=ended         2016-04-11 13:51:56
+=result        ok
+=elapsed       0.003986
+=case          component_SUITE:try_registering_component_twice
+=logfile       component_suite.try_registering_component_twice.html
+=started       2016-04-11 13:51:56
+=ended         2016-04-11 13:51:56
+=result        ok
+=elapsed       0.00829
+=case          component_SUITE:try_registering_existing_host
+=logfile       component_suite.try_registering_existing_host.html
+=started       2016-04-11 13:51:56
+=ended         2016-04-11 13:51:56
+=result        ok
+=elapsed       0.003783
+=case          component_SUITE:disco_components
+=logfile       component_suite.disco_components.html
+=started       2016-04-11 13:51:56
+=ended         2016-04-11 13:51:56
+=result        ok
+=elapsed       0.468493
+=case          component_SUITE:end_per_group
+=logfile       component_suite.end_per_group.html
+=group_props   [{name,xep0114_tcp}]
+=started       2016-04-11 13:51:56
+=ended         2016-04-11 13:51:57
+=result        ok
+=elapsed       0.926263
+=group_time    2.587s
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.382717.766.html
+=group_props   [{name,xep0114_ws}]
+=started       2016-04-11 13:51:57
+=ended         2016-04-11 13:51:58
+=result        ok
+=elapsed       0.505525
+=case          component_SUITE:register_one_component
+=logfile       component_suite.register_one_component.382718.300.html
+=started       2016-04-11 13:51:58
+=ended         2016-04-11 13:51:58
+=result        ok
+=elapsed       0.472982
+=case          component_SUITE:register_two_components
+=logfile       component_suite.register_two_components.382718.800.html
+=started       2016-04-11 13:51:58
+=ended         2016-04-11 13:51:59
+=result        ok
+=elapsed       0.940782
+=case          component_SUITE:try_registering_with_wrong_password
+=logfile       component_suite.try_registering_with_wrong_password.382719.770.html
+=started       2016-04-11 13:51:59
+=ended         2016-04-11 13:51:59
+=result        ok
+=elapsed       0.003746
+=case          component_SUITE:try_registering_component_twice
+=logfile       component_suite.try_registering_component_twice.382719.802.html
+=started       2016-04-11 13:51:59
+=ended         2016-04-11 13:51:59
+=result        ok
+=elapsed       0.007923
+=case          component_SUITE:try_registering_existing_host
+=logfile       component_suite.try_registering_existing_host.382719.838.html
+=started       2016-04-11 13:51:59
+=ended         2016-04-11 13:51:59
+=result        ok
+=elapsed       0.004202
+=case          component_SUITE:disco_components
+=logfile       component_suite.disco_components.382719.870.html
+=started       2016-04-11 13:51:59
+=ended         2016-04-11 13:52:00
+=result        ok
+=elapsed       0.472513
+=case          component_SUITE:end_per_group
+=logfile       component_suite.end_per_group.382720.370.html
+=group_props   [{name,xep0114_ws}]
+=started       2016-04-11 13:52:00
+=ended         2016-04-11 13:52:01
+=result        ok
+=elapsed       0.924335
+=group_time    2.604s
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.382721.322.html
+=group_props   [{name,subdomain}]
+=started       2016-04-11 13:52:01
+=ended         2016-04-11 13:52:01
+=result        failed: {undef,
+                           [{distributed_helper,rpc,
+                                [mongooseim@localhost,file,copy,
+                                 ["/home/travis/build/esl/MongooseIM/dev/mongooseim_node1/etc/ejabberd.cfg",
+                                  "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1/etc/ejabberd.cfg.bak"]],
+                                []},
+                            {reload_helper,backup_ejabberd_config_file,2,
+                                [{file,"reload_helper.erl"},{line,33}]},
+                            {component_SUITE,add_domain,1,
+                                [{file,"component_SUITE.erl"},{line,368}]},
+                            {component_SUITE,init_per_group,2,
+                                [{file,"component_SUITE.erl"},{line,84}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1099}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                            rpc},
+                                                                           {reload_helper,
+                                                                            backup_ejabberd_config_file,
+                                                                            33},
+                                                                           {component_SUITE,
+                                                                            add_domain,
+                                                                            368},
+                                                                           {component_SUITE,
+                                                                            init_per_group,
+                                                                            84},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1099},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED {component_SUITE,init_per_group} ***
+=== 
+=case          component_SUITE:register_subdomain
+=group_props   [{name,"subdomain"}]
+=started       2016-04-11 13:52:01
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #13 {component_SUITE,register_subdomain} ***
+=== 
+=case          component_SUITE:end_per_group
+=group_props   [{name,"subdomain"}]
+=started       2016-04-11 13:52:01
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {component_SUITE,end_per_group} ***
+=case          component_SUITE:init_per_group
+=logfile       component_suite.init_per_group.382721.356.html
+=group_props   [{name,distributed}]
+=started       2016-04-11 13:52:01
+=ended         2016-04-11 13:52:01
+=result        failed: {undef,
+                           [{distributed_helper,add_node_to_cluster,
+                                [[{component1,
+                                      [{component,<<"test_service">>},
+                                       {server,<<"localhost">>},
+                                       {host,<<"localhost">>},
+                                       {password,<<"secret">>},
+                                       {port,8888}]},
+                                  {component2,
+                                      [{component,<<"another_service">>},
+                                       {server,<<"localhost">>},
+                                       {host,<<"localhost">>},
+                                       {password,<<"secret">>},
+                                       {port,8888}]},
+                                  {muc_component,
+                                      [{component,<<"muc">>},
+                                       {server,<<"localhost">>},
+                                       {host,<<"localhost">>},
+                                       {password,<<"secret">>},
+                                       {port,8888}]},
+                                  {watchdog,<0.15362.0>},
+                                  {{ejabberd_cwd,mongooseim@localhost},
+                                   "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+                                  {preset,"internal_redis"},
+                                  {tc_logfile,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-5bdf57c6-fd23-4c19-9f86-ec09378fcdfe.2016-04-11_13.44.38/ejabberd_tests.tests.component_SUITE.logs/run.2016-04-11_13.51.54/component_suite.init_per_group.382721.356.html"},
+                                  {tc_group_properties,[{name,distributed}]},
+                                  {tc_group_path,[]},
+                                  {data_dir,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/component_SUITE_data/"},
+                                  {priv_dir,
+                                      "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-5bdf57c6-fd23-4c19-9f86-ec09378fcdfe.2016-04-11_13.44.38/ejabberd_tests.tests.component_SUITE.logs/run.2016-04-11_13.51.54/log_private/"}]],
+                                []},
+                            {component_SUITE,init_per_group,2,
+                                [{file,"component_SUITE.erl"},{line,88}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1099}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                            add_node_to_cluster},
+                                                                           {component_SUITE,
+                                                                            init_per_group,
+                                                                            88},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1099},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED {component_SUITE,init_per_group} ***
+=== 
+=case          component_SUITE:register_in_cluster
+=group_props   [{name,"distributed"}]
+=started       2016-04-11 13:52:01
+=result        auto_skipped: init_per_group failed
+=== *** Skipping test case #14 {component_SUITE,register_in_cluster} ***
+=== 
+=case          component_SUITE:end_per_group
+=group_props   [{name,"distributed"}]
+=started       2016-04-11 13:52:01
+=result        auto_skipped: init_per_group failed
+=== *** Skipping {component_SUITE,end_per_group} ***
+=case          component_SUITE:end_per_suite
+=logfile       component_suite.end_per_suite.html
+=started       2016-04-11 13:52:01
+=ended         2016-04-11 13:52:01
+=result        ok
+=elapsed       0.007004
+=group_time    7.216s
+=== TEST COMPLETE, 12 ok, 0 failed, 2 skipped of 14 test cases
+
+=finished      2016-04-11 13:52:01
+=failed        0
+=successful    12
+=user_skipped  0
+=auto_skipped  2
