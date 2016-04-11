@@ -1,0 +1,1002 @@
+=== Suite started at 2016-04-11 14:05:43
+=== Starting test, 46 test cases
+=cases         46
+=user          travis
+=host          testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c
+=hosts         testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-11 14:05:43
+=case          ejabberdctl_SUITE:init_per_suite
+=logfile       ejabberdctl_suite.init_per_suite.html
+=started       2016-04-11 14:05:43
+=ended         2016-04-11 14:05:44
+=result        ok
+=elapsed       1.031959
+=case          ejabberdctl_SUITE:init_per_group
+=logfile       ejabberdctl_suite.init_per_group.html
+=group_props   [{name,accounts},sequence]
+=started       2016-04-11 14:05:44
+=ended         2016-04-11 14:05:44
+=result        ok
+=elapsed       1.0e-6
+=case          ejabberdctl_SUITE:change_password
+=logfile       ejabberdctl_suite.change_password.html
+=started       2016-04-11 14:05:44
+=ended         2016-04-11 14:05:44
+=result        failed: {undef,
+                        [{distributed_helper,ctl_path,
+                          [mongooseim@localhost,
+                           [{escalus_event_mgr,<0.15429.0>},
+                            {tc_name,change_password},
+                            {escalus_cleaner,<0.15428.0>},
+                            {watchdog,<0.15427.0>},
+                            {ctl_auth_mods,
+                             [ejabberd_auth_odbc,ejabberd_auth_anonymous,
+                              ejabberd_auth_odbc]},
+                            {roster_template,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/roster.template"},
+                            {{ejabberd_cwd,mongooseim@localhost},
+                             "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+                            {preset,"mysql_mnesia"},
+                            {tc_logfile,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/ejabberdctl_suite.change_password.html"},
+                            {tc_group_properties,[{name,accounts},sequence]},
+                            {tc_group_path,[]},
+                            {data_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/ejabberdctl_SUITE_data/"},
+                            {priv_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/log_private/"},
+                            {escalus_users,
+                             [{alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                              {mike,
+                               [{username,<<"mike">>},
+                                {server,<<"localhost">>},
+                                {password,<<"nicniema">>}]},
+                              {bob,
+                               [{username,<<"bOb">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]},
+                              {kate,
+                               [{username,<<"kate">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrowe;p">>}]}]}]],
+                          []},
+                         {ejabberdctl_helper,ejabberdctl,3,
+                          [{file,"ejabberdctl_helper.erl"},{line,18}]},
+                         {ejabberdctl_SUITE,change_password,1,
+                          [{file,"ejabberdctl_SUITE.erl"},{line,210}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                      ctl_path},
+                                                                     {ejabberdctl_helper,
+                                                                      ejabberdctl,
+                                                                      18},
+                                                                     {ejabberdctl_SUITE,
+                                                                      change_password,
+                                                                      210},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 1 of 46 ***
+=== 
+=case          ejabberdctl_SUITE:check_password_hash
+=group_props   [{name,"accounts"}]
+=started       2016-04-11 14:05:44
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,change_password}}
+=== *** Skipping test case #2 {ejabberdctl_SUITE,check_password_hash} ***
+=== 
+=case          ejabberdctl_SUITE:check_password
+=group_props   [{name,"accounts"}]
+=started       2016-04-11 14:05:44
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,change_password}}
+=== *** Skipping test case #3 {ejabberdctl_SUITE,check_password} ***
+=== 
+=case          ejabberdctl_SUITE:check_account
+=group_props   [{name,"accounts"}]
+=started       2016-04-11 14:05:44
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,change_password}}
+=== *** Skipping test case #4 {ejabberdctl_SUITE,check_account} ***
+=== 
+=case          ejabberdctl_SUITE:ban_account
+=group_props   [{name,"accounts"}]
+=started       2016-04-11 14:05:44
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,change_password}}
+=== *** Skipping test case #5 {ejabberdctl_SUITE,ban_account} ***
+=== 
+=case          ejabberdctl_SUITE:num_active_users
+=group_props   [{name,"accounts"}]
+=started       2016-04-11 14:05:44
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,change_password}}
+=== *** Skipping test case #6 {ejabberdctl_SUITE,num_active_users} ***
+=== 
+=case          ejabberdctl_SUITE:delete_old_users
+=group_props   [{name,"accounts"}]
+=started       2016-04-11 14:05:44
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,change_password}}
+=== *** Skipping test case #7 {ejabberdctl_SUITE,delete_old_users} ***
+=== 
+=case          ejabberdctl_SUITE:delete_old_users_vhost
+=group_props   [{name,"accounts"}]
+=started       2016-04-11 14:05:44
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,change_password}}
+=== *** Skipping test case #8 {ejabberdctl_SUITE,delete_old_users_vhost} ***
+=case          ejabberdctl_SUITE:end_per_group
+=logfile       ejabberdctl_suite.end_per_group.html
+=group_props   [{name,accounts},sequence]
+=started       2016-04-11 14:05:44
+=ended         2016-04-11 14:05:44
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.063s
+=case          ejabberdctl_SUITE:init_per_group
+=logfile       ejabberdctl_suite.init_per_group.383544.275.html
+=group_props   [{name,sessions},sequence]
+=started       2016-04-11 14:05:44
+=ended         2016-04-11 14:05:44
+=result        ok
+=elapsed       1.0e-6
+=case          ejabberdctl_SUITE:num_resources_num
+=logfile       ejabberdctl_suite.num_resources_num.html
+=started       2016-04-11 14:05:44
+=ended         2016-04-11 14:05:46
+=result        failed: {undef,
+                        [{distributed_helper,ctl_path,
+                          [mongooseim@localhost,
+                           [{escalus_event_mgr,<0.15440.0>},
+                            {tc_name,num_resources_num},
+                            {escalus_cleaner,<0.15439.0>},
+                            {watchdog,<0.15438.0>},
+                            {ctl_auth_mods,
+                             [ejabberd_auth_odbc,ejabberd_auth_anonymous,
+                              ejabberd_auth_odbc]},
+                            {roster_template,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/roster.template"},
+                            {{ejabberd_cwd,mongooseim@localhost},
+                             "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+                            {preset,"mysql_mnesia"},
+                            {tc_logfile,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/ejabberdctl_suite.num_resources_num.html"},
+                            {tc_group_properties,[{name,sessions},sequence]},
+                            {tc_group_path,[]},
+                            {data_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/ejabberdctl_SUITE_data/"},
+                            {priv_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/log_private/"},
+                            {escalus_users,
+                             [{alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                              {mike,
+                               [{username,<<"mike">>},
+                                {server,<<"localhost">>},
+                                {password,<<"nicniema">>}]},
+                              {bob,
+                               [{username,<<"bOb">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]},
+                              {kate,
+                               [{username,<<"kate">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrowe;p">>}]}]}]],
+                          []},
+                         {ejabberdctl_helper,ejabberdctl,3,
+                          [{file,"ejabberdctl_helper.erl"},{line,18}]},
+                         {ejabberdctl_SUITE,'-num_resources_num/1-fun-0-',5,
+                          [{file,"ejabberdctl_SUITE.erl"},{line,302}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,40}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                      ctl_path},
+                                                                     {ejabberdctl_helper,
+                                                                      ejabberdctl,
+                                                                      18},
+                                                                     {ejabberdctl_SUITE,
+                                                                      '-num_resources_num/1-fun-0-',
+                                                                      302},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      40},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 9 of 46 ***
+=== 
+=case          ejabberdctl_SUITE:kick_session
+=group_props   [{name,"sessions"}]
+=started       2016-04-11 14:05:46
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,num_resources_num}}
+=== *** Skipping test case #10 {ejabberdctl_SUITE,kick_session} ***
+=== 
+=case          ejabberdctl_SUITE:status
+=group_props   [{name,"sessions"}]
+=started       2016-04-11 14:05:46
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,num_resources_num}}
+=== *** Skipping test case #11 {ejabberdctl_SUITE,status} ***
+=== 
+=case          ejabberdctl_SUITE:sessions_info
+=group_props   [{name,"sessions"}]
+=started       2016-04-11 14:05:46
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,num_resources_num}}
+=== *** Skipping test case #12 {ejabberdctl_SUITE,sessions_info} ***
+=== 
+=case          ejabberdctl_SUITE:set_presence
+=group_props   [{name,"sessions"}]
+=started       2016-04-11 14:05:46
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,num_resources_num}}
+=== *** Skipping test case #13 {ejabberdctl_SUITE,set_presence} ***
+=case          ejabberdctl_SUITE:end_per_group
+=logfile       ejabberdctl_suite.end_per_group.383546.182.html
+=group_props   [{name,sessions},sequence]
+=started       2016-04-11 14:05:46
+=ended         2016-04-11 14:05:46
+=result        ok
+=elapsed       1.0e-6
+=group_time    1.907s
+=case          ejabberdctl_SUITE:init_per_group
+=logfile       ejabberdctl_suite.init_per_group.383546.208.html
+=group_props   [{name,vcard},sequence]
+=started       2016-04-11 14:05:46
+=ended         2016-04-11 14:05:46
+=result        ok
+=elapsed       2.9e-4
+=case          ejabberdctl_SUITE:vcard_rw
+=logfile       ejabberdctl_suite.vcard_rw.html
+=started       2016-04-11 14:05:46
+=ended         2016-04-11 14:05:46
+=result        failed: {undef,
+                        [{distributed_helper,ctl_path,
+                          [mongooseim@localhost,
+                           [{escalus_event_mgr,<0.15457.0>},
+                            {tc_name,vcard_rw},
+                            {escalus_cleaner,<0.15456.0>},
+                            {watchdog,<0.15455.0>},
+                            {ctl_auth_mods,
+                             [ejabberd_auth_odbc,ejabberd_auth_anonymous,
+                              ejabberd_auth_odbc]},
+                            {roster_template,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/roster.template"},
+                            {{ejabberd_cwd,mongooseim@localhost},
+                             "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+                            {preset,"mysql_mnesia"},
+                            {tc_logfile,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/ejabberdctl_suite.vcard_rw.html"},
+                            {tc_group_properties,[{name,vcard},sequence]},
+                            {tc_group_path,[]},
+                            {data_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/ejabberdctl_SUITE_data/"},
+                            {priv_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/log_private/"},
+                            {escalus_users,
+                             [{alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                              {mike,
+                               [{username,<<"mike">>},
+                                {server,<<"localhost">>},
+                                {password,<<"nicniema">>}]},
+                              {bob,
+                               [{username,<<"bOb">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]},
+                              {kate,
+                               [{username,<<"kate">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrowe;p">>}]}]}]],
+                          []},
+                         {ejabberdctl_helper,ejabberdctl,3,
+                          [{file,"ejabberdctl_helper.erl"},{line,18}]},
+                         {ejabberdctl_SUITE,vcard_rw,1,
+                          [{file,"ejabberdctl_SUITE.erl"},{line,377}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                      ctl_path},
+                                                                     {ejabberdctl_helper,
+                                                                      ejabberdctl,
+                                                                      18},
+                                                                     {ejabberdctl_SUITE,
+                                                                      vcard_rw,
+                                                                      377},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 14 of 46 ***
+=== 
+=case          ejabberdctl_SUITE:vcard2_rw
+=group_props   [{name,"vcard"}]
+=started       2016-04-11 14:05:46
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,vcard_rw}}
+=== *** Skipping test case #15 {ejabberdctl_SUITE,vcard2_rw} ***
+=== 
+=case          ejabberdctl_SUITE:vcard2_multi_rw
+=group_props   [{name,"vcard"}]
+=started       2016-04-11 14:05:46
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,vcard_rw}}
+=== *** Skipping test case #16 {ejabberdctl_SUITE,vcard2_multi_rw} ***
+=case          ejabberdctl_SUITE:end_per_group
+=logfile       ejabberdctl_suite.end_per_group.383546.263.html
+=group_props   [{name,vcard},sequence]
+=started       2016-04-11 14:05:46
+=ended         2016-04-11 14:05:46
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.055s
+=case          ejabberdctl_SUITE:init_per_group
+=logfile       ejabberdctl_suite.init_per_group.383546.288.html
+=group_props   [{name,roster},sequence]
+=started       2016-04-11 14:05:46
+=ended         2016-04-11 14:05:46
+=result        ok
+=elapsed       1.0e-6
+=case          ejabberdctl_SUITE:rosteritem_rw
+=logfile       ejabberdctl_suite.rosteritem_rw.html
+=started       2016-04-11 14:05:46
+=ended         2016-04-11 14:05:46
+=result        failed: {undef,
+                        [{distributed_helper,ctl_path,
+                          [mongooseim@localhost,
+                           [{escalus_event_mgr,<0.15468.0>},
+                            {tc_name,rosteritem_rw},
+                            {escalus_cleaner,<0.15467.0>},
+                            {watchdog,<0.15466.0>},
+                            {ctl_auth_mods,
+                             [ejabberd_auth_odbc,ejabberd_auth_anonymous,
+                              ejabberd_auth_odbc]},
+                            {roster_template,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/roster.template"},
+                            {{ejabberd_cwd,mongooseim@localhost},
+                             "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+                            {preset,"mysql_mnesia"},
+                            {tc_logfile,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/ejabberdctl_suite.rosteritem_rw.html"},
+                            {tc_group_properties,[{name,roster},sequence]},
+                            {tc_group_path,[]},
+                            {data_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/ejabberdctl_SUITE_data/"},
+                            {priv_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/log_private/"},
+                            {escalus_users,
+                             [{alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                              {mike,
+                               [{username,<<"mike">>},
+                                {server,<<"localhost">>},
+                                {password,<<"nicniema">>}]},
+                              {bob,
+                               [{username,<<"bOb">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]},
+                              {kate,
+                               [{username,<<"kate">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrowe;p">>}]}]}]],
+                          []},
+                         {ejabberdctl_helper,ejabberdctl,3,
+                          [{file,"ejabberdctl_helper.erl"},{line,18}]},
+                         {ejabberdctl_SUITE,'-rosteritem_rw/1-fun-0-',2,
+                          [{file,"ejabberdctl_SUITE.erl"},{line,414}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,40}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                      ctl_path},
+                                                                     {ejabberdctl_helper,
+                                                                      ejabberdctl,
+                                                                      18},
+                                                                     {ejabberdctl_SUITE,
+                                                                      '-rosteritem_rw/1-fun-0-',
+                                                                      414},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      40},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 17 of 46 ***
+=== 
+=case          ejabberdctl_SUITE:presence_after_add_rosteritem
+=group_props   [{name,"roster"}]
+=started       2016-04-11 14:05:46
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,rosteritem_rw}}
+=== *** Skipping test case #18 {ejabberdctl_SUITE,presence_after_add_rosteritem} ***
+=== 
+=case          ejabberdctl_SUITE:push_roster
+=group_props   [{name,"roster"}]
+=started       2016-04-11 14:05:46
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,rosteritem_rw}}
+=== *** Skipping test case #19 {ejabberdctl_SUITE,push_roster} ***
+=== 
+=case          ejabberdctl_SUITE:push_roster_all
+=group_props   [{name,"roster"}]
+=started       2016-04-11 14:05:46
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,rosteritem_rw}}
+=== *** Skipping test case #20 {ejabberdctl_SUITE,push_roster_all} ***
+=== 
+=case          ejabberdctl_SUITE:push_roster_alltoall
+=group_props   [{name,"roster"}]
+=started       2016-04-11 14:05:46
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,rosteritem_rw}}
+=== *** Skipping test case #21 {ejabberdctl_SUITE,push_roster_alltoall} ***
+=case          ejabberdctl_SUITE:end_per_group
+=logfile       ejabberdctl_suite.end_per_group.383546.813.html
+=group_props   [{name,roster},sequence]
+=started       2016-04-11 14:05:46
+=ended         2016-04-11 14:05:46
+=result        ok
+=elapsed       0.03539
+=group_time    0.525s
+=case          ejabberdctl_SUITE:init_per_group
+=logfile       ejabberdctl_suite.init_per_group.383546.874.html
+=group_props   [{name,roster_advanced},sequence]
+=started       2016-04-11 14:05:46
+=ended         2016-04-11 14:05:46
+=result        skipped: command_process_rosteritems_supports_only_mnesia
+=== *** SKIPPED {ejabberdctl_SUITE,init_per_group} ***
+=== 
+=case          ejabberdctl_SUITE:process_rosteritems_list_simple
+=group_props   [{name,"roster_advanced"}]
+=started       2016-04-11 14:05:46
+=result        skipped: command_process_rosteritems_supports_only_mnesia
+=== *** Skipping test case #22 {ejabberdctl_SUITE,process_rosteritems_list_simple} ***
+=== 
+=case          ejabberdctl_SUITE:process_rosteritems_list_nomatch
+=group_props   [{name,"roster_advanced"}]
+=started       2016-04-11 14:05:46
+=result        skipped: command_process_rosteritems_supports_only_mnesia
+=== *** Skipping test case #23 {ejabberdctl_SUITE,process_rosteritems_list_nomatch} ***
+=== 
+=case          ejabberdctl_SUITE:process_rosteritems_list_advanced1
+=group_props   [{name,"roster_advanced"}]
+=started       2016-04-11 14:05:46
+=result        skipped: command_process_rosteritems_supports_only_mnesia
+=== *** Skipping test case #24 {ejabberdctl_SUITE,process_rosteritems_list_advanced1} ***
+=== 
+=case          ejabberdctl_SUITE:process_rosteritems_list_advanced2
+=group_props   [{name,"roster_advanced"}]
+=started       2016-04-11 14:05:46
+=result        skipped: command_process_rosteritems_supports_only_mnesia
+=== *** Skipping test case #25 {ejabberdctl_SUITE,process_rosteritems_list_advanced2} ***
+=== 
+=case          ejabberdctl_SUITE:process_rosteritems_delete_advanced
+=group_props   [{name,"roster_advanced"}]
+=started       2016-04-11 14:05:46
+=result        skipped: command_process_rosteritems_supports_only_mnesia
+=== *** Skipping test case #26 {ejabberdctl_SUITE,process_rosteritems_delete_advanced} ***
+=== 
+=case          ejabberdctl_SUITE:process_rosteritems_delete_advanced2
+=group_props   [{name,"roster_advanced"}]
+=started       2016-04-11 14:05:46
+=result        skipped: command_process_rosteritems_supports_only_mnesia
+=== *** Skipping test case #27 {ejabberdctl_SUITE,process_rosteritems_delete_advanced2} ***
+=== 
+=case          ejabberdctl_SUITE:end_per_group
+=group_props   [{name,"roster_advanced"}]
+=started       2016-04-11 14:05:46
+=result        skipped: command_process_rosteritems_supports_only_mnesia
+=== *** Skipping {ejabberdctl_SUITE,end_per_group} ***
+=case          ejabberdctl_SUITE:init_per_group
+=logfile       ejabberdctl_suite.init_per_group.383546.905.html
+=group_props   [{name,last},sequence]
+=started       2016-04-11 14:05:46
+=ended         2016-04-11 14:05:46
+=result        ok
+=elapsed       1.0e-6
+=case          ejabberdctl_SUITE:set_last
+=logfile       ejabberdctl_suite.set_last.html
+=started       2016-04-11 14:05:46
+=ended         2016-04-11 14:05:47
+=result        failed: {undef,
+                        [{distributed_helper,ctl_path,
+                          [mongooseim@localhost,
+                           [{escalus_event_mgr,<0.15490.0>},
+                            {tc_name,set_last},
+                            {escalus_cleaner,<0.15489.0>},
+                            {watchdog,<0.15488.0>},
+                            {ctl_auth_mods,
+                             [ejabberd_auth_odbc,ejabberd_auth_anonymous,
+                              ejabberd_auth_odbc]},
+                            {roster_template,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/roster.template"},
+                            {{ejabberd_cwd,mongooseim@localhost},
+                             "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+                            {preset,"mysql_mnesia"},
+                            {tc_logfile,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/ejabberdctl_suite.set_last.html"},
+                            {tc_group_properties,[{name,last},sequence]},
+                            {tc_group_path,[]},
+                            {data_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/ejabberdctl_SUITE_data/"},
+                            {priv_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/log_private/"},
+                            {escalus_users,
+                             [{alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                              {mike,
+                               [{username,<<"mike">>},
+                                {server,<<"localhost">>},
+                                {password,<<"nicniema">>}]},
+                              {bob,
+                               [{username,<<"bOb">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]},
+                              {kate,
+                               [{username,<<"kate">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrowe;p">>}]}]}]],
+                          []},
+                         {ejabberdctl_helper,ejabberdctl,3,
+                          [{file,"ejabberdctl_helper.erl"},{line,18}]},
+                         {ejabberdctl_SUITE,'-set_last/1-fun-0-',2,
+                          [{file,"ejabberdctl_SUITE.erl"},{line,675}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,40}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                      ctl_path},
+                                                                     {ejabberdctl_helper,
+                                                                      ejabberdctl,
+                                                                      18},
+                                                                     {ejabberdctl_SUITE,
+                                                                      '-set_last/1-fun-0-',
+                                                                      675},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      40},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 28 of 46 ***
+=case          ejabberdctl_SUITE:end_per_group
+=logfile       ejabberdctl_suite.end_per_group.383547.422.html
+=group_props   [{name,last},sequence]
+=started       2016-04-11 14:05:47
+=ended         2016-04-11 14:05:47
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.518s
+=case          ejabberdctl_SUITE:init_per_group
+=logfile       ejabberdctl_suite.init_per_group.383547.448.html
+=group_props   [{name,private},sequence]
+=started       2016-04-11 14:05:47
+=ended         2016-04-11 14:05:47
+=result        ok
+=elapsed       1.0e-6
+=case          ejabberdctl_SUITE:private_rw
+=logfile       ejabberdctl_suite.private_rw.html
+=started       2016-04-11 14:05:47
+=ended         2016-04-11 14:05:47
+=result        failed: {undef,
+                        [{distributed_helper,ctl_path,
+                          [mongooseim@localhost,
+                           [{escalus_event_mgr,<0.15503.0>},
+                            {tc_name,private_rw},
+                            {escalus_cleaner,<0.15502.0>},
+                            {watchdog,<0.15501.0>},
+                            {ctl_auth_mods,
+                             [ejabberd_auth_odbc,ejabberd_auth_anonymous,
+                              ejabberd_auth_odbc]},
+                            {roster_template,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/roster.template"},
+                            {{ejabberd_cwd,mongooseim@localhost},
+                             "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+                            {preset,"mysql_mnesia"},
+                            {tc_logfile,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/ejabberdctl_suite.private_rw.html"},
+                            {tc_group_properties,[{name,private},sequence]},
+                            {tc_group_path,[]},
+                            {data_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/ejabberdctl_SUITE_data/"},
+                            {priv_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/log_private/"},
+                            {escalus_users,
+                             [{alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                              {mike,
+                               [{username,<<"mike">>},
+                                {server,<<"localhost">>},
+                                {password,<<"nicniema">>}]},
+                              {bob,
+                               [{username,<<"bOb">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]},
+                              {kate,
+                               [{username,<<"kate">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrowe;p">>}]}]}]],
+                          []},
+                         {ejabberdctl_helper,ejabberdctl,3,
+                          [{file,"ejabberdctl_helper.erl"},{line,18}]},
+                         {ejabberdctl_SUITE,private_rw,1,
+                          [{file,"ejabberdctl_SUITE.erl"},{line,707}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                      ctl_path},
+                                                                     {ejabberdctl_helper,
+                                                                      ejabberdctl,
+                                                                      18},
+                                                                     {ejabberdctl_SUITE,
+                                                                      private_rw,
+                                                                      707},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 29 of 46 ***
+=case          ejabberdctl_SUITE:end_per_group
+=logfile       ejabberdctl_suite.end_per_group.383547.503.html
+=group_props   [{name,private},sequence]
+=started       2016-04-11 14:05:47
+=ended         2016-04-11 14:05:47
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.055s
+=case          ejabberdctl_SUITE:init_per_group
+=logfile       ejabberdctl_suite.init_per_group.383547.529.html
+=group_props   [{name,stanza},sequence]
+=started       2016-04-11 14:05:47
+=ended         2016-04-11 14:05:47
+=result        ok
+=elapsed       1.0e-6
+=case          ejabberdctl_SUITE:send_message
+=logfile       ejabberdctl_suite.send_message.html
+=started       2016-04-11 14:05:47
+=ended         2016-04-11 14:05:48
+=result        failed: {undef,
+                        [{distributed_helper,ctl_path,
+                          [mongooseim@localhost,
+                           [{escalus_event_mgr,<0.15514.0>},
+                            {tc_name,send_message},
+                            {escalus_cleaner,<0.15513.0>},
+                            {watchdog,<0.15512.0>},
+                            {ctl_auth_mods,
+                             [ejabberd_auth_odbc,ejabberd_auth_anonymous,
+                              ejabberd_auth_odbc]},
+                            {roster_template,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/roster.template"},
+                            {{ejabberd_cwd,mongooseim@localhost},
+                             "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+                            {preset,"mysql_mnesia"},
+                            {tc_logfile,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/ejabberdctl_suite.send_message.html"},
+                            {tc_group_properties,[{name,stanza},sequence]},
+                            {tc_group_path,[]},
+                            {data_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/ejabberdctl_SUITE_data/"},
+                            {priv_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/log_private/"},
+                            {escalus_users,
+                             [{alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                              {mike,
+                               [{username,<<"mike">>},
+                                {server,<<"localhost">>},
+                                {password,<<"nicniema">>}]},
+                              {bob,
+                               [{username,<<"bOb">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]},
+                              {kate,
+                               [{username,<<"kate">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrowe;p">>}]}]}]],
+                          []},
+                         {ejabberdctl_helper,ejabberdctl,3,
+                          [{file,"ejabberdctl_helper.erl"},{line,18}]},
+                         {ejabberdctl_SUITE,'-send_message/1-fun-0-',4,
+                          [{file,"ejabberdctl_SUITE.erl"},{line,720}]},
+                         {escalus_story,story,3,
+                          [{file,"src/escalus_story.erl"},{line,40}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                      ctl_path},
+                                                                     {ejabberdctl_helper,
+                                                                      ejabberdctl,
+                                                                      18},
+                                                                     {ejabberdctl_SUITE,
+                                                                      '-send_message/1-fun-0-',
+                                                                      720},
+                                                                     {escalus_story,
+                                                                      story,
+                                                                      40},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 30 of 46 ***
+=== 
+=case          ejabberdctl_SUITE:send_message_wrong_jid
+=group_props   [{name,"stanza"}]
+=started       2016-04-11 14:05:48
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,send_message}}
+=== *** Skipping test case #31 {ejabberdctl_SUITE,send_message_wrong_jid} ***
+=== 
+=case          ejabberdctl_SUITE:send_stanza
+=group_props   [{name,"stanza"}]
+=started       2016-04-11 14:05:48
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,send_message}}
+=== *** Skipping test case #32 {ejabberdctl_SUITE,send_stanza} ***
+=== 
+=case          ejabberdctl_SUITE:send_stanzac2s_wrong
+=group_props   [{name,"stanza"}]
+=started       2016-04-11 14:05:48
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,send_message}}
+=== *** Skipping test case #33 {ejabberdctl_SUITE,send_stanzac2s_wrong} ***
+=case          ejabberdctl_SUITE:end_per_group
+=logfile       ejabberdctl_suite.end_per_group.383548.972.html
+=group_props   [{name,stanza},sequence]
+=started       2016-04-11 14:05:48
+=ended         2016-04-11 14:05:48
+=result        ok
+=elapsed       1.0e-6
+=group_time    1.443s
+=case          ejabberdctl_SUITE:init_per_group
+=logfile       ejabberdctl_suite.init_per_group.383548.999.html
+=group_props   [{name,stats},sequence]
+=started       2016-04-11 14:05:48
+=ended         2016-04-11 14:05:49
+=result        ok
+=elapsed       1.0e-6
+=case          ejabberdctl_SUITE:stats_global
+=logfile       ejabberdctl_suite.stats_global.html
+=started       2016-04-11 14:05:49
+=ended         2016-04-11 14:05:49
+=result        skipped: vhost_odbc_incompatible
+=== *** SKIPPED test case 34 of 46 ***
+=case          ejabberdctl_SUITE:stats_host
+=logfile       ejabberdctl_suite.stats_host.html
+=started       2016-04-11 14:05:49
+=ended         2016-04-11 14:05:49
+=result        skipped: vhost_odbc_incompatible
+=== *** SKIPPED test case 35 of 46 ***
+=case          ejabberdctl_SUITE:end_per_group
+=logfile       ejabberdctl_suite.end_per_group.383549.77.html
+=group_props   [{name,stats},sequence]
+=started       2016-04-11 14:05:49
+=ended         2016-04-11 14:05:49
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.078s
+=case          ejabberdctl_SUITE:init_per_group
+=logfile       ejabberdctl_suite.init_per_group.383549.103.html
+=group_props   [{name,basic},sequence]
+=started       2016-04-11 14:05:49
+=ended         2016-04-11 14:05:49
+=result        ok
+=elapsed       1.0e-6
+=case          ejabberdctl_SUITE:simple_register
+=logfile       ejabberdctl_suite.simple_register.html
+=started       2016-04-11 14:05:49
+=ended         2016-04-11 14:05:49
+=result        failed: {undef,
+                        [{distributed_helper,ctl_path,
+                          [mongooseim@localhost,
+                           [{escalus_event_mgr,<0.15541.0>},
+                            {tc_name,simple_register},
+                            {escalus_cleaner,<0.15540.0>},
+                            {watchdog,<0.15539.0>},
+                            {ctl_auth_mods,
+                             [ejabberd_auth_odbc,ejabberd_auth_anonymous,
+                              ejabberd_auth_odbc]},
+                            {roster_template,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/roster.template"},
+                            {{ejabberd_cwd,mongooseim@localhost},
+                             "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+                            {preset,"mysql_mnesia"},
+                            {tc_logfile,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/ejabberdctl_suite.simple_register.html"},
+                            {tc_group_properties,[{name,basic},sequence]},
+                            {tc_group_path,[]},
+                            {data_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/ejabberdctl_SUITE_data/"},
+                            {priv_dir,
+                             "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-04ef340a-0169-4bcc-a295-a69a0c3e271c.2016-04-11_13.58.14/ejabberd_tests.tests.ejabberdctl_SUITE.logs/run.2016-04-11_14.05.43/log_private/"},
+                            {escalus_users,
+                             [{alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                              {mike,
+                               [{username,<<"mike">>},
+                                {server,<<"localhost">>},
+                                {password,<<"nicniema">>}]},
+                              {bob,
+                               [{username,<<"bOb">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]},
+                              {kate,
+                               [{username,<<"kate">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrowe;p">>}]}]}]],
+                          []},
+                         {ejabberdctl_helper,ejabberdctl,3,
+                          [{file,"ejabberdctl_helper.erl"},{line,18}]},
+                         {ejabberdctl_SUITE,simple_register,1,
+                          [{file,"ejabberdctl_SUITE.erl"},{line,833}]},
+                         {test_server,ts_tc,3,
+                          [{file,"test_server.erl"},{line,1429}]},
+                         {test_server,run_test_case_eval1,6,
+                          [{file,"test_server.erl"},{line,1026}]},
+                         {test_server,run_test_case_eval,9,
+                          [{file,"test_server.erl"},{line,968}]}]}, [{distributed_helper,
+                                                                      ctl_path},
+                                                                     {ejabberdctl_helper,
+                                                                      ejabberdctl,
+                                                                      18},
+                                                                     {ejabberdctl_SUITE,
+                                                                      simple_register,
+                                                                      833},
+                                                                     {test_server,
+                                                                      ts_tc,
+                                                                      1429},
+                                                                     {test_server,
+                                                                      run_test_case_eval1,
+                                                                      1026},
+                                                                     {test_server,
+                                                                      run_test_case_eval,
+                                                                      968}]
+=== *** FAILED test case 36 of 46 ***
+=== 
+=case          ejabberdctl_SUITE:simple_unregister
+=group_props   [{name,"basic"}]
+=started       2016-04-11 14:05:49
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,simple_register}}
+=== *** Skipping test case #37 {ejabberdctl_SUITE,simple_unregister} ***
+=== 
+=case          ejabberdctl_SUITE:register_twice
+=group_props   [{name,"basic"}]
+=started       2016-04-11 14:05:49
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,simple_register}}
+=== *** Skipping test case #38 {ejabberdctl_SUITE,register_twice} ***
+=== 
+=case          ejabberdctl_SUITE:backup_restore_mnesia
+=group_props   [{name,"basic"}]
+=started       2016-04-11 14:05:49
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,simple_register}}
+=== *** Skipping test case #39 {ejabberdctl_SUITE,backup_restore_mnesia} ***
+=== 
+=case          ejabberdctl_SUITE:restore_mnesia_wrong
+=group_props   [{name,"basic"}]
+=started       2016-04-11 14:05:49
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,simple_register}}
+=== *** Skipping test case #40 {ejabberdctl_SUITE,restore_mnesia_wrong} ***
+=== 
+=case          ejabberdctl_SUITE:dump_and_load
+=group_props   [{name,"basic"}]
+=started       2016-04-11 14:05:49
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,simple_register}}
+=== *** Skipping test case #41 {ejabberdctl_SUITE,dump_and_load} ***
+=== 
+=case          ejabberdctl_SUITE:load_mnesia_wrong
+=group_props   [{name,"basic"}]
+=started       2016-04-11 14:05:49
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,simple_register}}
+=== *** Skipping test case #42 {ejabberdctl_SUITE,load_mnesia_wrong} ***
+=== 
+=case          ejabberdctl_SUITE:dump_table
+=group_props   [{name,"basic"}]
+=started       2016-04-11 14:05:49
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,simple_register}}
+=== *** Skipping test case #43 {ejabberdctl_SUITE,dump_table} ***
+=== 
+=case          ejabberdctl_SUITE:get_loglevel
+=group_props   [{name,"basic"}]
+=started       2016-04-11 14:05:49
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,simple_register}}
+=== *** Skipping test case #44 {ejabberdctl_SUITE,get_loglevel} ***
+=== 
+=case          ejabberdctl_SUITE:remove_old_messages_test
+=group_props   [{name,"basic"}]
+=started       2016-04-11 14:05:49
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,simple_register}}
+=== *** Skipping test case #45 {ejabberdctl_SUITE,remove_old_messages_test} ***
+=== 
+=case          ejabberdctl_SUITE:remove_expired_messages_test
+=group_props   [{name,"basic"}]
+=started       2016-04-11 14:05:49
+=result        auto_skipped: {failed,{ejabberdctl_SUITE,simple_register}}
+=== *** Skipping test case #46 {ejabberdctl_SUITE,remove_expired_messages_test} ***
+=case          ejabberdctl_SUITE:end_per_group
+=logfile       ejabberdctl_suite.end_per_group.383549.166.html
+=group_props   [{name,basic},sequence]
+=started       2016-04-11 14:05:49
+=ended         2016-04-11 14:05:49
+=result        ok
+=elapsed       1.0e-6
+=group_time    0.063s
+=case          ejabberdctl_SUITE:end_per_suite
+=logfile       ejabberdctl_suite.end_per_suite.html
+=started       2016-04-11 14:05:49
+=ended         2016-04-11 14:05:49
+=result        ok
+=elapsed       0.055923
+=group_time    6.092s
+=== TEST COMPLETE, 0 ok, 8 failed, 38 skipped of 46 test cases
+
+=finished      2016-04-11 14:05:49
+=failed        8
+=successful    0
+=user_skipped  8
+=auto_skipped  30
