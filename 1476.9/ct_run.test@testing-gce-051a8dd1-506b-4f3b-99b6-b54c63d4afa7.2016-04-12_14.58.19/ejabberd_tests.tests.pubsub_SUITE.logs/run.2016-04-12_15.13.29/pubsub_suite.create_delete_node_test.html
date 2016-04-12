@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test pubsub_SUITE:create_delete_node_test result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="pubsub_suite.src.html#create_delete_node_test-1">pubsub_SUITE:create_delete_node_test/1</a> (click for source code)
+
+=== Config value:
+
+    [{saved_modules,
+         [{mod_websockets,[]},
+          {mod_stream_management,[]},
+          {mod_private,[]},
+          {mod_auth_token,
+              [{{validity_period,access},{60,minutes}},
+               {{validity_period,refresh},{1,days}}]},
+          {mod_roster,[{versioning,true},{store_current_id,false}]},
+          {mod_keystore,
+              [{keys,[{token_secret,ram},{provision_pre_shared,ram}]}]},
+          {mod_http_notification,
+              [{worker_timeout,500},{host,"http://localhost:8000"}]},
+          {mod_offline,[{access_max_user_messages,max_user_offline_messages}]},
+          {mod_muc,
+              [{host,"muc.@HOST@"},{access,muc},{access_create,muc_create}]},
+          {mod_adhoc,[]},
+          {mod_register,
+              [{welcome_message,{[]}},
+               {registration_watchers,[<<"admin@localhost">>]},
+               {ip_access,[{allow,"127.0.0.0/8"},{deny,"0.0.0.0/0"}]},
+               {access,register}]},
+          {mod_vcard,[]},
+          {mod_muc_log,[{outdir,"/tmp/muclogs"},{access_log,muc}]},
+          {mod_disco,[]},
+          {mod_sic,[]},
+          {mod_privacy,[]},
+          {mod_amp,[]},
+          {mod_carboncopy,[]},
+          {mod_last,[]},
+          {mod_bosh,[]}]},
+     {watchdog,<0.20066.0>},
+     {preset,"external_mnesia"},
+     {tc_logfile,
+         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-051a8dd1-506b-4f3b-99b6-b54c63d4afa7.2016-04-12_14.58.19/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-12_15.13.29/pubsub_suite.create_delete_node_test.html"},
+     {tc_group_properties,[]},
+     {tc_group_path,[]},
+     {data_dir,
+         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/pubsub_SUITE_data/"},
+     {priv_dir,
+         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-051a8dd1-506b-4f3b-99b6-b54c63d4afa7.2016-04-12_14.58.19/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-12_15.13.29/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-051a8dd1-506b-4f3b-99b6-b54c63d4afa7.2016-04-12_14.58.19"
+
+=== Started at 2016-04-12 15:13:29
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-04-12 15:13:30
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.20092.0>},
+                      {tc_name,create_delete_node_test},
+                      {escalus_cleaner,<0.20091.0>},
+                      {watchdog,<0.20090.0>},
+                      {saved_modules,
+                          [{mod_websockets,[]},
+                           {mod_stream_management,[]},
+                           {mod_private,[]},
+                           {mod_auth_token,
+                               [{{validity_period,access},{60,minutes}},
+                                {{validity_period,refresh},{1,days}}]},
+                           {mod_roster,
+                               [{versioning,true},{store_current_id,false}]},
+                           {mod_keystore,
+                               [{keys,
+                                    [{token_secret,ram},
+                                     {provision_pre_shared,ram}]}]},
+                           {mod_http_notification,
+                               [{worker_timeout,500},
+                                {host,"http://localhost:8000"}]},
+                           {mod_offline,
+                               [{access_max_user_messages,
+                                    max_user_offline_messages}]},
+                           {mod_muc,
+                               [{host,"muc.@HOST@"},
+                                {access,muc},
+                                {access_create,muc_create}]},
+                           {mod_adhoc,[]},
+                           {mod_register,
+                               [{welcome_message,{[]}},
+                                {registration_watchers,
+                                    [<<"admin@localhost">>]},
+                                {ip_access,
+                                    [{allow,"127.0.0.0/8"},
+                                     {deny,"0.0.0.0/0"}]},
+                                {access,register}]},
+                           {mod_vcard,[]},
+                           {mod_muc_log,
+                               [{outdir,"/tmp/muclogs"},{access_log,muc}]},
+                           {mod_disco,[]},
+                           {mod_sic,[]},
+                           {mod_privacy,[]},
+                           {mod_amp,[]},
+                           {mod_carboncopy,[]},
+                           {mod_last,[]},
+                           {mod_bosh,[]}]},
+                      {preset,"external_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-051a8dd1-506b-4f3b-99b6-b54c63d4afa7.2016-04-12_14.58.19/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-12_15.13.29/pubsub_suite.create_delete_node_test.html"},
+                      {tc_group_properties,[]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/pubsub_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-051a8dd1-506b-4f3b-99b6-b54c63d4afa7.2016-04-12_14.58.19/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-12_15.13.29/log_private/"}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Tue Apr 12 2016 15:13:29<!/date><br />
+</div>
+</center>
+</body>
+</html>
