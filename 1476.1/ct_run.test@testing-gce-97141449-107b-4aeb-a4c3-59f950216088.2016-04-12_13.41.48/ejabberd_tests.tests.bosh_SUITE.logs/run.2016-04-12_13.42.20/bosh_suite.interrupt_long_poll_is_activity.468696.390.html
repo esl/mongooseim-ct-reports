@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test bosh_SUITE:interrupt_long_poll_is_activity result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="bosh_suite.src.html#interrupt_long_poll_is_activity-1">bosh_SUITE:interrupt_long_poll_is_activity/1</a> (click for source code)
+
+=== Config value:
+
+    [{user,carol},
+     {watchdog,<0.8069.0>},
+     {escalus_user_db,{module,escalus_ejabberd}},
+     {preset,"cassandra_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-97141449-107b-4aeb-a4c3-59f950216088.2016-04-12_13.41.48/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-04-12_13.42.20/bosh_suite.interrupt_long_poll_is_activity.468696.390.html"},
+     {tc_group_properties,[{shuffle,{21363,23428,13681}},
+                           {repeat_until_any_fail,5},
+                           {name,time}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/bosh_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-97141449-107b-4aeb-a4c3-59f950216088.2016-04-12_13.41.48/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-04-12_13.42.20/log_private/"},
+     {escalus_users,[{carol,[{username,<<"carol">>},
+                             {server,<<"localhost">>},
+                             {password,<<"jinglebells">>},
+                             {transport,bosh},
+                             {path,<<"/http-bind">>},
+                             {port,5280}]},
+                     {carol_s,[{username,<<"carol_s">>},
+                               {server,<<"localhost">>},
+                               {password,<<"jinglebells_s">>},
+                               {transport,bosh},
+                               {ssl,true},
+                               {path,<<"/http-bind">>},
+                               {port,5285}]},
+                     {geralt,[{username,<<"geralt">>},
+                              {server,<<"localhost">>},
+                              {password,<<"witcher">>},
+                              {transport,ws},
+                              {port,5280},
+                              {wspath,<<"/ws-xmpp">>}]},
+                     {alice,[{username,<<"alice">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-97141449-107b-4aeb-a4c3-59f950216088.2016-04-12_13.41.48"
+
+=== Started at 2016-04-12 13:44:56
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-04-12 13:45:00
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.8114.0>},
+                      {tc_name,interrupt_long_poll_is_activity},
+                      {escalus_cleaner,<0.8113.0>},
+                      {{saved,inactivity},30},
+                      {watchdog,<0.8110.0>},
+                      {user,carol},
+                      {escalus_user_db,{module,escalus_ejabberd}},
+                      {preset,"cassandra_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-97141449-107b-4aeb-a4c3-59f950216088.2016-04-12_13.41.48/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-04-12_13.42.20/bosh_suite.interrupt_long_poll_is_activity.468696.390.html"},
+                      {tc_group_properties,
+                          [{shuffle,{21363,23428,13681}},
+                           {repeat_until_any_fail,5},
+                           {name,time}]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/bosh_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-97141449-107b-4aeb-a4c3-59f950216088.2016-04-12_13.41.48/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-04-12_13.42.20/log_private/"},
+                      {escalus_users,
+                          [{carol,
+                               [{bosh_wait,10},
+                                {username,<<"carol">>},
+                                {server,<<"localhost">>},
+                                {password,<<"jinglebells">>},
+                                {transport,bosh},
+                                {path,<<"/http-bind">>},
+                                {port,5280}]},
+                           {carol_s,
+                               [{username,<<"carol_s">>},
+                                {server,<<"localhost">>},
+                                {password,<<"jinglebells_s">>},
+                                {transport,bosh},
+                                {ssl,true},
+                                {path,<<"/http-bind">>},
+                                {port,5285}]},
+                           {geralt,
+                               [{username,<<"geralt">>},
+                                {server,<<"localhost">>},
+                                {password,<<"witcher">>},
+                                {transport,ws},
+                                {port,5280},
+                                {wspath,<<"/ws-xmpp">>}]},
+                           {alice,
+                               [{username,<<"alice">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Tue Apr 12 2016 13:44:56<!/date><br />
+</div>
+</center>
+</body>
+</html>
