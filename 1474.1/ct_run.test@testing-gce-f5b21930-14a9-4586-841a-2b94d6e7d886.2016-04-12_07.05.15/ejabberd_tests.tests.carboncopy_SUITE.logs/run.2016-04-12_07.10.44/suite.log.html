@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_tests.tests.carboncopy_SUITE results</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+// Parser for date format, e.g: Wed Jul 4 2012 11:24:15
+var monthNames = {};
+monthNames["Jan"] = "01"; monthNames["Feb"] = "02";
+monthNames["Mar"] = "03"; monthNames["Apr"] = "04";
+monthNames["May"] = "05"; monthNames["Jun"] = "06";
+monthNames["Jul"] = "07"; monthNames["Aug"] = "08";
+monthNames["Sep"] = "09"; monthNames["Oct"] = "10";
+monthNames["Nov"] = "11"; monthNames["Dec"] = "12";
+$.tablesorter.addParser({
+  id: 'CTDateSorter',
+  is: function(s) {
+      return false; },
+  format: function(s) {
+      if (s.length < 2) return 999999999;
+      else {
+          var date = s.match(/(\w{3})\s(\w{3})\s(\d{2})\s(\d{4})\s(\d{2}):(\d{2}):(\d{2})/);
+          var y = date[4]; var mo = monthNames[date[2]]; var d = String(date[3]);
+          var h = String(date[5]); var mi = String(date[6]); var sec = String(date[7]);
+          return (parseInt('' + y + mo + d + h + mi + sec)); }},
+  type: 'numeric' });
+// Parser for general text format
+$.tablesorter.addParser({
+  id: 'CTTextSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return 'zzzzzzzz';
+    else if (s == "?") return 'zzzzzzz';
+    else if (s == "-") return 'zzzzzz';
+    else if (s == "FAILED") return 'A';
+    else if (s == "SKIPPED") return 'B';
+    else if (s == "OK") return 'C';
+    else return '' + s; },
+  type: 'text' });
+// Parser for numerical values
+$.tablesorter.addParser({
+  id: 'CTValSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return '-2';
+    else if (s == "?") return '-1';
+    else if ((s.search(/(\d{1,})\s/)) >= 0) {
+      var num = s.match(/(\d{1,})\s/);
+      return (parseInt('' + num[1])); }
+    else if ((s.search(/(\d{1,})\.(\d{3})s/)) >= 0) {
+      var num = s.match(/(\d{1,})\.(\d{3})/);
+      if (num[1] == "0") return (parseInt('' + num[2]));
+      else return (parseInt('' + num[1] + num[2])); }
+    else return '' + s; },
+  type: 'numeric' });
+$(document).ready(function() {
+  $("#SortableTable").tablesorter({
+    headers: { 
+      0: { sorter: 'CTValSorter' },
+      1: { sorter: 'CTTextSorter' },
+      2: { sorter: 'CTTextSorter' },
+      3: { sorter: 'CTTextSorter' },
+      5: { sorter: 'CTValSorter' },
+      6: { sorter: 'CTTextSorter' },
+      7: { sorter: 'CTTextSorter' }
+    }
+  });
+  $("#SortableTable").trigger("update");
+  $("#SortableTable").trigger("appendCache");
+});
+</script>
+</head>
+<body>
+<div class="label">'internal_redis'</div>
+
+<h1>Results for <i>ejabberd_tests.tests.carboncopy_SUITE</i></h1>
+<h4>Test started at 2016-04-12 07:10:44</h4>
+<p><b>Host info:</b><br />
+Run by travis on testing-gce-f5b21930-14a9-4586-841a-2b94d6e7d886<br />Used Erlang v6.4 in "/home/travis/otp/17.5"</p>
+<p><ul>
+<li><a href="suite.log">Full textual log</a></li>
+<li><a href="cover.html">Coverage log</a></li>
+<li><a href="unexpected_io.log.html">Unexpected I/O log</a></li>
+</ul></p>
+<p><i>Executing <b>12</b> test cases...</i>
+<br />
+</p>
+<table id="SortableTable">
+<thead>
+<tr><th>Num</th><th>Module</th><th>Group</th><th>Case</th><th>Log</th><th>Time</th><th>Result</th><th>Comment</th></tr>
+</thead>
+<tbody>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">carboncopy_SUITE</font></td><td><font color="black"></font></td><td><a href="carboncopy_suite.init_per_suite.html">init_per_suite</a></td><td><a href="carboncopy_suite.init_per_suite.html#top"><</a> <a href="carboncopy_suite.init_per_suite.html#end">></a></td><td><font color="black">0.003s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">common_test</font></td><td><font color="black">all</font></td><td><a href="ct_framework.init_per_group.html">init_per_group</a></td><td><a href="ct_framework.init_per_group.html#top"><</a> <a href="ct_framework.init_per_group.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td><font color="green"><font color="green">start of all</font></font></td></tr>
+<tr class="odd"><td><font color="darkslategray">1</font></td><td><font color="darkslategray">carboncopy_SUITE</font></td><td><font color="darkslategray">all</font></td><td><a href="carboncopy_suite.non_enabled_clients_dont_get_received_carbons.445044.602.html">non_enabled_clients_dont_get_received_carbons</a></td><td><a href="carboncopy_suite.non_enabled_clients_dont_get_received_carbons.445044.602.html#top"><</a> <a href="carboncopy_suite.non_enabled_clients_dont_get_received_carbons.445044.602.html#end">></a></td><td><font color="darkslategray"><i>2.917s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="darkslategray">2</font></td><td><font color="darkslategray">carboncopy_SUITE</font></td><td><font color="darkslategray">all</font></td><td><a href="carboncopy_suite.disabling_carbons.445044.624.html">disabling_carbons</a></td><td><a href="carboncopy_suite.disabling_carbons.445044.624.html#top"><</a> <a href="carboncopy_suite.disabling_carbons.445044.624.html#end">></a></td><td><font color="darkslategray"><i>0.765s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="darkslategray">3</font></td><td><font color="darkslategray">carboncopy_SUITE</font></td><td><font color="darkslategray">all</font></td><td><a href="carboncopy_suite.prop_normal_routing_to_bare_jid.445044.612.html">prop_normal_routing_to_bare_jid</a></td><td><a href="carboncopy_suite.prop_normal_routing_to_bare_jid.445044.612.html#top"><</a> <a href="carboncopy_suite.prop_normal_routing_to_bare_jid.445044.612.html#end">></a></td><td><font color="darkslategray"><i>5.766s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="darkslategray">4</font></td><td><font color="darkslategray">carboncopy_SUITE</font></td><td><font color="darkslategray">all</font></td><td><a href="carboncopy_suite.avoiding_carbons.445044.604.html">avoiding_carbons</a></td><td><a href="carboncopy_suite.avoiding_carbons.445044.604.html#top"><</a> <a href="carboncopy_suite.avoiding_carbons.445044.604.html#end">></a></td><td><font color="darkslategray"><i>2.922s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="darkslategray">5</font></td><td><font color="darkslategray">carboncopy_SUITE</font></td><td><font color="darkslategray">all</font></td><td><a href="carboncopy_suite.unavailable_resources_dont_get_carbons.445044.606.html">unavailable_resources_dont_get_carbons</a></td><td><a href="carboncopy_suite.unavailable_resources_dont_get_carbons.445044.606.html#top"><</a> <a href="carboncopy_suite.unavailable_resources_dont_get_carbons.445044.606.html#end">></a></td><td><font color="darkslategray"><i>2.117s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="darkslategray">6</font></td><td><font color="darkslategray">carboncopy_SUITE</font></td><td><font color="darkslategray">all</font></td><td><a href="carboncopy_suite.enabled_single_resource_doesnt_get_carbons.445044.620.html">enabled_single_resource_doesnt_get_carbons</a></td><td><a href="carboncopy_suite.enabled_single_resource_doesnt_get_carbons.445044.620.html#top"><</a> <a href="carboncopy_suite.enabled_single_resource_doesnt_get_carbons.445044.620.html#end">></a></td><td><font color="darkslategray"><i>1.456s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="darkslategray">7</font></td><td><font color="darkslategray">carboncopy_SUITE</font></td><td><font color="darkslategray">all</font></td><td><a href="carboncopy_suite.prop_forward_sent_chat_messages.445044.608.html">prop_forward_sent_chat_messages</a></td><td><a href="carboncopy_suite.prop_forward_sent_chat_messages.445044.608.html#top"><</a> <a href="carboncopy_suite.prop_forward_sent_chat_messages.445044.608.html#end">></a></td><td><font color="darkslategray"><i>5.768s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="darkslategray">8</font></td><td><font color="darkslategray">carboncopy_SUITE</font></td><td><font color="darkslategray">all</font></td><td><a href="carboncopy_suite.discovering_support.445044.610.html">discovering_support</a></td><td><a href="carboncopy_suite.discovering_support.445044.610.html#top"><</a> <a href="carboncopy_suite.discovering_support.445044.610.html#end">></a></td><td><font color="darkslategray"><i>0.720s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="darkslategray">9</font></td><td><font color="darkslategray">carboncopy_SUITE</font></td><td><font color="darkslategray">all</font></td><td><a href="carboncopy_suite.prop_forward_received_chat_messages.445044.618.html">prop_forward_received_chat_messages</a></td><td><a href="carboncopy_suite.prop_forward_received_chat_messages.445044.618.html#top"><</a> <a href="carboncopy_suite.prop_forward_received_chat_messages.445044.618.html#end">></a></td><td><font color="darkslategray"><i>5.737s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="darkslategray">10</font></td><td><font color="darkslategray">carboncopy_SUITE</font></td><td><font color="darkslategray">all</font></td><td><a href="carboncopy_suite.dropped_client_doesnt_create_duplicate_carbons.445044.622.html">dropped_client_doesnt_create_duplicate_carbons</a></td><td><a href="carboncopy_suite.dropped_client_doesnt_create_duplicate_carbons.445044.622.html#top"><</a> <a href="carboncopy_suite.dropped_client_doesnt_create_duplicate_carbons.445044.622.html#end">></a></td><td><font color="darkslategray"><i>2.212s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="darkslategray">11</font></td><td><font color="darkslategray">carboncopy_SUITE</font></td><td><font color="darkslategray">all</font></td><td><a href="carboncopy_suite.non_enabled_clients_dont_get_sent_carbons.445044.614.html">non_enabled_clients_dont_get_sent_carbons</a></td><td><a href="carboncopy_suite.non_enabled_clients_dont_get_sent_carbons.445044.614.html#top"><</a> <a href="carboncopy_suite.non_enabled_clients_dont_get_sent_carbons.445044.614.html#end">></a></td><td><font color="darkslategray"><i>2.907s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="darkslategray">12</font></td><td><font color="darkslategray">carboncopy_SUITE</font></td><td><font color="darkslategray">all</font></td><td><a href="carboncopy_suite.enabling_carbons.445044.616.html">enabling_carbons</a></td><td><a href="carboncopy_suite.enabling_carbons.445044.616.html#top"><</a> <a href="carboncopy_suite.enabling_carbons.445044.616.html#end">></a></td><td><font color="darkslategray"><i>0.721s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">common_test</font></td><td><font color="black">all</font></td><td><a href="ct_framework.end_per_group.html">end_per_group</a></td><td><a href="ct_framework.end_per_group.html#top"><</a> <a href="ct_framework.end_per_group.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td><font color="green"><font color="green">end of all</font></font></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">carboncopy_SUITE</font></td><td><font color="black"></font></td><td><a href="carboncopy_suite.end_per_suite.html">end_per_suite</a></td><td><a href="carboncopy_suite.end_per_suite.html#top"><</a> <a href="carboncopy_suite.end_per_suite.html#end">></a></td><td><font color="black">0.998s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+
+</tbody>
+<tfoot>
+<tr><td></td><td><b>TOTAL</b></td><td></td><td></td><td></td><td>6.991s</td><td><b>Ok</b></td><td>12 Ok, 0 Failed of 12</td></tr>
+</tfoot>
+
+</table>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Tue Apr 12 2016 07:10:44<!/date><br />
+</div>
+</center>
+</body>
+</html>
