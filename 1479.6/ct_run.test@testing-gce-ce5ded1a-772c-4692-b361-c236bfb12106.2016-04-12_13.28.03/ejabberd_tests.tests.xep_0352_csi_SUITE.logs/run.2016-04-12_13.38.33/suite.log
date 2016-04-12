@@ -1,0 +1,83 @@
+=== Suite started at 2016-04-12 13:38:33
+=== Starting test, 9 test cases
+=cases         9
+=user          travis
+=host          testing-gce-ce5ded1a-772c-4692-b361-c236bfb12106
+=hosts         testing-gce-ce5ded1a-772c-4692-b361-c236bfb12106 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-12 13:38:33
+=case          xep_0352_csi_SUITE:init_per_suite
+=logfile       xep_0352_csi_suite.init_per_suite.html
+=started       2016-04-12 13:38:33
+=ended         2016-04-12 13:38:33
+=result        failed: {'EXIT',{badmatch,{error,econnrefused}}}, [{escalus_tcp,
+                                                                   init,170}]
+=== *** FAILED {xep_0352_csi_SUITE,init_per_suite} ***
+=== 
+=case          xep_0352_csi_SUITE:server_announces_csi
+=group_props   [{name,"basic"}]
+=started       2016-04-12 13:38:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #1 {xep_0352_csi_SUITE,server_announces_csi} ***
+=== 
+=case          xep_0352_csi_SUITE:alice_is_inactive_and_no_stanza_arrived
+=group_props   [{name,"basic"}]
+=started       2016-04-12 13:38:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #2 {xep_0352_csi_SUITE,alice_is_inactive_and_no_stanza_arrived} ***
+=== 
+=case          xep_0352_csi_SUITE:alice_gets_msgs_after_activate
+=group_props   [{name,"basic"}]
+=started       2016-04-12 13:38:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #3 {xep_0352_csi_SUITE,alice_gets_msgs_after_activate} ***
+=== 
+=case          xep_0352_csi_SUITE:alice_gets_msgs_after_activate_in_order
+=group_props   [{name,"basic"}]
+=started       2016-04-12 13:38:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #4 {xep_0352_csi_SUITE,alice_gets_msgs_after_activate_in_order} ***
+=== 
+=case          xep_0352_csi_SUITE:alice_gets_message_after_buffer_overflow
+=group_props   [{name,"basic"}]
+=started       2016-04-12 13:38:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #5 {xep_0352_csi_SUITE,alice_gets_message_after_buffer_overflow} ***
+=== 
+=case          xep_0352_csi_SUITE:alice_gets_buffered_messages_after_reconnection_with_sm
+=group_props   [{name,"basic"}]
+=started       2016-04-12 13:38:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #6 {xep_0352_csi_SUITE,alice_gets_buffered_messages_after_reconnection_with_sm} ***
+=== 
+=case          xep_0352_csi_SUITE:alice_gets_buffered_messages_after_stream_resumption
+=group_props   [{name,"basic"}]
+=started       2016-04-12 13:38:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #7 {xep_0352_csi_SUITE,alice_gets_buffered_messages_after_stream_resumption} ***
+=== 
+=case          xep_0352_csi_SUITE:bob_gets_msgs_from_inactive_alice
+=group_props   [{name,"basic"}]
+=started       2016-04-12 13:38:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #8 {xep_0352_csi_SUITE,bob_gets_msgs_from_inactive_alice} ***
+=== 
+=case          xep_0352_csi_SUITE:alice_is_inactive_but_sends_sm_req_and_recives_ack
+=group_props   [{name,"basic"}]
+=started       2016-04-12 13:38:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #9 {xep_0352_csi_SUITE,alice_is_inactive_but_sends_sm_req_and_recives_ack} ***
+=== 
+=case          xep_0352_csi_SUITE:end_per_suite
+=started       2016-04-12 13:38:33
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping {xep_0352_csi_SUITE,end_per_suite} ***
+=== TEST COMPLETE, 0 ok, 0 failed, 9 skipped of 9 test cases
+
+=finished      2016-04-12 13:38:33
+=failed        0
+=successful    0
+=user_skipped  0
+=auto_skipped  9
