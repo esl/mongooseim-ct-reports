@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test mod_ping_SUITE:end_per_group result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Config function: <a href="mod_ping_suite.src.html#end_per_group-1">mod_ping_SUITE:end_per_group/2</a> (click for source code)
+
+=== Group properties: [{name,server_ping_kill}]
+
+=== Config value:
+
+    [{timeout_action,kill},
+     {watchdog,<0.25304.0>},
+     {preset,"riak_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-2e748c1d-60c1-4e58-86f7-0f1716bfd67e.2016-04-13_19.14.12/ejabberd_tests.tests.mod_ping_SUITE.logs/run.2016-04-13_19.32.44/mod_ping_suite.end_per_group.576053.903.html"},
+     {tc_group_properties,[{name,server_ping_kill}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/mod_ping_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-2e748c1d-60c1-4e58-86f7-0f1716bfd67e.2016-04-13_19.14.12/ejabberd_tests.tests.mod_ping_SUITE.logs/run.2016-04-13_19.32.44/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-2e748c1d-60c1-4e58-86f7-0f1716bfd67e.2016-04-13_19.14.12"
+
+=== Started at 2016-04-13 19:34:13
+
+<br />
+stopping mod_ping
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 19:34:14
+=== successfully completed test case
+=== returned value = [{ok,result,
+                          {xmlel,<<"iq">>,
+                              [{<<"from">>,<<>>},
+                               {<<"to">>,
+                                <<"alicE@localhost/escalus-default-resource">>},
+                               {<<"id">>,
+                                <<"8afca41da1ddac12ef6f5667babad702">>},
+                               {<<"type">>,<<"result">>}],
+                              [{xmlel,<<"query">>,
+                                   [{<<"xmlns">>,<<"jabber:iq:register">>}],
+                                   [{xmlel,<<"remove">>,[],[]}]}]}}]
+=== 
+=== Total execution time of group: 43.551s
+
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 13 2016 19:34:13<!/date><br />
+</div>
+</center>
+</body>
+</html>
