@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test private_SUITE:set_other_user result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="private_suite.src.html#set_other_user-1">private_SUITE:set_other_user/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.22371.0>},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.private_SUITE.logs/run.2016-04-13_14.43.45/private_suite.set_other_user.html"},
+     {tc_group_properties,[{name,private_negative},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/private_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.private_SUITE.logs/run.2016-04-13_14.43.45/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alice">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bob">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31"
+
+=== Started at 2016-04-13 14:43:49
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:43:49.745 ***</b>
+alice@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:43:49.824 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alice@localhost/res1&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:43:50.001 ***</b>
+bob@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:43:50.080 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;bob@localhost/res1&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:43:50.081 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;set&apos; id=&apos;459dd998676e9c222ccf6224f53943ff&apos; to=&apos;bob@localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:private&apos;&gt;&#xA;    &lt;my_element xmlns=&apos;bob:private:ns&apos;&gt;&#xA;      &lt;banana/&gt;&#xA;    &lt;/my_element&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:43:50.088 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;bob@localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;459dd998676e9c222ccf6224f53943ff&apos; type=&apos;error&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:private&apos;&gt;&#xA;    &lt;my_element xmlns=&apos;bob:private:ns&apos;&gt;&#xA;      &lt;banana/&gt;&#xA;    &lt;/my_element&gt;&#xA;  &lt;/query&gt;&#xA;  &lt;error code=&apos;403&apos; type=&apos;auth&apos;&gt;&#xA;    &lt;forbidden xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;/&gt;&#xA;  &lt;/error&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 14:43:50
+=== successfully completed test case
+=== Returned value: [{escalus_event_mgr,<0.22387.0>},
+                     {tc_name,set_other_user},
+                     {escalus_cleaner,<0.22386.0>},
+                     {watchdog,<0.22385.0>},
+                     {preset,"internal_mnesia"},
+                     {tc_logfile,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.private_SUITE.logs/run.2016-04-13_14.43.45/private_suite.set_other_user.html"},
+                     {tc_group_properties,[{name,private_negative},sequence]},
+                     {tc_group_path,[]},
+                     {data_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/private_SUITE_data/"},
+                     {priv_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.private_SUITE.logs/run.2016-04-13_14.43.45/log_private/"},
+                     {escalus_users,
+                         [{alice,
+                              [{username,<<"alice">>},
+                               {server,<<"localhost">>},
+                               {password,<<"matygrysa">>}]},
+                          {bob,
+                              [{username,<<"bob">>},
+                               {server,<<"localhost">>},
+                               {password,<<"makrolika">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 13 2016 14:43:49<!/date><br />
+</div>
+</center>
+</body>
+</html>

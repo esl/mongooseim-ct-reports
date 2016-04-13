@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test muc_SUITE:create_reserved_room result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="muc_suite.src.html#create_reserved_room-1">muc_SUITE:create_reserved_room/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.20722.0>},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.muc_SUITE.logs/run.2016-04-13_14.39.50/muc_suite.create_reserved_room.html"},
+     {tc_group_properties,[{name,owner}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/muc_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.muc_SUITE.logs/run.2016-04-13_14.39.50/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alice">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bob">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]},
+                     {kate,[{username,<<"kate">>},
+                            {server,<<"localhost">>},
+                            {password,<<"makrowe;p">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31"
+
+=== Started at 2016-04-13 14:41:48
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:41:48.962 ***</b>
+alice@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:41:49.044 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alice@localhost/res1&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:41:49.044 ***</b>
+alice@localhost/res1 out
+&lt;presence to=&apos;room2@muc.localhost/alice-the-owner&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:41:49.046 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;room2@muc.localhost/alice-the-owner&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item jid=&apos;alice@localhost/res1&apos; affiliation=&apos;owner&apos; role=&apos;moderator&apos;/&gt;&#xA;    &lt;status code=&apos;110&apos;/&gt;&#xA;    &lt;status code=&apos;201&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:41:50.547 ***</b>
+alice@localhost/res1 in
+&lt;message from=&apos;room2@muc.localhost&apos; to=&apos;alice@localhost/res1&apos; type=&apos;groupchat&apos;&gt;&#xA;  &lt;subject/&gt;&#xA;  &lt;body/&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:41:50.547 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;8df21c0a5026e77807fed2ab7da6c5e6&apos; to=&apos;room2@muc.localhost&apos; from=&apos;alice@localhost/res1&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#owner&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:41:50.552 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;room2@muc.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;8df21c0a5026e77807fed2ab7da6c5e6&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#owner&apos;&gt;&#xA;    &lt;instructions&gt;You need an x:data capable client to configure room&lt;/instructions&gt;&#xA;    &lt;x xmlns=&apos;jabber:x:data&apos; type=&apos;form&apos;&gt;&#xA;      &lt;title&gt;Configuration of room room2@muc.localhost&lt;/title&gt;&#xA;      &lt;field type=&apos;hidden&apos; var=&apos;FORM_TYPE&apos;&gt;&#xA;        &lt;value&gt;http://jabber.org/protocol/muc#roomconfig&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;text-single&apos; label=&apos;Room title&apos; var=&apos;muc#roomconfig_roomname&apos;&gt;&#xA;        &lt;value/&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;text-single&apos; label=&apos;Room description&apos; var=&apos;muc#roomconfig_roomdesc&apos;&gt;&#xA;        &lt;value/&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;boolean&apos; label=&apos;Make room persistent&apos; var=&apos;muc#roomconfig_persistentroom&apos;&gt;&#xA;        &lt;value&gt;0&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;boolean&apos; label=&apos;Make room public searchable&apos; var=&apos;muc#roomconfig_publicroom&apos;&gt;&#xA;        &lt;value&gt;1&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;boolean&apos; label=&apos;Make participants list public&apos; var=&apos;public_list&apos;&gt;&#xA;        &lt;value&gt;1&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;boolean&apos; label=&apos;Make room password protected&apos; var=&apos;muc#roomconfig_passwordprotectedroom&apos;&gt;&#xA;        &lt;value&gt;0&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;text-private&apos; label=&apos;Password&apos; var=&apos;muc#roomconfig_roomsecret&apos;&gt;&#xA;        &lt;value/&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;list-multi&apos; label=&apos;Roles and affiliations that may retrieve member list&apos; var=&apos;muc#roomconfig_getmemberlist&apos;&gt;&#xA;        &lt;value&gt;moderator&lt;/value&gt;&#xA;        &lt;value&gt;participant&lt;/value&gt;&#xA;        &lt;value&gt;visitor&lt;/value&gt;&#xA;        &lt;option label=&apos;moderator&apos;&gt;&#xA;          &lt;value&gt;moderator&lt;/value&gt;&#xA;        &lt;/option&gt;&#xA;        &lt;option label=&apos;participant&apos;&gt;&#xA;          &lt;value&gt;participant&lt;/value&gt;&#xA;        &lt;/option&gt;&#xA;        &lt;option label=&apos;visitor&apos;&gt;&#xA;          &lt;value&gt;visitor&lt;/value&gt;&#xA;        &lt;/option&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;list-single&apos; label=&apos;Maximum Number of Occupants&apos; var=&apos;muc#roomconfig_maxusers&apos;&gt;&#xA;        &lt;value&gt;200&lt;/value&gt;&#xA;        &lt;option label=&apos;5&apos;&gt;&#xA;          &lt;value&gt;5&lt;/value&gt;&#xA;        &lt;/option&gt;&#xA;        &lt;option label=&apos;10&apos;&gt;&#xA;          &lt;value&gt;10&lt;/value&gt;&#xA;        &lt;/option&gt;&#xA;        &lt;option label=&apos;20&apos;&gt;&#xA;          &lt;value&gt;20&lt;/value&gt;&#xA;        &lt;/option&gt;&#xA;        &lt;option label=&apos;30&apos;&gt;&#xA;          &lt;value&gt;30&lt;/value&gt;&#xA;        &lt;/option&gt;&#xA;        &lt;option label=&apos;50&apos;&gt;&#xA;          &lt;value&gt;50&lt;/value&gt;&#xA;        &lt;/option&gt;&#xA;        &lt;option label=&apos;100&apos;&gt;&#xA;          &lt;value&gt;100&lt;/value&gt;&#xA;        &lt;/option&gt;&#xA;        &lt;option label=&apos;200&apos;&gt;&#xA;          &lt;value&gt;200&lt;/value&gt;&#xA;        &lt;/option&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;list-single&apos; label=&apos;Present real Jabber IDs to&apos; var=&apos;muc#roomconfig_whois&apos;&gt;&#xA;        &lt;value&gt;moderators&lt;/value&gt;&#xA;        &lt;option label=&apos;moderators only&apos;&gt;&#xA;          &lt;value&gt;moderators&lt;/value&gt;&#xA;        &lt;/option&gt;&#xA;        &lt;option label=&apos;anyone&apos;&gt;&#xA;          &lt;value&gt;anyone&lt;/value&gt;&#xA;        &lt;/option&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;boolean&apos; label=&apos;Make room members-only&apos; var=&apos;muc#roomconfig_membersonly&apos;&gt;&#xA;        &lt;value&gt;0&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;boolean&apos; label=&apos;Make room moderated&apos; var=&apos;muc#roomconfig_moderatedroom&apos;&gt;&#xA;        &lt;value&gt;1&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;boolean&apos; label=&apos;Default users as participants&apos; var=&apos;members_by_default&apos;&gt;&#xA;        &lt;value&gt;1&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;boolean&apos; label=&apos;Allow users to change the subject&apos; var=&apos;muc#roomconfig_changesubject&apos;&gt;&#xA;        &lt;value&gt;1&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;boolean&apos; label=&apos;Allow users to send private messages&apos; var=&apos;allow_private_messages&apos;&gt;&#xA;        &lt;value&gt;1&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;boolean&apos; label=&apos;Allow users to query other users&apos; var=&apos;allow_query_users&apos;&gt;&#xA;        &lt;value&gt;1&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;boolean&apos; label=&apos;Allow users to send invites&apos; var=&apos;muc#roomconfig_allowinvites&apos;&gt;&#xA;        &lt;value&gt;0&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;boolean&apos; label=&apos;Allow users to enter room with multiple sessions&apos; var=&apos;muc#roomconfig_allowmultisessions&apos;&gt;&#xA;        &lt;value&gt;0&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;boolean&apos; label=&apos;Allow visitors to send status text in presence updates&apos; var=&apos;muc#roomconfig_allowvisitorstatus&apos;&gt;&#xA;        &lt;value&gt;1&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;boolean&apos; label=&apos;Allow visitors to change nickname&apos; var=&apos;muc#roomconfig_allowvisitornickchange&apos;&gt;&#xA;        &lt;value&gt;1&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field type=&apos;boolean&apos; label=&apos;Enable logging&apos; var=&apos;muc#roomconfig_enablelogging&apos;&gt;&#xA;        &lt;value&gt;0&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;    &lt;/x&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 14:41:50
+=== successfully completed test case
+=== Returned value: [{escalus_event_mgr,<0.20764.0>},
+                     {tc_name,create_reserved_room},
+                     {escalus_cleaner,<0.20763.0>},
+                     {watchdog,<0.20762.0>},
+                     {preset,"internal_mnesia"},
+                     {tc_logfile,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.muc_SUITE.logs/run.2016-04-13_14.39.50/muc_suite.create_reserved_room.html"},
+                     {tc_group_properties,[{name,owner}]},
+                     {tc_group_path,[]},
+                     {data_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/muc_SUITE_data/"},
+                     {priv_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.muc_SUITE.logs/run.2016-04-13_14.39.50/log_private/"},
+                     {escalus_users,
+                         [{alice,
+                              [{username,<<"alice">>},
+                               {server,<<"localhost">>},
+                               {password,<<"matygrysa">>}]},
+                          {bob,
+                              [{username,<<"bob">>},
+                               {server,<<"localhost">>},
+                               {password,<<"makrolika">>}]},
+                          {kate,
+                              [{username,<<"kate">>},
+                               {server,<<"localhost">>},
+                               {password,<<"makrowe;p">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 13 2016 14:41:48<!/date><br />
+</div>
+</center>
+</body>
+</html>

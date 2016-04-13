@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test pubsub_SUITE:retrieve_node_subscriptions_test result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="pubsub_suite.src.html#retrieve_node_subscriptions_test-1">pubsub_SUITE:retrieve_node_subscriptions_test/1</a> (click for source code)
+
+=== Config value:
+
+    [{saved_modules,
+         [{mod_stream_management,[]},
+          {mod_privacy,[]},
+          {mod_register,
+              [{welcome_message,{[]}},
+               {registration_watchers,[<<"admin@localhost">>]},
+               {ip_access,[{allow,"127.0.0.0/8"},{deny,"0.0.0.0/0"}]},
+               {access,register}]},
+          {mod_websockets,[]},
+          {mod_roster,[{versioning,true},{store_current_id,false}]},
+          {mod_muc_log,[{outdir,"/tmp/muclogs"},{access_log,muc}]},
+          {mod_disco,[]},
+          {mod_auth_token,
+              [{{validity_period,access},{60,minutes}},
+               {{validity_period,refresh},{1,days}}]},
+          {mod_muc,
+              [{host,"muc.@HOST@"},{access,muc},{access_create,muc_create}]},
+          {mod_bosh,[]},
+          {mod_vcard,[]},
+          {mod_amp,[]},
+          {mod_carboncopy,[]},
+          {mod_admin_extra,[]},
+          {mod_keystore,
+              [{keys,[{token_secret,ram},{provision_pre_shared,ram}]}]},
+          {mod_private,[]},
+          {mod_http_notification,
+              [{worker_timeout,500},{host,"http://localhost:8000"}]},
+          {mod_adhoc,[]},
+          {mod_offline,[{access_max_user_messages,max_user_offline_messages}]},
+          {mod_last,[]},
+          {mod_sic,[]}]},
+     {watchdog,<0.22540.0>},
+     {preset,"internal_mnesia"},
+     {tc_logfile,
+         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-13_14.43.52/pubsub_suite.retrieve_node_subscriptions_test.html"},
+     {tc_group_properties,[]},
+     {tc_group_path,[]},
+     {data_dir,
+         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/pubsub_SUITE_data/"},
+     {priv_dir,
+         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-13_14.43.52/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31"
+
+=== Started at 2016-04-13 14:44:15
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:15.567 ***</b>
+alice@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:15.645 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alice@localhost/res1&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:15.821 ***</b>
+bob@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:15.900 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;bob@localhost/res1&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:15.905 ***</b>
+geralt@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:15.912 ***</b>
+geralt@localhost/res1 in
+&lt;presence xmlns=&apos;jabber:client&apos; from=&apos;geralt@localhost/res1&apos; to=&apos;geralt@localhost/res1&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:15.912 ***</b>
+alice@localhost/res1 out
+&lt;iq to=&apos;pubsub.localhost&apos; type=&apos;set&apos; id=&apos;alice-pubsub.localhost-princely_musings-create_node&apos; from=&apos;alice@localhost/res1&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;create node=&apos;princely_musings&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:15.914 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;pubsub.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;alice-pubsub.localhost-princely_musings-create_node&apos; type=&apos;result&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;create node=&apos;princely_musings&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:15.914 ***</b>
+alice@localhost/res1 out
+&lt;iq to=&apos;pubsub.localhost&apos; type=&apos;get&apos; id=&apos;alice-pubsub.localhost-princely_musings-node_subscriptions&apos; from=&apos;alice@localhost/res1&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub#owner&apos;&gt;&#xA;    &lt;subscriptions node=&apos;princely_musings&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:15.915 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;pubsub.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;alice-pubsub.localhost-princely_musings-node_subscriptions&apos; type=&apos;result&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub#owner&apos;&gt;&#xA;    &lt;subscriptions node=&apos;princely_musings&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:15.915 ***</b>
+bob@localhost/res1 out
+&lt;iq to=&apos;pubsub.localhost&apos; type=&apos;get&apos; id=&apos;bob-pubsub.localhost-princely_musings-node_subscriptions&apos; from=&apos;bob@localhost/res1&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub#owner&apos;&gt;&#xA;    &lt;subscriptions node=&apos;princely_musings&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:15.916 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;pubsub.localhost&apos; to=&apos;bob@localhost/res1&apos; type=&apos;error&apos; xml:lang=&apos;en&apos; id=&apos;bob-pubsub.localhost-princely_musings-node_subscriptions&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub#owner&apos;&gt;&#xA;    &lt;subscriptions node=&apos;princely_musings&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;  &lt;error code=&apos;403&apos; type=&apos;auth&apos;&gt;&#xA;    &lt;forbidden xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;/&gt;&#xA;  &lt;/error&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:15.917 ***</b>
+bob@localhost/res1 out
+&lt;iq to=&apos;pubsub.localhost&apos; type=&apos;set&apos; id=&apos;bob-pubsub.localhost-princely_musings-subscribe&apos; from=&apos;bob@localhost/res1&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;subscribe node=&apos;princely_musings&apos; jid=&apos;bob@localhost/res1&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:16.023 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;pubsub.localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;bob-pubsub.localhost-princely_musings-subscribe&apos; type=&apos;result&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;subscription jid=&apos;bob@localhost/res1&apos; subscription=&apos;subscribed&apos; subid=&apos;5B4886405978&apos; node=&apos;princely_musings&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:16.024 ***</b>
+geralt@localhost/res1 out
+&lt;iq to=&apos;pubsub.localhost&apos; type=&apos;set&apos; id=&apos;geralt-pubsub.localhost-princely_musings-subscribe&apos; from=&apos;geralt@localhost&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;subscribe node=&apos;princely_musings&apos; jid=&apos;geralt@localhost&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:16.025 ***</b>
+geralt@localhost/res1 in
+&lt;iq xmlns=&apos;jabber:client&apos; from=&apos;pubsub.localhost&apos; to=&apos;geralt@localhost/res1&apos; id=&apos;geralt-pubsub.localhost-princely_musings-subscribe&apos; type=&apos;result&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;subscription jid=&apos;geralt@localhost&apos; subscription=&apos;subscribed&apos; subid=&apos;5B488640611E&apos; node=&apos;princely_musings&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:16.025 ***</b>
+alice@localhost/res1 out
+&lt;iq to=&apos;pubsub.localhost&apos; type=&apos;get&apos; id=&apos;alice-pubsub.localhost-princely_musings-node_subscriptions&apos; from=&apos;alice@localhost/res1&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub#owner&apos;&gt;&#xA;    &lt;subscriptions node=&apos;princely_musings&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:16.067 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;pubsub.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;alice-pubsub.localhost-princely_musings-node_subscriptions&apos; type=&apos;result&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub#owner&apos;&gt;&#xA;    &lt;subscriptions node=&apos;princely_musings&apos;&gt;&#xA;      &lt;subscription jid=&apos;bob@localhost/res1&apos; subscription=&apos;subscribed&apos; subid=&apos;5B4886405978&apos;/&gt;&#xA;      &lt;subscription jid=&apos;geralt@localhost&apos; subscription=&apos;subscribed&apos; subid=&apos;5B488640611E&apos;/&gt;&#xA;    &lt;/subscriptions&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:16.068 ***</b>
+alice@localhost/res1 out
+&lt;iq to=&apos;pubsub.localhost&apos; type=&apos;set&apos; id=&apos;alice-pubsub.localhost-princely_musings-delete_node&apos; from=&apos;alice@localhost/res1&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub#owner&apos;&gt;&#xA;    &lt;delete node=&apos;princely_musings&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:16.308 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;pubsub.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;alice-pubsub.localhost-princely_musings-delete_node&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 14:44:16
+=== successfully completed test case
+=== Returned value: [{escalus_event_mgr,<0.22777.0>},
+                     {tc_name,retrieve_node_subscriptions_test},
+                     {escalus_cleaner,<0.22776.0>},
+                     {watchdog,<0.22775.0>},
+                     {saved_modules,
+                         [{mod_stream_management,[]},
+                          {mod_privacy,[]},
+                          {mod_register,
+                              [{welcome_message,{[]}},
+                               {registration_watchers,[<<"admin@localhost">>]},
+                               {ip_access,
+                                   [{allow,"127.0.0.0/8"},{deny,"0.0.0.0/0"}]},
+                               {access,register}]},
+                          {mod_websockets,[]},
+                          {mod_roster,
+                              [{versioning,true},{store_current_id,false}]},
+                          {mod_muc_log,
+                              [{outdir,"/tmp/muclogs"},{access_log,muc}]},
+                          {mod_disco,[]},
+                          {mod_auth_token,
+                              [{{validity_period,access},{60,minutes}},
+                               {{validity_period,refresh},{1,days}}]},
+                          {mod_muc,
+                              [{host,"muc.@HOST@"},
+                               {access,muc},
+                               {access_create,muc_create}]},
+                          {mod_bosh,[]},
+                          {mod_vcard,[]},
+                          {mod_amp,[]},
+                          {mod_carboncopy,[]},
+                          {mod_admin_extra,[]},
+                          {mod_keystore,
+                              [{keys,
+                                   [{token_secret,ram},
+                                    {provision_pre_shared,ram}]}]},
+                          {mod_private,[]},
+                          {mod_http_notification,
+                              [{worker_timeout,500},
+                               {host,"http://localhost:8000"}]},
+                          {mod_adhoc,[]},
+                          {mod_offline,
+                              [{access_max_user_messages,
+                                   max_user_offline_messages}]},
+                          {mod_last,[]},
+                          {mod_sic,[]}]},
+                     {preset,"internal_mnesia"},
+                     {tc_logfile,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-13_14.43.52/pubsub_suite.retrieve_node_subscriptions_test.html"},
+                     {tc_group_properties,[]},
+                     {tc_group_path,[]},
+                     {data_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/pubsub_SUITE_data/"},
+                     {priv_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-13_14.43.52/log_private/"}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 13 2016 14:44:15<!/date><br />
+</div>
+</center>
+</body>
+</html>

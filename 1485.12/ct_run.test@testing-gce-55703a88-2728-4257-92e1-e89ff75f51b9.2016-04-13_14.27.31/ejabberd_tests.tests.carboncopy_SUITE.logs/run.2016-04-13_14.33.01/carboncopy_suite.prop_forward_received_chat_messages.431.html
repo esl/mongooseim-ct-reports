@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test carboncopy_SUITE:prop_forward_received_chat_messages result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="carboncopy_suite.src.html#prop_forward_received_chat_messages-1">carboncopy_SUITE:prop_forward_received_chat_messages/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.14881.0>},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-04-13_14.33.01/carboncopy_suite.prop_forward_received_chat_messages.431.html"},
+     {tc_group_properties,[{shuffle,{1460,557981,143821}},
+                           {suite,carboncopy_SUITE},
+                           {name,all},
+                           parallel]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/carboncopy_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-04-13_14.33.01/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31"
+
+=== Started at 2016-04-13 14:33:01
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:01.919 ***</b>
+alice81.230551@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:01.998 ***</b>
+alice81.230551@localhost/res1 in
+&lt;presence from=&apos;alice81.230551@localhost/res1&apos; to=&apos;alice81.230551@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:02.183 ***</b>
+bob81.230551@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:02.264 ***</b>
+bob81.230551@localhost/res1 in
+&lt;presence from=&apos;bob81.230551@localhost/res1&apos; to=&apos;bob81.230551@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:02.453 ***</b>
+bob81.230551@localhost/res2 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:02.527 ***</b>
+bob81.230551@localhost/res2 in
+&lt;presence from=&apos;bob81.230551@localhost/res2&apos; to=&apos;bob81.230551@localhost/res2&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:02.527 ***</b>
+bob81.230551@localhost/res2 in
+&lt;presence from=&apos;bob81.230551@localhost/res1&apos; to=&apos;bob81.230551@localhost/res2&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;bob81.230551@localhost/res1&apos; stamp=&apos;2016-04-13T14:33:02Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:02.527 ***</b>
+bob81.230551@localhost/res1 in
+&lt;presence from=&apos;bob81.230551@localhost/res2&apos; to=&apos;bob81.230551@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:02.527 ***</b>
+bob81.230551@localhost/res1 out
+&lt;iq xmlns=&apos;jabber:client&apos; type=&apos;set&apos;&gt;&#xA;  &lt;enable xmlns=&apos;urn:xmpp:carbons:2&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:02.529 ***</b>
+bob81.230551@localhost/res1 in
+&lt;iq from=&apos;bob81.230551@localhost&apos; to=&apos;bob81.230551@localhost/res1&apos; id=&apos;&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:02.529 ***</b>
+bob81.230551@localhost/res2 out
+&lt;iq xmlns=&apos;jabber:client&apos; type=&apos;set&apos;&gt;&#xA;  &lt;enable xmlns=&apos;urn:xmpp:carbons:2&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:02.539 ***</b>
+bob81.230551@localhost/res2 in
+&lt;iq from=&apos;bob81.230551@localhost&apos; to=&apos;bob81.230551@localhost/res2&apos; id=&apos;&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:02.540 ***</b>
+alice81.230551@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;bob81.230551@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Like to a step-dame or a dowager&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:02.543 ***</b>
+bob81.230551@localhost/res2 in
+&lt;message xmlns=&apos;jabber:client&apos; from=&apos;bob81.230551@localhost&apos; to=&apos;bob81.230551@localhost/res2&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;received xmlns=&apos;urn:xmpp:carbons:2&apos;&gt;&#xA;    &lt;forwarded xmlns=&apos;urn:xmpp:forward:0&apos;&gt;&#xA;      &lt;message xmlns=&apos;jabber:client&apos; from=&apos;alice81.230551@localhost/res1&apos; to=&apos;bob81.230551@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;        &lt;body&gt;Like to a step-dame or a dowager&lt;/body&gt;&#xA;      &lt;/message&gt;&#xA;    &lt;/forwarded&gt;&#xA;  &lt;/received&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+.
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:03.839 ***</b>
+alice83.146774@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:03.917 ***</b>
+alice83.146774@localhost/res1 in
+&lt;presence from=&apos;alice83.146774@localhost/res1&apos; to=&apos;alice83.146774@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:04.102 ***</b>
+bob83.146774@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:04.179 ***</b>
+bob83.146774@localhost/res1 in
+&lt;presence from=&apos;bob83.146774@localhost/res1&apos; to=&apos;bob83.146774@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:04.363 ***</b>
+bob83.146774@localhost/res2 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:04.442 ***</b>
+bob83.146774@localhost/res2 in
+&lt;presence from=&apos;bob83.146774@localhost/res2&apos; to=&apos;bob83.146774@localhost/res2&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:04.443 ***</b>
+bob83.146774@localhost/res2 in
+&lt;presence from=&apos;bob83.146774@localhost/res1&apos; to=&apos;bob83.146774@localhost/res2&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;bob83.146774@localhost/res1&apos; stamp=&apos;2016-04-13T14:33:04Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:04.443 ***</b>
+bob83.146774@localhost/res1 in
+&lt;presence from=&apos;bob83.146774@localhost/res2&apos; to=&apos;bob83.146774@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:04.443 ***</b>
+bob83.146774@localhost/res1 out
+&lt;iq xmlns=&apos;jabber:client&apos; type=&apos;set&apos;&gt;&#xA;  &lt;enable xmlns=&apos;urn:xmpp:carbons:2&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:04.445 ***</b>
+bob83.146774@localhost/res1 in
+&lt;iq from=&apos;bob83.146774@localhost&apos; to=&apos;bob83.146774@localhost/res1&apos; id=&apos;&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:04.446 ***</b>
+bob83.146774@localhost/res2 out
+&lt;iq xmlns=&apos;jabber:client&apos; type=&apos;set&apos;&gt;&#xA;  &lt;enable xmlns=&apos;urn:xmpp:carbons:2&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:04.449 ***</b>
+bob83.146774@localhost/res2 in
+&lt;iq from=&apos;bob83.146774@localhost&apos; to=&apos;bob83.146774@localhost/res2&apos; id=&apos;&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:04.449 ***</b>
+alice83.146774@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;bob83.146774@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Long withering out a young man revenue.&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:04.454 ***</b>
+bob83.146774@localhost/res2 in
+&lt;message xmlns=&apos;jabber:client&apos; from=&apos;bob83.146774@localhost&apos; to=&apos;bob83.146774@localhost/res2&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;received xmlns=&apos;urn:xmpp:carbons:2&apos;&gt;&#xA;    &lt;forwarded xmlns=&apos;urn:xmpp:forward:0&apos;&gt;&#xA;      &lt;message xmlns=&apos;jabber:client&apos; from=&apos;alice83.146774@localhost/res1&apos; to=&apos;bob83.146774@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;        &lt;body&gt;Long withering out a young man revenue.&lt;/body&gt;&#xA;      &lt;/message&gt;&#xA;    &lt;/forwarded&gt;&#xA;  &lt;/received&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+.
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:05.744 ***</b>
+alice85.57993@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:05.823 ***</b>
+alice85.57993@localhost/res1 in
+&lt;presence from=&apos;alice85.57993@localhost/res1&apos; to=&apos;alice85.57993@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:06.007 ***</b>
+bob85.57993@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:06.085 ***</b>
+bob85.57993@localhost/res1 in
+&lt;presence from=&apos;bob85.57993@localhost/res1&apos; to=&apos;bob85.57993@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:06.270 ***</b>
+bob85.57993@localhost/res2 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:06.348 ***</b>
+bob85.57993@localhost/res2 in
+&lt;presence from=&apos;bob85.57993@localhost/res2&apos; to=&apos;bob85.57993@localhost/res2&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:06.349 ***</b>
+bob85.57993@localhost/res2 in
+&lt;presence from=&apos;bob85.57993@localhost/res1&apos; to=&apos;bob85.57993@localhost/res2&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;bob85.57993@localhost/res1&apos; stamp=&apos;2016-04-13T14:33:06Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:06.349 ***</b>
+bob85.57993@localhost/res1 in
+&lt;presence from=&apos;bob85.57993@localhost/res2&apos; to=&apos;bob85.57993@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:06.350 ***</b>
+bob85.57993@localhost/res1 out
+&lt;iq xmlns=&apos;jabber:client&apos; type=&apos;set&apos;&gt;&#xA;  &lt;enable xmlns=&apos;urn:xmpp:carbons:2&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:06.351 ***</b>
+bob85.57993@localhost/res1 in
+&lt;iq from=&apos;bob85.57993@localhost&apos; to=&apos;bob85.57993@localhost/res1&apos; id=&apos;&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:06.351 ***</b>
+bob85.57993@localhost/res2 out
+&lt;iq xmlns=&apos;jabber:client&apos; type=&apos;set&apos;&gt;&#xA;  &lt;enable xmlns=&apos;urn:xmpp:carbons:2&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:06.352 ***</b>
+bob85.57993@localhost/res2 in
+&lt;iq from=&apos;bob85.57993@localhost&apos; to=&apos;bob85.57993@localhost/res2&apos; id=&apos;&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:06.352 ***</b>
+alice85.57993@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;bob85.57993@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;This old moon wanes! she lingers my desires&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:33:06.359 ***</b>
+bob85.57993@localhost/res2 in
+&lt;message xmlns=&apos;jabber:client&apos; from=&apos;bob85.57993@localhost&apos; to=&apos;bob85.57993@localhost/res2&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;received xmlns=&apos;urn:xmpp:carbons:2&apos;&gt;&#xA;    &lt;forwarded xmlns=&apos;urn:xmpp:forward:0&apos;&gt;&#xA;      &lt;message xmlns=&apos;jabber:client&apos; from=&apos;alice85.57993@localhost/res1&apos; to=&apos;bob85.57993@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;        &lt;body&gt;This old moon wanes! she lingers my desires&lt;/body&gt;&#xA;      &lt;/message&gt;&#xA;    &lt;/forwarded&gt;&#xA;  &lt;/received&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+.
+
+
+OK: Passed 3 test(s).
+
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 14:33:06
+=== successfully completed test case
+=== Returned value: ok

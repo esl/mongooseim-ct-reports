@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test amp_SUITE:actions_and_conditions_discovery_test result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="amp_suite.src.html#actions_and_conditions_discovery_test-1">amp_SUITE:actions_and_conditions_discovery_test/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.2935.0>},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.amp_SUITE.logs/run.2016-04-13_14.27.39/amp_suite.actions_and_conditions_discovery_test.14.html"},
+     {tc_group_properties,[{shuffle,{1460,557659,719357}},
+                           {suite,amp_SUITE},
+                           {name,all},
+                           parallel]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/amp_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.amp_SUITE.logs/run.2016-04-13_14.27.39/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31"
+
+=== Started at 2016-04-13 14:27:39
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:40.253 ***</b>
+alice59.803571@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:40.339 ***</b>
+alice59.803571@localhost/res1 in
+&lt;presence from=&apos;alice59.803571@localhost/res1&apos; to=&apos;alice59.803571@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:40.340 ***</b>
+alice59.803571@localhost/res1 out
+&lt;iq to=&apos;localhost&apos; type=&apos;get&apos; id=&apos;209e1a1475e29c05796d228902155d50&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/disco#info&apos; node=&apos;http://jabber.org/protocol/amp&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:40.341 ***</b>
+alice59.803571@localhost/res1 in
+&lt;iq from=&apos;localhost&apos; to=&apos;alice59.803571@localhost/res1&apos; id=&apos;209e1a1475e29c05796d228902155d50&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/disco#info&apos; node=&apos;http://jabber.org/protocol/amp&apos;&gt;&#xA;    &lt;feature var=&apos;http://jabber.org/protocol/amp&apos;/&gt;&#xA;    &lt;feature var=&apos;http://jabber.org/protocol/amp?action=error&apos;/&gt;&#xA;    &lt;feature var=&apos;http://jabber.org/protocol/amp?action=notify&apos;/&gt;&#xA;    &lt;feature var=&apos;http://jabber.org/protocol/amp?condition=deliver&apos;/&gt;&#xA;    &lt;feature var=&apos;http://jabber.org/protocol/amp?condition=match-resource&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 14:27:40
+=== successfully completed test case
+=== Returned value: [{escalus_event_mgr,<0.3042.0>},
+                     {tc_name,actions_and_conditions_discovery_test},
+                     {escalus_cleaner,<0.3041.0>},
+                     {watchdog,<0.3037.0>},
+                     {preset,"internal_mnesia"},
+                     {tc_logfile,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.amp_SUITE.logs/run.2016-04-13_14.27.39/amp_suite.actions_and_conditions_discovery_test.14.html"},
+                     {tc_group_properties,
+                         [{shuffle,{1460,557659,719357}},
+                          {suite,amp_SUITE},
+                          {name,all},
+                          parallel]},
+                     {tc_group_path,[]},
+                     {data_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/amp_SUITE_data/"},
+                     {priv_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.amp_SUITE.logs/run.2016-04-13_14.27.39/log_private/"},
+                     {escalus_users,
+                         [{alice,
+                              [{username,<<"alice59.803571">>},
+                               {server,<<"localhost">>},
+                               {password,<<"matygrysa">>}]}]}]

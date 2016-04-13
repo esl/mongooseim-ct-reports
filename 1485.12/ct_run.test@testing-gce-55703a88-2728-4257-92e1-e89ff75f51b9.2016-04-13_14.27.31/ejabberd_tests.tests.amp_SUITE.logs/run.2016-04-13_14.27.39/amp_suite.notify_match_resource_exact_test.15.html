@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test amp_SUITE:notify_match_resource_exact_test result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="amp_suite.src.html#notify_match_resource_exact_test-1">amp_SUITE:notify_match_resource_exact_test/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.2935.0>},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.amp_SUITE.logs/run.2016-04-13_14.27.39/amp_suite.notify_match_resource_exact_test.15.html"},
+     {tc_group_properties,[{shuffle,{1460,557659,719357}},
+                           {suite,amp_SUITE},
+                           {name,all},
+                           parallel]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/amp_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.amp_SUITE.logs/run.2016-04-13_14.27.39/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31"
+
+=== Started at 2016-04-13 14:27:39
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:40.499 ***</b>
+alice59.793763@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:40.576 ***</b>
+alice59.793763@localhost/res1 in
+&lt;presence from=&apos;alice59.793763@localhost/res1&apos; to=&apos;alice59.793763@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:40.760 ***</b>
+bob59.793763@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:40.837 ***</b>
+bob59.793763@localhost/res1 in
+&lt;presence from=&apos;bob59.793763@localhost/res1&apos; to=&apos;bob59.793763@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.021 ***</b>
+bob59.793763@localhost/res2 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.100 ***</b>
+bob59.793763@localhost/res2 in
+&lt;presence from=&apos;bob59.793763@localhost/res2&apos; to=&apos;bob59.793763@localhost/res2&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.101 ***</b>
+bob59.793763@localhost/res2 in
+&lt;presence from=&apos;bob59.793763@localhost/res1&apos; to=&apos;bob59.793763@localhost/res2&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;bob59.793763@localhost/res1&apos; stamp=&apos;2016-04-13T14:27:40Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.288 ***</b>
+bob59.793763@localhost/res3 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.362 ***</b>
+bob59.793763@localhost/res3 in
+&lt;presence from=&apos;bob59.793763@localhost/res3&apos; to=&apos;bob59.793763@localhost/res3&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.363 ***</b>
+bob59.793763@localhost/res3 in
+&lt;presence from=&apos;bob59.793763@localhost/res1&apos; to=&apos;bob59.793763@localhost/res3&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;bob59.793763@localhost/res1&apos; stamp=&apos;2016-04-13T14:27:40Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.363 ***</b>
+bob59.793763@localhost/res3 in
+&lt;presence from=&apos;bob59.793763@localhost/res2&apos; to=&apos;bob59.793763@localhost/res3&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;bob59.793763@localhost/res2&apos; stamp=&apos;2016-04-13T14:27:41Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.548 ***</b>
+bob59.793763@localhost/res4 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.629 ***</b>
+bob59.793763@localhost/res4 in
+&lt;presence from=&apos;bob59.793763@localhost/res4&apos; to=&apos;bob59.793763@localhost/res4&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.629 ***</b>
+bob59.793763@localhost/res4 in
+&lt;presence from=&apos;bob59.793763@localhost/res3&apos; to=&apos;bob59.793763@localhost/res4&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;bob59.793763@localhost/res3&apos; stamp=&apos;2016-04-13T14:27:41Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.630 ***</b>
+bob59.793763@localhost/res4 in
+&lt;presence from=&apos;bob59.793763@localhost/res1&apos; to=&apos;bob59.793763@localhost/res4&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;bob59.793763@localhost/res1&apos; stamp=&apos;2016-04-13T14:27:40Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.630 ***</b>
+bob59.793763@localhost/res4 in
+&lt;presence from=&apos;bob59.793763@localhost/res2&apos; to=&apos;bob59.793763@localhost/res4&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;bob59.793763@localhost/res2&apos; stamp=&apos;2016-04-13T14:27:41Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.630 ***</b>
+bob59.793763@localhost/res1 in
+&lt;presence from=&apos;bob59.793763@localhost/res2&apos; to=&apos;bob59.793763@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.630 ***</b>
+bob59.793763@localhost/res1 in
+&lt;presence from=&apos;bob59.793763@localhost/res3&apos; to=&apos;bob59.793763@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.631 ***</b>
+bob59.793763@localhost/res1 in
+&lt;presence from=&apos;bob59.793763@localhost/res4&apos; to=&apos;bob59.793763@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.631 ***</b>
+bob59.793763@localhost/res2 in
+&lt;presence from=&apos;bob59.793763@localhost/res3&apos; to=&apos;bob59.793763@localhost/res2&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.631 ***</b>
+bob59.793763@localhost/res2 in
+&lt;presence from=&apos;bob59.793763@localhost/res4&apos; to=&apos;bob59.793763@localhost/res2&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.631 ***</b>
+bob59.793763@localhost/res3 in
+&lt;presence from=&apos;bob59.793763@localhost/res4&apos; to=&apos;bob59.793763@localhost/res3&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.632 ***</b>
+alice59.793763@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;bob59.793763@localhost/res3&apos; id=&apos;8d59d651072fc77b3d09976c5959038a&apos;&gt;&#xA;  &lt;body&gt;Resource three, your battery is on fire!&lt;/body&gt;&#xA;  &lt;amp xmlns=&apos;http://jabber.org/protocol/amp&apos;&gt;&#xA;    &lt;rule condition=&apos;match-resource&apos; value=&apos;exact&apos; action=&apos;notify&apos;/&gt;&#xA;  &lt;/amp&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.634 ***</b>
+alice59.793763@localhost/res1 in
+&lt;message from=&apos;localhost&apos; to=&apos;alice59.793763@localhost/res1&apos; id=&apos;8d59d651072fc77b3d09976c5959038a&apos;&gt;&#xA;  &lt;amp xmlns=&apos;http://jabber.org/protocol/amp&apos; status=&apos;notify&apos; to=&apos;bob59.793763@localhost/res3&apos; from=&apos;alice59.793763@localhost/res1&apos;&gt;&#xA;    &lt;rule condition=&apos;match-resource&apos; value=&apos;exact&apos; action=&apos;notify&apos;/&gt;&#xA;  &lt;/amp&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:27:41.634 ***</b>
+bob59.793763@localhost/res3 in
+&lt;message from=&apos;alice59.793763@localhost/res1&apos; to=&apos;bob59.793763@localhost/res3&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos; id=&apos;8d59d651072fc77b3d09976c5959038a&apos;&gt;&#xA;  &lt;body&gt;Resource three, your battery is on fire!&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 14:27:42
+=== successfully completed test case
+=== Returned value: [{escalus_event_mgr,<0.3027.0>},
+                     {tc_name,notify_match_resource_exact_test},
+                     {escalus_cleaner,<0.3026.0>},
+                     {watchdog,<0.3022.0>},
+                     {preset,"internal_mnesia"},
+                     {tc_logfile,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.amp_SUITE.logs/run.2016-04-13_14.27.39/amp_suite.notify_match_resource_exact_test.15.html"},
+                     {tc_group_properties,
+                         [{shuffle,{1460,557659,719357}},
+                          {suite,amp_SUITE},
+                          {name,all},
+                          parallel]},
+                     {tc_group_path,[]},
+                     {data_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/amp_SUITE_data/"},
+                     {priv_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.amp_SUITE.logs/run.2016-04-13_14.27.39/log_private/"},
+                     {escalus_users,
+                         [{alice,
+                              [{username,<<"alice59.793763">>},
+                               {server,<<"localhost">>},
+                               {password,<<"matygrysa">>}]},
+                          {bob,
+                              [{username,<<"bob59.793763">>},
+                               {server,<<"localhost">>},
+                               {password,<<"makrolika">>}]}]}]

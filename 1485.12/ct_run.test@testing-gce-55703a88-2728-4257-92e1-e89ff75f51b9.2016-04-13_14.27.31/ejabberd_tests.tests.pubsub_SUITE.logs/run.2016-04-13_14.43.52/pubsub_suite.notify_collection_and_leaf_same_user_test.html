@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test pubsub_SUITE:notify_collection_and_leaf_same_user_test result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="pubsub_suite.src.html#notify_collection_and_leaf_same_user_test-1">pubsub_SUITE:notify_collection_and_leaf_same_user_test/1</a> (click for source code)
+
+=== Config value:
+
+    [{saved_modules,
+         [{mod_stream_management,[]},
+          {mod_privacy,[]},
+          {mod_register,
+              [{welcome_message,{[]}},
+               {registration_watchers,[<<"admin@localhost">>]},
+               {ip_access,[{allow,"127.0.0.0/8"},{deny,"0.0.0.0/0"}]},
+               {access,register}]},
+          {mod_websockets,[]},
+          {mod_roster,[{versioning,true},{store_current_id,false}]},
+          {mod_muc_log,[{outdir,"/tmp/muclogs"},{access_log,muc}]},
+          {mod_disco,[]},
+          {mod_auth_token,
+              [{{validity_period,access},{60,minutes}},
+               {{validity_period,refresh},{1,days}}]},
+          {mod_muc,
+              [{host,"muc.@HOST@"},{access,muc},{access_create,muc_create}]},
+          {mod_bosh,[]},
+          {mod_vcard,[]},
+          {mod_amp,[]},
+          {mod_carboncopy,[]},
+          {mod_admin_extra,[]},
+          {mod_keystore,
+              [{keys,[{token_secret,ram},{provision_pre_shared,ram}]}]},
+          {mod_private,[]},
+          {mod_http_notification,
+              [{worker_timeout,500},{host,"http://localhost:8000"}]},
+          {mod_adhoc,[]},
+          {mod_offline,[{access_max_user_messages,max_user_offline_messages}]},
+          {mod_last,[]},
+          {mod_sic,[]}]},
+     {watchdog,<0.22540.0>},
+     {preset,"internal_mnesia"},
+     {tc_logfile,
+         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-13_14.43.52/pubsub_suite.notify_collection_and_leaf_same_user_test.html"},
+     {tc_group_properties,[]},
+     {tc_group_path,[]},
+     {data_dir,
+         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/pubsub_SUITE_data/"},
+     {priv_dir,
+         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-13_14.43.52/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31"
+
+=== Started at 2016-04-13 14:44:33
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:33.574 ***</b>
+alice@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:33.652 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alice@localhost/res1&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:33.830 ***</b>
+bob@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:33.908 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;bob@localhost/res1&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:33.909 ***</b>
+alice@localhost/res1 out
+&lt;iq to=&apos;pubsub.localhost&apos; type=&apos;set&apos; id=&apos;alice-pubsub.localhost-princely_musings-create_node&apos; from=&apos;alice@localhost/res1&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;create node=&apos;princely_musings&apos;/&gt;&#xA;    &lt;configure&gt;&#xA;      &lt;x xmlns=&apos;jabber:x:data&apos; type=&apos;submit&apos;&gt;&#xA;        &lt;field var=&apos;FORM_TYPE&apos; type=&apos;hidden&apos;&gt;&#xA;          &lt;value&gt;http://jabber.org/protocol/pubsub#node_config&lt;/value&gt;&#xA;        &lt;/field&gt;&#xA;        &lt;field var=&apos;pubsub#node_type&apos;&gt;&#xA;          &lt;value&gt;collection&lt;/value&gt;&#xA;        &lt;/field&gt;&#xA;      &lt;/x&gt;&#xA;    &lt;/configure&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:33.911 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;pubsub.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;alice-pubsub.localhost-princely_musings-create_node&apos; type=&apos;result&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;create node=&apos;princely_musings&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:33.911 ***</b>
+alice@localhost/res1 out
+&lt;iq to=&apos;pubsub.localhost&apos; type=&apos;set&apos; id=&apos;alice-pubsub.localhost-leaf-create_node&apos; from=&apos;alice@localhost/res1&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;create node=&apos;leaf&apos;/&gt;&#xA;    &lt;configure&gt;&#xA;      &lt;x xmlns=&apos;jabber:x:data&apos; type=&apos;submit&apos;&gt;&#xA;        &lt;field var=&apos;FORM_TYPE&apos; type=&apos;hidden&apos;&gt;&#xA;          &lt;value&gt;http://jabber.org/protocol/pubsub#node_config&lt;/value&gt;&#xA;        &lt;/field&gt;&#xA;        &lt;field var=&apos;pubsub#collection&apos;&gt;&#xA;          &lt;value&gt;princely_musings&lt;/value&gt;&#xA;        &lt;/field&gt;&#xA;      &lt;/x&gt;&#xA;    &lt;/configure&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:33.913 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;pubsub.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;alice-pubsub.localhost-leaf-create_node&apos; type=&apos;result&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;create node=&apos;leaf&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:33.913 ***</b>
+bob@localhost/res1 out
+&lt;iq to=&apos;pubsub.localhost&apos; type=&apos;set&apos; id=&apos;bob-pubsub.localhost-princely_musings-subscribe&apos; from=&apos;bob@localhost/res1&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;subscribe node=&apos;princely_musings&apos; jid=&apos;bob@localhost/res1&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:33.916 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;pubsub.localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;bob-pubsub.localhost-princely_musings-subscribe&apos; type=&apos;result&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;subscription jid=&apos;bob@localhost/res1&apos; subscription=&apos;subscribed&apos; subid=&apos;5B488651DF911&apos; node=&apos;princely_musings&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:33.916 ***</b>
+bob@localhost/res1 out
+&lt;iq to=&apos;pubsub.localhost&apos; type=&apos;set&apos; id=&apos;bob-pubsub.localhost-leaf-subscribe&apos; from=&apos;bob@localhost/res1&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;subscribe node=&apos;leaf&apos; jid=&apos;bob@localhost/res1&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:34.035 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;pubsub.localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;bob-pubsub.localhost-leaf-subscribe&apos; type=&apos;result&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;subscription jid=&apos;bob@localhost/res1&apos; subscription=&apos;subscribed&apos; subid=&apos;5B4886528825&apos; node=&apos;leaf&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:34.036 ***</b>
+alice@localhost/res1 out
+&lt;iq to=&apos;pubsub.localhost&apos; type=&apos;set&apos; id=&apos;alice-pubsub.localhost-leaf-publish&apos; from=&apos;alice@localhost/res1&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;publish node=&apos;leaf&apos;&gt;&#xA;      &lt;item id=&apos;item1&apos;&gt;&#xA;        &lt;entry xmlns=&apos;http://www.w3.org/2005/Atom&apos;/&gt;&#xA;      &lt;/item&gt;&#xA;    &lt;/publish&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:34.314 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;pubsub.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;alice-pubsub.localhost-leaf-publish&apos; type=&apos;result&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub&apos;&gt;&#xA;    &lt;publish node=&apos;leaf&apos;&gt;&#xA;      &lt;item id=&apos;item1&apos;/&gt;&#xA;    &lt;/publish&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:34.315 ***</b>
+bob@localhost/res1 in
+&lt;message from=&apos;pubsub.localhost&apos; to=&apos;bob@localhost/res1&apos; type=&apos;headline&apos;&gt;&#xA;  &lt;event xmlns=&apos;http://jabber.org/protocol/pubsub#event&apos;&gt;&#xA;    &lt;items node=&apos;leaf&apos;&gt;&#xA;      &lt;item id=&apos;item1&apos;&gt;&#xA;        &lt;entry xmlns=&apos;http://www.w3.org/2005/Atom&apos;/&gt;&#xA;      &lt;/item&gt;&#xA;    &lt;/items&gt;&#xA;  &lt;/event&gt;&#xA;  &lt;headers xmlns=&apos;http://jabber.org/protocol/shim&apos;&gt;&#xA;    &lt;header name=&apos;SubId&apos;&gt;5B4886528825&lt;/header&gt;&#xA;    &lt;header name=&apos;SubId&apos;&gt;5B488651DF911&lt;/header&gt;&#xA;  &lt;/headers&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:34.315 ***</b>
+alice@localhost/res1 out
+&lt;iq to=&apos;pubsub.localhost&apos; type=&apos;set&apos; id=&apos;alice-pubsub.localhost-leaf-delete_node&apos; from=&apos;alice@localhost/res1&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub#owner&apos;&gt;&#xA;    &lt;delete node=&apos;leaf&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:34.583 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;pubsub.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;alice-pubsub.localhost-leaf-delete_node&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:34.583 ***</b>
+alice@localhost/res1 out
+&lt;iq to=&apos;pubsub.localhost&apos; type=&apos;set&apos; id=&apos;alice-pubsub.localhost-princely_musings-delete_node&apos; from=&apos;alice@localhost/res1&apos;&gt;&#xA;  &lt;pubsub xmlns=&apos;http://jabber.org/protocol/pubsub#owner&apos;&gt;&#xA;    &lt;delete node=&apos;princely_musings&apos;/&gt;&#xA;  &lt;/pubsub&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:44:34.784 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;pubsub.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;alice-pubsub.localhost-princely_musings-delete_node&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 14:44:35
+=== successfully completed test case
+=== Returned value: [{escalus_event_mgr,<0.22966.0>},
+                     {tc_name,notify_collection_and_leaf_same_user_test},
+                     {escalus_cleaner,<0.22965.0>},
+                     {watchdog,<0.22964.0>},
+                     {saved_modules,
+                         [{mod_stream_management,[]},
+                          {mod_privacy,[]},
+                          {mod_register,
+                              [{welcome_message,{[]}},
+                               {registration_watchers,[<<"admin@localhost">>]},
+                               {ip_access,
+                                   [{allow,"127.0.0.0/8"},{deny,"0.0.0.0/0"}]},
+                               {access,register}]},
+                          {mod_websockets,[]},
+                          {mod_roster,
+                              [{versioning,true},{store_current_id,false}]},
+                          {mod_muc_log,
+                              [{outdir,"/tmp/muclogs"},{access_log,muc}]},
+                          {mod_disco,[]},
+                          {mod_auth_token,
+                              [{{validity_period,access},{60,minutes}},
+                               {{validity_period,refresh},{1,days}}]},
+                          {mod_muc,
+                              [{host,"muc.@HOST@"},
+                               {access,muc},
+                               {access_create,muc_create}]},
+                          {mod_bosh,[]},
+                          {mod_vcard,[]},
+                          {mod_amp,[]},
+                          {mod_carboncopy,[]},
+                          {mod_admin_extra,[]},
+                          {mod_keystore,
+                              [{keys,
+                                   [{token_secret,ram},
+                                    {provision_pre_shared,ram}]}]},
+                          {mod_private,[]},
+                          {mod_http_notification,
+                              [{worker_timeout,500},
+                               {host,"http://localhost:8000"}]},
+                          {mod_adhoc,[]},
+                          {mod_offline,
+                              [{access_max_user_messages,
+                                   max_user_offline_messages}]},
+                          {mod_last,[]},
+                          {mod_sic,[]}]},
+                     {preset,"internal_mnesia"},
+                     {tc_logfile,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-13_14.43.52/pubsub_suite.notify_collection_and_leaf_same_user_test.html"},
+                     {tc_group_properties,[]},
+                     {tc_group_path,[]},
+                     {data_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/pubsub_SUITE_data/"},
+                     {priv_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.pubsub_SUITE.logs/run.2016-04-13_14.43.52/log_private/"}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 13 2016 14:44:33<!/date><br />
+</div>
+</center>
+</body>
+</html>

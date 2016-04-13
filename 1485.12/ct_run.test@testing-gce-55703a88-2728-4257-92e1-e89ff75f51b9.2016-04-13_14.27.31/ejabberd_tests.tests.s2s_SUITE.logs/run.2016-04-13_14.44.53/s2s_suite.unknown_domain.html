@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test s2s_SUITE:unknown_domain result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="s2s_suite.src.html#unknown_domain-1">s2s_SUITE:unknown_domain/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.23243.0>},
+     {s2s_opts,{s2s_opts,"priv/ssl/fake_server.pem",optional,
+                         "priv/ssl/fake_server.pem",optional}},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.s2s_SUITE.logs/run.2016-04-13_14.44.53/s2s_suite.unknown_domain.html"},
+     {tc_group_properties,[{name,both_plain},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/s2s_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.s2s_SUITE.logs/run.2016-04-13_14.44.53/log_private/"},
+     {escalus_users,[{alice2,[{username,<<"alice">>},
+                              {server,<<"fed1">>},
+                              {host,<<"localhost">>},
+                              {port,5242},
+                              {password,<<"makota2">>}]},
+                     {bob2,[{username,<<"bob">>},
+                            {server,<<109,105,99,104,97,197,130>>},
+                            {host,<<"localhost">>},
+                            {port,5242},
+                            {password,<<"makota3">>}]},
+                     {alice,[{username,<<"alice">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bob">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31"
+
+=== Started at 2016-04-13 14:45:02
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:45:02.499 ***</b>
+alice@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:45:02.574 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alice@localhost/res1&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:45:02.575 ***</b>
+alice@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;xyz@somebogushost&apos;&gt;&#xA;  &lt;body&gt;Hello, unreachable!&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:45:03.103 ***</b>
+alice@localhost/res1 in
+&lt;message from=&apos;xyz@somebogushost&apos; to=&apos;alice@localhost/res1&apos; type=&apos;error&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;body&gt;Hello, unreachable!&lt;/body&gt;&#xA;  &lt;error code=&apos;404&apos; type=&apos;cancel&apos;&gt;&#xA;    &lt;remote-server-not-found xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;/&gt;&#xA;  &lt;/error&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 14:45:03
+=== successfully completed test case
+=== Returned value: [{escalus_event_mgr,<0.23272.0>},
+                     {tc_name,unknown_domain},
+                     {escalus_cleaner,<0.23271.0>},
+                     {watchdog,<0.23270.0>},
+                     {s2s_opts,
+                         {s2s_opts,"priv/ssl/fake_server.pem",optional,
+                             "priv/ssl/fake_server.pem",optional}},
+                     {preset,"internal_mnesia"},
+                     {tc_logfile,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.s2s_SUITE.logs/run.2016-04-13_14.44.53/s2s_suite.unknown_domain.html"},
+                     {tc_group_properties,[{name,both_plain},sequence]},
+                     {tc_group_path,[]},
+                     {data_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/s2s_SUITE_data/"},
+                     {priv_dir,
+                         "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-55703a88-2728-4257-92e1-e89ff75f51b9.2016-04-13_14.27.31/ejabberd_tests.tests.s2s_SUITE.logs/run.2016-04-13_14.44.53/log_private/"},
+                     {escalus_users,
+                         [{alice2,
+                              [{username,<<"alice">>},
+                               {server,<<"fed1">>},
+                               {host,<<"localhost">>},
+                               {port,5242},
+                               {password,<<"makota2">>}]},
+                          {bob2,
+                              [{username,<<"bob">>},
+                               {server,<<109,105,99,104,97,197,130>>},
+                               {host,<<"localhost">>},
+                               {port,5242},
+                               {password,<<"makota3">>}]},
+                          {alice,
+                              [{username,<<"alice">>},
+                               {server,<<"localhost">>},
+                               {password,<<"matygrysa">>}]},
+                          {bob,
+                              [{username,<<"bob">>},
+                               {server,<<"localhost">>},
+                               {password,<<"makrolika">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 13 2016 14:45:02<!/date><br />
+</div>
+</center>
+</body>
+</html>
