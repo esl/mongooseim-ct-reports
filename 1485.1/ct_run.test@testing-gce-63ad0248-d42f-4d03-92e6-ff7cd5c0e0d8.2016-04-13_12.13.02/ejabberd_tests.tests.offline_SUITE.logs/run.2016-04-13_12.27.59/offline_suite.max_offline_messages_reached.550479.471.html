@@ -1,0 +1,1195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test offline_SUITE:max_offline_messages_reached result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="offline_suite.src.html#max_offline_messages_reached-1">offline_SUITE:max_offline_messages_reached/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.20240.0>},
+     {preset,"internal_redis"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.offline_SUITE.logs/run.2016-04-13_12.27.59/offline_suite.max_offline_messages_reached.550479.471.html"},
+     {tc_group_properties,[{shuffle,{1460,550479,442281}},
+                           {suite,offline_SUITE},
+                           {name,mod_offline_tests},
+                           parallel]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/offline_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.offline_SUITE.logs/run.2016-04-13_12.27.59/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02"
+
+=== Started at 2016-04-13 12:27:59
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:00.175 ***</b>
+alice79.482562@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:00.255 ***</b>
+alice79.482562@localhost/res1 in
+&lt;presence from=&apos;alice79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:00.438 ***</b>
+bob79.482562@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:00.518 ***</b>
+bob79.482562@localhost/res1 in
+&lt;presence from=&apos;bob79.482562@localhost/res1&apos; to=&apos;bob79.482562@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:00.703 ***</b>
+bob79.482562@localhost/res2 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:00.786 ***</b>
+bob79.482562@localhost/res2 in
+&lt;presence from=&apos;bob79.482562@localhost/res1&apos; to=&apos;bob79.482562@localhost/res2&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;bob79.482562@localhost/res1&apos; stamp=&apos;2016-04-13T12:28:00Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:00.786 ***</b>
+bob79.482562@localhost/res2 in
+&lt;presence from=&apos;bob79.482562@localhost/res2&apos; to=&apos;bob79.482562@localhost/res2&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:00.969 ***</b>
+bob79.482562@localhost/res3 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.055 ***</b>
+bob79.482562@localhost/res3 in
+&lt;presence from=&apos;bob79.482562@localhost/res2&apos; to=&apos;bob79.482562@localhost/res3&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;bob79.482562@localhost/res2&apos; stamp=&apos;2016-04-13T12:28:00Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.055 ***</b>
+bob79.482562@localhost/res3 in
+&lt;presence from=&apos;bob79.482562@localhost/res1&apos; to=&apos;bob79.482562@localhost/res3&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;bob79.482562@localhost/res1&apos; stamp=&apos;2016-04-13T12:28:00Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.055 ***</b>
+bob79.482562@localhost/res3 in
+&lt;presence from=&apos;bob79.482562@localhost/res3&apos; to=&apos;bob79.482562@localhost/res3&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.238 ***</b>
+bob79.482562@localhost/res4 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.318 ***</b>
+bob79.482562@localhost/res4 in
+&lt;presence from=&apos;bob79.482562@localhost/res3&apos; to=&apos;bob79.482562@localhost/res4&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;bob79.482562@localhost/res3&apos; stamp=&apos;2016-04-13T12:28:01Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.318 ***</b>
+bob79.482562@localhost/res4 in
+&lt;presence from=&apos;bob79.482562@localhost/res2&apos; to=&apos;bob79.482562@localhost/res4&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;bob79.482562@localhost/res2&apos; stamp=&apos;2016-04-13T12:28:00Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.319 ***</b>
+bob79.482562@localhost/res4 in
+&lt;presence from=&apos;bob79.482562@localhost/res4&apos; to=&apos;bob79.482562@localhost/res4&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.319 ***</b>
+bob79.482562@localhost/res4 in
+&lt;presence from=&apos;bob79.482562@localhost/res1&apos; to=&apos;bob79.482562@localhost/res4&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;bob79.482562@localhost/res1&apos; stamp=&apos;2016-04-13T12:28:00Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.319 ***</b>
+bob79.482562@localhost/res1 in
+&lt;presence from=&apos;bob79.482562@localhost/res2&apos; to=&apos;bob79.482562@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.320 ***</b>
+bob79.482562@localhost/res1 in
+&lt;presence from=&apos;bob79.482562@localhost/res3&apos; to=&apos;bob79.482562@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.320 ***</b>
+bob79.482562@localhost/res1 in
+&lt;presence from=&apos;bob79.482562@localhost/res4&apos; to=&apos;bob79.482562@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.320 ***</b>
+bob79.482562@localhost/res2 in
+&lt;presence from=&apos;bob79.482562@localhost/res3&apos; to=&apos;bob79.482562@localhost/res2&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.320 ***</b>
+bob79.482562@localhost/res2 in
+&lt;presence from=&apos;bob79.482562@localhost/res4&apos; to=&apos;bob79.482562@localhost/res2&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.320 ***</b>
+bob79.482562@localhost/res3 in
+&lt;presence from=&apos;bob79.482562@localhost/res4&apos; to=&apos;bob79.482562@localhost/res3&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.627 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 1&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.627 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 1&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.627 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 1&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.627 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 1&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.728 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 2&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.728 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 2&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.728 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 2&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.728 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 2&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.829 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 3&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.829 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 3&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.829 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 3&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.829 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 3&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.930 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 4&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.930 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 4&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.930 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 4&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.930 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 4&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.031 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 5&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.031 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 5&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.031 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 5&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.031 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 5&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.132 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 6&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.132 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 6&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.132 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 6&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.132 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 6&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.233 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 7&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.233 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 7&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.233 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 7&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.233 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 7&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.334 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 8&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.334 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 8&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.334 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 8&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.334 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 8&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.435 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 9&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.435 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 9&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.435 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 9&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.435 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 9&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.536 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 10&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.536 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 10&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.536 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 10&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.536 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 10&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.637 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 11&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.637 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 11&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.637 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 11&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.637 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 11&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.738 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 12&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.738 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 12&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.738 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 12&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.738 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 12&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.839 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 13&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.839 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 13&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.839 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 13&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.839 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 13&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.940 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 14&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.940 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 14&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.940 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 14&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:02.940 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 14&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.041 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 15&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.041 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 15&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.041 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 15&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.041 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 15&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.142 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 16&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.142 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 16&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.142 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 16&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.142 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 16&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.243 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 17&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.243 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 17&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.243 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 17&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.243 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 17&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.344 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 18&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.344 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 18&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.344 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 18&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.344 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 18&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.445 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 19&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.445 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 19&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.445 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 19&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.445 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 19&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.546 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 20&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.546 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 20&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.546 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 20&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.546 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 20&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.647 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 21&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.647 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 21&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.647 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 21&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.647 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 21&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.748 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 22&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.748 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 22&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.748 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 22&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.748 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 22&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.849 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 23&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.849 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 23&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.849 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 23&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.849 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 23&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.950 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 24&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.950 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 24&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.950 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 24&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:03.950 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 24&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.051 ***</b>
+bob79.482562@localhost/res2 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 25&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.051 ***</b>
+bob79.482562@localhost/res4 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 25&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.051 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 25&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.051 ***</b>
+bob79.482562@localhost/res3 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 25&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.152 ***</b>
+bob79.482562@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice79.482562@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 101&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.253 ***</b>
+bob79.482562@localhost/res1 in
+&lt;message from=&apos;alice79.482562@localhost/res1&apos; to=&apos;bob79.482562@localhost/res1&apos; type=&apos;error&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 101&lt;/body&gt;&#xA;  &lt;error code=&apos;500&apos; type=&apos;wait&apos;&gt;&#xA;    &lt;resource-constraint xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;/&gt;&#xA;    &lt;text xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;&gt;Your contact offline message queue is full. The message has been discarded.&lt;/text&gt;&#xA;  &lt;/error&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.439 ***</b>
+alice79.482562@localhost/new-session out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.540 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 1&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.631124Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.541 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 1&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.631138Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.542 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 1&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.631593Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.542 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 1&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.631752Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.543 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 2&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.732097Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.546 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 2&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.732109Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.546 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 2&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.732725Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.547 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 2&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.733040Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.547 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 3&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.832629Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.548 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 3&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.833155Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.548 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 3&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.833639Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.548 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 3&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.836690Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.549 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 4&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.933683Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.549 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 4&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.933921Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.550 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 4&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.934006Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.550 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 4&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:01.934258Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.550 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 5&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.035759Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.551 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 5&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.035770Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.551 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 5&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.035973Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.552 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 5&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.036258Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.552 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 6&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.135185Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.553 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 6&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.135583Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.553 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 6&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.135855Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.554 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 6&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.135999Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.554 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 7&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.236039Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.555 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 7&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.236481Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.555 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 7&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.236704Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.556 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 7&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.236893Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.556 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 8&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.337548Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.556 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 8&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.337652Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.557 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 8&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.337839Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.557 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 8&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.338040Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.557 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 9&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.440724Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.557 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 9&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.440872Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.558 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 9&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.441020Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.558 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 9&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.441165Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.559 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 10&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.539352Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.560 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 10&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.539380Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.560 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 10&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.539671Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.560 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 10&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.539919Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.560 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 11&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.642001Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.561 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 11&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.642053Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.561 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 11&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.642341Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.561 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 11&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.642681Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.562 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 12&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.741525Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.562 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 12&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.741603Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.562 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 12&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.741859Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.563 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 12&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.742362Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.563 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 13&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.842780Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.564 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 13&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.843260Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.564 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 13&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.843469Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.564 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 13&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.843620Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.565 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 14&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.945067Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.566 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 14&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.945393Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.566 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 14&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.945535Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.566 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 14&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:02.945698Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.567 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 15&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.045042Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.567 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 15&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.045094Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.567 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 15&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.045410Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.567 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 15&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.045470Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.568 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 16&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.146982Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.568 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 16&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.147219Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.568 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 16&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.147310Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.569 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 16&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.147468Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.570 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 17&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.246742Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.570 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 17&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.247203Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.570 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 17&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.247317Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.570 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 17&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.247637Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.570 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 18&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.348143Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.571 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 18&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.348159Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.571 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 18&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.348581Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.571 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 18&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.348679Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.571 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 19&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.448927Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.571 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 19&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.448929Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.572 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 19&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.449392Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.572 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 19&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.449411Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.572 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 20&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.550153Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.572 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 20&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.551168Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.573 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 20&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.551309Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.573 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 20&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.551756Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.573 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 21&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.650907Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.573 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 21&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.651358Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.573 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 21&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.651496Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.574 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 21&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.651637Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.574 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 22&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.751527Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.574 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 22&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.751581Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.574 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 22&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.752515Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.574 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 22&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.752651Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.574 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 23&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.852382Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.575 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 23&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.852384Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.575 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 23&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.852558Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.575 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 23&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.852880Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.575 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 24&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.953036Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.575 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 24&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.953764Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.576 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 24&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.953921Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.576 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 24&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:03.954149Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.576 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res3&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 25&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:04.054194Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.576 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res4&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 25&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:04.054524Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.576 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res1&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 25&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:04.054668Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.576 ***</b>
+alice79.482562@localhost/new-session in
+&lt;message from=&apos;bob79.482562@localhost/res2&apos; to=&apos;alice79.482562@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Offline 25&lt;/body&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;localhost&apos; stamp=&apos;2016-04-13T12:28:04.054844Z&apos;&gt;Offline Storage&lt;/delay&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:04.577 ***</b>
+alice79.482562@localhost/new-session in
+&lt;presence from=&apos;alice79.482562@localhost/new-session&apos; to=&apos;alice79.482562@localhost/new-session&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 12:28:06
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.20276.0>},
+                      {tc_name,max_offline_messages_reached},
+                      {escalus_cleaner,<0.20273.0>},
+                      {watchdog,<0.20269.0>},
+                      {preset,"internal_redis"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.offline_SUITE.logs/run.2016-04-13_12.27.59/offline_suite.max_offline_messages_reached.550479.471.html"},
+                      {tc_group_properties,
+                          [{shuffle,{1460,550479,442281}},
+                           {suite,offline_SUITE},
+                           {name,mod_offline_tests},
+                           parallel]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/offline_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.offline_SUITE.logs/run.2016-04-13_12.27.59/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alice79.482562">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                           {bob,
+                               [{username,<<"bob79.482562">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]}]}]

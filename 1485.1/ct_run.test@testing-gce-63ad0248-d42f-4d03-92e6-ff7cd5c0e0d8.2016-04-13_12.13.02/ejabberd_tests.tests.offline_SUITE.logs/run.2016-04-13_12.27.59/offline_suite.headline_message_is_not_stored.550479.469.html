@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test offline_SUITE:headline_message_is_not_stored result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="offline_suite.src.html#headline_message_is_not_stored-1">offline_SUITE:headline_message_is_not_stored/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.20240.0>},
+     {preset,"internal_redis"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.offline_SUITE.logs/run.2016-04-13_12.27.59/offline_suite.headline_message_is_not_stored.550479.469.html"},
+     {tc_group_properties,[{shuffle,{1460,550479,442281}},
+                           {suite,offline_SUITE},
+                           {name,mod_offline_tests},
+                           parallel]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/offline_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.offline_SUITE.logs/run.2016-04-13_12.27.59/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02"
+
+=== Started at 2016-04-13 12:27:59
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:00.177 ***</b>
+alice79.482662@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:00.256 ***</b>
+alice79.482662@localhost/res1 in
+&lt;presence from=&apos;alice79.482662@localhost/res1&apos; to=&apos;alice79.482662@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:00.442 ***</b>
+bob79.482662@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:00.519 ***</b>
+bob79.482662@localhost/res1 in
+&lt;presence from=&apos;bob79.482662@localhost/res1&apos; to=&apos;bob79.482662@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:00.821 ***</b>
+alice79.482662@localhost/res1 out
+&lt;message from=&apos;alice79.482662@localhost/res1&apos; type=&apos;headline&apos; to=&apos;bob79.482662@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;msgtxt&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.003 ***</b>
+bob79.482662@localhost/new-session out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:01.085 ***</b>
+bob79.482662@localhost/new-session in
+&lt;presence from=&apos;bob79.482662@localhost/new-session&apos; to=&apos;bob79.482662@localhost/new-session&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 12:28:02
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.20277.0>},
+                      {tc_name,headline_message_is_not_stored},
+                      {escalus_cleaner,<0.20274.0>},
+                      {watchdog,<0.20268.0>},
+                      {preset,"internal_redis"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.offline_SUITE.logs/run.2016-04-13_12.27.59/offline_suite.headline_message_is_not_stored.550479.469.html"},
+                      {tc_group_properties,
+                          [{shuffle,{1460,550479,442281}},
+                           {suite,offline_SUITE},
+                           {name,mod_offline_tests},
+                           parallel]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/offline_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.offline_SUITE.logs/run.2016-04-13_12.27.59/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alice79.482662">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                           {bob,
+                               [{username,<<"bob79.482662">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]}]}]

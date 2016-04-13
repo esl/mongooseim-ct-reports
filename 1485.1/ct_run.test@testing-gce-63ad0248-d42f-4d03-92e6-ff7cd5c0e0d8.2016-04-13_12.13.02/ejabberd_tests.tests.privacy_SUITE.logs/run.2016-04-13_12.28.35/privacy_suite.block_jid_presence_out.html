@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test privacy_SUITE:block_jid_presence_out result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="privacy_suite.src.html#block_jid_presence_out-1">privacy_SUITE:block_jid_presence_out/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.20913.0>},
+     {escalus_no_stanzas_after_story,true},
+     {preset,"internal_redis"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.privacy_SUITE.logs/run.2016-04-13_12.28.35/privacy_suite.block_jid_presence_out.html"},
+     {tc_group_properties,[{name,blocking},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/privacy_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.privacy_SUITE.logs/run.2016-04-13_12.28.35/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alice">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bob">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02"
+
+=== Started at 2016-04-13 12:28:53
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:53.750 ***</b>
+alice@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:53.825 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alice@localhost/res1&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:54.010 ***</b>
+bob@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:54.085 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;bob@localhost/res1&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:54.085 ***</b>
+alice@localhost/res1 out
+&lt;presence to=&apos;bob@localhost&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:54.090 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;alice@localhost/res1&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:54.091 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;set&apos; id=&apos;c6a2e9b4dcae151c0c382ae3e1a4bfc3&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:privacy&apos;&gt;&#xA;    &lt;list name=&apos;deny_bob_presence_out&apos;&gt;&#xA;      &lt;item order=&apos;1&apos; type=&apos;jid&apos; value=&apos;bob@localhost&apos; action=&apos;deny&apos;&gt;&#xA;        &lt;presence-out/&gt;&#xA;      &lt;/item&gt;&#xA;    &lt;/list&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:54.092 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alice@localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;pushA14F4773C4C6BED8&apos; type=&apos;set&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:privacy&apos;&gt;&#xA;    &lt;list name=&apos;deny_bob_presence_out&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:54.093 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alice@localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;c6a2e9b4dcae151c0c382ae3e1a4bfc3&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:54.093 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;7145566e28e0a0f2293edea6888e2331&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:privacy&apos;&gt;&#xA;    &lt;list name=&apos;deny_bob_presence_out&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:54.210 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alice@localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;7145566e28e0a0f2293edea6888e2331&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:privacy&apos;&gt;&#xA;    &lt;list name=&apos;deny_bob_presence_out&apos;&gt;&#xA;      &lt;item type=&apos;jid&apos; value=&apos;bob@localhost&apos; action=&apos;deny&apos; order=&apos;1&apos;&gt;&#xA;        &lt;presence-out/&gt;&#xA;      &lt;/item&gt;&#xA;    &lt;/list&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:54.210 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;set&apos; id=&apos;a6fed292f8164d7959685bf3b29d1a48&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:privacy&apos;&gt;&#xA;    &lt;active name=&apos;deny_bob_presence_out&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:54.346 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alice@localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;a6fed292f8164d7959685bf3b29d1a48&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:54.346 ***</b>
+alice@localhost/res1 out
+&lt;presence to=&apos;bob@localhost&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:28:54.484 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;bob@localhost&apos; to=&apos;alice@localhost/res1&apos; type=&apos;error&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;error code=&apos;406&apos; type=&apos;modify&apos;&gt;&#xA;    &lt;not-acceptable xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;/&gt;&#xA;    &lt;text xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;&gt;Your active privacy list has denied the routing of this stanza.&lt;/text&gt;&#xA;  &lt;/error&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 12:28:54
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.20956.0>},
+                      {tc_name,block_jid_presence_out},
+                      {escalus_cleaner,<0.20955.0>},
+                      {watchdog,<0.20954.0>},
+                      {escalus_no_stanzas_after_story,true},
+                      {preset,"internal_redis"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.privacy_SUITE.logs/run.2016-04-13_12.28.35/privacy_suite.block_jid_presence_out.html"},
+                      {tc_group_properties,[{name,blocking},sequence]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/privacy_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.privacy_SUITE.logs/run.2016-04-13_12.28.35/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alice">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                           {bob,
+                               [{username,<<"bob">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 13 2016 12:28:53<!/date><br />
+</div>
+</center>
+</body>
+</html>

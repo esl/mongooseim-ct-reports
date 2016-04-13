@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test muc_SUITE:admin_member_list_allowed result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="muc_suite.src.html#admin_member_list_allowed-1">muc_SUITE:admin_member_list_allowed/1</a> (click for source code)
+
+=== Config value:
+
+    [{nick,<<"alicesnick">>},
+     {room,<<"alicesroom">>},
+     {watchdog,<0.19293.0>},
+     {preset,"internal_redis"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.muc_SUITE.logs/run.2016-04-13_12.25.15/muc_suite.admin_member_list_allowed.html"},
+     {tc_group_properties,[{name,admin}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/muc_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.muc_SUITE.logs/run.2016-04-13_12.25.15/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alice">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bob">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]},
+                     {kate,[{username,<<"kate">>},
+                            {server,<<"localhost">>},
+                            {password,<<"makrowe;p">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02"
+
+=== Started at 2016-04-13 12:25:56
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:56.864 ***</b>
+alice@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:56.943 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alice@localhost/res1&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:57.120 ***</b>
+bob@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:57.200 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;bob@localhost/res1&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:57.383 ***</b>
+kate@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:57.461 ***</b>
+kate@localhost/res1 in
+&lt;presence from=&apos;kate@localhost/res1&apos; to=&apos;kate@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:58.962 ***</b>
+alice@localhost/res1 out
+&lt;presence to=&apos;alicesroom@muc.localhost/alice&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:58.964 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/alice&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item jid=&apos;alice@localhost/res1&apos; affiliation=&apos;owner&apos; role=&apos;moderator&apos;/&gt;&#xA;    &lt;status code=&apos;110&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:58.965 ***</b>
+alice@localhost/res1 in
+&lt;message from=&apos;alicesroom@muc.localhost&apos; to=&apos;alice@localhost/res1&apos; type=&apos;groupchat&apos;&gt;&#xA;  &lt;subject/&gt;&#xA;  &lt;body/&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:58.965 ***</b>
+bob@localhost/res1 out
+&lt;presence to=&apos;alicesroom@muc.localhost/bob&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:58.967 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/alice&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item affiliation=&apos;owner&apos; role=&apos;moderator&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:58.967 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/bob&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item affiliation=&apos;none&apos; role=&apos;participant&apos;/&gt;&#xA;    &lt;status code=&apos;110&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:58.968 ***</b>
+bob@localhost/res1 in
+&lt;message from=&apos;alicesroom@muc.localhost&apos; to=&apos;bob@localhost/res1&apos; type=&apos;groupchat&apos;&gt;&#xA;  &lt;subject/&gt;&#xA;  &lt;body/&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:58.969 ***</b>
+kate@localhost/res1 out
+&lt;presence to=&apos;alicesroom@muc.localhost/kate&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:58.974 ***</b>
+kate@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/bob&apos; to=&apos;kate@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item affiliation=&apos;none&apos; role=&apos;participant&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:58.974 ***</b>
+kate@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/alice&apos; to=&apos;kate@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item affiliation=&apos;owner&apos; role=&apos;moderator&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:58.974 ***</b>
+kate@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/kate&apos; to=&apos;kate@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos; role=&apos;participant&apos;/&gt;&#xA;    &lt;status code=&apos;110&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:58.974 ***</b>
+kate@localhost/res1 in
+&lt;message from=&apos;alicesroom@muc.localhost&apos; to=&apos;kate@localhost/res1&apos; type=&apos;groupchat&apos;&gt;&#xA;  &lt;subject/&gt;&#xA;  &lt;body/&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:58.974 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/kate&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos; role=&apos;participant&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:58.975 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/bob&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item jid=&apos;bob@localhost/res1&apos; affiliation=&apos;none&apos; role=&apos;participant&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:58.975 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/kate&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item jid=&apos;kate@localhost/res1&apos; affiliation=&apos;member&apos; role=&apos;participant&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:59.975 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;set&apos; id=&apos;e055a82e15a8479cef90bad9f481245b&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item nick=&apos;bob&apos; role=&apos;moderator&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:59.977 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/bob&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item jid=&apos;bob@localhost/res1&apos; affiliation=&apos;none&apos; role=&apos;moderator&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:59.978 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;e055a82e15a8479cef90bad9f481245b&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:59.978 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/bob&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item jid=&apos;bob@localhost/res1&apos; affiliation=&apos;none&apos; role=&apos;moderator&apos;/&gt;&#xA;    &lt;status code=&apos;110&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:59.978 ***</b>
+kate@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/bob&apos; to=&apos;kate@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item affiliation=&apos;none&apos; role=&apos;moderator&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:59.978 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;fe4db9c97f12b058d920ffaaa8323d4f&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:59.980 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;fe4db9c97f12b058d920ffaaa8323d4f&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos; jid=&apos;kate@localhost&apos;&gt;&#xA;      &lt;reason/&gt;&#xA;    &lt;/item&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:59.980 ***</b>
+bob@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;8881a0f348071ba350456b7eec068a65&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:59.981 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;8881a0f348071ba350456b7eec068a65&apos; type=&apos;error&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;  &lt;error code=&apos;403&apos; type=&apos;auth&apos;&gt;&#xA;    &lt;forbidden xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;/&gt;&#xA;    &lt;text xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;&gt;Administrator privileges required&lt;/text&gt;&#xA;  &lt;/error&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:59.981 ***</b>
+kate@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;3cd047cfbf5289518be3c5a04d10f7a9&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:59.983 ***</b>
+kate@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;kate@localhost/res1&apos; id=&apos;3cd047cfbf5289518be3c5a04d10f7a9&apos; type=&apos;error&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;  &lt;error code=&apos;403&apos; type=&apos;auth&apos;&gt;&#xA;    &lt;forbidden xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;/&gt;&#xA;    &lt;text xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;&gt;Administrator privileges required&lt;/text&gt;&#xA;  &lt;/error&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:59.983 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;b3e7c5007ce6d1e5ad2be75b77edb329&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.072 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;b3e7c5007ce6d1e5ad2be75b77edb329&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;none&apos; nick=&apos;bob&apos; jid=&apos;bob@localhost/res1&apos;/&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;owner&apos; nick=&apos;alice&apos; jid=&apos;alice@localhost/res1&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.072 ***</b>
+bob@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;c25da6ba45ab636ea62b429bf0e44faa&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.073 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;c25da6ba45ab636ea62b429bf0e44faa&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;none&apos; nick=&apos;bob&apos; jid=&apos;bob@localhost/res1&apos;/&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;owner&apos; nick=&apos;alice&apos; jid=&apos;alice@localhost/res1&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.073 ***</b>
+kate@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;b3c20e1f2c49e12a674031d378cc56ce&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.074 ***</b>
+kate@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;kate@localhost/res1&apos; id=&apos;b3c20e1f2c49e12a674031d378cc56ce&apos; type=&apos;error&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;  &lt;error code=&apos;403&apos; type=&apos;auth&apos;&gt;&#xA;    &lt;forbidden xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;/&gt;&#xA;    &lt;text xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;&gt;Administrator privileges required&lt;/text&gt;&#xA;  &lt;/error&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.075 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;set&apos; id=&apos;7e93db08d6442c9ee23afd74fb094c34&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#owner&apos;&gt;&#xA;    &lt;x xmlns=&apos;jabber:x:data&apos; type=&apos;submit&apos;&gt;&#xA;      &lt;field type=&apos;hidden&apos; var=&apos;FORM_TYPE&apos;&gt;&#xA;        &lt;value&gt;http://jabber.org/protocol/muc#roomconfig&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field var=&apos;muc#roomconfig_getmemberlist&apos; type=&apos;list-multi&apos;&gt;&#xA;        &lt;value&gt;moderator&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;    &lt;/x&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.243 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;7e93db08d6442c9ee23afd74fb094c34&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#owner&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.243 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;2b81cb65a86c81266b0e90ccf9692aa6&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.627 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;2b81cb65a86c81266b0e90ccf9692aa6&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos; jid=&apos;kate@localhost&apos;&gt;&#xA;      &lt;reason/&gt;&#xA;    &lt;/item&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.628 ***</b>
+bob@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;51c7f1d2a6540fe42281b8e6d1523d61&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.633 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;51c7f1d2a6540fe42281b8e6d1523d61&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos; jid=&apos;kate@localhost&apos;&gt;&#xA;      &lt;reason/&gt;&#xA;    &lt;/item&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.634 ***</b>
+kate@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;420e299adedbc4c1c7930c2ebc6a0fe8&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.635 ***</b>
+kate@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;kate@localhost/res1&apos; id=&apos;420e299adedbc4c1c7930c2ebc6a0fe8&apos; type=&apos;error&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;  &lt;error code=&apos;403&apos; type=&apos;auth&apos;&gt;&#xA;    &lt;forbidden xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;/&gt;&#xA;    &lt;text xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;&gt;Administrator privileges required&lt;/text&gt;&#xA;  &lt;/error&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.635 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;9b9d54cfe4c5ac64cc2381a6dd8b05fc&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.803 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;9b9d54cfe4c5ac64cc2381a6dd8b05fc&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;none&apos; nick=&apos;bob&apos; jid=&apos;bob@localhost/res1&apos;/&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;owner&apos; nick=&apos;alice&apos; jid=&apos;alice@localhost/res1&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.803 ***</b>
+bob@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;6769a6ce8a6c8b48e30c250881fd4beb&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.804 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;6769a6ce8a6c8b48e30c250881fd4beb&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;none&apos; nick=&apos;bob&apos; jid=&apos;bob@localhost/res1&apos;/&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;owner&apos; nick=&apos;alice&apos; jid=&apos;alice@localhost/res1&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.804 ***</b>
+bob@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;e41b21e451705a4749302701a91580ed&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.805 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;e41b21e451705a4749302701a91580ed&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;none&apos; nick=&apos;bob&apos; jid=&apos;bob@localhost/res1&apos;/&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;owner&apos; nick=&apos;alice&apos; jid=&apos;alice@localhost/res1&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.805 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;set&apos; id=&apos;299c7d78bb0425e08f87541fe82a1639&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#owner&apos;&gt;&#xA;    &lt;x xmlns=&apos;jabber:x:data&apos; type=&apos;submit&apos;&gt;&#xA;      &lt;field type=&apos;hidden&apos; var=&apos;FORM_TYPE&apos;&gt;&#xA;        &lt;value&gt;http://jabber.org/protocol/muc#roomconfig&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field var=&apos;muc#roomconfig_getmemberlist&apos; type=&apos;list-multi&apos;&gt;&#xA;        &lt;value&gt;participant&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;    &lt;/x&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.975 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;299c7d78bb0425e08f87541fe82a1639&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#owner&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:00.975 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;a608b060eb8b6415aab1cc8c7ebfd7b1&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.361 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;a608b060eb8b6415aab1cc8c7ebfd7b1&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos; jid=&apos;kate@localhost&apos;&gt;&#xA;      &lt;reason/&gt;&#xA;    &lt;/item&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.361 ***</b>
+bob@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;6df57d8edc87eb2513122e59a9a6a087&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.363 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;6df57d8edc87eb2513122e59a9a6a087&apos; type=&apos;error&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;  &lt;error code=&apos;403&apos; type=&apos;auth&apos;&gt;&#xA;    &lt;forbidden xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;/&gt;&#xA;    &lt;text xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;&gt;Administrator privileges required&lt;/text&gt;&#xA;  &lt;/error&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.363 ***</b>
+kate@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;3b989a2c117be26a0a0e199045124e9c&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.366 ***</b>
+kate@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;kate@localhost/res1&apos; id=&apos;3b989a2c117be26a0a0e199045124e9c&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos; jid=&apos;kate@localhost&apos;&gt;&#xA;      &lt;reason/&gt;&#xA;    &lt;/item&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.366 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;bce9e2a640f8a76db1bb1cce28bff725&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.537 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;bce9e2a640f8a76db1bb1cce28bff725&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;none&apos; nick=&apos;bob&apos; jid=&apos;bob@localhost/res1&apos;/&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;owner&apos; nick=&apos;alice&apos; jid=&apos;alice@localhost/res1&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.537 ***</b>
+bob@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;d3d49ed06972128f20295e9f4d8e9950&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.542 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;d3d49ed06972128f20295e9f4d8e9950&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;none&apos; nick=&apos;bob&apos; jid=&apos;bob@localhost/res1&apos;/&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;owner&apos; nick=&apos;alice&apos; jid=&apos;alice@localhost/res1&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.542 ***</b>
+kate@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;979ae94c8b3d36d920c43d3a3e2d327f&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.543 ***</b>
+kate@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;kate@localhost/res1&apos; id=&apos;979ae94c8b3d36d920c43d3a3e2d327f&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;none&apos; nick=&apos;bob&apos; jid=&apos;bob@localhost/res1&apos;/&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;owner&apos; nick=&apos;alice&apos; jid=&apos;alice@localhost/res1&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.543 ***</b>
+kate@localhost/res1 out
+&lt;presence type=&apos;unavailable&apos; to=&apos;alicesroom@muc.localhost/kate&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.545 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/kate&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;unavailable&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item jid=&apos;kate@localhost/res1&apos; affiliation=&apos;member&apos; role=&apos;none&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.546 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/kate&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;unavailable&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item jid=&apos;kate@localhost/res1&apos; affiliation=&apos;member&apos; role=&apos;none&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.546 ***</b>
+kate@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/kate&apos; to=&apos;kate@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;unavailable&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos; role=&apos;none&apos;/&gt;&#xA;    &lt;status code=&apos;110&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.546 ***</b>
+kate@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;f0787c32ee1576f4575907a6650e3eeb&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.593 ***</b>
+kate@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;kate@localhost/res1&apos; id=&apos;f0787c32ee1576f4575907a6650e3eeb&apos; type=&apos;error&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;  &lt;error code=&apos;403&apos; type=&apos;auth&apos;&gt;&#xA;    &lt;forbidden xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;/&gt;&#xA;    &lt;text xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;&gt;Administrator privileges required&lt;/text&gt;&#xA;  &lt;/error&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.594 ***</b>
+kate@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;3cf598c151568c56009130c12ef8d708&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.771 ***</b>
+kate@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;kate@localhost/res1&apos; id=&apos;3cf598c151568c56009130c12ef8d708&apos; type=&apos;error&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;  &lt;error code=&apos;403&apos; type=&apos;auth&apos;&gt;&#xA;    &lt;forbidden xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;/&gt;&#xA;    &lt;text xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;&gt;Moderator privileges required&lt;/text&gt;&#xA;  &lt;/error&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.772 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;set&apos; id=&apos;4cbcb5aff0c59cb1fd41a5b7b8e89b7f&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#owner&apos;&gt;&#xA;    &lt;x xmlns=&apos;jabber:x:data&apos; type=&apos;submit&apos;&gt;&#xA;      &lt;field type=&apos;hidden&apos; var=&apos;FORM_TYPE&apos;&gt;&#xA;        &lt;value&gt;http://jabber.org/protocol/muc#roomconfig&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;      &lt;field var=&apos;muc#roomconfig_getmemberlist&apos; type=&apos;list-multi&apos;&gt;&#xA;        &lt;value&gt;visitor&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;    &lt;/x&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.774 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;4cbcb5aff0c59cb1fd41a5b7b8e89b7f&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#owner&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:01.774 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;2ad4576979d9e574c1ae0d81e6a6abdc&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:02.091 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;2ad4576979d9e574c1ae0d81e6a6abdc&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos; jid=&apos;kate@localhost&apos;&gt;&#xA;      &lt;reason/&gt;&#xA;    &lt;/item&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:02.091 ***</b>
+bob@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;0225cc435729aeb9501e6f8187b58e4d&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:02.092 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;0225cc435729aeb9501e6f8187b58e4d&apos; type=&apos;error&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;  &lt;error code=&apos;403&apos; type=&apos;auth&apos;&gt;&#xA;    &lt;forbidden xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;/&gt;&#xA;    &lt;text xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;&gt;Administrator privileges required&lt;/text&gt;&#xA;  &lt;/error&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:02.092 ***</b>
+kate@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;87760894e1ebbb7b05fb4663f922727e&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:02.097 ***</b>
+kate@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;kate@localhost/res1&apos; id=&apos;87760894e1ebbb7b05fb4663f922727e&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item affiliation=&apos;member&apos; jid=&apos;kate@localhost&apos;&gt;&#xA;      &lt;reason/&gt;&#xA;    &lt;/item&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:02.098 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;b1c9e4ddbf889db232263d3490bb95b0&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:02.268 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;b1c9e4ddbf889db232263d3490bb95b0&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;none&apos; nick=&apos;bob&apos; jid=&apos;bob@localhost/res1&apos;/&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;owner&apos; nick=&apos;alice&apos; jid=&apos;alice@localhost/res1&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:02.268 ***</b>
+bob@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;1944faa59dc62497c55d15281f280a75&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:02.269 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;1944faa59dc62497c55d15281f280a75&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;none&apos; nick=&apos;bob&apos; jid=&apos;bob@localhost/res1&apos;/&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;owner&apos; nick=&apos;alice&apos; jid=&apos;alice@localhost/res1&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:02.269 ***</b>
+kate@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;de9e53ebd595488c03a1596093f96048&apos; to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:26:02.273 ***</b>
+kate@localhost/res1 in
+&lt;iq from=&apos;alicesroom@muc.localhost&apos; to=&apos;kate@localhost/res1&apos; id=&apos;de9e53ebd595488c03a1596093f96048&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/muc#admin&apos;&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;none&apos; nick=&apos;bob&apos; jid=&apos;bob@localhost/res1&apos;/&gt;&#xA;    &lt;item role=&apos;moderator&apos; affiliation=&apos;owner&apos; nick=&apos;alice&apos; jid=&apos;alice@localhost/res1&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 12:26:02
+=== successfully completed test case
+=== returned value = ok
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 13 2016 12:25:56<!/date><br />
+</div>
+</center>
+</body>
+</html>

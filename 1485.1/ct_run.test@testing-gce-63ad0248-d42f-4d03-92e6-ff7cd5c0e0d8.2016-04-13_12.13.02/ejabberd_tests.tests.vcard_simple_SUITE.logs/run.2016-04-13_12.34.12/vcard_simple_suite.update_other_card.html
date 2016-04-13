@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test vcard_simple_SUITE:update_other_card result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="vcard_simple_suite.src.html#update_other_card-1">vcard_simple_SUITE:update_other_card/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.24140.0>},
+     {preset,"internal_redis"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.vcard_simple_SUITE.logs/run.2016-04-13_12.34.12/vcard_simple_suite.update_other_card.html"},
+     {tc_group_properties,[{name,all},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/vcard_simple_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.vcard_simple_SUITE.logs/run.2016-04-13_12.34.12/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alice">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bob">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02"
+
+=== Started at 2016-04-13 12:34:14
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:34:14.453 ***</b>
+alice@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:34:14.532 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alice@localhost/res1&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:34:14.714 ***</b>
+bob@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:34:14.790 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;bob@localhost/res1&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:34:14.791 ***</b>
+bob@localhost/res1 out
+&lt;iq to=&apos;alice@localhost&apos; type=&apos;set&apos; id=&apos;2960e5e7d84d036a475d1f0852f3524d&apos;&gt;&#xA;  &lt;vCard xmlns=&apos;vcard-temp&apos;&gt;&#xA;    &lt;FN&gt;New name&lt;/FN&gt;&#xA;  &lt;/vCard&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:34:14.792 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;alice@localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;2960e5e7d84d036a475d1f0852f3524d&apos; type=&apos;error&apos;&gt;&#xA;  &lt;vCard xmlns=&apos;vcard-temp&apos;&gt;&#xA;    &lt;FN&gt;New name&lt;/FN&gt;&#xA;  &lt;/vCard&gt;&#xA;  &lt;error code=&apos;405&apos; type=&apos;cancel&apos;&gt;&#xA;    &lt;not-allowed xmlns=&apos;urn:ietf:params:xml:ns:xmpp-stanzas&apos;/&gt;&#xA;  &lt;/error&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:34:14.792 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;8d2c9f2801adcaa8da9e63b59e76ae35&apos;&gt;&#xA;  &lt;vCard xmlns=&apos;vcard-temp&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:34:14.793 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alice@localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;8d2c9f2801adcaa8da9e63b59e76ae35&apos; type=&apos;result&apos;&gt;&#xA;  &lt;vCard xmlns=&apos;vcard-temp&apos;&gt;&#xA;    &lt;FN&gt;Old Name&lt;/FN&gt;&#xA;  &lt;/vCard&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 12:34:15
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.24166.0>},
+                      {tc_name,update_other_card},
+                      {escalus_cleaner,<0.24165.0>},
+                      {watchdog,<0.24164.0>},
+                      {preset,"internal_redis"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.vcard_simple_SUITE.logs/run.2016-04-13_12.34.12/vcard_simple_suite.update_other_card.html"},
+                      {tc_group_properties,[{name,all},sequence]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/vcard_simple_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.vcard_simple_SUITE.logs/run.2016-04-13_12.34.12/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alice">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                           {bob,
+                               [{username,<<"bob">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 13 2016 12:34:14<!/date><br />
+</div>
+</center>
+</body>
+</html>

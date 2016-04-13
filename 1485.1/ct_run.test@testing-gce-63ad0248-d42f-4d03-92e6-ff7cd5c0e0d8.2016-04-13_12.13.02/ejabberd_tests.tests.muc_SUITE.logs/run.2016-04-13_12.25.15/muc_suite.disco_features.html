@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test muc_SUITE:disco_features result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="muc_suite.src.html#disco_features-1">muc_SUITE:disco_features/1</a> (click for source code)
+
+=== Config value:
+
+    [{nick,<<"aliceonchat">>},
+     {room,<<"alicesroom">>},
+     {watchdog,<0.19060.0>},
+     {preset,"internal_redis"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.muc_SUITE.logs/run.2016-04-13_12.25.15/muc_suite.disco_features.html"},
+     {tc_group_properties,[{name,disco}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/muc_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.muc_SUITE.logs/run.2016-04-13_12.25.15/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alice">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bob">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02"
+
+=== Started at 2016-04-13 12:25:16
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:16.726 ***</b>
+alice@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:16.805 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alice@localhost/res1&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:16.805 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;66d970bb0465eb378bb3d4d7447a615d&apos; to=&apos;muc.localhost&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/disco#info&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:16.807 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;muc.localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;66d970bb0465eb378bb3d4d7447a615d&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/disco#info&apos;&gt;&#xA;    &lt;identity category=&apos;conference&apos; type=&apos;text&apos; name=&apos;Chatrooms&apos;/&gt;&#xA;    &lt;feature var=&apos;http://jabber.org/protocol/disco#info&apos;/&gt;&#xA;    &lt;feature var=&apos;http://jabber.org/protocol/disco#items&apos;/&gt;&#xA;    &lt;feature var=&apos;http://jabber.org/protocol/muc&apos;/&gt;&#xA;    &lt;feature var=&apos;http://jabber.org/protocol/muc#unique&apos;/&gt;&#xA;    &lt;feature var=&apos;jabber:iq:register&apos;/&gt;&#xA;    &lt;feature var=&apos;http://jabber.org/protocol/rsm&apos;/&gt;&#xA;    &lt;feature var=&apos;vcard-temp&apos;/&gt;&#xA;    &lt;x xmlns=&apos;jabber:x:data&apos; type=&apos;result&apos;&gt;&#xA;      &lt;field var=&apos;FORM_TYPE&apos; type=&apos;hidden&apos;&gt;&#xA;        &lt;value&gt;http://jabber.org/network/serverinfo&lt;/value&gt;&#xA;      &lt;/field&gt;&#xA;    &lt;/x&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 12:25:17
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.19076.0>},
+                      {tc_name,disco_features},
+                      {escalus_cleaner,<0.19075.0>},
+                      {watchdog,<0.19074.0>},
+                      {nick,<<"aliceonchat">>},
+                      {room,<<"alicesroom">>},
+                      {preset,"internal_redis"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.muc_SUITE.logs/run.2016-04-13_12.25.15/muc_suite.disco_features.html"},
+                      {tc_group_properties,[{name,disco}]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/muc_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.muc_SUITE.logs/run.2016-04-13_12.25.15/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alice">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                           {bob,
+                               [{username,<<"bob">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 13 2016 12:25:16<!/date><br />
+</div>
+</center>
+</body>
+</html>

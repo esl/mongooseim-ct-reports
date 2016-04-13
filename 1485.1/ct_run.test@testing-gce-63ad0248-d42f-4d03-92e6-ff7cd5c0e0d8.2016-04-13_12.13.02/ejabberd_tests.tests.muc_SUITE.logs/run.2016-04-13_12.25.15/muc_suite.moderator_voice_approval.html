@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test muc_SUITE:moderator_voice_approval result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="muc_suite.src.html#moderator_voice_approval-1">muc_SUITE:moderator_voice_approval/1</a> (click for source code)
+
+=== Config value:
+
+    [{nick,<<"alicesnick">>},
+     {room,<<"alicesroom">>},
+     {watchdog,<0.19186.0>},
+     {preset,"internal_redis"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.muc_SUITE.logs/run.2016-04-13_12.25.15/muc_suite.moderator_voice_approval.html"},
+     {tc_group_properties,[{name,moderator}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/muc_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.muc_SUITE.logs/run.2016-04-13_12.25.15/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alice">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bob">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]},
+                     {kate,[{username,<<"kate">>},
+                            {server,<<"localhost">>},
+                            {password,<<"makrowe;p">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02"
+
+=== Started at 2016-04-13 12:25:35
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.053 ***</b>
+alice@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.132 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alice@localhost/res1&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.310 ***</b>
+bob@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.391 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;bob@localhost/res1&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.391 ***</b>
+alice@localhost/res1 out
+&lt;presence to=&apos;alicesroom@muc.localhost/alice&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.398 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/alice&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item jid=&apos;alice@localhost/res1&apos; affiliation=&apos;owner&apos; role=&apos;moderator&apos;/&gt;&#xA;    &lt;status code=&apos;110&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.398 ***</b>
+alice@localhost/res1 in
+&lt;message from=&apos;alicesroom@muc.localhost/alice&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;groupchat&apos;&gt;&#xA;  &lt;subject&gt;Lets have a chat!&lt;/subject&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;alicesroom@muc.localhost&apos; stamp=&apos;2016-04-13T12:25:25Z&apos;/&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.398 ***</b>
+bob@localhost/res1 out
+&lt;presence to=&apos;alicesroom@muc.localhost/bob&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.400 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/alice&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item affiliation=&apos;owner&apos; role=&apos;moderator&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.401 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/bob&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item affiliation=&apos;none&apos; role=&apos;visitor&apos;/&gt;&#xA;    &lt;status code=&apos;110&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.401 ***</b>
+bob@localhost/res1 in
+&lt;message from=&apos;alicesroom@muc.localhost/alice&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;groupchat&apos;&gt;&#xA;  &lt;subject&gt;Lets have a chat!&lt;/subject&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;alicesroom@muc.localhost&apos; stamp=&apos;2016-04-13T12:25:25Z&apos;/&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.401 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/bob&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item jid=&apos;bob@localhost/res1&apos; affiliation=&apos;none&apos; role=&apos;visitor&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.401 ***</b>
+bob@localhost/res1 out
+&lt;message to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;x xmlns=&apos;jabber:x:data&apos; type=&apos;submit&apos;&gt;&#xA;    &lt;field type=&apos;hidden&apos; var=&apos;FORM_TYPE&apos;&gt;&#xA;      &lt;value&gt;http://jabber.org/protocol/muc#request&lt;/value&gt;&#xA;    &lt;/field&gt;&#xA;    &lt;field type=&apos;text-single&apos; var=&apos;muc#role&apos;&gt;&#xA;      &lt;value&gt;participant&lt;/value&gt;&#xA;    &lt;/field&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.439 ***</b>
+alice@localhost/res1 in
+&lt;message from=&apos;alicesroom@muc.localhost&apos; to=&apos;alice@localhost/res1&apos;&gt;&#xA;  &lt;x xmlns=&apos;jabber:x:data&apos; type=&apos;form&apos;&gt;&#xA;    &lt;title&gt;Voice request&lt;/title&gt;&#xA;    &lt;instructions&gt;To approve this request for voice, select the &amp;quot;Grant voice to this person?&amp;quot; checkbox and click OK. To skip this request, click the cancel button.&lt;/instructions&gt;&#xA;    &lt;field var=&apos;FORM_TYPE&apos; type=&apos;hidden&apos;&gt;&#xA;      &lt;value&gt;http://jabber.org/protocol/muc#request&lt;/value&gt;&#xA;    &lt;/field&gt;&#xA;    &lt;field var=&apos;muc#role&apos; type=&apos;text-single&apos; label=&apos;Request role&apos;&gt;&#xA;      &lt;value&gt;participant&lt;/value&gt;&#xA;    &lt;/field&gt;&#xA;    &lt;field var=&apos;muc#jid&apos; type=&apos;jid-single&apos; label=&apos;User ID&apos;&gt;&#xA;      &lt;value&gt;bob@localhost/res1&lt;/value&gt;&#xA;    &lt;/field&gt;&#xA;    &lt;field var=&apos;muc#roomnick&apos; type=&apos;text-single&apos; label=&apos;Room Nickname&apos;&gt;&#xA;      &lt;value&gt;bob&lt;/value&gt;&#xA;    &lt;/field&gt;&#xA;    &lt;field var=&apos;muc#request_allow&apos; type=&apos;boolean&apos; label=&apos;Grant voice to this person?&apos;&gt;&#xA;      &lt;value&gt;false&lt;/value&gt;&#xA;    &lt;/field&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.440 ***</b>
+alice@localhost/res1 out
+&lt;message to=&apos;alicesroom@muc.localhost&apos;&gt;&#xA;  &lt;x xmlns=&apos;jabber:x:data&apos; type=&apos;submit&apos;&gt;&#xA;    &lt;field type=&apos;hidden&apos; var=&apos;FORM_TYPE&apos;&gt;&#xA;      &lt;value&gt;http://jabber.org/protocol/muc#request&lt;/value&gt;&#xA;    &lt;/field&gt;&#xA;    &lt;field type=&apos;text-single&apos; var=&apos;muc#role&apos;&gt;&#xA;      &lt;value&gt;participant&lt;/value&gt;&#xA;    &lt;/field&gt;&#xA;    &lt;field type=&apos;jid-single&apos; var=&apos;muc#jid&apos;&gt;&#xA;      &lt;value&gt;bob@localhost&lt;/value&gt;&#xA;    &lt;/field&gt;&#xA;    &lt;field type=&apos;text-single&apos; var=&apos;muc#roomnick&apos;&gt;&#xA;      &lt;value&gt;bob&lt;/value&gt;&#xA;    &lt;/field&gt;&#xA;    &lt;field type=&apos;boolean&apos; var=&apos;muc#request_allow&apos;&gt;&#xA;      &lt;value&gt;true&lt;/value&gt;&#xA;    &lt;/field&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 12:25:36.441 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;alicesroom@muc.localhost/bob&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;x xmlns=&apos;http://jabber.org/protocol/muc#user&apos;&gt;&#xA;    &lt;item affiliation=&apos;none&apos; role=&apos;participant&apos;/&gt;&#xA;    &lt;status code=&apos;110&apos;/&gt;&#xA;  &lt;/x&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 12:25:36
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.19259.0>},
+                      {tc_name,moderator_voice_approval},
+                      {escalus_cleaner,<0.19258.0>},
+                      {watchdog,<0.19257.0>},
+                      {nick,<<"alicesnick">>},
+                      {room,<<"alicesroom">>},
+                      {preset,"internal_redis"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.muc_SUITE.logs/run.2016-04-13_12.25.15/muc_suite.moderator_voice_approval.html"},
+                      {tc_group_properties,[{name,moderator}]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/muc_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-63ad0248-d42f-4d03-92e6-ff7cd5c0e0d8.2016-04-13_12.13.02/ejabberd_tests.tests.muc_SUITE.logs/run.2016-04-13_12.25.15/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alice">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                           {bob,
+                               [{username,<<"bob">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]},
+                           {kate,
+                               [{username,<<"kate">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrowe;p">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 13 2016 12:25:35<!/date><br />
+</div>
+</center>
+</body>
+</html>
