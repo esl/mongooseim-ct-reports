@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test carboncopy_SUITE:unavailable_resources_dont_get_carbons result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="carboncopy_suite.src.html#unavailable_resources_dont_get_carbons-1">carboncopy_SUITE:unavailable_resources_dont_get_carbons/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.14398.0>},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-04-13_14.56.57/carboncopy_suite.unavailable_resources_dont_get_carbons.559417.479.html"},
+     {tc_group_properties,[{shuffle,{1460,559417,453113}},
+                           {suite,carboncopy_SUITE},
+                           {name,all},
+                           parallel]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/carboncopy_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-04-13_14.56.57/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26"
+
+=== Started at 2016-04-13 14:56:57
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.177 ***</b>
+alice17.485887@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.256 ***</b>
+alice17.485887@localhost/res1 in
+&lt;presence from=&apos;alice17.485887@localhost/res1&apos; to=&apos;alice17.485887@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.440 ***</b>
+alice17.485887@localhost/res2 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.519 ***</b>
+alice17.485887@localhost/res2 in
+&lt;presence from=&apos;alice17.485887@localhost/res2&apos; to=&apos;alice17.485887@localhost/res2&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.520 ***</b>
+alice17.485887@localhost/res2 in
+&lt;presence from=&apos;alice17.485887@localhost/res1&apos; to=&apos;alice17.485887@localhost/res2&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;alice17.485887@localhost/res1&apos; stamp=&apos;2016-04-13T14:56:58Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.520 ***</b>
+alice17.485887@localhost/res1 in
+&lt;presence from=&apos;alice17.485887@localhost/res2&apos; to=&apos;alice17.485887@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.705 ***</b>
+bob17.485887@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.783 ***</b>
+bob17.485887@localhost/res1 in
+&lt;presence from=&apos;bob17.485887@localhost/res1&apos; to=&apos;bob17.485887@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.783 ***</b>
+alice17.485887@localhost/res1 out
+&lt;iq xmlns=&apos;jabber:client&apos; type=&apos;set&apos;&gt;&#xA;  &lt;enable xmlns=&apos;urn:xmpp:carbons:2&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.785 ***</b>
+alice17.485887@localhost/res1 in
+&lt;iq from=&apos;alice17.485887@localhost&apos; to=&apos;alice17.485887@localhost/res1&apos; id=&apos;&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.786 ***</b>
+alice17.485887@localhost/res2 out
+&lt;iq xmlns=&apos;jabber:client&apos; type=&apos;set&apos;&gt;&#xA;  &lt;enable xmlns=&apos;urn:xmpp:carbons:2&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.787 ***</b>
+alice17.485887@localhost/res2 in
+&lt;iq from=&apos;alice17.485887@localhost&apos; to=&apos;alice17.485887@localhost/res2&apos; id=&apos;&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.787 ***</b>
+alice17.485887@localhost/res1 out
+&lt;presence type=&apos;unavailable&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.888 ***</b>
+alice17.485887@localhost/res2 in
+&lt;presence from=&apos;alice17.485887@localhost/res1&apos; to=&apos;alice17.485887@localhost/res2&apos; xml:lang=&apos;en&apos; type=&apos;unavailable&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.888 ***</b>
+bob17.485887@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice17.485887@localhost/res2&apos;&gt;&#xA;  &lt;body&gt;one&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.888 ***</b>
+alice17.485887@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 14:56:59
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.14432.0>},
+                      {tc_name,unavailable_resources_dont_get_carbons},
+                      {escalus_cleaner,<0.14431.0>},
+                      {watchdog,<0.14429.0>},
+                      {preset,"internal_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-04-13_14.56.57/carboncopy_suite.unavailable_resources_dont_get_carbons.559417.479.html"},
+                      {tc_group_properties,
+                          [{shuffle,{1460,559417,453113}},
+                           {suite,carboncopy_SUITE},
+                           {name,all},
+                           parallel]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/carboncopy_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-04-13_14.56.57/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alice17.485887">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                           {bob,
+                               [{username,<<"bob17.485887">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]}]}]

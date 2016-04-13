@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test login_SUITE:log_one_digest result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="login_suite.src.html#log_one_digest-1">login_SUITE:log_one_digest/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.16842.0>},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.login_SUITE.logs/run.2016-04-13_15.00.27/login_suite.log_one_digest.html"},
+     {tc_group_properties,[{name,login},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/login_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.login_SUITE.logs/run.2016-04-13_15.00.27/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alice">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bob">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26"
+
+=== Started at 2016-04-13 15:00:46
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:00:47.366 ***</b>
+alice@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:00:47.443 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alice@localhost/res1&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:00:47.443 ***</b>
+alice@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi!&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:00:47.444 ***</b>
+alice@localhost/res1 in
+&lt;message from=&apos;alice@localhost/res1&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi!&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 15:00:47
+=== successfully completed test case
+=== returned value = [{escalus_auth_method,<<"DIGEST-MD5">>},
+                      {escalus_event_mgr,<0.16863.0>},
+                      {tc_name,log_one_digest},
+                      {escalus_cleaner,<0.16862.0>},
+                      {watchdog,<0.16860.0>},
+                      {preset,"internal_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.login_SUITE.logs/run.2016-04-13_15.00.27/login_suite.log_one_digest.html"},
+                      {tc_group_properties,[{name,login},sequence]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/login_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.login_SUITE.logs/run.2016-04-13_15.00.27/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alice">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                           {bob,
+                               [{username,<<"bob">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 13 2016 15:00:46<!/date><br />
+</div>
+</center>
+</body>
+</html>

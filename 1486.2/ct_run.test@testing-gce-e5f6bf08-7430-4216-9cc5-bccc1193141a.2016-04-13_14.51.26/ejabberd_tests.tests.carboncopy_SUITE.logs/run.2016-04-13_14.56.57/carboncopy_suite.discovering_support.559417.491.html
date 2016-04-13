@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test carboncopy_SUITE:discovering_support result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="carboncopy_suite.src.html#discovering_support-1">carboncopy_SUITE:discovering_support/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.14398.0>},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-04-13_14.56.57/carboncopy_suite.discovering_support.559417.491.html"},
+     {tc_group_properties,[{shuffle,{1460,559417,453113}},
+                           {suite,carboncopy_SUITE},
+                           {name,all},
+                           parallel]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/carboncopy_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-04-13_14.56.57/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26"
+
+=== Started at 2016-04-13 14:56:57
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:57.955 ***</b>
+alice17.518587@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.037 ***</b>
+alice17.518587@localhost/res1 in
+&lt;presence from=&apos;alice17.518587@localhost/res1&apos; to=&apos;alice17.518587@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.037 ***</b>
+alice17.518587@localhost/res1 out
+&lt;iq to=&apos;localhost&apos; type=&apos;get&apos; id=&apos;a8b58ee6341b3a54e9134e79657cc81e&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/disco#info&apos;/&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.039 ***</b>
+alice17.518587@localhost/res1 in
+&lt;iq from=&apos;localhost&apos; to=&apos;alice17.518587@localhost/res1&apos; id=&apos;a8b58ee6341b3a54e9134e79657cc81e&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;http://jabber.org/protocol/disco#info&apos;&gt;&#xA;    &lt;identity category=&apos;server&apos; type=&apos;im&apos; name=&apos;ejabberd&apos;/&gt;&#xA;    &lt;feature var=&apos;erlang-solutions.com:xmpp:token-auth:0&apos;/&gt;&#xA;    &lt;feature var=&apos;http://jabber.org/protocol/amp&apos;/&gt;&#xA;    &lt;feature var=&apos;http://jabber.org/protocol/commands&apos;/&gt;&#xA;    &lt;feature var=&apos;http://jabber.org/protocol/disco#info&apos;/&gt;&#xA;    &lt;feature var=&apos;http://jabber.org/protocol/disco#items&apos;/&gt;&#xA;    &lt;feature var=&apos;iq&apos;/&gt;&#xA;    &lt;feature var=&apos;jabber:iq:last&apos;/&gt;&#xA;    &lt;feature var=&apos;jabber:iq:register&apos;/&gt;&#xA;    &lt;feature var=&apos;msgoffline&apos;/&gt;&#xA;    &lt;feature var=&apos;presence&apos;/&gt;&#xA;    &lt;feature var=&apos;presence-invisible&apos;/&gt;&#xA;    &lt;feature var=&apos;urn:xmpp:carbons:1&apos;/&gt;&#xA;    &lt;feature var=&apos;urn:xmpp:carbons:2&apos;/&gt;&#xA;    &lt;feature var=&apos;urn:xmpp:sic:1&apos;/&gt;&#xA;    &lt;feature var=&apos;vcard-temp&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 14:56:58
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.14481.0>},
+                      {tc_name,discovering_support},
+                      {escalus_cleaner,<0.14480.0>},
+                      {watchdog,<0.14476.0>},
+                      {preset,"internal_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-04-13_14.56.57/carboncopy_suite.discovering_support.559417.491.html"},
+                      {tc_group_properties,
+                          [{shuffle,{1460,559417,453113}},
+                           {suite,carboncopy_SUITE},
+                           {name,all},
+                           parallel]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/carboncopy_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-04-13_14.56.57/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alice17.518587">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]}]}]

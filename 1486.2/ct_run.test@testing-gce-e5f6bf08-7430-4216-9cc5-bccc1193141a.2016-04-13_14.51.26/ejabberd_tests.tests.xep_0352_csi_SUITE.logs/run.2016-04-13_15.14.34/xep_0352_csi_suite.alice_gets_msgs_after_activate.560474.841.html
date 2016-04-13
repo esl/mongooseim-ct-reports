@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test xep_0352_csi_SUITE:alice_gets_msgs_after_activate result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="xep_0352_csi_suite.src.html#alice_gets_msgs_after_activate-1">xep_0352_csi_SUITE:alice_gets_msgs_after_activate/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.26412.0>},
+     {escalus_user_db,{module,escalus_ejabberd}},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.xep_0352_csi_SUITE.logs/run.2016-04-13_15.14.34/xep_0352_csi_suite.alice_gets_msgs_after_activate.560474.841.html"},
+     {tc_group_properties,[{shuffle,{1460,560474,799282}},
+                           {name,basic},
+                           parallel]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/xep_0352_csi_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.xep_0352_csi_SUITE.logs/run.2016-04-13_15.14.34/log_private/"},
+     {escalus_users,[{alice,[{stream_management,true},
+                             {username,<<"alice">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bob">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]},
+                     {carol,[{username,<<"carol">>},
+                             {server,<<"localhost">>},
+                             {password,<<"jinglebells">>},
+                             {transport,bosh},
+                             {path,<<"/http-bind">>},
+                             {port,5280}]},
+                     {carol_s,[{username,<<"carol_s">>},
+                               {server,<<"localhost">>},
+                               {password,<<"jinglebells_s">>},
+                               {transport,bosh},
+                               {ssl,true},
+                               {path,<<"/http-bind">>},
+                               {port,5285}]},
+                     {kate,[{username,<<"kate">>},
+                            {server,<<"localhost">>},
+                            {password,<<"makrowe;p">>}]},
+                     {mike,[{username,<<"mike">>},
+                            {server,<<"localhost">>},
+                            {password,<<"nicniema">>}]},
+                     {geralt,[{username,<<"geralt">>},
+                              {server,<<"localhost">>},
+                              {password,<<"witcher">>},
+                              {transport,ws},
+                              {port,5280},
+                              {wspath,<<"/ws-xmpp">>}]},
+                     {geralt_s,[{username,<<"geralt_s">>},
+                                {server,<<"localhost">>},
+                                {password,<<"witcher_s">>},
+                                {transport,ws},
+                                {ssl,true},
+                                {port,5285},
+                                {wspath,<<"/ws-xmpp">>}]},
+                     {hacker,[{username,<<"hacker">>},
+                              {server,<<"localhost">>},
+                              {password,<<"bringdowntheserver">>},
+                              {compression,<<"zlib">>},
+                              {port,5223}]},
+                     {oldie,[{username,<<"oldie">>},
+                             {server,<<"localhost">>},
+                             {password,<<"legacy">>},
+                             {transport,ws},
+                             {port,5280},
+                             {wspath,<<"/ws-xmpp">>},
+                             {wslegacy,true}]},
+                     {admin,[{username,<<"admin">>},
+                             {server,<<"localhost">>},
+                             {password,<<"bruce_almighty">>}]},
+                     {secure_joe,[{username,<<"secure_joe">>},
+                                  {server,<<"localhost">>},
+                                  {password,<<"break_me">>},
+                                  {compression,<<"zlib">>},
+                                  {starttls,required}]},
+                     {astrid,[{username,<<"astrid">>},
+                              {server,<<"sogndal">>},
+                              {host,<<"localhost">>},
+                              {password,<<"doctor">>}]},
+                     {alice2,[{username,<<"alice">>},
+                              {server,<<"fed1">>},
+                              {host,<<"localhost">>},
+                              {port,5242},
+                              {password,<<"makota2">>}]},
+                     {bob2,[{username,<<"bob">>},
+                            {server,<<109,105,99,104,97,197,130>>},
+                            {host,<<"localhost">>},
+                            {port,5242},
+                            {password,<<"makota3">>}]},
+                     {clusterguy,[{username,<<"clusterguy">>},
+                                  {server,<<"localhost">>},
+                                  {host,<<"localhost">>},
+                                  {password,<<"distributionftw">>},
+                                  {port,5232}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26"
+
+=== Started at 2016-04-13 15:14:34
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:14:35.129 ***</b>
+alice74.859783@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:14:35.132 ***</b>
+alice74.859783@localhost/res1 in
+&lt;presence from=&apos;alice74.859783@localhost/res1&apos; to=&apos;alice74.859783@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:14:35.316 ***</b>
+bob74.859783@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:14:35.393 ***</b>
+bob74.859783@localhost/res1 in
+&lt;presence from=&apos;bob74.859783@localhost/res1&apos; to=&apos;bob74.859783@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:14:35.394 ***</b>
+alice74.859783@localhost/res1 out
+&lt;inactive xmlns=&apos;urn:xmpp:csi:0&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:14:36.395 ***</b>
+bob74.859783@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice74.859783@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Alice1&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:14:37.396 ***</b>
+alice74.859783@localhost/res1 out
+&lt;active xmlns=&apos;urn:xmpp:csi:0&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:14:37.403 ***</b>
+alice74.859783@localhost/res1 in
+&lt;message from=&apos;bob74.859783@localhost/res1&apos; to=&apos;alice74.859783@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Alice1&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 15:14:37
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.26496.0>},
+                      {tc_name,alice_gets_msgs_after_activate},
+                      {escalus_cleaner,<0.26495.0>},
+                      {watchdog,<0.26494.0>},
+                      {escalus_user_db,{module,escalus_ejabberd}},
+                      {preset,"internal_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.xep_0352_csi_SUITE.logs/run.2016-04-13_15.14.34/xep_0352_csi_suite.alice_gets_msgs_after_activate.560474.841.html"},
+                      {tc_group_properties,
+                          [{shuffle,{1460,560474,799282}},
+                           {name,basic},
+                           parallel]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/xep_0352_csi_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.xep_0352_csi_SUITE.logs/run.2016-04-13_15.14.34/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{stream_management,true},
+                                {username,<<"alice74.859783">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                           {bob,
+                               [{username,<<"bob74.859783">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]}]}]

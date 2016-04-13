@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test carboncopy_SUITE:non_enabled_clients_dont_get_sent_carbons result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="carboncopy_suite.src.html#non_enabled_clients_dont_get_sent_carbons-1">carboncopy_SUITE:non_enabled_clients_dont_get_sent_carbons/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.14398.0>},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-04-13_14.56.57/carboncopy_suite.non_enabled_clients_dont_get_sent_carbons.559417.481.html"},
+     {tc_group_properties,[{shuffle,{1460,559417,453113}},
+                           {suite,carboncopy_SUITE},
+                           {name,all},
+                           parallel]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/carboncopy_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-04-13_14.56.57/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26"
+
+=== Started at 2016-04-13 14:56:57
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.177 ***</b>
+alice17.486067@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.255 ***</b>
+alice17.486067@localhost/res1 in
+&lt;presence from=&apos;alice17.486067@localhost/res1&apos; to=&apos;alice17.486067@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.440 ***</b>
+alice17.486067@localhost/res2 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.518 ***</b>
+alice17.486067@localhost/res2 in
+&lt;presence from=&apos;alice17.486067@localhost/res2&apos; to=&apos;alice17.486067@localhost/res2&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.519 ***</b>
+alice17.486067@localhost/res2 in
+&lt;presence from=&apos;alice17.486067@localhost/res1&apos; to=&apos;alice17.486067@localhost/res2&apos; xml:lang=&apos;en&apos;&gt;&#xA;  &lt;delay xmlns=&apos;urn:xmpp:delay&apos; from=&apos;alice17.486067@localhost/res1&apos; stamp=&apos;2016-04-13T14:56:58Z&apos;/&gt;&#xA;&lt;/presence&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.519 ***</b>
+alice17.486067@localhost/res1 in
+&lt;presence from=&apos;alice17.486067@localhost/res2&apos; to=&apos;alice17.486067@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.704 ***</b>
+bob17.486067@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.782 ***</b>
+bob17.486067@localhost/res1 in
+&lt;presence from=&apos;bob17.486067@localhost/res1&apos; to=&apos;bob17.486067@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.782 ***</b>
+alice17.486067@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;bob17.486067@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;And pious action&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 14:56:58.785 ***</b>
+bob17.486067@localhost/res1 in
+&lt;message from=&apos;alice17.486067@localhost/res1&apos; to=&apos;bob17.486067@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;And pious action&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 14:57:00
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.14434.0>},
+                      {tc_name,non_enabled_clients_dont_get_sent_carbons},
+                      {escalus_cleaner,<0.14433.0>},
+                      {watchdog,<0.14430.0>},
+                      {preset,"internal_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-04-13_14.56.57/carboncopy_suite.non_enabled_clients_dont_get_sent_carbons.559417.481.html"},
+                      {tc_group_properties,
+                          [{shuffle,{1460,559417,453113}},
+                           {suite,carboncopy_SUITE},
+                           {name,all},
+                           parallel]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/carboncopy_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.carboncopy_SUITE.logs/run.2016-04-13_14.56.57/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alice17.486067">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                           {bob,
+                               [{username,<<"bob17.486067">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]}]}]

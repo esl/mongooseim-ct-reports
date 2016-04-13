@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test privacy_SUITE:allow_subscription_to_from_message result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="privacy_suite.src.html#allow_subscription_to_from_message-1">privacy_SUITE:allow_subscription_to_from_message/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.21377.0>},
+     {escalus_no_stanzas_after_story,true},
+     {preset,"internal_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.privacy_SUITE.logs/run.2016-04-13_15.07.10/privacy_suite.allow_subscription_to_from_message.html"},
+     {tc_group_properties,[{name,allowing},sequence]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/privacy_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.privacy_SUITE.logs/run.2016-04-13_15.07.10/log_private/"},
+     {escalus_users,[{alice,[{username,<<"alice">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bob">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26"
+
+=== Started at 2016-04-13 15:07:35
+
+<br />
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.507 ***</b>
+alice@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.583 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;alice@localhost/res1&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.761 ***</b>
+bob@localhost/res1 out
+&lt;presence/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.839 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;bob@localhost/res1&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.839 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;set&apos; id=&apos;f19f21bfac8529c19efc10dcf4c96def&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:privacy&apos;&gt;&#xA;    &lt;list name=&apos;deny_all_message_but_subscription_to&apos;&gt;&#xA;      &lt;item order=&apos;1&apos; type=&apos;subscription&apos; value=&apos;to&apos; action=&apos;allow&apos;&gt;&#xA;        &lt;message/&gt;&#xA;      &lt;/item&gt;&#xA;      &lt;item order=&apos;2&apos; action=&apos;deny&apos;&gt;&#xA;        &lt;message/&gt;&#xA;      &lt;/item&gt;&#xA;    &lt;/list&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.840 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alice@localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;pushECD0E87B9E1A4939&apos; type=&apos;set&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:privacy&apos;&gt;&#xA;    &lt;list name=&apos;deny_all_message_but_subscription_to&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.841 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alice@localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;f19f21bfac8529c19efc10dcf4c96def&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.841 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;d145fe466b322391df33aea96c3b259a&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:privacy&apos;&gt;&#xA;    &lt;list name=&apos;deny_all_message_but_subscription_to&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.842 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alice@localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;d145fe466b322391df33aea96c3b259a&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:privacy&apos;&gt;&#xA;    &lt;list name=&apos;deny_all_message_but_subscription_to&apos;&gt;&#xA;      &lt;item type=&apos;subscription&apos; value=&apos;to&apos; action=&apos;allow&apos; order=&apos;1&apos;&gt;&#xA;        &lt;message/&gt;&#xA;      &lt;/item&gt;&#xA;      &lt;item action=&apos;deny&apos; order=&apos;2&apos;&gt;&#xA;        &lt;message/&gt;&#xA;      &lt;/item&gt;&#xA;    &lt;/list&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.842 ***</b>
+alice@localhost/res1 out
+&lt;iq type=&apos;set&apos; id=&apos;4d423523608189eb27ef3af2fddecc60&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:privacy&apos;&gt;&#xA;    &lt;active name=&apos;deny_all_message_but_subscription_to&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.948 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alice@localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;4d423523608189eb27ef3af2fddecc60&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.948 ***</b>
+bob@localhost/res1 out
+&lt;iq type=&apos;set&apos; id=&apos;1085049ac301516f1b1d3351cb883b8c&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:privacy&apos;&gt;&#xA;    &lt;list name=&apos;deny_all_message_but_subscription_from&apos;&gt;&#xA;      &lt;item order=&apos;1&apos; type=&apos;subscription&apos; value=&apos;from&apos; action=&apos;allow&apos;&gt;&#xA;        &lt;message/&gt;&#xA;      &lt;/item&gt;&#xA;      &lt;item order=&apos;2&apos; action=&apos;deny&apos;&gt;&#xA;        &lt;message/&gt;&#xA;      &lt;/item&gt;&#xA;    &lt;/list&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.950 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;bob@localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;push389AD6E5F4C8ADA1&apos; type=&apos;set&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:privacy&apos;&gt;&#xA;    &lt;list name=&apos;deny_all_message_but_subscription_from&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.950 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;bob@localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;1085049ac301516f1b1d3351cb883b8c&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.950 ***</b>
+bob@localhost/res1 out
+&lt;iq type=&apos;get&apos; id=&apos;0a8e0852c7ad23077424a0a57848495b&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:privacy&apos;&gt;&#xA;    &lt;list name=&apos;deny_all_message_but_subscription_from&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.988 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;bob@localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;0a8e0852c7ad23077424a0a57848495b&apos; type=&apos;result&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:privacy&apos;&gt;&#xA;    &lt;list name=&apos;deny_all_message_but_subscription_from&apos;&gt;&#xA;      &lt;item type=&apos;subscription&apos; value=&apos;from&apos; action=&apos;allow&apos; order=&apos;1&apos;&gt;&#xA;        &lt;message/&gt;&#xA;      &lt;/item&gt;&#xA;      &lt;item action=&apos;deny&apos; order=&apos;2&apos;&gt;&#xA;        &lt;message/&gt;&#xA;      &lt;/item&gt;&#xA;    &lt;/list&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:35.988 ***</b>
+bob@localhost/res1 out
+&lt;iq type=&apos;set&apos; id=&apos;4f46acd99bb496f7f1e55de0283f6773&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:privacy&apos;&gt;&#xA;    &lt;active name=&apos;deny_all_message_but_subscription_from&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:36.139 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;bob@localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;4f46acd99bb496f7f1e55de0283f6773&apos; type=&apos;result&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:36.140 ***</b>
+bob@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Alice XYZ!&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:36.140 ***</b>
+alice@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;bob@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Bob XYZ!&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:36.191 ***</b>
+alice@localhost/res1 out
+&lt;presence type=&apos;subscribe&apos; to=&apos;bob@localhost&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:36.193 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alice@localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;pushC1FC863E86F4F420&apos; type=&apos;set&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:roster&apos; ver=&apos;d42a8f6f56e0a7cd937466e4d0fcc5dc705a5fa2&apos;&gt;&#xA;    &lt;item ask=&apos;subscribe&apos; subscription=&apos;none&apos; jid=&apos;bob@localhost&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:36.193 ***</b>
+bob@localhost/res1 in
+&lt;presence from=&apos;alice@localhost&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;subscribe&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:36.193 ***</b>
+bob@localhost/res1 out
+&lt;presence type=&apos;subscribed&apos; to=&apos;alice@localhost&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:36.297 ***</b>
+bob@localhost/res1 in
+&lt;iq from=&apos;bob@localhost&apos; to=&apos;bob@localhost/res1&apos; id=&apos;pushB58453C0F0F3848B&apos; type=&apos;set&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:roster&apos; ver=&apos;febc66842313c663adeca5ebc965de61da86665b&apos;&gt;&#xA;    &lt;item subscription=&apos;from&apos; jid=&apos;alice@localhost&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:36.297 ***</b>
+alice@localhost/res1 in
+&lt;iq from=&apos;alice@localhost&apos; to=&apos;alice@localhost/res1&apos; id=&apos;push5839E5B2B17A6E05&apos; type=&apos;set&apos;&gt;&#xA;  &lt;query xmlns=&apos;jabber:iq:roster&apos; ver=&apos;8602a14f31d9b05e30a352c6c88089d89f745b5c&apos;&gt;&#xA;    &lt;item subscription=&apos;to&apos; jid=&apos;bob@localhost&apos;/&gt;&#xA;  &lt;/query&gt;&#xA;&lt;/iq&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:36.298 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;bob@localhost&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;subscribed&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:36.298 ***</b>
+alice@localhost/res1 in
+&lt;presence from=&apos;bob@localhost/res1&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos;/&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:36.298 ***</b>
+bob@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;alice@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Alice XYZ!&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:36.432 ***</b>
+alice@localhost/res1 in
+&lt;message from=&apos;bob@localhost/res1&apos; to=&apos;alice@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Alice XYZ!&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:36.432 ***</b>
+alice@localhost/res1 out
+&lt;message type=&apos;chat&apos; to=&apos;bob@localhost/res1&apos;&gt;&#xA;  &lt;body&gt;Hi, Bob XYZ!&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+
+<div class="stanza_log"><b>*** User 2016-04-13 15:07:36.435 ***</b>
+bob@localhost/res1 in
+&lt;message from=&apos;alice@localhost/res1&apos; to=&apos;bob@localhost/res1&apos; xml:lang=&apos;en&apos; type=&apos;chat&apos;&gt;&#xA;  &lt;body&gt;Hi, Bob XYZ!&lt;/body&gt;&#xA;&lt;/message&gt;&#xA;
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-13 15:07:36
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.21385.0>},
+                      {tc_name,allow_subscription_to_from_message},
+                      {escalus_cleaner,<0.21384.0>},
+                      {watchdog,<0.21383.0>},
+                      {escalus_no_stanzas_after_story,true},
+                      {preset,"internal_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.privacy_SUITE.logs/run.2016-04-13_15.07.10/privacy_suite.allow_subscription_to_from_message.html"},
+                      {tc_group_properties,[{name,allowing},sequence]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/privacy_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-e5f6bf08-7430-4216-9cc5-bccc1193141a.2016-04-13_14.51.26/ejabberd_tests.tests.privacy_SUITE.logs/run.2016-04-13_15.07.10/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alice">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]},
+                           {bob,
+                               [{username,<<"bob">>},
+                                {server,<<"localhost">>},
+                                {password,<<"makrolika">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Wed Apr 13 2016 15:07:35<!/date><br />
+</div>
+</center>
+</body>
+</html>
