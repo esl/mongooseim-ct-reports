@@ -1,0 +1,22 @@
+=== Suite started at 2016-04-13 21:00:46
+=== Starting test, 0 test cases
+=cases         0
+=user          travis
+=host          testing-gce-66be7846-d1fd-4dd4-9bbe-deaa2eb747af
+=hosts         testing-gce-66be7846-d1fd-4dd4-9bbe-deaa2eb747af 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-13 21:00:46
+=== 
+=case          ejabberdctl_SUITE:all
+=started       2016-04-13 21:00:46
+=result        skipped: external_auth_not_supported
+=== *** Skipping {ejabberdctl_SUITE,all} ***
+=== TEST COMPLETE, 0 ok, 0 failed of 0 test cases
+
+=finished      2016-04-13 21:00:46
+=failed        0
+=successful    0
+=user_skipped  0
+=auto_skipped  0
