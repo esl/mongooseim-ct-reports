@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test mod_ping_SUITE:init_per_group result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Config function: <a href="mod_ping_suite.src.html#init_per_group-1">mod_ping_SUITE:init_per_group/2</a> (click for source code)
+
+=== Group properties: [{name,client_ping}]
+
+=== Config value:
+
+    [{watchdog,<0.18635.0>},
+     {preset,"internal_redis"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-1922a366-a2a0-4a4b-b74c-3ba4de68ce57.2016-04-14_08.56.30/ejabberd_tests.tests.mod_ping_SUITE.logs/run.2016-04-14_09.07.13/mod_ping_suite.init_per_group.html"},
+     {tc_group_properties,[{name,client_ping}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/mod_ping_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-1922a366-a2a0-4a4b-b74c-3ba4de68ce57.2016-04-14_08.56.30/ejabberd_tests.tests.mod_ping_SUITE.logs/run.2016-04-14_09.07.13/log_private/"}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-1922a366-a2a0-4a4b-b74c-3ba4de68ce57.2016-04-14_08.56.30"
+
+=== Started at 2016-04-14 09:07:13
+
+<br />
+starting mod_ping
+
+<div class="error_logger"><b>*** System report during mod_ping_SUITE:init_per_group/2 for client_ping 2016-04-14 09:07:14.217 ***</b>
+
+=INFO REPORT==== 14-Apr-2016::09:07:14 ===
+user already existed: <iq from='localhost' id='fcd8a8361462b54e0f5c3e8dc6cf146b' type='error'><query xmlns='jabber:iq:register'><username>alicE</username><password>matygrysa</password></query><error code='409' type='cancel'><conflict xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'/></error></iq>
+
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-14 09:07:14
+=== successfully completed test case
+=== returned value = [{watchdog,<0.18639.0>},
+                      {preset,"internal_redis"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-1922a366-a2a0-4a4b-b74c-3ba4de68ce57.2016-04-14_08.56.30/ejabberd_tests.tests.mod_ping_SUITE.logs/run.2016-04-14_09.07.13/mod_ping_suite.init_per_group.html"},
+                      {tc_group_properties,[{name,client_ping}]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/mod_ping_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-1922a366-a2a0-4a4b-b74c-3ba4de68ce57.2016-04-14_08.56.30/ejabberd_tests.tests.mod_ping_SUITE.logs/run.2016-04-14_09.07.13/log_private/"},
+                      {escalus_users,
+                          [{alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Thu Apr 14 2016 09:07:13<!/date><br />
+</div>
+</center>
+</body>
+</html>
