@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_tests.tests.pubsub_SUITE results</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+// Parser for date format, e.g: Wed Jul 4 2012 11:24:15
+var monthNames = {};
+monthNames["Jan"] = "01"; monthNames["Feb"] = "02";
+monthNames["Mar"] = "03"; monthNames["Apr"] = "04";
+monthNames["May"] = "05"; monthNames["Jun"] = "06";
+monthNames["Jul"] = "07"; monthNames["Aug"] = "08";
+monthNames["Sep"] = "09"; monthNames["Oct"] = "10";
+monthNames["Nov"] = "11"; monthNames["Dec"] = "12";
+$.tablesorter.addParser({
+  id: 'CTDateSorter',
+  is: function(s) {
+      return false; },
+  format: function(s) {
+      if (s.length < 2) return 999999999;
+      else {
+          var date = s.match(/(\w{3})\s(\w{3})\s(\d{2})\s(\d{4})\s(\d{2}):(\d{2}):(\d{2})/);
+          var y = date[4]; var mo = monthNames[date[2]]; var d = String(date[3]);
+          var h = String(date[5]); var mi = String(date[6]); var sec = String(date[7]);
+          return (parseInt('' + y + mo + d + h + mi + sec)); }},
+  type: 'numeric' });
+// Parser for general text format
+$.tablesorter.addParser({
+  id: 'CTTextSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return 'zzzzzzzz';
+    else if (s == "?") return 'zzzzzzz';
+    else if (s == "-") return 'zzzzzz';
+    else if (s == "FAILED") return 'A';
+    else if (s == "SKIPPED") return 'B';
+    else if (s == "OK") return 'C';
+    else return '' + s; },
+  type: 'text' });
+// Parser for numerical values
+$.tablesorter.addParser({
+  id: 'CTValSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return '-2';
+    else if (s == "?") return '-1';
+    else if ((s.search(/(\d{1,})\s/)) >= 0) {
+      var num = s.match(/(\d{1,})\s/);
+      return (parseInt('' + num[1])); }
+    else if ((s.search(/(\d{1,})\.(\d{3})s/)) >= 0) {
+      var num = s.match(/(\d{1,})\.(\d{3})/);
+      if (num[1] == "0") return (parseInt('' + num[2]));
+      else return (parseInt('' + num[1] + num[2])); }
+    else return '' + s; },
+  type: 'numeric' });
+$(document).ready(function() {
+  $("#SortableTable").tablesorter({
+    headers: { 
+      0: { sorter: 'CTValSorter' },
+      1: { sorter: 'CTTextSorter' },
+      2: { sorter: 'CTTextSorter' },
+      3: { sorter: 'CTTextSorter' },
+      5: { sorter: 'CTValSorter' },
+      6: { sorter: 'CTTextSorter' },
+      7: { sorter: 'CTTextSorter' }
+    }
+  });
+  $("#SortableTable").trigger("update");
+  $("#SortableTable").trigger("appendCache");
+});
+</script>
+</head>
+<body>
+<div class="label">'internal_redis'</div>
+
+<h1>Results for <i>ejabberd_tests.tests.pubsub_SUITE</i></h1>
+<h4>Test started at 2016-04-18 14:00:09</h4>
+<p><b>Host info:</b><br />
+Run by travis on testing-gce-33374156-b826-4344-b83e-61733e5ce13d<br />Used Erlang v6.4 in "/home/travis/otp/17.5"</p>
+<p><ul>
+<li><a href="suite.log">Full textual log</a></li>
+<li><a href="cover.html">Coverage log</a></li>
+<li><a href="unexpected_io.log.html">Unexpected I/O log</a></li>
+</ul></p>
+<p><i>Executing <b>30</b> test cases...</i>
+<br />
+</p>
+<table id="SortableTable">
+<thead>
+<tr><th>Num</th><th>Module</th><th>Group</th><th>Case</th><th>Log</th><th>Time</th><th>Result</th><th>Comment</th></tr>
+</thead>
+<tbody>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">pubsub_SUITE</font></td><td><font color="black"></font></td><td><a href="pubsub_suite.init_per_suite.html">init_per_suite</a></td><td><a href="pubsub_suite.init_per_suite.html#top"><</a> <a href="pubsub_suite.init_per_suite.html#end">></a></td><td><font color="black">0.003s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">pubsub_SUITE</font></td><td><font color="black">pubsub_tests</font></td><td><a href="pubsub_suite.init_per_group.html">init_per_group</a></td><td><a href="pubsub_suite.init_per_group.html#top"><</a> <a href="pubsub_suite.init_per_group.html#end">></a></td><td><font color="black">0.005s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">1</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">pubsub_tests</font></td><td><a href="pubsub_suite.create_delete_node_test.html">create_delete_node_test</a></td><td><a href="pubsub_suite.create_delete_node_test.html#top"><</a> <a href="pubsub_suite.create_delete_node_test.html#end">></a></td><td><font color="saddlebrown">0.573s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">2</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">pubsub_tests</font></td><td><a href="pubsub_suite.discover_nodes_test.html">discover_nodes_test</a></td><td><a href="pubsub_suite.discover_nodes_test.html#top"><</a> <a href="pubsub_suite.discover_nodes_test.html#end">></a></td><td><font color="saddlebrown">1.276s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">3</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">pubsub_tests</font></td><td><a href="pubsub_suite.subscribe_unsubscribe_test.html">subscribe_unsubscribe_test</a></td><td><a href="pubsub_suite.subscribe_unsubscribe_test.html#top"><</a> <a href="pubsub_suite.subscribe_unsubscribe_test.html#end">></a></td><td><font color="saddlebrown">1.521s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">4</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">pubsub_tests</font></td><td><a href="pubsub_suite.publish_test.html">publish_test</a></td><td><a href="pubsub_suite.publish_test.html#top"><</a> <a href="pubsub_suite.publish_test.html#end">></a></td><td><font color="saddlebrown">0.611s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">5</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">pubsub_tests</font></td><td><a href="pubsub_suite.notify_test.html">notify_test</a></td><td><a href="pubsub_suite.notify_test.html#top"><</a> <a href="pubsub_suite.notify_test.html#end">></a></td><td><font color="saddlebrown">1.970s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">6</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">pubsub_tests</font></td><td><a href="pubsub_suite.request_all_items_test.html">request_all_items_test</a></td><td><a href="pubsub_suite.request_all_items_test.html#top"><</a> <a href="pubsub_suite.request_all_items_test.html#end">></a></td><td><font color="saddlebrown">1.403s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">7</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">pubsub_tests</font></td><td><a href="pubsub_suite.purge_all_items_test.html">purge_all_items_test</a></td><td><a href="pubsub_suite.purge_all_items_test.html#top"><</a> <a href="pubsub_suite.purge_all_items_test.html#end">></a></td><td><font color="saddlebrown">1.623s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">8</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">pubsub_tests</font></td><td><a href="pubsub_suite.retrieve_subscriptions_test.html">retrieve_subscriptions_test</a></td><td><a href="pubsub_suite.retrieve_subscriptions_test.html#top"><</a> <a href="pubsub_suite.retrieve_subscriptions_test.html#end">></a></td><td><font color="saddlebrown">1.826s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">pubsub_SUITE</font></td><td><font color="black">pubsub_tests</font></td><td><a href="pubsub_suite.end_per_group.html">end_per_group</a></td><td><a href="pubsub_suite.end_per_group.html#top"><</a> <a href="pubsub_suite.end_per_group.html#end">></a></td><td><font color="black">0.017s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">pubsub_SUITE</font></td><td><font color="black">node_config_tests</font></td><td><a href="pubsub_suite.init_per_group.988020.826.html">init_per_group</a></td><td><a href="pubsub_suite.init_per_group.988020.826.html#top"><</a> <a href="pubsub_suite.init_per_group.988020.826.html#end">></a></td><td><font color="black">0.003s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">9</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">node_config_tests</font></td><td><a href="pubsub_suite.disable_notifications_test.html">disable_notifications_test</a></td><td><a href="pubsub_suite.disable_notifications_test.html#top"><</a> <a href="pubsub_suite.disable_notifications_test.html#end">></a></td><td><font color="saddlebrown">1.191s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">10</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">node_config_tests</font></td><td><a href="pubsub_suite.disable_payload_test.html">disable_payload_test</a></td><td><a href="pubsub_suite.disable_payload_test.html#top"><</a> <a href="pubsub_suite.disable_payload_test.html#end">></a></td><td><font color="saddlebrown">1.191s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">11</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">node_config_tests</font></td><td><a href="pubsub_suite.disable_persist_items_test.html">disable_persist_items_test</a></td><td><a href="pubsub_suite.disable_persist_items_test.html#top"><</a> <a href="pubsub_suite.disable_persist_items_test.html#end">></a></td><td><font color="saddlebrown">1.188s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">12</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">node_config_tests</font></td><td><a href="pubsub_suite.notify_only_available_users_test.html">notify_only_available_users_test</a></td><td><a href="pubsub_suite.notify_only_available_users_test.html#top"><</a> <a href="pubsub_suite.notify_only_available_users_test.html#end">></a></td><td><font color="saddlebrown">1.777s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">13</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">node_config_tests</font></td><td><a href="pubsub_suite.send_last_published_item_test.html">send_last_published_item_test</a></td><td><a href="pubsub_suite.send_last_published_item_test.html#top"><</a> <a href="pubsub_suite.send_last_published_item_test.html#end">></a></td><td><font color="saddlebrown">1.494s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">pubsub_SUITE</font></td><td><font color="black">node_config_tests</font></td><td><a href="pubsub_suite.end_per_group.988027.838.html">end_per_group</a></td><td><a href="pubsub_suite.end_per_group.988027.838.html#top"><</a> <a href="pubsub_suite.end_per_group.988027.838.html#end">></a></td><td><font color="black">0.013s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">pubsub_SUITE</font></td><td><font color="black">manage_subscriptions_tests</font></td><td><a href="pubsub_suite.init_per_group.988027.877.html">init_per_group</a></td><td><a href="pubsub_suite.init_per_group.988027.877.html#top"><</a> <a href="pubsub_suite.init_per_group.988027.877.html#end">></a></td><td><font color="black">0.007s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">14</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">manage_subscriptions_tests</font></td><td><a href="pubsub_suite.retrieve_node_subscriptions_test.html">retrieve_node_subscriptions_test</a></td><td><a href="pubsub_suite.retrieve_node_subscriptions_test.html#top"><</a> <a href="pubsub_suite.retrieve_node_subscriptions_test.html#end">></a></td><td><font color="saddlebrown">1.529s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">15</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">manage_subscriptions_tests</font></td><td><a href="pubsub_suite.modify_node_subscriptions_test.html">modify_node_subscriptions_test</a></td><td><a href="pubsub_suite.modify_node_subscriptions_test.html#top"><</a> <a href="pubsub_suite.modify_node_subscriptions_test.html#end">></a></td><td><font color="saddlebrown">2.234s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">pubsub_SUITE</font></td><td><font color="black">manage_subscriptions_tests</font></td><td><a href="pubsub_suite.end_per_group.988031.724.html">end_per_group</a></td><td><a href="pubsub_suite.end_per_group.988031.724.html#top"><</a> <a href="pubsub_suite.end_per_group.988031.724.html#end">></a></td><td><font color="black">0.016s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">pubsub_SUITE</font></td><td><font color="black">collection_tests</font></td><td><a href="pubsub_suite.init_per_group.988031.770.html">init_per_group</a></td><td><a href="pubsub_suite.init_per_group.988031.770.html#top"><</a> <a href="pubsub_suite.init_per_group.988031.770.html#end">></a></td><td><font color="black">0.007s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">16</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">collection_tests</font></td><td><a href="pubsub_suite.create_delete_collection_test.html">create_delete_collection_test</a></td><td><a href="pubsub_suite.create_delete_collection_test.html#top"><</a> <a href="pubsub_suite.create_delete_collection_test.html#end">></a></td><td><font color="saddlebrown">0.695s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">17</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">collection_tests</font></td><td><a href="pubsub_suite.subscribe_unsubscribe_collection_test.html">subscribe_unsubscribe_collection_test</a></td><td><a href="pubsub_suite.subscribe_unsubscribe_collection_test.html#top"><</a> <a href="pubsub_suite.subscribe_unsubscribe_collection_test.html#end">></a></td><td><font color="saddlebrown">1.046s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">18</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">collection_tests</font></td><td><a href="pubsub_suite.create_delete_leaf_test.html">create_delete_leaf_test</a></td><td><a href="pubsub_suite.create_delete_leaf_test.html#top"><</a> <a href="pubsub_suite.create_delete_leaf_test.html#end">></a></td><td><font color="saddlebrown">1.332s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">19</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">collection_tests</font></td><td><a href="pubsub_suite.notify_collection_test.html">notify_collection_test</a></td><td><a href="pubsub_suite.notify_collection_test.html#top"><</a> <a href="pubsub_suite.notify_collection_test.html#end">></a></td><td><font color="saddlebrown">2.703s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">20</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">collection_tests</font></td><td><a href="pubsub_suite.notify_collection_leaf_and_item_test.html">notify_collection_leaf_and_item_test</a></td><td><a href="pubsub_suite.notify_collection_leaf_and_item_test.html#top"><</a> <a href="pubsub_suite.notify_collection_leaf_and_item_test.html#end">></a></td><td><font color="saddlebrown">1.790s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">21</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">collection_tests</font></td><td><a href="pubsub_suite.notify_collection_bare_jid_test.html">notify_collection_bare_jid_test</a></td><td><a href="pubsub_suite.notify_collection_bare_jid_test.html#top"><</a> <a href="pubsub_suite.notify_collection_bare_jid_test.html#end">></a></td><td><font color="saddlebrown">2.553s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">22</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">collection_tests</font></td><td><a href="pubsub_suite.notify_collection_and_leaf_test.html">notify_collection_and_leaf_test</a></td><td><a href="pubsub_suite.notify_collection_and_leaf_test.html#top"><</a> <a href="pubsub_suite.notify_collection_and_leaf_test.html#end">></a></td><td><font color="saddlebrown">1.991s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">23</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">collection_tests</font></td><td><a href="pubsub_suite.notify_collection_and_leaf_same_user_test.html">notify_collection_and_leaf_same_user_test</a></td><td><a href="pubsub_suite.notify_collection_and_leaf_same_user_test.html#top"><</a> <a href="pubsub_suite.notify_collection_and_leaf_same_user_test.html#end">></a></td><td><font color="saddlebrown">1.789s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">24</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">collection_tests</font></td><td><a href="pubsub_suite.retrieve_subscriptions_collection_test.html">retrieve_subscriptions_collection_test</a></td><td><a href="pubsub_suite.retrieve_subscriptions_collection_test.html#top"><</a> <a href="pubsub_suite.retrieve_subscriptions_collection_test.html#end">></a></td><td><font color="saddlebrown">2.163s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">25</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">collection_tests</font></td><td><a href="pubsub_suite.discover_top_level_nodes_test.html">discover_top_level_nodes_test</a></td><td><a href="pubsub_suite.discover_top_level_nodes_test.html#top"><</a> <a href="pubsub_suite.discover_top_level_nodes_test.html#end">></a></td><td><font color="saddlebrown">1.526s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">26</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">collection_tests</font></td><td><a href="pubsub_suite.discover_child_nodes_test.html">discover_child_nodes_test</a></td><td><a href="pubsub_suite.discover_child_nodes_test.html#top"><</a> <a href="pubsub_suite.discover_child_nodes_test.html#end">></a></td><td><font color="saddlebrown">2.164s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">27</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">collection_tests</font></td><td><a href="pubsub_suite.request_all_items_leaf_test.html">request_all_items_leaf_test</a></td><td><a href="pubsub_suite.request_all_items_leaf_test.html#top"><</a> <a href="pubsub_suite.request_all_items_leaf_test.html#end">></a></td><td><font color="saddlebrown">2.704s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">pubsub_SUITE</font></td><td><font color="black">collection_tests</font></td><td><a href="pubsub_suite.end_per_group.988054.602.html">end_per_group</a></td><td><a href="pubsub_suite.end_per_group.988054.602.html#top"><</a> <a href="pubsub_suite.end_per_group.988054.602.html#end">></a></td><td><font color="black">0.015s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">pubsub_SUITE</font></td><td><font color="black">collection_config_tests</font></td><td><a href="pubsub_suite.init_per_group.988054.643.html">init_per_group</a></td><td><a href="pubsub_suite.init_per_group.988054.643.html#top"><</a> <a href="pubsub_suite.init_per_group.988054.643.html#end">></a></td><td><font color="black">0.003s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">28</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">collection_config_tests</font></td><td><a href="pubsub_suite.disable_notifications_leaf_test.html">disable_notifications_leaf_test</a></td><td><a href="pubsub_suite.disable_notifications_leaf_test.html#top"><</a> <a href="pubsub_suite.disable_notifications_leaf_test.html#end">></a></td><td><font color="saddlebrown">1.852s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="saddlebrown">29</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">collection_config_tests</font></td><td><a href="pubsub_suite.disable_payload_leaf_test.html">disable_payload_leaf_test</a></td><td><a href="pubsub_suite.disable_payload_leaf_test.html#top"><</a> <a href="pubsub_suite.disable_payload_leaf_test.html#end">></a></td><td><font color="saddlebrown">1.848s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="saddlebrown">30</font></td><td><font color="saddlebrown">pubsub_SUITE</font></td><td><font color="saddlebrown">collection_config_tests</font></td><td><a href="pubsub_suite.disable_persist_items_leaf_test.html">disable_persist_items_leaf_test</a></td><td><a href="pubsub_suite.disable_persist_items_leaf_test.html#top"><</a> <a href="pubsub_suite.disable_persist_items_leaf_test.html#end">></a></td><td><font color="saddlebrown">1.846s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">pubsub_SUITE</font></td><td><font color="black">collection_config_tests</font></td><td><a href="pubsub_suite.end_per_group.988060.300.html">end_per_group</a></td><td><a href="pubsub_suite.end_per_group.988060.300.html#top"><</a> <a href="pubsub_suite.end_per_group.988060.300.html#end">></a></td><td><font color="black">0.014s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">pubsub_SUITE</font></td><td><font color="black"></font></td><td><a href="pubsub_suite.end_per_suite.html">end_per_suite</a></td><td><a href="pubsub_suite.end_per_suite.html#top"><</a> <a href="pubsub_suite.end_per_suite.html#end">></a></td><td><font color="black">0.004s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+
+</tbody>
+<tfoot>
+<tr><td></td><td><b>TOTAL</b></td><td></td><td></td><td></td><td>50.801s</td><td><b>Ok</b></td><td>30 Ok, 0 Failed of 30</td></tr>
+</tfoot>
+
+</table>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Mon Apr 18 2016 14:00:09<!/date><br />
+</div>
+</center>
+</body>
+</html>
