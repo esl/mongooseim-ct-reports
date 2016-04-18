@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test connect_SUITE:tls_compression_authenticate_fail result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="connect_suite.src.html#tls_compression_authenticate_fail-1">connect_SUITE:tls_compression_authenticate_fail/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.14969.0>},
+     {{ejabberd_cwd,mongooseim@localhost},
+      "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+     {escalus_user_db,{module,escalus_ejabberd,[]}},
+     {preset,"pgsql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-f7929d7b-812c-43ac-a5fb-8b835e4e739d.2016-04-18_09.29.17/ejabberd_tests.tests.connect_SUITE.logs/run.2016-04-18_09.37.58/connect_suite.tls_compression_authenticate_fail.972295.62.html"},
+     {tc_group_properties,[{name,feature_order},parallel]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/connect_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-f7929d7b-812c-43ac-a5fb-8b835e4e739d.2016-04-18_09.29.17/ejabberd_tests.tests.connect_SUITE.logs/run.2016-04-18_09.37.58/log_private/"},
+     {escalus_users,[{secure_joe,[{username,<<"secure_joe">>},
+                                  {server,<<"localhost">>},
+                                  {password,<<"break_me">>},
+                                  {compression,<<"zlib">>},
+                                  {starttls,required}]},
+                     {alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-f7929d7b-812c-43ac-a5fb-8b835e4e739d.2016-04-18_09.29.17"
+
+=== Started at 2016-04-18 09:38:15
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-04-18 09:38:15
+=== successfully completed test case
+=== returned value = ok
