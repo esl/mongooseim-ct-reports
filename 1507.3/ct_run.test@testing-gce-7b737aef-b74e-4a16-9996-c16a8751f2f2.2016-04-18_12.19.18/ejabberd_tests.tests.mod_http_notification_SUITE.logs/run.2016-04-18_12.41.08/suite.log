@@ -1,0 +1,96 @@
+=== Suite started at 2016-04-18 12:41:08
+=== Starting test, 3 test cases
+=cases         3
+=user          travis
+=host          testing-gce-7b737aef-b74e-4a16-9996-c16a8751f2f2
+=hosts         testing-gce-7b737aef-b74e-4a16-9996-c16a8751f2f2 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-18 12:41:08
+=case          mod_http_notification_SUITE:init_per_suite
+=logfile       mod_http_notification_suite.init_per_suite.html
+=started       2016-04-18 12:41:08
+=ended         2016-04-18 12:41:08
+=result        ok
+=elapsed       0.029721
+=case          mod_http_notification_SUITE:init_per_group
+=logfile       mod_http_notification_suite.init_per_group.html
+=group_props   [{name,mod_http_notification_tests},sequence]
+=started       2016-04-18 12:41:08
+=ended         2016-04-18 12:41:08
+=result        ok
+=elapsed       1.0e-6
+=case          mod_http_notification_SUITE:simple_message
+=logfile       mod_http_notification_suite.simple_message.html
+=started       2016-04-18 12:41:08
+=ended         2016-04-18 12:41:09
+=result        ok
+=elapsed       0.927473
+=case          mod_http_notification_SUITE:simple_message_no_listener
+=logfile       mod_http_notification_suite.simple_message_no_listener.html
+=started       2016-04-18 12:41:09
+=ended         2016-04-18 12:41:10
+=result        ok
+=elapsed       0.922968
+=case          mod_http_notification_SUITE:simple_message_failing_listener
+=logfile       mod_http_notification_suite.simple_message_failing_listener.html
+=started       2016-04-18 12:41:10
+=ended         2016-04-18 12:41:11
+=result        ok
+=elapsed       0.964315
+=case          mod_http_notification_SUITE:end_per_group
+=logfile       mod_http_notification_suite.end_per_group.html
+=group_props   [{name,mod_http_notification_tests},sequence]
+=started       2016-04-18 12:41:11
+=ended         2016-04-18 12:41:11
+=result        ok
+=elapsed       1.0e-6
+=group_time    2.924s
+=case          mod_http_notification_SUITE:end_per_suite
+=logfile       mod_http_notification_suite.end_per_suite.html
+=started       2016-04-18 12:41:11
+=ended         2016-04-18 12:41:11
+=result        failed: {function_clause,
+                           [{lists,foreach,
+                                [#Fun<escalus_ejabberd.2.24911657>,
+                                 {by_name,[alice,bob]}],
+                                [{file,"lists.erl"},{line,1335}]},
+                            {escalus_ejabberd,delete_users,2,
+                                [{file,"src/escalus_ejabberd.erl"},
+                                 {line,221}]},
+                            {mod_http_notification_SUITE,end_per_suite,1,
+                                [{file,"mod_http_notification_SUITE.erl"},
+                                 {line,46}]},
+                            {test_server,ts_tc,3,
+                                [{file,"test_server.erl"},{line,1429}]},
+                            {test_server,run_test_case_eval1,6,
+                                [{file,"test_server.erl"},{line,1099}]},
+                            {test_server,run_test_case_eval,9,
+                                [{file,"test_server.erl"},{line,968}]}]}, [{lists,
+                                                                            foreach,
+                                                                            1335},
+                                                                           {escalus_ejabberd,
+                                                                            delete_users,
+                                                                            221},
+                                                                           {mod_http_notification_SUITE,
+                                                                            end_per_suite,
+                                                                            46},
+                                                                           {test_server,
+                                                                            ts_tc,
+                                                                            1429},
+                                                                           {test_server,
+                                                                            run_test_case_eval1,
+                                                                            1099},
+                                                                           {test_server,
+                                                                            run_test_case_eval,
+                                                                            968}]
+=== *** FAILED {mod_http_notification_SUITE,end_per_suite} ***
+=group_time    3.050s
+=== TEST COMPLETE, 3 ok, 0 failed of 3 test cases
+
+=finished      2016-04-18 12:41:11
+=failed        0
+=successful    3
+=user_skipped  0
+=auto_skipped  0

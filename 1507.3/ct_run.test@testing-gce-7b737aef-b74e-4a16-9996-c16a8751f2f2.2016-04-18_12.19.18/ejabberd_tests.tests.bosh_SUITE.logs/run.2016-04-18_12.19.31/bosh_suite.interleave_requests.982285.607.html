@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test bosh_SUITE:interleave_requests result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="bosh_suite.src.html#interleave_requests-1">bosh_SUITE:interleave_requests/1</a> (click for source code)
+
+=== Config value:
+
+    [{user,carol_s},
+     {watchdog,<0.13787.0>},
+     {escalus_user_db,{module,escalus_ejabberd}},
+     {preset,"mysql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7b737aef-b74e-4a16-9996-c16a8751f2f2.2016-04-18_12.19.18/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-04-18_12.19.31/bosh_suite.interleave_requests.982285.607.html"},
+     {tc_group_properties,[{shuffle,{4614,18778,8970}},{name,chat_https}]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/bosh_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7b737aef-b74e-4a16-9996-c16a8751f2f2.2016-04-18_12.19.18/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-04-18_12.19.31/log_private/"},
+     {escalus_users,[{carol,[{username,<<"carol">>},
+                             {server,<<"localhost">>},
+                             {password,<<"jinglebells">>},
+                             {transport,bosh},
+                             {path,<<"/http-bind">>},
+                             {port,5280}]},
+                     {carol_s,[{username,<<"carol_s">>},
+                               {server,<<"localhost">>},
+                               {password,<<"jinglebells_s">>},
+                               {transport,bosh},
+                               {ssl,true},
+                               {path,<<"/http-bind">>},
+                               {port,5285}]},
+                     {geralt,[{username,<<"geralt">>},
+                              {server,<<"localhost">>},
+                              {password,<<"witcher">>},
+                              {transport,ws},
+                              {port,5280},
+                              {wspath,<<"/ws-xmpp">>}]},
+                     {alice,[{username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7b737aef-b74e-4a16-9996-c16a8751f2f2.2016-04-18_12.19.18"
+
+=== Started at 2016-04-18 12:24:45
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-04-18 12:24:45
+=== successfully completed test case
+=== returned value = [{escalus_event_mgr,<0.13919.0>},
+                      {tc_name,interleave_requests},
+                      {escalus_cleaner,<0.13918.0>},
+                      {watchdog,<0.13917.0>},
+                      {user,carol_s},
+                      {escalus_user_db,{module,escalus_ejabberd}},
+                      {preset,"mysql_mnesia"},
+                      {tc_logfile,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7b737aef-b74e-4a16-9996-c16a8751f2f2.2016-04-18_12.19.18/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-04-18_12.19.31/bosh_suite.interleave_requests.982285.607.html"},
+                      {tc_group_properties,
+                          [{shuffle,{4614,18778,8970}},{name,chat_https}]},
+                      {tc_group_path,[]},
+                      {data_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/bosh_SUITE_data/"},
+                      {priv_dir,
+                          "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-7b737aef-b74e-4a16-9996-c16a8751f2f2.2016-04-18_12.19.18/ejabberd_tests.tests.bosh_SUITE.logs/run.2016-04-18_12.19.31/log_private/"},
+                      {escalus_users,
+                          [{carol,
+                               [{username,<<"carol">>},
+                                {server,<<"localhost">>},
+                                {password,<<"jinglebells">>},
+                                {transport,bosh},
+                                {path,<<"/http-bind">>},
+                                {port,5280}]},
+                           {carol_s,
+                               [{username,<<"carol_s">>},
+                                {server,<<"localhost">>},
+                                {password,<<"jinglebells_s">>},
+                                {transport,bosh},
+                                {ssl,true},
+                                {path,<<"/http-bind">>},
+                                {port,5285}]},
+                           {geralt,
+                               [{username,<<"geralt">>},
+                                {server,<<"localhost">>},
+                                {password,<<"witcher">>},
+                                {transport,ws},
+                                {port,5280},
+                                {wspath,<<"/ws-xmpp">>}]},
+                           {alice,
+                               [{username,<<"alicE">>},
+                                {server,<<"localhost">>},
+                                {password,<<"matygrysa">>}]}]}]
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Mon Apr 18 2016 12:24:45<!/date><br />
+</div>
+</center>
+</body>
+</html>

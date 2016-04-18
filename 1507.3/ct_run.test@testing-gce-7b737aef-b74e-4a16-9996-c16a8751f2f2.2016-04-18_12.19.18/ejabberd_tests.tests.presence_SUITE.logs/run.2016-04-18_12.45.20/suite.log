@@ -1,0 +1,245 @@
+=== Suite started at 2016-04-18 12:45:20
+=== Starting test, 15 test cases
+=cases         15
+=user          travis
+=host          testing-gce-7b737aef-b74e-4a16-9996-c16a8751f2f2
+=hosts         testing-gce-7b737aef-b74e-4a16-9996-c16a8751f2f2 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-18 12:45:20
+=case          presence_SUITE:init_per_suite
+=logfile       presence_suite.init_per_suite.html
+=started       2016-04-18 12:45:20
+=ended         2016-04-18 12:45:20
+=result        ok
+=elapsed       0.004659
+=case          presence_SUITE:init_per_group
+=logfile       presence_suite.init_per_group.html
+=group_props   [{name,presence},sequence]
+=started       2016-04-18 12:45:20
+=ended         2016-04-18 12:45:20
+=result        ok
+=elapsed       0.010243
+=case          presence_SUITE:available
+=logfile       presence_suite.available.html
+=started       2016-04-18 12:45:20
+=ended         2016-04-18 12:45:21
+=result        ok
+=elapsed       0.917329
+=case          presence_SUITE:available_direct
+=logfile       presence_suite.available_direct.html
+=started       2016-04-18 12:45:21
+=ended         2016-04-18 12:45:22
+=result        ok
+=elapsed       0.918271
+=case          presence_SUITE:additions
+=logfile       presence_suite.additions.html
+=started       2016-04-18 12:45:22
+=ended         2016-04-18 12:45:23
+=result        ok
+=elapsed       0.919542
+=case          presence_SUITE:invisible_presence
+=logfile       presence_suite.invisible_presence.html
+=started       2016-04-18 12:45:23
+=ended         2016-04-18 12:45:24
+=result        ok
+=elapsed       1.159223
+=case          presence_SUITE:end_per_group
+=logfile       presence_suite.end_per_group.html
+=group_props   [{name,presence},sequence]
+=started       2016-04-18 12:45:24
+=ended         2016-04-18 12:45:24
+=result        ok
+=elapsed       0.035355
+=group_time    4.063s
+=case          presence_SUITE:init_per_group
+=logfile       presence_suite.init_per_group.983524.438.html
+=group_props   [{name,presence_priority},sequence]
+=started       2016-04-18 12:45:24
+=ended         2016-04-18 12:45:24
+=result        ok
+=elapsed       0.007575
+=case          presence_SUITE:negative_priority_presence
+=logfile       presence_suite.negative_priority_presence.html
+=started       2016-04-18 12:45:24
+=ended         2016-04-18 12:45:26
+=result        ok
+=elapsed       2.390021
+=case          presence_SUITE:end_per_group
+=logfile       presence_suite.end_per_group.983526.889.html
+=group_props   [{name,presence_priority},sequence]
+=started       2016-04-18 12:45:26
+=ended         2016-04-18 12:45:26
+=result        ok
+=elapsed       0.026959
+=group_time    2.451s
+=case          presence_SUITE:init_per_group
+=logfile       presence_suite.init_per_group.983526.942.html
+=group_props   [{name,roster},sequence]
+=started       2016-04-18 12:45:26
+=ended         2016-04-18 12:45:26
+=result        ok
+=elapsed       0.008548
+=case          presence_SUITE:get_roster
+=logfile       presence_suite.get_roster.html
+=started       2016-04-18 12:45:26
+=ended         2016-04-18 12:45:27
+=result        ok
+=elapsed       0.921811
+=case          presence_SUITE:add_contact
+=logfile       presence_suite.add_contact.html
+=started       2016-04-18 12:45:27
+=== WARNING: end_per_testcase crashed!
+Reason: {badmatch,ok}
+Line: [{presence_SUITE,remove_roster,<a href="presence_suite.src.html#586">586</a>},
+              {presence_SUITE,end_per_testcase,<a href="presence_suite.src.html#81">81</a>},
+              {test_server,do_end_per_testcase,1299},
+              {test_server,run_test_case_eval1,1054},
+              {test_server,run_test_case_eval,968}]
+
+=ended         2016-04-18 12:45:28
+=result        ok
+=elapsed       0.968075
+=case          presence_SUITE:remove_contact
+=logfile       presence_suite.remove_contact.html
+=started       2016-04-18 12:45:28
+=ended         2016-04-18 12:45:30
+=result        ok
+=elapsed       1.198158
+=case          presence_SUITE:end_per_group
+=logfile       presence_suite.end_per_group.983530.157.html
+=group_props   [{name,roster},sequence]
+=started       2016-04-18 12:45:30
+=ended         2016-04-18 12:45:30
+=result        ok
+=elapsed       0.023438
+=group_time    3.215s
+=case          presence_SUITE:init_per_group
+=logfile       presence_suite.init_per_group.983530.206.html
+=group_props   [{name,roster_versioning},sequence]
+=started       2016-04-18 12:45:30
+=ended         2016-04-18 12:45:30
+=result        ok
+=elapsed       0.01395
+=case          presence_SUITE:versioning
+=logfile       presence_suite.versioning.html
+=started       2016-04-18 12:45:30
+=== WARNING: end_per_testcase crashed!
+Reason: {badmatch,ok}
+Line: [{presence_SUITE,remove_roster,<a href="presence_suite.src.html#586">586</a>},
+              {presence_SUITE,end_rosters_remove,<a href="presence_suite.src.html#100">100</a>},
+              {presence_SUITE,end_per_testcase,<a href="presence_suite.src.html#92">92</a>},
+              {test_server,do_end_per_testcase,1299},
+              {test_server,run_test_case_eval1,1054},
+              {test_server,run_test_case_eval,968}]
+
+=ended         2016-04-18 12:45:31
+=result        ok
+=elapsed       1.220024
+=case          presence_SUITE:versioning_no_store
+=logfile       presence_suite.versioning_no_store.html
+=started       2016-04-18 12:45:31
+=== WARNING: end_per_testcase crashed!
+Reason: {badmatch,ok}
+Line: [{presence_SUITE,remove_roster,<a href="presence_suite.src.html#586">586</a>},
+              {presence_SUITE,end_rosters_remove,<a href="presence_suite.src.html#100">100</a>},
+              {presence_SUITE,end_per_testcase,<a href="presence_suite.src.html#92">92</a>},
+              {test_server,do_end_per_testcase,1299},
+              {test_server,run_test_case_eval1,1054},
+              {test_server,run_test_case_eval,968}]
+
+=ended         2016-04-18 12:45:32
+=result        ok
+=elapsed       1.22888
+=case          presence_SUITE:end_per_group
+=logfile       presence_suite.end_per_group.983532.769.html
+=group_props   [{name,roster_versioning},sequence]
+=started       2016-04-18 12:45:32
+=ended         2016-04-18 12:45:32
+=result        ok
+=elapsed       0.024274
+=group_time    2.563s
+=case          presence_SUITE:init_per_group
+=logfile       presence_suite.init_per_group.983532.820.html
+=group_props   [{name,subscribe_group},sequence]
+=started       2016-04-18 12:45:32
+=ended         2016-04-18 12:45:32
+=result        ok
+=elapsed       0.010284
+=case          presence_SUITE:subscribe
+=logfile       presence_suite.subscribe.html
+=started       2016-04-18 12:45:32
+=== WARNING: end_per_testcase crashed!
+Reason: {badmatch,ok}
+Line: [{presence_SUITE,remove_roster,<a href="presence_suite.src.html#586">586</a>},
+              {presence_SUITE,end_rosters_remove,<a href="presence_suite.src.html#100">100</a>},
+              {test_server,do_end_per_testcase,1299},
+              {test_server,run_test_case_eval1,1054},
+              {test_server,run_test_case_eval,968}]
+
+=ended         2016-04-18 12:45:34
+=result        ok
+=elapsed       1.138592
+=case          presence_SUITE:subscribe_decline
+=logfile       presence_suite.subscribe_decline.html
+=started       2016-04-18 12:45:34
+=== WARNING: end_per_testcase crashed!
+Reason: {badmatch,ok}
+Line: [{presence_SUITE,remove_roster,<a href="presence_suite.src.html#586">586</a>},
+              {presence_SUITE,end_rosters_remove,<a href="presence_suite.src.html#100">100</a>},
+              {test_server,do_end_per_testcase,1299},
+              {test_server,run_test_case_eval1,1054},
+              {test_server,run_test_case_eval,968}]
+
+=ended         2016-04-18 12:45:35
+=result        ok
+=elapsed       0.999282
+=case          presence_SUITE:subscribe_relog
+=logfile       presence_suite.subscribe_relog.html
+=started       2016-04-18 12:45:35
+=ended         2016-04-18 12:45:36
+=result        ok
+=elapsed       1.442139
+=case          presence_SUITE:unsubscribe
+=logfile       presence_suite.unsubscribe.html
+=started       2016-04-18 12:45:36
+=== WARNING: end_per_testcase crashed!
+Reason: {badmatch,ok}
+Line: [{presence_SUITE,remove_roster,<a href="presence_suite.src.html#586">586</a>},
+              {presence_SUITE,end_rosters_remove,<a href="presence_suite.src.html#100">100</a>},
+              {test_server,do_end_per_testcase,1299},
+              {test_server,run_test_case_eval1,1054},
+              {test_server,run_test_case_eval,968}]
+
+=ended         2016-04-18 12:45:37
+=result        ok
+=elapsed       1.10613
+=case          presence_SUITE:remove_unsubscribe
+=logfile       presence_suite.remove_unsubscribe.html
+=started       2016-04-18 12:45:37
+=ended         2016-04-18 12:45:38
+=result        ok
+=elapsed       1.10601
+=case          presence_SUITE:end_per_group
+=logfile       presence_suite.end_per_group.983538.829.html
+=group_props   [{name,subscribe_group},sequence]
+=started       2016-04-18 12:45:38
+=ended         2016-04-18 12:45:38
+=result        ok
+=elapsed       0.025578
+=group_time    6.009s
+=case          presence_SUITE:end_per_suite
+=logfile       presence_suite.end_per_suite.html
+=started       2016-04-18 12:45:38
+=ended         2016-04-18 12:45:38
+=result        ok
+=elapsed       0.001764
+=group_time    18.651s
+=== TEST COMPLETE, 15 ok, 0 failed of 15 test cases
+
+=finished      2016-04-18 12:45:38
+=failed        0
+=successful    15
+=user_skipped  0
+=auto_skipped  0
