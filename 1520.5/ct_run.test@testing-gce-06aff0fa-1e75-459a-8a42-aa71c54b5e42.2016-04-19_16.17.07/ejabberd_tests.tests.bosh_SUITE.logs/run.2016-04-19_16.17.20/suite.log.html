@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test ejabberd_tests.tests.bosh_SUITE results</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+// Parser for date format, e.g: Wed Jul 4 2012 11:24:15
+var monthNames = {};
+monthNames["Jan"] = "01"; monthNames["Feb"] = "02";
+monthNames["Mar"] = "03"; monthNames["Apr"] = "04";
+monthNames["May"] = "05"; monthNames["Jun"] = "06";
+monthNames["Jul"] = "07"; monthNames["Aug"] = "08";
+monthNames["Sep"] = "09"; monthNames["Oct"] = "10";
+monthNames["Nov"] = "11"; monthNames["Dec"] = "12";
+$.tablesorter.addParser({
+  id: 'CTDateSorter',
+  is: function(s) {
+      return false; },
+  format: function(s) {
+      if (s.length < 2) return 999999999;
+      else {
+          var date = s.match(/(\w{3})\s(\w{3})\s(\d{2})\s(\d{4})\s(\d{2}):(\d{2}):(\d{2})/);
+          var y = date[4]; var mo = monthNames[date[2]]; var d = String(date[3]);
+          var h = String(date[5]); var mi = String(date[6]); var sec = String(date[7]);
+          return (parseInt('' + y + mo + d + h + mi + sec)); }},
+  type: 'numeric' });
+// Parser for general text format
+$.tablesorter.addParser({
+  id: 'CTTextSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return 'zzzzzzzz';
+    else if (s == "?") return 'zzzzzzz';
+    else if (s == "-") return 'zzzzzz';
+    else if (s == "FAILED") return 'A';
+    else if (s == "SKIPPED") return 'B';
+    else if (s == "OK") return 'C';
+    else return '' + s; },
+  type: 'text' });
+// Parser for numerical values
+$.tablesorter.addParser({
+  id: 'CTValSorter',
+  is: function(s) {
+    return false; },
+  format: function(s) {
+    if (s.length < 1) return '-2';
+    else if (s == "?") return '-1';
+    else if ((s.search(/(\d{1,})\s/)) >= 0) {
+      var num = s.match(/(\d{1,})\s/);
+      return (parseInt('' + num[1])); }
+    else if ((s.search(/(\d{1,})\.(\d{3})s/)) >= 0) {
+      var num = s.match(/(\d{1,})\.(\d{3})/);
+      if (num[1] == "0") return (parseInt('' + num[2]));
+      else return (parseInt('' + num[1] + num[2])); }
+    else return '' + s; },
+  type: 'numeric' });
+$(document).ready(function() {
+  $("#SortableTable").tablesorter({
+    headers: { 
+      0: { sorter: 'CTValSorter' },
+      1: { sorter: 'CTTextSorter' },
+      2: { sorter: 'CTTextSorter' },
+      3: { sorter: 'CTTextSorter' },
+      5: { sorter: 'CTValSorter' },
+      6: { sorter: 'CTTextSorter' },
+      7: { sorter: 'CTTextSorter' }
+    }
+  });
+  $("#SortableTable").trigger("update");
+  $("#SortableTable").trigger("appendCache");
+});
+</script>
+</head>
+<body>
+<div class="label">'pgsql_mnesia'</div>
+
+<h1>Results for <i>ejabberd_tests.tests.bosh_SUITE</i></h1>
+<h4>Test started at 2016-04-19 16:17:20</h4>
+<p><b>Host info:</b><br />
+Run by travis on testing-gce-06aff0fa-1e75-459a-8a42-aa71c54b5e42<br />Used Erlang v6.4 in "/home/travis/otp/17.5"</p>
+<p><ul>
+<li><a href="suite.log">Full textual log</a></li>
+<li><a href="cover.html">Coverage log</a></li>
+<li><a href="unexpected_io.log.html">Unexpected I/O log</a></li>
+</ul></p>
+<p><i>Executing <b>41</b> test cases...</i>
+<br />
+</p>
+<table id="SortableTable">
+<thead>
+<tr><th>Num</th><th>Module</th><th>Group</th><th>Case</th><th>Log</th><th>Time</th><th>Result</th><th>Comment</th></tr>
+</thead>
+<tbody>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black"></font></td><td><a href="bosh_suite.init_per_suite.html">init_per_suite</a></td><td><a href="bosh_suite.init_per_suite.html#top"><</a> <a href="bosh_suite.init_per_suite.html#end">></a></td><td><font color="black">0.011s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential</font></td><td><a href="bosh_suite.init_per_group.html">init_per_group</a></td><td><a href="bosh_suite.init_per_group.html#top"><</a> <a href="bosh_suite.init_per_group.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">1</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential</font></td><td><a href="bosh_suite.accept_higher_hold_value.html">accept_higher_hold_value</a></td><td><a href="bosh_suite.accept_higher_hold_value.html#top"><</a> <a href="bosh_suite.accept_higher_hold_value.html#end">></a></td><td><font color="black">0.048s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">2</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential</font></td><td><a href="bosh_suite.options_request.html">options_request</a></td><td><a href="bosh_suite.options_request.html#top"><</a> <a href="bosh_suite.options_request.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">3</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential</font></td><td><a href="bosh_suite.post_empty_body.html">post_empty_body</a></td><td><a href="bosh_suite.post_empty_body.html#top"><</a> <a href="bosh_suite.post_empty_body.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">4</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential</font></td><td><a href="bosh_suite.create_and_terminate_session.html">create_and_terminate_session</a></td><td><a href="bosh_suite.create_and_terminate_session.html#top"><</a> <a href="bosh_suite.create_and_terminate_session.html#end">></a></td><td><font color="black">0.123s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">5</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential</font></td><td><a href="bosh_suite.do_not_accept_0_hold_value.html">do_not_accept_0_hold_value</a></td><td><a href="bosh_suite.do_not_accept_0_hold_value.html#top"><</a> <a href="bosh_suite.do_not_accept_0_hold_value.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">6</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential</font></td><td><a href="bosh_suite.put_request.html">put_request</a></td><td><a href="bosh_suite.put_request.html#top"><</a> <a href="bosh_suite.put_request.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">7</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential</font></td><td><a href="bosh_suite.get_request.html">get_request</a></td><td><a href="bosh_suite.get_request.html#top"><</a> <a href="bosh_suite.get_request.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential</font></td><td><a href="bosh_suite.end_per_group.html">end_per_group</a></td><td><a href="bosh_suite.end_per_group.html#top"><</a> <a href="bosh_suite.end_per_group.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat</font></td><td><a href="bosh_suite.init_per_group.82641.82.html">init_per_group</a></td><td><a href="bosh_suite.init_per_group.82641.82.html#top"><</a> <a href="bosh_suite.init_per_group.82641.82.html#end">></a></td><td><font color="black">0.007s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">8</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat</font></td><td><a href="bosh_suite.cdata_escape_chat.html">cdata_escape_chat</a></td><td><a href="bosh_suite.cdata_escape_chat.html#top"><</a> <a href="bosh_suite.cdata_escape_chat.html#end">></a></td><td><font color="black">0.280s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">9</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat</font></td><td><a href="bosh_suite.stream_error.html">stream_error</a></td><td><a href="bosh_suite.stream_error.html#top"><</a> <a href="bosh_suite.stream_error.html#end">></a></td><td><font color="black">0.136s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">10</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat</font></td><td><a href="bosh_suite.namespace.html">namespace</a></td><td><a href="bosh_suite.namespace.html#top"><</a> <a href="bosh_suite.namespace.html#end">></a></td><td><font color="black">0.284s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">11</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat</font></td><td><a href="bosh_suite.simple_chat.html">simple_chat</a></td><td><a href="bosh_suite.simple_chat.html#top"><</a> <a href="bosh_suite.simple_chat.html#end">></a></td><td><font color="black">0.253s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">12</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat</font></td><td><a href="bosh_suite.cant_send_invalid_rid.html">cant_send_invalid_rid</a></td><td><a href="bosh_suite.cant_send_invalid_rid.html#top"><</a> <a href="bosh_suite.cant_send_invalid_rid.html#end">></a></td><td><font color="black">0.033s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">13</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat</font></td><td><a href="bosh_suite.escape_attr_chat.html">escape_attr_chat</a></td><td><a href="bosh_suite.escape_attr_chat.html#top"><</a> <a href="bosh_suite.escape_attr_chat.html#end">></a></td><td><font color="black">0.248s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">14</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat</font></td><td><a href="bosh_suite.interleave_requests.html">interleave_requests</a></td><td><a href="bosh_suite.interleave_requests.html#top"><</a> <a href="bosh_suite.interleave_requests.html#end">></a></td><td><font color="black">0.247s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">15</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat</font></td><td><a href="bosh_suite.multiple_stanzas.html">multiple_stanzas</a></td><td><a href="bosh_suite.multiple_stanzas.html#top"><</a> <a href="bosh_suite.multiple_stanzas.html#end">></a></td><td><font color="black">0.706s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat</font></td><td><a href="bosh_suite.end_per_group.82643.510.html">end_per_group</a></td><td><a href="bosh_suite.end_per_group.82643.510.html#top"><</a> <a href="bosh_suite.end_per_group.82643.510.html#end">></a></td><td><font color="black">0.022s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">time</font></td><td><a href="bosh_suite.init_per_group.82643.557.html">init_per_group</a></td><td><a href="bosh_suite.init_per_group.82643.557.html#top"><</a> <a href="bosh_suite.init_per_group.82643.557.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="darkslategray">16</font></td><td><font color="darkslategray">bosh_SUITE</font></td><td><font color="darkslategray">time</font></td><td><a href="bosh_suite.disconnect_inactive.82643.582.html">disconnect_inactive</a></td><td><a href="bosh_suite.disconnect_inactive.82643.582.html#top"><</a> <a href="bosh_suite.disconnect_inactive.82643.582.html#end">></a></td><td><font color="darkslategray"><i>4.286s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="darkslategray">17</font></td><td><font color="darkslategray">bosh_SUITE</font></td><td><font color="darkslategray">time</font></td><td><a href="bosh_suite.connection_interrupted.82643.583.html">connection_interrupted</a></td><td><a href="bosh_suite.connection_interrupted.82643.583.html#top"><</a> <a href="bosh_suite.connection_interrupted.82643.583.html#end">></a></td><td><font color="darkslategray"><i>7.160s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="darkslategray">18</font></td><td><font color="darkslategray">bosh_SUITE</font></td><td><font color="darkslategray">time</font></td><td><a href="bosh_suite.interrupt_long_poll_is_activity.82643.589.html">interrupt_long_poll_is_activity</a></td><td><a href="bosh_suite.interrupt_long_poll_is_activity.82643.589.html#top"><</a> <a href="bosh_suite.interrupt_long_poll_is_activity.82643.589.html#end">></a></td><td><font color="darkslategray"><i>4.279s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="darkslategray">19</font></td><td><font color="darkslategray">bosh_SUITE</font></td><td><font color="darkslategray">time</font></td><td><a href="bosh_suite.reply_on_pause.82643.585.html">reply_on_pause</a></td><td><a href="bosh_suite.reply_on_pause.82643.585.html#top"><</a> <a href="bosh_suite.reply_on_pause.82643.585.html#end">></a></td><td><font color="darkslategray"><i>0.163s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="darkslategray">20</font></td><td><font color="darkslategray">bosh_SUITE</font></td><td><font color="darkslategray">time</font></td><td><a href="bosh_suite.cant_pause_for_too_long.82643.593.html">cant_pause_for_too_long</a></td><td><a href="bosh_suite.cant_pause_for_too_long.82643.593.html#top"><</a> <a href="bosh_suite.cant_pause_for_too_long.82643.593.html#end">></a></td><td><font color="darkslategray"><i>0.164s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="darkslategray">21</font></td><td><font color="darkslategray">bosh_SUITE</font></td><td><font color="darkslategray">time</font></td><td><a href="bosh_suite.pause_request_is_activity.82643.587.html">pause_request_is_activity</a></td><td><a href="bosh_suite.pause_request_is_activity.82643.587.html#top"><</a> <a href="bosh_suite.pause_request_is_activity.82643.587.html#end">></a></td><td><font color="darkslategray"><i>2.169s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="darkslategray">22</font></td><td><font color="darkslategray">bosh_SUITE</font></td><td><font color="darkslategray">time</font></td><td><a href="bosh_suite.reply_in_time.82643.591.html">reply_in_time</a></td><td><a href="bosh_suite.reply_in_time.82643.591.html#top"><</a> <a href="bosh_suite.reply_in_time.82643.591.html#end">></a></td><td><font color="darkslategray"><i>1.483s</i></font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">time</font></td><td><a href="bosh_suite.end_per_group.82650.772.html">end_per_group</a></td><td><a href="bosh_suite.end_per_group.82650.772.html#top"><</a> <a href="bosh_suite.end_per_group.82650.772.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">acks</font></td><td><a href="bosh_suite.init_per_group.82650.798.html">init_per_group</a></td><td><a href="bosh_suite.init_per_group.82650.798.html#top"><</a> <a href="bosh_suite.init_per_group.82650.798.html#end">></a></td><td><font color="black">0.012s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">23</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">acks</font></td><td><a href="bosh_suite.force_cache_trimming.html">force_cache_trimming</a></td><td><a href="bosh_suite.force_cache_trimming.html#top"><</a> <a href="bosh_suite.force_cache_trimming.html#end">></a></td><td><font color="black">0.253s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">24</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">acks</font></td><td><a href="bosh_suite.force_report.html">force_report</a></td><td><a href="bosh_suite.force_report.html#top"><</a> <a href="bosh_suite.force_report.html#end">></a></td><td><font color="black">0.402s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">25</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">acks</font></td><td><a href="bosh_suite.server_acks.html">server_acks</a></td><td><a href="bosh_suite.server_acks.html#top"><</a> <a href="bosh_suite.server_acks.html#end">></a></td><td><font color="black">0.457s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">26</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">acks</font></td><td><a href="bosh_suite.force_retransmission.html">force_retransmission</a></td><td><a href="bosh_suite.force_retransmission.html#top"><</a> <a href="bosh_suite.force_retransmission.html#end">></a></td><td><font color="black">0.255s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">acks</font></td><td><a href="bosh_suite.end_per_group.82652.307.html">end_per_group</a></td><td><a href="bosh_suite.end_per_group.82652.307.html#top"><</a> <a href="bosh_suite.end_per_group.82652.307.html#end">></a></td><td><font color="black">0.022s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential_https</font></td><td><a href="bosh_suite.init_per_group.82652.354.html">init_per_group</a></td><td><a href="bosh_suite.init_per_group.82652.354.html#top"><</a> <a href="bosh_suite.init_per_group.82652.354.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">27</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential_https</font></td><td><a href="bosh_suite.create_and_terminate_session.82652.379.html">create_and_terminate_session</a></td><td><a href="bosh_suite.create_and_terminate_session.82652.379.html#top"><</a> <a href="bosh_suite.create_and_terminate_session.82652.379.html#end">></a></td><td><font color="black">0.199s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">28</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential_https</font></td><td><a href="bosh_suite.get_request.82652.603.html">get_request</a></td><td><a href="bosh_suite.get_request.82652.603.html#top"><</a> <a href="bosh_suite.get_request.82652.603.html#end">></a></td><td><font color="black">0.002s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">29</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential_https</font></td><td><a href="bosh_suite.put_request.82652.629.html">put_request</a></td><td><a href="bosh_suite.put_request.82652.629.html#top"><</a> <a href="bosh_suite.put_request.82652.629.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">30</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential_https</font></td><td><a href="bosh_suite.post_empty_body.82652.655.html">post_empty_body</a></td><td><a href="bosh_suite.post_empty_body.82652.655.html#top"><</a> <a href="bosh_suite.post_empty_body.82652.655.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">31</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential_https</font></td><td><a href="bosh_suite.options_request.82652.680.html">options_request</a></td><td><a href="bosh_suite.options_request.82652.680.html#top"><</a> <a href="bosh_suite.options_request.82652.680.html#end">></a></td><td><font color="black">0.001s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">32</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential_https</font></td><td><a href="bosh_suite.accept_higher_hold_value.82652.706.html">accept_higher_hold_value</a></td><td><a href="bosh_suite.accept_higher_hold_value.82652.706.html#top"><</a> <a href="bosh_suite.accept_higher_hold_value.82652.706.html#end">></a></td><td><font color="black">0.013s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">33</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential_https</font></td><td><a href="bosh_suite.do_not_accept_0_hold_value.82652.745.html">do_not_accept_0_hold_value</a></td><td><a href="bosh_suite.do_not_accept_0_hold_value.82652.745.html#top"><</a> <a href="bosh_suite.do_not_accept_0_hold_value.82652.745.html#end">></a></td><td><font color="black">0.002s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">essential_https</font></td><td><a href="bosh_suite.end_per_group.82652.770.html">end_per_group</a></td><td><a href="bosh_suite.end_per_group.82652.770.html#top"><</a> <a href="bosh_suite.end_per_group.82652.770.html#end">></a></td><td><font color="black">0.000s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat_https</font></td><td><a href="bosh_suite.init_per_group.82652.795.html">init_per_group</a></td><td><a href="bosh_suite.init_per_group.82652.795.html#top"><</a> <a href="bosh_suite.init_per_group.82652.795.html#end">></a></td><td><font color="black">0.007s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">34</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat_https</font></td><td><a href="bosh_suite.simple_chat.82652.827.html">simple_chat</a></td><td><a href="bosh_suite.simple_chat.82652.827.html#top"><</a> <a href="bosh_suite.simple_chat.82652.827.html#end">></a></td><td><font color="black">0.245s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">35</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat_https</font></td><td><a href="bosh_suite.cdata_escape_chat.82653.97.html">cdata_escape_chat</a></td><td><a href="bosh_suite.cdata_escape_chat.82653.97.html#top"><</a> <a href="bosh_suite.cdata_escape_chat.82653.97.html#end">></a></td><td><font color="black">0.249s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">36</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat_https</font></td><td><a href="bosh_suite.stream_error.82653.371.html">stream_error</a></td><td><a href="bosh_suite.stream_error.82653.371.html#top"><</a> <a href="bosh_suite.stream_error.82653.371.html#end">></a></td><td><font color="black">0.136s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">37</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat_https</font></td><td><a href="bosh_suite.interleave_requests.82653.532.html">interleave_requests</a></td><td><a href="bosh_suite.interleave_requests.82653.532.html#top"><</a> <a href="bosh_suite.interleave_requests.82653.532.html#end">></a></td><td><font color="black">0.244s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">38</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat_https</font></td><td><a href="bosh_suite.escape_attr_chat.82653.802.html">escape_attr_chat</a></td><td><a href="bosh_suite.escape_attr_chat.82653.802.html#top"><</a> <a href="bosh_suite.escape_attr_chat.82653.802.html#end">></a></td><td><font color="black">0.248s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">39</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat_https</font></td><td><a href="bosh_suite.multiple_stanzas.82654.75.html">multiple_stanzas</a></td><td><a href="bosh_suite.multiple_stanzas.82654.75.html#top"><</a> <a href="bosh_suite.multiple_stanzas.82654.75.html#end">></a></td><td><font color="black">0.708s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black">40</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat_https</font></td><td><a href="bosh_suite.cant_send_invalid_rid.82654.809.html">cant_send_invalid_rid</a></td><td><a href="bosh_suite.cant_send_invalid_rid.82654.809.html#top"><</a> <a href="bosh_suite.cant_send_invalid_rid.82654.809.html#end">></a></td><td><font color="black">0.038s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black">41</font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat_https</font></td><td><a href="bosh_suite.namespace.82654.873.html">namespace</a></td><td><a href="bosh_suite.namespace.82654.873.html#top"><</a> <a href="bosh_suite.namespace.82654.873.html#end">></a></td><td><font color="black">0.287s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="odd"><td><font color="black"></font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black">chat_https</font></td><td><a href="bosh_suite.end_per_group.82655.185.html">end_per_group</a></td><td><a href="bosh_suite.end_per_group.82655.185.html#top"><</a> <a href="bosh_suite.end_per_group.82655.185.html#end">></a></td><td><font color="black">0.020s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+<tr class="even"><td><font color="black"></font></td><td><font color="black">bosh_SUITE</font></td><td><font color="black"></font></td><td><a href="bosh_suite.end_per_suite.html">end_per_suite</a></td><td><a href="bosh_suite.end_per_suite.html#top"><</a> <a href="bosh_suite.end_per_suite.html#end">></a></td><td><font color="black">0.040s</font></td><td><font color="green">Ok</font></td><td></td></tr>
+
+</tbody>
+<tfoot>
+<tr><td></td><td><b>TOTAL</b></td><td></td><td></td><td></td><td>14.750s</td><td><b>Ok</b></td><td>41 Ok, 0 Failed of 41</td></tr>
+</tfoot>
+
+</table>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Tue Apr 19 2016 16:17:20<!/date><br />
+</div>
+</center>
+</body>
+</html>
