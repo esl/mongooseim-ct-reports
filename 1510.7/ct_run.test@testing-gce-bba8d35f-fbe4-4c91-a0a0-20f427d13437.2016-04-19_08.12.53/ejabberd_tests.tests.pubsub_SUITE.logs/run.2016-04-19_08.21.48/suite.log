@@ -1,0 +1,209 @@
+=== Suite started at 2016-04-19 08:21:48
+=== Starting test, 30 test cases
+=cases         30
+=user          travis
+=host          testing-gce-bba8d35f-fbe4-4c91-a0a0-20f427d13437
+=hosts         testing-gce-bba8d35f-fbe4-4c91-a0a0-20f427d13437 
+=emulator_vsn  6.4
+=emulator      beam
+=otp_release   17
+=started       2016-04-19 08:21:48
+=case          pubsub_SUITE:init_per_suite
+=logfile       pubsub_suite.init_per_suite.html
+=started       2016-04-19 08:21:48
+=ended         2016-04-19 08:21:48
+=result        failed: {'EXIT',{badmatch,{error,econnrefused}}}, [{escalus_tcp,
+                                                                   init,170}]
+=== *** FAILED {pubsub_SUITE,init_per_suite} ***
+=== 
+=case          pubsub_SUITE:create_delete_node_test
+=group_props   [{name,"pubsub_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #1 {pubsub_SUITE,create_delete_node_test} ***
+=== 
+=case          pubsub_SUITE:discover_nodes_test
+=group_props   [{name,"pubsub_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #2 {pubsub_SUITE,discover_nodes_test} ***
+=== 
+=case          pubsub_SUITE:subscribe_unsubscribe_test
+=group_props   [{name,"pubsub_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #3 {pubsub_SUITE,subscribe_unsubscribe_test} ***
+=== 
+=case          pubsub_SUITE:publish_test
+=group_props   [{name,"pubsub_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #4 {pubsub_SUITE,publish_test} ***
+=== 
+=case          pubsub_SUITE:notify_test
+=group_props   [{name,"pubsub_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #5 {pubsub_SUITE,notify_test} ***
+=== 
+=case          pubsub_SUITE:request_all_items_test
+=group_props   [{name,"pubsub_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #6 {pubsub_SUITE,request_all_items_test} ***
+=== 
+=case          pubsub_SUITE:purge_all_items_test
+=group_props   [{name,"pubsub_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #7 {pubsub_SUITE,purge_all_items_test} ***
+=== 
+=case          pubsub_SUITE:retrieve_subscriptions_test
+=group_props   [{name,"pubsub_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #8 {pubsub_SUITE,retrieve_subscriptions_test} ***
+=== 
+=case          pubsub_SUITE:disable_notifications_test
+=group_props   [{name,"node_config_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #9 {pubsub_SUITE,disable_notifications_test} ***
+=== 
+=case          pubsub_SUITE:disable_payload_test
+=group_props   [{name,"node_config_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #10 {pubsub_SUITE,disable_payload_test} ***
+=== 
+=case          pubsub_SUITE:disable_persist_items_test
+=group_props   [{name,"node_config_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #11 {pubsub_SUITE,disable_persist_items_test} ***
+=== 
+=case          pubsub_SUITE:notify_only_available_users_test
+=group_props   [{name,"node_config_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #12 {pubsub_SUITE,notify_only_available_users_test} ***
+=== 
+=case          pubsub_SUITE:send_last_published_item_test
+=group_props   [{name,"node_config_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #13 {pubsub_SUITE,send_last_published_item_test} ***
+=== 
+=case          pubsub_SUITE:retrieve_node_subscriptions_test
+=group_props   [{name,"manage_subscriptions_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #14 {pubsub_SUITE,retrieve_node_subscriptions_test} ***
+=== 
+=case          pubsub_SUITE:modify_node_subscriptions_test
+=group_props   [{name,"manage_subscriptions_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #15 {pubsub_SUITE,modify_node_subscriptions_test} ***
+=== 
+=case          pubsub_SUITE:create_delete_collection_test
+=group_props   [{name,"collection_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #16 {pubsub_SUITE,create_delete_collection_test} ***
+=== 
+=case          pubsub_SUITE:subscribe_unsubscribe_collection_test
+=group_props   [{name,"collection_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #17 {pubsub_SUITE,subscribe_unsubscribe_collection_test} ***
+=== 
+=case          pubsub_SUITE:create_delete_leaf_test
+=group_props   [{name,"collection_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #18 {pubsub_SUITE,create_delete_leaf_test} ***
+=== 
+=case          pubsub_SUITE:notify_collection_test
+=group_props   [{name,"collection_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #19 {pubsub_SUITE,notify_collection_test} ***
+=== 
+=case          pubsub_SUITE:notify_collection_leaf_and_item_test
+=group_props   [{name,"collection_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #20 {pubsub_SUITE,notify_collection_leaf_and_item_test} ***
+=== 
+=case          pubsub_SUITE:notify_collection_bare_jid_test
+=group_props   [{name,"collection_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #21 {pubsub_SUITE,notify_collection_bare_jid_test} ***
+=== 
+=case          pubsub_SUITE:notify_collection_and_leaf_test
+=group_props   [{name,"collection_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #22 {pubsub_SUITE,notify_collection_and_leaf_test} ***
+=== 
+=case          pubsub_SUITE:notify_collection_and_leaf_same_user_test
+=group_props   [{name,"collection_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #23 {pubsub_SUITE,notify_collection_and_leaf_same_user_test} ***
+=== 
+=case          pubsub_SUITE:retrieve_subscriptions_collection_test
+=group_props   [{name,"collection_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #24 {pubsub_SUITE,retrieve_subscriptions_collection_test} ***
+=== 
+=case          pubsub_SUITE:discover_top_level_nodes_test
+=group_props   [{name,"collection_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #25 {pubsub_SUITE,discover_top_level_nodes_test} ***
+=== 
+=case          pubsub_SUITE:discover_child_nodes_test
+=group_props   [{name,"collection_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #26 {pubsub_SUITE,discover_child_nodes_test} ***
+=== 
+=case          pubsub_SUITE:request_all_items_leaf_test
+=group_props   [{name,"collection_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #27 {pubsub_SUITE,request_all_items_leaf_test} ***
+=== 
+=case          pubsub_SUITE:disable_notifications_leaf_test
+=group_props   [{name,"collection_config_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #28 {pubsub_SUITE,disable_notifications_leaf_test} ***
+=== 
+=case          pubsub_SUITE:disable_payload_leaf_test
+=group_props   [{name,"collection_config_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #29 {pubsub_SUITE,disable_payload_leaf_test} ***
+=== 
+=case          pubsub_SUITE:disable_persist_items_leaf_test
+=group_props   [{name,"collection_config_tests"}]
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping test case #30 {pubsub_SUITE,disable_persist_items_leaf_test} ***
+=== 
+=case          pubsub_SUITE:end_per_suite
+=started       2016-04-19 08:21:48
+=result        auto_skipped: init_per_suite failed
+=== *** Skipping {pubsub_SUITE,end_per_suite} ***
+=== TEST COMPLETE, 0 ok, 0 failed, 30 skipped of 30 test cases
+
+=finished      2016-04-19 08:21:48
+=failed        0
+=successful    0
+=user_skipped  0
+=auto_skipped  30
