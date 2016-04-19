@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test component_SUITE:register_same_on_both result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+=== <a href="component_suite.src.html#register_same_on_both-1">source code for component_SUITE:register_same_on_both/1</a>
+
+<pre>
+<a name="top"></a>
+=== Test case started with:
+component_SUITE:register_same_on_both([{component1,
+                                        [{component,<<"test_service">>},
+                                         {server,<<"localhost">>},
+                                         {host,<<"localhost">>},
+                                         {password,<<"secret">>},
+                                         {port,8888}]},
+                                       {component2,
+                                        [{component,<<"another_service">>},
+                                         {server,<<"localhost">>},
+                                         {host,<<"localhost">>},
+                                         {password,<<"secret">>},
+                                         {port,8888}]},
+                                       {muc_component,
+                                        [{component,<<"muc">>},
+                                         {server,<<"localhost">>},
+                                         {host,<<"localhost">>},
+                                         {password,<<"secret">>},
+                                         {port,8888}]},
+                                       {watchdog,<0.15900.0>},
+                                       {{ejabberd_cwd,mongooseim@localhost},
+                                        "/home/travis/build/esl/MongooseIM/dev/mongooseim_node1"},
+                                       {preset,"internal_mnesia"},
+                                       {tc_logfile,
+                                        "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-c9291521-024b-4684-8dae-9b31e1990e9b.2016-04-19_14.41.23/ejabberd_tests.tests.component_SUITE.logs/run.2016-04-19_14.50.48/component_suite.register_same_on_both.html"},
+                                       {tc_group_properties,
+                                        [{name,distributed}]},
+                                       {tc_group_path,[]},
+                                       {data_dir,
+                                        "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/component_SUITE_data/"},
+                                       {priv_dir,
+                                        "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-c9291521-024b-4684-8dae-9b31e1990e9b.2016-04-19_14.41.23/ejabberd_tests.tests.component_SUITE.logs/run.2016-04-19_14.50.48/log_private/"},
+                                       {escalus_users,
+                                        [{alice,
+                                          [{username,<<"alicE">>},
+                                           {server,<<"localhost">>},
+                                           {password,<<"matygrysa">>}]},
+                                         {clusterguy,
+                                          [{username,<<"clusterguy">>},
+                                           {server,<<"localhost">>},
+                                           {host,<<"localhost">>},
+                                           {password,<<"distributionftw">>},
+                                           {port,5232}]}]}])
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-c9291521-024b-4684-8dae-9b31e1990e9b.2016-04-19_14.41.23"
+
+=== Started at 2016-04-19 14:51:08
+
+<br />
+
+<div class="default"><b>*** User 2016-04-19 14:51:08.943 ***</b>
+{{client,undefined,escalus_tcp,#Port<0.26825>,false,false,<0.15922.0>,
+         undefined},
+ <<"another_service.localhost">>,<<"another_service">>}
+</div>
+
+<div class="default"><b>*** User 2016-04-19 14:51:08.947 ***</b>
+{{client,undefined,escalus_tcp,#Port<0.26826>,false,false,<0.15923.0>,
+         undefined},
+ <<"another_service.localhost">>,<<"another_service">>}
+</div>
+
+<div class="default"><b>*** User 2016-04-19 14:51:09.469 ***</b>
+{xmlel,<<"message">>,
+       [{<<"type">>,<<"chat">>},{<<"to">>,<<"another_service.localhost">>}],
+       [{xmlel,<<"body">>,[],[{xmlcdata,<<"Hi!">>}]}]}
+</div>
+<a name="end"></a>
+
+
+=== Ended at 2016-04-19 14:51:09
+=== successfully completed test case
+=== returned value = ok
+</pre>
+<center>
+<br /><hr /><p>
+<a href="../../../all_runs.html">Test run history
+</a>  |  <a href="../../../index.html">Top level test index
+</a>
+</p>
+<div class="copyright">Copyright &copy; 2016 <a href="http://www.erlang.org">Open Telecom Platform</a><br />
+Updated: <!date>Tue Apr 19 2016 14:51:08<!/date><br />
+</div>
+</center>
+</body>
+</html>
