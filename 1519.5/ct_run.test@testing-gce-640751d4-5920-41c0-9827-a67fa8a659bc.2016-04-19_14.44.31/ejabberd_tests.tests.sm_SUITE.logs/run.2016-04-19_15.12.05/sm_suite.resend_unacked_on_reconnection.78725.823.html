@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Test sm_SUITE:resend_unacked_on_reconnection result</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../../ct_default.css" type="text/css">
+<script type="text/javascript" src="../../jquery-latest.js"></script>
+<script type="text/javascript" src="../../jquery.tablesorter.min.js"></script>
+</head>
+<body>
+
+<a name="top"></a><pre>
+=== Test case: <a href="sm_suite.src.html#resend_unacked_on_reconnection-1">sm_SUITE:resend_unacked_on_reconnection/1</a> (click for source code)
+
+=== Config value:
+
+    [{watchdog,<0.5615.2>},
+     {{saved,buffer_max},unset},
+     {{saved,ack_freq},unset},
+     {preset,"pgsql_mnesia"},
+     {tc_logfile,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-640751d4-5920-41c0-9827-a67fa8a659bc.2016-04-19_14.44.31/ejabberd_tests.tests.sm_SUITE.logs/run.2016-04-19_15.12.05/sm_suite.resend_unacked_on_reconnection.78725.823.html"},
+     {tc_group_properties,[{name,parallel},parallel]},
+     {tc_group_path,[]},
+     {data_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/tests/sm_SUITE_data/"},
+     {priv_dir,"/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-640751d4-5920-41c0-9827-a67fa8a659bc.2016-04-19_14.44.31/ejabberd_tests.tests.sm_SUITE.logs/run.2016-04-19_15.12.05/log_private/"},
+     {escalus_users,[{alice,[{stream_management,true},
+                             {username,<<"alicE">>},
+                             {server,<<"localhost">>},
+                             {password,<<"matygrysa">>}]},
+                     {bob,[{username,<<"bOb">>},
+                           {server,<<"localhost">>},
+                           {password,<<"makrolika">>}]},
+                     {carol,[{username,<<"carol">>},
+                             {server,<<"localhost">>},
+                             {password,<<"jinglebells">>},
+                             {transport,bosh},
+                             {path,<<"/http-bind">>},
+                             {port,5280}]},
+                     {carol_s,[{username,<<"carol_s">>},
+                               {server,<<"localhost">>},
+                               {password,<<"jinglebells_s">>},
+                               {transport,bosh},
+                               {ssl,true},
+                               {path,<<"/http-bind">>},
+                               {port,5285}]},
+                     {kate,[{username,<<"kate">>},
+                            {server,<<"localhost">>},
+                            {password,<<"makrowe;p">>}]},
+                     {mike,[{username,<<"mike">>},
+                            {server,<<"localhost">>},
+                            {password,<<"nicniema">>}]},
+                     {geralt,[{username,<<"geralt">>},
+                              {server,<<"localhost">>},
+                              {password,<<"witcher">>},
+                              {transport,ws},
+                              {port,5280},
+                              {wspath,<<"/ws-xmpp">>}]},
+                     {geralt_s,[{username,<<"geralt_s">>},
+                                {server,<<"localhost">>},
+                                {password,<<"witcher_s">>},
+                                {transport,ws},
+                                {ssl,true},
+                                {port,5285},
+                                {wspath,<<"/ws-xmpp">>}]},
+                     {hacker,[{username,<<"hacker">>},
+                              {server,<<"localhost">>},
+                              {password,<<"bringdowntheserver">>},
+                              {compression,<<"zlib">>},
+                              {port,5223}]},
+                     {oldie,[{username,<<"oldie">>},
+                             {server,<<"localhost">>},
+                             {password,<<"legacy">>},
+                             {transport,ws},
+                             {port,5280},
+                             {wspath,<<"/ws-xmpp">>},
+                             {wslegacy,true}]},
+                     {admin,[{username,<<"admin">>},
+                             {server,<<"localhost">>},
+                             {password,<<"bruce_almighty">>}]},
+                     {secure_joe,[{username,<<"secure_joe">>},
+                                  {server,<<"localhost">>},
+                                  {password,<<"break_me">>},
+                                  {compression,<<"zlib">>},
+                                  {starttls,required}]},
+                     {astrid,[{username,<<"astrid">>},
+                              {server,<<"sogndal">>},
+                              {host,<<"localhost">>},
+                              {password,<<"doctor">>}]},
+                     {alice2,[{username,<<"alice">>},
+                              {server,<<"fed1">>},
+                              {host,<<"localhost">>},
+                              {port,5242},
+                              {password,<<"makota2">>}]},
+                     {bob2,[{username,<<"bob">>},
+                            {server,<<109,105,99,104,97,197,130>>},
+                            {host,<<"localhost">>},
+                            {port,5242},
+                            {password,<<"makota3">>}]},
+                     {clusterguy,[{username,<<"clusterguy">>},
+                                  {server,<<"localhost">>},
+                                  {host,<<"localhost">>},
+                                  {password,<<"distributionftw">>},
+                                  {port,5232}]}]}]
+
+=== Current directory is "/home/travis/build/esl/MongooseIM/test/ejabberd_tests/ct_report/ct_run.test@testing-gce-640751d4-5920-41c0-9827-a67fa8a659bc.2016-04-19_14.44.31"
+
+=== Started at 2016-04-19 15:12:05
+
+<br />
+<a name="end"></a>
+
+
+=== Ended at 2016-04-19 15:12:07
+=== successfully completed test case
+=== returned value = ok
